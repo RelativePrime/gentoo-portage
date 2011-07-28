@@ -1,0 +1,237 @@
+# ChangeLog for app-admin/system-config-printer-common
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/system-config-printer-common/ChangeLog,v 1.39 2011/07/24 09:47:52 hwoarang Exp $
+
+  24 Jul 2011; Markos Chandras <hwoarang@gentoo.org>
+  system-config-printer-common-1.3.3.ebuild:
+  Stable on amd64 wrt bug #349496
+
+  19 Jul 2011; Markus Meier <maekke@gentoo.org>
+  system-config-printer-common-1.3.3.ebuild:
+  x86 stable, bug #349496
+
+  18 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org>
+  system-config-printer-common-1.3.3.ebuild:
+  ppc/ppc64 stable wrt #349496
+
+  16 Jul 2011; Maciej Mrozowski <reavertm@gentoo.org>
+  system-config-printer-common-1.3.3.ebuild:
+  Raise dependencies to net-print/cups-1.4 (we won't test scp integration with
+  cups-1.3)
+
+*system-config-printer-common-1.3.3 (13 Jun 2011)
+
+  13 Jun 2011; Maciej Mrozowski <reavertm@gentoo.org>
+  -system-config-printer-common-1.2.6.ebuild,
+  -files/system-config-printer-common-1.2.6-split.patch,
+  -system-config-printer-common-1.3.2.ebuild,
+  -files/system-config-printer-common-1.3.2-split.patch,
+  +system-config-printer-common-1.3.3.ebuild,
+  +files/system-config-printer-common-1.3.3-split.patch:
+  Version bump, remove old
+
+  01 Jun 2011; Brent Baude <ranger@gentoo.org>
+  system-config-printer-common-1.2.2.ebuild:
+  Marking system-config-printer-common-1.2.2 ppc for bug 354033
+
+*system-config-printer-common-1.3.2 (19 Mar 2011)
+
+  19 Mar 2011; Maciej Mrozowski <reavertm@gentoo.org>
+  -files/system-config-printer-common-1.3.0-split.patch,
+  -system-config-printer-common-1.3.1.ebuild,
+  +system-config-printer-common-1.3.2.ebuild,
+  +files/system-config-printer-common-1.3.2-split.patch:
+  Version bump, remove old
+
+  23 Feb 2011; Maciej Mrozowski <reavertm@gentoo.org>
+  system-config-printer-common-1.2.2.ebuild,
+  system-config-printer-common-1.2.6.ebuild,
+  system-config-printer-common-1.3.1.ebuild:
+  Restrict incompatible scp-gnome versions, also fix bug 356197
+
+*system-config-printer-common-1.3.1 (17 Feb 2011)
+
+  17 Feb 2011; Maciej Mrozowski <reavertm@gentoo.org>
+  -system-config-printer-common-1.3.0-r1.ebuild,
+  +system-config-printer-common-1.3.1.ebuild:
+  Version bump, remove old
+
+*system-config-printer-common-1.3.0-r1 (16 Feb 2011)
+
+  16 Feb 2011; Maciej Mrozowski <reavertm@gentoo.org>
+  -system-config-printer-common-1.3.0.ebuild,
+  +system-config-printer-common-1.3.0-r1.ebuild,
+  files/system-config-printer-common-1.3.0-split.patch:
+  Do not install newprinter.py and related dbus services (they are too UI
+  specific)
+
+*system-config-printer-common-1.3.0 (16 Feb 2011)
+
+  16 Feb 2011; Maciej Mrozowski <reavertm@gentoo.org>
+  -system-config-printer-common-1.2.4.ebuild,
+  -system-config-printer-common-1.2.5.ebuild,
+  +system-config-printer-common-1.3.0.ebuild,
+  +files/system-config-printer-common-1.3.0-split.patch:
+  Version bump, remove old
+
+  31 Jan 2011; Maciej Mrozowski <reavertm@gentoo.org>
+  system-config-printer-common-1.2.6.ebuild:
+  scp-1.2.6 requires at least pygobject-2.21.5. Bug 352958, discovered by
+  Kacper Kowalik
+
+*system-config-printer-common-1.2.6 (27 Jan 2011)
+
+  27 Jan 2011; Maciej Mrozowski <reavertm@gentoo.org>
+  +system-config-printer-common-1.2.6.ebuild,
+  +files/system-config-printer-common-1.2.6-split.patch:
+  Version bump
+
+  06 Nov 2010; Mark Loeser <halcy0n@gentoo.org>
+  system-config-printer-common-1.1.13.ebuild:
+  Revert to ~ppc64; bug #322849
+
+*system-config-printer-common-1.2.5 (19 Oct 2010)
+
+  19 Oct 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  +system-config-printer-common-1.2.5.ebuild:
+  Version bump
+
+  19 Sep 2010; Raúl Porcel <armin76@gentoo.org>
+  system-config-printer-common-1.1.13.ebuild,
+  system-config-printer-common-1.2.2.ebuild,
+  system-config-printer-common-1.2.4.ebuild:
+  Add ~arm/~sh wrt #336920
+
+*system-config-printer-common-1.2.4 (24 Aug 2010)
+
+  24 Aug 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  -system-config-printer-common-1.2.3.ebuild,
+  -files/system-config-printer-common-1.2.3-split.patch,
+  +system-config-printer-common-1.2.4.ebuild:
+  Version bump, remove old
+
+  31 Jul 2010; Pacho Ramos <pacho@gentoo.org>
+  system-config-printer-common-1.2.2.ebuild:
+  amd64 stable, bug 319991
+
+  13 Jul 2010; Christian Faulhammer <fauli@gentoo.org>
+  system-config-printer-common-1.2.2.ebuild:
+  stable x86, bug 319991
+
+*system-config-printer-common-1.2.3 (30 Jun 2010)
+
+  30 Jun 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  +system-config-printer-common-1.2.3.ebuild,
+  +files/system-config-printer-common-1.2.3-split.patch:
+  Version bump 1.2.3
+
+  18 May 2010; Maciej Mrozowski <reavertm@gentoo.org> metadata.xml:
+  List myself as maintainer
+
+  18 May 2010; Peter Volkov <pva@gentoo.org>
+  system-config-printer-common-1.2.2.ebuild:
+  Fixed build failure, bug 320269, thank Emmanuel Andry for report.
+
+*system-config-printer-common-1.2.2 (17 May 2010)
+
+  17 May 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  -system-config-printer-common-1.1.18-r2.ebuild,
+  -files/system-config-printer-common-1.1.18-split.patch,
+  +system-config-printer-common-1.2.2.ebuild,
+  +files/system-config-printer-common-1.2.2-split.patch:
+  Version bump, remove old, bug 319989
+
+  31 Mar 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  system-config-printer-common-1.1.13.ebuild,
+  system-config-printer-common-1.1.18-r2.ebuild:
+  Restricting tests, bug 284005
+
+*system-config-printer-common-1.1.18-r2 (27 Mar 2010)
+
+  27 Mar 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  -system-config-printer-common-1.1.18-r1.ebuild,
+  +system-config-printer-common-1.1.18-r2.ebuild:
+  Hardcode python interpreter to python-2 in .py files where needed
+
+  27 Mar 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  system-config-printer-common-1.1.18-r1.ebuild:
+  Byte compile cupshelpers only
+
+*system-config-printer-common-1.1.18-r1 (27 Mar 2010)
+
+  27 Mar 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  -system-config-printer-common-1.1.18.ebuild,
+  +system-config-printer-common-1.1.18-r1.ebuild:
+  Depend on python-2, explicitly compile bytecode in
+  /usr/share/system-config-printer, patch by Arfrever
+
+*system-config-printer-common-1.1.18 (11 Mar 2010)
+
+  11 Mar 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  -system-config-printer-common-1.1.16.ebuild,
+  -files/system-config-printer-common-1.1.16-split.patch,
+  +system-config-printer-common-1.1.18.ebuild,
+  +files/system-config-printer-common-1.1.18-split.patch:
+  Version bump, remove old
+
+  11 Mar 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  -system-config-printer-common-1.1.8.ebuild,
+  -files/system-config-printer-common-1.1.8-split.patch,
+  -system-config-printer-common-1.1.12.ebuild,
+  -files/system-config-printer-common-1.1.12-split.patch:
+  Removed old versions
+
+*system-config-printer-common-1.1.16 (08 Feb 2010)
+
+  08 Feb 2010; Alexey Shvetsov <alexxy@gentoo.org>
+  +system-config-printer-common-1.1.16.ebuild,
+  +files/system-config-printer-common-1.1.16-split.patch:
+  Version bump
+
+  27 Dec 2009; Raúl Porcel <armin76@gentoo.org>
+  system-config-printer-common-1.1.13.ebuild:
+  alpha/ia64/sparc stable
+
+  30 Nov 2009; Joseph Jezak <josejx@gentoo.org>
+  system-config-printer-common-1.1.13.ebuild:
+  Marked ppc/ppc64 stable for bug #292455.
+
+  29 Nov 2009; Raúl Porcel <armin76@gentoo.org>
+  system-config-printer-common-1.1.13.ebuild:
+  Add ~sparc
+
+  09 Nov 2009; Jeroen Roovers <jer@gentoo.org>
+  system-config-printer-common-1.1.12.ebuild,
+  system-config-printer-common-1.1.13.ebuild:
+  Marked ~hppa (bug #280312).
+
+  08 Nov 2009; Joseph Jezak <josejx@gentoo.org>
+  system-config-printer-common-1.1.13.ebuild:
+  Marked ~ppc/~ppc64 for bug #280312.
+
+*system-config-printer-common-1.1.13 (14 Oct 2009)
+
+  14 Oct 2009; Jonathan Callen <abcd@gentoo.org>
+  +system-config-printer-common-1.1.13.ebuild,
+  +files/system-config-printer-common-1.1.13-split.patch:
+  Version bump
+
+  12 Sep 2009; Raúl Porcel <armin76@gentoo.org>
+  system-config-printer-common-1.1.8.ebuild,
+  system-config-printer-common-1.1.12.ebuild:
+  Add ~alpha/~ia64 wrt #280312
+
+*system-config-printer-common-1.1.12 (01 Sep 2009)
+
+  01 Sep 2009; Theo Chatzimichos <tampakrap@gentoo.org>
+  +system-config-printer-common-1.1.12.ebuild,
+  +files/system-config-printer-common-1.1.12-split.patch:
+  Version bump
+
+*system-config-printer-common-1.1.8 (04 Aug 2009)
+
+  04 Aug 2009; Alex Alexander <wired@gentoo.org>
+  +system-config-printer-common-1.1.8.ebuild,
+  +files/system-config-printer-common-1.1.8-split.patch, +metadata.xml:
+  new ebuild from kde-testing overlay
+

@@ -1,0 +1,56 @@
+# ChangeLog for sci-biology/abyss
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-biology/abyss/ChangeLog,v 1.10 2011/04/28 15:01:05 jlec Exp $
+
+  28 Apr 2011; Justin Lecher <jlec@gentoo.org> abyss-1.2.3.ebuild,
+  abyss-1.2.7.ebuild:
+  Added openmp USE
+
+*abyss-1.2.7 (28 Apr 2011)
+
+  28 Apr 2011; Kacper Kowalik <xarthisius@gentoo.org> -abyss-1.2.0.ebuild,
+  +abyss-1.2.7.ebuild:
+  Version bump. Remove -Werror wrt #365195 by Diego Elio Pettenò
+  <flameeyes@gentoo.org>. Fix doc paths. Drop old.
+
+  11 Feb 2011; Markos Chandras <hwoarang@gentoo.org> abyss-1.2.3.ebuild:
+  Stable on amd64 wrt bug #335370
+
+  07 Feb 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> abyss-1.2.3.ebuild:
+  x86 stable wrt bug #353570
+
+*abyss-1.2.3 (26 Sep 2010)
+
+  26 Sep 2010; Andrey Kislyuk <weaver@gentoo.org> +abyss-1.2.3.ebuild:
+  Version bump
+
+*abyss-1.2.0 (23 Jun 2010)
+
+  23 Jun 2010; Andrey Kislyuk <weaver@gentoo.org> -abyss-1.1.2.ebuild,
+  +abyss-1.2.0.ebuild:
+  Version bump
+
+*abyss-1.1.2 (26 Mar 2010)
+
+  26 Mar 2010; Andrey Kislyuk <weaver@gentoo.org> -abyss-1.1.1.ebuild,
+  +abyss-1.1.2.ebuild:
+  Version bump
+
+*abyss-1.1.1 (26 Jan 2010)
+
+  26 Jan 2010; Andrey Kislyuk <weaver@gentoo.org> -abyss-1.1.0.ebuild,
+  +abyss-1.1.1.ebuild:
+  Version bump
+
+*abyss-1.1.0 (04 Jan 2010)
+
+  04 Jan 2010; Andrey Kislyuk <weaver@gentoo.org> -abyss-1.0.16.ebuild,
+  +abyss-1.1.0.ebuild:
+  Version bump
+
+*abyss-1.0.16 (24 Nov 2009)
+
+  24 Nov 2009; Andrey Kislyuk <weaver@gentoo.org> +metadata.xml,
+  +abyss-1.0.16.ebuild:
+  New package, ebuild written by me
+

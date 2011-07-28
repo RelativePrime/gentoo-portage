@@ -1,0 +1,37 @@
+# ChangeLog for dev-tcltk/tablelist
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-tcltk/tablelist/ChangeLog,v 1.8 2011/07/06 11:59:47 jlec Exp $
+
+*tablelist-5.3 (06 Jul 2011)
+
+  06 Jul 2011; Justin Lecher <jlec@gentoo.org> +tablelist-5.3.ebuild,
+  metadata.xml:
+  Version Bump, Eapi bump
+
+  16 Jan 2011; Thomas Kahle <tomka@gentoo.org> tablelist-5.2.ebuild:
+  x86 stable per bug 351747
+
+  16 Jan 2011; Kacper Kowalik <xarthisius@gentoo.org> tablelist-5.2.ebuild:
+  marked ~ppc wrt #303931
+
+  15 Jan 2011; Markos Chandras <hwoarang@gentoo.org> tablelist-5.2.ebuild:
+  Stable on amd64 wrt bug #351747
+
+  15 Jan 2011; Justin Lecher <jlec@gentoo.org> tablelist-5.2.ebuild:
+  Keyworded for ~-linux, tested by me
+
+  15 Jan 2011; Justin Lecher <jlec@gentoo.org> -tablelist-4.12.ebuild,
+  tablelist-5.2.ebuild:
+  Removed old
+
+*tablelist-5.2 (23 Oct 2010)
+
+  23 Oct 2010; Justin Lecher <jlec@gentoo.org> +tablelist-5.2.ebuild:
+  Version Bump
+
+*tablelist-4.12 (06 Feb 2010)
+
+  06 Feb 2010; Justin Lecher (jlec) <jlec@gentoo.org>
+  +tablelist-4.12.ebuild, +metadata.xml:
+  Initial commit
+

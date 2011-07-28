@@ -1,0 +1,95 @@
+# ChangeLog for dev-python/argparse
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/argparse/ChangeLog,v 1.27 2011/06/26 08:39:38 naota Exp $
+
+  26 Jun 2011; Naohiro Aota <naota@gentoo.org> argparse-1.2.1.ebuild:
+  Add ~x86-fbsd, bug #346005
+
+  24 Jun 2011; Raúl Porcel <armin76@gentoo.org> argparse-1.2.1.ebuild:
+  m68k/s390/sh stable
+
+  23 Jun 2011; Markos Chandras <hwoarang@gentoo.org> -argparse-1.1.ebuild:
+  Remove old ebuilds. Requested by Arfrever
+
+  23 Jun 2011; Brent Baude <ranger@gentoo.org> argparse-1.2.1.ebuild:
+  Marking argparse-1.2.1 ppc for bug 364727
+
+  29 May 2011; Raúl Porcel <armin76@gentoo.org> argparse-1.2.1.ebuild:
+  alpha/ia64/sparc stable wrt #364727
+
+  23 May 2011; Thomas Kahle <tomka@gentoo.org> argparse-1.2.1.ebuild:
+  x86 stable per bug 364727
+
+  17 May 2011; Jeroen Roovers <jer@gentoo.org> argparse-1.2.1.ebuild:
+  Stable for HPPA (bug #364727).
+
+  15 May 2011; Markus Meier <maekke@gentoo.org> argparse-1.2.1.ebuild:
+  arm stable, bug #364727
+
+  29 Apr 2011; Samuli Suominen <ssuominen@gentoo.org> argparse-1.2.1.ebuild:
+  ppc64 stable wrt #364727
+
+  28 Apr 2011; Markos Chandras <hwoarang@gentoo.org> argparse-1.2.1.ebuild:
+  Stable on amd64 wrt bug #364727
+
+  04 Apr 2011; Maxim (maksbotan) <kolmax94@gmail.com> argparse-1.2.1.ebuild:
+  Added dev-python/setuptools to DEPEND, fixes bug #361901
+
+*argparse-1.2.1 (03 Apr 2011)
+
+  03 Apr 2011; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +argparse-1.2.1.ebuild:
+  Version bump.
+
+  13 Feb 2011; Fabian Groffen <grobian@gentoo.org> argparse-1.1.ebuild:
+  Marked ~sparc64-solaris
+
+  04 Dec 2010; Fabian Groffen <grobian@gentoo.org> argparse-1.1.ebuild:
+  Marked ~m68k-mint, bug #347655
+
+  30 Sep 2010; Brent Baude <ranger@gentoo.org> argparse-1.1.ebuild:
+  keyworded ~arch for ppc64, bug 330569
+
+  29 Sep 2010; Brent Baude <ranger@gentoo.org> argparse-1.1.ebuild:
+  Marking argparse-1.1 ~ppc for bug 330569
+
+  24 Sep 2010; Mart Raudsepp <leio@gentoo.org> argparse-1.1.ebuild:
+  Add ~mips wrt #330569
+
+  12 Sep 2010; Raúl Porcel <armin76@gentoo.org> argparse-1.1.ebuild:
+  Add ~alpha/~arm/~ia64/~sparc wrt #330569
+
+  10 Aug 2010; Jeroen Roovers <jer@gentoo.org> argparse-1.1.ebuild:
+  Marked ~hppa (bug #330569).
+
+  02 Aug 2010; Christian Faulhammer <fauli@gentoo.org> argparse-1.1.ebuild:
+  add Prefix keywords for bug 330569
+
+  22 Apr 2010; Dirkjan Ochtman <djc@gentoo.org> argparse-1.1.ebuild:
+  amd64 stable, bug 313141
+
+  13 Apr 2010; Christian Faulhammer <fauli@gentoo.org> argparse-1.1.ebuild:
+  stable x86, bug 313141
+
+  15 Mar 2010; Sebastian Pipping <sping@gentoo.org> argparse-1.0.1.ebuild,
+  argparse-1.1.ebuild:
+  Add app-arch/unzip to build deps (bug #309375)
+
+*argparse-1.1 (01 Mar 2010)
+
+  01 Mar 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +argparse-1.1.ebuild:
+  Version bump.
+
+  02 Dec 2009; Markus Meier <maekke@gentoo.org> argparse-1.0.1.ebuild:
+  amd64/x86 stable, bug #295222
+
+  04 Nov 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  argparse-1.0.1.ebuild:
+  Define src_test(). Update HOMEPAGE. Support Python 3.
+
+*argparse-1.0.1 (20 Oct 2009)
+
+  20 Oct 2009; <djc@gentoo.org> +argparse-1.0.1.ebuild, +metadata.xml:
+  Initial version of argparse (1.0.1).
+

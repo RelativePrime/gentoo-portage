@@ -1,0 +1,28 @@
+# ChangeLog for dev-ruby/memcache-client
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/memcache-client/ChangeLog,v 1.6 2011/07/24 09:34:54 xarthisius Exp $
+
+  24 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org>
+  memcache-client-1.8.5.ebuild:
+  Marked ~ppc/~ppc64 wrt #351835
+
+  24 Jul 2011; Hans de Graaff <graaff@gentoo.org> memcache-client-1.8.5.ebuild:
+  Add missing flexmock dependency, reported by xarthisius.
+
+  13 Feb 2011; Thomas Kahle <tomka@gentoo.org> memcache-client-1.8.5.ebuild:
+  keyworded ~x86 per bug 351835
+
+  27 Dec 2010; Fabian Groffen <grobian@gentoo.org>
+  memcache-client-1.8.5.ebuild:
+  Marked ~x64-solaris
+
+  04 Dec 2010; Fabian Groffen <grobian@gentoo.org>
+  memcache-client-1.8.5.ebuild:
+  Added Prefix keywords
+
+*memcache-client-1.8.5 (28 Nov 2010)
+
+  28 Nov 2010; Hans de Graaff <graaff@gentoo.org>
+  +memcache-client-1.8.5.ebuild, +metadata.xml:
+  Initial import. Dependency for Rails 3.
+

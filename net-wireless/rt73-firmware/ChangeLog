@@ -1,0 +1,23 @@
+# ChangeLog for net-wireless/rt73-firmware
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/rt73-firmware/ChangeLog,v 1.4 2009/11/09 13:54:36 maekke Exp $
+
+  09 Nov 2009; Markus Meier <maekke@gentoo.org> rt73-firmware-1.8-r1.ebuild:
+  amd64/x86 stable, bug #288776
+
+*rt73-firmware-1.8-r1 (12 Oct 2009)
+
+  12 Oct 2009; Robin H. Johnson <robbat2@gentoo.org>
+  +rt73-firmware-1.8-r1.ebuild:
+  Per Trustees meeting 2009/10/11, make certain we comply expressly with the
+  license on firmware so we can redistribute it on Gentoo media.
+
+  14 Mar 2009; Robert Buchholz <rbu@gentoo.org> rt73-firmware-1.8.ebuild:
+  Add DEPEND on app-arch/unzip (bug #262330 by Jonathan Heaney)
+
+*rt73-firmware-1.8 (11 Mar 2009)
+
+  11 Mar 2009; Robert Buchholz <rbu@gentoo.org> +metadata.xml,
+  +rt73-firmware-1.8.ebuild:
+  Ebuild for rt73usb firmware, by Davide Pesavento in bug 204314
+

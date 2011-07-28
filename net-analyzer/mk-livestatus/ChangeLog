@@ -1,0 +1,19 @@
+# ChangeLog for net-analyzer/mk-livestatus
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/mk-livestatus/ChangeLog,v 1.3 2011/04/27 13:50:15 idl0r Exp $
+
+*mk-livestatus-1.1.10_p1 (27 Apr 2011)
+
+  27 Apr 2011; Christian Ruppert <idl0r@gentoo.org> mk-livestatus-1.1.8.ebuild,
+  +mk-livestatus-1.1.10_p1.ebuild:
+  Version bump to 1.1.10_p1.
+
+  11 Mar 2011; Torsten Veller <tove@gentoo.org> mk-livestatus-1.1.8.ebuild:
+  Change dependency: Thread-Queue is a core module
+
+*mk-livestatus-1.1.8 (30 Jan 2011)
+
+  30 Jan 2011; Christian Ruppert <idl0r@gentoo.org>
+  +mk-livestatus-1.1.8.ebuild, +metadata.xml:
+  Initial commit for net-analyzer/mk-livestatus
+

@@ -1,0 +1,50 @@
+# ChangeLog for www-apache/modsecurity-crs
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apache/modsecurity-crs/ChangeLog,v 1.9 2011/04/19 05:19:45 flameeyes Exp $
+
+  19 Apr 2011; Diego E. Pettenò <flameeyes@gentoo.org>
+  -modsecurity-crs-2.0.8.ebuild, -modsecurity-crs-2.0.10.ebuild,
+  -modsecurity-crs-2.1.1.ebuild:
+  Remove old versions.
+
+*modsecurity-crs-2.1.2 (23 Mar 2011)
+
+  23 Mar 2011; Diego E. Pettenò <flameeyes@gentoo.org>
+  +modsecurity-crs-2.1.2.ebuild:
+  Version bump and use the new layout for rules.
+
+  26 Feb 2011; Kacper Kowalik <xarthisius@gentoo.org>
+  modsecurity-crs-2.1.1.ebuild:
+  Marked ~ppc wrt #338548
+
+*modsecurity-crs-2.1.1 (31 Dec 2010)
+
+  31 Dec 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  +modsecurity-crs-2.1.1.ebuild:
+  Version bump, this version introduces experimental rules as well.
+
+  03 Dec 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  modsecurity-crs-2.0.10.ebuild:
+  Add log about the recent changes in 2.0.9+ about blocking/scoring.
+
+*modsecurity-crs-2.0.10 (01 Dec 2010)
+
+  01 Dec 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  +modsecurity-crs-2.0.10.ebuild:
+  Version bump, the phpids is optional upstream now.
+
+  24 Oct 2010; Raúl Porcel <armin76@gentoo.org>
+  modsecurity-crs-2.0.8.ebuild:
+  Add ~sparc wrt #338548
+
+  13 Oct 2010; Markus Meier <maekke@gentoo.org>
+  modsecurity-crs-2.0.8.ebuild:
+  add ~x86, bug #338548
+
+*modsecurity-crs-2.0.8 (24 Sep 2010)
+
+  24 Sep 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  +modsecurity-crs-2.0.8.ebuild, +metadata.xml:
+  Add an ebuild for the ModSecurity Core Rule Set split out of mod_security
+  itself.
+

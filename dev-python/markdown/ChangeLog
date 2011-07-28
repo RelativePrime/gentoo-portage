@@ -1,0 +1,72 @@
+# ChangeLog for dev-python/markdown
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/markdown/ChangeLog,v 1.17 2011/07/07 21:10:53 neurogeek Exp $
+
+  07 Jul 2011; Jesus Rivero <neurogeek@gentoo.org> markdown-2.0.3.ebuild:
+  Added doc USE flag. Fixed dodoc on dir wrt bug #367689
+
+  19 Sep 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -markdown-2.0.2.ebuild:
+  Delete.
+
+  19 Sep 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  markdown-2.0.3.ebuild:
+  Update EAPI. Fix dependencies. Use PyPI mirrors.
+
+  24 Jun 2010; Pacho Ramos <pacho@gentoo.org> markdown-2.0.3.ebuild:
+  stable amd64, bug 310261
+
+  18 Nov 2009; Mounir Lamouri <volkmar@gentoo.org> markdown-2.0.3.ebuild:
+  Stable for ppc, bug 292316
+
+  14 Nov 2009; Raúl Porcel <armin76@gentoo.org> markdown-2.0.3.ebuild:
+  ia64/sparc/x86 stable wrt #288165
+
+  08 Nov 2009; Tobias Klausmann <klausman@gentoo.org> markdown-2.0.3.ebuild:
+  Stable on alpha, bug #288165
+
+  03 Nov 2009; Raúl Porcel <armin76@gentoo.org> markdown-2.0.2.ebuild,
+  markdown-2.0.3.ebuild:
+  Add ~ia64/~sparc wrt #285153
+
+*markdown-2.0.3 (08 Oct 2009)
+
+  08 Oct 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -markdown-2.0.1.ebuild, +markdown-2.0.3.ebuild:
+  Version bump.
+
+  07 Oct 2009; Mounir Lamouri <volkmar@gentoo.org> markdown-2.0.2.ebuild:
+  Keywording for ppc, bug 285153
+
+  06 Oct 2009; Fabian Groffen <grobian@gentoo.org> markdown-2.0.2.ebuild:
+  Marked ~ppc-macos and ~x86-macos, bug #287632
+
+  03 Oct 2009; Tobias Klausmann <klausman@gentoo.org> markdown-2.0.2.ebuild:
+  Keyworded on alpha, bug #285153
+
+  01 Oct 2009; Tobias Klausmann <klausman@gentoo.org> markdown-2.0.1.ebuild:
+  Keyworded on alpha, bug #285153
+
+*markdown-2.0.2 (28 Sep 2009)
+
+  28 Sep 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +markdown-2.0.2.ebuild:
+  Version bump.
+
+  16 Sep 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -markdown-2.0.ebuild:
+  Delete older ebuild.
+
+*markdown-2.0.1 (04 Aug 2009)
+
+  04 Aug 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +markdown-2.0.1.ebuild:
+  Version bump (bug #279946). Set SUPPORT_PYTHON_ABIS.
+
+*markdown-2.0 (25 Apr 2009)
+
+  25 Apr 2009; Patrick Lauer <patrick@gentoo.org> +metadata.xml,
+  +markdown-2.0.ebuild:
+  Initial import. Fixes #156999. Thanks to Naoaki Shindo, Torsten Rehn and
+  Priit Laes for working on the ebuild.
+

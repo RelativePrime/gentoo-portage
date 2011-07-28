@@ -1,0 +1,59 @@
+# ChangeLog for dev-games/mercator
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-games/mercator/ChangeLog,v 1.15 2011/01/15 15:22:53 maekke Exp $
+
+  15 Jan 2011; Markus Meier <maekke@gentoo.org> mercator-0.2.9.ebuild:
+  x86 stable, bug #350885
+
+  07 Jan 2011; Markos Chandras <hwoarang@gentoo.org> mercator-0.2.9.ebuild:
+  Stable on amd64 wrt bug #350885
+
+*mercator-0.2.9 (16 Nov 2010)
+
+  16 Nov 2010; Alfredo Tupone <tupone@gentoo.org> +mercator-0.2.9.ebuild:
+  Version bump to 0.2.9
+
+  05 Oct 2010; Markus Meier <maekke@gentoo.org> mercator-0.2.8.ebuild:
+  amd64/x86 stable, bug #339192
+
+*mercator-0.2.8 (31 Aug 2010)
+
+  31 Aug 2010; Michael Sterrett <mr_bones_@gentoo.org>
+  +mercator-0.2.8.ebuild:
+  version bump
+
+  25 Oct 2009; Markus Meier <maekke@gentoo.org> mercator-0.2.7.ebuild:
+  amd64/x86 stable, bug #288829
+
+  10 Jun 2009; Alfredo Tupone <tupone@gentoo.org>
+  +files/mercator-0.2.7-gcc44.patch, mercator-0.2.7.ebuild:
+  Fix building with test and gcc-4.4 Bug #273424 by Diego Petteno'
+
+*mercator-0.2.7 (05 Jun 2009)
+
+  05 Jun 2009; Alfredo Tupone <tupone@gentoo.org> +mercator-0.2.7.ebuild:
+  Version bump to 0.2.7
+
+  11 Jan 2009; Markus Meier <maekke@gentoo.org> mercator-0.2.6.ebuild:
+  amd64/x86 stable, bug #254106
+
+*mercator-0.2.6 (19 Nov 2008)
+
+  19 Nov 2008; Tupone Alfredo <tupone@gentoo.org> +mercator-0.2.6.ebuild:
+  Version bump to 0.2.6
+
+  05 Oct 2008; Diego Pettenò <flameeyes@gentoo.org> mercator-0.2.5.ebuild:
+  Fix obvious typo in DEPEND.
+
+  15 Apr 2008; Tupone Alfredo <tupone@gentoo.org>
+  +files/mercator-0.2.5-gcc43.patch, mercator-0.2.5.ebuild:
+  Fix compilation for gcc-4.3 Bug #217626 by Peter Alfredsen
+
+  07 May 2007; Tupone Alfredo <tupone@gentoo.org> mercator-0.2.5.ebuild:
+  Added ~amd64 keyword
+
+*mercator-0.2.5 (01 Feb 2007)
+
+  01 Feb 2007; Tupone Alfredo <tupone@gentoo.org> +metadata.xml, +mercator-0.2.5.ebuild:
+  New ebuild. Fix partially bug #58213 by Boris Smus
+

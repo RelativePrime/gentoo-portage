@@ -1,0 +1,19 @@
+# ChangeLog for games-engines/frobtads
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-engines/frobtads/ChangeLog,v 1.3 2009/10/29 14:41:58 maekke Exp $
+
+  29 Oct 2009; Markus Meier <maekke@gentoo.org> frobtads-0.13.ebuild:
+  amd64/x86 stable, bug #289006
+
+*frobtads-0.13 (08 May 2009)
+
+  08 May 2009; Michael Sterrett <mr_bones_@gentoo.org>
+  +frobtads-0.13.ebuild:
+  version bump (bug #268971)
+
+*frobtads-0.12 (05 Sep 2008)
+
+  05 Sep 2008; Michael Sterrett <mr_bones_@gentoo.org> +metadata.xml,
+  +frobtads-0.12.ebuild:
+  initial commit - ebuild submitted by Nikos Chantziaras via bug #149764
+

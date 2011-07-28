@@ -1,0 +1,26 @@
+# ChangeLog for sci-libs/grib_api
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/grib_api/ChangeLog,v 1.5 2011/06/21 15:18:12 jlec Exp $
+
+  21 Jun 2011; Justin Lecher <jlec@gentoo.org> grib_api-1.9.5-r1.ebuild:
+  Add dependency on virtual/fortran
+
+  21 Jun 2011; Justin Lecher <jlec@gentoo.org> grib_api-1.9.5-r1.ebuild:
+  Added fortran-2.eclass support
+
+  25 Apr 2011; Justin Lecher <jlec@gentoo.org> grib_api-1.9.5-r1.ebuild,
+  +files/grib_api-1.9.5-32bit.patch:
+  _FORTIFY_SOURCE indicates presence of overflow Fix, #351013
+
+*grib_api-1.9.5-r1 (21 Dec 2010)
+
+  21 Dec 2010; Sébastien Fabbro <bicatali@gentoo.org> -grib_api-1.9.5.ebuild,
+  +grib_api-1.9.5-r1.ebuild, files/grib_api-1.9.5-autotools.patch:
+  Fixed a bunch of bad enable/disable assumptions in the configure script
+
+*grib_api-1.9.5 (30 Nov 2010)
+
+  30 Nov 2010; Sébastien Fabbro <bicatali@gentoo.org> +grib_api-1.9.5.ebuild,
+  +files/grib_api-1.9.5-autotools.patch, +metadata.xml:
+  Initial import
+

@@ -1,0 +1,33 @@
+# ChangeLog for media-gfx/exact-image
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/exact-image/ChangeLog,v 1.6 2010/11/08 22:36:11 maekke Exp $
+
+  08 Nov 2010; Markus Meier <maekke@gentoo.org> exact-image-0.8.1.ebuild:
+  change jpeg dep to virtual/jpeg
+
+  23 Oct 2010; Markos Chandras <hwoarang@gentoo.org> metadata.xml:
+  Remove myself from metadata
+
+  08 Jul 2010; Markos Chandras <hwoarang@gentoo.org>
+  exact-image-0.8.1.ebuild:
+  Fixed hardcoded libdir and python paths leading to broken installation wrt
+  bug #327171
+
+*exact-image-0.8.1 (21 Jun 2010)
+
+  21 Jun 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +exact-image-0.8.1.ebuild:
+  Version bump wrt #319411. Fix automagic libpng and zlib depend wrt
+  #319409. Restrict lcms depend to old version.
+
+  12 May 2010; Samuli Suominen <ssuominen@gentoo.org>
+  exact-image-0.7.5.ebuild, +files/exact-image-0.7.5-libpng14.patch:
+  Fix building with libpng14 wrt #319399 by Helmut Jarausch.
+
+*exact-image-0.7.5 (07 Jan 2010)
+
+  07 Jan 2010; <hwoarang@gentoo.org> +exact-image-0.7.5.ebuild,
+  +metadata.xml:
+  Initial commit of exact-image application. Fixes bug #249032. Ebuild taken
+  from sunrise overlay
+

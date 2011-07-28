@@ -1,0 +1,82 @@
+# ChangeLog for dev-cpp/gstreamermm
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-cpp/gstreamermm/ChangeLog,v 1.16 2011/04/29 19:02:40 nirbheek Exp $
+
+*gstreamermm-0.10.9.1 (29 Apr 2011)
+
+  29 Apr 2011; Nirbheek Chauhan <nirbheek@gentoo.org>
+  +gstreamermm-0.10.9.1.ebuild:
+  Bump to 0.10.9.1, cleanup doc-related stuff, use eclass functions for
+  everything
+
+*gstreamermm-0.10.9 (26 Apr 2011)
+
+  26 Apr 2011; Gilles Dartiguelongue <eva@gentoo.org>
+  +gstreamermm-0.10.9.ebuild:
+  Version bump.
+
+  21 Mar 2011; Nirbheek Chauhan <nirbheek@gentoo.org>
+  gstreamermm-0.10.8.ebuild:
+  Fix documentation install breakage with glibmm-2.27.97
+
+*gstreamermm-0.10.8 (23 Jan 2011)
+
+  23 Jan 2011; Gilles Dartiguelongue <eva@gentoo.org>
+  +gstreamermm-0.10.8.ebuild:
+  Version bump. gcc-4.5 build fixes.
+
+  26 Sep 2010; Gilles Dartiguelongue <eva@gentoo.org>
+  -gstreamermm-0.10.6.ebuild, -gstreamermm-0.10.7.ebuild,
+  gstreamermm-0.10.7.3.ebuild:
+  Fix dependencies for test suite, bug #320109. Drop old revisions.
+
+  11 Sep 2010; Joseph Jezak <josejx@gentoo.org> gstreamermm-0.10.7.3.ebuild:
+  Fixed keyword (ppc->~ppc).
+
+  11 Sep 2010; Joseph Jezak <josejx@gentoo.org> gstreamermm-0.10.7.3.ebuild:
+  Marked ppc for bug #324077.
+
+  06 Aug 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  gstreamermm-0.10.7.3.ebuild, +files/gstreamermm-0.10.7.3+gcc-4.5.patch:
+  Add patch to fix build with GCC 4.5 (bug #328539).
+
+  01 Aug 2010; Christian Faulhammer <fauli@gentoo.org>
+  gstreamermm-0.10.7.3.ebuild:
+  x86 stable, bug 324077
+
+  31 Jul 2010; Pacho Ramos <pacho@gentoo.org> gstreamermm-0.10.7.3.ebuild:
+  amd64 stable, bug 324077
+
+*gstreamermm-0.10.7.3 (03 Jun 2010)
+
+  03 Jun 2010; Gilles Dartiguelongue <eva@gentoo.org>
+  +gstreamermm-0.10.7.3.ebuild:
+  Version bump (with gcc 4.5 fixes). Install documentation in one place,
+  fixes bug #320111.
+
+  14 May 2010; Samuli Suominen <ssuominen@gentoo.org>
+  gstreamermm-0.10.7.ebuild, +files/gstreamermm-0.10.7-gcc45.patch:
+  Fix building with GCC 4.5 wrt #319375 by Kacper Kowalik.
+
+*gstreamermm-0.10.7 (18 Apr 2010)
+
+  18 Apr 2010; Gilles Dartiguelongue <eva@gentoo.org>
+  +gstreamermm-0.10.7.ebuild:
+  Version bump.
+
+  13 Mar 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  gstreamermm-0.10.6.ebuild:
+  Add ~x86 keyword wrt bug #308893
+
+  11 Mar 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  gstreamermm-0.10.6.ebuild:
+  Increase minimum required version for gstreamer and especially
+  gst-plugins-good, thanks to Nikoli in bug #308935.
+
+*gstreamermm-0.10.6 (10 Mar 2010)
+
+  10 Mar 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  +gstreamermm-0.10.6.ebuild, +metadata.xml:
+  Initial import of the C++ bindings for gstreamer. Thanks to the guys who
+  contributed the ebuilds in bug #211417.
+

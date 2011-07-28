@@ -1,0 +1,39 @@
+# ChangeLog for media-tv/v4l-utils
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-tv/v4l-utils/ChangeLog,v 1.9 2011/06/10 09:37:49 ssuominen Exp $
+
+*v4l-utils-0.8.4 (10 Jun 2011)
+
+  10 Jun 2011; Samuli Suominen <ssuominen@gentoo.org> +v4l-utils-0.8.4.ebuild:
+  Version bump.
+
+  28 Mar 2011; Samuli Suominen <ssuominen@gentoo.org> v4l-utils-0.8.3.ebuild:
+  Install 70-infrared.rules to /lib/udev instead of /etc/udev.
+
+  26 Feb 2011; Kacper Kowalik <xarthisius@gentoo.org>
+  v4l-utils-0.8.3.ebuild:
+  Marked ~ppc wrt #344321
+
+*v4l-utils-0.8.3 (18 Feb 2011)
+
+  18 Feb 2011; Alexis Ballier <aballier@gentoo.org> +v4l-utils-0.8.3.ebuild:
+  version bump, bug #355287
+
+  09 Nov 2010; Markus Meier <maekke@gentoo.org> v4l-utils-0.8.1.ebuild:
+  x86 stable, bug #344327
+
+  07 Nov 2010; Markos Chandras <hwoarang@gentoo.org> v4l-utils-0.8.1.ebuild:
+  Stable on amd64 wrt bug #344327
+
+*v4l-utils-0.8.1 (23 Oct 2010)
+
+  23 Oct 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +v4l-utils-0.8.1.ebuild, +files/v4l-utils-0.8.1.patch:
+  Version bump wrt #332533 by Alexandre Rostovtsev.
+
+*v4l-utils-0.7.91 (10 Jul 2010)
+
+  10 Jul 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +v4l-utils-0.7.91.ebuild, +files/v4l-utils-0.7.91-respect_make.patch:
+  Initial commit of tools from media-libs/libv4l package.
+

@@ -1,0 +1,83 @@
+# ChangeLog for dev-ruby/yard
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/yard/ChangeLog,v 1.18 2011/06/16 06:19:02 graaff Exp $
+
+*yard-0.7.2 (16 Jun 2011)
+
+  16 Jun 2011; Hans de Graaff <graaff@gentoo.org> +yard-0.7.2.ebuild:
+  Version bump.
+
+*yard-0.7.1 (05 Jun 2011)
+
+  05 Jun 2011; Hans de Graaff <graaff@gentoo.org> +yard-0.7.1.ebuild:
+  Version bump. Add jruby support.
+
+  18 May 2011; Hans de Graaff <graaff@gentoo.org> -yard-0.6.1.ebuild,
+  -yard-0.6.4.ebuild, -yard-0.6.5.ebuild:
+  Remove old versions.
+
+*yard-0.6.8 (15 Apr 2011)
+
+  15 Apr 2011; Hans de Graaff <graaff@gentoo.org> +yard-0.6.8.ebuild:
+  Version bump.
+
+*yard-0.6.5 (14 Mar 2011)
+
+  14 Mar 2011; Hans de Graaff <graaff@gentoo.org> +yard-0.6.5.ebuild:
+  Version bump.
+
+  21 Feb 2011; Hans de Graaff <graaff@gentoo.org> yard-0.6.4.ebuild:
+  Documentation generation requires at least one markdown provider.
+
+*yard-0.6.4 (20 Feb 2011)
+
+  20 Feb 2011; Hans de Graaff <graaff@gentoo.org> +yard-0.6.4.ebuild,
+  +files/yard-0.6.4-config-file-feature.patch, +files/yard-0.6.4-yaml.patch:
+  Version bump.
+
+  09 Oct 2010; Hans de Graaff <graaff@gentoo.org> -yard-0.5.8.ebuild:
+  Remove old version.
+
+*yard-0.6.1 (03 Oct 2010)
+
+  03 Oct 2010; Hans de Graaff <graaff@gentoo.org> +yard-0.6.1.ebuild:
+  Version bump. Add ree18 support.
+
+  11 Jul 2010; Hans de Graaff <graaff@gentoo.org> -yard-0.5.2.ebuild,
+  -yard-0.5.3.ebuild, -yard-0.5.5.ebuild:
+  Remove old versions.
+
+*yard-0.5.8 (23 Jun 2010)
+
+  23 Jun 2010; Hans de Graaff <graaff@gentoo.org> +yard-0.5.8.ebuild:
+  Version bump.
+
+*yard-0.5.5 (01 Jun 2010)
+
+  01 Jun 2010; Hans de Graaff <graaff@gentoo.org> +yard-0.5.5.ebuild:
+  Version bump.
+
+  18 Jan 2010; Brent Baude <ranger@gentoo.org> yard-0.5.3.ebuild:
+  Marking yard-0.5.3 ~ppc for bug 297718
+
+  14 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org> yard-0.5.3.ebuild:
+  Tests require redcloth present, thanks to Brent Baude (ranger) for
+  reporting in bug #297718.
+
+  13 Jan 2010; Brent Baude <ranger@gentoo.org> yard-0.5.3.ebuild:
+  Marking yard-0.5.3 ~ppc64 for bug 297718
+
+*yard-0.5.3 (12 Jan 2010)
+
+  12 Jan 2010; Hans de Graaff <graaff@gentoo.org> +yard-0.5.3.ebuild:
+  Version bump.
+
+  04 Jan 2010; Markus Meier <maekke@gentoo.org> yard-0.5.2.ebuild:
+  add ~x86, bug #297718
+
+*yard-0.5.2 (20 Dec 2009)
+
+  20 Dec 2009; Diego E. Pettenò <flameeyes@gentoo.org> +yard-0.5.2.ebuild,
+  +metadata.xml:
+  Initial import of yard, needed for haml's documentation generation.
+

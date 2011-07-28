@@ -1,0 +1,149 @@
+# ChangeLog for mail-filter/opendkim
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/mail-filter/opendkim/ChangeLog,v 1.25 2011/07/20 14:28:05 pacho Exp $
+
+  20 Jul 2011; Pacho Ramos <pacho@gentoo.org> metadata.xml:
+  Drop maintainer due retirement, bug #34534
+
+  01 Jul 2011; Eray Aslan <eras@gentoo.org> opendkim-2.4.0.ebuild,
+  opendkim-2.4.1.ebuild:
+  fix statsext failure in configure - bug #373643
+
+*opendkim-2.4.1 (29 Jun 2011)
+
+  29 Jun 2011; Eray Aslan <eras@gentoo.org> +opendkim-2.4.1.ebuild:
+  version bump
+
+*opendkim-2.4.0 (27 Jun 2011)
+
+  27 Jun 2011; Eray Aslan <eras@gentoo.org> +opendkim-2.4.0.ebuild,
+  +files/opendkim-2.4.0-ipv6.patch, +files/opendkim-2.4.0-oversign.patch,
+  +files/opendkim.init.r2, metadata.xml:
+  Version bump - bug #370407. Herd from no-herd to net-mail
+
+*opendkim-2.2.2 (30 Nov 2010)
+
+  30 Nov 2010; Daniel Black <dragonheart@gentoo.org> +opendkim-2.2.2.ebuild:
+  version bump
+
+  18 Jul 2010; Markos Chandras <hwoarang@gentoo.org> opendkim-2.0.4.ebuild:
+  Stable on amd64 wrt bug #317981
+
+  18 Jul 2010; Christian Faulhammer <fauli@gentoo.org>
+  opendkim-2.0.4.ebuild:
+  stable x86, bug 317981
+
+*opendkim-2.1.3 (16 Jul 2010)
+
+  16 Jul 2010; Daniel Black <dragonheart@gentoo.org> +opendkim-2.1.3.ebuild:
+  version bump
+
+  15 Jun 2010; Daniel Black <dragonheart@gentoo.org> opendkim-2.0.3.ebuild,
+  opendkim-2.0.4.ebuild, opendkim-2.1.0.ebuild, files/opendkim.init:
+  Pidfile now is in the opendkim.conf file rather than as a command line
+  argument. Command line arguement was removed in 2.1.0. Bug report as per
+  #323245 thanks to Guillaume Castagnino
+
+*opendkim-2.1.0 (07 Jun 2010)
+
+  07 Jun 2010; Daniel Black <dragonheart@gentoo.org> +opendkim-2.1.0.ebuild:
+  version bump
+
+*opendkim-2.0.4 (18 May 2010)
+
+  18 May 2010; Daniel Black <dragonheart@gentoo.org>
+  -opendkim-1.2.2-r1.ebuild, -files/opendkim-1.2.2-repcalc.patch,
+  -opendkim-2.0.0.ebuild, -files/opendkim-2.0.0-lua-ldap.patch,
+  -opendkim-2.0.1.ebuild, -opendkim-2.0.2.ebuild, +opendkim-2.0.4.ebuild:
+  version bump and cleanout
+
+*opendkim-2.0.3 (01 May 2010)
+
+  01 May 2010; Daniel Black <dragonheart@gentoo.org> +opendkim-2.0.3.ebuild:
+  version bump
+
+*opendkim-2.0.2 (25 Apr 2010)
+
+  25 Apr 2010; Daniel Black <dragonheart@gentoo.org> +opendkim-2.0.2.ebuild:
+  version bump
+
+*opendkim-2.0.1 (22 Mar 2010)
+
+  22 Mar 2010; Daniel Black <dragonheart@gentoo.org> -opendkim-1.1.2.ebuild,
+  -files/opendkim-1.1.2-test73.patch, opendkim-1.2.2-r1.ebuild,
+  opendkim-2.0.0.ebuild, +opendkim-2.0.1.ebuild:
+  bug fix release from upstream. License offically changed to BSD-3. Fixed
+  old ones to BSD-4 like they should of been. removed old version
+
+  16 Mar 2010; Daniel Black <dragonheart@gentoo.org>
+  files/opendkim-2.0.0-lua-ldap.patch:
+  fix digest and patch - id tag in patch. bug #308765 thanks to Gary E.
+  Miller
+
+  09 Mar 2010; Daniel Black <dragonheart@gentoo.org> opendkim-2.0.0.ebuild,
+  +files/opendkim-2.0.0-lua-ldap.patch:
+  fix for bug #308171 to enable compulation with USE=ldap,-lua. Thanks to
+  Guillaume Castagnino
+
+*opendkim-2.0.0 (05 Mar 2010)
+
+  05 Mar 2010; Daniel Black <dragonheart@gentoo.org> +opendkim-2.0.0.ebuild,
+  metadata.xml:
+  version bump
+
+  21 Jan 2010; Daniel Black <dragonheart@gentoo.org>
+  files/opendkim-1.2.2-repcalc.patch:
+  remove cvs headers from patch - Thanks Tilman
+
+*opendkim-1.2.2-r1 (21 Jan 2010)
+
+  21 Jan 2010; Daniel Black <dragonheart@gentoo.org> -opendkim-1.2.1.ebuild,
+  -opendkim-1.2.2.ebuild, +opendkim-1.2.2-r1.ebuild,
+  +files/opendkim-1.2.2-repcalc.patch, metadata.xml:
+  fix buffer overflow error as per bug #301499. Thanks Tilman Giese. Thanks
+  Murray for the patch. Added dnssec support.
+
+*opendkim-1.2.2 (20 Jan 2010)
+
+  20 Jan 2010; Daniel Black <dragonheart@gentoo.org> +opendkim-1.2.2.ebuild:
+  version bump
+
+*opendkim-1.2.1 (08 Jan 2010)
+
+  08 Jan 2010; Daniel Black <dragonheart@gentoo.org> -opendkim-1.1.0.ebuild,
+  -files/opendkim-1.1.0-autoconf-automake.patch,
+  -files/opendkim-1.1.0-flockinclude.patch,
+  -files/opendkim-1.1.0-rep-querycache.patch,
+  -files/opendkim-1.1.0-vbr-booliscpp.patch, -opendkim-1.2.0.ebuild,
+  +opendkim-1.2.1.ebuild:
+  remove 1.2.0 - few too many bugs. remove old 1.1.0 version too. Thanks
+  Diego for QA bug 299881. Petteri for bugs 297703 and 297698 related to
+  emerge --config section and 297700 released to a broken statistics
+  function upstream.
+
+*opendkim-1.2.0 (14 Dec 2009)
+
+  14 Dec 2009; Daniel Black <dragonheart@gentoo.org> +opendkim-1.2.0.ebuild,
+  metadata.xml:
+  version bump
+
+*opendkim-1.1.2 (01 Nov 2009)
+
+  01 Nov 2009; Daniel Black <dragonheart@gentoo.org> +opendkim-1.1.2.ebuild,
+  +files/opendkim-1.1.2-test73.patch, metadata.xml:
+  version bump incorporating suggestions from steveb and Eray Aslan in bug
+  #289929
+
+  06 Oct 2009; Daniel Black <dragonheart@gentoo.org> opendkim-1.1.0.ebuild:
+  dependency fix thanks Eray
+
+*opendkim-1.1.0 (06 Oct 2009)
+
+  06 Oct 2009; Daniel Black <dragonheart@gentoo.org> +opendkim-1.1.0.ebuild,
+  +files/opendkim-1.1.0-autoconf-automake.patch,
+  +files/opendkim-1.1.0-flockinclude.patch,
+  +files/opendkim-1.1.0-rep-querycache.patch,
+  +files/opendkim-1.1.0-vbr-booliscpp.patch, +files/opendkim.init,
+  +metadata.xml:
+  initial ebuild by me. Eray Aslan also requested this in bug #282488
+

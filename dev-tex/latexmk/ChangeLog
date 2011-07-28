@@ -1,0 +1,110 @@
+# ChangeLog for dev-tex/latexmk
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-tex/latexmk/ChangeLog,v 1.27 2011/07/27 13:30:56 aballier Exp $
+
+*latexmk-425 (27 Jul 2011)
+
+  27 Jul 2011; Alexis Ballier <aballier@gentoo.org> +latexmk-425.ebuild:
+  version bump
+
+  14 Jun 2011; Matt Turner <mattst88@gentoo.org> latexmk-423a.ebuild:
+  Added ~mips, bug 342513
+
+*latexmk-423a (29 Apr 2011)
+
+  29 Apr 2011; Tim Harder <radhermit@gentoo.org> +latexmk-423a.ebuild:
+  Version bump. Update to EAPI 4.
+
+  27 Feb 2011; Raúl Porcel <armin76@gentoo.org> latexmk-418.ebuild,
+  latexmk-422e.ebuild:
+  Add ~alpha/~ia64/~s390/~sh/~sparc wrt #342513
+
+  20 Feb 2011; Kacper Kowalik <xarthisius@gentoo.org> latexmk-422e.ebuild:
+  Marked ~ppc/~ppc64 wrt #342513
+
+*latexmk-422e (15 Feb 2011)
+
+  15 Feb 2011; Christoph Junghans <ottxor@gentoo.org> +files/completion.bash-2,
+  +latexmk-422e.ebuild:
+  Version bump
+
+  01 Dec 2010; Fabian Groffen <grobian@gentoo.org> latexmk-418.ebuild:
+  Marked ~ppc-macos
+
+  01 Nov 2010; Markus Meier <maekke@gentoo.org> latexmk-418.ebuild:
+  add ~arm, bug #342513
+
+  25 Oct 2010; Jeroen Roovers <jer@gentoo.org> latexmk-418.ebuild:
+  Marked ~hppa (bug #342513).
+
+*latexmk-418 (11 Oct 2010)
+
+  11 Oct 2010; Andreas K. Huettel <dilfridge@gentoo.org>
+  +latexmk-418.ebuild:
+  Version bump
+
+  11 Jun 2010; Alexis Ballier <aballier@gentoo.org> latexmk-416a.ebuild,
+  +files/completion.bash:
+  add bash-completion support by Christoph Junghans <kleiner_otti@gmx.de>,
+  bug #323561
+
+*latexmk-416a (11 Jun 2010)
+
+  11 Jun 2010; Alexis Ballier <aballier@gentoo.org> +latexmk-416a.ebuild:
+  version bump, bug #321731
+
+  11 Jun 2010; Alexis Ballier <aballier@gentoo.org> -latexmk-307a.ebuild,
+  -latexmk-401.ebuild, -latexmk-405.ebuild:
+  remove old
+
+  19 Sep 2009; Markus Meier <maekke@gentoo.org> latexmk-408.ebuild:
+  amd64/x86 stable, bug #281074
+
+*latexmk-408 (06 Aug 2009)
+
+  06 Aug 2009; Alexis Ballier <aballier@gentoo.org> +latexmk-408.ebuild:
+  version bump, by Marco Leogrande <dark.knight.ita@gmail.com>, bug #279564
+
+*latexmk-405 (30 Apr 2009)
+
+  30 Apr 2009; Alexis Ballier <aballier@gentoo.org> +latexmk-405.ebuild:
+  version bump, by Nick Pope <nick+gentoo@nickpope.me.uk>, bug #267420
+
+  26 Oct 2008; Alexis Ballier <aballier@gentoo.org> latexmk-307a.ebuild:
+  quote WORKDIR
+
+*latexmk-401 (26 Oct 2008)
+
+  26 Oct 2008; Alexis Ballier <aballier@gentoo.org> +latexmk-401.ebuild:
+  version bump, bug #239141
+
+  03 Sep 2008; Alexis Ballier <aballier@gentoo.org> latexmk-307a.ebuild:
+  depend on latex-base instead of virtual/tetex
+
+  19 May 2008; Markus Meier <maekke@gentoo.org> latexmk-307a.ebuild:
+  amd64/x86 stable, bug #222471
+
+  15 Jul 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Assigning to tex, as nattfodd is being retired (#108329).
+
+  12 Mar 2007; Alexandre Buisse <nattfodd@gentoo.org> metadata.xml:
+  Replaced text-markup by tex as maintaining herd (text-markup split).
+
+  02 Dec 2006; Steve Dibb <beandog@gentoo.org> latexmk-307a.ebuild:
+  Add ~amd64, bug 133920
+
+  19 Mar 2006; Mark Loeser <halcy0n@gentoo.org> latexmk-307a.ebuild:
+  Add DEPEND on app-arch/unzip
+
+  09 Mar 2006; Martin Ehmsen <ehmsen@gentoo.org> latexmk-307a.ebuild:
+  Removed INSTALL from dodoc, found by QA script.
+
+  28 Nov 2005; Alexandre Buisse <nattfodd@gentoo.org> metadata.xml:
+  Added myself as maintainer, as planned on bug 111324.
+
+*latexmk-307a (18 Nov 2005)
+
+  18 Nov 2005; Sebastian Bergmann <sebastian@gentoo.org> +metadata.xml,
+  +latexmk-307a.ebuild:
+  Initial ebuild, closes bug 111324.
+

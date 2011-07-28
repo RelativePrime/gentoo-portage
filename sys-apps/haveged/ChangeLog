@@ -1,0 +1,22 @@
+# ChangeLog for sys-apps/haveged
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/haveged/ChangeLog,v 1.4 2011/05/17 15:11:41 darkside Exp $
+
+  17 May 2011; Jeremy Olexa <darkside@gentoo.org> haveged-1.1.ebuild:
+  Ebuild Improvements which include using a more robust test suite, bug
+  366641
+
+*haveged-1.1 (11 Apr 2011)
+
+  11 Apr 2011; Robin H. Johnson <robbat2@gentoo.org> +haveged-1.1.ebuild:
+  Bug #363013: version bump.
+
+  08 Apr 2011; Diego E. Pettenò <flameeyes@gentoo.org> files/haveged-init.d:
+  Make the init script provide the entropy service.
+
+*haveged-1.01 (05 Jan 2011)
+
+  05 Jan 2011; Robin H. Johnson <robbat2@gentoo.org> +haveged-1.01.ebuild,
+  +files/haveged-conf.d, +files/haveged-init.d, +metadata.xml:
+  Add another entropy daemon.
+

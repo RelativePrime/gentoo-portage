@@ -1,0 +1,36 @@
+# ChangeLog for app-backup/tarsnap
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-backup/tarsnap/ChangeLog,v 1.6 2011/03/10 19:41:30 rafaelmartins Exp $
+
+*tarsnap-1.0.29 (10 Mar 2011)
+
+  10 Mar 2011; Rafael G. Martins <rafaelmartins@gentoo.org>
+  +tarsnap-1.0.29.ebuild, metadata.xml:
+  Version Bump. Added myself to metadata.xml.
+
+  18 Feb 2011; Alex Legler <a3li@gentoo.org> -tarsnap-1.0.26.ebuild,
+  -tarsnap-1.0.26-r1.ebuild, -tarsnap-1.0.27.ebuild:
+  Non-maintainer commit: Removing vulnerable versions for security bug 352071
+
+*tarsnap-1.0.28 (19 Jan 2011)
+
+  19 Jan 2011; <gregkh@gentoo.org> +tarsnap-1.0.28.ebuild:
+  Bump to 1.0.28
+
+*tarsnap-1.0.27 (12 Aug 2010)
+
+  12 Aug 2010; <gregkh@gentoo.org> +tarsnap-1.0.27.ebuild:
+  1.0.27 bump
+
+*tarsnap-1.0.26-r1 (06 Jan 2010)
+
+  06 Jan 2010; Greg Kroah-Hartman <gregkh@gentoo.org>
+  +tarsnap-1.0.26-r1.ebuild:
+  fix the license and the DEPENDS up.
+
+*tarsnap-1.0.26 (06 Jan 2010)
+
+  06 Jan 2010; Greg Kroah-Hartman <gregkh@gentoo.org>
+  +tarsnap-1.0.26.ebuild:
+  first ebuild for tarsnap
+

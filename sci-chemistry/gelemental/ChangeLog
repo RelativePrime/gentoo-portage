@@ -1,0 +1,26 @@
+# ChangeLog for sci-chemistry/gelemental
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/gelemental/ChangeLog,v 1.6 2011/03/02 17:49:59 jlec Exp $
+
+  02 Mar 2011; Justin Lecher <jlec@gentoo.org> gelemental-1.2.0.ebuild:
+  Correct Slots for gtk 3 introduction to tree
+
+  30 Oct 2009; Markus Meier <maekke@gentoo.org> gelemental-1.2.0.ebuild:
+  amd64/x86 stable, bug #264393
+
+  24 Nov 2008; <ssuominen@gentoo.org> metadata.xml:
+  Re-assign to sci-chemistry herd.
+
+  19 Oct 2008; Markus Dittrich <markusle@gentoo.org>
+  +files/gelemental-1.2.0-gcc4.3.patch, gelemental-1.2.0.ebuild:
+  Fixed gcc-4.3 issues (see bug #239567). Thanks much to David Sveningsson
+  <eXt@sidvind.com> for the patch.
+
+  10 Apr 2008; Dawid Węgliński <cla@gentoo.org> gelemental-1.2.0.ebuild:
+  Add ~x86 love (bug #217013)
+
+*gelemental-1.2.0 (20 Mar 2008)
+
+  20 Mar 2008; Samuli Suominen <drac@gentoo.org> +gelemental-1.2.0.ebuild:
+  Initial commit for bug 175014, thanks to Kristian Poul Herkild.
+

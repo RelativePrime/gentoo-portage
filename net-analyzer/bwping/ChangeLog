@@ -1,0 +1,25 @@
+# ChangeLog for net-analyzer/bwping
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/bwping/ChangeLog,v 1.3 2010/07/17 16:24:36 hwoarang Exp $
+
+  17 Jul 2010; Markos Chandras <hwoarang@gentoo.org> bwping-1.2.ebuild:
+  Stable on amd64 wrt bug #328265
+
+  17 Jul 2010; Christian Faulhammer <fauli@gentoo.org> bwping-1.2.ebuild:
+  stable x86, bug 328265
+
+*bwping-1.2 (05 Jun 2010)
+
+  05 Jun 2010; Markos Chandras <hwoarang@gentoo.org> +bwping-1.2.ebuild,
+  +metadata.xml:
+  Moved from sunrise overlay. Fixes bug #236231. Thanks to Oleg Derevenetz
+  (OlegD) <oleg@vsi.ru> for the sunrise ebuild
+
+  02 Sep 2008; Peter Volkov <pva@gentoo.org> metadata.xml:
+  Fixing metadata.xml to follow sunrise specifications: herd should be
+  maintainer-wanted and no maintainer required.
+
+  02 Sep 2008; Oleg Derevenetz (OlegD) <oleg@vsi.ru> +bwping-1.0.ebuild,
+  +metadata.xml:
+  New Ebuild for bug 236231 thanks to Peter Volkov
+

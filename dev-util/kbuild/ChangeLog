@@ -1,0 +1,101 @@
+# ChangeLog for dev-util/kbuild
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/kbuild/ChangeLog,v 1.17 2011/01/19 15:02:00 polynomial-c Exp $
+
+*kbuild-0.1.5_p2-r1 (19 Jan 2011)
+
+  19 Jan 2011; Lars Wendler <polynomial-c@gentoo.org>
+  +kbuild-0.1.5_p2-r1.ebuild, +files/kbuild-0.1.5_p2-qa.patch:
+  Added patch to respect LDLFAGS. Thanks to Kacper Kowalik who provided a fix
+  in bug #332225.
+
+  22 Jun 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  kbuild-0.1.5-r1.ebuild:
+  dev-util/subversion renamed to dev-vcs/subversion.
+
+  19 Jun 2010; Jonathan Callen <abcd@gentoo.org> kbuild-0.1.5-r1.ebuild:
+  Moving dev-util/cvs* to dev-vcs/cvs*
+
+  03 Jun 2010; Lars Wendler <polynomial-c@gentoo.org>
+  kbuild-0.1.5-r1.ebuild, kbuild-0.1.5_p2.ebuild:
+  Fixed license (GPL-2 --> GPL-3)
+
+*kbuild-0.1.5_p2 (03 Jun 2010)
+
+  03 Jun 2010; Lars Wendler <polynomial-c@gentoo.org> -kbuild-0.1.4.ebuild,
+  -kbuild-0.1.5.ebuild, kbuild-0.1.5-r1.ebuild, +kbuild-0.1.5_p2.ebuild,
+  +files/kbuild-0.1.5-gentoo-docdir.patch,
+  -files/kbuild-fix-acl-include.patch, metadata.xml:
+  Version bump and ebuild cleanups suggested by Chris Beswick (bug #317329).
+  Fixed installation into wrong docdir reported by flameeyes (bug #295784).
+  Fix added to stable version as well without revbump.
+  Removed old versions.
+  Added myself as maintainer.
+
+  09 Nov 2009; Markus Meier <maekke@gentoo.org> kbuild-0.1.5-r1.ebuild:
+  amd64 stable, bug #285451
+
+  22 Sep 2009; Christian Faulhammer <fauli@gentoo.org>
+  kbuild-0.1.5-r1.ebuild:
+  stable x86, bug 285451
+
+  08 Jun 2009; Jim Ramsay <lack@gentoo.org> kbuild-0.1.5-r1.ebuild,
+  +files/kbuild-glibc-2.10.patch:
+  Patch so kbuild compiles against glibc-2.10 (Bug #270607)
+
+  24 Apr 2009; Patrick Lauer <patrick@gentoo.org> kbuild-0.1.5-r1:
+  Adding subversion to depends, fixes #266741
+
+*kbuild-0.1.5-r1 (18 Apr 2009)
+
+  18 Apr 2009; Patrick Lauer <patrick@gentoo.org> +kbuild-0.1.5-r1.ebuild:
+  Small fix for the missing svn revision, fixes #265537 and allows
+  virtualbox-2.2 to install. Thanks to Alessio Cassibba.
+
+*kbuild-9999 (29 Mar 2009)
+
+  29 Mar 2009; Patrick Lauer <patrick@gentoo.org> +kbuild-9999.ebuild:
+  Adding kbuild live ebuild for virtualbox-9999. Thanks to Alessio Cassibba
+  (X-Drum). Based on the ebuild from the jokey overlay.
+
+  11 Mar 2009; Markus Ullmann <jokey@gentoo.org>
+  +files/kbuild-unknown-configure-opt.patch, kbuild-0.1.5.ebuild:
+  Add QA fix for bug #256981
+
+*kbuild-0.1.5 (03 Mar 2009)
+
+  03 Mar 2009; Patrick Lauer <patrick@gentoo.org> +kbuild-0.1.5.ebuild:
+  Bump to 0.1.5. Imported from the jokey overlay, ebuilds by Alessio
+  Cassibba (X-Drum) <swapon@gmail.com>. eautoreconf is now mandatory, force
+  it. EAPI=2.
+
+  28 Oct 2008; Markus Ullmann <jokey@gentoo.org> kbuild-0.1.4.ebuild:
+  Reinstate stable keyword for bug #244718
+
+  27 Oct 2008; Markus Ullmann <jokey@gentoo.org> kbuild-0.1.4.ebuild:
+  Fix gettext dependency for bug #238556 thanks to Kristoffer for the
+  notification
+
+*kbuild-0.1.4 (15 Sep 2008)
+
+  15 Sep 2008; Markus Ullmann <jokey@gentoo.org>
+  +files/kbuild-fix-acl-include.patch, kbuild-0.1.3.ebuild,
+  +kbuild-0.1.4.ebuild:
+  (Proxy-Commit) Port from dev overlay
+
+  13 Sep 2008; Alessio Cassibba (X-Drum) <swapon@gmail.com>
+  kbuild-0.1.3.ebuild, -files/kbuild-0.1.3-fix-acl-include.patch,
+  +kbuild-0.1.4.ebuild, +files/kbuild-fix-acl-include.patch:
+  Version bump: remove dev-util/yacc from DEPEND, see bug #236948; fix unused
+  sys/acl.h include, thanks to all people involved, see bug #236949
+
+*kbuild-0.1.3 (06 Sep 2008)
+
+  06 Sep 2008; Markus Ullmann <jokey@gentoo.org> +metadata.xml,
+  +kbuild-0.1.3.ebuild:
+  Import for virtualbox-ose
+
+  03 Sep 2008; Alessio Cassibba (X-Drum) <swapon@gmail.com>
+  +kbuild-0.1.3.ebuild, +metadata.xml:
+  Initial ebuild for kBuild
+

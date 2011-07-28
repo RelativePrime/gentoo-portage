@@ -1,0 +1,23 @@
+# ChangeLog for sci-misc/vitables
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-misc/vitables/ChangeLog,v 1.6 2011/06/18 17:16:53 spock Exp $
+
+  18 Jun 2011; Michał Januszewski <spock@gentoo.org> metadata.xml:
+  Reassigning to maintainer-needed.
+
+  21 May 2010; Justin Lecher <jlec@gentoo.org> vitables-2.0.ebuild:
+  Fixes for PYTHON ABI, #316243
+
+  29 Sep 2009; Michał Januszewski <spock@gentoo.org> vitables-2.0.ebuild:
+  Fix installation of icon and .desktop file.
+
+  25 Jun 2009; Ben de Groot <yngwin@gentoo.org> vitables-2.0.ebuild:
+  Drop illegal qt meta ebuild dependency (see 217161#c11). Add use dep for
+  PyQt4 (check for more, bug 272136). Whitespace.
+
+*vitables-2.0 (11 Jun 2009)
+
+  11 Jun 2009; Michał Januszewski <spock@gentoo.org> +vitables-2.0.ebuild,
+  +files/vitables-2.0-doc-examples.patch, +metadata.xml:
+  Initial commit (bug #268149).
+

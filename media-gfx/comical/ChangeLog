@@ -1,0 +1,62 @@
+# ChangeLog for media-gfx/comical
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/comical/ChangeLog,v 1.15 2010/10/26 16:13:16 dirtyepic Exp $
+
+  26 Oct 2010; Ryan Hill <dirtyepic@gentoo.org> -comical-0.8.ebuild,
+  -comical-0.8-r1.ebuild:
+  Remove old.
+
+  12 Oct 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  comical-0.8-r2.ebuild:
+  x86 stable wrt bug #340467
+
+  11 Oct 2010; Markos Chandras <hwoarang@gentoo.org> comical-0.8-r2.ebuild:
+  Stable on amd64 wrt bug #340467
+
+*comical-0.8-r2 (05 Sep 2010)
+
+  05 Sep 2010; Ryan Hill <dirtyepic@gentoo.org> +comical-0.8-r2.ebuild,
+  +files/comical-0.8-wxGTK-2.8.patch:
+  Migrate to wxGTK-2.8.
+
+  16 Dec 2009; Markus Meier <maekke@gentoo.org> files/comical.desktop:
+  fix .desktop as pointed out by ssuominen
+
+*comical-0.8-r1 (16 Dec 2009)
+
+  16 Dec 2009; Markus Meier <maekke@gentoo.org> +comical-0.8-r1.ebuild,
+  +files/comical.desktop:
+  add .desktop file by Jared in bug #295611; general ebuild improvements
+
+  25 Nov 2009; Markus Meier <maekke@gentoo.org> comical-0.8.ebuild:
+  amd64 stable, bug #286321
+
+  27 Sep 2009; Markus Meier <maekke@gentoo.org> comical-0.8.ebuild:
+  assign RDEPEND
+
+  22 May 2008; Markus Meier <maekke@gentoo.org> comical-0.8.ebuild:
+  remove unneeded COPYING
+
+  13 Oct 2007; Ryan Hill <dirtyepic@gentoo.org> comical-0.8.ebuild:
+  Lock wxGTK to 2.6.
+
+  08 Apr 2007; Marcelo Goes <vanquirius@gentoo.org> comical-0.8.ebuild:
+  Add missing IUSE.
+
+  02 Feb 2007; Steve Dibb <beandog@gentoo.org> comical-0.8.ebuild:
+  Add ~amd64, bug 164245
+
+  08 Jan 2007; Javier Villavicencio <the_paya@gentoo.org>
+  comical-0.8.ebuild:
+  Stable on x86.
+
+  17 Sep 2006; Javier Villavicencio <the_paya@gentoo.org>
+  comical-0.8.ebuild:
+  Added ~x86-fbsd keyword.
+
+*comical-0.8 (18 Jul 2006)
+
+  18 Jul 2006; Javier Villavicencio <the_paya@gentoo.org> +metadata.xml,
+  +comical-0.8.ebuild:
+  Add comical ebuild. Thanks to Graeme Humphries and Daniel Lin. in bug #42899
+

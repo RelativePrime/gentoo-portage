@@ -1,0 +1,100 @@
+# ChangeLog for media-radio/fldigi
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-radio/fldigi/ChangeLog,v 1.19 2011/07/17 16:13:30 tomjbe Exp $
+
+*fldigi-3.21.12 (17 Jul 2011)
+
+  17 Jul 2011; Thomas Beierlein <tomjbe@gentoo.org> -fldigi-3.21.3.ebuild,
+  -fldigi-3.21.7.ebuild, +fldigi-3.21.12.ebuild:
+  Version bump. Remove old unstable versions
+
+*fldigi-3.21.11 (18 Jun 2011)
+
+  18 Jun 2011; Thomas Beierlein <tomjbe@gentoo.org> +fldigi-3.21.11.ebuild:
+  Version bump.
+
+*fldigi-3.21.9 (19 Apr 2011)
+
+  19 Apr 2011; Thomas Beierlein <tomjbe@gentoo.org> +fldigi-3.21.9.ebuild:
+  Maintenance release.
+
+*fldigi-3.21.7 (25 Mar 2011)
+
+  25 Mar 2011; Thomas Beierlein <tomjbe@gentoo.org> fldigi-3.21.3.ebuild,
+  +fldigi-3.21.7.ebuild:
+  Version bump. Restrict deps to <fltk-1.2 until upstream ported to fltk-1.3
+  (bug #359629)
+
+  20 Mar 2011; Justin Lecher <jlec@gentoo.org> fldigi-3.20.34.ebuild,
+  fldigi-3.21.3.ebuild:
+  x11-libs/fltk SLOTMOVE 1.1 -> 1, corrected ebuild accordingly
+
+*fldigi-3.21.3 (25 Feb 2011)
+
+  25 Feb 2011; Thomas Beierlein <tomjbe@gentoo.org> -fldigi-3.20.21.ebuild,
+  -fldigi-3.20.29.ebuild, -fldigi-3.20.32.ebuild, +fldigi-3.21.3.ebuild:
+  Version bump. Cleanup old versions
+
+  10 Feb 2011; Thomas Kahle <tomka@gentoo.org> fldigi-3.20.34.ebuild:
+  x86 stable per bug 351779
+
+  29 Jan 2011; Markos Chandras <hwoarang@gentoo.org> fldigi-3.20.34.ebuild:
+  Stable on amd64 wrt bug #351779
+
+*fldigi-3.20.34 (29 Dec 2010)
+
+  29 Dec 2010; Thomas Beierlein <tomjbe@gentoo.org> +fldigi-3.20.34.ebuild:
+  Maintenance release
+
+*fldigi-3.20.32 (19 Dec 2010)
+
+  19 Dec 2010; Thomas Beierlein <tomjbe@gentoo.org> -fldigi-3.20.28.ebuild,
+  +fldigi-3.20.32.ebuild:
+  Version bump. Remove some old version.
+
+*fldigi-3.20.29 (17 Nov 2010)
+
+  17 Nov 2010; Thomas Beierlein <tomjbe@gentoo.org> -fldigi-3.12.5.ebuild,
+  -files/fldigi-3.12.5-libpng14.patch, +fldigi-3.20.29.ebuild:
+  Version bump. Remove old versions
+
+  12 Sep 2010; Markos Chandras <hwoarang@gentoo.org> fldigi-3.20.21.ebuild:
+  Stable on amd64 wrt bug #335263
+
+*fldigi-3.20.28 (12 Sep 2010)
+
+  12 Sep 2010; Thomas Beierlein <tomjbe@gentoo.org> -fldigi-3.20.18.ebuild,
+  +fldigi-3.20.28.ebuild:
+  Version bump. Remove old.
+
+  04 Sep 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  fldigi-3.20.21.ebuild:
+  x86 stable wrt bug #335263
+
+*fldigi-3.20.21 (27 Jul 2010)
+
+  27 Jul 2010; Thomas Beierlein <tomjbe@gentoo.org> -fldigi-3.20.13.ebuild,
+  fldigi-3.20.18.ebuild, +fldigi-3.20.21.ebuild:
+  Version bump. fltk now built with USE=xft (see bug #329757). Thanks to
+  <epinephrineaddict@gmail.com>
+
+*fldigi-3.20.18 (03 Jul 2010)
+
+  03 Jul 2010; Thomas Beierlein <tomjbe@gentoo.org> +fldigi-3.20.18.ebuild:
+  Version bump
+
+*fldigi-3.20.13 (06 Jun 2010)
+
+  06 Jun 2010; Thomas Beierlein <tomjbe@gentoo.org> +fldigi-3.20.13.ebuild:
+  Version bump
+
+  24 May 2010; Thomas Beierlein <tomjbe@gentoo.org> fldigi-3.12.5.ebuild,
+  +files/fldigi-3.12.5-libpng14.patch:
+  fix libpng14 problem (see Bug #321201). Thanks for patch Xarthisius.
+
+*fldigi-3.12.5 (04 May 2010)
+
+  04 May 2010; Thomas Beierlein <tomjbe@gentoo.org> +fldigi-3.12.5.ebuild,
+  +metadata.xml:
+  Initial portage version, moved from sunrise. Bug #230197
+

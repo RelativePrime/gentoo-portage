@@ -1,0 +1,20 @@
+# ChangeLog for x11-themes/gtk-engines-nodoka
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-themes/gtk-engines-nodoka/ChangeLog,v 1.3 2011/07/15 17:39:59 a3li Exp $
+
+*gtk-engines-nodoka-0.7.5 (15 Jul 2011)
+
+  15 Jul 2011; Alex Legler <a3li@gentoo.org> +gtk-engines-nodoka-0.7.5.ebuild:
+  Version bump wrt bug 346531 by Jens-Uwe Peter; no longer install .la files
+
+  29 Mar 2011; Christoph Mende <angelos@gentoo.org>
+  gtk-engines-nodoka-0.7.2.ebuild:
+  Fix gtk+ slot deps
+
+*gtk-engines-nodoka-0.7.2 (16 Aug 2009)
+
+  16 Aug 2009; Alex Legler <a3li@gentoo.org>
+  +gtk-engines-nodoka-0.7.2.ebuild, +metadata.xml:
+  Initial commit. Thanks for Dan Murphy <dc.murphy@utoronto.ca> and John G.
+  <giageo@gmail.com> for their ebuilds in bug 260572.
+

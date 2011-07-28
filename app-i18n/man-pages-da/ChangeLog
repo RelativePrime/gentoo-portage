@@ -1,0 +1,17 @@
+# ChangeLog for app-i18n/man-pages-da
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-i18n/man-pages-da/ChangeLog,v 1.4 2010/10/19 09:16:25 leio Exp $
+
+  19 Oct 2010; Mart Raudsepp <leio@gentoo.org> man-pages-da-0.1.1.ebuild:
+  Drop to ~mips
+
+  13 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*man-pages-da-0.1.1 (01 Sep 2005)
+
+  01 Sep 2005; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.

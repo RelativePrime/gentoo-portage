@@ -1,0 +1,16 @@
+# ChangeLog for app-mobilephone/kannel-sqlbox
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-mobilephone/kannel-sqlbox/ChangeLog,v 1.2 2009/12/12 10:20:57 mrness Exp $
+
+  12 Dec 2009; Alin Năstac <mrness@gentoo.org> kannel-sqlbox-0.7.2.ebuild:
+  Correct kannel dependency atom (#296019).
+
+*kannel-sqlbox-0.7.2 (25 Sep 2009)
+
+  25 Sep 2009; Alin Năstac <mrness@gentoo.org> +kannel-sqlbox-0.7.2.ebuild,
+  +files/kannel-sqlbox-0.7.2-configure.patch,
+  +files/kannel-sqlbox-0.7.2-sqlinit-hfiles.patch,
+  +files/kannel-sqlbox.initd, +metadata.xml:
+  Initial import from bug 285246, thanks to Travis Hansen <travisghansen at
+  yahoo dot com>.
+

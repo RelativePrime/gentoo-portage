@@ -1,0 +1,66 @@
+# ChangeLog for dev-games/wfmath
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-games/wfmath/ChangeLog,v 1.16 2011/01/16 04:11:53 mr_bones_ Exp $
+
+  16 Jan 2011; Michael Sterrett <mr_bones_@gentoo.org> wfmath-0.3.10.ebuild:
+  add static-libs support
+
+  06 Dec 2010; Alfredo Tupone <tupone@gentoo.org> wfmath-0.3.10.ebuild:
+  Remove not strictly needed dependency on media-libs/atlas-c++
+  Bug #347776 by Mr. Anderson
+
+  13 Apr 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org> wfmath-0.3.10.ebuild:
+  x86 stable wrt bug #313535
+
+  09 Apr 2010; Markos Chandras <hwoarang@gentoo.org> wfmath-0.3.10.ebuild:
+  Stable on amd64 wrt bug #313535
+
+*wfmath-0.3.10 (07 Mar 2010)
+
+  07 Mar 2010; Michael Sterrett <mr_bones_@gentoo.org>
+  +wfmath-0.3.10.ebuild:
+  version bump (bug #308167)
+
+  02 Jan 2010; Markus Meier <maekke@gentoo.org> wfmath-0.3.9.ebuild:
+  amd64 stable, bug #297122
+
+  31 Dec 2009; Christian Faulhammer <fauli@gentoo.org> wfmath-0.3.9.ebuild:
+  stable x86, bug 297122
+
+  31 Dec 2009; Tupone Alfredo <tupone@gentoo.org> wfmath-0.3.9.ebuild:
+  Fixing build with USE=doc. Bug #297122
+
+*wfmath-0.3.9 (05 Jun 2009)
+
+  05 Jun 2009; Alfredo Tupone <tupone@gentoo.org> +wfmath-0.3.9.ebuild:
+  Version bump to 0.3.9
+
+  11 Jan 2009; Markus Meier <maekke@gentoo.org> wfmath-0.3.8.ebuild:
+  amd64/x86 stable, bug #254107
+
+*wfmath-0.3.8 (20 Nov 2008)
+
+  20 Nov 2008; Alfredo Tupone <tupone@gentoo.org> +wfmath-0.3.8.ebuild:
+  Version bump to 0.3.8
+
+  20 Aug 2008; Markus Meier <maekke@gentoo.org> wfmath-0.3.7.ebuild:
+  amd64/x86 stable, bug #235167
+
+*wfmath-0.3.7 (03 Dec 2007)
+
+  03 Dec 2007; Tupone Alfredo <tupone@gentoo.org> +wfmath-0.3.7.ebuild:
+  Version bump
+
+*wfmath-0.3.6 (21 Jul 2007)
+
+  21 Jul 2007; Tristan Heaven <nyhm@gentoo.org> +wfmath-0.3.6.ebuild:
+  Version bump
+
+  07 May 2007; Tupone Alfredo <tupone@gentoo.org> wfmath-0.3.5.ebuild:
+  Added ~amd64 keyword
+
+*wfmath-0.3.5 (01 Feb 2007)
+
+  01 Feb 2007; <tupone@gentoo.org> +metadata.xml, +wfmath-0.3.5.ebuild:
+  Initial ebuild, version 0.3.6 Bug #58213 by Boris Smus
+

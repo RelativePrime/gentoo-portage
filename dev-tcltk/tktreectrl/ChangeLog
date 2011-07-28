@@ -1,0 +1,34 @@
+# ChangeLog for dev-tcltk/tktreectrl
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-tcltk/tktreectrl/ChangeLog,v 1.7 2011/06/12 10:15:51 xarthisius Exp $
+
+  12 Jun 2011; Kacper Kowalik <xarthisius@gentoo.org> tktreectrl-2.2.9.ebuild,
+  tktreectrl-2.2.10.ebuild:
+  Correct dependencies wrt #371215 by Piotr Szymaniak <lazy_bum@o2.pl>. Fix
+  typo in DEPEND
+
+*tktreectrl-2.2.10 (03 May 2011)
+
+  03 May 2011; Justin Lecher <jlec@gentoo.org> tktreectrl-2.2.9.ebuild,
+  +tktreectrl-2.2.10.ebuild:
+  Version Bump, notified by euscan
+
+  23 Jan 2011; Thomas Kahle <tomka@gentoo.org> tktreectrl-2.2.9.ebuild:
+  x86 stable per bug 351767
+
+  17 Jan 2011; Markos Chandras <hwoarang@gentoo.org> tktreectrl-2.2.9.ebuild:
+  Stable on amd64 wrt bug #351767
+
+  16 Jan 2011; Kacper Kowalik <xarthisius@gentoo.org>
+  tktreectrl-2.2.9.ebuild:
+  marked ~ppc wrt #303931
+
+  02 Apr 2010; Justin Lecher <jlec@gentoo.org> tktreectrl-2.2.9.ebuild:
+  Keyworded for ~x86-linux ~amd64-linux, tested by me
+
+*tktreectrl-2.2.9 (04 Feb 2010)
+
+  04 Feb 2010; Justin Lecher (jlec) <jlec@gentoo.org>
+  +files/2.2.9-as-needed.patch, +tktreectrl-2.2.9.ebuild, +metadata.xml:
+  Imported from scioverlay, fixes bug 217706
+

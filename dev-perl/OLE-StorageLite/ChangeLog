@@ -1,0 +1,86 @@
+# ChangeLog for dev-perl/OLE-StorageLite
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/OLE-StorageLite/ChangeLog,v 1.19 2010/09/23 08:40:38 grobian Exp $
+
+  23 Sep 2010; Fabian Groffen <grobian@gentoo.org>
+  OLE-StorageLite-0.19.ebuild:
+  Marked ~{ppc,x86}-macos ~{x86,x64}-solaris
+
+  15 Aug 2010; Torsten Veller <tove@gentoo.org>
+  -OLE-StorageLite-0.14.ebuild:
+  Cleanup
+
+  27 Jun 2010; <nixnut@gentoo.org> OLE-StorageLite-0.19.ebuild:
+  ppc stable #323529
+
+  08 May 2010; Raúl Porcel <armin76@gentoo.org>
+  OLE-StorageLite-0.19.ebuild:
+  ia64/sparc stable wrt #314467
+
+  17 Apr 2010; Torsten Veller <tove@gentoo.org> OLE-StorageLite-0.19.ebuild:
+  Stable on amd64, x86 (#314467)
+
+  24 Dec 2009; Torsten Veller <tove@gentoo.org>
+  -OLE-StorageLite-0.18.ebuild:
+  Cleanup
+
+*OLE-StorageLite-0.19 (26 Nov 2009)
+
+  26 Nov 2009; Robin H. Johnson <robbat2@gentoo.org>
+  +OLE-StorageLite-0.19.ebuild:
+  Version bump via perl-bump experimental tool.
+
+  03 Jun 2009; Torsten Veller <tove@gentoo.org>
+  -OLE-StorageLite-0.17.ebuild:
+  Cleanup
+
+*OLE-StorageLite-0.18 (31 Dec 2008)
+
+  31 Dec 2008; Torsten Veller <tove@gentoo.org>
+  +OLE-StorageLite-0.18.ebuild:
+  Version bump
+
+*OLE-StorageLite-0.17 (31 Oct 2008)
+
+  31 Oct 2008; Torsten Veller <tove@gentoo.org>
+  +OLE-StorageLite-0.17.ebuild:
+  Version bump
+
+  21 Oct 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  OLE-StorageLite-0.14.ebuild:
+  ppc stable
+
+  11 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  OLE-StorageLite-0.14.ebuild:
+  Keywording amd64 stable
+
+  17 Aug 2006; Luca Barbato <lu_zero@gentoo.org>
+  OLE-StorageLite-0.14.ebuild:
+  Marked ~ppc
+
+  17 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  OLE-StorageLite-0.14.ebuild:
+  Keyworing ~amd64
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  OLE-StorageLite-0.14.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  10 Jul 2006; Aron Griffis <agriffis@gentoo.org>
+  OLE-StorageLite-0.14.ebuild:
+  Mark 0.14 stable on ia64
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org>
+  OLE-StorageLite-0.14.ebuild:
+  Mark 0.14 ~ia64
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  OLE-StorageLite-0.14.ebuild:
+  Marking sparc x86 stable
+
+*OLE-StorageLite-0.14 (01 May 2005)
+
+  01 May 2005; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +OLE-StorageLite-0.14.ebuild:
+  Initial check in. dep for Spreadsheet-ParseExcel, optional dep for swish-e
+

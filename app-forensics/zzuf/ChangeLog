@@ -1,0 +1,44 @@
+# ChangeLog for app-forensics/zzuf
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-forensics/zzuf/ChangeLog,v 1.9 2011/07/08 10:04:09 ssuominen Exp $
+
+  08 Jul 2011; Samuli Suominen <ssuominen@gentoo.org> zzuf-0.12.ebuild,
+  zzuf-0.13-r1.ebuild:
+  Convert from "hasq" to "has".
+
+*zzuf-0.13-r1 (02 Mar 2010)
+
+  02 Mar 2010; Doug Goldstein <cardoe@gentoo.org> -zzuf-0.13.ebuild,
+  +zzuf-0.13-r1.ebuild:
+  bump to fix bug #307049
+
+  02 Mar 2010; Patrick Lauer <patrick@gentoo.org> zzuf-0.13.ebuild:
+  Prevent file collision with zziplib on /bin/zzcat, #307049
+
+*zzuf-0.13 (26 Feb 2010)
+
+  26 Feb 2010; Patrick Lauer <patrick@gentoo.org> +zzuf-0.13.ebuild:
+  Bump
+
+  28 Dec 2009; Diego E. Pettenò <flameeyes@gentoo.org> metadata.xml:
+  Relinquish this to maintainer-needed.
+
+  13 Nov 2009; Tiago Cunha <tcunha@gentoo.org> zzuf-0.12.ebuild:
+  keyworded ~arch for sparc
+
+*zzuf-0.12 (13 Jun 2008)
+
+  13 Jun 2008; Diego Pettenò <flameeyes@gentoo.org> -zzuf-0.10.ebuild,
+  +zzuf-0.12.ebuild:
+  Version bump, fix tests being built unconditionally (bug #226355), add
+  src_test for the testsuite, which doesn't work with sandbox.
+
+  19 May 2008; Carsten Lohrke <carlo@gentoo.org> zzuf-0.10.ebuild:
+  Keyword ~x86.
+
+*zzuf-0.10 (19 Apr 2008)
+
+  19 Apr 2008; Diego Pettenò <flameeyes@gentoo.org> +metadata.xml,
+  +zzuf-0.10.ebuild:
+  Initial import of zzuf. Thanks also to Jakub Moc in bug #188646.
+

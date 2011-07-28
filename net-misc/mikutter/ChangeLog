@@ -1,0 +1,73 @@
+# ChangeLog for net-misc/mikutter
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/mikutter/ChangeLog,v 1.14 2011/07/25 15:32:59 naota Exp $
+
+*mikutter-0.0.3.12 (25 Jul 2011)
+
+  25 Jul 2011; Naohiro Aota <naota@gentoo.org> -mikutter-0.0.3.9.ebuild,
+  +mikutter-0.0.3.12.ebuild:
+  Version bumped.
+
+*mikutter-0.0.3.11 (16 Jul 2011)
+
+  16 Jul 2011; Naohiro Aota <naota@gentoo.org> +mikutter-0.0.3.11.ebuild:
+  version bump
+
+*mikutter-0.0.3.10 (05 Jul 2011)
+
+  05 Jul 2011; Naohiro Aota <naota@gentoo.org> -mikutter-0.0.3.8.ebuild,
+  +mikutter-0.0.3.10.ebuild:
+  version bumped
+
+*mikutter-0.0.3.9 (22 Jun 2011)
+
+  22 Jun 2011; Naohiro Aota <naota@gentoo.org> +mikutter-0.0.3.9.ebuild:
+  version bumped
+
+*mikutter-9999 (12 Jun 2011)
+
+  12 Jun 2011; Naohiro Aota <naota@gentoo.org> +mikutter-9999.ebuild:
+  Add subversion edition
+
+*mikutter-0.0.3.8 (12 Jun 2011)
+
+  12 Jun 2011; Naohiro Aota <naota@gentoo.org> -mikutter-0.0.3.7.ebuild,
+  +mikutter-0.0.3.8.ebuild:
+  version bump
+
+*mikutter-0.0.3.7 (06 Jun 2011)
+
+  06 Jun 2011; Naohiro Aota <naota@gentoo.org> -mikutter-0.0.3.6.ebuild,
+  +mikutter-0.0.3.7.ebuild:
+  Version bumped
+
+  06 Jun 2011; Naohiro Aota <naota@gentoo.org> -mikutter-0.0.2.12-r1.ebuild:
+  Drop old version
+
+*mikutter-0.0.3.6 (29 May 2011)
+
+  29 May 2011; Naohiro Aota <naota@gentoo.org> +mikutter-0.0.3.6.ebuild:
+  Version bump.
+
+*mikutter-0.0.3.0 (29 May 2011)
+
+  29 May 2011; Naohiro Aota <naota@gentoo.org> +mikutter-0.0.3.0.ebuild:
+  Version bump.
+
+  22 Apr 2011; Naohiro Aota <naota@gentoo.org> -mikutter-0.0.2.12.ebuild:
+  Remove mikuuter-0.0.2.12.ebuild
+
+*mikutter-0.0.2.12-r1 (14 Apr 2011)
+
+  14 Apr 2011; Naohiro Aota <naota@elisp.net> +mikutter-0.0.2.12-r1.ebuild:
+  Fix dependency bug #362797
+
+  02 Apr 2011; Naohiro Aota <naota@elisp.net> ChangeLog:
+  Fix Manifest: gpg-signing
+
+*mikutter-0.0.2.12 (01 Apr 2011)
+
+  01 Apr 2011; Naohiro Aota <naota@elisp.net> +mikutter-0.0.2.12.ebuild,
+  +files/mikutter, +metadata.xml:
+  New ebuild for mikutter. Ebuild written by Furui Shota <mkamotsu@gmail.com>.
+

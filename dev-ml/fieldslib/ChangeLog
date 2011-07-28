@@ -1,0 +1,26 @@
+# ChangeLog for dev-ml/fieldslib
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ml/fieldslib/ChangeLog,v 1.5 2011/07/06 18:28:16 aballier Exp $
+
+  06 Jul 2011; Alexis Ballier <aballier@gentoo.org> -fieldslib-0.1.1.ebuild:
+  remove old
+
+*fieldslib-0.1.2 (25 Jun 2011)
+
+  25 Jun 2011; Alexis Ballier <aballier@gentoo.org> +fieldslib-0.1.2.ebuild:
+  version bump, by Vladimir Ivanov, bug #361167
+
+  24 Jan 2011; Alexis Ballier <aballier@gentoo.org> -fieldslib-0.1.0.ebuild:
+  remove old
+
+*fieldslib-0.1.1 (20 Jan 2011)
+
+  20 Jan 2011; Alexis Ballier <aballier@gentoo.org> +fieldslib-0.1.1.ebuild:
+  version bump
+
+*fieldslib-0.1.0 (27 Oct 2009)
+
+  27 Oct 2009; Alexis Ballier <aballier@gentoo.org> +fieldslib-0.1.0.ebuild,
+  +metadata.xml:
+  initial import, ebuild by me
+

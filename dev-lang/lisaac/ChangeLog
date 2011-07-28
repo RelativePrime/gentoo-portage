@@ -1,0 +1,19 @@
+# ChangeLog for dev-lang/lisaac
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/lisaac/ChangeLog,v 1.4 2009/11/07 00:05:27 ssuominen Exp $
+
+  07 Nov 2009; Samuli Suominen <ssuominen@gentoo.org> lisaac-0.13.1.ebuild:
+  Remove KDE3 support.
+
+  23 Aug 2008; Jeroen Roovers <jer@gentoo.org> metadata.xml:
+  Add GLEP 56 USE flag descriptions.
+
+  28 Apr 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Remove Wulf C. Krueger (philantrop) from metadata.xml (as per #168573).
+
+*lisaac-0.13.1 (01 Mar 2008)
+
+  01 Mar 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  +files/50lisaac-gentoo.el, +metadata.xml, +lisaac-0.13.1.ebuild:
+  Initial ebuild. Proxy-maintained by kernelsensei through myself.
+

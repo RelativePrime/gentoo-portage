@@ -1,0 +1,22 @@
+# ChangeLog for net-dns/dnssec-root
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-dns/dnssec-root/ChangeLog,v 1.4 2011/07/20 14:40:07 pacho Exp $
+
+  20 Jul 2011; Pacho Ramos <pacho@gentoo.org> metadata.xml:
+  Drop maintainer due retirement, bug #34534
+
+  02 May 2011; Jeremy Olexa <darkside@gentoo.org>
+  dnssec-root-20100715.ebuild:
+  stabilize for all, just installs a few files and passes test suite. bug
+  365191
+
+  28 Apr 2011; Jeremy Olexa <darkside@gentoo.org>
+  dnssec-root-20100715.ebuild:
+  QA: reduce noise, add die for doins
+
+*dnssec-root-20100715 (30 Nov 2010)
+
+  30 Nov 2010; Daniel Black <dragonheart@gentoo.org> +files/anchors2ds.xsl,
+  +dnssec-root-20100715.ebuild, +metadata.xml:
+  initial ebuild
+

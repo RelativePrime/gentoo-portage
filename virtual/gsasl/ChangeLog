@@ -1,0 +1,43 @@
+# ChangeLog for virtual/gsasl
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/virtual/gsasl/ChangeLog,v 1.9 2011/07/26 07:10:06 xarthisius Exp $
+
+  26 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> gsasl-1.6.1.ebuild:
+  Stable on all arches
+
+*gsasl-1.6.1 (02 May 2011)
+
+  02 May 2011; Jeroen Roovers <jer@gentoo.org> +gsasl-1.6.1.ebuild:
+  Version bump.
+
+  29 Jan 2011; Raúl Porcel <armin76@gentoo.org> gsasl-1.4.1.ebuild:
+  alpha/ia64/sparc stable wrt #339980
+
+  20 Jan 2011; Kacper Kowalik <xarthisius@gentoo.org> gsasl-1.4.1.ebuild:
+  ppc64 stable wrt #339980
+
+*gsasl-1.6.0 (09 Jan 2011)
+
+  09 Jan 2011; Jeroen Roovers <jer@gentoo.org> +gsasl-1.6.0.ebuild:
+  Version bump (bug #311319).
+
+  15 Oct 2010; Brent Baude <ranger@gentoo.org> gsasl-1.4.1.ebuild:
+  stable ppc, bug 339980
+
+  10 Oct 2010; Markos Chandras <hwoarang@gentoo.org> gsasl-1.4.1.ebuild:
+  Stable on amd64 wrt bug #339980
+
+  07 Oct 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org> gsasl-1.4.1.ebuild:
+  x86 stable wrt bug #339980
+
+*gsasl-1.4.1 (17 Feb 2010)
+*gsasl-1.1 (17 Feb 2010)
+*gsasl-0.2.29 (17 Feb 2010)
+*gsasl-0.2.28 (17 Feb 2010)
+*gsasl-0.2.4 (17 Feb 2010)
+
+  17 Feb 2010; Jeroen Roovers <jer@gentoo.org> +gsasl-0.2.4.ebuild,
+  +gsasl-0.2.28.ebuild, +gsasl-0.2.29.ebuild, +gsasl-1.1.ebuild,
+  +gsasl-1.4.1.ebuild, +metadata.xml:
+  Switch to new style virtuals (bug #237400).
+

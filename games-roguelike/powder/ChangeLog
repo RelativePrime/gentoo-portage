@@ -1,0 +1,38 @@
+# ChangeLog for games-roguelike/powder
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-roguelike/powder/ChangeLog,v 1.8 2011/05/23 12:04:25 tomka Exp $
+
+  23 May 2011; Thomas Kahle <tomka@gentoo.org> powder-115.ebuild:
+  x86 stable per bug 364841
+
+  27 Apr 2011; Christoph Mende <angelos@gentoo.org> powder-115.ebuild:
+  Stable on amd64 wrt bug #364841
+
+*powder-115 (26 Mar 2011)
+
+  26 Mar 2011; Michael Sterrett <mr_bones_@gentoo.org> +powder-115.ebuild:
+  version bump
+
+  17 Jul 2010; Christian Faulhammer <fauli@gentoo.org> powder-114.ebuild:
+  stable x86, bug 327345
+
+  09 Jul 2010; Pacho Ramos <pacho@gentoo.org> powder-114.ebuild:
+  stable amd64, bug 327345
+
+*powder-114 (03 Jun 2010)
+
+  03 Jun 2010; Michael Sterrett <mr_bones_@gentoo.org> +powder-114.ebuild,
+  +files/powder-114-make.patch:
+  version bump
+
+  04 May 2010; Michael Sterrett <mr_bones_@gentoo.org> powder-113.ebuild,
+  files/powder-113-make.patch:
+  reroll and actually apply patch
+
+*powder-113 (03 May 2010)
+
+  03 May 2010; Michael Sterrett <mr_bones_@gentoo.org> +powder-113.ebuild,
+  +files/powder-113-make.patch, +metadata.xml:
+  initial commit - ebuild and patch submitted by Sergey Zasenko via bug
+  #256768 with additional help from Anton Romanov
+

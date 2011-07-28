@@ -1,0 +1,27 @@
+# ChangeLog for games-fps/worldofpadman
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-fps/worldofpadman/ChangeLog,v 1.5 2010/05/23 18:34:54 pacho Exp $
+
+  23 May 2010; Pacho Ramos <pacho@gentoo.org> worldofpadman-1.2-r1.ebuild:
+  stable amd64, bug 308571
+
+  24 Mar 2010; Christian Faulhammer <fauli@gentoo.org>
+  worldofpadman-1.2-r1.ebuild:
+  stable x86, bug 308571
+
+*worldofpadman-1.2-r1 (27 Sep 2009)
+
+  27 Sep 2009; Tristan Heaven <nyhm@gentoo.org>
+  +worldofpadman-1.2-r1.ebuild:
+  Fix Makefile ARCH setting which was disabling the bytecode compiler on
+  amd64; add openal USE flag; respect LDFLAGS
+
+  17 Mar 2008; Tristan Heaven <nyhm@gentoo.org> worldofpadman-1.2.ebuild:
+  Add ~amd64 keyword, bug #207565
+
+*worldofpadman-1.2 (25 Jan 2008)
+
+  25 Jan 2008; Tristan Heaven <nyhm@gentoo.org> +metadata.xml,
+  +worldofpadman-1.2.ebuild:
+  Initial commit, bug #173015
+

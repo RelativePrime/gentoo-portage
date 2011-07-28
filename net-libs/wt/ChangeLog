@@ -1,0 +1,22 @@
+# ChangeLog for net-libs/wt
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-libs/wt/ChangeLog,v 1.3 2010/12/20 13:54:54 pva Exp $
+
+*wt-3.1.7 (20 Dec 2010)
+
+  20 Dec 2010; Peter Volkov <pva@gentoo.org> +wt-3.1.7.ebuild:
+  Version bump, thank Nikoli for this job.
+
+*wt-3.1.6 (06 Nov 2010)
+
+  06 Nov 2010; Peter Volkov <pva@gentoo.org> +wt-3.1.6.ebuild:
+  Version bump, bug 344001, thank José Romildo Malaquias for report and
+  Nikoli for this job.
+
+*wt-3.1.5 (14 Oct 2010)
+
+  14 Oct 2010; Peter Volkov <pva@gentoo.org> +wt-3.1.5.ebuild,
+  +files/wt-fix-automagic.patch, +metadata.xml:
+  Initial import, the dependency of future releases of the eiskaltdcpp,
+  thank Nikoli for this job.
+

@@ -1,0 +1,51 @@
+# ChangeLog for app-benchmarks/httperf
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-benchmarks/httperf/ChangeLog,v 1.13 2010/01/15 23:24:06 patrick Exp $
+
+*httperf-0.9.0 (15 Jan 2010)
+
+  15 Jan 2010; Patrick Lauer <patrick@gentoo.org> +httperf-0.9.0.ebuild:
+  Bump, new homepage, fixes #300991
+
+  12 Oct 2009; Mark Loeser <halcy0n@gentoo.org> httperf-0.8.ebuild:
+  QA fixes; unquoted variables
+
+  01 Aug 2009; Tiago Cunha <tcunha@gentoo.org> httperf-0.8.ebuild:
+  stable sparc, bug 278615
+
+  18 Mar 2009; <ricmm@gentoo.org> httperf-0.8.ebuild:
+  Drop down to ~mips due to unstable deps
+
+  20 Apr 2008; Diego Pettenò <flameeyes@gentoo.org> httperf-0.8.ebuild:
+  Run eautoreconf in src_unpack phase, bug #207428.
+
+  19 Mar 2007; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove ka0ttic from metadata.xml due to retirement.
+
+  13 Dec 2006; Charlie Shepherd <masterdriverz@gentoo.org>
+  httperf-0.8.ebuild:
+  Fix bug 153904; thanks to Jakub for the patch
+
+  06 Dec 2006; Alexander H. Færøy <eroyf@gentoo.org> httperf-0.8.ebuild:
+  Stable on MIPS.
+
+  08 Apr 2006; Simon Stelling <blubb@gentoo.org> httperf-0.8.ebuild:
+  stable on amd64
+
+  30 Mar 2006; Joshua Jackson <tsunam@gentoo.org> httperf-0.8.ebuild:
+  stable on x86; bug #126956
+
+  01 Oct 2005; Simon Stelling <blubb@gentoo.org> httperf-0.8.ebuild:
+  added ~amd64 keyword
+
+  26 Sep 2005; Aaron Walker <ka0ttic@gentoo.org> httperf-0.8.ebuild:
+  Parallel makes are broken, bug #106921.
+
+*httperf-0.8 (17 Aug 2005)
+
+  17 Aug 2005; Aaron Walker <ka0ttic@gentoo.org>
+  +files/httperf-0.8-optional-ssl.diff,
+  +files/httperf-0.8-respect-DESTDIR.diff, +metadata.xml,
+  +httperf-0.8.ebuild:
+  Initial commit; ebuild by me.
+

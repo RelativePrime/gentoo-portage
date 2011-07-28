@@ -1,0 +1,39 @@
+# ChangeLog for dev-perl/DateTime-Format-ISO8601
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/DateTime-Format-ISO8601/ChangeLog,v 1.7 2011/07/19 19:51:53 maekke Exp $
+
+  19 Jul 2011; Markus Meier <maekke@gentoo.org>
+  DateTime-Format-ISO8601-0.07.ebuild:
+  amd64/x86 stable, bug #374461
+
+  22 Aug 2010; Torsten Veller <tove@gentoo.org>
+  -files/fix_1_digit_year.patch:
+  Remove unused patch
+
+  09 Apr 2010; Torsten Veller <tove@gentoo.org>
+  -DateTime-Format-ISO8601-0.06-r1.ebuild:
+  Cleanup
+
+*DateTime-Format-ISO8601-0.07 (18 Jan 2010)
+
+  18 Jan 2010; Torsten Veller <tove@gentoo.org>
+  +DateTime-Format-ISO8601-0.07.ebuild:
+  Version bump
+
+*DateTime-Format-ISO8601-0.06-r1 (15 Jan 2010)
+
+  15 Jan 2010; Torsten Veller <tove@gentoo.org>
+  +files/fix_1_digit_year.patch, -DateTime-Format-ISO8601-0.06.ebuild,
+  +DateTime-Format-ISO8601-0.06-r1.ebuild:
+  Fix _fix_1_digit_year to work in 2010 (#298966). Cleanup
+
+  23 Nov 2009; Torsten Veller <tove@gentoo.org>
+  DateTime-Format-ISO8601-0.06.ebuild:
+  Depend on Module-Build (#294247). Run tests
+
+*DateTime-Format-ISO8601-0.06 (09 Dec 2008)
+
+  09 Dec 2008; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +DateTime-Format-ISO8601-0.06.ebuild:
+  Initial commit, dep for new dev-libs/OpenSRF-1.0.1
+

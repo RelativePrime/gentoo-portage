@@ -1,0 +1,135 @@
+# ChangeLog for dev-util/molecule
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/molecule/ChangeLog,v 1.23 2011/07/21 12:03:16 lxnay Exp $
+
+*molecule-0.9.20.7 (21 Jul 2011)
+
+  21 Jul 2011; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.20.6.ebuild,
+  +molecule-0.9.20.7.ebuild:
+  version bump
+
+*molecule-0.9.20.6 (20 Jul 2011)
+
+  20 Jul 2011; Fabio Erculiani <lxnay@gentoo.org> +molecule-0.9.20.6.ebuild:
+  version bump
+
+  25 Apr 2011; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  molecule-0.9.20.5.ebuild:
+  Fix deprecation warnings.
+
+  31 Jan 2011; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.20.4.ebuild:
+  drop older version
+
+*molecule-0.9.20.5 (18 Dec 2010)
+
+  18 Dec 2010; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.12.ebuild,
+  +molecule-0.9.20.5.ebuild:
+  version bump
+
+*molecule-0.9.20.4 (18 Dec 2010)
+
+  18 Dec 2010; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.20.3.ebuild,
+  +molecule-0.9.20.4.ebuild:
+  version bump
+
+*molecule-0.9.20.3 (15 Oct 2010)
+
+  15 Oct 2010; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.20.2.ebuild,
+  +molecule-0.9.20.3.ebuild:
+  version bump
+
+*molecule-0.9.20.2 (26 Aug 2010)
+
+  26 Aug 2010; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.20.1.ebuild,
+  +molecule-0.9.20.2.ebuild:
+  version bump
+
+*molecule-0.9.20.1 (11 Aug 2010)
+
+  11 Aug 2010; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.20.ebuild,
+  +molecule-0.9.20.1.ebuild:
+  version bump
+
+*molecule-0.9.20 (10 Aug 2010)
+
+  10 Aug 2010; Fabio Erculiani <lxnay@gentoo.org> +molecule-0.9.20.ebuild:
+  version bump
+
+*molecule-0.9.12 (23 Jul 2010)
+
+  23 Jul 2010; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.11.2.ebuild,
+  +molecule-0.9.12.ebuild:
+  version bump
+
+*molecule-0.9.11.2 (23 Jul 2010)
+
+  23 Jul 2010; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.11.1.ebuild,
+  +molecule-0.9.11.2.ebuild:
+  version bump
+
+*molecule-0.9.11.1 (22 Jul 2010)
+
+  22 Jul 2010; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.11.ebuild,
+  +molecule-0.9.11.1.ebuild:
+  version bump, fix regression, see molecule ChangeLog
+
+*molecule-0.9.11 (20 Jul 2010)
+
+  20 Jul 2010; Fabio Erculiani <lxnay@gentoo.org>
+  -molecule-0.9.10.11.ebuild, -molecule-0.9.10.20.ebuild,
+  +molecule-0.9.11.ebuild:
+  version bump to 0.9.11
+
+*molecule-0.9.10.20 (15 Jul 2010)
+
+  15 Jul 2010; Fabio Erculiani <lxnay@gentoo.org>
+  +molecule-0.9.10.20.ebuild:
+  version bump to 0.9.10.20
+
+*molecule-0.9.10.11 (12 Jul 2010)
+
+  12 Jul 2010; Fabio Erculiani <lxnay@gentoo.org>
+  -molecule-0.9.10.10.ebuild, +molecule-0.9.10.11.ebuild:
+  version bump
+
+*molecule-0.9.10.10 (12 Jul 2010)
+
+  12 Jul 2010; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.10.3.ebuild,
+  +molecule-0.9.10.10.ebuild:
+  version bump
+
+  29 Jun 2010; Fabio Erculiani <lxnay@gentoo.org> molecule-0.9.10.3.ebuild:
+  fix PYTHON_DEPEND, works with Python 3.x
+
+*molecule-0.9.10.3 (29 Jun 2010)
+
+  29 Jun 2010; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.10.2.ebuild,
+  +molecule-0.9.10.3.ebuild:
+  version bump, several ebuild quality improvements, thanks to
+  ssuominen@gentoo.org for reporting
+
+*molecule-0.9.10.2 (29 Jun 2010)
+
+  29 Jun 2010; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.10.1.ebuild,
+  +molecule-0.9.10.2.ebuild:
+  upstream fixed more Python3.x bugs (2), version bump
+
+*molecule-0.9.10.1 (29 Jun 2010)
+
+  29 Jun 2010; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.10.ebuild,
+  +molecule-0.9.10.1.ebuild:
+  version bump, upstream fixed more Python 3.x bugs, fix ebuild
+  DEPEND/RDEPEND, thanks to ssuominen@gentoo.org
+
+*molecule-0.9.10 (29 Jun 2010)
+
+  29 Jun 2010; Fabio Erculiani <lxnay@gentoo.org> -molecule-0.9.6.3.ebuild,
+  +molecule-0.9.10.ebuild:
+  version bump, add Python3.x support, improve ebuild quality, close bug
+  #326105, thanks arfrever@gentoo.org for reporting
+
+*molecule-0.9.6.3 (28 Jun 2010)
+
+  28 Jun 2010; Fabio Erculiani <lxnay@gentoo.org> +molecule-0.9.6.3.ebuild,
+  +metadata.xml: new ebuild added, Molecule is the Sabayon release metatool
+

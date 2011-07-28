@@ -1,0 +1,347 @@
+# ChangeLog for app-office/libreoffice
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/ChangeLog,v 1.69 2011/07/28 09:59:52 scarabeus Exp $
+
+  28 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  files/libreoffice-fix-sandbox-install.patch:
+  Update sandbox violation patch to shut another one.
+
+  27 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.3.ebuild:
+  When building nsplugin symlink it to system location. Fixes bug #375299. Also
+  put branding only into one location.
+
+  27 Jul 2011; Matt Turner <mattst88@gentoo.org> libreoffice-3.4.2.3.ebuild:
+  Update branding version.
+
+  27 Jul 2011; Matt Turner <mattst88@gentoo.org> libreoffice-3.4.2.3.ebuild:
+  Remove old comment about no graphite package in gentoo.
+
+  27 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.3.ebuild:
+  Bump branding as there was borked sofficerc in the 0.1.
+
+  27 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  files/libreoffice-as-needed-gtk.patch:
+  Use proper gb call to add GTK_LIBS, this should fix bug #376609.
+
+*libreoffice-3.4.2.3 (27 Jul 2011)
+
+  27 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -libreoffice-3.3.2.ebuild, -libreoffice-3.4.1.ebuild,
+  -libreoffice-3.4.2.2.ebuild, +libreoffice-3.4.2.3.ebuild:
+  Version bump to 3.4.2.3. Punt older versions that are overshadowed.
+
+  26 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild:
+  Enhance REQUIRED_USE comment as nsplugins needs gtk too, so we are ready in
+  eapi4 future.
+
+  26 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild:
+  Printproto seriously should not be dependency. Fixes bug #321119.
+
+  26 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild, +files/libreoffice-gbuild-use-cxxflags.patch:
+  Force proper variable usage. Just saw this in gekis overlay so adding to main
+  tree too.
+
+  26 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild,
+  +files/libreoffice-translate-toolkit-parallel-solenv.patch:
+  Aparently it looks like translate-toolkit require solenv to not fail in
+  parallel build. Fixes bug #376387.
+
+  26 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild, metadata.xml:
+  Enable optional support for graphite via graphite2 package.
+
+  26 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild:
+  Introduce branding useflag, yay gentoo screen and about, Thanx to Ian Whyman
+  for this.
+
+  26 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  files/libreoffice-fix-sandbox-install.patch:
+  Update sandbox fix to honour TMPDIR variable instead of placing it to
+  distdir.
+
+  26 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -files/libreoffice-as-needed-gtk-2.patch, libreoffice-3.4.2.2.ebuild,
+  +files/libreoffice-fix-sandbox-install.patch,
+  files/libreoffice-as-needed-gtk.patch:
+  Fix the gtk patch, add patch for sandbox violation during install, enforce
+  not-stripping of solver, portage handle it himself.
+
+  26 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild:
+  Set default theme to crystal, set jobs to 1 if the sed does not find any
+  value, and rename the variable to not collide with bash jobs command.
+
+  26 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  +files/libreoffice-as-needed-gtk-2.patch, libreoffice-3.4.2.2.ebuild,
+  +files/libreoffice-as-needed-gtk.patch:
+  Fix as-needed linking on the quickstarter. Patches backported from upstream
+  trunk. Fixes gentoo bug #376469.
+
+  25 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild, -files/libreoffice-unfigured-options.txt,
+  metadata.xml:
+  Make vba scripting optional. Punt undecided.txt file with unknown opts as we
+  set all those that we require.
+
+  25 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild:
+  Disable pch (precompiled headers) support as it creates just build crashes.
+
+  25 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild:
+  Do not pre-strip the binaries, check for proper reqs, update install phase to
+  use distro-pack-install (smaller yay).
+
+  25 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  files/libreoffice-solenv-build-crash.patch:
+  Fix solenv patch. Accidentally added html page instead of the patch.
+
+  25 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild:
+  Upgrade jobs parsing per bug 375761. Thx to Drake Wyrm for the sed.
+
+  25 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild, +files/libreoffice-solenv-build-crash.patch,
+  +files/libreoffice-vbaobj-visibility-fix.patch:
+  Add build fixes for crash in solenv and vbahelper fix for gcc-4.6.
+
+  25 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild:
+  Split out junit check so it does not die without test enabled. Fixes bug
+  #376293.
+
+  24 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild, +files/libreoffice-svx.patch:
+  Quick&Dirty hack to fix svx build crash i observed on my desktop (definitely
+  not a solution for upstream).
+
+  24 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild:
+  Add missing inherits.
+
+  24 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild:
+  Enable junit only when building with tests and java enabled.
+
+  24 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.2.2.ebuild:
+  Silence repoman warnings.
+
+*libreoffice-3.4.2.2 (24 Jul 2011)
+
+  24 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  +libreoffice-3.4.2.2.ebuild, +files/libreoffice-unfigured-options.txt,
+  metadata.xml:
+  Add 3.4.2_rc2 to the main tree (from my dev overlay). This still contains A
+  LOT rough edges.
+
+  19 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.1.ebuild:
+  Fix variable name in templates condition resulting it never being true.
+
+  18 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.4.1.ebuild:
+  Non-maintainer commit. Remove double environment calls, cleanup global
+  variables by unsetting them where possible, add missing dies during install,
+  run eautoreconf and econf instead of autogen.sh, sort the deps
+  alphabetically, add base eclass and PATCHES array support (and epatch_user),
+  run emake instead of make. Mostly fixed all issues i had during the time i
+  compiled it. Still good idea would be to migrate most parts of this ebuild to
+  elbits. PS: debuging something in package that builds for 3 hours is major
+  pita.
+
+  14 Jul 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.4.1.ebuild:
+  Extensions now build fine again without java
+
+  14 Jul 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.4.1.ebuild:
+  Bring back templates support. The credit for this really goes to geki!
+
+  14 Jul 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.4.1.ebuild:
+  Fix env problem that messed up some peoples builds, see bug #374243
+
+  06 Jul 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.4.1.ebuild,
+  metadata.xml:
+  Introduce "offlinehelp" use flag similar to libreoffice-bin. If not set the
+  LibreOffice Wiki will 
+  be used instead of the local help files. Also remove some useless downloads.
+
+  06 Jul 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.4.1.ebuild:
+  You should not listen to repoman in every case. Build fix.
+
+*libreoffice-3.4.1 (06 Jul 2011)
+
+  06 Jul 2011; Andreas Proschofsky <suka@gentoo.org> +libreoffice-3.4.1.ebuild,
+  +files/libreoffice-3.4.1-salfix.diff, +files/wrapper.in:
+  LibreOffice 3.4.1. New build system so took some time, but will (hopefully)
+  make everything quite 
+  a bit easier in the long run. Still masked for some further bugfixing and
+  testing.
+
+  20 Jun 2011; Jonathan Callen <abcd@gentoo.org> -files/gentoo-3.3.3.diff:
+  Remove unused file
+
+  17 Jun 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  libreoffice-3.3.3.ebuild:
+  It is dumb to copy files in filesdir 1:1. Rather use fixed version in the
+  ebuild.
+
+  17 Jun 2011; Lars Wendler <polynomial-c@gentoo.org> +files/gentoo-3.3.3.diff:
+  Non-maintainer commit: Added missing patch file with kind permission from
+  suka (bug #371969).
+
+*libreoffice-3.3.3 (16 Jun 2011)
+
+  16 Jun 2011; Andreas Proschofsky <suka@gentoo.org> +libreoffice-3.3.3.ebuild:
+  Add LibreOffice 3.3.3, another bugfix release.
+
+  22 May 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.3.2.ebuild,
+  +files/libreoffice-3.3.2-bison25.diff:
+  Fix build with bison 2.5, bug #367963
+
+  07 Apr 2011; Joseph Jezak <josejx@gentoo.org> libreoffice-3.3.2.ebuild:
+  Marked ~ppc for bug #359883.
+
+  27 Mar 2011; Christian Faulhammer <fauli@gentoo.org>
+  libreoffice-3.3.1.ebuild:
+  stable x86, bug 358907
+
+*libreoffice-3.3.2 (22 Mar 2011)
+
+  22 Mar 2011; Andreas Proschofsky <suka@gentoo.org>
+  -libreoffice-3.3.2_rc2.ebuild, +files/gentoo-3.3.2.diff,
+  +files/libreoffice-libdb5-fix-check.diff, +libreoffice-3.3.2.ebuild,
+  -files/gentoo-3.3.2_rc2.diff:
+  Bump to LibreOffice 3.3.2, also fix db-5 support
+
+  18 Mar 2011; Andreas Proschofsky <suka@gentoo.org>
+  libreoffice-3.3.2_rc2.ebuild:
+  Some more changes for custom-cflags
+
+*libreoffice-3.3.2_rc2 (18 Mar 2011)
+
+  18 Mar 2011; Andreas Proschofsky <suka@gentoo.org>
+  -libreoffice-3.3.2_rc1.ebuild, +libreoffice-3.3.2_rc2.ebuild,
+  -files/gentoo-3.3.2_rc1.diff, +files/gentoo-3.3.2_rc2.diff:
+  New release candidate, also brings some further improvements to the ebuild
+  *) Add custom-optimization flag, thanks mostly to geki <h.mth@web.de>
+   bug #355981
+  *) Fixed dependency on cairo, we really want that not to be optional
+  *) Bunch of cleanups
+
+  17 Mar 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.3.1.ebuild,
+  libreoffice-3.3.2_rc1.ebuild:
+  Fix Homepage entry
+
+  16 Mar 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.3.1.ebuild,
+  libreoffice-3.3.2_rc1.ebuild:
+  Remove old style virtuals PROVIDE, bug #358895
+
+  16 Mar 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.3.1.ebuild,
+  libreoffice-3.3.2_rc1.ebuild:
+  Update icon caches after installation
+
+  16 Mar 2011; Markos Chandras <hwoarang@gentoo.org> libreoffice-3.3.1.ebuild:
+  Stable on amd64 wrt bug #358907
+
+*libreoffice-3.3.2_rc1 (13 Mar 2011)
+
+  13 Mar 2011; Andreas Proschofsky <suka@gentoo.org>
+  +libreoffice-3.3.2_rc1.ebuild, +files/gentoo-3.3.2_rc1.diff:
+  Add first release candidate for LibreOffice 3.3.2, masked for now
+
+  13 Mar 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.3.1.ebuild:
+  Properly slot gtk+-2 dependencies, also move pre-compilation checks to right
+  stage, bug #358491
+
+  02 Mar 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.3.1.ebuild,
+  +files/libreoffice-3.3.1-neon_remove_SSPI_support.diff:
+  Fix build with neon supporting SSPI, bug #356581
+
+  24 Feb 2011; Andreas Proschofsky <suka@gentoo.org> -libreoffice-3.3.0.ebuild,
+  -files/gentoo-3.3.0.diff, libreoffice-3.3.1.ebuild,
+  +files/libreoffice-3.3-libpng-1.5.diff, -files/libreoffice-3.3-prefix.patch:
+  Fix build with libpng 1.5 #356281, also remove outdated ebuild 
+
+*libreoffice-3.3.1 (23 Feb 2011)
+
+  23 Feb 2011; Andreas Proschofsky <suka@gentoo.org>
+  -libreoffice-3.3.1_rc1.ebuild, +libreoffice-3.3.1.ebuild,
+  -files/gentoo-3.3.1_rc1.diff, +files/gentoo-3.3.1.diff:
+  Bump to LibreOffice 3.3.1, bugfix release
+
+  17 Feb 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.3.0.ebuild,
+  +files/libreoffice-3.3.0_libxmlsec_fix_extern_c.diff,
+  libreoffice-3.3.1_rc1.ebuild:
+  Fix build problem with libxml2[+icu], thanks to Neil Cathey <cneil@yahoo.com>
+  for the patch, bug #354911 
+
+*libreoffice-3.3.1_rc1 (12 Feb 2011)
+
+  12 Feb 2011; Andreas Proschofsky <suka@gentoo.org>
+  +libreoffice-3.3.1_rc1.ebuild, +files/gentoo-3.3.1_rc1.diff:
+  Release Candidate for LibreOffice 3.3.1
+
+  08 Feb 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.3.0.ebuild:
+  Until we have a better fix, disable extensions for -java build, preventing
+  breakage, bug #352812
+
+  05 Feb 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.3.0.ebuild,
+  +files/libreoffice-3.3-prefix.patch:
+  Another bunch of prefix fixes
+
+  05 Feb 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.3.0.ebuild,
+  files/gentoo-3.3.0.diff:
+  Cleanup work: Prefix fixes, remove outated deps and config-flags, fix pax
+  stuff
+
+  02 Feb 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.3.0.ebuild:
+  Fix desktop files, thanks to Sanders Sweers <Sander.Sweers@gmail.com>, see
+  bug #352955
+
+  25 Jan 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.3.0.ebuild:
+  Fix jpeg-dep and some ebuild cleanups
+
+  25 Jan 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.3.0.ebuild:
+  Ooops, another little fix for bash-completion
+
+  25 Jan 2011; Andreas Proschofsky <suka@gentoo.org> libreoffice-3.3.0.ebuild:
+  Fix bash_completion installation, bug #352656
+
+*libreoffice-3.3.0 (25 Jan 2011)
+
+  25 Jan 2011; Andreas Proschofsky <suka@gentoo.org>
+  -libreoffice-3.3.0_rc4.ebuild, +libreoffice-3.3.0.ebuild,
+  -files/gentoo-3.3.0_rc4.diff, +files/gentoo-3.3.0.diff:
+  Bump to final release of LibreOffice 3.3.0
+
+  24 Jan 2011; Andreas Proschofsky <suka@gentoo.org>
+  libreoffice-3.3.0_rc4.ebuild, +files/sdext-presenter.diff:
+  Fix extensions stuff, patch from bug #339057
+
+  24 Jan 2011; Andreas Proschofsky <suka@gentoo.org>
+  libreoffice-3.3.0_rc4.ebuild:
+  Fix the Homepage entry
+
+*libreoffice-3.3.0_rc4 (24 Jan 2011)
+
+  24 Jan 2011; Andreas Proschofsky <suka@gentoo.org>
+  +libreoffice-3.3.0_rc4.ebuild, +files/gentoo-3.3.0_rc4.diff,
+  +files/enable-startup-notification.diff, +files/env_log.diff,
+  +files/fix-ooo-collision.diff, +files/gentoo-pythonpath.diff,
+  +files/scrap-pixmap-links.diff, +metadata.xml:
+  Initial ebuild for LibreOffice, masked for now as it needs some testing.
+  Also:
+
+  * Extensions are not built atm, otherwise this breaks the build
+  * ebuild needs some cleanups
+
+  Thanks especially to Hanno Meyer-Thurow (geki) which did a lot of the ground
+  work in his overlay! 
+

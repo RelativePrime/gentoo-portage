@@ -1,0 +1,65 @@
+# ChangeLog for dev-perl/Devel-REPL
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Devel-REPL/ChangeLog,v 1.14 2011/01/14 17:54:23 tove Exp $
+
+  14 Jan 2011; Torsten Veller <tove@gentoo.org> -Devel-REPL-1.003011.ebuild:
+  Cleanup
+
+*Devel-REPL-1.003012 (28 Sep 2010)
+
+  28 Sep 2010; Torsten Veller <tove@gentoo.org> +Devel-REPL-1.003012.ebuild:
+  Version bump
+
+  22 Aug 2010; Torsten Veller <tove@gentoo.org> -files/cpan_rt_54579.patch,
+  -Devel-REPL-1.003010.ebuild, Devel-REPL-1.003011.ebuild:
+  Cleanup
+
+*Devel-REPL-1.003011 (16 Jun 2010)
+
+  16 Jun 2010; Torsten Veller <tove@gentoo.org> +Devel-REPL-1.003011.ebuild:
+  Version bump
+
+  11 Jun 2010; Torsten Veller <tove@gentoo.org> -Devel-REPL-1.003007.ebuild,
+  -Devel-REPL-1.003007-r1.ebuild, -Devel-REPL-1.003009.ebuild:
+  Cleanup
+
+*Devel-REPL-1.003010 (24 May 2010)
+
+  24 May 2010; Torsten Veller <tove@gentoo.org> +Devel-REPL-1.003010.ebuild:
+  Version bump
+
+  11 May 2010; Torsten Veller <tove@gentoo.org> Devel-REPL-1.003009.ebuild:
+  Don't depend on Task-Weaken (#294096)
+
+*Devel-REPL-1.003009 (28 Mar 2010)
+
+  28 Mar 2010; Robin H. Johnson <robbat2@gentoo.org>
+  +Devel-REPL-1.003009.ebuild:
+  Version bump via perl-bump experimental tool.
+
+*Devel-REPL-1.003007-r1 (05 Mar 2010)
+
+  05 Mar 2010; Torsten Veller <tove@gentoo.org> +files/cpan_rt_54579.patch,
+  +Devel-REPL-1.003007-r1.ebuild:
+  Fixes load_plugin error via Moose::Meta::Class (#307869). Thanks to Jason
+  Mills
+
+  07 Sep 2009; Torsten Veller <tove@gentoo.org> -Devel-REPL-1.003006.ebuild:
+  Cleanup
+
+*Devel-REPL-1.003007 (03 Jul 2009)
+
+  03 Jul 2009; Torsten Veller <tove@gentoo.org> +Devel-REPL-1.003007.ebuild:
+  Version bump
+
+  27 Jun 2009; Robin H. Johnson <robbat2@gentoo.org>
+  Devel-REPL-1.003006.ebuild:
+  Import the plugin deps from the ebuild version in the perl overlay, else
+  Torsten will be unhappy at me again.
+
+*Devel-REPL-1.003006 (23 Jun 2009)
+
+  23 Jun 2009; Robin H. Johnson <robbat2@gentoo.org>
+  +Devel-REPL-1.003006.ebuild, +metadata.xml:
+  Initial commit. Ebuild by Robin H. Johnson <robbat2@gentoo.org>.
+

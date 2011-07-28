@@ -1,0 +1,21 @@
+# ChangeLog for dev-haskell/json
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-haskell/json/ChangeLog,v 1.4 2011/04/23 15:33:14 slyfox Exp $
+
+*json-0.4.4 (23 Apr 2011)
+
+  23 Apr 2011; Sergei Trofimovich <slyfox@gentoo.org> +json-0.4.4.ebuild,
+  metadata.xml:
+  Version bump.
+
+  31 Jan 2011; Christian Faulhammer <fauli@gentoo.org> json-0.4.3.ebuild:
+  stable x86, bug 352436
+
+  23 Jan 2011; Markos Chandras <hwoarang@gentoo.org> json-0.4.3.ebuild:
+  Stable on amd64 wrt bug #352436
+
+*json-0.4.3 (08 Mar 2010)
+
+  08 Mar 2010; Lennart Kolmodin <kolmodin@gentoo.org> +json-0.4.3.ebuild, +metadata.xml:
+  Initial version.
+

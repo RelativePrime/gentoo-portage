@@ -1,0 +1,41 @@
+# ChangeLog for dev-ruby/thor
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/thor/ChangeLog,v 1.9 2011/07/24 09:39:01 xarthisius Exp $
+
+  24 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> thor-0.14.6.ebuild:
+  Marked ~ppc/~ppc64 wrt #351835
+
+  29 Jun 2011; Fabian Groffen <grobian@gentoo.org> thor-0.14.6.ebuild:
+  Marked ~x86-solaris
+
+*thor-0.14.6 (04 Dec 2010)
+
+  04 Dec 2010; Hans de Graaff <graaff@gentoo.org> +thor-0.14.6.ebuild:
+  Version bump.
+
+  04 Dec 2010; Hans de Graaff <graaff@gentoo.org> -thor-0.14.2.ebuild:
+  Remove old version.
+
+*thor-0.14.3 (29 Oct 2010)
+
+  29 Oct 2010; Hans de Graaff <graaff@gentoo.org> +thor-0.14.3.ebuild:
+  Version bump.
+
+  29 Oct 2010; Hans de Graaff <graaff@gentoo.org> -thor-0.14.0.ebuild:
+  Remove old version.
+
+  20 Oct 2010; Diego E. Pettenò <flameeyes@gentoo.org> thor-0.14.0.ebuild,
+  thor-0.14.2.ebuild:
+  Fix build with USE=-doc (bug #341881).
+
+*thor-0.14.2 (02 Oct 2010)
+
+  02 Oct 2010; Hans de Graaff <graaff@gentoo.org> +thor-0.14.2.ebuild:
+  Version bump.
+
+*thor-0.14.0 (31 Aug 2010)
+
+  31 Aug 2010; Alex Legler <a3li@gentoo.org> +thor-0.14.0.ebuild,
+  +metadata.xml:
+  Initial import. Ebuild by me.
+

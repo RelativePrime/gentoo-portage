@@ -1,0 +1,50 @@
+# ChangeLog for sci-visualization/xyscan
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-visualization/xyscan/ChangeLog,v 1.11 2011/07/20 17:03:54 pacho Exp $
+
+  20 Jul 2011; Pacho Ramos <pacho@gentoo.org> metadata.xml:
+  Drop maintainer due retirement, bug #105599
+
+*xyscan-3.3.0 (15 Jan 2011)
+
+  15 Jan 2011; Sébastien Fabbro <bicatali@gentoo.org> +xyscan-3.3.0.ebuild:
+  Version bump
+
+  22 May 2010; Pacho Ramos <pacho@gentoo.org> xyscan-3.2.1.ebuild:
+  stable amd64, bug 301485
+
+*xyscan-3.2.2 (12 Apr 2010)
+
+  12 Apr 2010; Sébastien Fabbro <bicatali@gentoo.org> +xyscan-3.2.2.ebuild:
+  Version bump
+
+  21 Jan 2010; Christian Faulhammer <fauli@gentoo.org> xyscan-3.2.1.ebuild:
+  stable x86, bug 301485
+
+  06 Jan 2010; Sébastien Fabbro <bicatali@gentoo.org> -xyscan-3.1.0.ebuild,
+  xyscan-3.2.1.ebuild:
+  Let the moc files be re-generated, thanks Ben Bannier, bug #296456
+
+  30 Sep 2009; Dominik Kapusta <ayoy@gentoo.org> xyscan-3.1.0.ebuild,
+  xyscan-3.2.1.ebuild:
+  Removed dependency on Qt metapackage
+
+*xyscan-3.2.1 (22 Jul 2009)
+
+  22 Jul 2009; Sébastien Fabbro <bicatali@gentoo.org> -xyscan-3.02.ebuild,
+  +xyscan-3.2.1.ebuild, -files/xyscan-3.02-docs.patch:
+  Version bump, thanks to Ben Bannier, closing bug #278108
+
+*xyscan-3.1.0 (30 Jan 2009)
+
+  30 Jan 2009; Sébastien Fabbro <bicatali@gentoo.org> metadata.xml,
+  +xyscan-3.1.0.ebuild:
+  Version bump. Thanks Benjamin Bannier, bug #256674
+
+*xyscan-3.02 (03 Jul 2008)
+
+  03 Jul 2008; Markus Dittrich <markusle@gentoo.org>
+  +files/xyscan-3.02-docs.patch, +metadata.xml, +xyscan-3.02.ebuild:
+  New package (see bug #226481). Thanks much to Benjamin Bannier
+  <benni@netronaut.de> for his ebuild.
+

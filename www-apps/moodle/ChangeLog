@@ -1,0 +1,58 @@
+# ChangeLog for www-apps/moodle
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apps/moodle/ChangeLog,v 1.9 2011/07/12 21:11:45 blueness Exp $
+
+  12 Jul 2011; Anthony G. Basile <blueness@gentoo.org> moodle-1.9.12.ebuild,
+  moodle-2.0.3.ebuild, moodle-2.1.ebuild:
+  Make moodle depend on either php[gd] or php[gd-external], bug #374605
+
+*moodle-2.1 (09 Jul 2011)
+
+  09 Jul 2011; Anthony G. Basile <blueness@gentoo.org> -moodle-1.9.11.ebuild,
+  -moodle-2.0.2.ebuild, +moodle-2.1.ebuild:
+  Version bump, removed depcreated
+
+*moodle-2.0.3 (11 May 2011)
+*moodle-1.9.12 (11 May 2011)
+
+  11 May 2011; Anthony G. Basile <blueness@gentoo.org> +moodle-1.9.12.ebuild,
+  +moodle-2.0.3.ebuild:
+  Version bumps address several security issues.
+  See http://docs.moodle.org/en/Moodle_1.9.12_release_notes
+  and http://docs.moodle.org/en/Moodle_2.0.3_release_notes
+
+  10 Mar 2011; Anthony G. Basile <blueness@gentoo.org> -moodle-1.9.9.ebuild,
+  -moodle-1.9.9-r1.ebuild, -moodle-1.9.10.ebuild, -moodle-2.0.1.ebuild:
+  Removed decprecated versions, bug #353431
+
+*moodle-2.0.2 (22 Feb 2011)
+*moodle-1.9.11 (22 Feb 2011)
+
+  22 Feb 2011; Anthony G. Basile <blueness@gentoo.org>
+  +moodle-1.9.11.ebuild, +moodle-2.0.2.ebuild, files/postinstall-en.txt:
+  Version bumps.
+
+*moodle-2.0.1 (08 Jan 2011)
+
+  08 Jan 2011; Anthony G. Basile <blueness@gentoo.org> +moodle-2.0.1.ebuild:
+  Version bump
+
+*moodle-1.9.10 (29 Oct 2010)
+
+  29 Oct 2010; Anthony G. Basile <blueness@gentoo.org>
+  +moodle-1.9.10.ebuild:
+  Version bump
+
+*moodle-1.9.9-r1 (13 Aug 2010)
+
+  13 Aug 2010; Anthony G. Basile <blueness@gentoo.org>
+  +moodle-1.9.9-r1.ebuild, files/postinstall-en.txt:
+  Ported to EAPI 2 USE deps. Bug #332165
+
+*moodle-1.9.9 (19 Jul 2010)
+
+  19 Jul 2010; Anthony G. Basile <blueness@gentoo.org> +moodle-1.9.9.ebuild,
+  +files/config.php, +files/postinstall-en.txt,
+  +files/postinstall-nodb-en.txt, +metadata.xml:
+  New ebuild by Anthony G. Basile. Bug #104275
+

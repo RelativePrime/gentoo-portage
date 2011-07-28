@@ -1,0 +1,196 @@
+# ChangeLog for sys-devel/clang
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/clang/ChangeLog,v 1.40 2011/07/08 10:10:59 ssuominen Exp $
+
+  08 Jul 2011; Samuli Suominen <ssuominen@gentoo.org> clang-2.8-r3.ebuild,
+  clang-2.9.ebuild, clang-9999.ebuild:
+  Convert from "hasq" to "has".
+
+  13 Jun 2011; Bernard Cafarelli <voyageur@gentoo.org> clang-9999.ebuild:
+  Also use same USE-defaults for live ebuild, spotted by mgorny
+
+  06 Jun 2011; Bernard Cafarelli <voyageur@gentoo.org> clang-9999.ebuild:
+  Update live ebuild to sync latest ebuild changes, fixes bug #369027
+
+  21 Apr 2011; Fabian Groffen <grobian@gentoo.org> clang-2.9.ebuild:
+  Update install_name reference to libLLVM
+
+*clang-2.9 (07 Apr 2011)
+
+  07 Apr 2011; Bernard Cafarelli <voyageur@gentoo.org> +clang-2.9.ebuild,
+  +files/clang-2.9-darwin-prefix.patch:
+  Version bump, enable system-cxx-headers by default
+
+  28 Mar 2011; Bernard Cafarelli <voyageur@gentoo.org> -clang-2.7-r4.ebuild,
+  -files/clang-2.7-darwin-prefix.patch:
+  Drop 2.7 versions
+
+  14 Mar 2011; Fabian Groffen <grobian@gentoo.org> clang-2.8-r3.ebuild:
+  Marked ~x86-linux
+
+  26 Jan 2011; Fabian Groffen <grobian@gentoo.org> clang-2.7-r4.ebuild,
+  clang-2.8-r3.ebuild, clang-9999.ebuild:
+  Make scan-build utility Prefix-compatible, by Lionel Orry, bug #352809
+
+*clang-2.8-r3 (19 Dec 2010)
+
+  19 Dec 2010; Bernard Cafarelli <voyageur@gentoo.org> -clang-2.8-r1.ebuild,
+  -clang-2.8-r2.ebuild, +clang-2.8-r3.ebuild, +files/clang-2.8-alignof.patch,
+  +files/clang-2.8-gcc-4.4.4.patch:
+  Backport to rename alignof, fixes C++'0x compilers support. Also adds gcc
+  4.4.4 headers support by default, thanks to Bertjan Broeksema
+  <broeksema@kde.org> in bug #345683
+
+  24 Oct 2010; Fabian Groffen <grobian@gentoo.org> clang-2.8-r2.ebuild,
+  clang-9999.ebuild:
+  Update reference fixing for Darwin for newer more strict versions of
+  Portage
+
+  24 Oct 2010; Fabian Groffen <grobian@gentoo.org> clang-2.8-r2.ebuild,
+  +files/clang-2.8-darwin-prefix.patch:
+  Fix compilation on Darwin, fixes bug #342373, adds back necessary bits for
+  bug #339922
+
+*clang-2.8-r2 (21 Oct 2010)
+
+  21 Oct 2010; Bernard Cafarelli <voyageur@gentoo.org> -clang-2.7-r2.ebuild,
+  -clang-2.8.ebuild, +clang-2.8-r2.ebuild:
+  Also set GCC C headers path with USE=system-cxx-headers, reported by
+  Guillaume Chatelet <chatelet.guillaume@gmail.com>, bug #341891, tested
+  with boost compilation. Clean some versions
+
+*clang-2.8-r1 (12 Oct 2010)
+
+  12 Oct 2010; Bernard Cafarelli <voyageur@gentoo.org> +clang-2.8-r1.ebuild,
+  metadata.xml:
+  Re-enable shared lib, it works now with alltargets USE flag (in sync with
+  llvm one)
+
+  08 Oct 2010; Bernard Cafarelli <voyageur@gentoo.org> clang-2.8.ebuild:
+  Use new llvm 2.8 tarball, just in case
+
+  06 Oct 2010; Bernard Cafarelli <voyageur@gentoo.org> clang-2.8.ebuild,
+  clang-9999.ebuild:
+  Tests now use an internal framework, dejagnu not needed anymore
+
+*clang-2.8 (06 Oct 2010)
+
+  06 Oct 2010; Bernard Cafarelli <voyageur@gentoo.org> +clang-2.8.ebuild,
+  clang-9999.ebuild:
+  2.8 version bump, drop old 2.6, fix one install line in live ebuild
+
+*clang-2.7-r4 (21 Sep 2010)
+
+  21 Sep 2010; Bernard Cafarelli <voyageur@gentoo.org> -clang-2.7-r3.ebuild,
+  +clang-2.7-r4.ebuild, clang-9999.ebuild:
+  Fix rpath sed and disable shared library use, thanks Nick Bowler
+  <nbowler@draconx.ca> in bug #338231
+
+*clang-2.7-r3 (17 Sep 2010)
+
+  17 Sep 2010; Bernard Cafarelli <voyageur@gentoo.org> -clang-2.7.ebuild,
+  +clang-2.7-r3.ebuild:
+  Enable shared library, move libs and plugins to fix bug #337467
+
+  08 Sep 2010; Fabian Groffen <grobian@gentoo.org> clang-2.7-r2.ebuild,
+  +files/clang-2.7-darwin-prefix.patch:
+  Fix configurations for (newer) Darwin configurations, thanks Heiko Przybyl
+
+  03 Sep 2010; Fabian Groffen <grobian@gentoo.org> clang-2.7-r2.ebuild:
+  Marked ~amd64-linux
+
+  26 Aug 2010; Fabian Groffen <grobian@gentoo.org> clang-2.7-r2.ebuild,
+  clang-9999.ebuild:
+  Bump to EAPI=3, make Prefix aware, add support for Darwin platforms, bug
+  #332605
+
+  19 Aug 2010; Bernard Cafarelli <voyageur@gentoo.org> clang-9999.ebuild:
+  system-cxx-headers was missing in -9999 IUSE, spotted by Jack Lloyd
+  <lloyd@randombit.net> in bug #331679
+
+*clang-2.7-r2 (27 Jul 2010)
+
+  27 Jul 2010; Bernard Cafarelli <voyageur@gentoo.org> -clang-2.7-r1.ebuild,
+  +clang-2.7-r2.ebuild, clang-9999.ebuild, metadata.xml:
+  Add a USE-flag for system CXX headers, fix for x86. llvm-gcc users should
+  leave the flag off
+
+*clang-2.7-r1 (20 Jul 2010)
+
+  20 Jul 2010; Bernard Cafarelli <voyageur@gentoo.org> +clang-2.7-r1.ebuild,
+  clang-9999.ebuild:
+  Get C++ headers from active gcc version, bug #327575
+
+  20 Jul 2010; Bernard Cafarelli <voyageur@gentoo.org> -clang-2.6-r3.ebuild,
+  -files/llvm-2.6-cflags.patch, -files/clang-2.6-fixdoc.patch,
+  -files/clang-2.6-gcc45.patch:
+  Drop 2.6 version
+
+  02 Jun 2010; Bernard Cafarelli <voyageur@gentoo.org> clang-9999.ebuild:
+  Set ESVN_REPO_URI to fix subversion_pkg_preinst
+
+*clang-9999 (01 Jun 2010)
+
+  01 Jun 2010; Bernard Cafarelli <voyageur@gentoo.org> +clang-9999.ebuild:
+  Add live version, bug #320919
+
+  28 Apr 2010; Bernard Cafarelli <voyageur@gentoo.org> clang-2.6-r3.ebuild,
+  +files/clang-2.6-gcc45.patch:
+  GCC 4.5 support for 2.6, bug #317467
+
+*clang-2.7 (27 Apr 2010)
+
+  27 Apr 2010; Bernard Cafarelli <voyageur@gentoo.org> -clang-2.6-r2.ebuild,
+  +clang-2.7.ebuild, +files/clang-2.7-fixdoc.patch:
+  2.7 official release version bump
+
+*clang-2.6-r3 (26 Apr 2010)
+
+  26 Apr 2010; Bernard Cafarelli <voyageur@gentoo.org> +clang-2.6-r3.ebuild:
+  python support enhancements, grabbed from my in-progress 2.7_pre2 ebuild
+
+*clang-2.6-r2 (18 Mar 2010)
+
+  18 Mar 2010; Bernard Cafarelli <voyageur@gentoo.org> -clang-2.6-r1.ebuild,
+  +clang-2.6-r2.ebuild, +files/llvm-2.6-cflags.patch:
+  Remove forced -O3 -fomit-frame-pointer CFLAGS, bug #308145
+
+  28 Jan 2010; Bernard Cafarelli <voyageur@gentoo.org> clang-2.6-r1.ebuild:
+  vecho -> echo, spotted by tove
+
+  07 Dec 2009; Bernard Cafarelli <voyageur@gentoo.org> clang-2.6-r1.ebuild:
+  Remove faulty test for 2.6, bug #294689
+
+  07 Dec 2009; Bernard Cafarelli <voyageur@gentoo.org> clang-2.6-r1.ebuild:
+  Fix multilib-strict sed, it broke tests on amd64
+
+  30 Nov 2009; Torsten Veller <tove@gentoo.org> clang-2.6-r1.ebuild:
+  Add missing die: || "die..." -> || die "..."
+
+*clang-2.6-r1 (27 Oct 2009)
+
+  27 Oct 2009; Bernard Cafarelli <voyageur@gentoo.org> -clang-2.6.ebuild,
+  +clang-2.6-r1.ebuild:
+  Install missing files for static analyzer, bug #290697
+
+  26 Oct 2009; Bernard Cafarelli <voyageur@gentoo.org> clang-2.6.ebuild:
+  Add some comments, fix running tests. Now about 50 of them fail not
+  finding their headers, still looking why
+
+  26 Oct 2009; Bernard Cafarelli <voyageur@gentoo.org> clang-2.6.ebuild,
+  +files/clang-2.6-fixdoc.patch:
+  Fix documentation Makefile in the same way as llvm
+
+*clang-2.6 (25 Oct 2009)
+
+  25 Oct 2009; Bernard Cafarelli <voyageur@gentoo.org>
+  -clang-2.6_pre2.ebuild, +clang-2.6.ebuild:
+  Bump to final 2.6 release
+
+*clang-2.6_pre2 (05 Oct 2009)
+
+  05 Oct 2009; Bernard Cafarelli <voyageur@gentoo.org>
+  +clang-2.6_pre2.ebuild, +metadata.xml:
+  Initial commit, based on ebuild by Ravi Pinjala <ravi@p-static.net> in bug
+  #269651
+

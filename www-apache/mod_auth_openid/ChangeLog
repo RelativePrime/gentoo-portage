@@ -1,0 +1,23 @@
+# ChangeLog for www-apache/mod_auth_openid
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apache/mod_auth_openid/ChangeLog,v 1.3 2009/09/17 08:20:05 hollow Exp $
+
+*mod_auth_openid-0.4 (17 Sep 2009)
+
+  17 Sep 2009; Benedikt Böhm <hollow@gentoo.org>
+  -mod_auth_openid-0.2.ebuild, +mod_auth_openid-0.4.ebuild:
+  version bump
+
+*mod_auth_openid-0.2-r1 (08 May 2008)
+
+  08 May 2008; Benedikt Böhm <hollow@gentoo.org>
+  +mod_auth_openid-0.2-r1.ebuild:
+  fix #220595
+
+*mod_auth_openid-0.2 (22 Mar 2008)
+
+  22 Mar 2008; Benedikt Böhm <hollow@gentoo.org>
+  +files/10_mod_auth_openid.conf, +metadata.xml,
+  +mod_auth_openid-0.2.ebuild:
+  initial ebuild wrt #209573
+

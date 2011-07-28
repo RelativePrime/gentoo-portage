@@ -1,0 +1,37 @@
+# ChangeLog for app-misc/golly
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/golly/ChangeLog,v 1.7 2011/03/22 12:29:00 tomka Exp $
+
+  22 Mar 2011; Thomas Kahle <tomka@gentoo.org> golly-2.2.ebuild:
+  x86 stable per bug 357447
+
+  06 Mar 2011; Markos Chandras <hwoarang@gentoo.org> golly-2.2.ebuild:
+  Stable on amd64 wrt bug #357447
+
+*golly-2.2 (25 Nov 2010)
+
+  25 Nov 2010; Michael Weber <xmw@gentoo.org> +golly-2.2.ebuild:
+  Version bump, thanks to Maks Verver <maksverver@geocities.com> for his report
+  and ebuild on bug #346405.
+
+  01 Nov 2010; Christian Faulhammer <fauli@gentoo.org> golly-2.1-r1.ebuild:
+  stable x86, bug 342889
+
+  28 Oct 2010; Markos Chandras <hwoarang@gentoo.org> golly-2.1-r1.ebuild:
+  Stable on amd64 wrt bug #342889
+
+*golly-2.1-r1 (24 Sep 2010)
+
+  24 Sep 2010; Michael Weber <xmw@gentoo.org> +golly-2.1-r1.ebuild:
+  Added dev-lang/perl[ithreads], fixes bug 338192, thanks Maks Verver.
+
+*golly-2.1 (16 Sep 2010)
+
+  16 Sep 2010; Michael Weber <xmw@gentoo.org> +golly-2.1.ebuild,
+  +files/golly-2.1-as-needed.patch, +files/golly-2.1-perl-ldopts.patch,
+  +files/golly-2.1-python-amd64.patch,
+  +files/golly-separate-data-directory.patch, +metadata.xml:
+  Initial import from sunrise overlay. Thanks to Maks Verver
+  <maksverver@geocities.com> on bug #323219 for the ebuild and patches,
+  great work.
+

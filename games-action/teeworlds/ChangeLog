@@ -1,0 +1,23 @@
+# ChangeLog for games-action/teeworlds
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-action/teeworlds/ChangeLog,v 1.3 2011/04/09 16:39:16 mr_bones_ Exp $
+
+  09 Apr 2011; Michael Sterrett <mr_bones_@gentoo.org>
+  teeworlds-0.5.2.ebuild, files/teeworlds-0.5.2-wavpack.patch, metadata.xml:
+  switch to Debian patch for wavpack support (bug #351952); always build server
+
+  04 Apr 2010; Markos Chandras <hwoarang@gentoo.org> teeworlds-0.5.2.ebuild:
+  ~amd64 added wrt bug #311593
+
+  26 Mar 2010; Mounir Lamouri <volkmar@gentoo.org> +teeworlds-0.5.2.ebuild,
+  +files/teeworlds-0.5.2-system-libs.patch,
+  +files/teeworlds-0.5.2-wavpack.patch, +files/teeworlds.xpm, +metadata.xml:
+  Moving teeworlds from games-arcade to games-action.
+
+*teeworlds-0.5.2 (25 Mar 2010)
+
+  25 Mar 2010; Mounir Lamouri <volkmar@gentoo.org> +teeworlds-0.5.2.ebuild,
+  +files/teeworlds-0.5.2-system-libs.patch,
+  +files/teeworlds-0.5.2-wavpack.patch, +files/teeworlds.xpm, +metadata.xml:
+  Initial commit. Fix bug 206287
+

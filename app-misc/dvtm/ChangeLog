@@ -1,0 +1,32 @@
+# ChangeLog for app-misc/dvtm
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/dvtm/ChangeLog,v 1.7 2011/06/02 12:15:00 chithanh Exp $
+
+  02 Jun 2011; Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org>
+  -dvtm-0.5.2.ebuild:
+  Remove old.
+
+  15 Jan 2011; Markus Meier <maekke@gentoo.org> dvtm-0.6.ebuild:
+  x86 stable, bug #350756
+
+  06 Jan 2011; Markos Chandras <hwoarang@gentoo.org> dvtm-0.6.ebuild:
+  Stable on amd64 wrt bug #350756
+
+*dvtm-0.6 (22 Oct 2010)
+
+  22 Oct 2010; Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org>
+  +dvtm-0.6.ebuild:
+  Version bump.
+
+  24 Jun 2010; Pacho Ramos <pacho@gentoo.org> dvtm-0.5.2.ebuild:
+  stable amd64, bug 323169
+
+  16 Jun 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org> dvtm-0.5.2.ebuild:
+  x86 stable wrt bug #323169
+
+*dvtm-0.5.2 (04 May 2010)
+
+  04 May 2010; Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org>
+  +dvtm-0.5.2.ebuild, +metadata.xml:
+  Initial import from sunrise, bug #206686
+

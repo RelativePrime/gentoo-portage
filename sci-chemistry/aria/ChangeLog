@@ -1,0 +1,32 @@
+# ChangeLog for sci-chemistry/aria
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/aria/ChangeLog,v 1.7 2010/11/18 17:10:04 jlec Exp $
+
+  18 Nov 2010; Justin Lecher <jlec@gentoo.org> -files/2.2_p2-numpy.patch,
+  -files/2.2_p2-test.patch, -files/sa_ls_cool2.patch, -aria-2.2_p2.ebuild:
+  Dropped old
+
+  22 Jul 2010; Justin Lecher <jlec@gentoo.org> aria-2.3.1.ebuild:
+  Added clashscore as DEP
+
+  19 Jul 2010; Justin Lecher <jlec@gentoo.org> aria-2.3.1.ebuild:
+  Fixed DEPS
+
+  04 Apr 2010; Justin Lecher <jlec@gentoo.org> Manifest:
+  distfile digest fix
+
+*aria-2.3.1 (20 Mar 2010)
+
+  20 Mar 2010; Justin Lecher (jlec) <jlec@gentoo.org> +aria-2.3.1.ebuild:
+  Version Bump
+
+  07 Mar 2010; Justin Lecher (jlec) <jlec@gentoo.org> aria-2.2_p2.ebuild:
+  keyworded for *-linux, tested by me
+
+*aria-2.2_p2 (06 Feb 2010)
+
+  06 Feb 2010; Justin Lecher (jlec) <jlec@gentoo.org>
+  +files/2.2_p2-numpy.patch, +aria-2.2_p2.ebuild, +files/2.2_p2-test.patch,
+  +files/sa_ls_cool2.patch, +metadata.xml:
+  Initial commit
+

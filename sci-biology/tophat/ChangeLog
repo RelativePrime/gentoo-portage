@@ -1,0 +1,19 @@
+# ChangeLog for sci-biology/tophat
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-biology/tophat/ChangeLog,v 1.4 2010/04/05 12:08:12 phajdan.jr Exp $
+
+  05 Apr 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org> tophat-1.0.12.ebuild:
+  x86 stable wrt bug #311829
+
+  29 Mar 2010; Pacho Ramos <pacho@gentoo.org> tophat-1.0.12.ebuild:
+  amd64 stable, bug 311829
+
+  07 Dec 2009; Andrey Kislyuk <weaver@gentoo.org> tophat-1.0.12.ebuild:
+  Fix x86 compile issue. Thanks to Fabian Groffen.
+
+*tophat-1.0.12 (07 Dec 2009)
+
+  07 Dec 2009; Andrey Kislyuk <weaver@gentoo.org> +metadata.xml,
+  +tophat-1.0.12.ebuild:
+  Import from Science overlay and version bump. Thanks to Philippe Veber.
+

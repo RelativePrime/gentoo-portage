@@ -1,0 +1,31 @@
+# ChangeLog for x11-themes/gnome-icon-theme-extras
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-themes/gnome-icon-theme-extras/ChangeLog,v 1.5 2011/04/06 13:49:24 nirbheek Exp $
+
+*gnome-icon-theme-extras-3.0.0 (06 Apr 2011)
+
+  06 Apr 2011; Nirbheek Chauhan <nirbheek@gentoo.org>
+  -gnome-icon-theme-extras-2.90.7.ebuild,
+  +gnome-icon-theme-extras-3.0.0.ebuild:
+  Bump to 3.0.0, remove old
+
+  24 Feb 2011; Thomas Kahle <tomka@gentoo.org>
+  gnome-icon-theme-extras-2.30.1.ebuild:
+  x86 stable per bug 353436
+
+  23 Feb 2011; Markos Chandras <hwoarang@gentoo.org>
+  gnome-icon-theme-extras-2.30.1.ebuild:
+  Stable on amd64 wrt bug #353436
+
+*gnome-icon-theme-extras-2.90.7 (21 Feb 2011)
+
+  21 Feb 2011; Nirbheek Chauhan <nirbheek@gentoo.org>
+  +gnome-icon-theme-extras-2.90.7.ebuild:
+  Bump to 2.90.7: five new icons
+
+*gnome-icon-theme-extras-2.30.1 (22 Jan 2011)
+
+  22 Jan 2011; Nirbheek Chauhan <nirbheek@gentoo.org>
+  +gnome-icon-theme-extras-2.30.1.ebuild, +metadata.xml:
+  Add new package with icon theme extras
+

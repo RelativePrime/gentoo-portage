@@ -1,0 +1,69 @@
+# ChangeLog for net-irc/atheme-services
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-irc/atheme-services/ChangeLog,v 1.10 2011/07/27 15:11:36 binki Exp $
+
+*atheme-services-7.0.0_alpha6 (27 Jul 2011)
+
+  27 Jul 2011; Nathan Phillip Brink <binki@gentoo.org>
+  +atheme-services-7.0.0_alpha6.ebuild,
+  +files/atheme-services-7.0.0_alpha6-destdir-perl.patch:
+  Bump to atheme-7.0.0_alpha6 which has perl scripting support.
+
+*atheme-services-6.0.8-r2 (22 Jul 2011)
+
+  22 Jul 2011; Nathan Phillip Brink <binki@gentoo.org>
+  -atheme-services-6.0.8-r1.ebuild, +atheme-services-6.0.8-r2.ebuild,
+  files/atheme-services.initd:
+  Use --pidfile and --user in the initscript, recommended by the_mgt/ich.
+
+*atheme-services-6.0.8-r1 (20 Jul 2011)
+
+  20 Jul 2011; Nathan Phillip Brink <binki@gentoo.org>
+  -atheme-services-6.0.8.ebuild, +atheme-services-6.0.8-r1.ebuild,
+  +files/atheme-services.initd, -files/atheme-services.initd.in:
+  Fix initial permissions of /var/run/atheme and remove bad prefix-support
+  logic from init script. Reported by the_mgt/ich.
+
+  24 Jun 2011; Nathan Phillip Brink <binki@gentoo.org>
+  atheme-services-6.0.8.ebuild:
+  Add gentoo-prefix support, tested on amd64-linux.
+
+  14 Jun 2011; Nathan Phillip Brink <binki@gentoo.org>
+  atheme-services-6.0.8.ebuild,
+  +files/atheme-services-6.0.8-configure-disable.patch:
+  Add patch which fixes USE="-profile" by fixing ./configure's
+  --disable-profile, should actually fix bug #371119 finally.
+
+  12 Jun 2011; Nathan Phillip Brink <binki@gentoo.org>
+  atheme-services-6.0.8.ebuild:
+  Disabled PIE for USE="profile", should fix bug #371119.
+
+  11 Jun 2011; Nathan Phillip Brink <binki@gentoo.org> metadata.xml:
+  Mark myself as maintainer of net-irc/atheme-services.
+
+  09 Jun 2011; Nathan Phillip Brink <binki@gentoo.org>
+  -atheme-services-0.2.2.ebuild, -atheme-services-1.2.1.ebuild,
+  -files/atheme-1.2.1-postgresl.patch, -files/atheme.initd,
+  -files/make-postgresql-support-optional.patch,
+  -files/makefile-DESTDIR-support.patch:
+  Drop atheme-services-0.2.2 and atheme-services-1.2.1 which are ancient and
+  affected by bug #313373 and bug #335467.
+
+*atheme-services-6.0.8 (09 Jun 2011)
+
+  09 Jun 2011; Nathan Phillip Brink <binki@gentoo.org>
+  +atheme-services-6.0.8.ebuild, +files/atheme-services.initd.in,
+  metadata.xml:
+  Completely reworked for bump to atheme-services-6.0.8, fixing bug #305411.
+
+*atheme-services-1.2.1 (08 Jun 2011)
+*atheme-services-0.2.2 (08 Jun 2011)
+
+  08 Jun 2011; Nathan Phillip Brink <binki@gentoo.org>
+  +atheme-services-0.2.2.ebuild, +atheme-services-1.2.1.ebuild,
+  +files/atheme-1.2.1-postgresl.patch, +files/atheme.initd,
+  +files/make-postgresql-support-optional.patch,
+  +files/makefile-DESTDIR-support.patch, +metadata.xml:
+  Rename net-irc/atheme to net-irc/atheme-services to follow upstream's
+  package name change.
+

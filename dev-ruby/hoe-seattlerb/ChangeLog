@@ -1,0 +1,123 @@
+# ChangeLog for dev-ruby/hoe-seattlerb
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/hoe-seattlerb/ChangeLog,v 1.29 2011/07/10 22:51:21 halcy0n Exp $
+
+  10 Jul 2011; Mark Loeser <halcy0n@gentoo.org> hoe-seattlerb-1.2.4.ebuild:
+  Stable for ppc64; bug #354609
+
+  16 Apr 2011; Raúl Porcel <armin76@gentoo.org> hoe-seattlerb-1.2.4.ebuild:
+  ia64 stable wrt #354609
+
+  01 Apr 2011; Michael Weber <xmw@gentoo.org> hoe-seattlerb-1.2.4.ebuild:
+  sparc stable (bug 354609)
+
+  27 Mar 2011; Brent Baude <ranger@gentoo.org> hoe-seattlerb-1.2.4.ebuild:
+  Marking hoe-seattlerb-1.2.4 ppc for bug 354609
+
+  08 Mar 2011; Thomas Kahle <tomka@gentoo.org> hoe-seattlerb-1.2.4.ebuild:
+  x86 stable per bug 354609
+
+*hoe-seattlerb-1.2.5 (19 Feb 2011)
+
+  19 Feb 2011; Hans de Graaff <graaff@gentoo.org>
+  +hoe-seattlerb-1.2.5.ebuild:
+  Version bump.
+
+  16 Feb 2011; Markos Chandras <hwoarang@gentoo.org>
+  hoe-seattlerb-1.2.4.ebuild:
+  Stable on amd64 wrt bug #354609
+
+*hoe-seattlerb-1.2.4-r1 (12 Feb 2011)
+
+  12 Feb 2011; Hans de Graaff <graaff@gentoo.org>
+  -hoe-seattlerb-1.2.2-r1.ebuild, hoe-seattlerb-1.2.4.ebuild,
+  +hoe-seattlerb-1.2.4-r1.ebuild:
+  Remove old version. Drop ruby19 to create stable candidate.
+
+  16 Jan 2011; Markos Chandras <hwoarang@gentoo.org>
+  hoe-seattlerb-1.2.2.ebuild:
+  Stable on amd64 wrt bug #333947
+
+  15 Jan 2011; Kacper Kowalik <xarthisius@gentoo.org>
+  hoe-seattlerb-1.2.2.ebuild:
+  ppc64 stable wrt #333947
+
+  02 Jan 2011; Hans de Graaff <graaff@gentoo.org>
+  hoe-seattlerb-1.2.4.ebuild:
+  Add back ~alpha after fixing dev-ruby/hoe keywords.
+
+*hoe-seattlerb-1.2.4 (02 Jan 2011)
+
+  02 Jan 2011; Hans de Graaff <graaff@gentoo.org>
+  +hoe-seattlerb-1.2.4.ebuild:
+  Version bump.
+
+  27 Dec 2010; Fabian Groffen <grobian@gentoo.org>
+  hoe-seattlerb-1.2.2-r1.ebuild:
+  Marked ~x64-solaris
+
+  03 Dec 2010; Fabian Groffen <grobian@gentoo.org>
+  hoe-seattlerb-1.2.2-r1.ebuild:
+  Added Prefix keywords
+
+  13 Nov 2010; Raúl Porcel <armin76@gentoo.org> hoe-seattlerb-1.2.2.ebuild:
+  ia64 stable wrt #333947
+
+  28 Oct 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  hoe-seattlerb-1.2.2.ebuild:
+  x86 stable wrt bug #333947
+
+  10 Oct 2010; Tobias Klausmann <klausman@gentoo.org>
+  hoe-seattlerb-1.2.2-r1.ebuild:
+  Keyworded on alpha, bug #330337
+
+*hoe-seattlerb-1.2.2-r1 (23 Aug 2010)
+
+  23 Aug 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  hoe-seattlerb-1.2.2.ebuild, +hoe-seattlerb-1.2.2-r1.ebuild:
+  Cleanup -r0 for stabilisation, ree18 and ruby19 slated for -r1.
+
+  18 Aug 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  hoe-seattlerb-1.2.2.ebuild:
+  Stop using virtual/ruby-minitest, since it's now unbundled from 1.9 as
+  well.
+
+  22 May 2010; Alex Legler <a3li@gentoo.org> hoe-seattlerb-1.2.2.ebuild:
+  Add REE18 support
+
+  25 Jan 2010; Raúl Porcel <armin76@gentoo.org> hoe-seattlerb-1.2.2.ebuild:
+  Add ~ia64/~sparc wrt #298367
+
+  23 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  -hoe-seattlerb-1.2.1.ebuild, hoe-seattlerb-1.2.2.ebuild:
+  Add minitest as runtime dependency, otherwise the Rakefiles using
+  hoe-seattlerb will fail. Closes bug #301929.
+
+  16 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  hoe-seattlerb-1.2.2.ebuild:
+  Add jruby to the usable targets.
+
+  13 Jan 2010; Brent Baude <ranger@gentoo.org> hoe-seattlerb-1.2.2.ebuild:
+  Marking hoe-seattlerb-1.2.2 ~ppc64 for bug 298367
+
+*hoe-seattlerb-1.2.2 (07 Jan 2010)
+
+  07 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  +hoe-seattlerb-1.2.2.ebuild:
+  Version bump.
+
+  06 Jan 2010; Jeroen Roovers <jer@gentoo.org> hoe-seattlerb-1.2.1.ebuild:
+  Marked ~ppc (bug #298350).
+
+  04 Jan 2010; Markus Meier <maekke@gentoo.org> hoe-seattlerb-1.2.1.ebuild:
+  add ~x86, bug #298367
+
+  27 Dec 2009; Jeroen Roovers <jer@gentoo.org> hoe-seattlerb-1.2.1.ebuild:
+  Marked ~hppa (bug #298350).
+
+*hoe-seattlerb-1.2.1 (25 Dec 2009)
+
+  25 Dec 2009; Diego E. Pettenò <flameeyes@gentoo.org>
+  +hoe-seattlerb-1.2.1.ebuild, +metadata.xml:
+  Initial import of the seattlerb hoe plugin which is needed for hoe tests.
+

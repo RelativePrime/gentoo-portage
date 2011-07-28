@@ -1,0 +1,43 @@
+# ChangeLog for mail-client/claws-mail-address_keeper
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/mail-client/claws-mail-address_keeper/ChangeLog,v 1.8 2011/07/16 18:16:40 hwoarang Exp $
+
+  16 Jul 2011; Markos Chandras <hwoarang@gentoo.org>
+  claws-mail-address_keeper-1.0.3.ebuild:
+  Stable on amd64 wrt bug #372957
+
+  29 Jun 2011; Markus Meier <maekke@gentoo.org>
+  claws-mail-address_keeper-1.0.3.ebuild:
+  x86 stable, bug #372957
+
+*claws-mail-address_keeper-1.0.3 (10 Apr 2011)
+
+  10 Apr 2011; Christian Faulhammer <fauli@gentoo.org>
+  +claws-mail-address_keeper-1.0.3.ebuild:
+  version bump
+
+  22 Mar 2011; Christian Faulhammer <fauli@gentoo.org>
+  -claws-mail-address_keeper-1.0.1.ebuild:
+  clean up
+
+*claws-mail-address_keeper-1.0.2 (06 Dec 2010)
+
+  06 Dec 2010; Christian Faulhammer <fauli@gentoo.org>
+  +claws-mail-address_keeper-1.0.2.ebuild:
+  version bump
+
+  02 Dec 2010; Markos Chandras <hwoarang@gentoo.org>
+  claws-mail-address_keeper-1.0.1.ebuild:
+  Keyworded for amd64. Bug #346433
+
+  23 Nov 2010; Christian Faulhammer <fauli@gentoo.org>
+  claws-mail-address_keeper-1.0.1.ebuild:
+  add a die after emake and don't install NEWS file (no contents)
+
+*claws-mail-address_keeper-1.0.1 (22 Nov 2010)
+
+  22 Nov 2010; Christian Faulhammer <fauli@gentoo.org>
+  +claws-mail-address_keeper-1.0.1.ebuild, +metadata.xml:
+  initial import, a Claws Mail plugin to collect recipient addresses in an
+  address book folder
+

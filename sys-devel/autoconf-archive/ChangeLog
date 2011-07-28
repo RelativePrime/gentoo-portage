@@ -1,0 +1,199 @@
+# ChangeLog for sys-devel/autoconf-archive
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/autoconf-archive/ChangeLog,v 1.35 2011/05/28 14:57:04 scarabeus Exp $
+
+*autoconf-archive-2011.04.12 (28 May 2011)
+
+  28 May 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -autoconf-archive-2010.10.26.ebuild, autoconf-archive-2011.01.02.ebuild,
+  +autoconf-archive-2011.04.12.ebuild:
+  Version bump to latest. Stabilise 2011.01.02. Drop older.
+
+*autoconf-archive-2011.01.02 (05 Jan 2011)
+
+  05 Jan 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -autoconf-archive-2010.07.06.ebuild, -autoconf-archive-2010.08.19.ebuild,
+  autoconf-archive-2010.10.26.ebuild, +autoconf-archive-2011.01.02.ebuild:
+  Version bump (bug #350517). Stable latest. Drop older.
+
+*autoconf-archive-2010.10.26 (23 Nov 2010)
+
+  23 Nov 2010; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2010.10.26.ebuild:
+  Version bump.
+
+  21 Aug 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  -autoconf-archive-2008.11.07.ebuild, -autoconf-archive-2009.12.16.ebuild,
+  autoconf-archive-2010.07.06.ebuild, autoconf-archive-2010.08.19.ebuild,
+  metadata.xml:
+  Fixup homepage. Remove old. Stabilise 2010.07.06. Take maintainership.
+
+*autoconf-archive-2010.08.19 (20 Aug 2010)
+
+  20 Aug 2010; Jeroen Roovers <jer@gentoo.org>
+  +autoconf-archive-2010.08.19.ebuild:
+  Version bump.
+
+*autoconf-archive-2010.07.06 (10 Jul 2010)
+
+  10 Jul 2010; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2010.07.06.ebuild:
+  Version bump.
+
+  10 Jul 2010; Mike Frysinger <vapier@gentoo.org>
+  autoconf-archive-2009.12.16.ebuild:
+  Revert broken document changes.
+
+  09 Jul 2010; Mike Frysinger <vapier@gentoo.org>
+  autoconf-archive-2009.12.16.ebuild:
+  Stabilize for everyone.
+
+  17 Feb 2010; Jonathan Callen <abcd@gentoo.org>
+  autoconf-archive-2009.12.16.ebuild:
+  Transfer prefix keywords
+
+  10 Feb 2010; Peter Volkov <pva@gentoo.org>
+  autoconf-archive-2009.12.16.ebuild:
+  Don't install COPYING.
+
+*autoconf-archive-2009.12.16 (09 Feb 2010)
+
+  09 Feb 2010; Peter Volkov <pva@gentoo.org>
+  +autoconf-archive-2009.12.16.ebuild:
+  Version bump, bug #304085, by Nathan Phillip Brink (ohnobinki)
+
+*autoconf-archive-2009.04.26 (27 Apr 2009)
+
+  27 Apr 2009; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2009.04.26.ebuild:
+  Version bump.
+
+*autoconf-archive-2008.11.07 (29 Jan 2009)
+
+  29 Jan 2009; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2008.11.07.ebuild:
+  Version bump.
+
+  29 Jan 2009; Mike Frysinger <vapier@gentoo.org>
+  autoconf-archive-2008.08.25.ebuild:
+  Stabilize.
+
+*autoconf-archive-2008.08.25 (25 Aug 2008)
+
+  25 Aug 2008; Jeroen Roovers <jer@gentoo.org>
+  +autoconf-archive-2008.08.25.ebuild:
+  Version bump thanks to Peter Simons (bug #235689).
+
+  21 Apr 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Fix up metadata.xml. If there's no maintainer for the package, the metadata
+  also needs to contain m-needed@g.o.
+
+*autoconf-archive-2008.04.17 (20 Apr 2008)
+
+  20 Apr 2008; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2008.04.17.ebuild:
+  Version bump #218457 by Peter Simons.
+
+*autoconf-archive-2008.02.21 (22 Feb 2008)
+
+  22 Feb 2008; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2008.02.21.ebuild:
+  Version bump.
+
+*autoconf-archive-2007.08.22 (24 Aug 2007)
+
+  24 Aug 2007; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2007.08.22.ebuild:
+  Version bump #189891 by Peter Simons.
+
+*autoconf-archive-2007.06.01 (11 Jun 2007)
+
+  11 Jun 2007; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2007.06.01.ebuild:
+  Version bump #178371 by Peter Simons.
+
+  11 May 2007; Thilo Bangert <bangert@gentoo.org> +metadata.xml:
+  add metadata.xml
+
+*autoconf-archive-2007.02.03 (12 Feb 2007)
+
+  12 Feb 2007; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2007.02.03.ebuild:
+  Version bump #166369 by Peter Simons.
+
+*autoconf-archive-2006.10.25 (24 Oct 2006)
+
+  24 Oct 2006; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2006.10.25.ebuild:
+  Version bump.
+
+*autoconf-archive-2006.10.24 (23 Oct 2006)
+
+  23 Oct 2006; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2006.10.24.ebuild:
+  Version bump.
+
+*autoconf-archive-2006.10.23 (23 Oct 2006)
+
+  23 Oct 2006; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2006.10.23.ebuild:
+  Version bump #151450 by simons.
+
+*autoconf-archive-2006.10.15 (15 Oct 2006)
+
+  15 Oct 2006; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2006.10.15.ebuild:
+  Version bump.
+
+*autoconf-archive-2006.08.20 (20 Aug 2006)
+
+  20 Aug 2006; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2006.08.20.ebuild:
+  Version bump.
+
+*autoconf-archive-2006.07.16 (05 Aug 2006)
+
+  05 Aug 2006; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2006.07.16.ebuild:
+  Version bump #142721 by Paulo Jorge de Oliveira Cantante de Matos.
+
+*autoconf-archive-2005.12.20 (31 Dec 2005)
+
+  31 Dec 2005; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2005.12.20.ebuild:
+  Version bump as reported by Peter Simons via e-mail.
+
+*autoconf-archive-2005.12.18 (22 Dec 2005)
+
+  22 Dec 2005; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2005.12.18.ebuild:
+  Version bump.
+
+*autoconf-archive-2005.10.14 (18 Dec 2005)
+
+  18 Dec 2005; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2005.10.14.ebuild:
+  Version bump.
+
+*autoconf-archive-2005.08.12 (18 Aug 2005)
+
+  18 Aug 2005; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2005.08.12.ebuild:
+  Version bump #97887 by Peter Simons.
+
+*autoconf-archive-2005.06.17 (04 Jul 2005)
+
+  04 Jul 2005; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2005.06.17.ebuild:
+  Version bump #97887 by Peter Simons.
+
+*autoconf-archive-2005.05.31 (01 Jun 2005)
+
+  01 Jun 2005; Mike Frysinger <vapier@gentoo.org>
+  +autoconf-archive-2005.05.31.ebuild:
+  Version bump #94736 by Peter Simons.
+
+*autoconf-archive-2005.04.18 (28 Apr 2005)
+
+  28 Apr 2005; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by Peter Simons #79472.

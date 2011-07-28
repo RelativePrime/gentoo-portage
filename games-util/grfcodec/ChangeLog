@@ -1,0 +1,45 @@
+# ChangeLog for games-util/grfcodec
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-util/grfcodec/ChangeLog,v 1.10 2011/07/23 16:42:43 xarthisius Exp $
+
+  23 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> grfcodec-5.1.1.ebuild:
+  ppc/ppc64 stable wrt #375387
+
+  19 Jul 2011; Markus Meier <maekke@gentoo.org> grfcodec-5.1.1.ebuild:
+  x86 stable, bug #375387
+
+  19 Jul 2011; Markos Chandras <hwoarang@gentoo.org> grfcodec-5.1.1.ebuild:
+  Stable on amd64 wrt bug #375387
+
+  05 May 2011; Michael Sterrett <mr_bones_@gentoo.org>
+  grfcodec-5.1.1.ebuild:
+  fix build when FLAGS is in the env (bug #366021) with patch from Andrei
+  Slavoiu
+
+*grfcodec-5.1.1 (04 May 2011)
+
+  04 May 2011; Michael Sterrett <mr_bones_@gentoo.org>
+  +grfcodec-5.1.1.ebuild:
+  version bump (bug #365957) submitted by Locke Shinseiko
+
+  15 Oct 2010; Markus Meier <maekke@gentoo.org> grfcodec-0_pre2306.ebuild:
+  add ~arm, bug #316003
+
+  28 May 2010; Joseph Jezak <josejx@gentoo.org> grfcodec-0_pre2306.ebuild:
+  Marked ppc/ppc64 stable for bug #320497.
+
+  25 May 2010; Pacho Ramos <pacho@gentoo.org> grfcodec-0_pre2306.ebuild:
+  stable amd64, bug 320497
+
+  25 May 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  grfcodec-0_pre2306.ebuild:
+  x86 stable wrt bug #320497
+
+*grfcodec-0_pre2306 (08 Apr 2010)
+
+  08 Apr 2010; Michael Sterrett <mr_bones_@gentoo.org>
+  +grfcodec-0_pre2306.ebuild, +files/grfcodec-0_pre2306-build.patch,
+  +metadata.xml:
+  initial commit - ebuild and patch submitted by Locke 'Wizzleby' Shinseiko
+  via bug #300328
+

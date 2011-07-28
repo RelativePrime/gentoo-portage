@@ -1,0 +1,28 @@
+# ChangeLog for dev-perl/Parse-ErrorString-Perl
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Parse-ErrorString-Perl/ChangeLog,v 1.3 2011/01/14 16:44:18 tove Exp $
+
+  14 Jan 2011; Torsten Veller <tove@gentoo.org>
+  -Parse-ErrorString-Perl-0.13.ebuild:
+  Cleanup
+
+*Parse-ErrorString-Perl-0.15 (30 Nov 2010)
+
+  30 Nov 2010; Torsten Veller <tove@gentoo.org>
+  +Parse-ErrorString-Perl-0.15.ebuild:
+  Version bump
+
+*Parse-ErrorString-Perl-0.13 (15 Feb 2010)
+
+  15 Feb 2010; Torsten Veller <tove@gentoo.org>
+  +Parse-ErrorString-Perl-0.13.ebuild, +metadata.xml:
+  Import to gentoo from perl-experimental
+
+  28 May 2009; Torsten Veller <tove@gentoo.org>
+  Parse-ErrorString-Perl-0.13.ebuild:
+  Add ~amd64
+
+  17 Feb 2009; Torsten Veller <tove@gentoo.org> +metadata.xml,
+  +Parse-ErrorString-Perl-0.13.ebuild:
+  Initial release
+

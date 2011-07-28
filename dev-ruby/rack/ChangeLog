@@ -1,0 +1,211 @@
+# ChangeLog for dev-ruby/rack
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rack/ChangeLog,v 1.54 2011/07/24 17:16:15 armin76 Exp $
+
+  24 Jul 2011; Raúl Porcel <armin76@gentoo.org> rack-1.1.0.ebuild:
+  ia64/sparc stable wrt #372391
+
+  24 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> rack-1.2.3.ebuild:
+  Marked ~ppc/~ppc64 wrt #351835
+
+  23 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> rack-1.1.0.ebuild:
+  ppc/ppc64 stable wrt #372391
+
+  23 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> rack-1.0.1-r2.ebuild:
+  ppc/ppc64 stable wrt #367469
+
+  13 Jul 2011; Markus Meier <maekke@gentoo.org> rack-1.1.0.ebuild:
+  x86 stable, bug #372391
+
+  07 Jul 2011; Markos Chandras <hwoarang@gentoo.org> rack-1.1.0.ebuild:
+  Stable on amd64 wrt bug #372391
+
+  25 Jun 2011; Raúl Porcel <armin76@gentoo.org> rack-1.0.1-r2.ebuild:
+  ia64/sparc stable wrt #367469
+
+  20 Jun 2011; Hans de Graaff <graaff@gentoo.org> rack-1.1.0.ebuild:
+  Drop ruby19 to create stable candidate.
+
+  31 May 2011; Markus Meier <maekke@gentoo.org> rack-1.0.1-r2.ebuild:
+  x86 stable, bug #367469
+
+*rack-1.2.3 (26 May 2011)
+
+  26 May 2011; Hans de Graaff <graaff@gentoo.org> +rack-1.2.3.ebuild:
+  Version bump.
+
+  24 May 2011; Markos Chandras <hwoarang@gentoo.org> rack-1.0.1-r2.ebuild:
+  Stable on amd64 wrt bug #367469
+
+*rack-1.0.1-r2 (24 Apr 2011)
+
+  24 Apr 2011; MATSUU Takuto <matsuu@gentoo.org> +rack-1.0.1-r2.ebuild,
+  rack-1.2.1.ebuild, rack-1.2.2.ebuild:
+  Revert rack-1.0.1-r1 and revision bump for www-apps/redmine, bug #353286.
+
+*rack-1.1.2 (14 Mar 2011)
+
+  14 Mar 2011; Hans de Graaff <graaff@gentoo.org> +rack-1.1.2.ebuild:
+  Version bump.
+
+*rack-1.2.2 (14 Mar 2011)
+
+  14 Mar 2011; Hans de Graaff <graaff@gentoo.org> +rack-1.2.2.ebuild:
+  Version bump.
+
+  22 Jan 2011; Hans de Graaff <graaff@gentoo.org> -rack-1.0.1-r1.ebuild:
+  Remove old version.
+
+  10 Jan 2011; Hans de Graaff <graaff@gentoo.org> rack-1.1.0-r1.ebuild,
+  rack-1.2.1.ebuild:
+  Keyword ~x86-macos.
+
+  09 Jan 2011; Hans de Graaff <graaff@gentoo.org> rack-1.2.1.ebuild:
+  Put the blocker directly in RDEPEND instead of having to deal with the
+  complexities of ruby_add_rdepend, fixes bug 351192.
+
+  28 Dec 2010; Hans de Graaff <graaff@gentoo.org> rack-1.1.0.ebuild,
+  rack-1.1.0-r1.ebuild, rack-1.2.1.ebuild:
+  Add ~x64-solaris keyword also to newer versions.
+
+*rack-1.1.0-r1 (28 Dec 2010)
+
+  28 Dec 2010; Hans de Graaff <graaff@gentoo.org> +rack-1.1.0-r1.ebuild,
+  rack-1.2.1.ebuild:
+  Put rack 1.2 in a separate slot, and make sure that only rack 1.2 installs
+  rackup so the older version can co-exist. Fixed bug 341941.
+
+  22 Oct 2010; Hans de Graaff <graaff@gentoo.org> -rack-1.0.0.ebuild:
+  Remove old version.
+
+  03 Oct 2010; Raúl Porcel <armin76@gentoo.org> rack-1.2.1.ebuild:
+  Re-add ~ia64/~sparc wrt #338013
+
+  29 Sep 2010; Brent Baude <ranger@gentoo.org> rack-1.1.0.ebuild:
+  Marking rack-1.1.0 ~ppc64 for bug 322175
+
+  28 Sep 2010; Brent Baude <ranger@gentoo.org> rack-1.1.0.ebuild:
+  Marking rack-1.1.0 ~ppc for bug 322175
+
+*rack-1.2.1 (19 Sep 2010)
+
+  19 Sep 2010; Hans de Graaff <graaff@gentoo.org> +rack-1.2.1.ebuild,
+  +files/rack-1.2.1-gentoo.patch:
+  Version bump.
+
+  23 May 2010; Alex Legler <a3li@gentoo.org> rack-1.0.1-r1.ebuild,
+  rack-1.1.0.ebuild:
+  Add REE18 support
+
+  22 May 2010; Diego E. Pettenò <flameeyes@gentoo.org> rack-1.0.0.ebuild,
+  rack-1.0.1.ebuild:
+  Various cleanups.
+
+  30 Apr 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  rack-1.0.1-r1.ebuild, +files/rack-1.0.1-gentoo.patch, rack-1.1.0.ebuild,
+  +files/rack-1.1.0-gentoo.patch:
+  Add patch to fix one issue with Ruby 1.9 (tempfile behaviour); also apply
+  to 1.0.1 even though that does not work with 1.9 at all.
+
+  17 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  rack-1.0.1-r1.ebuild, rack-1.1.0.ebuild:
+  Disable unreliable tests from both 1.0.1 and 1.1.0 ebuilds, and add jruby
+  support for both now that it works.
+
+  14 Jan 2010; Brent Baude <ranger@gentoo.org> rack-1.0.1-r1.ebuild:
+  Marking rack-1.0.1-r1 ~ppc for bug 297711
+
+  13 Jan 2010; Brent Baude <ranger@gentoo.org> rack-1.0.1-r1.ebuild:
+  Marking rack-1.0.1-r1 ~ppc64 for bug 297711
+
+  05 Jan 2010; Christian Faulhammer <fauli@gentoo.org> rack-1.0.1-r1.ebuild:
+  mirror new Prefix keywords
+
+*rack-1.1.0 (04 Jan 2010)
+
+  04 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org> +rack-1.1.0.ebuild:
+  Version bump, tests needed tweaking for call.
+
+  04 Jan 2010; Christian Faulhammer <fauli@gentoo.org> rack-1.0.1-r1.ebuild:
+  Transfer Prefix keywords
+
+  30 Dec 2009; Hans de Graaff <graaff@gentoo.org> rack-1.0.1-r1.ebuild:
+  Fix QA issue reported in #297711.
+
+  30 Dec 2009; Raúl Porcel <armin76@gentoo.org> rack-1.0.1-r1.ebuild:
+  Add ~ia64/~sparc wrt #297711
+
+*rack-1.0.1-r1 (20 Dec 2009)
+
+  20 Dec 2009; Diego E. Pettenò <flameeyes@gentoo.org>
+  +rack-1.0.1-r1.ebuild:
+  Bump to use fakegem; this only supports 1.8 because 1.9 has broken test
+  dependencies.
+
+  19 Dec 2009; Jeroen Roovers <jer@gentoo.org> rack-1.0.1.ebuild:
+  Stable for PPC (bug #294797).
+
+  30 Nov 2009; Raúl Porcel <armin76@gentoo.org> rack-1.0.1.ebuild:
+  ia64/sparc stable wrt #294797
+
+  30 Nov 2009; Brent Baude <ranger@gentoo.org> rack-1.0.1.ebuild:
+  Marking rack-1.0.1 ppc64 for bug 294797
+
+  30 Nov 2009; Markus Meier <maekke@gentoo.org> rack-1.0.1.ebuild:
+  amd64/x86 stable, bug #294797
+
+*rack-1.0.1 (23 Oct 2009)
+
+  23 Oct 2009; Hans de Graaff <graaff@gentoo.org> +rack-1.0.1.ebuild:
+  Version bump with bug and compatibility fixes.
+
+  25 Sep 2009; Brent Baude <ranger@gentoo.org> rack-1.0.0.ebuild:
+  Marking rack-1.0.0 ppc64 for bug 284911
+
+  20 Sep 2009; nixnut <nixnut@gentoo.org> rack-1.0.0.ebuild:
+  ppc stable #283396
+
+  19 Sep 2009; Raúl Porcel <armin76@gentoo.org> rack-1.0.0.ebuild:
+  ia64/sparc stable wrt #283396
+
+  14 Sep 2009; Markus Meier <maekke@gentoo.org> rack-1.0.0.ebuild:
+  amd64/x86 stable, bug #283396
+
+  24 Aug 2009; Hans de Graaff <graaff@gentoo.org> -rack-0.9.1.ebuild:
+  Remove old version.
+
+  16 Aug 2009; Raúl Porcel <armin76@gentoo.org> rack-0.9.1.ebuild,
+  rack-1.0.0.ebuild:
+  Add ~ia64 wrt #279123
+
+  23 Jul 2009; Hans de Graaff <graaff@gentoo.org> rack-1.0.0.ebuild:
+  Add ruby19 to USE_RUBY. Fixes #278680.
+
+  10 May 2009; Hans de Graaff <graaff@gentoo.org> -rack-0.2.0.ebuild,
+  -rack-0.4.0.ebuild:
+  Remove old versions.
+
+*rack-1.0.0 (10 May 2009)
+
+  10 May 2009; Hans de Graaff <graaff@gentoo.org> +rack-1.0.0.ebuild:
+  Version bump. Not fully backward compatible in order to also support ruby 1.9
+
+  12 Apr 2009; Friedrich Oslage <bluebird@gentoo.org> rack-0.9.1.ebuild:
+  Add ~sparc keyword, bug #262706
+
+*rack-0.9.1 (01 Mar 2009)
+
+  01 Mar 2009; Alex Legler <a3li@gentoo.org> +rack-0.9.1.ebuild:
+  Version bump. rack-0.9.1 is not Ruby 1.9 compatbile.
+
+*rack-0.4.0 (20 Oct 2008)
+
+  20 Oct 2008; Hans de Graaff <graaff@gentoo.org> rack-0.2.0.ebuild,
+  +rack-0.4.0.ebuild:
+  Version bump. Works only with ruby 1.8.
+
+  16 Jun 2008; Robin H. Johnson <robbat2@gentoo.org> +ChangeLog,
+  +rack-0.2.0.ebuild:
+  Initial commit. Ebuild by Robin H. Johnson <robbat2@gentoo.org>.
+  Dependancy of www-servers/thin.
+

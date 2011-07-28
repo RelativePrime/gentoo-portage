@@ -1,0 +1,59 @@
+# ChangeLog for games-engines/gemrb
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-engines/gemrb/ChangeLog,v 1.14 2011/06/01 15:42:19 tupone Exp $
+
+  01 Jun 2011; Tupone Alfredo <tupone@gentoo.org> gemrb-0.6.4.ebuild,
+  +files/gemrb-0.6.4-gcc46.patch:
+  Fix build with gcc-4.6 Bug #369445 by Diego Elio Pettenò
+
+  31 May 2011; Markus Meier <maekke@gentoo.org> gemrb-0.6.4.ebuild:
+  x86 stable, bug #367127
+
+  14 May 2011; Markos Chandras <hwoarang@gentoo.org> gemrb-0.6.4.ebuild:
+  Stable on amd64 wrt bug #367127
+
+*gemrb-0.6.4 (11 Apr 2011)
+
+  11 Apr 2011; Michael Sterrett <mr_bones_@gentoo.org> +gemrb-0.6.4.ebuild:
+  version bump (bug #361657)
+
+*gemrb-0.6.3 (13 Mar 2011)
+
+  13 Mar 2011; Michael Sterrett <mr_bones_@gentoo.org> +gemrb-0.6.3.ebuild:
+  version bump (bug #358669)
+
+  03 Nov 2010; Markus Meier <maekke@gentoo.org> gemrb-0.6.2.ebuild:
+  x86 stable, bug #343109
+
+  03 Nov 2010; Michael Sterrett <mr_bones_@gentoo.org> gemrb-0.6.2.ebuild:
+  add media-libs/sdl-mixer dep for bug #343957
+
+  31 Oct 2010; Markos Chandras <hwoarang@gentoo.org> gemrb-0.6.2.ebuild:
+  Stable on amd64 wrt bug #343109
+
+*gemrb-0.6.2 (23 Sep 2010)
+
+  23 Sep 2010; Michael Sterrett <mr_bones_@gentoo.org> gemrb-0.6.0.ebuild,
+  +gemrb-0.6.2.ebuild:
+  version bump (bug #324343) with ebuild submission by Tom Prince
+
+  27 Apr 2010; Tupone Alfredo <tupone@gentoo.org> gemrb-0.6.0.ebuild:
+  Force python2 fixing bug #312249 by arfrever@gentoo.org
+
+  03 Feb 2010; Markus Meier <maekke@gentoo.org> gemrb-0.6.0.ebuild:
+  amd64/x86 stable, bug #301128
+
+*gemrb-0.6.0 (16 Dec 2009)
+
+  16 Dec 2009; Michael Sterrett <mr_bones_@gentoo.org> +gemrb-0.6.0.ebuild:
+  version bump (bug #292263)
+
+  25 Oct 2009; Markus Meier <maekke@gentoo.org> gemrb-0.5.1.ebuild:
+  amd64/x86 stable, bug #288825
+
+*gemrb-0.5.1 (27 Aug 2009)
+
+  27 Aug 2009; Michael Sterrett <mr_bones_@gentoo.org> +gemrb-0.5.1.ebuild,
+  +files/GemRB.cfg.sample, +metadata.xml:
+  initial commit - bug #158336 with contributions from Nick White
+

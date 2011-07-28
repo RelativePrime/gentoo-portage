@@ -1,0 +1,75 @@
+# ChangeLog for app-arch/lrzip
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-arch/lrzip/ChangeLog,v 1.17 2011/05/17 21:38:50 spatz Exp $
+
+*lrzip-0.606 (17 May 2011)
+
+  17 May 2011; Dror Levin <spatz@gentoo.org> -lrzip-0.45.ebuild,
+  -lrzip-0.46.ebuild, +lrzip-0.606.ebuild:
+  Version bump, bug 360423. Bump to EAPI 4.
+
+*lrzip-0.46 (02 Jun 2010)
+
+  02 Jun 2010; Dror Levin <spatz@gentoo.org> -lrzip-0.23.ebuild,
+  +lrzip-0.46.ebuild:
+  Version bump, drop old.
+
+  26 Apr 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org> lrzip-0.44.ebuild:
+  x86 stable wrt bug #314853
+
+  22 Apr 2010; Dror Levin <spatz@gentoo.org> lrzip-0.45.ebuild:
+  Add dep on virtual/perl-PodParser, bug 316645, thanks to j.habenicht.
+
+*lrzip-0.45 (20 Apr 2010)
+
+  20 Apr 2010; Dror Levin <spatz@gentoo.org> -lrzip-0.43.ebuild,
+  +lrzip-0.45.ebuild:
+  Version bump, bug 316359. Remove old.
+
+  16 Apr 2010; Brent Baude <ranger@gentoo.org> lrzip-0.44.ebuild:
+  stable ppc, bug 314853
+
+  13 Apr 2010; Markos Chandras <hwoarang@gentoo.org> lrzip-0.44.ebuild:
+  Stable on amd64 wrt bug #314853
+
+*lrzip-0.44 (14 Mar 2010)
+
+  14 Mar 2010; Dror Levin <spatz@gentoo.org> +lrzip-0.44.ebuild:
+  Version bump, bug 302913.
+
+*lrzip-0.43 (07 Jan 2010)
+
+  07 Jan 2010; Patrick Lauer <patrick@gentoo.org> +lrzip-0.43.ebuild:
+  Bump for #220829
+
+  27 Sep 2009; Markus Meier <maekke@gentoo.org> lrzip-0.23.ebuild:
+  amd64/x86 stable, bug #286337
+
+  15 Nov 2008; Diego E. Pettenò <flameeyes@gentoo.org> lrzip-0.23.ebuild:
+  Invert dependencies.
+
+  15 Nov 2008; Diego E. Pettenò <flameeyes@gentoo.org> lrzip-0.23.ebuild:
+  Add nasm dependency on x86; quote ${D}.
+
+*lrzip-0.23 (08 May 2008)
+
+  08 May 2008; Luca Barbato <lu_zero@gentoo.org> +lrzip-0.23.ebuild:
+  New version
+
+*lrzip-0.19 (29 Dec 2007)
+
+  29 Dec 2007; Luca Barbato <lu_zero@gentoo.org> +lrzip-0.19.ebuild:
+  Version Bump
+
+  11 May 2007; Luca Barbato <lu_zero@gentoo.org> lrzip-0.18.ebuild:
+  Marked ~amd64 and ~sparc according to yngwin report
+
+  02 May 2007; Samuli Suominen <drac@gentoo.org> lrzip-0.18.ebuild:
+  Keyword ~x86.
+
+*lrzip-0.18 (15 Apr 2007)
+
+  15 Apr 2007; Luca Barbato <lu_zero@gentoo.org> +metadata.xml,
+  +lrzip-0.18.ebuild:
+  first commit
+

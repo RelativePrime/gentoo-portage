@@ -1,0 +1,68 @@
+# ChangeLog for games-sports/vdrift
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-sports/vdrift/ChangeLog,v 1.15 2010/10/14 01:59:17 mr_bones_ Exp $
+
+  14 Oct 2010; Michael Sterrett <mr_bones_@gentoo.org>
+  vdrift-20090615.ebuild:
+  use scons-utils
+
+  06 Oct 2010; Tupone Alfredo <tupone@gentoo.org> vdrift-20090615.ebuild,
+  +files/vdrift-20090615-ldflags.patch:
+  Respect LDFLAGS. Bug #339805 by flameeyes@gentoo.org
+
+  20 Nov 2009; Markus Meier <maekke@gentoo.org> vdrift-20090615.ebuild:
+  amd64/x86 stable, bug #290955
+
+  27 Sep 2009; Michael Sterrett <mr_bones_@gentoo.org>
+  vdrift-20090615.ebuild:
+  turn on force feedback support (bug #282032)
+
+*vdrift-20090615 (31 Jul 2009)
+
+  31 Jul 2009; Michael Sterrett <mr_bones_@gentoo.org>
+  +vdrift-20090615.ebuild:
+  version bump
+
+  01 Jun 2009; Markus Meier <maekke@gentoo.org> vdrift-20090215.ebuild:
+  amd64/x86 stable, bug #272048
+
+  01 Jun 2009; Michael Sterrett <mr_bones_@gentoo.org>
+  vdrift-20090215.ebuild:
+  use just the -j part of MAKEOPTS; add more use-based deps (bug #271999)
+
+  03 Apr 2009; Michael Sterrett <mr_bones_@gentoo.org>
+  vdrift-20090215.ebuild:
+  actually call src_prepare
+
+*vdrift-20090215 (27 Mar 2009)
+
+  27 Mar 2009; Michael Sterrett <mr_bones_@gentoo.org>
+  +vdrift-20090215.ebuild:
+  version bump
+
+  24 Feb 2009; Michael Sterrett <mr_bones_@gentoo.org>
+  vdrift-20080805.ebuild:
+  EAPI=2; pass -j from MAKEOPTS to scons
+
+*vdrift-20080805 (24 Aug 2008)
+
+  24 Aug 2008; Michael Sterrett <mr_bones_@gentoo.org>
+  +vdrift-20080805.ebuild:
+  version bump
+
+  22 Aug 2008; Markus Meier <maekke@gentoo.org> vdrift-20070323.ebuild:
+  amd64 stable, bug #232778
+
+  24 Jul 2008; Raúl Porcel <armin76@gentoo.org> vdrift-20070323.ebuild:
+  x86 stable wrt #232778
+
+  01 Aug 2007; Christoph Mende <angelos@gentoo.org> vdrift-20070323.ebuild:
+  Added ~amd64 for bug #186753
+
+*vdrift-20070323 (25 Jul 2007)
+
+  25 Jul 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/vdrift-20070323-gcc42.patch, +metadata.xml,
+  +vdrift-20070323.ebuild:
+  Initial commit, bug #98094
+

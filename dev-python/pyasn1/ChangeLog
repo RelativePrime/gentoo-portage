@@ -1,0 +1,115 @@
+# ChangeLog for dev-python/pyasn1
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pyasn1/ChangeLog,v 1.29 2011/06/23 14:58:55 hwoarang Exp $
+
+  23 Jun 2011; Markos Chandras <hwoarang@gentoo.org> -pyasn1-0.0.11a.ebuild,
+  -pyasn1-0.0.13a.ebuild:
+  Remove old ebuilds. Requested by Arfrever
+
+  29 May 2011; Raúl Porcel <armin76@gentoo.org> pyasn1-0.0.13b.ebuild:
+  alpha/ia64/s390/sh/sparc stable wrt #364869
+
+  28 May 2011; Brent Baude <ranger@gentoo.org> pyasn1-0.0.13b.ebuild:
+  Marking pyasn1-0.0.13b ppc for bug 364869
+
+  24 May 2011; Thomas Kahle <tomka@gentoo.org> pyasn1-0.0.13b.ebuild:
+  x86 stable per bug 364869
+
+  17 May 2011; Markus Meier <maekke@gentoo.org> pyasn1-0.0.13b.ebuild:
+  arm stable, bug #364869
+
+  29 Apr 2011; Samuli Suominen <ssuominen@gentoo.org> pyasn1-0.0.13b.ebuild:
+  ppc64 stable wrt #364869
+
+  27 Apr 2011; Christoph Mende <angelos@gentoo.org> pyasn1-0.0.13b.ebuild:
+  Stable on amd64 wrt bug #364869
+
+  26 Apr 2011; Jeroen Roovers <jer@gentoo.org> pyasn1-0.0.13b.ebuild:
+  Stable for HPPA (bug #364869).
+
+*pyasn1-0.0.13b (26 Mar 2011)
+
+  26 Mar 2011; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +pyasn1-0.0.13b.ebuild:
+  Version bump.
+
+*pyasn1-0.0.13a (06 Mar 2011)
+
+  06 Mar 2011; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +pyasn1-0.0.13a.ebuild:
+  Version bump.
+
+  06 Jul 2010; Samuli Suominen <ssuominen@gentoo.org> pyasn1-0.0.11a.ebuild:
+  ppc64 stable wrt #315151
+
+  19 Jun 2010; Raúl Porcel <armin76@gentoo.org> pyasn1-0.0.11a.ebuild:
+  alpha/arm/ia64/s390/sh/sparc stable wrt #315151
+
+  30 May 2010; Raúl Porcel <armin76@gentoo.org> pyasn1-0.0.9a.ebuild,
+  pyasn1-0.0.11a.ebuild:
+  Add ~alpha/~arm/~s390/~sh wrt #316355
+
+  28 May 2010; Markus Meier <maekke@gentoo.org> pyasn1-0.0.11a.ebuild:
+  x86 stable, bug #315151
+
+  26 May 2010; Pacho Ramos <pacho@gentoo.org> pyasn1-0.0.11a.ebuild:
+  stable amd64, bug 315151
+
+  23 May 2010; <nixnut@gentoo.org> pyasn1-0.0.11a.ebuild:
+  ppc stable #315151
+
+  14 May 2010; Jeroen Roovers <jer@gentoo.org> pyasn1-0.0.11a.ebuild:
+  Stable for HPPA (bug #315151).
+
+  11 May 2010; Brent Baude <ranger@gentoo.org> pyasn1-0.0.11a.ebuild:
+  keyworded ~arch for ppc64, bug 315151
+
+  04 May 2010; Jeroen Roovers <jer@gentoo.org> pyasn1-0.0.11a.ebuild:
+  Marked ~hppa (bug #316355).
+
+*pyasn1-0.0.11a (10 Mar 2010)
+
+  10 Mar 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +pyasn1-0.0.11a.ebuild:
+  Version bump.
+
+  10 Jan 2010; nixnut <nixnut@gentoo.org> pyasn1-0.0.9a.ebuild:
+  ppc stable #298797
+
+  03 Jan 2010; Christian Faulhammer <fauli@gentoo.org> pyasn1-0.0.9a.ebuild:
+  stable x86, bug 298797
+
+*pyasn1-0.0.9a (04 Sep 2009)
+
+  04 Sep 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -pyasn1-0.0.7a.ebuild, +pyasn1-0.0.9a.ebuild:
+  Version bump. Set SUPPORT_PYTHON_ABIS.
+
+*pyasn1-0.0.8a (23 Jun 2008)
+
+  23 Jun 2008; Tiziano Müller <dev-zero@gentoo.org> +pyasn1-0.0.8a.ebuild:
+  Version bump.
+
+*pyasn1-0.0.7a (10 Sep 2007)
+
+  10 Sep 2007; Martin Jackson <mjolnir@gentoo.org> -pyasn1-0.0.6a.ebuild,
+  +pyasn1-0.0.7a.ebuild:
+  Bump to 0.0.7a, remove 0.0.6a
+
+  24 Feb 2007; Martin Jackson <mjolnir@gentoo.org> -pyasn1-0.0.5a.ebuild:
+  Cleanup old version 0.0.5a
+
+*pyasn1-0.0.6a (24 Feb 2007)
+
+  24 Feb 2007; Martin Jackson <mjolnir@gentoo.org> +pyasn1-0.0.6a.ebuild:
+  Version bump
+
+  30 Dec 2006; Tiziano Müller <dev-zero@gentoo.org> pyasn1-0.0.5a.ebuild:
+  Replaced deprecated mydocs with DOCS
+
+*pyasn1-0.0.5a (30 Dec 2006)
+
+  30 Dec 2006; Tiziano Müller <dev-zero@gentoo.org> +metadata.xml,
+  +pyasn1-0.0.5a.ebuild:
+  New ebuild for bug #121956
+

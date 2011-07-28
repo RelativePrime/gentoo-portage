@@ -1,0 +1,38 @@
+# ChangeLog for dev-ml/ocamldsort
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ml/ocamldsort/ChangeLog,v 1.9 2011/07/23 11:22:00 maekke Exp $
+
+  23 Jul 2011; Markus Meier <maekke@gentoo.org> ocamldsort-0.15.0.ebuild:
+  x86 stable, bug #374969
+
+*ocamldsort-0.15.0 (19 Apr 2011)
+
+  19 Apr 2011; Alexis Ballier <aballier@gentoo.org> +ocamldsort-0.15.0.ebuild:
+  version bump
+
+  02 Sep 2008; Alexis Ballier <aballier@gentoo.org>
+  -ocamldsort-0.14.2.ebuild:
+  remove old
+
+  17 Aug 2008; Markus Meier <maekke@gentoo.org> ocamldsort-0.14.4.ebuild:
+  x86 stable, bug #234567
+
+  16 Aug 2008; nixnut <nixnut@gentoo.org> ocamldsort-0.14.4.ebuild:
+  Stable on ppc wrt bug 234567
+
+*ocamldsort-0.14.4 (03 Jan 2008)
+
+  03 Jan 2008; Alexis Ballier <aballier@gentoo.org>
+  +ocamldsort-0.14.4.ebuild:
+  version bump, ~amd64
+
+  30 Aug 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing mattam from metadata due to his retirement (see #30021 for reference).
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  04 Oct 2004; Matthieu Sozeau <mattam@gentoo.org> +ocamldsort-0.14.2
+  +metadata.xml:
+  New ebuild, ocaml dependency sorter. Fixes bug #25343.
+

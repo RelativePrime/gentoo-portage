@@ -1,0 +1,101 @@
+# ChangeLog for dev-ruby/locale
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/locale/ChangeLog,v 1.24 2011/07/20 10:04:23 graaff Exp $
+
+  20 Jul 2011; Hans de Graaff <graaff@gentoo.org> locale-2.0.5-r2.ebuild:
+  Don't run known-to-be-broken test on jruby in preparation for stabilization.
+
+*locale-2.0.5-r2 (10 Apr 2011)
+
+  10 Apr 2011; Alex Legler <a3li@gentoo.org> +locale-2.0.5-r2.ebuild,
+  +files/locale-language-fixes.patch:
+  Revbump, fixing issues with an empty LANGUAGE variable. Patches via upstream
+  rubyforge ticket #26998. Fixes bugs 327677 and 330227.
+
+  10 Jan 2011; Hans de Graaff <graaff@gentoo.org> locale-2.0.5-r1.ebuild:
+  Keyword ~x86-macos.
+
+*locale-2.0.5-r1 (22 May 2010)
+
+  22 May 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  -locale-2.0.4.ebuild, +locale-2.0.5-r1.ebuild:
+  Remove old version; add new ebuild based on ruby-fakegem.
+
+  18 Apr 2010; <nixnut@gentoo.org> locale-2.0.5.ebuild:
+  ppc stable #302042
+
+  17 Feb 2010; Markus Meier <maekke@gentoo.org> locale-2.0.5.ebuild:
+  amd64 stable, bug #302042
+
+  13 Feb 2010; Raúl Porcel <armin76@gentoo.org> locale-2.0.5.ebuild:
+  ia64/sparc stable wrt #302042
+
+  11 Feb 2010; Christian Faulhammer <fauli@gentoo.org> locale-2.0.5.ebuild:
+  stable x86, bug 302042
+
+  10 Jan 2010; nixnut <nixnut@gentoo.org> locale-2.0.4.ebuild:
+  ppc stable #295944
+
+  15 Dec 2009; Raúl Porcel <armin76@gentoo.org> locale-2.0.4.ebuild:
+  ia64/sparc stable wrt #295944
+
+  09 Dec 2009; Markus Meier <maekke@gentoo.org> locale-2.0.4.ebuild:
+  amd64/x86 stable, bug #295944
+
+  29 Nov 2009; Hans de Graaff <graaff@gentoo.org> Manifest:
+  Update Manifest for the version on the gemcutter.org mirrors.
+
+*locale-2.0.5 (28 Nov 2009)
+
+  28 Nov 2009; Hans de Graaff <graaff@gentoo.org> +locale-2.0.5.ebuild:
+  Version bump.
+
+  05 Nov 2009; Raúl Porcel <armin76@gentoo.org> locale-2.0.4.ebuild:
+  Add ~ia64/~sparc wrt #289839
+
+  26 Oct 2009; Mounir Lamouri <volkmar@gentoo.org> locale-2.0.4.ebuild:
+  Keywording for ppc, bug 289839
+
+  24 Aug 2009; Hans de Graaff <graaff@gentoo.org> -locale-2.0.3.ebuild:
+  Remove old version.
+
+  13 Jun 2009; Hans de Graaff <graaff@gentoo.org> locale-2.0.4.ebuild:
+  Add ~alpha keyword, closing #272772. Thanks to Yuta Satoh for testing.
+
+  13 Jun 2009; Hans de Graaff <graaff@gentoo.org> locale-2.0.4.ebuild:
+  Also keyword latest version ~ppc64.
+
+  25 May 2009; Brent Baude <ranger@gentoo.org> locale-2.0.3.ebuild:
+  keyworded ~arch for ppc64, bug 270557
+
+*locale-2.0.4 (24 May 2009)
+
+  24 May 2009; Hans de Graaff <graaff@gentoo.org> -locale-2.0.0.ebuild,
+  -locale-2.0.1.ebuild, -locale-2.0.2.ebuild, +locale-2.0.4.ebuild:
+  Version bump with better support for Win32 and JRuby.
+
+  24 May 2009; Hans de Graaff <graaff@gentoo.org> -locale-2.0.0.ebuild,
+  -locale-2.0.1.ebuild, -locale-2.0.2.ebuild:
+  Remove old versions.
+
+*locale-2.0.3 (10 May 2009)
+
+  10 May 2009; Hans de Graaff <graaff@gentoo.org> +locale-2.0.3.ebuild:
+  Version bump due to packaging errors with related gems.
+
+*locale-2.0.2 (07 May 2009)
+
+  07 May 2009; Hans de Graaff <graaff@gentoo.org> +locale-2.0.2.ebuild:
+  Version bump.
+
+*locale-2.0.1 (18 Apr 2009)
+
+  18 Apr 2009; Hans de Graaff <graaff@gentoo.org> +locale-2.0.1.ebuild:
+  Version bump.
+
+*locale-2.0.0 (24 Mar 2009)
+
+  24 Mar 2009; Hans de Graaff <graaff@gentoo.org> +metadata.xml,
+  +locale-2.0.0.ebuild:
+  Initial import, new dependeny of ruby-gettext
+

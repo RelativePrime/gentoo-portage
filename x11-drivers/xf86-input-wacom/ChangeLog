@@ -1,0 +1,210 @@
+# ChangeLog for x11-drivers/xf86-input-wacom
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-drivers/xf86-input-wacom/ChangeLog,v 1.45 2011/07/13 20:10:15 maekke Exp $
+
+  13 Jul 2011; Markus Meier <maekke@gentoo.org> xf86-input-wacom-0.11.0.ebuild:
+  x86 stable, bug #371857
+
+  28 Jun 2011; Brent Baude <ranger@gentoo.org> xf86-input-wacom-0.11.0.ebuild:
+  Marking xf86-input-wacom-0.11.0 ppc stable for bug 371857
+
+  23 Jun 2011; Markos Chandras <hwoarang@gentoo.org>
+  xf86-input-wacom-0.11.0.ebuild:
+  Stable on amd64 wrt bug #372333
+
+  14 May 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  xf86-input-wacom-0.11.0.ebuild:
+  Drop deps handled by the eclass.
+
+  14 May 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  xf86-input-wacom-0.11.0.ebuild:
+  Use all eapi4 features and check kernel in pkg_pretend.
+
+*xf86-input-wacom-0.11.0 (28 Apr 2011)
+
+  28 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  +xf86-input-wacom-0.11.0.ebuild:
+  Version bump to latest.
+
+  18 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -xf86-input-wacom-0.10.8-r1.ebuild:
+  old
+
+  26 Mar 2011; Christian Faulhammer <fauli@gentoo.org>
+  xf86-input-wacom-0.10.11.ebuild:
+  x86 stable, bug 359059
+
+  21 Mar 2011; Markos Chandras <hwoarang@gentoo.org>
+  xf86-input-wacom-0.10.11.ebuild:
+  Stable on amd64 wrt bug #359059
+
+  15 Mar 2011; Kacper Kowalik <xarthisius@gentoo.org>
+  xf86-input-wacom-0.10.11.ebuild:
+  ppc/ppc64 stable wrt #359059
+
+  03 Mar 2011; Mike Auty <ikelos@gentoo.org> xf86-input-wacom-0.10.8-r1.ebuild:
+  Change deps for xf86-input-wacom-0.10.8, see bug 356981.
+
+*xf86-input-wacom-0.10.11 (01 Mar 2011)
+
+  01 Mar 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  +xf86-input-wacom-0.10.11.ebuild:
+  Version bump.
+
+  20 Feb 2011; Samuli Suominen <ssuominen@gentoo.org>
+  xf86-input-wacom-0.10.8-r1.ebuild:
+  Stabilize for everyone.
+
+  14 Feb 2011; Kacper Kowalik <xarthisius@gentoo.org>
+  xf86-input-wacom-0.10.8.ebuild:
+  ppc stable wrt #344827, #354237
+
+*xf86-input-wacom-0.10.8-r1 (13 Feb 2011)
+
+  13 Feb 2011; Samuli Suominen <ssuominen@gentoo.org>
+  +xf86-input-wacom-0.10.8-r1.ebuild:
+  Remove USE="hal" since it's not present in stable X.org server anymore.
+
+  25 Dec 2010; Christian Faulhammer <fauli@gentoo.org>
+  xf86-input-wacom-0.10.8.ebuild:
+  x86 stable, bug 344827
+
+  23 Dec 2010; Samuli Suominen <ssuominen@gentoo.org>
+  xf86-input-wacom-0.10.8.ebuild:
+  amd64 stable wrt #344827
+
+  19 Dec 2010; Samuli Suominen <ssuominen@gentoo.org>
+  xf86-input-wacom-0.10.8.ebuild:
+  ppc64 stable wrt #344827
+
+  21 Oct 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  -xf86-input-wacom-0.10.4.ebuild:
+  old
+
+  21 Oct 2010; Brent Baude <ranger@gentoo.org>
+  xf86-input-wacom-0.10.6.ebuild:
+  Marking xf86-input-wacom-0.10.6 ppc stable for bug 239063
+
+  28 Sep 2010; Samuli Suominen <ssuominen@gentoo.org>
+  xf86-input-wacom-0.10.6.ebuild:
+  ppc64 stable wrt #327777
+
+  10 Aug 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  -files/0.10.3-protocol-4.patch:
+  Drop unused patch.
+
+  04 Aug 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  xf86-input-wacom-0.10.8.ebuild:
+  Forgot to update calls when i found that i use old eclass. Per bug
+  #331139.
+
+  03 Aug 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  -xf86-input-wacom-0.10.3-r1.ebuild, -xf86-input-wacom-0.10.5.ebuild:
+  Drop redundant versions.
+
+*xf86-input-wacom-0.10.8 (02 Aug 2010)
+
+  02 Aug 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  +xf86-input-wacom-0.10.8.ebuild:
+  Version bump. Sort out deps based on configure.ac.
+
+  13 Jul 2010; Christian Faulhammer <fauli@gentoo.org>
+  xf86-input-wacom-0.10.6.ebuild:
+  x86 stable, bug 327777
+
+  12 Jul 2010; Markos Chandras <hwoarang@gentoo.org>
+  xf86-input-wacom-0.10.6.ebuild:
+  Stable on amd64 wrt bug #327777
+
+  12 May 2010; Brent Baude <ranger@gentoo.org>
+  xf86-input-wacom-0.10.4.ebuild:
+  Marking xf86-input-wacom-0.10.4 ppc64 stable for bug 308521
+
+*xf86-input-wacom-0.10.6 (29 Apr 2010)
+
+  29 Apr 2010; Mike Auty <ikelos@gentoo.org>
+  +xf86-input-wacom-0.10.6.ebuild:
+  Version bump xf86-input-wacom.
+
+  18 Apr 2010; <nixnut@gentoo.org> xf86-input-wacom-0.10.4.ebuild:
+  ppc stable #308521
+
+  16 Apr 2010; Pacho Ramos <pacho@gentoo.org>
+  xf86-input-wacom-0.10.4.ebuild:
+  amd64 stable, bug 308521
+
+  09 Apr 2010; Christian Faulhammer <fauli@gentoo.org>
+  xf86-input-wacom-0.10.4.ebuild:
+  stable x86, bug 308521
+
+*xf86-input-wacom-0.10.5 (19 Mar 2010)
+
+  19 Mar 2010; Mike Auty <ikelos@gentoo.org>
+  -files/0.10.2-wheel-buttons.patch, -xf86-input-wacom-0.10.1.ebuild,
+  -xf86-input-wacom-0.10.2-r1.ebuild, -xf86-input-wacom-0.10.3.ebuild,
+  +xf86-input-wacom-0.10.5.ebuild:
+  Version bump to 0.10.5, clear out old versions.
+
+*xf86-input-wacom-0.10.4 (09 Feb 2010)
+
+  09 Feb 2010; Mike Auty <ikelos@gentoo.org>
+  +xf86-input-wacom-0.10.4.ebuild:
+  Version bump xf86-input-wacom to 0.10.4, closes bug 304081, thanks to
+  Matthew Turnbull.
+
+  18 Jan 2010; Robert Buchholz <rbu@gentoo.org> metadata.xml:
+  Dropping maintenance
+
+*xf86-input-wacom-0.10.3-r1 (31 Dec 2009)
+
+  31 Dec 2009; Mike Auty <ikelos@gentoo.org>
+  -xf86-input-wacom-0.10.0.ebuild, -xf86-input-wacom-0.10.2.ebuild,
+  +xf86-input-wacom-0.10.3-r1.ebuild, +files/0.10.3-protocol-4.patch:
+  Fix bug 298547, and tidy up older versions.
+
+*xf86-input-wacom-0.10.3 (23 Dec 2009)
+
+  23 Dec 2009; Mike Auty <ikelos@gentoo.org>
+  +xf86-input-wacom-0.10.3.ebuild:
+  Version bump to 0.10.3, now includes a (testing) version of xsetwacom.
+
+  10 Dec 2009; Zac Medico <zmedico@gentoo.org>
+  xf86-input-wacom-0.10.0.ebuild, xf86-input-wacom-0.10.1.ebuild,
+  xf86-input-wacom-0.10.2.ebuild, xf86-input-wacom-0.10.2-r1.ebuild:
+  Bug #296216 - Block linuxwacom since retroactive blockers don't
+  necessarily work for packages that are already installed.
+
+*xf86-input-wacom-0.10.2-r1 (02 Dec 2009)
+
+  02 Dec 2009; Mike Auty <ikelos@gentoo.org>
+  +files/0.10.2-wheel-buttons.patch, +xf86-input-wacom-0.10.2-r1.ebuild:
+  Fix up wheel mouse bug with xf86-input-wacom-0.10.2.
+
+*xf86-input-wacom-0.10.2 (01 Dec 2009)
+
+  01 Dec 2009; Mike Auty <ikelos@gentoo.org>
+  +xf86-input-wacom-0.10.2.ebuild:
+  Version bump xf86-input-wacom to 0.10.2. This now supports hotplugging and
+  autoconfiguration for serial devices.
+
+*xf86-input-wacom-0.10.1 (20 Nov 2009)
+
+  20 Nov 2009; Mike Auty <ikelos@gentoo.org>
+  +xf86-input-wacom-0.10.1.ebuild:
+  Version bump, ebuild based on one courtesy of Matthew Turnbull (see bug
+  293797).
+
+  05 Nov 2009; Rémi Cardona <remi@gentoo.org>
+  xf86-input-wacom-0.10.0.ebuild:
+  add debug support, patch by Matthew Turnbull, see bug #290730
+
+  05 Nov 2009; Rémi Cardona <remi@gentoo.org>
+  xf86-input-wacom-0.10.0.ebuild:
+  add ppc keywords since the older driver used to work on those arches
+
+*xf86-input-wacom-0.10.0 (05 Nov 2009)
+
+  05 Nov 2009; Rémi Cardona <remi@gentoo.org>
+  +xf86-input-wacom-0.10.0.ebuild, +metadata.xml:
+  first official release, import from the x11 overlay
+

@@ -1,0 +1,53 @@
+# ChangeLog for dev-perl/mecab-perl
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/mecab-perl/ChangeLog,v 1.12 2010/01/23 09:06:49 matsuu Exp $
+
+*mecab-perl-0.98 (23 Jan 2010)
+
+  23 Jan 2010; MATSUU Takuto <matsuu@gentoo.org> +mecab-perl-0.98.ebuild:
+  Version bumped.
+
+  16 Aug 2009; Akinori Hattori <hattya@gentoo.org> mecab-perl-0.97.ebuild:
+  cleanup.
+
+  02 May 2009; Torsten Veller <tove@gentoo.org> -mecab-perl-0.92.ebuild:
+  Cleanup
+
+  28 Nov 2008; Markus Meier <maekke@gentoo.org> mecab-perl-0.97.ebuild:
+  amd64/x86 stable, bug #239980
+
+*mecab-perl-0.97 (02 Nov 2008)
+
+  02 Nov 2008; MATSUU Takuto <matsuu@gentoo.org> -mecab-perl-0.96.ebuild,
+  +mecab-perl-0.97.ebuild:
+  Version bumped.
+
+  09 Sep 2007; Akinori Hattori <hattya@gentoo.org> mecab-perl-0.92.ebuild:
+  add ~ia64.
+
+*mecab-perl-0.96 (09 Sep 2007)
+
+  09 Sep 2007; Akinori Hattori <hattya@gentoo.org> +mecab-perl-0.96.ebuild:
+  new upstream release.
+
+  09 Sep 2007; Akinori Hattori <hattya@gentoo.org> mecab-perl-0.92.ebuild:
+  stable on x86.
+
+  09 Sep 2007; Akinori Hattori <hattya@gentoo.org> metadata.xml,
+  mecab-perl-0.92.ebuild:
+  update HOMEPAGE and SRC_URI, and remove src_test.
+
+  20 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  mecab-perl-0.92.ebuild:
+  Marking amd64 stable
+
+  06 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  mecab-perl-0.92.ebuild:
+  Adding perl dep; fixed DEPEND
+
+*mecab-perl-0.92 (10 Jul 2006)
+
+  10 Jul 2006; Mamoru KOMACHI <usata@gentoo.org> +metadata.xml,
+  +mecab-perl-0.92.ebuild:
+  Initial import.
+

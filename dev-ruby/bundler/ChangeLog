@@ -1,0 +1,106 @@
+# ChangeLog for dev-ruby/bundler
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/bundler/ChangeLog,v 1.22 2011/07/24 09:49:13 xarthisius Exp $
+
+  24 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> bundler-1.0.15.ebuild:
+  Marked ~ppc/~ppc64 wrt #351835
+
+  29 Jun 2011; Fabian Groffen <grobian@gentoo.org> bundler-1.0.15.ebuild:
+  Marked ~x86-solaris
+
+*bundler-1.0.15 (10 Jun 2011)
+
+  10 Jun 2011; Hans de Graaff <graaff@gentoo.org> +bundler-1.0.15.ebuild:
+  Version bump.
+
+  02 Jun 2011; Markus Meier <maekke@gentoo.org> bundler-1.0.14.ebuild:
+  add ~x86, bug #368983
+
+*bundler-1.0.14 (28 May 2011)
+
+  28 May 2011; Hans de Graaff <graaff@gentoo.org> +bundler-1.0.14.ebuild:
+  Version bump. Drop x86 due to new dependency on app-text/ronn, bug 368983.
+
+  28 May 2011; Hans de Graaff <graaff@gentoo.org> -bundler-1.0.10.ebuild,
+  -bundler-1.0.12.ebuild:
+  Remove old versions.
+
+*bundler-1.0.13 (06 May 2011)
+
+  06 May 2011; Hans de Graaff <graaff@gentoo.org> +bundler-1.0.13.ebuild:
+  Version bump.
+
+*bundler-1.0.12 (09 Apr 2011)
+
+  09 Apr 2011; Hans de Graaff <graaff@gentoo.org> +bundler-1.0.12.ebuild:
+  Version bump.
+
+  09 Apr 2011; Hans de Graaff <graaff@gentoo.org> -bundler-1.0.7-r1.ebuild,
+  -bundler-1.0.8.ebuild, -bundler-1.0.9.ebuild:
+  Remove old versions.
+
+*bundler-1.0.10 (02 Feb 2011)
+
+  02 Feb 2011; Hans de Graaff <graaff@gentoo.org> +bundler-1.0.10.ebuild:
+  Version bump.
+
+  02 Feb 2011; Hans de Graaff <graaff@gentoo.org> -bundler-1.0.3.ebuild,
+  -bundler-1.0.7.ebuild:
+  Remove old versions.
+
+*bundler-1.0.9 (20 Jan 2011)
+
+  20 Jan 2011; Hans de Graaff <graaff@gentoo.org> +bundler-1.0.9.ebuild:
+  Version bump.
+
+*bundler-1.0.8 (19 Jan 2011)
+
+  19 Jan 2011; Hans de Graaff <graaff@gentoo.org> +bundler-1.0.8.ebuild:
+  Version bump.
+
+  28 Dec 2010; Hans de Graaff <graaff@gentoo.org> -bundler-0.8.1.ebuild,
+  -bundler-0.9.26.ebuild:
+  Remove old versions.
+
+*bundler-1.0.7-r1 (28 Dec 2010)
+
+  28 Dec 2010; Hans de Graaff <graaff@gentoo.org> +bundler-1.0.7-r1.ebuild:
+  Revision bump to install proper gemspec with new revision of the
+  ruby-fakegem eclass, fixing bug 346357.
+
+*bundler-1.0.7 (04 Dec 2010)
+
+  04 Dec 2010; Hans de Graaff <graaff@gentoo.org> +bundler-1.0.7.ebuild:
+  Version bump.
+
+*bundler-1.0.3 (16 Oct 2010)
+
+  16 Oct 2010; Hans de Graaff <graaff@gentoo.org> +bundler-1.0.3.ebuild,
+  +files/bundler-1.0.3-gentoo.patch:
+  Version bump.
+
+  30 Jun 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  bundler-0.9.26.ebuild:
+  Add ~x86 keyword, tested in development container.
+
+*bundler-0.9.26 (22 Jun 2010)
+
+  22 Jun 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  +bundler-0.9.26.ebuild, +files/bundler-0.9.26-gentoo.patch:
+  Finally bump to bundler 0.9, add a patch with a number of fixes for both
+  test and code itself, already merged upstream.
+
+  01 May 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  bundler-0.8.1.ebuild:
+  Restore original SRC_URI.
+
+  30 Apr 2010; Hans de Graaff <graaff@gentoo.org> bundler-0.8.1.ebuild:
+  Deal with github changing their tarball generation.
+
+*bundler-0.8.1 (28 Jan 2010)
+
+  28 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  +bundler-0.8.1.ebuild, +metadata.xml:
+  Initial import of bundler, that might not be too nice for us but it's
+  still a decent tool for developers.
+

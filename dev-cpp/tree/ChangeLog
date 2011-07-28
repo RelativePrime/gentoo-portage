@@ -1,0 +1,37 @@
+# ChangeLog for dev-cpp/tree
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-cpp/tree/ChangeLog,v 1.8 2011/04/08 13:43:01 jlec Exp $
+
+*tree-2.65-r1 (08 Apr 2011)
+
+  08 Apr 2011; Justin Lecher <jlec@gentoo.org> +tree-2.65-r1.ebuild,
+  +files/tree-2.65-gcc46.patch:
+  Fix include problem with gcc4.6, #362599
+
+  21 Jul 2010; Samuli Suominen <ssuominen@gentoo.org> tree-2.65.ebuild:
+  ppc64 stable wrt #315687
+
+  26 Apr 2010; Markus Meier <maekke@gentoo.org> tree-2.65.ebuild:
+  amd64/x86 stable, bug #315687
+
+  01 Jan 2010; Christian Faulhammer <fauli@gentoo.org> tree-2.65.ebuild:
+  Port Prefix keywords
+
+  17 Nov 2009; Mark Loeser <halcy0n@gentoo.org> tree-2.65.ebuild:
+  Mark ~ppc64
+
+*tree-2.65 (26 Jun 2009)
+
+  26 Jun 2009; Sébastien Fabbro <bicatali@gentoo.org> +tree-2.65.ebuild:
+  Version bump
+
+  15 Apr 2009; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/tree-2.62-test.patch, tree-2.62.ebuild:
+  Update test from upstream, closing bug #265430
+
+*tree-2.62 (07 Apr 2009)
+
+  07 Apr 2009; Sébastien Fabbro <bicatali@gentoo.org> +metadata.xml,
+  +tree-2.62.ebuild:
+  Initial import
+

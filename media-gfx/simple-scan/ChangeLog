@@ -1,0 +1,56 @@
+# ChangeLog for media-gfx/simple-scan
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/simple-scan/ChangeLog,v 1.9 2011/06/14 11:47:10 nirbheek Exp $
+
+  14 Jun 2011; Nirbheek Chauhan <nirbheek@gentoo.org> metadata.xml:
+  Now maintained by gnome team, not just me.
+
+  13 Jun 2011; Nirbheek Chauhan <nirbheek@gentoo.org> metadata.xml:
+  Add myself as maintainer in accordance with Markos's mail to gentoo-dev. No
+  oustanding bugs found for reassignment.
+
+  10 Jun 2011; Christoph Mende <angelos@gentoo.org> simple-scan-2.31.1.ebuild,
+  simple-scan-2.31.91.ebuild, simple-scan-2.32.0.1.ebuild,
+  simple-scan-2.32.0.2.ebuild:
+  Fix udev dependency (bug #370377)
+
+*simple-scan-2.32.0.2 (26 Apr 2011)
+
+  26 Apr 2011; Gilles Dartiguelongue <eva@gentoo.org>
+  +simple-scan-2.32.0.2.ebuild:
+  Version bump.
+
+  26 Feb 2011; Kevin McCarthy <signals@gentoo.org> simple-scan-2.31.91.ebuild:
+  Updated depends from media-libs/jpeg to virtual/jpeg
+
+*simple-scan-2.32.0.1 (07 Dec 2010)
+
+  07 Dec 2010; Gilles Dartiguelongue <eva@gentoo.org>
+  +simple-scan-2.32.0.1.ebuild:
+  Version bump for Gnome 2.32.
+
+*simple-scan-2.31.91 (14 Sep 2010)
+
+  14 Sep 2010; Markos Chandras <hwoarang@gentoo.org>
+  +files/simple-scan-2.31.90.2-support-non-pkgconfig-zlib.patch,
+  +simple-scan-2.31.91.ebuild:
+  Version bump. Bug #336900. Patch to configure with old zlib versions as
+  well. Thanks to David King <amigadave@amigadave.com> for the ebuild and
+  the patch.
+
+  03 Aug 2010; Markos Chandras <hwoarang@gentoo.org>
+  simple-scan-2.31.1.ebuild:
+  Add missing udev[extras] dependency ( bug #328145 ) and
+  >=media-gfx/sane-backends-1.0.20 dependency ( bug #328149 )
+
+*simple-scan-2.31.1 (04 Jun 2010)
+
+  04 Jun 2010; Markos Chandras <hwoarang@gentoo.org>
+  +simple-scan-2.31.1.ebuild, +metadata.xml:
+  Moved from sunrise overlay. Fixes bug #320737. Thanks to Fabian Köster
+  <koesterreich@gmx.net> for the initial ebuild
+
+  26 May 2010; Fabian Köster (maestro_alubia) <f.koester@tarent.de>
+  +simple-scan-2.31.1.ebuild, +metadata.xml:
+  New Ebuild for bug 320737 thanks to sedzimir, BiNkl and Tommy[D]
+

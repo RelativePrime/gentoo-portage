@@ -1,0 +1,34 @@
+# ChangeLog for sci-calculators/transcalc
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-calculators/transcalc/ChangeLog,v 1.6 2011/03/02 13:33:12 jlec Exp $
+
+  02 Mar 2011; Justin Lecher <jlec@gentoo.org> transcalc-0.14-r1.ebuild:
+  Correct Slots for gtk 3 introduction to tree
+
+*transcalc-0.14-r1 (05 Jan 2010)
+
+  05 Jan 2010; Sébastien Fabbro <bicatali@gentoo.org>
+  -transcalc-0.14.ebuild, +transcalc-0.14-r1.ebuild,
+  +files/transcalc-0.14-fd-perm.patch, metadata.xml:
+  Added a patch from Debian on file permission, fixed some syntax errors,
+  and cleaned up
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  25 Sep 2005; <dang@gentoo.org> transcalc-0.14.ebuild:
+  Marked ~amd64
+
+*transcalc-0.14 (24 Dec 2004)
+
+  24 Dec 2004; Olivier Fisette <ribosome@gentoo.org> +metadata.xml,
+  +transcalc-0.14.ebuild:
+  Moved from app-sci/transcalc to sci-calculators/transcalc.
+
+*transcalc-0.14 (17 May 2004)
+
+  17 May 2004; Patrick Kursawe <phosphan@gentoo.org> metadata.xml,
+  transcalc-0.14.ebuild:
+  Initial import, ebuild by Nick <npaulin@purdue.edu> and
+  olivier.fisette@sympatico.ca, see bug #29377
+

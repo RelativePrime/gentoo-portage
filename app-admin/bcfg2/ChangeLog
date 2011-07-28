@@ -1,0 +1,81 @@
+# ChangeLog for app-admin/bcfg2
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/bcfg2/ChangeLog,v 1.17 2011/06/12 16:35:17 xmw Exp $
+
+*bcfg2-1.1.2 (12 Jun 2011)
+
+  12 Jun 2011; Michael Weber <xmw@gentoo.org> +bcfg2-1.1.2.ebuild,
+  metadata.xml:
+  Version bump (bug 370549, thanks for the report)
+
+  14 Jan 2011; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  bcfg2-1.1.0.ebuild:
+  Fix installation.
+
+  16 Oct 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  bcfg2-1.1.0.ebuild:
+  Support installation for multiple Python ABIs (bug #308265).
+
+  16 Oct 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -bcfg2-1.0.1.ebuild:
+  Delete.
+
+*bcfg2-1.1.0 (07 Oct 2010)
+
+  07 Oct 2010; Dawid Węgliński <cla@gentoo.org> +bcfg2-1.1.0.ebuild:
+  Version bump (bug #339886)
+
+  31 Mar 2010; Samuli Suominen <ssuominen@gentoo.org> bcfg2-1.0.1.ebuild:
+  Fix slotting wrt #312423.
+
+  28 Mar 2010; Jeremy Olexa <darkside@gentoo.org> metadata.xml:
+  Drop myself from metadata, add maintainer-needed
+
+  20 Feb 2010; Jonathan Callen <abcd@gentoo.org> bcfg2-1.0.1.ebuild:
+  Transfer prefix keywords, bump EAPI
+
+*bcfg2-1.0.1 (22 Jan 2010)
+
+  22 Jan 2010; Jeremy Olexa <darkside@gentoo.org> +bcfg2-1.0.1.ebuild:
+  Version bump, bug 301851
+
+*bcfg2-1.0.0 (17 Jan 2010)
+
+  17 Jan 2010; Jeremy Olexa <darkside@gentoo.org> -bcfg2-1.0_pre2.ebuild,
+  +bcfg2-1.0.0.ebuild:
+  Version bump. Patch by solj in bug 292869
+
+*bcfg2-1.0_pre2 (20 May 2009)
+
+  20 May 2009; Jeremy Olexa <darkside@gentoo.org> -bcfg2-0.9.6_pre2.ebuild,
+  +bcfg2-1.0_pre2.ebuild:
+  Version bump, patch by solj - bug 263983
+
+  08 Jan 2009; Jeremy Olexa <darkside@gentoo.org> bcfg2-0.9.6.ebuild:
+  drop gamin dep in favor of gam-server - forget about fam completely, too
+  much hassle
+
+  08 Jan 2009; Jeremy Olexa <darkside@gentoo.org> bcfg2-0.9.6.ebuild:
+  fix typo
+
+*bcfg2-0.9.6 (08 Jan 2009)
+
+  08 Jan 2009; Jeremy Olexa <darkside@gentoo.org> +bcfg2-0.9.6.ebuild:
+  Version bump, bug 252146
+
+*bcfg2-0.9.6_pre2 (08 Sep 2008)
+
+  08 Sep 2008; Jeremy Olexa <darkside@gentoo.org> -bcfg2-0.9.6_pre1.ebuild,
+  +bcfg2-0.9.6_pre2.ebuild:
+  Version bump and small changes from Luca Lesinigo in bug #230602
+
+  08 Sep 2008; Jeremy Olexa <darkside@gentoo.org> bcfg2-0.9.6_pre1.ebuild:
+  ~amd64 kw, bug #230602. Thanks Chad for testing
+
+*bcfg2-0.9.6_pre1 (03 Jul 2008)
+
+  03 Jul 2008; Jeremy Olexa <darkside@gentoo.org> +files/bcfg2-server.rc,
+  +metadata.xml, +bcfg2-0.9.6_pre1.ebuild:
+  Initial commit. ebuild written by Michael Jinks <mjinks@uchicago.edu>,
+  proxied maintainer, bug #164467
+

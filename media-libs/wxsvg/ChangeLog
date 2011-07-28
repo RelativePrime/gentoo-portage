@@ -1,0 +1,108 @@
+# ChangeLog for media-libs/wxsvg
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/wxsvg/ChangeLog,v 1.26 2011/05/06 07:11:05 tomka Exp $
+
+  06 May 2011; Thomas Kahle <tomka@gentoo.org> wxsvg-1.0.8.ebuild:
+  x86 stable per bug 361737
+
+  09 Apr 2011; Christoph Mende <angelos@gentoo.org> wxsvg-1.0.8.ebuild:
+  Stable on amd64 wrt bug #361737
+
+  03 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org> wxsvg-1.0.ebuild,
+  wxsvg-1.0.5.ebuild:
+  Move also older versions to virtual/ffmpeg.
+
+  03 Apr 2011; Ryan Hill <dirtyepic@gentoo.org> -wxsvg-1.0.7.ebuild,
+  wxsvg-1.0.8.ebuild:
+  Use virtual/ffmpeg, slot glib dep.
+
+*wxsvg-1.0.8 (27 Feb 2011)
+
+  27 Feb 2011; Ryan Hill <dirtyepic@gentoo.org> -wxsvg-1.0.2-r1.ebuild,
+  -files/wxsvg-1.0.2-external-expat.patch, +wxsvg-1.0.8.ebuild:
+  Version bump, remove old.
+
+  02 Jan 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> wxsvg-1.0.5.ebuild:
+  x86 stable wrt bug #349722
+
+  01 Jan 2011; Markos Chandras <hwoarang@gentoo.org> wxsvg-1.0.5.ebuild:
+  Stable on amd64 wrt bug #349722
+
+*wxsvg-1.0.7 (26 Dec 2010)
+
+  26 Dec 2010; Ryan Hill <dirtyepic@gentoo.org> -wxsvg-1.0.4.ebuild,
+  +wxsvg-1.0.7.ebuild:
+  Version bump. Remove old.
+
+*wxsvg-1.0.5 (14 Aug 2010)
+
+  14 Aug 2010; Ryan Hill <dirtyepic@gentoo.org> +wxsvg-1.0.5.ebuild:
+  Version bump.
+
+  10 Jul 2010; Christian Faulhammer <fauli@gentoo.org>
+  wxsvg-1.0.2-r1.ebuild:
+  stable x86, bug 326835
+
+  04 Jul 2010; Markos Chandras <hwoarang@gentoo.org> wxsvg-1.0.2-r1.ebuild:
+  Stable on amd64 wrt bug #326835
+
+*wxsvg-1.0.4 (04 Jul 2010)
+
+  04 Jul 2010; Ryan Hill <dirtyepic@gentoo.org> -wxsvg-1.0.2.ebuild,
+  +wxsvg-1.0.4.ebuild:
+  Version bump.
+
+*wxsvg-1.0.2-r1 (20 Feb 2010)
+
+  20 Feb 2010; Ryan Hill <dirtyepic@gentoo.org> +wxsvg-1.0.2-r1.ebuild,
+  +files/wxsvg-1.0.2-external-expat.patch:
+  Add support for building against system expat. (bug #249625 by Diego)
+
+*wxsvg-1.0.2 (07 Feb 2010)
+
+  07 Feb 2010; Ryan Hill <dirtyepic@gentoo.org>
+  -files/wxsvg-1.0_beta7-freetype.patch, +wxsvg-1.0.2.ebuild:
+  Version bump.
+
+  21 Oct 2009; Ryan Hill <dirtyepic@gentoo.org> wxsvg-1.0.ebuild:
+  Fix EAPI 2 dependency.
+
+  09 Aug 2009; nixnut <nixnut@gentoo.org> wxsvg-1.0.ebuild:
+  ppc stable #278923
+
+  01 Aug 2009; Markus Meier <maekke@gentoo.org> wxsvg-1.0.ebuild:
+  amd64/x86 stable, bug #278923
+
+*wxsvg-1.0 (18 Jan 2009)
+
+  18 Jan 2009; Ryan Hill <dirtyepic@gentoo.org> +wxsvg-1.0.ebuild:
+  Version bump for dragonheart in bug #215665.
+
+  19 May 2008; Samuli Suominen <drac@gentoo.org> wxsvg-1.0_beta7.ebuild:
+  Move pkgconfig to DEPEND.
+
+  28 Jan 2008; Raúl Porcel <armin76@gentoo.org> metadata.xml:
+  Replace wxwindows with wxwidgets in metadata
+
+  17 Jun 2007; Raúl Porcel <armin76@gentoo.org> wxsvg-1.0_beta7.ebuild:
+  x86 stable wrt #181365
+
+  08 Jun 2007; Matti Bickel <mabi@gentoo.org> wxsvg-1.0_beta7.ebuild:
+  ~ppc added (bug #177363)
+
+  19 May 2007; Peter Weller <welp@gentoo.org> wxsvg-1.0_beta7.ebuild:
+  Keyworded ~amd64 wrt bug 177363
+
+  23 Apr 2007; Ryan Hill <dirtyepic@gentoo.org> wxsvg-1.0_beta7.ebuild:
+  Bump freetype dependency.
+
+  23 Apr 2007; Ryan Hill <dirtyepic@gentoo.org>
+  +files/wxsvg-1.0_beta7-freetype.patch, wxsvg-1.0_beta7.ebuild:
+  Add patch to allow building with later freetype versions.  Bug #175640.
+
+*wxsvg-1.0_beta7 (28 Jan 2007)
+
+  28 Jan 2007; Ryan Hill <dirtyepic@gentoo.org> +metadata.xml,
+  +wxsvg-1.0_beta7.ebuild:
+  Initial import.  Thanks to everyone on bug #112887.
+

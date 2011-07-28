@@ -1,0 +1,87 @@
+# ChangeLog for app-i18n/ibus-hangul
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-i18n/ibus-hangul/ChangeLog,v 1.14 2011/05/25 00:04:59 matsuu Exp $
+
+*ibus-hangul-1.3.1-r1 (25 May 2011)
+
+  25 May 2011; MATSUU Takuto <matsuu@gentoo.org>
+  -ibus-hangul-1.1.0.20090328.ebuild, ibus-hangul-1.2.0.20100102.ebuild,
+  -ibus-hangul-1.3.0.20100329.ebuild, ibus-hangul-1.3.1.ebuild,
+  +ibus-hangul-1.3.1-r1.ebuild, +files/ibus-hangul-ibus-1.4.patch:
+  Fixed to work with >=app-i18n/ibus-1.3.99. Removed old versions.
+
+*ibus-hangul-1.3.1 (02 Apr 2011)
+
+  02 Apr 2011; MATSUU Takuto <matsuu@gentoo.org>
+  ibus-hangul-1.2.0.20100102.ebuild, +ibus-hangul-1.3.1.ebuild:
+  Version bumped. Added python dependency.
+
+  26 May 2010; Pacho Ramos <pacho@gentoo.org>
+  ibus-hangul-1.2.0.20100102.ebuild:
+  stable amd64, bug 305757
+
+  25 Apr 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  ibus-hangul-1.2.0.20100102.ebuild:
+  x86 stable wrt bug #305757
+
+*ibus-hangul-1.3.0.20100329 (03 Apr 2010)
+
+  03 Apr 2010; MATSUU Takuto <matsuu@gentoo.org>
+  -ibus-hangul-1.2.0.20091031.ebuild, ibus-hangul-1.2.0.20100102.ebuild,
+  +ibus-hangul-1.3.0.20100329.ebuild:
+  Version bumped. Fixed python dependency, bug #311211.
+
+*ibus-hangul-1.2.0.20100102 (02 Jan 2010)
+
+  02 Jan 2010; MATSUU Takuto <matsuu@gentoo.org>
+  -ibus-hangul-1.1.0.20090211.ebuild, -ibus-hangul-1.2.0.20090617.ebuild,
+  +ibus-hangul-1.2.0.20100102.ebuild:
+  Version bumped. Removed old versions.
+
+*ibus-hangul-1.2.0.20091031 (05 Nov 2009)
+
+  05 Nov 2009; MATSUU Takuto <matsuu@gentoo.org>
+  +ibus-hangul-1.2.0.20091031.ebuild:
+  Version bumped.
+
+*ibus-hangul-1.2.0.20090617 (18 Jun 2009)
+
+  18 Jun 2009; MATSUU Takuto <matsuu@gentoo.org>
+  ibus-hangul-1.1.0.20090328.ebuild, +ibus-hangul-1.2.0.20090617.ebuild:
+  Version bumped.
+
+*ibus-hangul-1.1.0.20090328 (30 Mar 2009)
+
+  30 Mar 2009; MATSUU Takuto <matsuu@gentoo.org>
+  +ibus-hangul-1.1.0.20090328.ebuild:
+  Version bumped.
+
+  23 Mar 2009; MATSUU Takuto <matsuu@gentoo.org>
+  -ibus-hangul-0.1.1.20081023.ebuild, -ibus-hangul-1.1.0.20090205.ebuild:
+  Removed old versions.
+
+*ibus-hangul-1.1.0.20090211 (12 Feb 2009)
+
+  12 Feb 2009; MATSUU Takuto <matsuu@gentoo.org>
+  +ibus-hangul-1.1.0.20090211.ebuild:
+  Version bumped.
+
+*ibus-hangul-1.1.0.20090205 (05 Feb 2009)
+
+  05 Feb 2009; MATSUU Takuto <matsuu@gentoo.org>
+  -ibus-hangul-0.1.1.20080901.ebuild, ibus-hangul-0.1.1.20081023.ebuild,
+  +ibus-hangul-1.1.0.20090205.ebuild:
+  Version bumped. Fixed dependency. Removed old version.
+
+*ibus-hangul-0.1.1.20081023 (23 Oct 2008)
+
+  23 Oct 2008; MATSUU Takuto <matsuu@gentoo.org>
+  +ibus-hangul-0.1.1.20081023.ebuild:
+  Version bumped. inherit python.
+
+*ibus-hangul-0.1.1.20080901 (06 Sep 2008)
+
+  06 Sep 2008; MATSUU Takuto <matsuu@gentoo.org> +metadata.xml,
+  +ibus-hangul-0.1.1.20080901.ebuild:
+  Initial import. Submitted by Hong Hao, bug 236471.
+

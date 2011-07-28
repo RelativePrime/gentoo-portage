@@ -1,0 +1,25 @@
+# ChangeLog for xfce-extra/xfce4-timer-plugin
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/xfce-extra/xfce4-timer-plugin/ChangeLog,v 1.4 2011/06/19 06:23:02 angelos Exp $
+
+*xfce4-timer-plugin-0.6.2 (19 Jun 2011)
+
+  19 Jun 2011; Christoph Mende <angelos@gentoo.org>
+  +xfce4-timer-plugin-0.6.2.ebuild:
+  Version bump
+
+  29 Jan 2011; Samuli Suominen <ssuominen@gentoo.org>
+  xfce4-timer-plugin-0.6.1.ebuild,
+  +files/xfce4-timer-plugin-0.6.1-segfault_with_48_panel.patch:
+  Fix segmentation fault with xfce4-panel >= 4.8 wrt #352988 by Johannes Geiss.
+
+  08 Oct 2009; Jeremy Olexa <darkside@gentoo.org>
+  xfce4-timer-plugin-0.6.1.ebuild:
+  add prefix keywords - migrate from Gentoo Prefix
+
+*xfce4-timer-plugin-0.6.1 (25 Aug 2009)
+
+  25 Aug 2009; Samuli Suominen <ssuominen@gentoo.org>
+  +xfce4-timer-plugin-0.6.1.ebuild:
+  Rename xfce4-timer to xfce4-timer-plugin.
+

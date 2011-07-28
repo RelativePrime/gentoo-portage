@@ -1,0 +1,49 @@
+# ChangeLog for dev-python/flask
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/flask/ChangeLog,v 1.8 2011/07/06 18:58:42 djc Exp $
+
+*flask-0.7.2 (06 Jul 2011)
+
+  06 Jul 2011; Dirkjan Ochtman <djc@gentoo.org> +flask-0.7.2.ebuild:
+  Version bump to 0.7.2.
+
+  12 Feb 2011; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  flask-0.6.1.ebuild:
+  Fix dependencies.
+
+*flask-0.6.1 (31 Dec 2010)
+
+  31 Dec 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -flask-0.6.ebuild, +flask-0.6.1.ebuild:
+  Version bump.
+
+*flask-0.6 (27 Jul 2010)
+
+  27 Jul 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -flask-0.5.2.ebuild, +flask-0.6.ebuild:
+  Version bump (bug #330077).
+
+*flask-0.5.2 (15 Jul 2010)
+
+  15 Jul 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -flask-0.4.ebuild, -flask-0.5.1.ebuild, +flask-0.5.2.ebuild:
+  Version bump.
+
+*flask-0.5.1 (06 Jul 2010)
+
+  06 Jul 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +flask-0.5.1.ebuild:
+  Version bump.
+
+*flask-0.4 (18 Jun 2010)
+
+  18 Jun 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -flask-0.3.1.ebuild, +flask-0.4.ebuild:
+  Version bump.
+
+*flask-0.3.1 (30 May 2010)
+
+  30 May 2010; Dirkjan Ochtman <djc@gentoo.org> +flask-0.3.1.ebuild,
+  +metadata.xml:
+  Initial version, contributed by plaes@plaes.org.
+

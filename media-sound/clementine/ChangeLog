@@ -1,0 +1,189 @@
+# ChangeLog for media-sound/clementine
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/clementine/ChangeLog,v 1.42 2011/07/06 17:59:59 ssuominen Exp $
+
+*clementine-0.7.1-r2 (06 Jul 2011)
+
+  06 Jul 2011; Samuli Suominen <ssuominen@gentoo.org>
+  +clementine-0.7.1-r2.ebuild:
+  Missing gst-plugins wrt #360851. Force GIO disabled wrt upstream ticket #802.
+
+  31 May 2011; Markus Meier <maekke@gentoo.org> clementine-0.7.1-r1.ebuild:
+  x86 stable, bug #366927
+
+  14 May 2011; Markos Chandras <hwoarang@gentoo.org>
+  clementine-0.7.1-r1.ebuild:
+  Stable on amd64 wrt bug #366927
+
+  27 Apr 2011; Christoph Mende <angelos@gentoo.org> clementine-0.6-r2.ebuild,
+  clementine-0.7.ebuild, clementine-0.7.1.ebuild, clementine-0.7.1-r1.ebuild:
+  Fixed gstreamer slot deps
+
+*clementine-0.7.1-r1 (14 Apr 2011)
+
+  14 Apr 2011; Samuli Suominen <ssuominen@gentoo.org>
+  +clementine-0.7.1-r1.ebuild, +files/clementine-0.7.1-fix-devicekit.patch:
+  Fix devicekit support wrt #363069.
+
+*clementine-0.7.1 (02 Apr 2011)
+
+  02 Apr 2011; Samuli Suominen <ssuominen@gentoo.org> +clementine-0.7.1.ebuild:
+  Version bump.
+
+  29 Mar 2011; Samuli Suominen <ssuominen@gentoo.org> metadata.xml:
+  "ios" is now global USE flag.
+
+  28 Mar 2011; Samuli Suominen <ssuominen@gentoo.org> clementine-0.7.ebuild:
+  Disable only failing test and revert RESTRICT for test by Nikoli.
+
+  28 Mar 2011; Samuli Suominen <ssuominen@gentoo.org> clementine-0.7.ebuild:
+  RESTRICT="test" until upstream
+  http://code.google.com/p/clementine-player/issues/detail?id=1634 is solved.
+
+  28 Mar 2011; Justin Lecher <jlec@gentoo.org> metadata.xml:
+  Make ios USE description understandable without using google
+
+*clementine-0.7 (28 Mar 2011)
+
+  28 Mar 2011; Samuli Suominen <ssuominen@gentoo.org> +clementine-0.7.ebuild:
+  Version bump wrt #360845 by Agostino Sarubbo. Remove -Werror from
+  src/CMakeLists.txt wrt #360703 by Zeev Tarantov.
+
+  27 Mar 2011; Samuli Suominen <ssuominen@gentoo.org> clementine-0.6-r2.ebuild,
+  clementine-0.7_rc1.ebuild, metadata.xml:
+  Rename USE="iphone" to USE="ios" wrt #344763.
+
+*clementine-0.7_rc1 (26 Mar 2011)
+
+  26 Mar 2011; Samuli Suominen <ssuominen@gentoo.org>
+  +clementine-0.7_rc1.ebuild, +files/clementine-0.7_rc1-tests-liblastfm.patch:
+  Version bump to release candidate.
+
+  16 Mar 2011; Thomas Kahle <tomka@gentoo.org> clementine-0.6-r2.ebuild:
+  x86 stable per bug 353297
+
+  15 Mar 2011; Samuli Suominen <ssuominen@gentoo.org> clementine-0.6-r2.ebuild:
+  Fix build failure with USE="-dbus wiimote" wrt #355259 by Nikoli.
+
+  10 Feb 2011; Markos Chandras <hwoarang@gentoo.org> clementine-0.6-r2.ebuild:
+  Stable on amd64 wrt bug #353297
+
+*clementine-0.6-r2 (26 Dec 2010)
+
+  26 Dec 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +clementine-0.6-r2.ebuild, +files/clementine-0.6-fix-dbus.patch:
+  Fix regression caused by prev. commit.
+
+*clementine-0.6-r1 (26 Dec 2010)
+
+  26 Dec 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +clementine-0.6-r1.ebuild:
+  Upstream patchset to optionalize some dependencies.
+
+*clementine-0.6 (18 Dec 2010)
+
+  18 Dec 2010; Samuli Suominen <ssuominen@gentoo.org> +clementine-0.6.ebuild:
+  Version bump.
+
+  16 Nov 2010; Steve Dibb <beandog@gentoo.org> clementine-0.5.3.ebuild:
+  Fix glib dep, bug 344869
+
+  05 Nov 2010; Samuli Suominen <ssuominen@gentoo.org>
+  clementine-0.5.3.ebuild:
+  amd64 stable wrt #343697
+
+  04 Nov 2010; Christian Faulhammer <fauli@gentoo.org>
+  clementine-0.5.3.ebuild:
+  stable x86, bug 343697
+
+  02 Nov 2010; Samuli Suominen <ssuominen@gentoo.org>
+  clementine-0.4.2.ebuild, clementine-0.5.3.ebuild:
+  Fix HOMEPAGE wrt #343625 by "BT".
+
+  27 Oct 2010; Samuli Suominen <ssuominen@gentoo.org>
+  clementine-0.5.3.ebuild:
+  USE="mtp" deps on gnome-base/gvfs wrt #342031. Force MAKEOPTS="-j1" wrt
+  #339503.
+
+  05 Oct 2010; Markus Meier <maekke@gentoo.org> clementine-0.4.2.ebuild:
+  x86 stable, bug #337513
+
+  30 Sep 2010; Samuli Suominen <ssuominen@gentoo.org>
+  clementine-0.5.3.ebuild:
+  Make sure dev-db/sqlite is built with USE="fts3" by Nikoli.
+
+*clementine-0.5.3 (30 Sep 2010)
+
+  30 Sep 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +clementine-0.5.3.ebuild:
+  Version bump. Thanks to Caster and Nikoli for information and ebuild.
+
+  21 Sep 2010; Markos Chandras <hwoarang@gentoo.org>
+  clementine-0.4.2.ebuild:
+  Stable on amd64 wrt bug #337513
+
+*clementine-0.5.1 (21 Sep 2010)
+
+  21 Sep 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +clementine-0.5.1.ebuild, +files/clementine-0.5.1-automagic.patch:
+  Version bump wrt #338129 by Nikoli, Matthew Thode and Agostino Sarubbo.
+
+  20 Aug 2010; Samuli Suominen <ssuominen@gentoo.org>
+  clementine-0.4.2.ebuild:
+  Missing x11-libs/qt-test depend wrt #333455 by Mathieu Belanger.
+
+*clementine-0.4.2 (02 Jul 2010)
+
+  02 Jul 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +clementine-0.4.2.ebuild:
+  Version bump. Force with -j1 to avoid translation build failure.
+
+  01 Jul 2010; Samuli Suominen <ssuominen@gentoo.org> clementine-0.4.ebuild:
+  Force gst backend enabled because projectm plug-in is hardcoding it and
+  projectm plug-in can't be disabled as it will cause translations build to
+  fail.
+
+*clementine-0.4 (01 Jul 2010)
+
+  01 Jul 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +clementine-0.4.ebuild:
+  Version bump wrt #326365 by Lars Wendler.
+
+  24 Jun 2010; Samuli Suominen <ssuominen@gentoo.org> clementine-0.3.ebuild:
+  Postinst message for installing libsoup gstreamer plug-in for internet
+  radio support wrt #321291.
+
+  23 Jun 2010; Samuli Suominen <ssuominen@gentoo.org> clementine-0.3.ebuild:
+  Remove broken VLC engine wrt #325237 by Lars Wendler.
+
+  09 Jun 2010; Samuli Suominen <ssuominen@gentoo.org> clementine-0.3.ebuild:
+  Fix missing glib-2.0 include dirs wrt #320699 by Elias Probst and Vicente
+  Olivert.
+
+  19 May 2010; Samuli Suominen <ssuominen@gentoo.org> clementine-0.3.ebuild:
+  Missing media-plugins/gst-plugins-gio RDEPEND wrt #319697.
+
+*clementine-0.3 (14 May 2010)
+
+  14 May 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +clementine-0.3.ebuild, metadata.xml:
+  Version bump.
+
+  27 Apr 2010; Samuli Suominen <ssuominen@gentoo.org> clementine-0.2.ebuild:
+  Clementine reportedly compiled with boost-1.39 wrt #317521 by adriancz.
+
+*clementine-0.2 (23 Mar 2010)
+
+  23 Mar 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +clementine-0.2.ebuild:
+  Version bump.
+
+  04 Mar 2010; Alex Alexander <wired@gentoo.org> clementine-0.1.ebuild:
+  added missing boost DEPEND
+
+*clementine-0.1 (22 Feb 2010)
+
+  22 Feb 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +clementine-0.1.ebuild:
+  Initial commit.
+

@@ -1,0 +1,41 @@
+# ChangeLog for www-servers/mongrel_cluster
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-servers/mongrel_cluster/ChangeLog,v 1.8 2010/08/08 12:39:06 graaff Exp $
+
+  08 Aug 2010; Hans de Graaff <graaff@gentoo.org>
+  -mongrel_cluster-1.0.5.ebuild:
+  Remove old version.
+
+*mongrel_cluster-1.0.5-r1 (17 Jul 2010)
+
+  17 Jul 2010; Hans de Graaff <graaff@gentoo.org>
+  +mongrel_cluster-1.0.5-r1.ebuild:
+  Convert to ruby-fakegem.
+
+  17 Jul 2010; Hans de Graaff <graaff@gentoo.org>
+  -mongrel_cluster-0.2.2.ebuild:
+  Remove old version.
+
+  15 Jan 2010; Tiziano Müller <dev-zero@gentoo.org>
+  mongrel_cluster-1.0.5.ebuild:
+  Keyworded ~sparc.
+
+  18 Aug 2009; Alex Legler <a3li@gentoo.org> mongrel_cluster-0.2.2.ebuild,
+  mongrel_cluster-1.0.5.ebuild:
+  Removing deprecated USE_RUBY="any", assigning RDEPEND explicitly.
+
+*mongrel_cluster-1.0.5 (09 Dec 2007)
+
+  09 Dec 2007; <nichoj@gentoo.org> +mongrel_cluster-1.0.5.ebuild:
+  Version bump. See bug #198516.
+
+  05 Jun 2007; Joshua Nichols <nichoj@gentoo.org>
+  mongrel_cluster-0.2.2.ebuild:
+  Added ~amd64.
+
+*mongrel_cluster-0.2.2 (03 Feb 2007)
+
+  03 Feb 2007; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  +mongrel_cluster-0.2.2.ebuild:
+  Initial version, #143098
+

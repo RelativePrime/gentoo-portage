@@ -1,0 +1,33 @@
+# ChangeLog for dev-python/mpi4py
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/mpi4py/ChangeLog,v 1.5 2010/09/22 16:09:24 arfrever Exp $
+
+*mpi4py-1.2.2 (22 Sep 2010)
+
+  22 Sep 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -mpi4py-1.2.ebuild, +mpi4py-1.2.2.ebuild:
+  Version bump.
+
+*mpi4py-1.2.1 (05 Mar 2010)
+
+  05 Mar 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -mpi4py-1.1.0.ebuild, +mpi4py-1.2.1.ebuild:
+  Version bump.
+
+*mpi4py-1.2 (29 Dec 2009)
+
+  29 Dec 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +mpi4py-1.2.ebuild:
+  Version bump.
+
+  29 Aug 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  mpi4py-1.1.0.ebuild:
+  Set SUPPORT_PYTHON_ABIS.
+
+*mpi4py-1.1.0 (18 Aug 2009)
+
+  18 Aug 2009; Sébastien Fabbro <bicatali@gentoo.org> +mpi4py-1.1.0.ebuild,
+  +metadata.xml:
+  Initial import. Closing bug #189376, thanks Marek and Ben Bannier for
+  their initial work
+

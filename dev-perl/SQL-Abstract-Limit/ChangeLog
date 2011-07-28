@@ -1,0 +1,41 @@
+# ChangeLog for dev-perl/SQL-Abstract-Limit
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/SQL-Abstract-Limit/ChangeLog,v 1.7 2011/01/14 13:31:16 tove Exp $
+
+*SQL-Abstract-Limit-0.141-r1 (14 Jan 2011)
+
+  14 Jan 2011; Torsten Veller <tove@gentoo.org>
+  -SQL-Abstract-Limit-0.14.1-r1.ebuild, +SQL-Abstract-Limit-0.141-r1.ebuild:
+  Convert ebuild version
+
+  23 Dec 2009; Fabian Groffen <grobian@gentoo.org>
+  SQL-Abstract-Limit-0.14.1-r1.ebuild:
+  Marked ~x86-solaris, bug #296509
+
+  19 Aug 2009; Torsten Veller <tove@gentoo.org>
+  SQL-Abstract-Limit-0.14.1-r1.ebuild:
+  Add Module-Build dependency and SRC_TEST
+
+  03 Jun 2009; Torsten Veller <tove@gentoo.org>
+  -SQL-Abstract-Limit-0.12.ebuild:
+  Cleanup
+
+*SQL-Abstract-Limit-0.14.1-r1 (25 Dec 2008)
+
+  25 Dec 2008; Robin H. Johnson <robbat2@gentoo.org>
+  -SQL-Abstract-Limit-0.14.1.ebuild, +SQL-Abstract-Limit-0.14.1-r1.ebuild:
+  Fixup test deps and building.
+
+*SQL-Abstract-Limit-0.14.1 (23 Dec 2008)
+
+  23 Dec 2008; Robin H. Johnson <robbat2@gentoo.org>
+  +SQL-Abstract-Limit-0.14.1.ebuild:
+  Version bump.
+
+*SQL-Abstract-Limit-0.12 (29 Sep 2008)
+
+  29 Sep 2008; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +SQL-Abstract-Limit-0.12.ebuild:
+  New ebuild by Robin H. Johnson <robbat2@gentoo.org>. Dependancy for
+  OpenSRF/Evergreen.
+

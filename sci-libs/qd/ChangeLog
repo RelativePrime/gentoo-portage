@@ -1,0 +1,36 @@
+# ChangeLog for sci-libs/qd
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/qd/ChangeLog,v 1.7 2011/06/21 15:08:06 jlec Exp $
+
+  21 Jun 2011; Justin Lecher <jlec@gentoo.org> qd-2.3.9.ebuild,
+  qd-2.3.11.ebuild:
+  Add dependency on virtual/fortran
+
+  21 Jun 2011; Justin Lecher <jlec@gentoo.org> qd-2.3.9.ebuild,
+  qd-2.3.11.ebuild:
+  Added fortran-2.eclass support
+
+  20 May 2011; Andrey Grozin <grozin@gentoo.org>
+  +files/qd-2.3.11-configure-version.patch, +files/qd-2.3.11-docpath.patch:
+  Add missing patches, bug #368065
+
+*qd-2.3.11 (18 May 2011)
+
+  18 May 2011; Andrey Grozin <grozin@gentoo.org> -qd-2.3.7.ebuild,
+  +qd-2.3.11.ebuild:
+  Version bump (bug #367465), thanks to Joshua Rich <joshua.rich@gmail.com>
+
+*qd-2.3.9 (13 Jan 2010)
+
+  13 Jan 2010; Sébastien Fabbro <bicatali@gentoo.org> +qd-2.3.9.ebuild:
+  Version bump
+
+  14 Apr 2009; Andrey Grozin <grozin@gentoo.org> qd-2.3.7.ebuild:
+  test fixed
+
+*qd-2.3.7 (14 Apr 2009)
+
+  14 Apr 2009; Andrey Grozin <grozin@gentoo.org> +files/qd-2.3.7-test.patch,
+  +metadata.xml, +qd-2.3.7.ebuild:
+  Initial import
+

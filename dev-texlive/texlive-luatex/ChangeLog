@@ -1,0 +1,50 @@
+# ChangeLog for dev-texlive/texlive-luatex
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-texlive/texlive-luatex/ChangeLog,v 1.13 2011/05/19 11:25:35 tove Exp $
+
+*texlive-luatex-2010-r1 (18 May 2011)
+
+  18 May 2011; Alexis Ballier <aballier@gentoo.org>
+  +texlive-luatex-2010-r1.ebuild, +files/lualibs.patch:
+  fix mkluatexfontdb with luatex 0.65, bug #357931 by Tiziano Muller
+
+*texlive-luatex-2010 (24 Oct 2010)
+
+  24 Oct 2010; Alexis Ballier <aballier@gentoo.org>
+  +texlive-luatex-2010.ebuild:
+  Bump to TeX Live 2010
+
+  01 Jun 2010; Joseph Jezak <josejx@gentoo.org> texlive-luatex-2009.ebuild:
+  Marked ~ppc for bug #300526.
+
+  13 May 2010; Raúl Porcel <armin76@gentoo.org> texlive-luatex-2009.ebuild:
+  Add ~sparc wrt #300526
+
+  12 May 2010; Brent Baude <ranger@gentoo.org> texlive-luatex-2009.ebuild:
+  Marking texlive-luatex-2009 ~ppc64 for bug 300526
+
+  10 May 2010; Markus Meier <maekke@gentoo.org> texlive-luatex-2009.ebuild:
+  add ~arm, bug #300526
+
+  13 Feb 2010; Raúl Porcel <armin76@gentoo.org> texlive-luatex-2009.ebuild:
+  Add ~sh wrt #300526
+
+  13 Feb 2010; Raúl Porcel <armin76@gentoo.org> texlive-luatex-2009.ebuild:
+  Add ~alpha/~ia64 wrt #300526
+
+  03 Feb 2010; Jonathan Callen <abcd@gentoo.org> texlive-luatex-2009.ebuild:
+  Add ~amd64-linux/~x86-linux keywords
+
+  27 Jan 2010; Jeroen Roovers <jer@gentoo.org> texlive-luatex-2009.ebuild:
+  Marked ~hppa too.
+
+  11 Jan 2010; Christian Faulhammer <fauli@gentoo.org>
+  texlive-luatex-2009.ebuild:
+  ~x86 added, bug 300526
+
+*texlive-luatex-2009 (11 Jan 2010)
+
+  11 Jan 2010; Alexis Ballier <aballier@gentoo.org>
+  +texlive-luatex-2009.ebuild, +metadata.xml:
+  Bump to TeX Live 2009
+

@@ -1,0 +1,84 @@
+# ChangeLog for dev-libs/shared-desktop-ontologies
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/shared-desktop-ontologies/ChangeLog,v 1.17 2011/07/27 13:39:30 alexxy Exp $
+
+*shared-desktop-ontologies-0.7.0 (27 Jul 2011)
+
+  27 Jul 2011; Alexey Shvetsov <alexxy@gentoo.org>
+  +shared-desktop-ontologies-0.7.0.ebuild:
+  Version bump for KDE SC 4.7.0
+
+  13 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org>
+  shared-desktop-ontologies-0.5.ebuild:
+  ppc64 stable wrt #354033
+
+  01 Jun 2011; Brent Baude <ranger@gentoo.org>
+  shared-desktop-ontologies-0.5.ebuild:
+  Marking shared-desktop-ontologies-0.5 ppc stable for bug 354033
+
+  09 May 2011; Markos Chandras <hwoarang@gentoo.org>
+  shared-desktop-ontologies-0.5.ebuild:
+  Stable on amd64 wrt bug #354033
+
+  09 May 2011; Thomas Kahle <tomka@gentoo.org>
+  shared-desktop-ontologies-0.5.ebuild:
+  x86 stable per bug 354033
+
+  03 Sep 2010; Joseph Jezak <josejx@gentoo.org>
+  shared-desktop-ontologies-0.4.ebuild:
+  Marked ppc64 stable for bug #322791.
+
+  09 Aug 2010; Joseph Jezak <josejx@gentoo.org>
+  shared-desktop-ontologies-0.4.ebuild:
+  Marked ppc stable for bug #322791.
+
+*shared-desktop-ontologies-0.5 (07 Jul 2010)
+
+  07 Jul 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  +shared-desktop-ontologies-0.5.ebuild:
+  Version bump 0.5
+
+  27 Jun 2010; Christian Faulhammer <fauli@gentoo.org>
+  shared-desktop-ontologies-0.4.ebuild:
+  x86 stable, bug 322791
+
+  24 Jun 2010; Christoph Mende <angelos@gentoo.org>
+  shared-desktop-ontologies-0.4.ebuild:
+  Stable on amd64 wrt bug #322791
+
+  19 May 2010; Robert Piasek <dagger@gentoo.org>
+  shared-desktop-ontologies-0.4.ebuild:
+  added ~arm keyword
+
+*shared-desktop-ontologies-0.4 (06 May 2010)
+
+  06 May 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  -shared-desktop-ontologies-0.3.ebuild,
+  +shared-desktop-ontologies-0.4.ebuild:
+  Version bump, remove old (incompatible one)
+
+  02 May 2010; Alexis Ballier <aballier@gentoo.org>
+  shared-desktop-ontologies-0.3.ebuild:
+  keyword ~x86-fbsd
+
+*shared-desktop-ontologies-0.3 (11 Mar 2010)
+
+  11 Mar 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  -shared-desktop-ontologies-0.2.ebuild,
+  +shared-desktop-ontologies-0.3.ebuild:
+  Version bump, remove old
+
+  16 Feb 2010; Joseph Jezak <josejx@gentoo.org>
+  shared-desktop-ontologies-0.2.ebuild:
+  Marked ~ppc/~ppc64 for bug #304365.
+
+  11 Feb 2010; Jonathan Callen <abcd@gentoo.org>
+  shared-desktop-ontologies-0.2.ebuild:
+  Add ~amd64-linux/~x86-linux keywords
+
+*shared-desktop-ontologies-0.2 (08 Feb 2010)
+
+  08 Feb 2010; Alexey Shvetsov <alexxy@gentoo.org>
+  +shared-desktop-ontologies-0.2.ebuild, +metadata.xml:
+  Initial import
+

@@ -1,0 +1,25 @@
+# ChangeLog for dev-java/netbeans-java
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/netbeans-java/ChangeLog,v 1.4 2011/05/13 11:12:46 fordfrog Exp $
+
+  13 May 2011; Miroslav Šulc <fordfrog@gentoo.org> netbeans-java-7.0.ebuild:
+  Fixed bug #364835
+
+*netbeans-java-7.0 (21 Apr 2011)
+
+  21 Apr 2011; Miroslav Šulc <fordfrog@gentoo.org>
+  -netbeans-java-7.0_rc2.ebuild, +netbeans-java-7.0.ebuild:
+  Bumped to latest version
+
+*netbeans-java-7.0_rc2 (08 Apr 2011)
+
+  08 Apr 2011; Miroslav Šulc <fordfrog@gentoo.org>
+  -netbeans-java-7.0_rc1.ebuild, +netbeans-java-7.0_rc2.ebuild:
+  Bumped to rc2
+
+*netbeans-java-7.0_rc1 (30 Mar 2011)
+
+  30 Mar 2011; Miroslav Šulc <fordfrog@gentoo.org>
+  +netbeans-java-7.0_rc1.ebuild, +metadata.xml:
+  Added new ebuild
+

@@ -1,0 +1,23 @@
+# ChangeLog for media-gfx/freecad
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/freecad/ChangeLog,v 1.4 2011/06/21 16:12:06 jlec Exp $
+
+  21 Jun 2011; Justin Lecher <jlec@gentoo.org> freecad-0.11.3729.ebuild:
+  Add dependency on virtual/fortran
+
+  21 Jun 2011; Justin Lecher <jlec@gentoo.org> freecad-0.11.3729.ebuild:
+  Added fortran-2.eclass support
+
+  10 Apr 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  freecad-0.11.3729.ebuild:
+  Needs PyQt4[svg], bug 362679
+
+*freecad-0.11.3729 (06 Mar 2011)
+
+  06 Mar 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  +freecad-0.11.3729.ebuild, +files/freecad-0.11.3729-asneeded.patch,
+  +metadata.xml:
+  New application, fixes bug 291161; imported from the sci overlay with
+  cleanups. Thanks to Roelof Wobben, Derk W. te Bokkel, cornicx, and all the
+  other contributors from the bug report and the overlay.
+

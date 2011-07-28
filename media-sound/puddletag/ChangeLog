@@ -1,0 +1,81 @@
+# ChangeLog for media-sound/puddletag
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/puddletag/ChangeLog,v 1.16 2011/06/09 18:59:25 billie Exp $
+
+  09 Jun 2011; Daniel Pielmeier <billie@gentoo.org> -puddletag-0.10.3.ebuild:
+  Remove old.
+
+*puddletag-0.10.6 (07 Jun 2011)
+
+  07 Jun 2011; Daniel Pielmeier <billie@gentoo.org> -puddletag-0.10.5.ebuild,
+  +puddletag-0.10.6.ebuild:
+  Version bump. Remove old.
+
+*puddletag-0.10.5 (07 Jun 2011)
+
+  07 Jun 2011; Daniel Pielmeier <billie@gentoo.org> -puddletag-0.10.2.ebuild,
+  +puddletag-0.10.5.ebuild, metadata.xml:
+  Version bump. Remove old.
+
+  31 Mar 2011; Daniel Pielmeier <billie@gentoo.org> puddletag-0.10.2.ebuild,
+  puddletag-0.10.3.ebuild:
+  Fix python/distutils.eclass related depreciation warnings.
+
+*puddletag-0.10.3 (27 Mar 2011)
+
+  27 Mar 2011; Daniel Pielmeier <billie@gentoo.org> -puddletag-0.10.0.ebuild,
+  +puddletag-0.10.3.ebuild:
+  Version bump. Remove old.
+
+*puddletag-0.10.2 (22 Mar 2011)
+
+  22 Mar 2011; Daniel Pielmeier <billie@gentoo.org> -puddletag-0.9.12.ebuild,
+  +puddletag-0.10.2.ebuild:
+  Version bump. Remove old.
+
+  11 Mar 2011; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  puddletag-0.9.12.ebuild, puddletag-0.10.0.ebuild:
+  Fix deprecation warnings.
+
+*puddletag-0.10.0 (08 Mar 2011)
+
+  08 Mar 2011; Daniel Pielmeier <billie@gentoo.org> +puddletag-0.10.0.ebuild:
+  Version bump.
+
+  13 Feb 2011; Daniel Pielmeier <billie@gentoo.org> -puddletag-0.9.11.ebuild:
+  Remove old.
+
+*puddletag-0.9.12 (09 Feb 2011)
+
+  09 Feb 2011; Daniel Pielmeier <billie@gentoo.org> -puddletag-0.9.7.ebuild,
+  +puddletag-0.9.12.ebuild:
+  Version bump. Remove old.
+
+*puddletag-0.9.11 (10 Jan 2011)
+
+  10 Jan 2011; Daniel Pielmeier <billie@gentoo.org> +puddletag-0.9.11.ebuild:
+  Version bump. Fixes bug #350855 reported by Nickolaj Stjujsckij.
+
+  10 Nov 2010; Daniel Pielmeier <billie@gentoo.org> -puddletag-0.9.6.ebuild:
+  Remove old.
+
+*puddletag-0.9.7 (01 Nov 2010)
+
+  01 Nov 2010; Daniel Pielmeier <billie@gentoo.org> -puddletag-0.9.5.ebuild,
+  +puddletag-0.9.7.ebuild:
+  Version bump. Remove old.
+
+*puddletag-0.9.6 (16 Oct 2010)
+
+  16 Oct 2010; Daniel Pielmeier <billie@gentoo.org> +puddletag-0.9.6.ebuild:
+  Version bump.
+
+  13 Oct 2010; Markos Chandras <hwoarang@gentoo.org> puddletag-0.9.5.ebuild:
+  Keyworded for amd64. Bug #340497
+
+*puddletag-0.9.5 (09 Oct 2010)
+
+  09 Oct 2010; Daniel Pielmeier <billie@gentoo.org> +puddletag-0.9.5.ebuild,
+  +metadata.xml:
+  Initial commit. Fixes Bug #328305.
+

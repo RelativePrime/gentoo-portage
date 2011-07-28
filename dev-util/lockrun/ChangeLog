@@ -1,0 +1,31 @@
+# ChangeLog for dev-util/lockrun
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/lockrun/ChangeLog,v 1.8 2010/08/11 01:00:23 jer Exp $
+
+  11 Aug 2010; Jeroen Roovers <jer@gentoo.org> lockrun-2.ebuild:
+  Use dobin. Use emake, respect CC, and respect LDFLAGS (bug #331839).
+
+  02 Jun 2010; Torsten Veller <tove@gentoo.org> metadata.xml:
+  Remove caleb from metadata.xml (#317071)
+
+  23 Sep 2009; Patrick Lauer <patrick@gentoo.org> lockrun-2.ebuild:
+  Remove virtual/libc
+
+  11 Apr 2009; Benedikt Böhm <hollow@gentoo.org> lockrun-2.ebuild:
+  stable on x86 wrt #265452
+
+  08 Apr 2009; Jeroen Roovers <jer@gentoo.org> lockrun-2.ebuild:
+  Stable for HPPA (bug #265452).
+
+  26 Mar 2008; Caleb Tennis <caleb@gentoo.org> lockrun-2.ebuild:
+  amd64 stable
+
+  13 Feb 2008; Jeroen Roovers <jer@gentoo.org> lockrun-2.ebuild:
+  Marked ~hppa too.
+
+*lockrun-2 (05 Feb 2008)
+
+  05 Feb 2008; Caleb Tennis <caleb@gentoo.org> +files/lockrun.c,
+  +metadata.xml, +lockrun-2.ebuild:
+  Initial import
+

@@ -1,0 +1,71 @@
+# ChangeLog for mail-mta/qpsmtpd
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/mail-mta/qpsmtpd/ChangeLog,v 1.11 2010/03/25 06:14:33 robbat2 Exp $
+
+  25 Mar 2010; Robin H. Johnson <robbat2@gentoo.org> qpsmtpd-0.83-r1.ebuild:
+  Clean up file and dir ownership.
+
+  25 Mar 2010; Robin H. Johnson <robbat2@gentoo.org> qpsmtpd-0.83-r1.ebuild:
+  And a dir for the pid file.
+
+*qpsmtpd-0.83-r1 (25 Mar 2010)
+
+  25 Mar 2010; Robin H. Johnson <robbat2@gentoo.org>
+  +qpsmtpd-0.83-r1.ebuild, files/qpsmtpd.initd:
+  Passing /dev/null as a pidfile path makes s-s-d rm your /dev/null device!
+
+*qpsmtpd-9999 (16 Sep 2009)
+
+  16 Sep 2009; Robin H. Johnson <robbat2@gentoo.org>
+  -qpsmtpd-0.83_pre9999.ebuild, +qpsmtpd-9999.ebuild:
+  Update live ebuild to 9999 version rather than sub-0.83 version since a
+  real 0.83 was released. Also update to current state of upstream tree.
+
+*qpsmtpd-0.83 (16 Sep 2009)
+
+  16 Sep 2009; Robin H. Johnson <robbat2@gentoo.org> +qpsmtpd-0.83.ebuild,
+  +files/qpsmtpd-0.83-clamd_conf.patch:
+  Version bump. 0.40-badhelo_disconnect.patch merged upstream.
+
+*qpsmtpd-0.83_pre9999 (31 Jul 2009)
+*qpsmtpd-0.82 (31 Jul 2009)
+
+  31 Jul 2009; Robin H. Johnson <robbat2@gentoo.org>
+  -qpsmtpd-0.82_pre9999.ebuild, +qpsmtpd-0.82.ebuild,
+  +qpsmtpd-0.83_pre9999.ebuild:
+  Version bump per bug #279490.
+
+*qpsmtpd-0.82_pre9999 (28 Apr 2009)
+
+  28 Apr 2009; Markus Ullmann <jokey@gentoo.org>
+  -qpsmtpd-0.43_rc2_pre945.ebuild, +qpsmtpd-0.82_pre9999.ebuild:
+  Add live ebuild and drop oldest
+
+  28 Apr 2009; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Keyword testing on verified arches
+
+*qpsmtpd-0.81 (28 Apr 2009)
+
+  28 Apr 2009; Markus Ullmann <jokey@gentoo.org> +qpsmtpd-0.81.ebuild:
+  Version bump, valid_auth hook dropped as not used by upstream plugins
+  anymore
+
+*qpsmtpd-0.43_rc2_pre955 (27 Oct 2008)
+
+  27 Oct 2008; Markus Ullmann <jokey@gentoo.org>
+  qpsmtpd-0.43_rc2_pre945.ebuild, +qpsmtpd-0.43_rc2_pre955.ebuild:
+  Version bump
+
+*qpsmtpd-0.43_rc2_pre945 (28 Sep 2008)
+
+  28 Sep 2008; Markus Ullmann <jokey@gentoo.org>
+  +files/qpsmtpd-0.40-badhelo_disconnect.patch,
+  +files/qpsmtpd-0.40-badrcptto_allowrelay.patch,
+  +files/qpsmtpd-0.40-clamd_conf.patch,
+  +files/qpsmtpd-0.40-peer_hooks.patch,
+  +files/qpsmtpd-0.43-peer_hooks.patch, +files/qpsmtpd.confd,
+  +files/qpsmtpd.envd, +files/qpsmtpd.initd, +files/qpsmtpd.xinetd,
+  +metadata.xml, +qpsmtpd-0.43_rc2_pre945.ebuild:
+  Initial import, also fixes bug #167930. Thanks to various people
+  contributing on bugzie and on irc
+

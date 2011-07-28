@@ -1,0 +1,43 @@
+# ChangeLog for games-misc/opengfx
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-misc/opengfx/ChangeLog,v 1.9 2011/07/16 22:10:30 mr_bones_ Exp $
+
+*opengfx-0.3.4 (16 Jul 2011)
+
+  16 Jul 2011; Michael Sterrett <mr_bones_@gentoo.org> +opengfx-0.3.4.ebuild:
+  version bump
+
+*opengfx-0.3.3 (04 May 2011)
+
+  04 May 2011; Michael Sterrett <mr_bones_@gentoo.org>
+  +opengfx-0.3.3.ebuild:
+  version bump (bug #365961) submitted by Locke Shinseiko
+
+  15 Oct 2010; Markus Meier <maekke@gentoo.org> opengfx-0.2.4.ebuild:
+  add ~arm, bug #316003
+
+  07 Jun 2010; Markos Chandras <hwoarang@gentoo.org> opengfx-0.2.4.ebuild:
+  Stable on amd64 wrt bug #321611
+
+  06 Jun 2010; Michael Sterrett <mr_bones_@gentoo.org> opengfx-0.2.4.ebuild:
+  restrict test for bug #320797
+
+  01 Jun 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org> opengfx-0.2.4.ebuild:
+  x86 stable wrt bug #321611
+
+  28 May 2010; Joseph Jezak <josejx@gentoo.org> opengfx-0.2.4.ebuild:
+  Marked ppc/ppc64 stable for bug #321611.
+
+*opengfx-0.2.4 (01 May 2010)
+
+  01 May 2010; Michael Sterrett <mr_bones_@gentoo.org>
+  +opengfx-0.2.4.ebuild:
+  version bump
+
+*opengfx-0.2.3 (08 Apr 2010)
+
+  08 Apr 2010; Michael Sterrett <mr_bones_@gentoo.org>
+  +opengfx-0.2.3.ebuild, +metadata.xml:
+  initial commit - ebuild submitted by Locke 'Wizzleby' Shinseiko via bug
+  #300328
+

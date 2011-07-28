@@ -1,0 +1,17 @@
+# ChangeLog for dev-python/Djblets
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/Djblets/ChangeLog,v 1.4 2011/01/01 21:36:30 arfrever Exp $
+
+  01 Jan 2011; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  Djblets-0.6.3.ebuild:
+  Fix deprecation warning.
+
+  24 Aug 2010; Michael Weber <xmw@gentoo.org> Djblets-0.6.3.ebuild:
+  Removed useless comments.
+
+*Djblets-0.6.3 (24 Aug 2010)
+
+  24 Aug 2010; Michael Weber <xmw@gentoo.org> +Djblets-0.6.3.ebuild,
+  +metadata.xml:
+  Initial commit for Djblets. Fixes bug #318993
+

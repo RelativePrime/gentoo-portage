@@ -1,0 +1,51 @@
+# ChangeLog for media-sound/xnoise
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/xnoise/ChangeLog,v 1.11 2011/07/08 16:31:16 angelos Exp $
+
+*xnoise-0.1.26 (08 Jul 2011)
+
+  08 Jul 2011; Christoph Mende <angelos@gentoo.org> +xnoise-0.1.26.ebuild,
+  xnoise-9999.ebuild:
+  Version bump, don't install NEWS
+
+  26 Jun 2011; Christoph Mende <angelos@gentoo.org> xnoise-0.1.25.ebuild:
+  Remove patch that's applied upstream
+
+*xnoise-0.1.25 (25 Jun 2011)
+
+  25 Jun 2011; Christoph Mende <angelos@gentoo.org> +xnoise-0.1.25.ebuild:
+  Version bump
+
+  30 May 2011; Christoph Mende <angelos@gentoo.org> xnoise-0.1.23.ebuild,
+  +files/xnoise-0.1.23-automagic-libindicate.patch:
+  Fix automagic dependency on libindicate (bug #369215)
+
+  26 May 2011; Christoph Mende <angelos@gentoo.org> xnoise-9999.ebuild:
+  Bump autoconf dep to >=2.67 (bug #368789)
+
+  24 May 2011; Christoph Mende <angelos@gentoo.org> -xnoise-0.1.22.ebuild,
+  xnoise-0.1.23.ebuild, xnoise-9999.ebuild:
+  Enable soundmenu2, remove old
+
+  23 May 2011; Thomas Kahle <tomka@gentoo.org> xnoise-0.1.23.ebuild:
+  ~x86 per bug 366315
+
+*xnoise-0.1.23 (21 May 2011)
+
+  21 May 2011; Christoph Mende <angelos@gentoo.org> +xnoise-0.1.23.ebuild:
+  Version bump
+
+*xnoise-9999 (17 May 2011)
+
+  17 May 2011; Christoph Mende <angelos@gentoo.org> +xnoise-9999.ebuild:
+  Add live ebuild
+
+  16 May 2011; Christoph Mende <angelos@gentoo.org> xnoise-0.1.22.ebuild:
+  Force vala-0.12 (bug #366563)
+
+*xnoise-0.1.22 (07 May 2011)
+
+  07 May 2011; Christoph Mende <angelos@gentoo.org> +xnoise-0.1.22.ebuild,
+  +metadata.xml:
+  Initial import
+

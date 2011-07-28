@@ -1,0 +1,96 @@
+# ChangeLog for kde-misc/synaptiks
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/kde-misc/synaptiks/ChangeLog,v 1.17 2011/07/21 13:09:38 mschiff Exp $
+
+*synaptiks-0.7 (21 Jul 2011)
+*synaptiks-0.6.2 (21 Jul 2011)
+
+  21 Jul 2011; Marc Schiffbauer <mschiff@gentoo.org> +synaptiks-0.6.2.ebuild,
+  +synaptiks-0.7.ebuild:
+  Version bump: 0.6.2 and 0.7. Drop 0.6.1. Thanks to Corentin Chary. Fixes bug
+  #375859
+
+*synaptiks-0.6.1 (28 May 2011)
+
+  28 May 2011; Andreas K. Hüttel <dilfridge@gentoo.org> 
+  +synaptiks-0.6.1.ebuild, metadata.xml:
+  Version bump, bug 353887
+
+  29 Jan 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  synaptiks-0.4.0-r1.ebuild:
+  Fix repoman warning.
+
+  29 Jan 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -synaptiks-0.3.2-r1.ebuild, synaptiks-0.4.0-r1.ebuild:
+  Stable latest per bug #351596 on amd64 and x86. Remove older.
+
+*synaptiks-0.4.0-r1 (03 Jan 2011)
+
+  03 Jan 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  -synaptiks-0.4.0.ebuild, +synaptiks-0.4.0-r1.ebuild,
+  +files/synaptiks-0.4.0-kcmdesktop.patch:
+  Add upstream patch to fix type of kcm module (bug 342623)
+
+  21 Jul 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  synaptiks-0.4.0.ebuild:
+  Update linguas per bug #329337.
+
+  11 Apr 2010; Dror Levin <spatz@gentoo.org> synaptiks-0.4.0.ebuild:
+  Remove DOCS as they don't exist in newer version, bug 314745.
+
+*synaptiks-0.4.0 (11 Apr 2010)
+
+  11 Apr 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  +synaptiks-0.4.0.ebuild:
+  Version bump.
+
+*synaptiks-0.3.2-r1 (27 Feb 2010)
+
+  27 Feb 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +synaptiks-0.3.2-r1.ebuild:
+  Change SLOT from 0 to 4.
+
+*synaptiks-0.3.2 (04 Feb 2010)
+
+  04 Feb 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +synaptiks-0.3.2.ebuild:
+  Version bump.
+
+*synaptiks-0.3.0 (30 Jan 2010)
+
+  30 Jan 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +synaptiks-0.3.0.ebuild:
+  Version bump.
+
+*synaptiks-0.2.1 (05 Jan 2010)
+
+  05 Jan 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +synaptiks-0.2.1.ebuild:
+  Version bump.
+
+  12 Dec 2009; Jonathan Callen <abcd@gentoo.org>
+  -files/synaptiks-0.1.0-Xi.patch:
+  Drop old patch
+
+  11 Dec 2009; Tomáš Chvátal <scarabeus@gentoo.org>
+  -synaptiks-0.1.0.ebuild, -synaptiks-0.1.0-r1.ebuild:
+  Drop no-longer required ebuild.
+
+*synaptiks-0.2.0 (25 Nov 2009)
+
+  25 Nov 2009; Samuli Suominen <ssuominen@gentoo.org>
+  +synaptiks-0.2.0.ebuild:
+  Version bump.
+
+*synaptiks-0.1.0-r1 (30 Oct 2009)
+
+  30 Oct 2009; Samuli Suominen <ssuominen@gentoo.org>
+  +synaptiks-0.1.0-r1.ebuild, +files/synaptiks-0.1.0-Xi.patch:
+  Port to libXi >= 1.3 wrt #291181, thanks to DaggyStyle for reporting.
+
+*synaptiks-0.1.0 (28 Oct 2009)
+
+  28 Oct 2009; Samuli Suominen <ssuominen@gentoo.org>
+  +synaptiks-0.1.0.ebuild:
+  Initial commit (alternative ksynaptics replacement).
+

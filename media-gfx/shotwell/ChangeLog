@@ -1,0 +1,109 @@
+# ChangeLog for media-gfx/shotwell
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/shotwell/ChangeLog,v 1.21 2011/07/09 21:39:58 angelos Exp $
+
+  09 Jul 2011; Christoph Mende <angelos@gentoo.org> -shotwell-0.10.ebuild,
+  shotwell-0.10.1.ebuild, +files/shotwell-0.10.1-libraw-config.patch:
+  Fix compilation with current libraw (bug #374409, patch by Tim Harder)
+
+  23 Jun 2011; Christoph Mende <angelos@gentoo.org> shotwell-0.10.1.ebuild:
+  Re-add accidentally removed GCONF_DEBUG
+
+*shotwell-0.10.1 (23 Jun 2011)
+
+  23 Jun 2011; Christoph Mende <angelos@gentoo.org> -files/0.9.1-ldflags.patch,
+  -shotwell-0.7.2.ebuild, -shotwell-0.8.1.ebuild, -shotwell-0.9.1.ebuild,
+  -shotwell-0.9.1-r1.ebuild, -shotwell-0.9.2.ebuild, -shotwell-0.9.3.ebuild,
+  +shotwell-0.10.1.ebuild, metadata.xml:
+  Take maintainership with permission from Andreas, remove old and bump to
+  0.10.1
+
+  10 Jun 2011; Christoph Mende <angelos@gentoo.org> shotwell-0.7.2.ebuild,
+  shotwell-0.8.1.ebuild, shotwell-0.9.1.ebuild, shotwell-0.9.1-r1.ebuild,
+  shotwell-0.9.2.ebuild, shotwell-0.9.3.ebuild, shotwell-0.10.ebuild:
+  Fix udev dependency (bug #370361)
+
+  02 Jun 2011; Justin Lecher <jlec@gentoo.org> shotwell-0.10.ebuild:
+  Remove unnessecary DEP on gnome-vfs, #369743
+
+*shotwell-0.10 (01 Jun 2011)
+
+  01 Jun 2011; Justin Lecher <jlec@gentoo.org> +files/0.10-ldflags.patch,
+  +shotwell-0.10.ebuild:
+  Version Bump
+
+*shotwell-0.9.3 (06 May 2011)
+
+  06 May 2011; Justin Lecher <jlec@gentoo.org> +shotwell-0.9.3.ebuild:
+  Non-maintainer Version Bump, notified by euscan
+
+*shotwell-0.9.2 (19 Apr 2011)
+
+  19 Apr 2011; Justin Lecher <jlec@gentoo.org> +shotwell-0.9.2.ebuild:
+  Non-Maintainer Version Bump, #363799
+
+*shotwell-0.9.1-r1 (08 Apr 2011)
+
+  08 Apr 2011; Justin Lecher <jlec@gentoo.org> +files/0.9.1-ldflags.patch,
+  +shotwell-0.9.1-r1.ebuild:
+  Non-maintainer fix; Respect CC; Respect LDFLAGS, #356049; Respect multilib
+
+  08 Apr 2011; Benedikt Böhm <hollow@gentoo.org> shotwell-0.9.1.ebuild:
+  add missing DEPEND on gnome-vfs
+
+*shotwell-0.9.1 (07 Apr 2011)
+
+  07 Apr 2011; Benedikt Böhm <hollow@gentoo.org> shotwell-0.8.1.ebuild,
+  +shotwell-0.9.1.ebuild:
+  version bump. fixes #355877, #362177 and maybe #360959
+
+  21 Mar 2011; Nirbheek Chauhan <nirbheek@gentoo.org> shotwell-0.7.2.ebuild,
+  shotwell-0.8.1.ebuild:
+  Fix slot-deps on gnome libs
+
+  27 Feb 2011; Gilles Dartiguelongue <eva@gentoo.org> shotwell-0.7.2.ebuild,
+  shotwell-0.8.1.ebuild:
+  Pin libunique dependency to slot 1. Drop eprefix from insinto, it is not
+  required as stated by repoman.
+
+*shotwell-0.8.1 (18 Feb 2011)
+
+  18 Feb 2011; Benedikt Böhm <hollow@gentoo.org> +shotwell-0.8.1.ebuild:
+  version bump
+
+  23 Sep 2010; Gilles Dartiguelongue <eva@gentoo.org> shotwell-0.7.2.ebuild:
+  Fix dependency on vala:0.10, bug #338067.
+
+*shotwell-0.7.2 (19 Sep 2010)
+
+  19 Sep 2010; Benedikt Böhm <hollow@gentoo.org> -shotwell-0.5.2.ebuild,
+  -shotwell-0.6.1.ebuild, -files/shotwell-0.6.1-libraw.patch,
+  +shotwell-0.7.2.ebuild:
+  version bump wrt #334821; remove old version since they don't build with
+  current vala versions
+
+  22 Aug 2010; Benedikt Böhm <hollow@gentoo.org>
+  +files/shotwell-0.6.1-libraw.patch:
+  add missing patch file
+
+*shotwell-0.6.1 (22 Aug 2010)
+
+  22 Aug 2010; Benedikt Böhm <hollow@gentoo.org> shotwell-0.5.2.ebuild,
+  +shotwell-0.6.1.ebuild, metadata.xml:
+  version bump, bug #327013
+
+*shotwell-0.5.2 (30 May 2010)
+
+  30 May 2010; Benedikt Böhm <hollow@gentoo.org> -shotwell-0.5.0.ebuild,
+  +shotwell-0.5.2.ebuild:
+  version bump (fixes #320239)
+
+  07 Apr 2010; Benedikt Böhm <hollow@gentoo.org> metadata.xml:
+  fix metadata
+
+*shotwell-0.5.0 (07 Apr 2010)
+
+  07 Apr 2010; Benedikt Böhm <hollow@gentoo.org> +shotwell-0.5.0.ebuild,
+  +metadata.xml:
+  initial ebuild wrt #309615
+

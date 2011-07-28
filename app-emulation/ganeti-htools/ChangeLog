@@ -1,0 +1,55 @@
+# ChangeLog for app-emulation/ganeti-htools
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/ganeti-htools/ChangeLog,v 1.9 2011/03/12 19:11:19 ramereth Exp $
+
+*ganeti-htools-0.3.1 (12 Mar 2011)
+
+  12 Mar 2011; Lance Albertson <ramereth@gentoo.org>
+  +ganeti-htools-0.3.1.ebuild:
+  Version bump
+
+  07 Mar 2011; Lance Albertson <ramereth@gentoo.org>
+  ganeti-htools-0.2.8.ebuild:
+  add blocker to >=ganeti-2.4
+
+  16 Feb 2011; Lance Albertson <ramereth@gentoo.org>
+  -ganeti-htools-0.2.6.ebuild, -ganeti-htools-0.2.7.ebuild,
+  ganeti-htools-0.2.8.ebuild:
+  Mark stable, ebuild cleanup
+
+*ganeti-htools-0.3.0 (10 Feb 2011)
+
+  10 Feb 2011; Lance Albertson <ramereth@gentoo.org>
+  +ganeti-htools-0.3.0.ebuild:
+  Version bump, add blocker to older ganeti versions
+
+*ganeti-htools-0.2.8 (23 Dec 2010)
+
+  23 Dec 2010; Lance Albertson <ramereth@gentoo.org>
+  -ganeti-htools-0.2.5.ebuild, +ganeti-htools-0.2.8.ebuild:
+  Version bump
+
+*ganeti-htools-0.2.7 (19 Oct 2010)
+
+  19 Oct 2010; Lance Albertson <ramereth@gentoo.org>
+  -ganeti-htools-0.2.4.ebuild, +ganeti-htools-0.2.7.ebuild:
+  Version bump, clean up
+
+*ganeti-htools-0.2.6 (17 Aug 2010)
+
+  17 Aug 2010; Lance Albertson <ramereth@gentoo.org>
+  +ganeti-htools-0.2.6.ebuild:
+  Version bump, install api docs optionally
+
+*ganeti-htools-0.2.5 (07 May 2010)
+
+  07 May 2010; Lance Albertson <ramereth@gentoo.org>
+  +ganeti-htools-0.2.5.ebuild:
+  version bump
+
+*ganeti-htools-0.2.4 (11 Mar 2010)
+
+  11 Mar 2010; Lance Albertson <ramereth@gentoo.org>
+  +ganeti-htools-0.2.4.ebuild, +metadata.xml:
+  Initial ebuild
+

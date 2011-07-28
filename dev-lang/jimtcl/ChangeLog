@@ -1,0 +1,16 @@
+# ChangeLog for dev-lang/jimtcl
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/jimtcl/ChangeLog,v 1.2 2011/07/14 18:08:36 slyfox Exp $
+
+  14 Jul 2011; Sergei Trofimovich <slyfox@gentoo.org> jimtcl-9999.ebuild,
+  +files/jimtcl-9999-more-autobits.patch:
+  Unbreak live ebuild (spell EGIT_REPO_URI properly).
+
+*jimtcl-9999 (17 Mar 2011)
+*jimtcl-0.70_pre20110317 (17 Mar 2011)
+
+  17 Mar 2011; Markos Chandras <hwoarang@gentoo.org>
+  +jimtcl-0.70_pre20110317.ebuild, +jimtcl-9999.ebuild, +metadata.xml:
+  Initial commit of jimtcl package. Required for newer openocd packages. Thanks
+  to Peter Stuge <peter@stuge.se> for the initial ebuild. Bug #346473
+

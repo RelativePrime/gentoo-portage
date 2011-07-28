@@ -1,0 +1,21 @@
+# ChangeLog for media-sound/k4guitune
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/k4guitune/ChangeLog,v 1.4 2011/02/02 04:24:31 tampakrap Exp $
+
+  02 Feb 2011; Theo Chatzimichos <tampakrap@gentoo.org> k4guitune-1.1.0.ebuild:
+  EAPI3
+
+  28 Dec 2009; Samuli Suominen <ssuominen@gentoo.org>
+  k4guitune-1.1.0.ebuild, +files/k4guitune-1.1.0-desktop_entry.patch:
+  Fix Categories in .desktop file.
+
+  28 Dec 2009; Samuli Suominen <ssuominen@gentoo.org>
+  k4guitune-1.1.0.ebuild:
+  Fix handbook installation, thanks to Maciej Mrozowski.
+
+*k4guitune-1.1.0 (27 Dec 2009)
+
+  27 Dec 2009; Samuli Suominen <ssuominen@gentoo.org>
+  +k4guitune-1.1.0.ebuild:
+  Initial commit (media-sound/k3guitune replacement).
+

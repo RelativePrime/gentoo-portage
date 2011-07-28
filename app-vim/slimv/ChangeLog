@@ -1,0 +1,34 @@
+# ChangeLog for app-vim/slimv
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-vim/slimv/ChangeLog,v 1.6 2011/06/25 09:25:37 radhermit Exp $
+
+*slimv-0.8.4 (25 Jun 2011)
+
+  25 Jun 2011; Tim Harder <radhermit@gentoo.org> +slimv-0.8.4.ebuild:
+  Version bump. Use github mirror.
+
+*slimv-0.8.3 (20 May 2011)
+
+  20 May 2011; Tim Harder <radhermit@gentoo.org> +slimv-0.8.3.ebuild:
+  Version bump.
+
+*slimv-0.8.2 (04 May 2011)
+
+  04 May 2011; Tim Harder <radhermit@gentoo.org> -slimv-0.7.7.ebuild,
+  -slimv-0.8.1.ebuild, +slimv-0.8.2.ebuild:
+  Version bump and remove old.
+
+*slimv-0.8.1 (20 Apr 2011)
+
+  20 Apr 2011; Tim Harder <radhermit@gentoo.org> +slimv-0.8.1.ebuild:
+  Version bump.
+
+  22 Mar 2011; Tim Harder <radhermit@gentoo.org> slimv-0.7.7.ebuild:
+  Add more alternative lisp implementations to RDEPEND.
+
+*slimv-0.7.7 (22 Mar 2011)
+
+  22 Mar 2011; Tim Harder <radhermit@gentoo.org> +slimv-0.7.7.ebuild,
+  +metadata.xml:
+  Initial import (bug #359587).
+

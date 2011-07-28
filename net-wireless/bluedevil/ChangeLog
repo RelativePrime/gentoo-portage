@@ -1,0 +1,72 @@
+# ChangeLog for net-wireless/bluedevil
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/bluedevil/ChangeLog,v 1.13 2011/05/30 09:58:07 scarabeus Exp $
+
+*bluedevil-1.1-r2 (30 May 2011)
+
+  30 May 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -bluedevil-1.1-r1.ebuild, +bluedevil-1.1-r2.ebuild,
+  +files/bluedevil-mimetypes.patch:
+  Fix annoying non-compilant virtual mime-types definition. Revision bump with
+  preserved keywords so we force everyone to update.
+
+  09 May 2011; Markos Chandras <hwoarang@gentoo.org> bluedevil-1.1-r1.ebuild:
+  Stable on amd64 wrt bug #354033
+
+  09 May 2011; Thomas Kahle <tomka@gentoo.org> bluedevil-1.1-r1.ebuild:
+  x86 stable per bug 354033
+
+*bluedevil-1.1-r1 (23 Apr 2011)
+
+  23 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org> -bluedevil-1.1.ebuild,
+  +bluedevil-1.1-r1.ebuild:
+  Update libbuledevil dep and revbump so all features work.
+
+*bluedevil-1.1 (18 Apr 2011)
+
+  18 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org> -bluedevil-1.0.4.ebuild,
+  +bluedevil-1.1.ebuild:
+  Version bump.
+
+*bluedevil-1.0.4 (14 Apr 2011)
+
+  14 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org> -bluedevil-1.0.3.ebuild,
+  +bluedevil-1.0.4.ebuild:
+  Version bump.
+
+  11 Apr 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  bluedevil-1.0.3.ebuild:
+  Raise libbluedevil dependency, bug 362835
+
+*bluedevil-1.0.3 (21 Mar 2011)
+
+  21 Mar 2011; Tomáš Chvátal <scarabeus@gentoo.org> -bluedevil-1.0.1.ebuild,
+  -bluedevil-1.0.2.ebuild, +bluedevil-1.0.3.ebuild:
+  Version bump
+
+  05 Mar 2011; Theo Chatzimichos <tampakrap@gentoo.org> bluedevil-1.0.1.ebuild,
+  bluedevil-1.0.2.ebuild:
+  Correct HOMEPAGE, bug 356801
+
+*bluedevil-1.0.2 (27 Feb 2011)
+
+  27 Feb 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  +bluedevil-1.0.2.ebuild:
+  Version bump
+
+  07 Feb 2011; Tomáš Chvátal <scarabeus@gentoo.org> bluedevil-1.0.1.ebuild:
+  Fix depending on obexd[server]. Fixes bug #353825.
+
+*bluedevil-1.0.1 (27 Jan 2011)
+
+  27 Jan 2011; Tomáš Chvátal <scarabeus@gentoo.org> -bluedevil-1.0.ebuild,
+  +bluedevil-1.0.1.ebuild:
+  Version bump. Fixes bug #352940.
+
+*bluedevil-1.0 (02 Jan 2011)
+
+  02 Jan 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  +bluedevil-1.0.ebuild, +metadata.xml:
+  New application (imported from kde overlay), fixes bug 345239. Thanks to
+  Christian Schmitt <chris@ilovelinux.de> for all the work.
+

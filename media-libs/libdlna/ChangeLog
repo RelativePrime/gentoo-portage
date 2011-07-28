@@ -1,0 +1,15 @@
+# ChangeLog for media-libs/libdlna
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libdlna/ChangeLog,v 1.2 2011/04/04 09:59:32 scarabeus Exp $
+
+  04 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org> libdlna-0.2.3.ebuild:
+  Move to virtual/ffmpeg from media-video/ffmpeg.
+
+*libdlna-0.2.3 (23 Dec 2009)
+
+  23 Dec 2009; Jeremy Olexa <darkside@gentoo.org> +libdlna-0.2.3.ebuild,
+  +files/libdlna-0.2.3-libavcodec-libavformat-include-paths.patch,
+  +metadata.xml:
+  Initial import. Many thanks to all the contributors on bug 204007. Moved
+  from sunrise overlay
+

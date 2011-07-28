@@ -1,0 +1,35 @@
+# ChangeLog for app-admin/chef-solr
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/chef-solr/ChangeLog,v 1.6 2011/07/25 09:19:37 hollow Exp $
+
+*chef-solr-0.10.2 (25 Jul 2011)
+
+  25 Jul 2011; Benedikt Böhm <hollow@gentoo.org> -chef-solr-0.9.6.ebuild,
+  -chef-solr-0.9.8.ebuild, +chef-solr-0.10.2.ebuild:
+  version bump wrt #369391
+
+*chef-solr-0.9.12 (07 Jan 2011)
+
+  07 Jan 2011; Benedikt Böhm <hollow@gentoo.org> +chef-solr-0.9.12.ebuild:
+  version bump
+
+*chef-solr-0.9.8 (19 Sep 2010)
+
+  19 Sep 2010; Benedikt Böhm <hollow@gentoo.org> +chef-solr-0.9.8.ebuild:
+  version bump
+
+  04 Jul 2010; Benedikt Böhm <hollow@gentoo.org> files/initd/chef-solr,
+  files/initd/chef-solr-indexer:
+  fix init script to set config file owner and permissions too
+
+  03 Jul 2010; Benedikt Böhm <hollow@gentoo.org> chef-solr-0.9.6.ebuild:
+  fix dependency on chef
+
+*chef-solr-0.9.6 (03 Jul 2010)
+
+  03 Jul 2010; Benedikt Böhm <hollow@gentoo.org> +chef-solr-0.9.6.ebuild,
+  +files/confd/chef-solr, +files/confd/chef-solr-indexer,
+  +files/initd/chef-solr, +files/initd/chef-solr-indexer, +files/solr.rb,
+  +metadata.xml:
+  initial ebuild, thanks to Gábor Vészi
+

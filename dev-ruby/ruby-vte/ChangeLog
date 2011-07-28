@@ -1,0 +1,75 @@
+# ChangeLog for dev-ruby/ruby-vte
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-vte/ChangeLog,v 1.18 2011/05/29 15:17:06 naota Exp $
+
+*ruby-vte-0.90.8 (29 May 2011)
+
+  29 May 2011; Naohiro Aota <naota@gentoo.org> +ruby-vte-0.90.8.ebuild:
+  Version bump.
+
+  23 Mar 2011; Samuli Suominen <ssuominen@gentoo.org> ruby-vte-0.19.4.ebuild:
+  Use SLOT dependencies for x11-libs/vte.
+
+  22 Oct 2010; Hans de Graaff <graaff@gentoo.org> -ruby-vte-0.19.1.ebuild,
+  -ruby-vte-0.19.3.ebuild:
+  Remove old versions.
+
+  01 Aug 2010; Markos Chandras <hwoarang@gentoo.org> ruby-vte-0.19.4.ebuild:
+  Stable on amd64 wrt bug #329807
+
+  26 Jul 2010; Christian Faulhammer <fauli@gentoo.org>
+  ruby-vte-0.19.4.ebuild:
+  x86 stable, bug 329807
+
+*ruby-vte-0.19.4 (25 Apr 2010)
+
+  25 Apr 2010; Hans de Graaff <graaff@gentoo.org> +ruby-vte-0.19.4.ebuild:
+  Version bump to ruby-gnome 0.19.4.
+
+  18 Apr 2010; <nixnut@gentoo.org> ruby-vte-0.19.1.ebuild:
+  ppc stable #295942
+
+*ruby-vte-0.19.3 (16 Jan 2010)
+
+  16 Jan 2010; Hans de Graaff <graaff@gentoo.org> +ruby-vte-0.19.3.ebuild:
+  Version bump. Now uses ruby-ng-gnome2 eclass.
+
+  16 Jan 2010; Hans de Graaff <graaff@gentoo.org> -ruby-vte-0.16.0.ebuild,
+  -ruby-vte-0.19.0.ebuild:
+  Remove old versions.
+
+  10 Jan 2010; nixnut <nixnut@gentoo.org> ruby-vte-0.19.1.ebuild:
+  ~ppc #295942
+
+  16 Dec 2009; Markus Meier <maekke@gentoo.org> ruby-vte-0.19.1.ebuild:
+  amd64/x86 stable, bug #295942
+
+  20 Sep 2009; Hans de Graaff <graaff@gentoo.org> ruby-vte-0.19.1.ebuild:
+  Fix QA issue.
+
+*ruby-vte-0.19.1 (20 Sep 2009)
+
+  20 Sep 2009; Hans de Graaff <graaff@gentoo.org> +ruby-vte-0.19.1.ebuild,
+  +files/ruby-vte-0.19.1-vte-depend.patch:
+  Version bump. Add Fedora patch to make missing .pc file non-fatal upon
+  installation.
+
+*ruby-vte-0.19.0 (16 Jul 2009)
+
+  16 Jul 2009; Hans de Graaff <graaff@gentoo.org> +ruby-vte-0.19.0.ebuild:
+  Version bump for ruby-gnome2 0.19.0.
+
+  22 Apr 2008; Hans de Graaff <graaff@gentoo.org> -ruby-vte-0.15.0.ebuild:
+  Remove old version
+
+*ruby-vte-0.16.0 (30 Dec 2006)
+
+  30 Dec 2006; Luis Medinas <metalgod@gentoo.org> +ruby-vte-0.16.0.ebuild:
+  Version Bump. Added ~amd64 keyword.
+
+*ruby-vte-0.15.0 (02 Sep 2006)
+
+  02 Sep 2006; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  +ruby-vte-0.15.0.ebuild:
+  Initial ebuild, #139164
+

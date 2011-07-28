@@ -1,0 +1,49 @@
+# ChangeLog for dev-util/google-perftools
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/google-perftools/ChangeLog,v 1.8 2011/03/06 12:50:36 flameeyes Exp $
+
+*google-perftools-1.7 (06 Mar 2011)
+
+  06 Mar 2011; Diego E. Pettenò <flameeyes@gentoo.org>
+  +google-perftools-1.7.ebuild, +files/google-perftools-1.7-syntax.patch:
+  Version bump, thanks to Luca Longinotti in bug #357591.
+
+  09 Jan 2011; Diego E. Pettenò <flameeyes@gentoo.org>
+  -google-perftools-1.5.ebuild:
+  Remove old version.
+
+  13 Oct 2010; Markus Meier <maekke@gentoo.org> google-perftools-1.6.ebuild:
+  x86 stable, bug #340130
+
+  06 Oct 2010; Markos Chandras <hwoarang@gentoo.org>
+  google-perftools-1.6.ebuild:
+  Stable on amd64 wrt bug #338223
+
+*google-perftools-1.6 (05 Aug 2010)
+
+  05 Aug 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  -google-perftools-1.4.ebuild, +google-perftools-1.6.ebuild, metadata.xml:
+  Version bump; improve ebuild to not build tests; add USE flags for debug,
+  minimal and the (new) largepages option; don't even install the
+  documentation with the original build system, so that we don't have to
+  remove it; only build shared libraries, and remove .la files — build
+  time is vastly reduced this way.
+
+*google-perftools-1.5 (31 Jan 2010)
+
+  31 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  +google-perftools-1.5.ebuild:
+  Version bump.
+
+  26 Oct 2009; Sven Wegener <swegener@gentoo.org>
+  google-perftools-1.4.ebuild:
+  Add ~x86 keyword.
+
+*google-perftools-1.4 (23 Oct 2009)
+
+  23 Oct 2009; Diego E. Pettenò <flameeyes@gentoo.org>
+  +google-perftools-1.4.ebuild, +metadata.xml:
+  Initial import of google's perftools package, from Sven Wegener
+  (swegener)'s overlay, upon request by Pavel Stratil. Tests restricted as
+  per bug #290249.
+

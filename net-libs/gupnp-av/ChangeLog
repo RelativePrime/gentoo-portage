@@ -1,0 +1,64 @@
+# ChangeLog for net-libs/gupnp-av
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-libs/gupnp-av/ChangeLog,v 1.12 2011/07/24 14:49:55 eva Exp $
+
+*gupnp-av-0.8.0 (24 Jul 2011)
+
+  24 Jul 2011; Gilles Dartiguelongue <eva@gentoo.org> +gupnp-av-0.8.0.ebuild:
+  Version bump. Fix XML node names for 'artist' and 'author'. Fix linking
+  issues.
+
+*gupnp-av-0.7.1 (22 Feb 2011)
+
+  22 Feb 2011; Gilles Dartiguelongue <eva@gentoo.org> +gupnp-av-0.7.1.ebuild:
+  Version bump. Required for recent rygel releases, with permission from herd.
+
+*gupnp-av-0.6.3 (10 Jan 2011)
+
+  10 Jan 2011; Arun Raghavan <ford_prefect@gentoo.org> +gupnp-av-0.6.3.ebuild:
+  Bump to 0.6.3. Number of bug fixes, add missing gobject-introspection dep.
+
+*gupnp-av-0.6.1 (01 Oct 2010)
+
+  01 Oct 2010; Arun Raghavan <ford_prefect@gentoo.org>
+  +gupnp-av-0.6.1.ebuild:
+  Bump to 0.6.1. Stable release - adds some fixes and documentation updates
+  over 0.5.7. DLNA media support moved to media-libs/gupnp-dlna.
+
+  21 Jul 2010; Arun Raghavan <ford_prefect@gentoo.org>
+  -gupnp-av-0.5.1.ebuild:
+  Remove old version.
+
+*gupnp-av-0.5.7 (21 Jul 2010)
+
+  21 Jul 2010; Arun Raghavan <ford_prefect@gentoo.org>
+  +gupnp-av-0.5.7.ebuild, metadata.xml:
+  Bump to 0.5.7. Several bug fixes, some enhancements, introspection
+  support.
+
+*gupnp-av-0.5.2 (09 Dec 2009)
+
+  09 Dec 2009; Arun Raghavan <ford_prefect@gentoo.org>
+  +gupnp-av-0.5.2.ebuild:
+  Bump to 0.5.2. Bug and documentation fixes.
+
+*gupnp-av-0.5.1 (19 Oct 2009)
+
+  19 Oct 2009; Samuli Suominen <ssuominen@gentoo.org>
+  +gupnp-av-0.5.1.ebuild:
+  Version bump.
+
+  11 Sep 2009; Mounir Lamouri <volkmar@gentoo.org> gupnp-av-0.4.1.ebuild:
+  Keywording for ppc.
+
+*gupnp-av-0.4.1 (18 Jun 2009)
+
+  18 Jun 2009; Samuli Suominen <ssuominen@gentoo.org>
+  +gupnp-av-0.4.1.ebuild:
+  Version bump wrt #274453, thanks to Alex Legler for reporting.
+
+*gupnp-av-0.1 (24 Apr 2008)
+
+  24 Apr 2008; Samuli Suominen <ssuominen@gentoo.org> +gupnp-av-0.1.ebuild:
+  Initial commit.
+

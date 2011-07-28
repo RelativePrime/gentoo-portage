@@ -1,0 +1,40 @@
+# ChangeLog for net-misc/miredo
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/miredo/ChangeLog,v 1.8 2011/07/26 21:59:17 xmw Exp $
+
+*miredo-1.2.4 (26 Jul 2011)
+
+  26 Jul 2011; Michael Weber <xmw@gentoo.org> +miredo-1.2.4.ebuild,
+  metadata.xml:
+  Version bump, thanks to teidakankan@gmail.com (bug 375609), taking maint.
+
+  20 Jul 2011; Pacho Ramos <pacho@gentoo.org> metadata.xml:
+  Drop maintainer due retirement, bug #118937
+
+  08 Jun 2011; Markus Meier <maekke@gentoo.org> miredo-1.2.3-r1.ebuild:
+  amd64/x86 stable, bug #368697
+
+  26 Jan 2011; Thilo Bangert <bangert@gentoo.org> miredo-1.2.3-r1.ebuild:
+  restrict test (#339180)
+
+*miredo-1.2.3-r1 (31 Aug 2010)
+
+  31 Aug 2010; Michael Weber <xmw@gentoo.org> -miredo-1.2.3.ebuild,
+  +miredo-1.2.3-r1.ebuild, files/miredo.rc:
+  Revision bump to fix bug #335297, thanks to Kai Krakow
+  <hurikhan77+bgo@gmail.com>
+
+  04 May 2010; Thilo Bangert <bangert@gentoo.org> files/miredo.conf:
+  dont load modules by default
+
+  03 May 2010; Thilo Bangert <bangert@gentoo.org> miredo-1.2.3.ebuild:
+  add ~amd64
+
+*miredo-1.2.3 (03 May 2010)
+
+  03 May 2010; Thilo Bangert <bangert@gentoo.org> +miredo-1.2.3.ebuild,
+  +files/miredo.conf, +files/miredo.rc, +files/miredo-server.conf,
+  +files/miredo-server.rc, +metadata.xml:
+  initial import - in part based on the work Clemmit Sigler and Samuel
+  Tardieu (bug #77603)
+

@@ -1,0 +1,95 @@
+# ChangeLog for kde-base/jovie
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/kde-base/jovie/ChangeLog,v 1.22 2011/07/27 14:04:37 alexxy Exp $
+
+*jovie-4.7.0 (27 Jul 2011)
+
+  27 Jul 2011; Alexey Shvetsov <alexxy@gentoo.org> +jovie-4.7.0.ebuild:
+  Version bump KDE SC 4.7.0
+
+*jovie-4.6.5 (09 Jul 2011)
+
+  09 Jul 2011; Alexey Shvetsov <alexxy@gentoo.org> +jovie-4.6.5.ebuild:
+  Version bump KDE SC 4.6.5
+
+  06 Jul 2011; Andreas K. Huettel <dilfridge@gentoo.org> -jovie-4.6.2.ebuild:
+  Drop KDE 4.6.2
+
+  25 Jun 2011; Brent Baude <ranger@gentoo.org> jovie-4.6.3.ebuild:
+  Marking jovie-4.6.3 ppc stable for bug 369979
+
+*jovie-4.6.4 (10 Jun 2011)
+
+  10 Jun 2011; Andreas K. Huettel <dilfridge@gentoo.org> +jovie-4.6.4.ebuild:
+  Version bump
+
+  10 Jun 2011; Markos Chandras <hwoarang@gentoo.org> jovie-4.6.3.ebuild:
+  Stable on amd64 wrt bug #369979
+
+  08 Jun 2011; Thomas Kahle <tomka@gentoo.org> jovie-4.6.3.ebuild:
+  x86 stable per bug 369979
+
+  01 Jun 2011; Brent Baude <ranger@gentoo.org> jovie-4.6.2.ebuild:
+  Marking jovie-4.6.2 ppc stable for bug 354033
+
+  09 May 2011; Markos Chandras <hwoarang@gentoo.org> jovie-4.6.2.ebuild:
+  Stable on amd64 wrt bug #354033
+
+  09 May 2011; Thomas Kahle <tomka@gentoo.org> jovie-4.6.2.ebuild:
+  x86 stable per bug 354033
+
+*jovie-4.6.3 (07 May 2011)
+
+  07 May 2011; Tomáš Chvátal <scarabeus@gentoo.org> +jovie-4.6.3.ebuild:
+  Version bump KDE SC 4.6.3
+
+  07 Apr 2011; Kacper Kowalik <xarthisius@gentoo.org> jovie-4.6.2.ebuild:
+  Marked ~ppc/~ppc64 wrt #362305
+
+*jovie-4.6.2 (06 Apr 2011)
+
+  06 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org> -jovie-4.5.5.ebuild,
+  -jovie-4.6.0.ebuild, -jovie-4.6.1.ebuild, +jovie-4.6.2.ebuild:
+  Version bump KDE SC 4.6.2
+
+*jovie-4.6.1 (04 Mar 2011)
+
+  04 Mar 2011; Alexey Shvetsov <alexxy@gentoo.org> +jovie-4.6.1.ebuild:
+  Version bump KDE SC 4.6.1
+
+*jovie-4.6.0 (26 Jan 2011)
+
+  26 Jan 2011; Alexey Shvetsov <alexxy@gentoo.org> +jovie-4.6.0.ebuild:
+  Version bump KDE SC 4.6.0
+
+*jovie-4.5.5 (10 Jan 2011)
+
+  10 Jan 2011; Theo Chatzimichos <tampakrap@gentoo.org> +jovie-4.5.5.ebuild:
+  Version bump KDE SC 4.5.5
+
+*jovie-4.5.4 (02 Dec 2010)
+
+  02 Dec 2010; Alexey Shvetsov <alexxy@gentoo.org> +jovie-4.5.4.ebuild:
+  Version bump KDE SC 4.5.4
+
+*jovie-4.5.3 (03 Nov 2010)
+
+  03 Nov 2010; Tomáš Chvátal <scarabeus@gentoo.org> +jovie-4.5.3.ebuild:
+  Version bump
+
+*jovie-4.5.2 (05 Oct 2010)
+
+  05 Oct 2010; Alexey Shvetsov <alexxy@gentoo.org> +jovie-4.5.2.ebuild:
+  Version bump KDE SC 4.5.2
+
+  19 Sep 2010; Jonathan Callen <abcd@gentoo.org> jovie-4.5.1.ebuild:
+  Add ~amd64-linux, ~x86-linux keywords
+
+  14 Sep 2010; Joseph Jezak <josejx@gentoo.org> jovie-4.5.1.ebuild:
+  Marked ~ppc/~ppc64 for bug #336158.
+
+*jovie-4.5.1 (05 Sep 2010)
+
+  05 Sep 2010; Theo Chatzimichos <tampakrap@gentoo.org> +jovie-4.5.1.ebuild:
+  Version bump
+

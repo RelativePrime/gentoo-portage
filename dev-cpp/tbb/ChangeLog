@@ -1,0 +1,78 @@
+# ChangeLog for dev-cpp/tbb
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-cpp/tbb/ChangeLog,v 1.12 2011/05/31 21:34:13 bicatali Exp $
+
+*tbb-3.0.196 (31 May 2011)
+
+  31 May 2011; Sébastien Fabbro <bicatali@gentoo.org> +tbb-3.0.196.ebuild:
+  Version bump
+
+*tbb-3.0.174 (21 Apr 2011)
+
+  21 Apr 2011; Sébastien Fabbro <bicatali@gentoo.org>
+  -files/tbb-3.0.056-tests.patch, -tbb-3.0.104.ebuild, -tbb-3.0.131.ebuild,
+  +tbb-3.0.174.ebuild, +files/tbb-3.0.174-gcc46.patch:
+  Version bump + gcc 4.6 patch for tests
+
+*tbb-3.0.131 (25 Dec 2010)
+
+  25 Dec 2010; Sébastien Fabbro <bicatali@gentoo.org> +tbb-3.0.131.ebuild:
+  Version bump
+
+  19 Nov 2010; Sébastien Fabbro <bicatali@gentoo.org> -tbb-3.0.056.ebuild,
+  tbb-3.0.104.ebuild:
+  Fixed random parallel failures. Respect compilers. Removed forced pentium4
+  for x86 users. Minor other fixes. Thanks Kevin Pyle for his work (bug
+  #331011)
+
+*tbb-3.0.104 (05 Nov 2010)
+
+  05 Nov 2010; Sébastien Fabbro <bicatali@gentoo.org> +tbb-3.0.104.ebuild,
+  +files/tbb-3.0.104-tests.patch:
+  Version bump. Thanks Matt Michalowski, bug #342675.
+
+*tbb-3.0.056 (04 Aug 2010)
+
+  04 Aug 2010; Sébastien Fabbro <bicatali@gentoo.org> -tbb-3.0.018.ebuild,
+  -files/tbb-3.0.018-tests.patch, -tbb-3.0.035.ebuild,
+  -files/tbb-3.0.035-tests.patch, +tbb-3.0.056.ebuild,
+  +files/tbb-3.0.056-tests.patch:
+  Version bump. Disabled buggy tests and reported upstream
+
+*tbb-3.0.035 (19 Jul 2010)
+
+  19 Jul 2010; Sébastien Fabbro <bicatali@gentoo.org> +tbb-3.0.035.ebuild,
+  +files/tbb-3.0.035-tests.patch:
+  Version bump
+
+  28 May 2010; Sébastien Fabbro <bicatali@gentoo.org> tbb-3.0.018.ebuild,
+  +files/tbb-3.0.018-tests.patch:
+  Disable buggy tests
+
+*tbb-3.0.018 (05 May 2010)
+
+  05 May 2010; Sébastien Fabbro <bicatali@gentoo.org> +tbb-3.0.018.ebuild,
+  -tbb-3.0.20100310.ebuild:
+  Version bump for comercially aligned. Removing the stable release
+
+*tbb-3.0.20100310 (20 Apr 2010)
+*tbb-2.2.013-r1 (20 Apr 2010)
+
+  20 Apr 2010; Sébastien Fabbro <bicatali@gentoo.org> -tbb-2.2.013.ebuild,
+  +tbb-2.2.013-r1.ebuild, +tbb-3.0.20100310.ebuild:
+  Removed all slot stuff (useless) and version bump for stable
+
+*tbb-2.2.013 (20 Apr 2010)
+
+  20 Apr 2010; Sébastien Fabbro <bicatali@gentoo.org> -tbb-2.1.015.ebuild,
+  +tbb-2.2.013.ebuild:
+  Version bump. Moved slot from 2.1 to 2. Now uses alternatives eclass to
+  simple selection to prepare for tbb-3
+
+*tbb-2.1.015 (14 Mar 2009)
+
+  14 Mar 2009; Sébastien Fabbro <bicatali@gentoo.org> +metadata.xml,
+  +tbb-2.1.015.ebuild:
+  Initial import. The ebuild differs much from the initial ebuild submitted
+  by Matthew McCormick (bug #228641)
+

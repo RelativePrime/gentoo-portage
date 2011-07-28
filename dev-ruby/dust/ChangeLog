@@ -1,0 +1,27 @@
+# ChangeLog for dev-ruby/dust
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/dust/ChangeLog,v 1.6 2010/07/21 12:55:08 fauli Exp $
+
+  21 Jul 2010; Christian Faulhammer <fauli@gentoo.org> dust-0.1.6-r1.ebuild:
+  stable x86, bug 321217
+
+  29 Jun 2010; Christoph Mende <angelos@gentoo.org> dust-0.1.6-r1.ebuild:
+  Stable on amd64 wrt bug #321217
+
+  28 Feb 2010; Hans de Graaff <graaff@gentoo.org> -dust-0.1.6.ebuild:
+  Remove old version.
+
+*dust-0.1.6-r1 (12 Jan 2010)
+
+  12 Jan 2010; Hans de Graaff <graaff@gentoo.org> +dust-0.1.6-r1.ebuild:
+  Convert to ruby-fakegem.
+
+  13 Jun 2009; Hans de Graaff <graaff@gentoo.org> dust-0.1.6.ebuild:
+  Add ~x86 keyword.
+
+*dust-0.1.6 (25 Apr 2009)
+
+  25 Apr 2009; Diego E. Pettenò <flameeyes@gentoo.org> +metadata.xml,
+  +dust-0.1.6.ebuild:
+  Initial import of dev-ruby/dust (test dependency for sparklines).
+

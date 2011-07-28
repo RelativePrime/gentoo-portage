@@ -1,0 +1,24 @@
+# ChangeLog for media-gfx/tachyon
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/tachyon/ChangeLog,v 1.4 2010/11/08 18:45:47 xarthisius Exp $
+
+  08 Nov 2010; Kacper Kowalik <xarthisius@gentoo.org>
+  -tachyon-0.98.9.ebuild, tachyon-0.98.9-r1.ebuild:
+  media-libs/jpeg -> virtual/jpeg. Drop old.
+
+*tachyon-0.98.9-r1 (16 Apr 2010)
+
+  16 Apr 2010; Justin Lecher <jlec@gentoo.org> +files/0.98.9-ldflags.patch,
+  +tachyon-0.98.9-r1.ebuild:
+  Stop stripping by buildsystem, #314955; do not install static lib,
+  #315225; respect LDFLAGS
+
+  11 Mar 2010; Joseph Jezak <josejx@gentoo.org> tachyon-0.98.9.ebuild:
+  Marked ~ppc for bug #306549.
+
+*tachyon-0.98.9 (23 Feb 2010)
+
+  23 Feb 2010; Alexey Shvetsov <alexxy@gentoo.org> +tachyon-0.98.9.ebuild,
+  +metadata.xml:
+  Initial import per bug #293969
+

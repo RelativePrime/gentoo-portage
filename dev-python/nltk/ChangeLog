@@ -1,0 +1,20 @@
+# ChangeLog for dev-python/nltk
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/nltk/ChangeLog,v 1.4 2011/04/21 09:49:01 tomka Exp $
+
+  21 Apr 2011; Thomas Kahle <tomka@gentoo.org> nltk-2.0_beta9.ebuild:
+  x86 stable per bug 360361
+
+  24 Mar 2011; Christoph Mende <angelos@gentoo.org> nltk-2.0_beta9.ebuild:
+  Stable on amd64 wrt bug #360361
+
+  30 Sep 2010; Fabian Groffen <grobian@gentoo.org> nltk-2.0_beta9.ebuild:
+  Marked ~{x86,amd64}-linux, ~{ppc,x86,x64}-macos, ~x86-solaris, bug #337200
+
+*nltk-2.0_beta9 (30 Aug 2010)
+
+  30 Aug 2010; Markos Chandras <hwoarang@gentoo.org> +nltk-2.0_beta9.ebuild,
+  +metadata.xml:
+  Moved from sunrise overlay. Bug #237254. Thanks to ABBE Corentin
+  (Montjoie) <corentin.labbe@geomatys.fr> for the ebuild
+

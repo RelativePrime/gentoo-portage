@@ -1,0 +1,18 @@
+# Copyright 1999-2011 Gentoo Foundation.
+# Distributed under the terms of the GNU General Public License, v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/default/bsd/packages,v 1.5 2011/07/05 21:14:01 aballier Exp $
+
+-*virtual/dev-manager
+-*sys-fs/e2fsprogs
+-*sys-process/procps
+-*sys-process/psmisc
+-*>=sys-apps/shadow-4.1
+-*sys-apps/which
+-*sys-apps/net-tools
+-*sys-apps/module-init-tools
+-*sys-apps/kbd
+#-*sys-apps/findutils
+#-*sys-apps/debianutils
+-*sys-apps/coreutils
+-*net-misc/iputils
+-*app-arch/tar

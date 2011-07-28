@@ -1,0 +1,41 @@
+# ChangeLog for dev-ruby/simple-rss
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/simple-rss/ChangeLog,v 1.8 2011/01/10 17:59:51 graaff Exp $
+
+  10 Jan 2011; Hans de Graaff <graaff@gentoo.org> simple-rss-1.2.3.ebuild:
+  Keyword ~x86-macos.
+
+  12 Sep 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  simple-rss-1.2.3.ebuild:
+  x86 stable wrt bug #336263
+
+  12 Sep 2010; Markos Chandras <hwoarang@gentoo.org>
+  simple-rss-1.2.3.ebuild:
+  Stable on amd64 wrt bug #336263
+
+  06 Sep 2010; Hans de Graaff <graaff@gentoo.org> -simple-rss-1.2.2.ebuild,
+  -simple-rss-1.2.2-r1.ebuild:
+  Remove old versions.
+
+*simple-rss-1.2.3 (08 Jul 2010)
+
+  08 Jul 2010; Hans de Graaff <graaff@gentoo.org> +simple-rss-1.2.3.ebuild,
+  +files/simple-rss-1.2.3-no-media-rss.patch:
+  Version bump.
+
+  22 May 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  simple-rss-1.2.2-r1.ebuild:
+  Various cleanups.
+
+*simple-rss-1.2.2-r1 (24 Apr 2010)
+
+  24 Apr 2010; Hans de Graaff <graaff@gentoo.org>
+  +simple-rss-1.2.2-r1.ebuild:
+  Fix USE=doc.
+
+*simple-rss-1.2.2 (18 Dec 2009)
+
+  18 Dec 2009; Hans de Graaff <graaff@gentoo.org> +simple-rss-1.2.2.ebuild,
+  +metadata.xml:
+  Initial import from graaff overlay, requested in bug 143591.
+

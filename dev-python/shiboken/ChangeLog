@@ -1,0 +1,56 @@
+# ChangeLog for dev-python/shiboken
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/shiboken/ChangeLog,v 1.9 2011/05/27 18:21:44 chiiph Exp $
+
+*shiboken-1.0.3 (27 May 2011)
+
+  27 May 2011; Tomas Touceda <chiiph@gentoo.org> +shiboken-1.0.3.ebuild,
+  +files/shiboken-1.0.3-fix-pkgconfig.patch:
+  Version bump
+
+*shiboken-1.0.0 (20 Mar 2011)
+
+  20 Mar 2011; Tomas Touceda <chiiph@gentoo.org> +shiboken-1.0.0.ebuild,
+  +files/shiboken-1.0.0-fix-pkgconfig.patch:
+  Version bump
+
+*shiboken-0.5.1-r1 (29 Dec 2010)
+
+  29 Dec 2010; Dominik Kapusta <ayoy@gentoo.org> -shiboken-0.5.1.ebuild,
+  +shiboken-0.5.1-r1.ebuild:
+  Specifying correct dependency on Python
+
+*shiboken-0.5.1 (25 Nov 2010)
+
+  25 Nov 2010; Tomas Touceda <chiiph@gentoo.org> -shiboken-0.3.2.ebuild,
+  -shiboken-0.4.0.ebuild, -shiboken-0.5.0-r1.ebuild, +shiboken-0.5.1.ebuild,
+  +files/shiboken-0.5.1-fix-pkgconfig.patch,
+  -files/shiboken-fix-pkgconfig.patch:
+  Version bump, remove old and update patch
+
+*shiboken-0.5.0-r1 (03 Nov 2010)
+
+  03 Nov 2010; Dominik Kapusta <ayoy@gentoo.org> -shiboken-0.5.0.ebuild,
+  +shiboken-0.5.0-r1.ebuild, +files/shiboken-fix-pkgconfig.patch:
+  Fix pkgconfig file (bug #343573).
+
+*shiboken-0.5.0 (06 Oct 2010)
+
+  06 Oct 2010; Tomas Touceda <chiiph@gentoo.org> +shiboken-0.5.0.ebuild:
+  Version bump
+
+*shiboken-0.4.0 (24 Aug 2010)
+
+  24 Aug 2010; Dominik Kapusta <ayoy@gentoo.org> +shiboken-0.4.0.ebuild:
+  Version bump
+
+  16 Jun 2010; Dominik Kapusta <ayoy@gentoo.org> shiboken-0.3.2.ebuild:
+  Adding a block against dev-python/boostpythongenerator
+
+*shiboken-0.3.2 (16 Jun 2010)
+
+  16 Jun 2010; Dominik Kapusta <ayoy@gentoo.org> +shiboken-0.3.2.ebuild,
+  +metadata.xml:
+  Initial ebuild for shiboken. Replaces dev-python/boostpythongenerator for
+  >=pyside-0.3.2
+

@@ -1,0 +1,83 @@
+# ChangeLog for dev-lang/orc
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/orc/ChangeLog,v 1.18 2011/05/03 03:16:36 ford_prefect Exp $
+
+*orc-0.4.14 (03 May 2011)
+
+  03 May 2011; Arun Raghavan <ford_prefect@gentoo.org> -orc-0.4.13.ebuild,
+  +orc-0.4.14.ebuild:
+  Another bug fix release, so replacing previous version.
+
+*orc-0.4.13 (19 Apr 2011)
+
+  19 Apr 2011; Arun Raghavan <ford_prefect@gentoo.org> -orc-0.4.12.ebuild,
+  +orc-0.4.13.ebuild:
+  Bmp to 0.4.13. Fixes serious code generation issues in SSE, Altivec, so
+  remove 0.4.12.
+
+*orc-0.4.12 (16 Apr 2011)
+
+  16 Apr 2011; Arun Raghavan <ford_prefect@gentoo.org> orc-0.4.9.ebuild,
+  +orc-0.4.12.ebuild:
+  Bump to 0.4.12. gcc 4.6 warning fixes and some minor fixes/enhancements.
+
+  18 Mar 2011; Nirbheek Chauhan <nirbheek@gentoo.org> orc-0.4.11.ebuild,
+  metadata.xml:
+  Add ~arm, tested by steev on armv7, add gstreamer as herd
+
+  05 Feb 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> orc-0.4.11.ebuild:
+  x86 stable wrt bug #353321
+
+  31 Jan 2011; Markos Chandras <hwoarang@gentoo.org> orc-0.4.11.ebuild:
+  Stable on amd64 wrt bug #353321
+
+  30 Oct 2010; Fabian Groffen <grobian@gentoo.org> orc-0.4.11.ebuild:
+  Also drop any optimisation flags on Intel/Darwin, because of a similar
+  problem as with PPC
+
+  26 Oct 2010; Fabian Groffen <grobian@gentoo.org> orc-0.4.11.ebuild:
+  Fix compilation on PPC/Darwin by dropping any optimisation level
+
+  15 Oct 2010; Arun Raghavan <ford_prefect@gentoo.org> -orc-0.4.7.ebuild:
+  Prune older version.
+
+*orc-0.4.11 (15 Oct 2010)
+
+  15 Oct 2010; Arun Raghavan <ford_prefect@gentoo.org> +orc-0.4.11.ebuild:
+  Bump to 0.4.11. Bunch of bug fixes. Still has some problems on armv6, etc.
+
+*orc-0.4.10 (08 Oct 2010)
+
+  08 Oct 2010; Arun Raghavan <ford_prefect@gentoo.org> +orc-0.4.10.ebuild:
+  Bump to 0.4.10. Bunch of 64-bit and SSE improvements amongst other fixes.
+
+*orc-0.4.9 (08 Sep 2010)
+
+  08 Sep 2010; Arun Raghavan <ford_prefect@gentoo.org> +orc-0.4.9.ebuild,
+  +files/orc-0.4.9-make-valgrind-optional.patch:
+  Bump to 0.4.9
+
+*orc-0.4.7 (21 Aug 2010)
+
+  21 Aug 2010; Samuli Suominen <ssuominen@gentoo.org> +orc-0.4.7.ebuild:
+  Version bump.
+
+*orc-0.4.5 (16 Jun 2010)
+
+  16 Jun 2010; Markos Chandras <hwoarang@gentoo.org> +orc-0.4.5.ebuild:
+  Version bump. Added examples use flag. Fixes bug #317447
+
+  30 May 2010; Fabian Groffen <grobian@gentoo.org> orc-0.4.4.ebuild:
+  Marked *-macos, *-solaris
+
+  15 May 2010; Samuli Suominen <ssuominen@gentoo.org> orc-0.4.4.ebuild:
+  USE static-libs wrt #317447 by Toffanin Mauro.
+
+  26 Apr 2010; Jeremy Olexa <darkside@gentoo.org> orc-0.4.4.ebuild:
+  Move to EAPI3, tested on ~amd64-linux
+
+*orc-0.4.4 (21 Apr 2010)
+
+  21 Apr 2010; Samuli Suominen <ssuominen@gentoo.org> +orc-0.4.4.ebuild:
+  Initial commit.
+

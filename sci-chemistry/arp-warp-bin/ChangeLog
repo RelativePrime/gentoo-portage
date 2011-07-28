@@ -1,0 +1,54 @@
+# ChangeLog for sci-chemistry/arp-warp-bin
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/arp-warp-bin/ChangeLog,v 1.12 2011/07/25 19:36:06 jlec Exp $
+
+  25 Jul 2011; Justin Lecher <jlec@gentoo.org> arp-warp-bin-7.1.ebuild:
+  Reverted keywording
+
+  21 Jul 2011; Justin Lecher <jlec@gentoo.org> arp-warp-bin-7.1.ebuild,
+  metadata.xml:
+  Stabilizing myself as it has fetch restriction. Works here.
+
+  11 Jan 2011; Justin Lecher <jlec@gentoo.org> arp-warp-bin-7.1.ebuild:
+  PREFIX everything
+
+  10 Jan 2011; Justin Lecher <jlec@gentoo.org> arp-warp-bin-7.1.ebuild:
+  Keyworded for *-linux
+
+  10 Jan 2011; Justin Lecher <jlec@gentoo.org> arp-warp-bin-7.1.ebuild:
+  QA on ebuild style
+
+  22 May 2010; Justin Lecher <jlec@gentoo.org> arp-warp-bin-7.1.ebuild:
+  Removed epause in EAPI=3 ebuilds
+
+  22 Apr 2010; Justin Lecher <jlec@gentoo.org> -files/7.0.1-setup.patch,
+  -files/7.0.1-source-ccp4-if-needed.patch, files/7.1-setup.patch,
+  arp-warp-bin-7.1.ebuild:
+  Fixes for Python ABIs, #316167
+
+*arp-warp-bin-7.1 (20 Mar 2010)
+
+  20 Mar 2010; Justin Lecher <jlec@gentoo.org>
+  +files/7.1-setup.patch, -arp-warp-bin-7.0.1-r2.ebuild,
+  +arp-warp-bin-7.1.ebuild:
+  Version bump per 309845
+
+*arp-warp-bin-7.0.1-r2 (25 Feb 2010)
+
+  25 Feb 2010; Justin Lecher <jlec@gentoo.org>
+  files/7.0.1-setup.patch, -arp-warp-bin-7.0.1-r1.ebuild,
+  files/7.0.1-source-ccp4-if-needed.patch, +arp-warp-bin-7.0.1-r2.ebuild:
+  Handle ccp4 installation correctly
+
+  07 Feb 2010; Justin Lecher <jlec@gentoo.org>
+  arp-warp-bin-7.0.1-r1.ebuild:
+  Updated RDEP to >ccp4-6.1.3 to have things in profile.d sorted correctly
+
+*arp-warp-bin-7.0.1-r1 (04 Aug 2008)
+
+  04 Aug 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  +files/7.0.1-setup.patch, +files/7.0.1-source-ccp4-if-needed.patch,
+  +metadata.xml, +arp-warp-bin-7.0.1-r1.ebuild:
+  (#212054) New package: ARP/wARP is a software for improvement and
+  interpretation of crystallographic electron density maps.
+

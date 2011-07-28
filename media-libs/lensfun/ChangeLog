@@ -1,0 +1,95 @@
+# ChangeLog for media-libs/lensfun
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/lensfun/ChangeLog,v 1.26 2011/07/13 14:38:06 xarthisius Exp $
+
+  13 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> lensfun-0.2.5-r1.ebuild:
+  ppc64 stable wrt #354033
+
+  01 Jun 2011; Brent Baude <ranger@gentoo.org> lensfun-0.2.5-r1.ebuild:
+  Marking lensfun-0.2.5-r1 ppc stable for bug 354033
+
+  09 May 2011; Thomas Kahle <tomka@gentoo.org> lensfun-0.2.5-r1.ebuild:
+  x86 stable per bug 354033
+
+  26 Apr 2011; Christoph Mende <angelos@gentoo.org> lensfun-0.2.5-r1.ebuild:
+  Stable on amd64 wrt bug #364173
+
+  19 Apr 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  lensfun-0.2.5-r1.ebuild:
+  Better python dep, thanks to Arfrever
+
+  19 Apr 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  lensfun-0.2.5-r1.ebuild:
+  Use python eclass to force python-2, bug 348885
+
+  19 Apr 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  lensfun-0.2.5-r1.ebuild:
+  Fix documentation path, bug 318639
+
+  17 Apr 2010; Raúl Porcel <armin76@gentoo.org> lensfun-0.2.5-r1.ebuild:
+  Add ~ia64/~sh/~sparc/ wrt #312819
+
+*lensfun-0.2.5-r1 (17 Apr 2010)
+
+  17 Apr 2010; Markus Meier <maekke@gentoo.org> +lensfun-0.2.5-r1.ebuild:
+  disable vectorization support for now, by Serge Gavrilov in bug #314643
+
+*lensfun-0.2.5 (02 Apr 2010)
+
+  02 Apr 2010; Markus Meier <maekke@gentoo.org> +lensfun-0.2.5.ebuild:
+  version bump
+
+  14 Feb 2010; Markus Meier <maekke@gentoo.org> -lensfun-0.2.3.ebuild:
+  old
+
+  31 Jan 2010; Raúl Porcel <armin76@gentoo.org> lensfun-0.2.4.ebuild:
+  arm stable wrt #293850
+
+  16 Jan 2010; Tobias Klausmann <klausman@gentoo.org> lensfun-0.2.4.ebuild:
+  Stable on alpha, bug #293850
+
+  28 Dec 2009; Markus Meier <maekke@gentoo.org> lensfun-0.2.4.ebuild:
+  x86 stable, bug #293850
+
+  23 Dec 2009; Markos Chandras <hwoarang@gentoo.org> lensfun-0.2.4.ebuild:
+  Stable on amd64 wrt bug #293850
+
+  16 Dec 2009; Jeroen Roovers <jer@gentoo.org> lensfun-0.2.4.ebuild:
+  Stable for HPPA (bug #272088).
+
+  08 Dec 2009; Brent Baude <ranger@gentoo.org> lensfun-0.2.4.ebuild:
+  Marking lensfun-0.2.4 ppc64 for bug 293850
+
+  21 Nov 2009; nixnut <nixnut@gentoo.org> lensfun-0.2.4.ebuild:
+  ppc stable #293850
+
+*lensfun-0.2.4 (19 Oct 2009)
+
+  19 Oct 2009; Markus Meier <maekke@gentoo.org> +lensfun-0.2.4.ebuild:
+  version bump, bug #289454
+
+  05 Oct 2009; Mounir Lamouri <volkmar@gentoo.org> lensfun-0.2.3.ebuild:
+  Keywording for ppc, bug 272088
+
+  19 Sep 2009; Markus Meier <maekke@gentoo.org> lensfun-0.2.3.ebuild:
+  add ~arm, bug #272088
+
+  04 Jul 2009; Markus Meier <maekke@gentoo.org> lensfun-0.2.3.ebuild,
+  +files/lensfun-0.2.3-glibc-2.10.patch:
+  fix building with glibc-2.10, bug #276175
+
+  04 Jul 2009; Brent Baude <ranger@gentoo.org> lensfun-0.2.3.ebuild:
+  Marking lensfun-0.2.3 ~ppc64 for bug 272088
+
+  07 Jun 2009; Tobias Klausmann <klausman@gentoo.org> lensfun-0.2.3.ebuild:
+  Keyworded on alpha, bug #272088
+
+  03 Jun 2009; Markus Meier <maekke@gentoo.org> lensfun-0.2.3.ebuild:
+  add ~amd64, bug #272088
+
+*lensfun-0.2.3 (01 Jun 2009)
+
+  01 Jun 2009; Markus Meier <maekke@gentoo.org> +lensfun-0.2.3.ebuild,
+  +files/lensfun-0.2.3-as-needed.patch, +metadata.xml:
+  initial import of lensfun, ebuild by me, bug #245770
+

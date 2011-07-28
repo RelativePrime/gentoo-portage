@@ -1,0 +1,94 @@
+# ChangeLog for app-office/kmymoney
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-office/kmymoney/ChangeLog,v 1.19 2011/03/13 16:04:31 hwoarang Exp $
+
+  13 Mar 2011; Markos Chandras <hwoarang@gentoo.org> kmymoney-4.5.3.ebuild:
+  Stable on amd64 wrt bug #358517
+
+  13 Mar 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  kmymoney-4.5.3.ebuild:
+  x86 stable wrt bug #358517
+
+  13 Feb 2011; Tomáš Chvátal <scarabeus@gentoo.org> -kmymoney-4.5.2.ebuild:
+  old
+
+*kmymoney-4.5.3 (12 Feb 2011)
+
+  12 Feb 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  +kmymoney-4.5.3.ebuild:
+  Version bump adding native support for AquaBanking 5.0
+
+*kmymoney-4.5.2 (03 Jan 2011)
+
+  03 Jan 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  +kmymoney-4.5.2.ebuild:
+  Version bump
+
+*kmymoney-4.5-r2 (11 Nov 2010)
+
+  11 Nov 2010; Andreas K. Huettel <dilfridge@gentoo.org>
+  +kmymoney-4.5-r2.ebuild, +files/kmymoney-4.5-accentfix.patch:
+  Added upstream ui fix for languages with accented characters. Fixes bug
+  344195
+
+*kmymoney-4.5-r1 (04 Nov 2010)
+
+  04 Nov 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +kmymoney-4.5-r1.ebuild:
+  Initial patch to support AqBanking 5.x.
+
+  17 Oct 2010; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  kmymoney-4.5.ebuild:
+  Fix the ebuild logic to specify SRC_URI for versions != 9999.
+
+  12 Oct 2010; Theo Chatzimichos <tampakrap@gentoo.org>
+  -kmymoney-3.98.1.ebuild, kmymoney-4.5.ebuild:
+  Cleanup: EAPI3, merge with live ebuild, use add_kdebase_dep
+
+*kmymoney-4.5 (18 Aug 2010)
+
+  18 Aug 2010; Maciej Mrozowski <reavertm@gentoo.org> +kmymoney-4.5.ebuild:
+  Version bump, bug 333051
+
+*kmymoney-3.98.1 (05 Jun 2010)
+
+  05 Jun 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +kmymoney-3.98.1.ebuild:
+  Version bump wrt #322615 by Vasileios P. Lourdas.
+
+*kmymoney-3.98.0 (20 May 2010)
+
+  20 May 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +kmymoney-3.98.0.ebuild:
+  Version bump to first release candidate wrt #320527. Fix src_test to use
+  virtualx.eclass wrt #307427 by Andreas K. Huettel.
+
+*kmymoney-3.97.2 (13 Apr 2010)
+
+  13 Apr 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +kmymoney-3.97.2.ebuild:
+  Version bump wrt #312309 by Myk Taylor.
+
+*kmymoney-3.96.1 (17 Feb 2010)
+
+  17 Feb 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +kmymoney-3.96.1.ebuild:
+  Version bump.
+
+*kmymoney-3.96.0 (15 Feb 2010)
+
+  15 Feb 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +kmymoney-3.96.0.ebuild, metadata.xml:
+  Version bump.
+
+  08 Jan 2010; Samuli Suominen <ssuominen@gentoo.org>
+  kmymoney-3.95.0.ebuild:
+  Missing kde-base/libkleo depend wrt #300225, thanks to Kamil Kamiński for
+  reporting.
+
+*kmymoney-3.95.0 (08 Jan 2010)
+
+  08 Jan 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +kmymoney-3.95.0.ebuild:
+  Initial commit wrt #294010, thanks to Elias Probst, Soren Harward, Matija Suklje and others.
+

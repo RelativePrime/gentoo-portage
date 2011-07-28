@@ -1,0 +1,25 @@
+# ChangeLog for www-apache/mod_common_redirect
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apache/mod_common_redirect/ChangeLog,v 1.4 2011/05/14 06:39:10 hollow Exp $
+
+  14 May 2011; Benedikt Böhm <hollow@gentoo.org>
+  mod_common_redirect-0.1.1.ebuild:
+  change HOMEPAGE and SRC_URI to github
+
+*mod_common_redirect-0.1.1 (11 Jan 2010)
+
+  11 Jan 2010; Benedikt Böhm <hollow@gentoo.org>
+  +mod_common_redirect-0.1.1.ebuild:
+  version bump
+
+  17 Sep 2009; Benedikt Böhm <hollow@gentoo.org>
+  mod_common_redirect-0.1.ebuild:
+  stable on amd64 & x86
+
+*mod_common_redirect-0.1 (01 Aug 2009)
+
+  01 Aug 2009; Benedikt Böhm <hollow@gentoo.org>
+  +files/20_mod_common_redirect.conf, +mod_common_redirect-0.1.ebuild,
+  +metadata.xml:
+  initial ebuild
+

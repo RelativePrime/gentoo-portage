@@ -1,0 +1,34 @@
+# ChangeLog for dev-texlive/texlive-documentation-serbian
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-texlive/texlive-documentation-serbian/ChangeLog,v 1.7 2011/06/14 00:28:53 mattst88 Exp $
+
+  14 Jun 2011; Matt Turner <mattst88@gentoo.org>
+  texlive-documentation-serbian-2010.ebuild:
+  Added ~mips, bug 342513
+
+  27 Feb 2011; Raúl Porcel <armin76@gentoo.org>
+  texlive-documentation-serbian-2010.ebuild:
+  Add ~alpha/~ia64/~s390/~sh/~sparc wrt #342513
+
+  20 Feb 2011; Kacper Kowalik <xarthisius@gentoo.org>
+  texlive-documentation-serbian-2010.ebuild:
+  Marked ~ppc/~ppc64 wrt #342513
+
+  01 Nov 2010; Markus Meier <maekke@gentoo.org>
+  texlive-documentation-serbian-2010.ebuild:
+  add ~arm, bug #342513
+
+  25 Oct 2010; Christian Faulhammer <fauli@gentoo.org>
+  texlive-documentation-serbian-2010.ebuild:
+  add ~x86, bug 342513
+
+  25 Oct 2010; Jeroen Roovers <jer@gentoo.org>
+  texlive-documentation-serbian-2010.ebuild:
+  Marked ~hppa (bug #342513).
+
+*texlive-documentation-serbian-2010 (24 Oct 2010)
+
+  24 Oct 2010; Alexis Ballier <aballier@gentoo.org>
+  +texlive-documentation-serbian-2010.ebuild, +metadata.xml:
+  Bump to TeX Live 2010
+

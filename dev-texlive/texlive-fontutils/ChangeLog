@@ -1,0 +1,87 @@
+# ChangeLog for dev-texlive/texlive-fontutils
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-texlive/texlive-fontutils/ChangeLog,v 1.19 2011/03/13 11:46:42 grobian Exp $
+
+  13 Mar 2011; Fabian Groffen <grobian@gentoo.org>
+  texlive-fontutils-2009.ebuild:
+  Marked ~x86-macos
+
+*texlive-fontutils-2010-r1 (17 Feb 2011)
+
+  17 Feb 2011; Alexis Ballier <aballier@gentoo.org>
+  +texlive-fontutils-2010-r1.ebuild, +files/epstopdf_invocation.patch:
+  Add a patch from debian to fix epstopdf invocation wrt its shebang, part of
+  bug #289818
+
+  23 Jan 2011; Fabian Groffen <grobian@gentoo.org>
+  texlive-fontutils-2010.ebuild:
+  Added Prefix keywords
+
+  17 Dec 2010; Fabian Groffen <grobian@gentoo.org>
+  texlive-fontutils-2010.ebuild:
+  Marked ~ppc-macos
+
+*texlive-fontutils-2010 (24 Oct 2010)
+
+  24 Oct 2010; Alexis Ballier <aballier@gentoo.org>
+  +texlive-fontutils-2010.ebuild:
+  Bump to TeX Live 2010
+
+  02 Oct 2010; Fabian Groffen <grobian@gentoo.org>
+  texlive-fontutils-2009.ebuild:
+  Marked ~x64-macos, bug #333981
+
+  01 Jun 2010; Joseph Jezak <josejx@gentoo.org>
+  texlive-fontutils-2009.ebuild:
+  Marked ~ppc for bug #300526.
+
+  12 May 2010; Brent Baude <ranger@gentoo.org>
+  texlive-fontutils-2009.ebuild:
+  Marking exlive-fontutils-2009 ~ppc64 for bug 300526
+
+  12 May 2010; Raúl Porcel <armin76@gentoo.org>
+  texlive-fontutils-2009.ebuild:
+  Add ~sparc wrt #300526
+
+  10 May 2010; Markus Meier <maekke@gentoo.org>
+  texlive-fontutils-2009.ebuild:
+  add ~arm, bug #300526
+
+  13 Feb 2010; Raúl Porcel <armin76@gentoo.org>
+  texlive-fontutils-2009.ebuild:
+  Add ~sh wrt #300526
+
+  13 Feb 2010; Raúl Porcel <armin76@gentoo.org>
+  texlive-fontutils-2009.ebuild:
+  Add ~alpha/~ia64 wrt #300526
+
+  09 Feb 2010; Alexis Ballier <aballier@gentoo.org>
+  texlive-fontutils-2009.ebuild:
+  Add missing blocker on fontsextra 2008, bug #303991
+
+  09 Feb 2010; Fabian Groffen <grobian@gentoo.org>
+  texlive-fontutils-2009.ebuild:
+  Marked ~ppc-macos texlive-fontutils-2009.ebuild
+
+  30 Jan 2010; Jonathan Callen <abcd@gentoo.org>
+  texlive-fontutils-2009.ebuild:
+  Add ~amd64-linux/~x86-linux keywords
+
+  27 Jan 2010; Jeroen Roovers <jer@gentoo.org>
+  texlive-fontutils-2009.ebuild:
+  Marked ~hppa too.
+
+  25 Jan 2010; Alexis Ballier <aballier@gentoo.org>
+  texlive-fontutils-2009.ebuild:
+  license update
+
+  11 Jan 2010; Christian Faulhammer <fauli@gentoo.org>
+  texlive-fontutils-2009.ebuild:
+  ~x86 added, bug 300526
+
+*texlive-fontutils-2009 (11 Jan 2010)
+
+  11 Jan 2010; Alexis Ballier <aballier@gentoo.org>
+  +texlive-fontutils-2009.ebuild, +metadata.xml:
+  Bump to TeX Live 2009
+

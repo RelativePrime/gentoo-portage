@@ -1,0 +1,86 @@
+# ChangeLog for net-libs/ldns
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-libs/ldns/ChangeLog,v 1.18 2011/06/01 23:05:47 matsuu Exp $
+
+*ldns-1.6.10 (01 Jun 2011)
+
+  01 Jun 2011; MATSUU Takuto <matsuu@gentoo.org> -ldns-1.6.6.ebuild,
+  -ldns-1.6.7.ebuild, -ldns-1.6.8.ebuild, +ldns-1.6.10.ebuild:
+  Version bumped. Removed old versions.
+
+  11 May 2011; Christoph Mende <angelos@gentoo.org> ldns-1.6.9.ebuild:
+  Stable on amd64 wrt bug #362015
+
+  07 May 2011; Thomas Kahle <tomka@gentoo.org> ldns-1.6.9.ebuild:
+  x86 stable per bug 362015
+
+*ldns-1.6.9 (26 Mar 2011)
+
+  26 Mar 2011; MATSUU Takuto <matsuu@gentoo.org> +ldns-1.6.9.ebuild:
+  Version bumped, bug #360171.
+
+*ldns-1.6.8-r1 (03 Mar 2011)
+
+  03 Mar 2011; MATSUU Takuto <matsuu@gentoo.org> +ldns-1.6.8-r1.ebuild,
+  +files/ldns-1.6.8-swig.patch:
+  Fixed to work with swig-2.0.2, bug #356871.
+
+*ldns-1.6.8 (25 Jan 2011)
+
+  25 Jan 2011; MATSUU Takuto <matsuu@gentoo.org> +ldns-1.6.8.ebuild:
+  Version bumped. Added static-libs USE flag.
+
+*ldns-1.6.7 (08 Nov 2010)
+
+  08 Nov 2010; MATSUU Takuto <matsuu@gentoo.org> -ldns-1.6.2.ebuild,
+  -ldns-1.6.3.ebuild, -ldns-1.6.3-r1.ebuild, -ldns-1.6.5.ebuild,
+  +ldns-1.6.7.ebuild:
+  Version bumped. Added gost USE flag. Removed old versions.
+
+*ldns-1.6.6 (11 Aug 2010)
+
+  11 Aug 2010; MATSUU Takuto <matsuu@gentoo.org> +ldns-1.6.6.ebuild:
+  Version bumped.
+
+  17 Jun 2010; MATSUU Takuto <matsuu@gentoo.org> ldns-1.6.5.ebuild:
+  Removed libtool archive files.
+
+*ldns-1.6.5 (16 Jun 2010)
+
+  16 Jun 2010; MATSUU Takuto <matsuu@gentoo.org> +ldns-1.6.5.ebuild:
+  Version bumped. Added python USE flag.
+
+  02 Apr 2010; Fabian Groffen <grobian@gentoo.org> ldns-1.6.4.ebuild:
+  Marked ~ppc-macos and ~x64-macos, bug #312015
+
+  11 Mar 2010; Markos Chandras <hwoarang@gentoo.org> ldns-1.6.4.ebuild:
+  Stable on amd64 wrt bug #300362
+
+  04 Mar 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org> ldns-1.6.4.ebuild:
+  x86 stable wrt bug #300362, arch-tested by Andreas Schurch
+
+*ldns-1.6.4 (20 Jan 2010)
+
+  20 Jan 2010; MATSUU Takuto <matsuu@gentoo.org> +ldns-1.6.4.ebuild:
+  Version bumped.
+
+*ldns-1.6.3-r1 (11 Jan 2010)
+
+  11 Jan 2010; MATSUU Takuto <matsuu@gentoo.org> +ldns-1.6.3-r1.ebuild,
+  +files/ldns-1.6.3-r3151-fix-double-free.patch:
+  Fixed bug #299803.
+
+*ldns-1.6.3 (04 Dec 2009)
+
+  04 Dec 2009; MATSUU Takuto <matsuu@gentoo.org> +ldns-1.6.3.ebuild:
+  Version bumped.
+
+  30 Nov 2009; Torsten Veller <tove@gentoo.org> ldns-1.6.2.ebuild:
+  Add missing die: || "..." -> || die "..."
+
+*ldns-1.6.2 (21 Nov 2009)
+
+  21 Nov 2009; MATSUU Takuto <matsuu@gentoo.org> +ldns-1.6.2.ebuild,
+  +metadata.xml:
+  Initial import, bug #192728.
+

@@ -1,0 +1,21 @@
+# ChangeLog for app-cdr/kcdemu
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-cdr/kcdemu/ChangeLog,v 1.4 2010/10/09 19:15:52 fauli Exp $
+
+  09 Oct 2010; Christian Faulhammer <fauli@gentoo.org> kcdemu-0.3.ebuild:
+  stable x86, bug 328699
+
+  08 Oct 2010; Markos Chandras <hwoarang@gentoo.org> kcdemu-0.3.ebuild:
+  Stable on amd64 wrt bug #328699
+
+*kcdemu-0.3.1 (06 Oct 2010)
+
+  06 Oct 2010; Theo Chatzimichos <tampakrap@gentoo.org> kcdemu-0.3.ebuild,
+  +kcdemu-0.3.1.ebuild:
+  Version bump, small cleanup
+
+*kcdemu-0.3 (04 Dec 2009)
+
+  04 Dec 2009; Samuli Suominen <ssuominen@gentoo.org> +kcdemu-0.3.ebuild:
+  Initial commit wrt #289645, thanks to Paul V. for reporting.
+

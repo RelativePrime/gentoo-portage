@@ -1,0 +1,184 @@
+# ChangeLog for x11-libs/libfm
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/libfm/ChangeLog,v 1.44 2011/06/25 18:11:18 hwoarang Exp $
+
+  25 Jun 2011; Markos Chandras <hwoarang@gentoo.org>
+  libfm-0.1.15_pre20110422.ebuild, libfm-0.1.15_pre20110614.ebuild,
+  libfm-9999.ebuild:
+  migrate to git-2. Touch non-live ebuilds to silence repoman
+
+*libfm-0.1.15_pre20110614 (14 Jun 2011)
+
+  14 Jun 2011; Markos Chandras <hwoarang@gentoo.org>
+  +libfm-0.1.15_pre20110614.ebuild:
+  New snapshot
+
+  02 Jun 2011; Markus Meier <maekke@gentoo.org>
+  libfm-0.1.15_pre20110422.ebuild:
+  arm stable, bug #365231
+
+  01 Jun 2011; Tobias Klausmann <klausman@gentoo.org>
+  libfm-0.1.15_pre20110422.ebuild:
+  Keyworded on alpha, bug #330911
+
+  25 May 2011; Thomas Kahle <tomka@gentoo.org> libfm-0.1.15_pre20110422.ebuild:
+  x86 stable per bug 365231
+
+  29 Apr 2011; Markos Chandras <hwoarang@gentoo.org>
+  libfm-0.1.15_pre20110422.ebuild:
+  Stable on amd64 wrt bug #365231
+
+*libfm-0.1.15_pre20110422 (22 Apr 2011)
+
+  22 Apr 2011; Markos Chandras <hwoarang@gentoo.org>
+  -libfm-0.1.15_pre20110216.ebuild, +libfm-0.1.15_pre20110422.ebuild:
+  Automated version bump. Remove old snapshots
+
+  11 Apr 2011; Markos Chandras <hwoarang@gentoo.org> libfm-9999.ebuild:
+  Fix tests on live ebuild. Bug #356029
+
+  11 Apr 2011; Markos Chandras <hwoarang@gentoo.org>
+  libfm-0.1.15_pre20110216.ebuild:
+  Remove weird lines from the ebuild
+
+  07 Mar 2011; Tobias Klausmann <klausman@gentoo.org> libfm-0.1.12.ebuild:
+  Keyworded on alpha, bug #330911
+
+  27 Feb 2011; Markos Chandras <hwoarang@gentoo.org>
+  libfm-0.1.15_pre20110216.ebuild, libfm-9999.ebuild:
+  Fix tests. Bug #356029. Thanks to Diego Elio Pettenò <flameeyes@gentoo.org>
+
+  20 Feb 2011; Markos Chandras <hwoarang@gentoo.org>
+  libfm-0.1.15_pre20110216.ebuild, libfm-9999.ebuild:
+  Dont build documentation at the moment. It is broken upstream. Bug #355569
+
+  19 Feb 2011; Markos Chandras <hwoarang@gentoo.org>
+  libfm-0.1.15_pre20110216.ebuild, libfm-9999.ebuild:
+  Adjust pathes for snapshots and live ebuild. Bug #355531
+
+*libfm-0.1.15_pre20110216 (16 Feb 2011)
+
+  16 Feb 2011; Markos Chandras <hwoarang@gentoo.org>
+  -libfm-0.1.15_pre20110213.ebuild, +libfm-0.1.15_pre20110216.ebuild:
+  Automated version bump. Remove old snapshots
+
+  16 Feb 2011; Markos Chandras <hwoarang@gentoo.org>
+  libfm-0.1.15_pre20110213.ebuild, libfm-9999.ebuild:
+  Make docs optional. Bug #353592. Thanks to tbartdev@gmx-topmail.de for the
+  patch
+
+*libfm-0.1.15_pre20110213 (13 Feb 2011)
+
+  13 Feb 2011; Markos Chandras <hwoarang@gentoo.org>
+  -libfm-0.1.15_pre20110202.ebuild, +libfm-0.1.15_pre20110213.ebuild:
+  New snapshot. Fixes bug #3143296
+
+  03 Feb 2011; Markos Chandras <hwoarang@gentoo.org>
+  libfm-0.1.15_pre20110202.ebuild:
+  Fix dependencies
+
+*libfm-0.1.15_pre20110202 (02 Feb 2011)
+
+  02 Feb 2011; Markos Chandras <hwoarang@gentoo.org> -libfm-0.1.14.ebuild,
+  +libfm-0.1.15_pre20110202.ebuild:
+  Introduce snapshot. Remove old broken version
+
+  22 Jan 2011; Markos Chandras <hwoarang@gentoo.org> libfm-9999.ebuild:
+  Add gtk-doc to EXTRA_DEPEND
+
+  22 Jan 2011; Samuli Suominen <ssuominen@gentoo.org> libfm-0.1.12.ebuild:
+  Backport USE="udev" to 0.1.12. This version is still using gnome-base/gvfs.
+
+  22 Jan 2011; Kacper Kowalik <xarthisius@gentoo.org> libfm-0.1.12.ebuild:
+  ppc stable wrt #349724
+
+  20 Jan 2011; Markos Chandras <hwoarang@gentoo.org> libfm-9999.ebuild:
+  Add dev-utl/gtk-doc dependency
+
+  02 Jan 2011; Markus Meier <maekke@gentoo.org> libfm-0.1.12.ebuild:
+  arm stable, bug #349724
+
+  26 Dec 2010; Samuli Suominen <ssuominen@gentoo.org> libfm-0.1.14.ebuild,
+  libfm-9999.ebuild:
+  Update mime database. Punt unused static (.a) and libtool (.la) files.
+  Remove gnome-mount from libfm and pcmanfm dependencies and IUSE wrt #349012.
+
+  24 Oct 2010; Markus Meier <maekke@gentoo.org> libfm-0.1.12.ebuild:
+  add ~arm, bug #341031
+
+  21 Oct 2010; Brent Baude <ranger@gentoo.org> libfm-0.1.12.ebuild:
+  Marking libfm-0.1.12 ~ppc for bug 341031
+
+  17 Oct 2010; Markos Chandras <hwoarang@gentoo.org> libfm-0.1.14.ebuild,
+  libfm-9999.ebuild, metadata.xml:
+  Drop udisks use flag and implement the behavior on udev
+
+*libfm-0.1.14 (17 Oct 2010)
+
+  17 Oct 2010; Markos Chandras <hwoarang@gentoo.org> +libfm-0.1.14.ebuild:
+  Version bump
+
+  15 Oct 2010; Markos Chandras <hwoarang@gentoo.org> libfm-9999.ebuild,
+  metadata.xml:
+  Add udisks useflag to choose the prefered backend and add udisks configure
+  option. Bug #340120. Thanks to Michael Metsger <themixa@gmail.com for
+  reporting
+
+  01 Oct 2010; Markos Chandras <hwoarang@gentoo.org> libfm-9999.ebuild,
+  metadata.xml:
+  Move gnome,hal,udev dependencies from pcmanfm to libfm to actually reflect
+  the underlying code. Bug #330891. Add gtk-doc dependency. Bug #338908
+
+  01 Oct 2010; Markos Chandras <hwoarang@gentoo.org> metadata.xml:
+  Add myself as maintainer
+
+  31 Jul 2010; Pacho Ramos <pacho@gentoo.org> libfm-0.1.12.ebuild:
+  amd64 stable, bug 327907
+
+  30 Jul 2010; Christian Faulhammer <fauli@gentoo.org> libfm-0.1.12.ebuild:
+  stable x86, bug 327907
+
+  08 Jul 2010; Markos Chandras <hwoarang@gentoo.org> libfm-9999.ebuild:
+  Fix test suite for live ebuild
+
+  06 Jul 2010; Markos Chandras <hwoarang@gentoo.org> -libfm-0.1.5.ebuild,
+  -libfm-0.1.9.ebuild, -libfm-0.1.11.ebuild:
+  Remove old ebuilds
+
+*libfm-9999 (22 Jun 2010)
+
+  22 Jun 2010; Markos Chandras <hwoarang@gentoo.org> +libfm-9999.ebuild:
+  Moved live ebuild from lxde-overlay
+
+*libfm-0.1.12 (29 May 2010)
+
+  29 May 2010; Markos Chandras <hwoarang@gentoo.org> +libfm-0.1.12.ebuild:
+  Version bump
+
+*libfm-0.1.11 (02 May 2010)
+
+  02 May 2010; Víctor Ostorga <vostorga@gentoo.org> +libfm-0.1.11.ebuild:
+  Version bump to 0.1.11 , fixing RDEPEND versions, keywording ~x86
+
+*libfm-0.1.9 (18 Mar 2010)
+
+  18 Mar 2010; Markos Chandras <hwoarang@gentoo.org> +libfm-0.1.9.ebuild:
+  Version bump
+
+*libfm-0.1.5 (13 Mar 2010)
+
+  13 Mar 2010; Ben de Groot <yngwin@gentoo.org> -libfm-0.1.ebuild,
+  -libfm-0.1.1.ebuild, +libfm-0.1.5.ebuild:
+  Remove obsolete versions. Version bump. Add needed intltool dep.
+
+*libfm-0.1.1 (07 Mar 2010)
+
+  07 Mar 2010; Ben de Groot <yngwin@gentoo.org> +libfm-0.1.1.ebuild:
+  Version bump
+
+*libfm-0.1 (22 Feb 2010)
+
+  22 Feb 2010; Ben de Groot <yngwin@gentoo.org> +libfm-0.1.ebuild,
+  +metadata.xml:
+  Initial import. Ebuild by me.
+

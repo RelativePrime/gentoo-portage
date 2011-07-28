@@ -1,0 +1,32 @@
+# ChangeLog for dev-perl/MIME-Charset
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/MIME-Charset/ChangeLog,v 1.6 2011/06/09 18:13:02 tove Exp $
+
+*MIME-Charset-1.9.1 (09 Jun 2011)
+
+  09 Jun 2011; Torsten Veller <tove@gentoo.org> +MIME-Charset-1.9.1.ebuild:
+  Version bump
+
+*MIME-Charset-1.8.2 (28 May 2011)
+
+  28 May 2011; Torsten Veller <tove@gentoo.org> +MIME-Charset-1.8.2.ebuild:
+  Version bump
+
+*MIME-Charset-1.8.1 (19 Feb 2011)
+
+  19 Feb 2011; Torsten Veller <tove@gentoo.org> +MIME-Charset-1.8.1.ebuild:
+  Version bump
+
+  02 Jan 2011; Markos Chandras <hwoarang@gentoo.org> MIME-Charset-1.008.ebuild:
+  Stable on amd64 wrt bug #349266
+
+  31 Dec 2010; Christian Faulhammer <fauli@gentoo.org>
+  MIME-Charset-1.008.ebuild:
+  stable x86, bug 349266
+
+*MIME-Charset-1.008 (22 Mar 2010)
+
+  22 Mar 2010; Torsten Veller <tove@gentoo.org> +MIME-Charset-1.008.ebuild,
+  +metadata.xml:
+  Initial import for www-apps/postfixadmin (#310069). Thanks to Andreis Vinogradovs
+

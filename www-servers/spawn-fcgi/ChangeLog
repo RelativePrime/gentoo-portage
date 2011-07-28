@@ -1,0 +1,114 @@
+# ChangeLog for www-servers/spawn-fcgi
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-servers/spawn-fcgi/ChangeLog,v 1.29 2010/10/22 17:51:58 bangert Exp $
+
+  22 Oct 2010; Thilo Bangert <bangert@gentoo.org> files/spawn-fcgi.initd:
+  POSIX compatibility (#331487)
+
+  21 May 2010; Pacho Ramos <pacho@gentoo.org> spawn-fcgi-1.6.3.ebuild:
+  stable amd64, bug 302530
+
+  11 Apr 2010; <nixnut@gentoo.org> spawn-fcgi-1.6.3.ebuild:
+  ppc stable #302530
+
+  10 Feb 2010; Thilo Bangert <bangert@gentoo.org>
+  -spawn-fcgi-1.6.1-r1.ebuild, -spawn-fcgi-1.6.2.ebuild:
+  remove old versions
+
+  10 Feb 2010; Jeroen Roovers <jer@gentoo.org> spawn-fcgi-1.6.3.ebuild:
+  Stable for HPPA (bug #302530).
+
+  10 Feb 2010; Raúl Porcel <armin76@gentoo.org> spawn-fcgi-1.6.3.ebuild:
+  alpha/arm/ia64/sh/sparc stable wrt #302530
+
+  03 Feb 2010; Christian Faulhammer <fauli@gentoo.org>
+  spawn-fcgi-1.6.3.ebuild:
+  stable x86, bug 302530
+
+  01 Feb 2010; Brent Baude <ranger@gentoo.org> spawn-fcgi-1.6.3.ebuild:
+  stable ppc64, bug 302530
+
+  28 Sep 2009; Thilo Bangert <bangert@gentoo.org> files/spawn-fcgi.confd,
+  files/spawn-fcgi.initd:
+  allow for additional spawn-fcgi options - bug #284698
+
+*spawn-fcgi-1.6.3 (28 Sep 2009)
+
+  28 Sep 2009; Thilo Bangert <bangert@gentoo.org> +spawn-fcgi-1.6.3.ebuild:
+  version bump
+
+  03 Jul 2009; Thilo Bangert <bangert@gentoo.org> files/spawn-fcgi.confd,
+  files/spawn-fcgi.initd:
+  strip env (bug #271425)
+
+  03 Jul 2009; Thilo Bangert <bangert@gentoo.org> files/spawn-fcgi.confd,
+  files/spawn-fcgi.initd:
+  make chdir configurable (bug #274573)
+
+  14 May 2009; Jeroen Roovers <jer@gentoo.org> spawn-fcgi-1.6.2.ebuild:
+  Marked ~hppa (bug #264840).
+
+  02 May 2009; Raúl Porcel <armin76@gentoo.org> spawn-fcgi-1.6.1-r1.ebuild,
+  spawn-fcgi-1.6.2.ebuild:
+  Add ~arm/~ia64/~sh/~sparc wrt #264840
+
+  26 Apr 2009; Brent Baude <ranger@gentoo.org> spawn-fcgi-1.6.1-r1.ebuild,
+  spawn-fcgi-1.6.2.ebuild:
+  marking spawn 1.6.x ~ppc for bug 264840
+
+  19 Apr 2009; Brent Baude <ranger@gentoo.org> spawn-fcgi-1.6.1-r1.ebuild,
+  spawn-fcgi-1.6.2.ebuild:
+  Marking spawn-fcgi ~ppc64 for bug 264840
+
+*spawn-fcgi-1.6.2 (18 Apr 2009)
+
+  18 Apr 2009; Thilo Bangert <bangert@gentoo.org> +spawn-fcgi-1.6.2.ebuild:
+  version bump - add ipv6 support
+
+  15 Apr 2009; Markus Meier <maekke@gentoo.org> spawn-fcgi-1.6.1-r1.ebuild:
+  add ~amd64, bug #264840
+
+  13 Apr 2009; Brent Baude <ranger@gentoo.org> ChangeLog:
+  Marking spawn-fcgi-1.6.1 ~ppc64 for bug 264840
+
+  12 Apr 2009; Thilo Bangert <bangert@gentoo.org> files/spawn-fcgi.initd:
+  add extra warning if FCGI_PROGRAM is not executable - fix lineendings
+  (bug #265454)
+
+  12 Apr 2009; Tobias Klausmann <klausman@gentoo.org>
+  spawn-fcgi-1.6.1-r1.ebuild:
+  Keyworded on alpha, bug #264840
+
+*spawn-fcgi-1.6.1-r1 (11 Apr 2009)
+
+  11 Apr 2009; Thilo Bangert <bangert@gentoo.org> -spawn-fcgi-1.6.1.ebuild,
+  +spawn-fcgi-1.6.1-r1.ebuild:
+  bump, so everybody gets the latest init.d
+
+  10 Apr 2009; Thilo Bangert <bangert@gentoo.org> files/spawn-fcgi.initd:
+  allow arguments to FCGI_PROGRAM
+
+  09 Apr 2009; Thilo Bangert <bangert@gentoo.org> files/spawn-fcgi.initd:
+  make multiple environment variables work with stable start-stop-daemon
+
+  09 Apr 2009; Thilo Bangert <bangert@gentoo.org> files/spawn-fcgi.confd,
+  files/spawn-fcgi.initd, spawn-fcgi-1.6.1:
+  keepdir - fix init script for old baselayout (bug #265454)- some minor
+  cleanups
+
+  07 Apr 2009; Thilo Bangert <bangert@gentoo.org> files/spawn-fcgi.initd:
+  make sure pidpath is available
+
+  04 Apr 2009; Thilo Bangert <bangert@gentoo.org> files/spawn-fcgi.initd:
+  posixify init script - bug #260162
+
+  03 Apr 2009; Thilo Bangert <bangert@gentoo.org> files/spawn-fcgi.confd,
+  files/spawn-fcgi.initd:
+  improve documentation in conf.d - use a different exec approach in init.d
+
+*spawn-fcgi-1.6.1 (01 Apr 2009)
+
+  01 Apr 2009; Thilo Bangert <bangert@gentoo.org> +files/spawn-fcgi.confd,
+  +files/spawn-fcgi.initd, +metadata.xml, +spawn-fcgi-1.6.1.ebuild:
+  initial commit - init script adapted from bug #149467
+

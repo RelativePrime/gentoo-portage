@@ -1,0 +1,19 @@
+# ChangeLog for games-mud/kildclient
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-mud/kildclient/ChangeLog,v 1.3 2011/06/20 07:29:36 tupone Exp $
+
+  20 Jun 2011; Tupone Alfredo <tupone@gentoo.org> kildclient-2.9.0.ebuild,
+  +files/kildclient-2.9.0-underlink.patch:
+  Fix underlink. Bug #369469 by Diego Elio Pettenò
+
+  09 Dec 2009; Christian Faulhammer <fauli@gentoo.org>
+  kildclient-2.9.0.ebuild:
+  stable x86, bug 295519
+
+*kildclient-2.9.0 (02 Nov 2009)
+
+  02 Nov 2009; Michael Sterrett <mr_bones_@gentoo.org>
+  +kildclient-2.9.0.ebuild, +files/kildclient-2.9.0-gentoo.patch,
+  +metadata.xml:
+  Initial commit - ebuild submitted by Michele R. Marino via bug #266567
+

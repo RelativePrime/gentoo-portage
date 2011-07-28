@@ -1,0 +1,44 @@
+# ChangeLog for dev-java/neuroph
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/neuroph/ChangeLog,v 1.8 2010/01/10 21:23:02 maekke Exp $
+
+  10 Jan 2010; Markus Meier <maekke@gentoo.org> neuroph-2.3.ebuild:
+  amd64 stable, bug #298726
+
+  29 Dec 2009; Christian Faulhammer <fauli@gentoo.org> neuroph-2.3.ebuild:
+  stable x86, bug 298726
+
+*neuroph-2.3.1 (04 Dec 2009)
+
+  04 Dec 2009; Alistair Bush <ali_bush@gentoo.org> +neuroph-2.3.1.ebuild:
+  Version Bump.
+
+*neuroph-2.3 (10 Oct 2009)
+
+  10 Oct 2009; Alistair Bush <ali_bush@gentoo.org> +neuroph-2.3.ebuild:
+  Version Bump.
+
+  06 Sep 2009; Markus Meier <maekke@gentoo.org> neuroph-2.2.ebuild:
+  amd64 stable, bug #280654
+
+  02 Sep 2009; Christian Faulhammer <fauli@gentoo.org> neuroph-2.2.ebuild:
+  stable x86, bug 280654
+
+  06 Jul 2009; <alistair@gentoo.org> neuroph-2.2.ebuild:
+  Keyword ~x86
+
+  06 Jul 2009; Alistair Bush <ali_bush@gentoo.org> +neuroph-2.2.ebuild,
+  +metadata.xml:
+  Migrate to gentoo-x86
+
+*neuroph-2.2 (06 Jul 2009)
+
+  06 Jul 2009; Alistair Bush <ali_bush@gentoo.org> +neuroph-2.2.ebuild:
+  Version Bump to 2.2
+
+*neuroph-2.1.1_beta_pre (24 May 2009)
+
+  24 May 2009; Alistair Bush <ali_bush@gentoo.org>
+  +neuroph-2.1.1_beta_pre.ebuild, +metadata.xml:
+  New Package neuroph.
+

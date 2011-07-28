@@ -1,0 +1,44 @@
+# ChangeLog for net-libs/libecap
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-libs/libecap/ChangeLog,v 1.13 2010/09/06 20:24:22 ranger Exp $
+
+  06 Sep 2010; Brent Baude <ranger@gentoo.org> libecap-0.0.2.ebuild:
+  Marking libecap-0.0.2 ppc64 for bug 301828
+
+  04 Sep 2010; Raúl Porcel <armin76@gentoo.org> libecap-0.0.2.ebuild:
+  alpha/arm/ia64/sparc stable
+
+  09 Aug 2010; Jeroen Roovers <jer@gentoo.org> libecap-0.0.2.ebuild:
+  Stable for PPC (bug #301828).
+
+  09 Aug 2010; Jeroen Roovers <jer@gentoo.org> libecap-0.0.2.ebuild:
+  Stable for HPPA (bug #301828).
+
+  08 Aug 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org> libecap-0.0.2.ebuild:
+  x86 stable wrt security bug #301828
+
+  08 Aug 2010; Markos Chandras <hwoarang@gentoo.org> libecap-0.0.2.ebuild:
+  Stable on amd64. Security bug #301828
+
+  22 Oct 2009; Mounir Lamouri <volkmar@gentoo.org> libecap-0.0.2.ebuild:
+  Keywording for ppc, bug 277883
+
+  05 Sep 2009; Brent Baude <ranger@gentoo.org> libecap-0.0.2.ebuild:
+  Marking libecap-0.0.2 ~ppc64 for bug 277883
+
+  28 Jul 2009; Jeroen Roovers <jer@gentoo.org> libecap-0.0.2.ebuild:
+  Marked ~hppa (bug #277883).
+
+  23 Jul 2009; Raúl Porcel <armin76@gentoo.org> libecap-0.0.2.ebuild:
+  Add ~alpha/~arm/~ia64 wrt #277883
+
+  17 Jul 2009; Ferris McCormick <fmccor@gentoo.org> libecap-0.0.2.ebuild:
+  Add ~sparc for testing at request of Ivan Mironov and mmess, bug #277883.
+
+*libecap-0.0.2 (16 Jul 2009)
+
+  16 Jul 2009; Alin Năstac <mrness@gentoo.org> +files/libecap-limits.patch,
+  +metadata.xml, +libecap-0.0.2.ebuild:
+  Initial import from bug 277883, thanks to Ivan Mironov
+  <mironov.ivan@gmail.com>.
+

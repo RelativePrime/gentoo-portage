@@ -1,0 +1,24 @@
+# ChangeLog for app-pda/synce-connector
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-pda/synce-connector/ChangeLog,v 1.4 2011/07/08 09:07:50 ssuominen Exp $
+
+  08 Jul 2011; Samuli Suominen <ssuominen@gentoo.org>
+  synce-connector-0.15.2.ebuild:
+  Missing dev-python/python-gudev RDEPEND wrt #373447 by Itay Perl
+
+  10 Jun 2011; Samuli Suominen <ssuominen@gentoo.org>
+  synce-connector-0.15.2.ebuild:
+  Fix sys-fs/udev USE depend wrt #370347 by William Hubbs.
+
+*synce-connector-0.15.2 (28 Mar 2011)
+
+  28 Mar 2011; Samuli Suominen <ssuominen@gentoo.org>
+  +synce-connector-0.15.2.ebuild:
+  Version bump.
+
+*synce-connector-0.15.1 (25 Feb 2011)
+
+  25 Feb 2011; Samuli Suominen <ssuominen@gentoo.org>
+  +synce-connector-0.15.1.ebuild:
+  Initial commit.
+

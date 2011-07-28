@@ -1,0 +1,30 @@
+# ChangeLog for app-dicts/ispell-ga
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-dicts/ispell-ga/ChangeLog,v 1.11 2010/10/08 01:31:50 leio Exp $
+
+  08 Oct 2010; Mart Raudsepp <leio@gentoo.org> ispell-ga-3.3.ebuild:
+  Drop to ~mips
+
+  02 Nov 2008; Peter Weller <welp@gentoo.org> ispell-ga-4.4.ebuild:
+  Keyword ~amd64; bug 245139
+
+  01 Nov 2008; Peter Volkov <pva@gentoo.org> ispell-ga-4.4.ebuild:
+  Fixed multilib.
+
+*ispell-ga-4.4 (01 Nov 2008)
+
+  01 Nov 2008; Peter Volkov <pva@gentoo.org> +ispell-ga-4.4.ebuild:
+  Version bump.
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  30 Jul 2004; Anders Rune Jensen <arj@gentoo.org> +metadata.xml:
+  QA - IUSE fix and {add missing,correct} metatata.xml.
+
+*ispell-ga-3.3 (09 Sep 2003)
+
+  09 Sep 2003; Seemant Kulleen <seemant@gentoo.org> :
+  Irish (Gaelic) dictionary for ispell. Submitted by its author: Kevin Scannell
+  <scannell@slu.edu> in bug #25126
+

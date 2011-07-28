@@ -1,0 +1,53 @@
+# ChangeLog for dev-ruby/allison
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/allison/ChangeLog,v 1.14 2011/06/13 09:37:20 graaff Exp $
+
+  13 Jun 2011; Hans de Graaff <graaff@gentoo.org> allison-2.0.3-r1.ebuild:
+  Update HOMEPAGE, fixing bug 371335.
+
+  28 Feb 2011; Hans de Graaff <graaff@gentoo.org> allison-2.0.3-r1.ebuild:
+  Add ree18 and jruby to support dev-ruby/echoe version bump.
+
+  16 Jan 2011; Hans de Graaff <graaff@gentoo.org> -allison-2.0.3.ebuild:
+  Remove old version.
+
+*allison-2.0.3-r1 (12 Jun 2010)
+
+  12 Jun 2010; Hans de Graaff <graaff@gentoo.org> +allison-2.0.3-r1.ebuild:
+  Convert to ruby-fakegem.
+
+  22 May 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  allison-2.0.3.ebuild:
+  Various cleanups.
+
+  22 Aug 2009; Hans de Graaff <graaff@gentoo.org> -allison-2.0.2.ebuild:
+  Remove old version.
+
+  07 Jun 2009; Raúl Porcel <armin76@gentoo.org> allison-2.0.3.ebuild:
+  Add ~arm/~s390
+
+  28 Apr 2008; <ricmm@gentoo.org> allison-2.0.3.ebuild:
+  Add ~mips, bug #206031
+
+*allison-2.0.3 (22 Jan 2008)
+
+  22 Jan 2008; Richard Brown <rbrown@gentoo.org> +allison-2.0.3.ebuild:
+  Version bump.
+
+  17 Jan 2008; Jeroen Roovers <jer@gentoo.org> allison-2.0.2.ebuild:
+  Marked ~hppa (bug #206031).
+
+  16 Jan 2008; Raúl Porcel <armin76@gentoo.org> allison-2.0.2.ebuild:
+  Add ~alpha/~ia64 wrt #206031
+
+  16 Jan 2008; Ferris McCormick <fmccor@gentoo.org> allison-2.0.2.ebuild:
+  ~sparc for testing & paludis --- Bug #206031 --- seems to work.
+
+  16 Jan 2008; Brent Baude <ranger@gentoo.org> allison-2.0.2.ebuild:
+  marking allison-2.0.2 ~ppc and ~ppc64
+
+*allison-2.0.2 (15 Jan 2008)
+
+  15 Jan 2008; Richard Brown <rbrown@gentoo.org> +allison-2.0.2.ebuild:
+  Initial import.
+

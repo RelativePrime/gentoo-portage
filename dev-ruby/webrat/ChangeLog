@@ -1,0 +1,55 @@
+# ChangeLog for dev-ruby/webrat
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/webrat/ChangeLog,v 1.11 2011/01/10 18:31:05 graaff Exp $
+
+  10 Jan 2011; Hans de Graaff <graaff@gentoo.org> webrat-0.7.1.ebuild:
+  Keyword ~x86-macos.
+
+  09 Oct 2010; Hans de Graaff <graaff@gentoo.org> webrat-0.7.1.ebuild:
+  Depend on rspec-1.
+
+  22 May 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  -webrat-0.5.3.ebuild, -webrat-0.6.0.ebuild, -webrat-0.7.0.ebuild:
+  Cleanup old versions.
+
+*webrat-0.7.1 (27 Apr 2010)
+
+  27 Apr 2010; Hans de Graaff <graaff@gentoo.org> +webrat-0.7.1.ebuild:
+  Version bump: various enhancements and bug fixes.
+
+  23 Jan 2010; Hans de Graaff <graaff@gentoo.org> webrat-0.7.0.ebuild:
+  webrat has no task to build documentation.
+
+*webrat-0.7.0 (18 Jan 2010)
+
+  18 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  +webrat-0.7.0.ebuild:
+  Version bump, port to ruby-fakegem, add tests.
+
+*webrat-0.6.0 (06 Dec 2009)
+
+  06 Dec 2009; Hans de Graaff <graaff@gentoo.org> -webrat-0.5.0.ebuild,
+  -webrat-0.5.1.ebuild, +webrat-0.6.0.ebuild:
+  Version bump with enhancements and minor incompatibilities.
+
+  11 Sep 2009; Diego E. Pettenò <flameeyes@gentoo.org> webrat-0.5.0.ebuild,
+  webrat-0.5.1.ebuild, webrat-0.5.3.ebuild:
+  Fix DEPEND/RDEPEND assignment.
+
+*webrat-0.5.3 (28 Aug 2009)
+
+  28 Aug 2009; Hans de Graaff <graaff@gentoo.org> +webrat-0.5.3.ebuild:
+  Version bump: remove unneeded requirements breaking with edge rails.
+
+*webrat-0.5.1 (23 Aug 2009)
+
+  23 Aug 2009; Hans de Graaff <graaff@gentoo.org> +webrat-0.5.1.ebuild:
+  Version bump.
+
+*webrat-0.5.0 (22 Aug 2009)
+
+  22 Aug 2009; Hans de Graaff <graaff@gentoo.org> +webrat-0.5.0.ebuild,
+  +metadata.xml:
+  Initial import from my overlay. Also reported by CS Shyam Sundar in
+  #280286.
+

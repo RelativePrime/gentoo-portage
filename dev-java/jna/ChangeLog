@@ -1,0 +1,44 @@
+# ChangeLog for dev-java/jna
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/jna/ChangeLog,v 1.8 2011/07/18 07:37:11 xarthisius Exp $
+
+  18 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> jna-3.2.4.ebuild:
+  ppc stable wrt #311105
+
+*jna-3.2.7 (25 Jan 2011)
+
+  25 Jan 2011; Miroslav Šulc <fordfrog@gentoo.org>
+  +files/3.2.7-build.xml.patch, +files/3.2.7-makefile-flags.patch,
+  +jna-3.2.7.ebuild:
+  Version bump. Switched to EAPI4, sources are now downloaded directly from
+  upstream, build.xml patches moved to patch file, also added building of
+  platform.jar.
+
+  23 May 2010; Pacho Ramos <pacho@gentoo.org> jna-3.2.4.ebuild:
+  stable amd64, bug 311105
+
+  24 Mar 2010; Christian Faulhammer <fauli@gentoo.org> jna-3.2.4.ebuild:
+  stable x86, bug 311105
+
+*jna-3.2.4 (30 Dec 2009)
+
+  30 Dec 2009; Alistair Bush <ali_bush@gentoo.org>
+  +files/3.2.4-makefile-flags.patch, +jna-3.2.4.ebuild:
+  Version Bump.
+
+  25 Oct 2009; Mounir Lamouri <volkmar@gentoo.org> jna-3.0.3-r1.ebuild:
+  Keywording for ppc, bug 270910
+
+*jna-3.0.3-r1 (03 Jun 2009)
+
+  03 Jun 2009; Vlastimil Babka <caster@gentoo.org> +jna-3.0.3-r1.ebuild,
+  +files/makefile-flags.patch:
+  Revbump to switch to virtual/libffi, bug #272054.
+
+*jna-3.0.3 (22 May 2009)
+
+  22 May 2009; Vlastimil Babka <caster@gentoo.org> +jna-3.0.3.ebuild,
+  +metadata.xml:
+  New package, jruby dependency, bug #244785. Ebuild provided by serkan and
+  chewi in java-overlay.
+

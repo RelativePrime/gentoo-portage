@@ -1,0 +1,41 @@
+# ChangeLog for sys-devel/bmake
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/bmake/ChangeLog,v 1.8 2011/06/14 08:31:35 naota Exp $
+
+*bmake-20110606 (14 Jun 2011)
+
+  14 Jun 2011; Naohiro Aota <naota@gentoo.org> +bmake-20110606.ebuild:
+  Version bump. fix bug #327399
+
+  10 Aug 2009; Alexis Ballier <aballier@gentoo.org> -bmake-20080515.ebuild:
+  remove old
+
+*bmake-20090222 (12 May 2009)
+
+  12 May 2009; Alexis Ballier <aballier@gentoo.org> +bmake-20090222.ebuild:
+  version bump
+
+  12 May 2009; Alexis Ballier <aballier@gentoo.org> -bmake-20060728.ebuild,
+  -files/bmake-makefile.patch:
+  punt old
+
+*bmake-20080515 (05 Sep 2008)
+
+  05 Sep 2008; Alexis Ballier <aballier@gentoo.org>
+  +files/bmake-20080515-makefile.patch, +files/bmake-tests.patch,
+  +bmake-20080515.ebuild:
+  version bump, dont run tests by default, add a src_test, install mk files
+  in /usr/share/mk/P to avoid collisions.
+
+  23 Oct 2006; Emanuele Giaquinta <exg@gentoo.org> bmake-20060728.ebuild:
+  Add to ~ppc.
+
+  22 Oct 2006; Diego Pettenò <flameeyes@gentoo.org> bmake-20060728.ebuild:
+  Add ~amd64 keyword.
+
+*bmake-20060728 (14 Oct 2006)
+
+  14 Oct 2006; Timothy Redaelli <drizzt@gentoo.org>
+  +files/bmake-makefile.patch, +metadata.xml, +bmake-20060728.ebuild:
+  Initial import
+

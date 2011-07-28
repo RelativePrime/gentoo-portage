@@ -1,0 +1,31 @@
+# ChangeLog for sci-mathematics/genius
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-mathematics/genius/ChangeLog,v 1.5 2011/03/07 10:41:50 jlec Exp $
+
+  07 Mar 2011; Justin Lecher <jlec@gentoo.org> genius-1.0.9.ebuild,
+  genius-1.0.11.ebuild:
+  Correct Slots for gtk 3 introduction to tree
+
+  02 Mar 2011; Justin Lecher <jlec@gentoo.org> genius-1.0.9.ebuild,
+  genius-1.0.11.ebuild:
+  Correct Slots for gtk 3 introduction to tree
+
+*genius-1.0.11 (14 Sep 2010)
+
+  14 Sep 2010; Andrey Grozin <grozin@gentoo.org> +genius-1.0.11.ebuild,
+  +files/genius-make.patch:
+  Version bump, closing bug #337066, thanks to Joe Sapp
+  <nixphoeni@gentoo.org>. Fix spacing in the Makefile, closing bug # 333871,
+  thanks to Jory A. Pratt <anarchy@gentoo.org>.
+
+  14 Sep 2010; Markos Chandras <hwoarang@gentoo.org> ChangeLog:
+  Keyworded for amd64. Bug #337063. Thanks to Joe Sapp
+  <nixphoeni@gentoo.org> for reporting
+
+*genius-1.0.9 (10 Feb 2010)
+
+  10 Feb 2010; Andrey Grozin <grozin@gentoo.org> +genius-1.0.9.ebuild,
+  +metadata.xml:
+  Initial import, thanks to Joe Sapp <nixphoeni@gentoo.org>, closing bug
+  #61143
+

@@ -1,0 +1,41 @@
+# ChangeLog for sys-apps/hwloc
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/hwloc/ChangeLog,v 1.9 2011/07/10 16:23:49 aballier Exp $
+
+  10 Jul 2011; Alexis Ballier <aballier@gentoo.org> hwloc-1.1.1-r1.ebuild:
+  keyword ~x86-fbsd, bug #372885
+
+*hwloc-1.1.1-r1 (02 Jul 2011)
+
+  02 Jul 2011; Alexey Shvetsov <alexxy@gentoo.org> +hwloc-1.1.1-r1.ebuild:
+  Enable prefix support for ~amd64-linux =D
+
+*hwloc-1.1.1 (26 Jan 2011)
+
+  26 Jan 2011; Justin Bronder <jsbronder@gentoo.org> +hwloc-1.1.1.ebuild:
+  Version bump, fix tests, push docs to correct directory
+
+  24 Jan 2011; Kacper Kowalik <xarthisius@gentoo.org> hwloc-1.0.3.ebuild:
+  Mark ~ppc64 wrt #345231
+
+  18 Jan 2011; Kacper Kowalik <xarthisius@gentoo.org> -hwloc-1.0.2.ebuild:
+  Drop old.
+
+*hwloc-1.0.3 (16 Dec 2010)
+
+  16 Dec 2010; Kacper Kowalik <xarthisius@gentoo.org> +hwloc-1.0.3.ebuild:
+  Version bump, add USE static-libs, migrate to autotools-utils.eclass
+
+  27 Nov 2010; Raúl Porcel <armin76@gentoo.org> hwloc-1.0.2.ebuild:
+  Add ~alpha/~ia64/~sparc wrt #345231
+
+  13 Nov 2010; Jeroen Roovers <jer@gentoo.org> hwloc-1.0.2.ebuild:
+  Marked ~hppa ~ppc (bug #345231).
+
+*hwloc-1.0.2 (11 Sep 2010)
+
+  11 Sep 2010; Kacper Kowalik <xarthisius@gentoo.org> +hwloc-1.0.2.ebuild,
+  +metadata.xml:
+  Initial import wrt bug 299818. Ebuild written by Ruggero Morsucci
+  <mors_1tflops@yahoo.it>
+

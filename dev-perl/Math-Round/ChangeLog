@@ -1,0 +1,28 @@
+# ChangeLog for dev-perl/Math-Round
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Math-Round/ChangeLog,v 1.7 2011/07/06 03:03:10 aballier Exp $
+
+  06 Jul 2011; Alexis Ballier <aballier@gentoo.org> Math-Round-0.06.ebuild:
+  keyword ~x86-fbsd, bug #366911
+
+  05 Jun 2011; Jeroen Roovers <jer@gentoo.org> Math-Round-0.06.ebuild:
+  Marked ~hppa (bug #366911).
+
+  05 Jun 2011; Kacper Kowalik <xarthisius@gentoo.org> Math-Round-0.06.ebuild:
+  Marked ~ppc/~ppc64 wrt #366911
+
+  29 May 2011; Fabian Groffen <grobian@gentoo.org> Math-Round-0.06.ebuild:
+  Marked ~x64-macos, bug #368549
+
+  21 May 2011; Raúl Porcel <armin76@gentoo.org> Math-Round-0.06.ebuild:
+  Add ~alpha/~arm/~ia64/~s390/~sh/~sparc wrt #366911
+
+  20 May 2011; Fabian Groffen <grobian@gentoo.org> Math-Round-0.06.ebuild:
+  Add Prefix keywords, bug #366911
+
+*Math-Round-0.06 (01 May 2010)
+
+  01 May 2010; Andrey Kislyuk <weaver@gentoo.org> +metadata.xml,
+  +Math-Round-0.06.ebuild:
+  Import from Perl overlay, dependency of sci-visualization/circos
+

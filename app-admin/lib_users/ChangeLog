@@ -1,0 +1,54 @@
+# ChangeLog for app-admin/lib_users
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/lib_users/ChangeLog,v 1.13 2011/03/14 13:26:52 klausman Exp $
+
+  14 Mar 2011; Tobias Klausmann <klausman@gentoo.org> lib_users-0.3.ebuild:
+  Add ~alpha keyword
+
+*lib_users-0.3 (08 Feb 2011)
+
+  08 Feb 2011; Tobias Klausmann <klausman@gentoo.org> +lib_users-0.3.ebuild:
+  Version bump
+
+  20 Sep 2010; Hans de Graaff <graaff@gentoo.org> lib_users-0.2.ebuild:
+  Add ~amd64 keyword. Tested on several machines and seems to work as
+  intended.
+
+  31 Jul 2010; Jeroen Roovers <jer@gentoo.org> lib_users-0.1.ebuild,
+  lib_users-0.2.ebuild:
+  Marked ~ppc too.
+
+*lib_users-0.2 (30 Jul 2010)
+
+  30 Jul 2010; Jeroen Roovers <jer@gentoo.org> lib_users-0.1.ebuild,
+  +lib_users-0.2.ebuild:
+  Version bump. Marked ~hppa too.
+
+  28 Jul 2010; Jeroen Roovers <jer@gentoo.org> lib_users-0.1.ebuild:
+  Anticipate changes to the use of the proc filesystem.
+
+  28 Jul 2010; Jeroen Roovers <jer@gentoo.org> lib_users-0.1.ebuild:
+  Set dev-lang/python-2* dependency.
+
+  28 Jul 2010; Jeroen Roovers <jer@gentoo.org> lib_users-0.1.ebuild:
+  Use dev-python/nose to run tests thanks to arfrever.
+
+  28 Jul 2010; Jeroen Roovers <jer@gentoo.org> lib_users-0.1.ebuild:
+  Hail to the python overlords (arfrever): use python.eclass to convert
+  shebangs.
+
+  28 Jul 2010; Jeroen Roovers <jer@gentoo.org> lib_users-0.1.ebuild:
+  Gah, put it in /usr/bin already, thanks to klausman.
+
+  28 Jul 2010; Jeroen Roovers <jer@gentoo.org> lib_users-0.1.ebuild:
+  Improve test phase.
+
+  28 Jul 2010; Jeroen Roovers <jer@gentoo.org> metadata.xml:
+  Add myself.
+
+*lib_users-0.1 (28 Jul 2010)
+
+  28 Jul 2010; Jeroen Roovers <jer@gentoo.org> +lib_users-0.1.ebuild,
+  +metadata.xml:
+  Initial commit.
+

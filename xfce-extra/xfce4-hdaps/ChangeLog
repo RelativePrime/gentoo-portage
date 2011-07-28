@@ -1,0 +1,31 @@
+# ChangeLog for xfce-extra/xfce4-hdaps
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/xfce-extra/xfce4-hdaps/ChangeLog,v 1.7 2011/05/20 11:21:23 tomka Exp $
+
+  20 May 2011; Thomas Kahle <tomka@gentoo.org> xfce4-hdaps-0.0.7.ebuild:
+  x86 stable per bug 342239
+
+  04 May 2011; Markos Chandras <hwoarang@gentoo.org> xfce4-hdaps-0.0.7.ebuild:
+  Stable on amd64 wrt bug #342239
+
+  24 Apr 2011; Christoph Mende <angelos@gentoo.org>
+  -xfce4-hdaps-0.0.6.ebuild:
+  Remove old
+
+*xfce4-hdaps-0.0.7 (18 Apr 2011)
+
+  18 Apr 2011; Christoph Mende <angelos@gentoo.org> +xfce4-hdaps-0.0.7.ebuild:
+  Version bump
+
+*xfce4-hdaps-0.0.6 (25 Mar 2010)
+
+  25 Mar 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +xfce4-hdaps-0.0.6.ebuild:
+  Version bump wrt #311335 by Michael Orlitzky.
+
+*xfce4-hdaps-0.0.5 (24 Mar 2010)
+
+  24 Mar 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +xfce4-hdaps-0.0.5.ebuild:
+  Initial commit wrt #311145 by Michael Orlitzky.
+

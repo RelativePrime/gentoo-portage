@@ -1,0 +1,31 @@
+# ChangeLog for app-text/kiwix
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/kiwix/ChangeLog,v 1.4 2011/07/23 17:29:24 chithanh Exp $
+
+*kiwix-0.9_beta1 (23 Jul 2011)
+
+  23 Jul 2011; Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org>
+  +kiwix-0.9_beta1.ebuild:
+  Version bump.
+
+*kiwix-0.9_alpha7 (12 Dec 2010)
+
+  12 Dec 2010; Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org>
+  -kiwix-0.9_alpha6.ebuild, +kiwix-0.9_alpha7.ebuild,
+  +files/kiwix-0.9-custom-flags.patch:
+  New prerelease. Allow custom LDFLAGS, bug #339869
+
+*kiwix-0.9_alpha6 (02 Sep 2010)
+
+  02 Sep 2010; Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org>
+  -kiwix-0.9_alpha5.ebuild, +kiwix-0.9_alpha6.ebuild,
+  -files/kiwix-0.9-custom-build-flags.patch:
+  New prerelease.
+
+*kiwix-0.9_alpha5 (14 Aug 2010)
+
+  14 Aug 2010; Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org>
+  +kiwix-0.9_alpha5.ebuild, +files/kiwix-0.9-custom-build-flags.patch,
+  +files/kiwix-0.9-find-xulrunner.patch, +metadata.xml:
+  New ebuild by me.
+

@@ -1,0 +1,26 @@
+# ChangeLog for app-laptop/nvidiabl
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-laptop/nvidiabl/ChangeLog,v 1.5 2011/07/19 18:36:33 angelos Exp $
+
+*nvidiabl-0.70 (19 Jul 2011)
+
+  19 Jul 2011; Christoph Mende <angelos@gentoo.org> +nvidiabl-0.70.ebuild:
+  Version bump
+
+  30 Apr 2011; Christoph Mende <angelos@gentoo.org> -nvidiabl-0.67.ebuild:
+  Remove old
+
+*nvidiabl-0.69 (14 Apr 2011)
+
+  14 Apr 2011; Christoph Mende <angelos@gentoo.org> +nvidiabl-0.69.ebuild:
+  Version bump
+
+  18 Mar 2011; Christoph Mende <angelos@gentoo.org> nvidiabl-0.67.ebuild:
+  Added check for FB_BACKLIGHT
+
+*nvidiabl-0.67 (17 Mar 2011)
+
+  17 Mar 2011; Christoph Mende <angelos@gentoo.org> +nvidiabl-0.67.ebuild,
+  +metadata.xml:
+  Initial import
+

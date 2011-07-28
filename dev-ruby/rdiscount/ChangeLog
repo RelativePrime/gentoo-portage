@@ -1,0 +1,21 @@
+# ChangeLog for dev-ruby/rdiscount
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rdiscount/ChangeLog,v 1.4 2011/07/24 09:30:49 xarthisius Exp $
+
+  24 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> rdiscount-1.6.8.ebuild:
+  Marked ~ppc/~ppc64 wrt #351835
+
+  02 Jun 2011; Markus Meier <maekke@gentoo.org> rdiscount-1.6.8.ebuild:
+  add ~x86, bug #368983
+
+*rdiscount-1.6.8 (28 Jan 2011)
+
+  28 Jan 2011; Hans de Graaff <graaff@gentoo.org> +rdiscount-1.6.8.ebuild:
+  Version bump.
+
+*rdiscount-1.6.5 (14 Sep 2010)
+
+  14 Sep 2010; Hans de Graaff <graaff@gentoo.org> +rdiscount-1.6.5.ebuild,
+  +metadata.xml:
+  Initial import. Dependency of app-text/ronn.
+

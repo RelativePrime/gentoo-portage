@@ -1,0 +1,27 @@
+# ChangeLog for app-i18n/libguess
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-i18n/libguess/ChangeLog,v 1.7 2011/07/11 18:50:36 aballier Exp $
+
+  11 Jul 2011; Alexis Ballier <aballier@gentoo.org> libguess-1.0.ebuild:
+  keyword ~x86-fbsd, bug #348192
+
+  20 Mar 2011; Raúl Porcel <armin76@gentoo.org> libguess-1.0.ebuild:
+  Add ~sparc wrt #348192
+
+  07 Mar 2011; Tobias Klausmann <klausman@gentoo.org> libguess-1.0.ebuild:
+  Keyworded on alpha, bug #348192
+
+  29 Jan 2011; Jonathan Callen <abcd@gentoo.org> libguess-1.0.ebuild:
+  Keyword ~x86/~amd64-linux/~x86-linux libguess-1.0.ebuild
+
+  13 Jan 2011; Jeroen Roovers <jer@gentoo.org> libguess-1.0.ebuild:
+  Marked ~hppa (bug #348192).
+
+  12 Jan 2011; Kacper Kowalik <xarthisius@gentoo.org> libguess-1.0.ebuild:
+  keyword ~ppc,~ppc64 wrt #348192
+
+*libguess-1.0 (13 Aug 2010)
+
+  13 Aug 2010; <chainsaw@gentoo.org> +libguess-1.0.ebuild, +metadata.xml:
+  Initial submission. Ebuild by Michał Lipski.
+

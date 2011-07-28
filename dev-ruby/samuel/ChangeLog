@@ -1,0 +1,38 @@
+# ChangeLog for dev-ruby/samuel
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/samuel/ChangeLog,v 1.9 2011/07/24 09:37:07 xarthisius Exp $
+
+  24 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> samuel-0.3.2.ebuild:
+  Marked ~ppc64 wrt #351835
+
+  31 Aug 2010; Alex Legler <a3li@gentoo.org> samuel-0.3.2.ebuild:
+  Add REE 1.8 support.
+
+  16 Aug 2010; Diego E. Pettenò <flameeyes@gentoo.org> samuel-0.3.2.ebuild:
+  Block test-unit:2 for testing.
+
+  28 May 2010; Joseph Jezak <josejx@gentoo.org> samuel-0.3.2.ebuild:
+  Marked ~ppc.
+
+  12 Feb 2010; Diego E. Pettenò <flameeyes@gentoo.org> samuel-0.3.2.ebuild:
+  Add ~x86 keyword (tested in development container).
+
+  11 Feb 2010; Diego E. Pettenò <flameeyes@gentoo.org> samuel-0.3.2.ebuild:
+  Add missing test dependency over httpclient.
+
+  14 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org> samuel-0.3.2.ebuild:
+  Enable jruby support.
+
+*samuel-0.3.2 (13 Jan 2010)
+
+  13 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  -samuel-0.3.1.ebuild, -files/samuel-0.3.1-ruby19.patch,
+  +samuel-0.3.2.ebuild:
+  Version bump, drop patch as the new version already contain the fix.
+
+*samuel-0.3.1 (12 Jan 2010)
+
+  12 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  +samuel-0.3.1.ebuild, +files/samuel-0.3.1-ruby19.patch, +metadata.xml:
+  Initial import of samuel needed to de-bundle fakeweb.
+

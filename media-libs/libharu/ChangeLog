@@ -1,0 +1,22 @@
+# ChangeLog for media-libs/libharu
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libharu/ChangeLog,v 1.4 2011/07/10 15:49:38 jlec Exp $
+
+  10 Jul 2011; Justin Lecher <jlec@gentoo.org> libharu-2.1.0.ebuild,
+  libharu-2.2.1.ebuild, +files/libharu-2.2.1-libpng-1.5.patch, metadata.xml:
+  Adding upstream fix for building against libpng-1.5, EAPI=4 bump
+
+*libharu-2.2.1 (30 Nov 2010)
+
+  30 Nov 2010; Sébastien Fabbro <bicatali@gentoo.org> +libharu-2.2.1.ebuild:
+  Version bump
+
+*libharu-2.1.0 (21 Oct 2008)
+
+  25 Oct 2008; Pieter Van den Abeele <pvdabeel@gentoo.org> libharu-2.1.0.ebuild:
+  Keyworded ~ppc. Closes bug #243480
+
+  21 Oct 2008; Sébastien Fabbro <bicatali@gentoo.org> +metadata.xml,
+  +libharu-2.1.0.ebuild:
+  Initial import. Thanks rajkrish (bug #140840) for his work.
+

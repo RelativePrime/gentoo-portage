@@ -1,0 +1,48 @@
+# ChangeLog for dev-ruby/rubigen
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rubigen/ChangeLog,v 1.10 2011/02/14 19:43:38 graaff Exp $
+
+*rubigen-1.5.6 (14 Feb 2011)
+
+  14 Feb 2011; Hans de Graaff <graaff@gentoo.org> +rubigen-1.5.6.ebuild:
+  Version bump. Add ree18.
+
+  30 Sep 2010; Brent Baude <ranger@gentoo.org> rubigen-1.5.5.ebuild:
+  Marking rubigen-1.5.5 ~ppc64 for bug 306909
+
+  16 Aug 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  rubigen-1.5.5.ebuild:
+  Block test-unit:2 for testing.
+
+  13 Aug 2010; Hans de Graaff <graaff@gentoo.org> -rubigen-1.5.2.ebuild,
+  -rubigen-1.5.4.ebuild:
+  Remove old versions.
+
+*rubigen-1.5.5 (26 May 2010)
+
+  26 May 2010; Hans de Graaff <graaff@gentoo.org> +rubigen-1.5.5.ebuild:
+  Version bump. Update dependencies accordingly.
+
+  22 May 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  rubigen-1.5.4.ebuild:
+  Update syntax for the new eclass changes, add a dependency on itself or
+  tests (bug #320781).
+
+*rubigen-1.5.4 (26 Feb 2010)
+
+  26 Feb 2010; Hans de Graaff <graaff@gentoo.org> +rubigen-1.5.4.ebuild:
+  Version bump. Convert to ruby-fakegem. Drop ppc64 keyword due to new
+  dev-ruby/shoulda dependency: bug 306909.
+
+  06 Jan 2010; Brent Baude <ranger@gentoo.org> rubigen-1.5.2.ebuild:
+  Marking rubigen-1.5.2 ~ppc64 for bug 276701
+
+  08 Jul 2009; Christian Faulhammer <fauli@gentoo.org> rubigen-1.5.2.ebuild:
+  keyworded ~arch for x86, bug 276701
+
+*rubigen-1.5.2 (05 Jul 2009)
+
+  05 Jul 2009; Hans de Graaff <graaff@gentoo.org> +rubigen-1.5.2.ebuild,
+  +metadata.xml:
+  Initial import. New dependency of dev-ruby/adhearsion.
+

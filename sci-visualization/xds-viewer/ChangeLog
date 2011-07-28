@@ -1,0 +1,26 @@
+# ChangeLog for sci-visualization/xds-viewer
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-visualization/xds-viewer/ChangeLog,v 1.2 2011/06/15 09:11:26 jlec Exp $
+
+  15 Jun 2011; Justin Lecher <jlec@gentoo.org> xds-viewer-0.6.ebuild:
+  Fix broken dependency assignment, #371585
+
+  31 Jan 2010; Justin Lecher (jlec) <jlec@gentoo.org>
+  +xds-viewer-0.6.ebuild, +metadata.xml:
+  moved to EAPI="2"
+  removed stupid PDEPEND
+
+  11 Mar 2009; Justin Lecher (jlec) <jlec@gentoo.org>
+  xds-viewer-0.6.ebuild:
+  make use of new DOC_HTML from cmake-utils.eclass
+
+*xds-viewer-0.6 (08 Mar 2009)
+
+  08 Mar 2009; justin Lecher (jlec) <jlec@gentoo.org>
+  +xds-viewer-0.6.ebuild:
+  version bump to 0.6
+
+  25 Feb 2009; justin Lecher (jlec) <jlec@gentoo.org>
+  +sci-visualization/xds-viewer/metadata.xml:
+  initial checkin
+

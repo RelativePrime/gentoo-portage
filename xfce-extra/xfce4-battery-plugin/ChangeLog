@@ -1,0 +1,53 @@
+# ChangeLog for xfce-extra/xfce4-battery-plugin
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/xfce-extra/xfce4-battery-plugin/ChangeLog,v 1.10 2011/05/05 11:06:01 phajdan.jr Exp $
+
+  05 May 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  xfce4-battery-plugin-1.0.0-r1.ebuild:
+  x86 stable wrt bug #363767
+
+  01 May 2011; Kacper Kowalik <xarthisius@gentoo.org>
+  xfce4-battery-plugin-1.0.0-r1.ebuild:
+  ppc stable wrt #363767
+
+  16 Apr 2011; Christoph Mende <angelos@gentoo.org>
+  xfce4-battery-plugin-1.0.0-r1.ebuild:
+  Stable on amd64 wrt bug #363767
+
+  22 Mar 2011; Kacper Kowalik <xarthisius@gentoo.org>
+  xfce4-battery-plugin-1.0.0.ebuild:
+  ppc stable wrt #358407
+
+  22 Mar 2011; Thomas Kahle <tomka@gentoo.org>
+  xfce4-battery-plugin-1.0.0.ebuild:
+  x86 stable per bug 358407
+
+  21 Mar 2011; Markus Meier <maekke@gentoo.org>
+  xfce4-battery-plugin-1.0.0.ebuild:
+  arm stable, bug #358407
+
+*xfce4-battery-plugin-1.0.0-r1 (20 Mar 2011)
+
+  20 Mar 2011; Samuli Suominen <ssuominen@gentoo.org>
+  +xfce4-battery-plugin-1.0.0-r1.ebuild,
+  +files/xfce4-battery-plugin-1.0.0-sysfs.patch:
+  Upstream patch for getting temperature from sysfs wrt #356385 by Pavel Goran.
+
+  13 Mar 2011; Markos Chandras <hwoarang@gentoo.org>
+  xfce4-battery-plugin-1.0.0.ebuild:
+  Stable on amd64 wrt bug #358407
+
+*xfce4-battery-plugin-1.0.0 (03 Jan 2011)
+
+  03 Jan 2011; Samuli Suominen <ssuominen@gentoo.org>
+  +xfce4-battery-plugin-1.0.0.ebuild:
+  Version bump.
+
+*xfce4-battery-plugin-0.5.1 (25 Aug 2009)
+
+  25 Aug 2009; Samuli Suominen <ssuominen@gentoo.org>
+  +xfce4-battery-plugin-0.5.1.ebuild, +files/0.5.1-2.6.24-headers.patch,
+  +files/0.5.1-freebsd.patch, +files/0.5.1-libacpi.patch,
+  +files/0.5.1-sysfs.patch:
+  Rename xfce4-battery to xfce4-battery-plugin.
+

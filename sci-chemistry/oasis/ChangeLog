@@ -1,0 +1,50 @@
+# ChangeLog for sci-chemistry/oasis
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/oasis/ChangeLog,v 1.13 2011/07/21 19:17:24 jlec Exp $
+
+  21 Jul 2011; Justin Lecher <jlec@gentoo.org> oasis-4.0-r2.ebuild,
+  metadata.xml:
+  Some cleanup
+
+  21 Jun 2011; Justin Lecher <jlec@gentoo.org> oasis-4.0-r2.ebuild:
+  Add dependency on virtual/fortran
+
+  21 Jun 2011; Justin Lecher <jlec@gentoo.org> oasis-4.0-r2.ebuild:
+  Added fortran-2.eclass support
+
+  16 Jan 2011; Kacper Kowalik <xarthisius@gentoo.org> oasis-4.0-r2.ebuild:
+  marked ~ppc wrt #303931
+
+  16 Dec 2010; Justin Lecher <jlec@gentoo.org> oasis-4.0-r2.ebuild:
+  Removal of fortran.eclass, #348851
+
+  06 Jul 2010; Justin Lecher <jlec@gentoo.org> oasis-4.0-r2.ebuild:
+  Fix installation problems
+
+*oasis-4.0-r2 (06 Jul 2010)
+
+  06 Jul 2010; Justin Lecher <jlec@gentoo.org> -oasis-4.0.ebuild,
+  -oasis-4.0-r1.ebuild, +oasis-4.0-r2.ebuild:
+  Use FFLAGS instead of CFLAGS for compilation, Xarthisius on irc
+
+  15 Jun 2010; Justin Lecher <jlec@gentoo.org> oasis-4.0-r1.ebuild:
+  Installing html at correct place
+
+*oasis-4.0-r1 (22 May 2010)
+
+  22 May 2010; Justin Lecher <jlec@gentoo.org> +oasis-4.0-r1.ebuild:
+  Fixes for bug 314053
+
+  05 Apr 2010; Justin Lecher <jlec@gentoo.org> oasis-4.0.ebuild:
+  Keyworded for ~x86-linux ~amd64-linux, tested by me
+
+  24 Feb 2010; Justin Lecher <jlec@gentoo.org> oasis-4.0.ebuild:
+  fperms -> chmod to use bash globs, fixes 306061
+  removed circular dependencies
+
+*oasis-4.0 (06 Feb 2010)
+
+  06 Feb 2010; Justin Lecher <jlec@gentoo.org>
+  +files/4.0-makefile.patch, +oasis-4.0.ebuild, +metadata.xml:
+  updated version for oasis from ccp4
+

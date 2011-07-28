@@ -1,0 +1,33 @@
+# ChangeLog for dev-perl/Devel-GlobalDestruction
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Devel-GlobalDestruction/ChangeLog,v 1.6 2011/07/06 13:38:18 tove Exp $
+
+*Devel-GlobalDestruction-0.40.0 (06 Jul 2011)
+
+  06 Jul 2011; Torsten Veller <tove@gentoo.org>
+  +Devel-GlobalDestruction-0.40.0.ebuild:
+  Version bump
+
+*Devel-GlobalDestruction-0.30 (12 Jan 2011)
+
+  12 Jan 2011; Torsten Veller <tove@gentoo.org>
+  +Devel-GlobalDestruction-0.30.ebuild:
+  Version bump
+
+  27 Jun 2010; <nixnut@gentoo.org> Devel-GlobalDestruction-0.02.ebuild:
+  ppc stable #323529
+
+  02 Dec 2009; Torsten Veller <tove@gentoo.org>
+  Devel-GlobalDestruction-0.02.ebuild:
+  Stable on amd64 and x86 (#293622)
+
+  26 Oct 2009; Mounir Lamouri <volkmar@gentoo.org>
+  Devel-GlobalDestruction-0.02.ebuild:
+  Keywording for ppc, bug 283244
+
+*Devel-GlobalDestruction-0.02 (14 Jan 2009)
+
+  14 Jan 2009; Torsten Veller <tove@gentoo.org> +metadata.xml,
+  +Devel-GlobalDestruction-0.02.ebuild:
+  Initial commit. From the perl overlay
+

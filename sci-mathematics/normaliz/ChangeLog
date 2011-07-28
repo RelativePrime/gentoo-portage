@@ -1,0 +1,28 @@
+# ChangeLog for sci-mathematics/normaliz
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-mathematics/normaliz/ChangeLog,v 1.5 2011/07/08 11:22:05 tomka Exp $
+
+*normaliz-2.7 (08 Jul 2011)
+
+  08 Jul 2011; Thomas Kahle <tomka@gentoo.org> +normaliz-2.7.ebuild,
+  +files/normaliz-2.7-respect-flags.patch:
+  Bump to 2.7
+
+  20 Dec 2010; Markos Chandras <hwoarang@gentoo.org> normaliz-2.5-r1.ebuild:
+  Stable on amd64 wrt bug #348318
+
+  12 Dec 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  normaliz-2.5-r1.ebuild:
+  x86 stable wrt bug #348318
+
+  04 Nov 2010; Thomas Kahle <tomka@gentoo.org> normaliz-2.5-r1.ebuild,
+  -files/normaliz-2.5-makefile.patch,
+  +files/normaliz-2.5-respect-flags.patch, metadata.xml:
+  Improved metadata.xml and naming of patch
+
+*normaliz-2.5-r1 (03 Nov 2010)
+
+  03 Nov 2010; Thomas Kahle <tomka@gentoo.org> +normaliz-2.5-r1.ebuild,
+  +files/normaliz-2.5-makefile.patch, +metadata.xml:
+  Initial import of normaliz from science overlay
+

@@ -1,0 +1,23 @@
+# Copyright 1999-2010 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/powerpc/ppc64/64ul/package.use.mask,v 1.12 2011/07/06 21:10:15 halcy0n Exp $
+
+# Mark Loeser <halcy0n@gentoo.org> (06 Jul 2011)
+# masking aac and amr as they require further keywording
+media-video/ffmpeg aac amr frei0r
+
+# Brent Baude <ranger@gentoo.org> (06 Jan 2010)
+# masking toolame for mplayer bug 280281
+media-video/mplayer toolame
+
+# Brent Baude <ranger@gentoo.org> (31 Dec 2009)
+# Masking for bug 274847
+app-admin/conky apcupsd
+
+# Brent Baude <ranger@gentoo.org> (6  Feb 2009)
+# Masking solver/ocaml USE from kalzium to fix tree borkage
+kde-base/kalzium solver
+
+# Brent Baude <ranger@gentoo.org> (28 January 2009)
+# Masking zemberek for enchant
+app-text/enchant zemberek

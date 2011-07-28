@@ -1,0 +1,72 @@
+# ChangeLog for app-text/zathura
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/zathura/ChangeLog,v 1.17 2011/05/26 14:32:53 xmw Exp $
+
+  26 May 2011; Michael Weber <xmw@gentoo.org> zathura-0.0.8.3.ebuild:
+  added ~arm keyword (bug 368757)
+
+*zathura-0.0.8.3 (02 May 2011)
+
+  02 May 2011; Samuli Suominen <ssuominen@gentoo.org> +zathura-0.0.8.3.ebuild:
+  Version bump wrt #363373 by Hans-Peter Deifel and Arseny Solokha
+
+  30 Dec 2010; Alex Alexander <wired@gentoo.org> zathura-0.0.8.2.ebuild,
+  +files/zathura-poppler-0.16.patch:
+  added patch for poppler-0.16, bug #349941
+
+  30 Dec 2010; Alex Alexander <wired@gentoo.org> zathura-0.0.7.ebuild,
+  zathura-0.0.8.ebuild, zathura-0.0.8.1.ebuild, zathura-0.0.8.2.ebuild:
+  restricted poppler dep, 0.16 not supported yet, bug #349941
+
+*zathura-0.0.8.2 (22 Nov 2010)
+
+  22 Nov 2010; Alex Alexander <wired@gentoo.org> +zathura-0.0.8.2.ebuild:
+  version bump
+
+  25 Oct 2010; Christian Faulhammer <fauli@gentoo.org>
+  zathura-0.0.8.1.ebuild:
+  stable x86, bug 341777
+
+  20 Oct 2010; Markos Chandras <hwoarang@gentoo.org> zathura-0.0.8.1.ebuild:
+  Stable on amd64 wrt bug #341777
+
+*zathura-0.0.8.1 (06 Aug 2010)
+
+  06 Aug 2010; Alex Alexander <wired@gentoo.org> +zathura-0.0.8.1.ebuild:
+  version bump, bug #331425
+
+  31 Jul 2010; Markos Chandras <hwoarang@gentoo.org> zathura-0.0.7.ebuild:
+  Stable on amd64 wrt bug #330383
+
+  30 Jul 2010; Christian Faulhammer <fauli@gentoo.org> zathura-0.0.7.ebuild:
+  stable x86, bug 330383
+
+  29 Jul 2010; Alex Alexander <wired@gentoo.org> metadata.xml:
+  grabbed this ;)
+
+*zathura-0.0.8 (29 Jul 2010)
+
+  29 Jul 2010; Samuli Suominen <ssuominen@gentoo.org> +zathura-0.0.8.ebuild:
+  Version bump.
+
+*zathura-0.0.7 (21 Jun 2010)
+
+  21 Jun 2010; Samuli Suominen <ssuominen@gentoo.org> +zathura-0.0.7.ebuild:
+  Version bump.
+
+*zathura-0.0.6 (09 Jun 2010)
+
+  09 Jun 2010; Samuli Suominen <ssuominen@gentoo.org> +zathura-0.0.6.ebuild:
+  Version bump wrt #323261 by Nick White.
+
+*zathura-0.0.3 (17 Apr 2010)
+
+  17 Apr 2010; Samuli Suominen <ssuominen@gentoo.org> +zathura-0.0.3.ebuild:
+  Version bump.
+
+*zathura-0.0.2 (05 Mar 2010)
+
+  05 Mar 2010; Samuli Suominen <ssuominen@gentoo.org> +zathura-0.0.2.ebuild,
+  +files/zathura-0.0.2-build.patch:
+  Initial commit.
+

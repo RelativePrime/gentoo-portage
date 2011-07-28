@@ -1,0 +1,29 @@
+# ChangeLog for dev-ruby/radius
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/radius/ChangeLog,v 1.6 2011/02/16 07:12:39 graaff Exp $
+
+  16 Feb 2011; Hans de Graaff <graaff@gentoo.org> radius-0.6.1-r1.ebuild:
+  Add missing dependency on rubigen. Add ree18.
+
+  13 Aug 2010; Hans de Graaff <graaff@gentoo.org> -radius-0.6.1.ebuild:
+  Remove old version.
+
+*radius-0.6.1-r1 (01 Jun 2010)
+
+  01 Jun 2010; Hans de Graaff <graaff@gentoo.org> +radius-0.6.1-r1.ebuild:
+  Convert to ruby-fakegem.
+
+  09 Dec 2009; Hans de Graaff <graaff@gentoo.org> -radius-0.5.1.ebuild:
+  Remove old version.
+
+*radius-0.6.1 (03 Oct 2009)
+
+  03 Oct 2009; Alex Legler <a3li@gentoo.org> +radius-0.6.1.ebuild:
+  Version bump
+
+*radius-0.5.1 (04 Feb 2007)
+
+  04 Feb 2007; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org> +metadata.xml,
+  +radius-0.5.1.ebuild:
+  Initial ebuild by Hans de Graaff <graaff@gentoo.org>, #147670
+

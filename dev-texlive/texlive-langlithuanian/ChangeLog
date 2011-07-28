@@ -1,0 +1,52 @@
+# ChangeLog for dev-texlive/texlive-langlithuanian
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-texlive/texlive-langlithuanian/ChangeLog,v 1.11 2010/10/24 18:11:56 aballier Exp $
+
+*texlive-langlithuanian-2010 (24 Oct 2010)
+
+  24 Oct 2010; Alexis Ballier <aballier@gentoo.org>
+  +texlive-langlithuanian-2010.ebuild:
+  Bump to TeX Live 2010
+
+  01 Jun 2010; Joseph Jezak <josejx@gentoo.org>
+  texlive-langlithuanian-2009.ebuild:
+  Marked ~ppc for bug #300526.
+
+  13 May 2010; Raúl Porcel <armin76@gentoo.org>
+  texlive-langlithuanian-2009.ebuild:
+  Add ~sparc wrt #300526
+
+  12 May 2010; Brent Baude <ranger@gentoo.org>
+  texlive-langlithuanian-2009.ebuild:
+  Marking texlive-langlithuanian-2009 ~ppc64 for bug 300526
+
+  10 May 2010; Markus Meier <maekke@gentoo.org>
+  texlive-langlithuanian-2009.ebuild:
+  add ~arm, bug #300526
+
+  13 Feb 2010; Raúl Porcel <armin76@gentoo.org>
+  texlive-langlithuanian-2009.ebuild:
+  Add ~sh wrt #300526
+
+  13 Feb 2010; Raúl Porcel <armin76@gentoo.org>
+  texlive-langlithuanian-2009.ebuild:
+  Add ~alpha/~ia64 wrt #300526
+
+  02 Feb 2010; Jonathan Callen <abcd@gentoo.org>
+  texlive-langlithuanian-2009.ebuild:
+  Add ~amd64-linux/~x86-linux keywords
+
+  27 Jan 2010; Jeroen Roovers <jer@gentoo.org>
+  texlive-langlithuanian-2009.ebuild:
+  Marked ~hppa too.
+
+  11 Jan 2010; Christian Faulhammer <fauli@gentoo.org>
+  texlive-langlithuanian-2009.ebuild:
+  ~x86 added, bug 300526
+
+*texlive-langlithuanian-2009 (11 Jan 2010)
+
+  11 Jan 2010; Alexis Ballier <aballier@gentoo.org>
+  +texlive-langlithuanian-2009.ebuild, +metadata.xml:
+  Bump to TeX Live 2009
+

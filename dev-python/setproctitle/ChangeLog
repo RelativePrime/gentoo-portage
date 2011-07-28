@@ -1,0 +1,54 @@
+# ChangeLog for dev-python/setproctitle
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/setproctitle/ChangeLog,v 1.10 2011/04/10 06:48:14 phajdan.jr Exp $
+
+  10 Apr 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  setproctitle-1.1.2.ebuild:
+  x86 stable wrt bug #360259
+
+  26 Mar 2011; Christoph Mende <angelos@gentoo.org> setproctitle-1.1.2.ebuild:
+  Stable on amd64 wrt bug #360259
+
+*setproctitle-1.1.2 (26 Mar 2011)
+
+  26 Mar 2011; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +setproctitle-1.1.2.ebuild:
+  Version bump.
+
+  24 Mar 2011; Markos Chandras <hwoarang@gentoo.org> setproctitle-1.1.1.ebuild:
+  Stable on amd64 wrt bug #360203
+
+*setproctitle-1.1.1 (03 Feb 2011)
+
+  03 Feb 2011; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -setproctitle-1.1.ebuild, +setproctitle-1.1.1.ebuild:
+  Version bump.
+
+  18 Dec 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  setproctitle-1.1.ebuild:
+  Restrict Jython ABIs.
+
+*setproctitle-1.1 (19 Jul 2010)
+
+  19 Jul 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -setproctitle-1.0.1.ebuild, +setproctitle-1.1.ebuild:
+  Version bump (bug #327919).
+
+*setproctitle-1.0.1 (05 Jun 2010)
+
+  05 Jun 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -setproctitle-1.0.ebuild, +setproctitle-1.0.1.ebuild:
+  Version bump.
+
+*setproctitle-1.0 (21 Feb 2010)
+
+  21 Feb 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +setproctitle-1.0.ebuild:
+  Version bump.
+
+*setproctitle-0.4 (20 Dec 2009)
+
+  20 Dec 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +setproctitle-0.4.ebuild, +metadata.xml:
+  Initial addition (bug #297288).
+

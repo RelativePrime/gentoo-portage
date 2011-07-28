@@ -1,0 +1,21 @@
+# ChangeLog for games-strategy/defcon-demo
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-strategy/defcon-demo/ChangeLog,v 1.4 2010/04/06 12:59:20 nyhm Exp $
+
+  06 Apr 2010; Tristan Heaven <nyhm@gentoo.org> defcon-demo-1.42.ebuild:
+  RESTRICT=mirror
+
+  20 Jan 2010; Michael Sterrett <mr_bones_@gentoo.org>
+  defcon-demo-1.42.ebuild:
+  fix up LICENSE (bug #301184)
+
+  08 Dec 2008; Jeremy Olexa <darkside@gentoo.org> defcon-demo-1.42.ebuild:
+  add ~amd64 kw, bug #237398
+
+*defcon-demo-1.42 (10 Sep 2008)
+
+  10 Sep 2008; Michael Sterrett <mr_bones_@gentoo.org> +files/defcon,
+  +metadata.xml, +defcon-demo-1.42.ebuild:
+  initial commit.  Heavily modified ebuild, originally submitted by Paul
+  Bredbury via bug #168940
+

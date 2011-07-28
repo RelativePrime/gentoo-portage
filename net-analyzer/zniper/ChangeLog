@@ -1,0 +1,19 @@
+# ChangeLog for net-analyzer/zniper
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/zniper/ChangeLog,v 1.3 2010/09/17 03:53:49 jer Exp $
+
+*zniper-1.0-r1 (17 Sep 2010)
+
+  17 Sep 2010; Jeroen Roovers <jer@gentoo.org> -zniper-1.0.ebuild,
+  +zniper-1.0-r1.ebuild:
+  Set RDEPEND. Respect LDFLAGS (bug #337738), CC, CFLAGS. Fix parallel make.
+
+  29 Oct 2007; Markus Ullmann <jokey@gentoo.org> metadata.xml:
+  developed to end, reassigning to herd
+
+*zniper-1.0 (07 Apr 2007)
+
+  07 Apr 2007; Markus Ullmann <jokey@gentoo.org> +metadata.xml,
+  +zniper-1.0.ebuild:
+  Initial import for bug #173421 thanks to coolmarc@gmail.com for the ebuild
+

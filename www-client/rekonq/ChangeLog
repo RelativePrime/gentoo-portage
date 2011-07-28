@@ -1,0 +1,132 @@
+# ChangeLog for www-client/rekonq
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-client/rekonq/ChangeLog,v 1.28 2011/05/09 23:16:00 hwoarang Exp $
+
+  09 May 2011; Markos Chandras <hwoarang@gentoo.org> rekonq-0.7.0.ebuild:
+  Stable on amd64 wrt bug #354033
+
+  09 May 2011; Thomas Kahle <tomka@gentoo.org> rekonq-0.7.0.ebuild:
+  x86 stable per bug 354033
+
+  26 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -files/rekonq-0.5.0-cve-2010-2536.patch, -rekonq-0.6.1.ebuild,
+  -files/rekonq-0.6.1-cve-2010-2536.patch, -files/rekonq-0.6.1-tests.patch:
+  old
+
+*rekonq-0.7.0 (03 Apr 2011)
+
+  03 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org> -rekonq-0.6.95.ebuild,
+  +rekonq-0.7.0.ebuild:
+  Version bump to latest.
+
+  21 Mar 2011; Tomáš Chvátal <scarabeus@gentoo.org> rekonq-0.6.95.ebuild:
+  Bump eapi.
+
+  21 Mar 2011; Tomáš Chvátal <scarabeus@gentoo.org> rekonq-0.6.95.ebuild:
+  Require virtualx for tests.
+
+*rekonq-0.6.95 (21 Mar 2011)
+
+  21 Mar 2011; Tomáš Chvátal <scarabeus@gentoo.org> -rekonq-0.6.85.ebuild,
+  +rekonq-0.6.95.ebuild:
+  Version bump. Drop older.
+
+  10 Mar 2011; <angelos@gentoo.org> rekonq-0.6.1.ebuild:
+  QA: Fixed VIRTUALX_REQUIRED
+
+  10 Mar 2011; <angelos@gentoo.org> rekonq-0.6.1.ebuild:
+  QA: Removed unneeded VIRTUALX_REQUIRED
+
+  28 Feb 2011; Tomáš Chvátal <scarabeus@gentoo.org> rekonq-0.6.1.ebuild,
+  rekonq-0.6.85.ebuild:
+  Update homepage
+
+*rekonq-0.6.85 (28 Feb 2011)
+
+  28 Feb 2011; Tomáš Chvátal <scarabeus@gentoo.org> -rekonq-0.6.80.ebuild,
+  +rekonq-0.6.85.ebuild:
+  Version bump, drop older.
+
+  13 Feb 2011; Tomáš Chvátal <scarabeus@gentoo.org> -rekonq-0.5.0-r1.ebuild,
+  rekonq-0.6.80.ebuild:
+  Drop older. Add keywords
+
+*rekonq-0.6.80 (10 Feb 2011)
+
+  10 Feb 2011; Tomáš Chvátal <scarabeus@gentoo.org> +rekonq-0.6.80.ebuild:
+  Add newest alpha release.
+
+  14 Jan 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  rekonq-0.6.1.ebuild, +files/rekonq-0.6.1-tests.patch:
+  Fix 10 of 13 tests
+
+*rekonq-0.6.1 (07 Nov 2010)
+
+  07 Nov 2010; <tampakrap@gentoo.org> -rekonq-0.5.0.ebuild,
+  +rekonq-0.6.1.ebuild, +files/rekonq-0.6.1-cve-2010-2536.patch:
+  Version bump, remove old
+
+  12 Oct 2010; Theo Chatzimichos <tampakrap@gentoo.org>
+  rekonq-0.5.0-r1.ebuild:
+  Correct KDE_LINGUAS_DIR
+
+*rekonq-0.5.0-r1 (12 Oct 2010)
+
+  12 Oct 2010; Theo Chatzimichos <tampakrap@gentoo.org>
+  +rekonq-0.5.0-r1.ebuild, +files/rekonq-0.5.0-cve-2010-2536.patch:
+  Revision bump, add patch for CVE-2010-2536, and small cleanup: EAPI3,
+  merge with live ebuild
+
+  09 Aug 2010; Maciej Mrozowski <reavertm@gentoo.org> rekonq-0.5.0.ebuild:
+  Remove unnecessary KDE_MINIMAL, QA
+
+  18 Jul 2010; Tomáš Chvátal <scarabeus@gentoo.org> -rekonq-0.4.0.ebuild,
+  rekonq-0.5.0.ebuild:
+  Remove old. Restrict test per bug #295869.
+
+*rekonq-0.5.0 (06 Jul 2010)
+
+  06 Jul 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  -rekonq-0.4.95.ebuild, +rekonq-0.5.0.ebuild:
+  Version bump.
+
+*rekonq-0.4.95 (09 Jun 2010)
+
+  09 Jun 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  -rekonq-0.4.90.ebuild, +rekonq-0.4.95.ebuild:
+  Version bump to beta2.
+
+  26 May 2010; Tomáš Chvátal <scarabeus@gentoo.org> rekonq-0.4.90.ebuild:
+  No docs dir in beta.
+
+*rekonq-0.4.90 (26 May 2010)
+
+  26 May 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  +rekonq-0.4.90.ebuild:
+  Version bump.
+
+*rekonq-0.4.0 (07 Apr 2010)
+
+  07 Apr 2010; Tomáš Chvátal <scarabeus@gentoo.org> -rekonq-0.3.0.ebuild,
+  -rekonq-0.3.90.ebuild, +rekonq-0.4.0.ebuild:
+  Version bump. Drop old.
+
+  14 Feb 2010; Samuli Suominen <ssuominen@gentoo.org> rekonq-0.3.90.ebuild:
+  Fix depend to KDE 4.4.0 and Qt 4.6.0 wrt #305041.
+
+*rekonq-0.3.90 (12 Feb 2010)
+
+  12 Feb 2010; Samuli Suominen <ssuominen@gentoo.org> +rekonq-0.3.90.ebuild:
+  Version bump.
+
+*rekonq-0.3.0 (18 Nov 2009)
+
+  18 Nov 2009; Tomáš Chvátal <scarabeus@gentoo.org>
+  -rekonq-0.2.90.ebuild, +rekonq-0.3.0.ebuild:
+  Version bump.
+
+*rekonq-0.2.90 (01 Nov 2009)
+
+  01 Nov 2009; Samuli Suominen <ssuominen@gentoo.org> +rekonq-0.2.90.ebuild:
+  Initial commit wrt #275686, thanks to Tobias Leupold for reporting.
+

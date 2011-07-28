@@ -1,0 +1,28 @@
+# ChangeLog for app-vim/tt2-syntax
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-vim/tt2-syntax/ChangeLog,v 1.7 2010/12/03 01:56:52 xmw Exp $
+
+  03 Dec 2010; Michael Weber <xmw@gentoo.org> tt2-syntax-1.13.ebuild:
+  add ~arm (bug 302981)
+
+  27 Apr 2010; Alexis Ballier <aballier@gentoo.org> tt2-syntax-1.13.ebuild:
+  keyword ~x86-fbsd, bug #191500
+
+  02 Jan 2010; Brent Baude <ranger@gentoo.org> tt2-syntax-1.13.ebuild:
+  Marking tt2-syntax-1.13 ~ppc64 for bug 191500
+
+  04 Oct 2009; Mounir Lamouri <volkmar@gentoo.org> tt2-syntax-1.13.ebuild:
+  Keywording for ppc, bug 191500
+
+  29 Sep 2009; Raúl Porcel <armin76@gentoo.org> tt2-syntax-1.13.ebuild:
+  Add ~alpha/~ia64/~sparc wrt #191500
+
+  04 Oct 2008; Jeremy Olexa <darkside@gentoo.org> tt2-syntax-1.13.ebuild:
+  add ~amd64 kw, bug #226149
+
+*tt2-syntax-1.13 (06 Sep 2007)
+
+  06 Sep 2007; Ali Polatel <hawking@gentoo.org> +metadata.xml,
+  +tt2-syntax-1.13.ebuild:
+  Initial commit.
+

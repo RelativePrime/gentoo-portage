@@ -1,0 +1,43 @@
+# ChangeLog for kde-misc/kcollectd
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/kde-misc/kcollectd/ChangeLog,v 1.9 2011/04/29 13:59:41 scarabeus Exp $
+
+  29 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org> kcollectd-0.9.ebuild:
+  Actualy do no magic hackery and strip kde_linguas.
+
+  24 Apr 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  kcollectd-0.9.ebuild, +files/kcollectd-0.9-cflags.patch:
+  Honor CXXFLAGS, bug 363947
+
+  11 Apr 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  kcollectd-0.9.ebuild:
+  Force BOOST_FILESYSTEM_VERSION=2, bug 362907
+
+  29 Jan 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  kcollectd-0.9.ebuild:
+  Bump EAPI
+
+  25 Dec 2010; Andreas K. Huettel <dilfridge@gentoo.org>
+  kcollectd-0.9.ebuild:
+  Added code to rebuild mime databases after merge
+
+  14 Dec 2010; Andreas K. Huettel <dilfridge@gentoo.org>
+  kcollectd-0.9.ebuild:
+  Removed DTD magic as it is in the eclass now; fixed linguas hack and
+  thereby bug 344487
+
+  25 Oct 2010; Andreas K. Huettel <dilfridge@gentoo.org>
+  kcollectd-0.9.ebuild:
+  Inserted workaround for build failure whenever LINGUAS does not contain de
+  (bug 341495)
+
+  21 Oct 2010; Andreas K. Huettel <dilfridge@gentoo.org>
+  kcollectd-0.9.ebuild:
+  Manually apply DTD workaround
+
+*kcollectd-0.9 (28 Sep 2010)
+
+  28 Sep 2010; Andreas K. Huettel <dilfridge@gentoo.org>
+  +kcollectd-0.9.ebuild, +metadata.xml:
+  New application (imported from sunrise overlay), fixes bug 300771.
+

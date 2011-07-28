@@ -1,0 +1,28 @@
+# ChangeLog for net-misc/remmina
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/remmina/ChangeLog,v 1.5 2011/06/24 14:41:36 hwoarang Exp $
+
+*remmina-9999 (24 Jun 2011)
+
+  24 Jun 2011; Markos Chandras <hwoarang@gentoo.org> +remmina-9999.ebuild:
+  Live ebuild thanks to Dan Weeks <dan@danweeks.net>. Bug #372443
+
+  21 Mar 2011; Nirbheek Chauhan <nirbheek@gentoo.org> remmina-0.7.5.ebuild,
+  remmina-0.9.3.ebuild:
+  Fix slot-deps on gnome libs
+
+*remmina-0.9.3 (22 Jan 2011)
+
+  22 Jan 2011; Markos Chandras <hwoarang@gentoo.org> +remmina-0.9.3.ebuild:
+  Version bump. Bug #329377. Thanks to Rion <rion4ik@gmail.com> for the ebuild
+
+  27 May 2010; Tristan Heaven <nyhm@gentoo.org> remmina-0.7.5.ebuild,
+  metadata.xml:
+  Add xdmcp USE flag for x11-base/xorg-server[kdrive] dep
+
+*remmina-0.7.5 (26 May 2010)
+
+  26 May 2010; Tristan Heaven <nyhm@gentoo.org> +remmina-0.7.5.ebuild,
+  +metadata.xml:
+  Initial commit, based on Anthony Low's ebuild from bug #301069
+

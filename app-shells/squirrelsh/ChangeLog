@@ -1,0 +1,25 @@
+# ChangeLog for app-shells/squirrelsh
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-shells/squirrelsh/ChangeLog,v 1.4 2010/04/10 17:23:55 ken69267 Exp $
+
+*squirrelsh-1.2.3-r1 (10 Apr 2010)
+
+  10 Apr 2010; Kenneth Prugh <ken69267@gentoo.org>
+  +squirrelsh-1.2.3-r1.ebuild, metadata.xml:
+  Use static libraries and update metadata
+
+  01 Sep 2009; Christian Faulhammer <fauli@gentoo.org>
+  squirrelsh-1.2.3.ebuild:
+  use src_prepare instead of src_unpack, and fix ~x86 keyword
+
+  01 Sep 2009; Christian Faulhammer <fauli@gentoo.org>
+  squirrelsh-1.2.3.ebuild:
+  add ~x86, bug 280334
+
+*squirrelsh-1.2.3 (20 Mar 2009)
+
+  20 Mar 2009; Kenneth Prugh <ken69267@gentoo.org> +metadata.xml,
+  +squirrelsh-1.2.3.ebuild:
+  Initial commit. Ebuild written by Evan Plumlee <ed-209@hellburner.com>.
+  Proxied maintainer.
+

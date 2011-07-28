@@ -1,0 +1,15 @@
+# ChangeLog for app-vim/easytags
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-vim/easytags/ChangeLog,v 1.2 2011/07/12 06:33:54 radhermit Exp $
+
+*easytags-2.4.11 (12 Jul 2011)
+
+  12 Jul 2011; Tim Harder <radhermit@gentoo.org> +easytags-2.4.11.ebuild:
+  Version bump.
+
+*easytags-2.4.9 (29 Jun 2011)
+
+  29 Jun 2011; Tim Harder <radhermit@gentoo.org> +easytags-2.4.9.ebuild,
+  +metadata.xml:
+  Initial import.
+

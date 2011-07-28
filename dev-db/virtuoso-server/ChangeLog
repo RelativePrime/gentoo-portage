@@ -1,0 +1,90 @@
+# ChangeLog for dev-db/virtuoso-server
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-db/virtuoso-server/ChangeLog,v 1.20 2011/05/01 02:31:05 halcy0n Exp $
+
+  01 May 2011; Mark Loeser <halcy0n@gentoo.org> virtuoso-server-6.1.2.ebuild:
+  Stable on ppc64
+
+  20 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  virtuoso-server-6.1.3.ebuild:
+  Try to unmask the test useflag as it seems to work here.
+
+*virtuoso-server-6.1.3 (20 Apr 2011)
+
+  20 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -virtuoso-server-6.1.1.ebuild, +virtuoso-server-6.1.3.ebuild:
+  Version bump. Drop older.
+
+  23 Oct 2010; Brent Baude <ranger@gentoo.org> virtuoso-server-6.1.2.ebuild:
+  Marking virtuoso-server-6.1.2 ppc for bug 333115
+
+  10 Oct 2010; Markos Chandras <hwoarang@gentoo.org>
+  virtuoso-server-6.1.2.ebuild:
+  Stable on amd64 wrt bug #333115
+
+  12 Sep 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  virtuoso-server-6.1.2.ebuild:
+  x86 stable wrt bug #333115
+
+  03 Sep 2010; Joseph Jezak <josejx@gentoo.org>
+  virtuoso-server-6.1.1.ebuild:
+  Marked ppc64 stable for bug #322791.
+
+  09 Aug 2010; Joseph Jezak <josejx@gentoo.org>
+  virtuoso-server-6.1.1.ebuild:
+  Marked ppc stable for bug #322791.
+
+*virtuoso-server-6.1.2 (14 Jul 2010)
+
+  14 Jul 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  virtuoso-server-6.1.1.ebuild, +virtuoso-server-6.1.2.ebuild:
+  Version bump 6.1.2, remove unnecessary static-libs USE flag
+
+  27 Jun 2010; Christian Faulhammer <fauli@gentoo.org>
+  virtuoso-server-6.1.1.ebuild:
+  x86 stable, bug 322791
+
+  24 Jun 2010; Christoph Mende <angelos@gentoo.org>
+  virtuoso-server-6.1.1.ebuild:
+  Stable on amd64 wrt bug #322791
+
+  19 May 2010; Robert Piasek <dagger@gentoo.org>
+  virtuoso-server-6.1.1.ebuild:
+  added ~arm keyword
+
+  06 May 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  -files/6.1.0/6.1.0-common.patch, -virtuoso-server-6.1.0.ebuild:
+  Remove old
+
+  02 May 2010; Alexis Ballier <aballier@gentoo.org>
+  virtuoso-server-6.1.1.ebuild:
+  keyword ~x86-fbsd
+
+*virtuoso-server-6.1.1 (06 Apr 2010)
+
+  06 Apr 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  +virtuoso-server-6.1.1.ebuild:
+  Version bump 6.1.1
+
+  23 Feb 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  virtuoso-server-6.1.0.ebuild:
+  Restricted tests for now, bug 305077
+
+  16 Feb 2010; Joseph Jezak <josejx@gentoo.org>
+  virtuoso-server-6.1.0.ebuild:
+  Marked ~ppc/~ppc64 for bug #304365.
+
+  10 Feb 2010; Jonathan Callen <abcd@gentoo.org>
+  virtuoso-server-6.1.0.ebuild:
+  Add ~amd64-linux/~x86-linux keywords; bump to EAPI=3
+
+  09 Feb 2010; Maciej Mrozowski <reavertm@gentoo.org> metadata.xml:
+  Fixed my email
+
+*virtuoso-server-6.1.0 (08 Feb 2010)
+
+  08 Feb 2010; Alexey Shvetsov <alexxy@gentoo.org>
+  +files/6.1.0/6.1.0-common.patch, +virtuoso-server-6.1.0.ebuild,
+  +metadata.xml:
+  Initial import. bug #254295
+

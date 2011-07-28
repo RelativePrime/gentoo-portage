@@ -1,0 +1,47 @@
+# ChangeLog for dev-libs/folks
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/folks/ChangeLog,v 1.12 2011/07/14 10:04:55 tomka Exp $
+
+  14 Jul 2011; Thomas Kahle <tomka@gentoo.org> folks-0.4.3.ebuild:
+  x86 stable per bug 369909
+
+  01 Jul 2011; Markos Chandras <hwoarang@gentoo.org> folks-0.4.3.ebuild:
+  Stable on amd64 wrt bug #278255
+
+*folks-0.4.3 (26 Apr 2011)
+
+  26 Apr 2011; Gilles Dartiguelongue <eva@gentoo.org> +folks-0.4.3.ebuild:
+  Version bump with bug fixes.
+
+*folks-0.4.2 (25 Mar 2011)
+
+  25 Mar 2011; Gilles Dartiguelongue <eva@gentoo.org> +folks-0.4.2.ebuild:
+  Version bump, API break, required by new empathy release.
+
+  22 Mar 2011; Brent Baude <ranger@gentoo.org> folks-0.2.1.ebuild:
+  Marking folks-0.2.1 ppc stable for bug 353436
+
+  12 Mar 2011; Raúl Porcel <armin76@gentoo.org> folks-0.2.1.ebuild:
+  alpha/ia64/sparc stable wrt #353436
+
+  24 Feb 2011; Thomas Kahle <tomka@gentoo.org> folks-0.2.1.ebuild:
+  x86 stable per bug 353436
+
+  23 Feb 2011; Markos Chandras <hwoarang@gentoo.org> folks-0.2.1.ebuild:
+  Stable on amd64 wrt bug #353436
+
+  30 Jan 2011; Raúl Porcel <armin76@gentoo.org> folks-0.2.1.ebuild:
+  Add ~alpha/~ia64/~sparc wrt #347744
+
+  26 Jan 2011; Kacper Kowalik <xarthisius@gentoo.org> folks-0.2.1.ebuild:
+  add ~ppc wrt #347744
+
+  13 Dec 2010; Christian Faulhammer <fauli@gentoo.org> folks-0.2.1.ebuild:
+  add ~x86, bug 347744
+
+*folks-0.2.1 (04 Dec 2010)
+
+  04 Dec 2010; Pacho Ramos <pacho@gentoo.org> +folks-0.2.1.ebuild,
+  +metadata.xml:
+  Add folks as needed by empathy-2.32.
+

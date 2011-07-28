@@ -1,0 +1,33 @@
+# ChangeLog for sci-libs/flann
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/flann/ChangeLog,v 1.7 2011/06/26 10:29:06 jlec Exp $
+
+  26 Jun 2011; Justin Lecher <jlec@gentoo.org> flann-1.6.8.ebuild,
+  flann-1.6.10.ebuild, metadata.xml:
+  Rearranged ebuild
+
+  13 Jun 2011; Sébastien Fabbro <bicatali@gentoo.org> flann-1.6.10.ebuild:
+  Depend on unzip, closing bug #371513
+
+*flann-1.6.10 (10 Jun 2011)
+
+  10 Jun 2011; Sébastien Fabbro <bicatali@gentoo.org> +flann-1.6.10.ebuild,
+  metadata.xml:
+  Version bump. Many fixes. Now install octave, python in proper directories.
+  Does not build useless examples. Make mpi an option. Added longdescription.
+
+  09 May 2011; Markos Chandras <hwoarang@gentoo.org> flann-1.6.8.ebuild:
+  Stable on amd64 wrt bug #354033
+
+  09 May 2011; Thomas Kahle <tomka@gentoo.org> flann-1.6.8.ebuild:
+  x86 stable per bug 354033
+
+  08 May 2011; Andreas K. Huettel <dilfridge@gentoo.org> flann-1.6.8.ebuild:
+  Restrict tests for the moment, bug 366477
+
+*flann-1.6.8 (30 Apr 2011)
+
+  30 Apr 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  +flann-1.6.8.ebuild, +metadata.xml:
+  New library, dependency for media-libs/opencv-2.2
+

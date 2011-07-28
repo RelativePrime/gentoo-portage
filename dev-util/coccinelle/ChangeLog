@@ -1,0 +1,52 @@
+# ChangeLog for dev-util/coccinelle
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/coccinelle/ChangeLog,v 1.9 2011/07/23 15:47:43 tomka Exp $
+
+  23 Jul 2011; Thomas Kahle <tomka@gentoo.org> coccinelle-0.2.5-r2.ebuild:
+  ~x86 per bug 373149
+
+*coccinelle-0.2.5-r2 (26 Jun 2011)
+
+  26 Jun 2011; Alexis Ballier <aballier@gentoo.org>
+  +coccinelle-0.2.5-r2.ebuild:
+  it depends on sexplib, not keyworded on x86, drop keywords
+
+*coccinelle-0.2.5-r1 (09 May 2011)
+
+  09 May 2011; Sergei Trofimovich <slyfox@gentoo.org> -coccinelle-0.2.5.ebuild,
+  +coccinelle-0.2.5-r1.ebuild:
+  Fixed missing runtime depend on findlib as found out Jakub Zawadzki in bug
+  #366553. Added USE=ocaml for ocaml scripting support.
+
+*coccinelle-0.2.5 (08 May 2011)
+
+  08 May 2011; Sergei Trofimovich <slyfox@gentoo.org> -coccinelle-0.2.2.ebuild,
+  +coccinelle-0.2.5.ebuild:
+  version bump. Fixes build failure against modern python versions (bug #331079
+  by Diego Elio Pettenò). Removed old.
+
+  25 May 2010; Alexis Ballier <aballier@gentoo.org>
+  -coccinelle-0.2.0.ebuild, -coccinelle-0.2.1.ebuild:
+  remove old
+
+*coccinelle-0.2.2 (09 Apr 2010)
+
+  09 Apr 2010; Alexis Ballier <aballier@gentoo.org>
+  +coccinelle-0.2.2.ebuild:
+  version bump
+
+  06 Apr 2010; Alexis Ballier <aballier@gentoo.org> coccinelle-0.2.1.ebuild:
+  set VARTEXFONTS to avoid sandbox violations, bug #312343
+
+*coccinelle-0.2.1 (01 Feb 2010)
+
+  01 Feb 2010; Alexis Ballier <aballier@gentoo.org>
+  +coccinelle-0.2.1.ebuild:
+  version bump
+
+*coccinelle-0.2.0 (24 Jan 2010)
+
+  24 Jan 2010; Alexis Ballier <aballier@gentoo.org>
+  +coccinelle-0.2.0.ebuild, +metadata.xml:
+  initial import, ebuild by me, requested by solar
+

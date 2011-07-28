@@ -1,0 +1,77 @@
+# ChangeLog for app-admin/lsyncd
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/lsyncd/ChangeLog,v 1.17 2011/07/26 15:41:16 darkside Exp $
+
+*lsyncd-2.0.4-r1 (26 Jul 2011)
+
+  26 Jul 2011; Jeremy Olexa <darkside@gentoo.org> -lsyncd-2.0.4.ebuild,
+  +lsyncd-2.0.4-r1.ebuild, +files/lsyncd-2.0.4-examplesdir.patch:
+  Revision bump to fix EAPI value and add upstream'd patch for docdir/examples.
+  Directly to stable due to only docs file location changing.
+
+  26 Jul 2011; Jeremy Olexa <darkside@gentoo.org> -lsyncd-2.0.3.ebuild:
+  remove old version
+
+  02 Jun 2011; Markus Meier <maekke@gentoo.org> lsyncd-2.0.4.ebuild:
+  x86 stable, bug #368593
+
+  27 May 2011; Markos Chandras <hwoarang@gentoo.org> lsyncd-2.0.4.ebuild:
+  Stable on amd64 wrt bug #368593
+
+*lsyncd-2.0.4 (04 Apr 2011)
+
+  04 Apr 2011; Jeremy Olexa <darkside@gentoo.org> +lsyncd-2.0.4.ebuild:
+  Version bump with minor upstream bug fixes
+
+  04 Apr 2011; Jeremy Olexa <darkside@gentoo.org> -lsyncd-1.39.ebuild,
+  -lsyncd-2.0.0.ebuild, metadata.xml:
+  maintain this package, remove old versions
+
+*lsyncd-2.0.3 (06 Mar 2011)
+
+  06 Mar 2011; Justin Lecher <jlec@gentoo.org> +lsyncd-2.0.3.ebuild:
+  Version Bump, 348976
+
+  01 Mar 2011; Christian Ruppert <idl0r@gentoo.org>
+  -files/lsyncd-1.33-libxml2.patch:
+  Remove unused patch
+
+*lsyncd-2.0.0 (19 Dec 2010)
+
+  19 Dec 2010; Justin Lecher <jlec@gentoo.org> -lsyncd-1.26.ebuild,
+  -lsyncd-1.33.ebuild, -lsyncd-1.37.ebuild, +lsyncd-2.0.0.ebuild:
+  Version BUmp, 348976; Cleaned old
+
+*lsyncd-1.39 (14 Nov 2010)
+
+  14 Nov 2010; Justin Lecher <jlec@gentoo.org> +lsyncd-1.39.ebuild:
+  Version Bump
+
+*lsyncd-1.37 (30 Aug 2010)
+
+  30 Aug 2010; Michael Weber <xmw@gentoo.org> +lsyncd-1.37.ebuild:
+  Version bump, fixes 333317, thanks to Jens Pranaitis <jens@chaox.net> for
+  the update
+
+  08 Aug 2010; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  metadata.xml:
+  Removed deathwing00 from metadata as he took an extended away.
+
+  22 Jul 2010; Jeremy Olexa <darkside@gentoo.org> lsyncd-1.33.ebuild:
+  Add ~amd64-linux, tested in bug 328331
+
+  29 Jun 2010; Samuli Suominen <ssuominen@gentoo.org> lsyncd-1.33.ebuild,
+  +files/lsyncd-1.33-libxml2.patch:
+  Fix building with -Wl,--as-needed wrt #276506 by Kacper Kowalik.
+
+*lsyncd-1.33 (10 Jun 2010)
+
+  10 Jun 2010; Dror Levin <spatz@gentoo.org> +lsyncd-1.33.ebuild:
+  Version bump.
+
+*lsyncd-1.26 (18 Jun 2009)
+
+  18 Jun 2009; Ioannis Aslanidis <deathwing00@gentoo.org> +metadata.xml,
+  +lsyncd-1.26.ebuild:
+  Initial version.
+

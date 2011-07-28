@@ -1,0 +1,25 @@
+# ChangeLog for net-libs/libopkele
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-libs/libopkele/ChangeLog,v 1.5 2009/09/28 06:21:39 hollow Exp $
+
+  28 Sep 2009; Benedikt Böhm <hollow@gentoo.org> libopkele-2.0.3.ebuild:
+  fix #286162
+
+*libopkele-2.0.3 (17 Sep 2009)
+
+  17 Sep 2009; Benedikt Böhm <hollow@gentoo.org> +libopkele-2.0.3.ebuild:
+  version bump
+
+  19 May 2008; Samuli Suominen <drac@gentoo.org>
+  +files/libopkele-0.3.2-asneeded.patch, libopkele-0.3.2.ebuild:
+  Fix configure with asneeded wrt #222639, thanks to Michael Krelin.
+
+  18 May 2008; Samuli Suominen <drac@gentoo.org> libopkele-0.3.2.ebuild:
+  Move pkgconfig to DEPEND.
+
+*libopkele-0.3.2 (22 Mar 2008)
+
+  22 Mar 2008; Benedikt Böhm <hollow@gentoo.org> +metadata.xml,
+  +libopkele-0.3.2.ebuild:
+  initial ebuild wrt #209573
+

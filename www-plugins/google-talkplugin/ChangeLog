@@ -1,0 +1,56 @@
+# ChangeLog for www-plugins/google-talkplugin
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-plugins/google-talkplugin/ChangeLog,v 1.11 2011/07/02 00:49:51 zmedico Exp $
+
+  02 Jul 2011; Zac Medico <zmedico@gentoo.org>
+  google-talkplugin-2.1.7.0.ebuild:
+  Fix duplicate INSTALL_BASE when calling inst_plugin.
+
+*google-talkplugin-2.1.7.0 (01 Jul 2011)
+
+  01 Jul 2011; Christoph Junghans <ottxor@gentoo.org>
+  -google-talkplugin-2.1.6.0.ebuild, +google-talkplugin-2.1.7.0.ebuild:
+  Version bump (bug #373657) + bump to EAPI=4
+
+*google-talkplugin-2.1.6.0 (14 Jun 2011)
+
+  14 Jun 2011; Christoph Junghans <ottxor@gentoo.org>
+  -google-talkplugin-2.0.6.0.ebuild, +google-talkplugin-2.1.6.0.ebuild:
+  Version bump
+
+  02 Jun 2011; Markus Meier <maekke@gentoo.org>
+  google-talkplugin-1.8.0.0.ebuild:
+  x86 stable, bug #361683
+
+  12 May 2011; Christoph Junghans <ottxor@gentoo.org>
+  google-talkplugin-1.8.0.0.ebuild:
+  1.8.0.0 is no longer available (bug #366965)
+
+*google-talkplugin-2.0.6.0 (27 Apr 2011)
+
+  27 Apr 2011; Christoph Junghans <ottxor@gentoo.org>
+  +google-talkplugin-2.0.6.0.ebuild:
+  version bump
+
+  09 Apr 2011; Christoph Mende <angelos@gentoo.org>
+  google-talkplugin-1.8.0.0.ebuild:
+  Stable on amd64 wrt bug #361683
+
+  05 Apr 2011; Christoph Junghans <ottxor@gentoo.org>
+  google-talkplugin-1.8.0.0.ebuild:
+  fixed qa (bug #361683#c2)
+
+  17 Mar 2011; Christoph Junghans <ottxor@gentoo.org>
+  google-talkplugin-1.8.0.0.ebuild:
+  Updated license
+
+  19 Feb 2011; Alexey Shvetsov <alexxy@gentoo.org>
+  google-talkplugin-1.8.0.0.ebuild:
+  Add ~amd64 keyword since it works here
+
+*google-talkplugin-1.8.0.0 (15 Feb 2011)
+
+  15 Feb 2011; Christoph Junghans <ottxor@gentoo.org>
+  +google-talkplugin-1.8.0.0.ebuild, +metadata.xml:
+  Initial commit from cj-overlay (bug #333579)
+

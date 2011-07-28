@@ -1,0 +1,68 @@
+# ChangeLog for x11-themes/oxygen-gtk
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-themes/oxygen-gtk/ChangeLog,v 1.11 2011/07/17 16:25:52 scarabeus Exp $
+
+*oxygen-gtk-1.1.1 (17 Jul 2011)
+
+  17 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -oxygen-gtk-1.1.0.ebuild, +oxygen-gtk-1.1.1.ebuild:
+  Version bump to latest. Drop older.
+
+*oxygen-gtk-1.1.0 (16 Jun 2011)
+
+  16 Jun 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -oxygen-gtk-1.0.4.ebuild, oxygen-gtk-1.0.5.ebuild, +oxygen-gtk-1.1.0.ebuild:
+  Stabilise last 1.0 series release on amd64 and x86. Remove older. Add first
+  1.1 release (more just intended for testing as it will fit into 4.7 and in
+  4.6 might have glitches).
+
+*oxygen-gtk-1.0.5 (20 May 2011)
+
+  20 May 2011; Tomáš Chvátal <scarabeus@gentoo.org> oxygen-gtk-1.0.4.ebuild,
+  +oxygen-gtk-1.0.5.ebuild:
+  Version bump to latest. Stabilise 1.0.4 on amd64 and x86.
+
+*oxygen-gtk-1.0.4 (16 Apr 2011)
+
+  16 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -oxygen-gtk-1.0.1-r1.ebuild, -oxygen-gtk-1.0.2.ebuild,
+  -oxygen-gtk-1.0.3.ebuild, +oxygen-gtk-1.0.4.ebuild:
+  Version bump. Drop old.
+
+*oxygen-gtk-1.0.3 (14 Mar 2011)
+
+  14 Mar 2011; Maciej Mrozowski <reavertm@gentoo.org> +oxygen-gtk-1.0.3.ebuild:
+  Version bump, bug 358939
+
+  21 Feb 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  oxygen-gtk-1.0.1-r1.ebuild, oxygen-gtk-1.0.2.ebuild:
+  Depend on proper slot with gtk2.
+
+*oxygen-gtk-1.0.2 (12 Feb 2011)
+
+  12 Feb 2011; Theo Chatzimichos <tampakrap@gentoo.org>
+  +oxygen-gtk-1.0.2.ebuild:
+  Version bump
+
+*oxygen-gtk-1.0.1-r1 (20 Jan 2011)
+
+  20 Jan 2011; Maciej Mrozowski <reavertm@gentoo.org>
+  -oxygen-gtk-1.0.0.ebuild, -oxygen-gtk-1.0.1.ebuild,
+  +oxygen-gtk-1.0.1-r1.ebuild:
+  Remove old, add CONFIG_PROTECT to fix bug 351614, install some misc files,
+  sort dependencies, add debug and doc USE flags.
+
+*oxygen-gtk-1.0.1 (13 Jan 2011)
+
+  13 Jan 2011; Dror Levin <spatz@gentoo.org> +oxygen-gtk-1.0.1.ebuild:
+  Version bump.
+
+  13 Dec 2010; Dror Levin <spatz@gentoo.org> oxygen-gtk-1.0.0.ebuild:
+  Add ~x86 keyword.
+
+*oxygen-gtk-1.0.0 (13 Dec 2010)
+
+  13 Dec 2010; Dror Levin <spatz@gentoo.org> +oxygen-gtk-1.0.0.ebuild,
+  +metadata.xml:
+  Initial import, ebuild by Enrico Tagliavini from kde overlay.
+

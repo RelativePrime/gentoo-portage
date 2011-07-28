@@ -1,0 +1,61 @@
+# ChangeLog for app-office/rabbit
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-office/rabbit/ChangeLog,v 1.14 2011/05/07 06:45:41 graaff Exp $
+
+*rabbit-0.9.2 (07 May 2011)
+
+  07 May 2011; Hans de Graaff <graaff@gentoo.org> +rabbit-0.9.2.ebuild:
+  Version bump.
+
+  12 Mar 2011; Hans de Graaff <graaff@gentoo.org> rabbit-0.6.4-r1.ebuild,
+  metadata.xml:
+  Drop gnome-print USE flag and dependency. No longer supported since 0.5.3.
+  Bug 358417.
+
+  12 Mar 2011; Hans de Graaff <graaff@gentoo.org> -rabbit-0.6.3.ebuild,
+  -rabbit-0.6.4.ebuild:
+  Remove old versions.
+
+*rabbit-0.6.4-r1 (14 Jul 2010)
+
+  14 Jul 2010; Hans de Graaff <graaff@gentoo.org> +rabbit-0.6.4-r1.ebuild:
+  Convert to ruby-ng.
+
+*rabbit-0.6.4 (27 Feb 2010)
+
+  27 Feb 2010; Hans de Graaff <graaff@gentoo.org> +rabbit-0.6.4.ebuild:
+  Version bump. Thanks for hitachi for the notification in bug 306775.
+
+  05 Jan 2010; Hans de Graaff <graaff@gentoo.org> -rabbit-0.6.1.ebuild:
+  Remove old version.
+
+  26 Dec 2009; Peter Volkov <pva@gentoo.org> rabbit-0.6.1.ebuild,
+  rabbit-0.6.3.ebuild:
+  virtual/ghostscript->app-text/ghostscript-gpl: ghostscript-gpl is the only
+  implementation left in the tree.
+
+*rabbit-0.6.3 (20 Dec 2009)
+
+  20 Dec 2009; Hans de Graaff <graaff@gentoo.org> +rabbit-0.6.3.ebuild:
+  Version bump. Remove obsolete virtual/ruby dependency.
+
+  14 Sep 2009; Hans de Graaff <graaff@gentoo.org> -rabbit-0.5.2.ebuild:
+  Remove old version.
+
+  30 Aug 2009; Hans de Graaff <graaff@gentoo.org> -rabbit-0.5.0.ebuild:
+  Remove old version.
+
+  03 Aug 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+*rabbit-0.5.2 (23 Jul 2007)
+
+  23 Jul 2007; Hans de Graaff <graaff@gentoo.org> +rabbit-0.5.2.ebuild:
+  Version bump from Atzm Watanabe in bug #173255.
+
+*rabbit-0.5.0 (18 Dec 2006)
+
+  18 Dec 2006; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  +files/50rabbit-mode-gentoo.el, +metadata.xml, +rabbit-0.5.0.ebuild:
+  New ebuild from Atzm Watanabe <sitosito@p.chan.ne.jp>, bug #104787
+

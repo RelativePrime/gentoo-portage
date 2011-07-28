@@ -1,0 +1,50 @@
+# ChangeLog for dev-haskell/binary
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-haskell/binary/ChangeLog,v 1.13 2011/04/10 18:51:44 grobian Exp $
+
+  10 Apr 2011; Fabian Groffen <grobian@gentoo.org> binary-0.5.0.2.ebuild:
+  Marked ~x86-macos
+
+  25 Feb 2011; Kacper Kowalik <xarthisius@gentoo.org> binary-0.5.0.2.ebuild:
+  ppc/ppc64 stable wrt #339580
+
+  20 Nov 2010; Sergei Trofimovich <slyfox@gentoo.org> binary-0.5.0.2.ebuild:
+  alpha/ia64/sparc stable (bug #339580). Marked ~x86-fbsd (bug #227677).
+
+  19 Oct 2010; Thomas Kahle <tomka@gentoo.org> binary-0.5.0.2.ebuild:
+  x86 stable per bug 339580
+
+  16 Oct 2010; Markos Chandras <hwoarang@gentoo.org> binary-0.5.0.2.ebuild:
+  Stable on amd64 wrt bug #339580
+
+  20 Jul 2010; Joseph Jezak <josejx@gentoo.org> binary-0.5.0.2.ebuild:
+  Marked ~ppc.
+
+  10 Jul 2010; Sergei Trofimovich <slyfox@gentoo.org> binary-0.5.0.2.ebuild:
+  marked ~ia64
+
+  08 Jul 2010; Sergei Trofimovich <slyfox@gentoo.org> binary-0.5.0.2.ebuild:
+  ~alpha keyworded
+
+  01 Apr 2010; Fabian Groffen <grobian@gentoo.org> binary-0.5.0.2.ebuild:
+  Marked ~ppc-macos
+
+  28 Mar 2010; Lennart Kolmodin <kolmodin@gentoo.org> binary-0.5.0.2.ebuild:
+  Add ~ppc64 keyword, tested by trofi.
+
+*binary-0.5.0.2 (15 Dec 2009)
+
+  15 Dec 2009; <kolmodin@gentoo.org> +binary-0.5.0.2.ebuild:
+  Version bump.
+
+*binary-0.4.2 (04 May 2008)
+
+  04 May 2008; Lennart Kolmodin <kolmodin@gentoo.org> +binary-0.4.2.ebuild:
+  Version bump.
+
+*binary-0.4.1 (15 Dec 2007)
+
+  15 Dec 2007; Duncan Coutts <dcoutts@gentoo.org> +metadata.xml,
+  +binary-0.4.1.ebuild:
+  Initial version.
+

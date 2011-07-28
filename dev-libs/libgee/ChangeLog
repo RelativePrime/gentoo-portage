@@ -1,0 +1,117 @@
+# ChangeLog for dev-libs/libgee
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libgee/ChangeLog,v 1.25 2011/03/22 18:53:06 ranger Exp $
+
+  22 Mar 2011; Brent Baude <ranger@gentoo.org> libgee-0.6.1.ebuild:
+  Marking libgee-0.6.1 ppc stable for bug 353436
+
+  21 Mar 2011; Kacper Kowalik <xarthisius@gentoo.org> libgee-0.6.1.ebuild:
+  ppc64 stable wrt #353436
+
+  12 Mar 2011; Raúl Porcel <armin76@gentoo.org> libgee-0.6.1.ebuild:
+  alpha/arm/ia64/sh/sparc stable wrt #353436
+
+  24 Feb 2011; Thomas Kahle <tomka@gentoo.org> libgee-0.6.1.ebuild:
+  x86 stable per bug 353436
+
+  23 Feb 2011; Markos Chandras <hwoarang@gentoo.org> libgee-0.6.1.ebuild:
+  Stable on amd64 wrt bug #353436
+
+  06 Feb 2011; Raúl Porcel <armin76@gentoo.org> libgee-0.6.0.ebuild,
+  libgee-0.6.1.ebuild:
+  Add ~sh
+
+  03 Feb 2011; Gilles Dartiguelongue <eva@gentoo.org> -libgee-0.5.1-r1.ebuild,
+  -libgee-0.5.2.ebuild, -libgee-0.5.3.ebuild, libgee-0.6.1.ebuild:
+  Nitpicks updates to 0.6.1. Clean up old revisions.
+
+*libgee-0.6.1 (29 Jan 2011)
+
+  29 Jan 2011; Nirbheek Chauhan <nirbheek@gentoo.org> +libgee-0.6.1.ebuild:
+  Bump to 0.6.1, memory leak fix in LinkedList
+
+*libgee-0.6.0 (26 Sep 2010)
+
+  26 Sep 2010; Gilles Dartiguelongue <eva@gentoo.org> +libgee-0.6.0.ebuild:
+  Version bump. Build fixes.
+
+  24 Sep 2010; <nirbheek@gentoo.org> libgee-0.5.2.ebuild,
+  libgee-0.5.3.ebuild:
+  USE=introspection should be on by default (even though it's use.masked
+  right now)
+
+  20 Sep 2010; Gilles Dartiguelongue <eva@gentoo.org>
+  libgee-0.5.1-r1.ebuild, libgee-0.5.2.ebuild, libgee-0.5.3.ebuild:
+  Drop vala from DEPEND, it is not used, bug #338067.
+
+  19 Sep 2010; Gilles Dartiguelongue <eva@gentoo.org> libgee-0.5.3.ebuild:
+  Respect USE flag settings, bug #337841.
+
+*libgee-0.5.3 (16 Sep 2010)
+
+  16 Sep 2010; Gilles Dartiguelongue <eva@gentoo.org> -libgee-0.3.0.ebuild,
+  -libgee-0.5.1.ebuild, +libgee-0.5.3.ebuild:
+  Version bump. Memory leaks & bug fixes.
+
+*libgee-0.5.2 (31 Aug 2010)
+
+  31 Aug 2010; Gilles Dartiguelongue <eva@gentoo.org> +libgee-0.5.2.ebuild,
+  metadata.xml:
+  Version bump. Bug fixes to a couple of classes.
+
+  11 Aug 2010; Joseph Jezak <josejx@gentoo.org> libgee-0.5.1-r1.ebuild:
+  Marked ~ppc for bug #296794.
+
+*libgee-0.5.1-r1 (16 Jul 2010)
+
+  16 Jul 2010; Tiziano Müller <dev-zero@gentoo.org>
+  +libgee-0.5.1-r1.ebuild:
+  Don't install .la files but do install some docs.
+
+  06 Jul 2010; Samuli Suominen <ssuominen@gentoo.org> libgee-0.5.1.ebuild:
+  Keyword ~ppc64 wrt #296794
+
+*libgee-0.5.1 (17 Jun 2010)
+
+  17 Jun 2010; Pacho Ramos <pacho@gentoo.org> -libgee-0.5.0.ebuild,
+  +libgee-0.5.1.ebuild:
+  Version bump, it also includes patches reported by uzytkownik in bug
+  #310575. Remove old 0.5 version not including these fixes.
+
+  01 Jan 2010; Raúl Porcel <armin76@gentoo.org> libgee-0.3.0.ebuild,
+  libgee-0.5.0.ebuild:
+  Add ~alpha/~ia64/~sparc wrt #296794
+
+  07 Dec 2009; Arun Raghavan <ford_prefect@gentoo.org> -libgee-0.1.6.ebuild,
+  -libgee-0.2.0.ebuild:
+  Clean out old versions
+
+*libgee-0.5.0 (07 Dec 2009)
+
+  07 Dec 2009; Arun Raghavan <ford_prefect@gentoo.org> +libgee-0.5.0.ebuild:
+  Bump to 0.5.0
+
+*libgee-0.3.0 (31 Aug 2009)
+
+  31 Aug 2009; Gilles Dartiguelongue <eva@gentoo.org> +libgee-0.3.0.ebuild:
+  Version bump.
+
+*libgee-0.2.0 (02 Aug 2009)
+
+  02 Aug 2009; Gilles Dartiguelongue <eva@gentoo.org> -libgee-0.1.5.ebuild,
+  +libgee-0.2.0.ebuild:
+  Version bump. Generate GIR file.
+
+*libgee-0.1.6 (23 Jul 2009)
+
+  23 Jul 2009; Gilles Dartiguelongue <eva@gentoo.org> +libgee-0.1.6.ebuild:
+  Version bump. Build fixes for vala 0.7.
+
+*libgee-0.1.5 (17 May 2009)
+
+  17 May 2009; Gilles Dartiguelongue <eva@gentoo.org> +libgee-0.1.5.ebuild,
+  +metadata.xml:
+  New ebuild written by yours truly, libgee is a collection library
+  providing GObject-based interfaces and classes for commonly used data
+  structures. Closes #269775.
+

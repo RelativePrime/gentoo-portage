@@ -1,0 +1,58 @@
+# ChangeLog for sys-cluster/gearmand
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-cluster/gearmand/ChangeLog,v 1.10 2010/10/15 14:59:29 flameeyes Exp $
+
+  15 Oct 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  gearmand-0.12.ebuild, gearmand-0.14.ebuild:
+  Simplify dependencies (changed versioning scheme).
+
+*gearmand-0.14 (16 Sep 2010)
+
+  16 Sep 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  +gearmand-0.14.ebuild, files/gearmand.init.d:
+  Version bump; also update init script to (re-)create run and log
+  directories if missing, with the proper permissions.
+
+  06 Sep 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  -gearmand-0.11-r2.ebuild, gearmand-0.12.ebuild:
+  Remove old version and use the new drizzle with libdrizzle.
+
+  17 Apr 2010; Robin H. Johnson <robbat2@gentoo.org> gearmand-0.12.ebuild:
+  x86 support.
+
+*gearmand-0.12 (23 Feb 2010)
+
+  23 Feb 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  +gearmand-0.12.ebuild, files/gearmand.conf.d, files/gearmand.init.d,
+  metadata.xml:
+  Version bump. Update init scripts. Proxy commit for Pavel Stratil.
+
+  09 Feb 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  gearmand-0.11-r2.ebuild:
+  Force disabled the PostgreSQL support as it currently fails to build
+  automagically. Thanks to Francesco Riosa for reporting in bug #304157.
+
+  20 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  gearmand-0.11-r2.ebuild:
+  Add elog information at postinst, from Pavel.
+
+  23 Dec 2009; Diego E. Pettenò <flameeyes@gentoo.org>
+  gearmand-0.11-r2.ebuild:
+  Disable static libraries by default and remove .la files.
+
+*gearmand-0.11-r2 (20 Dec 2009)
+
+  20 Dec 2009; Diego E. Pettenò <flameeyes@gentoo.org>
+  -gearmand-0.11-r1.ebuild, +gearmand-0.11-r2.ebuild, metadata.xml:
+  Revision bump, add support for dev-db/libdrizzle, sqlite and write the
+  code to support postgresql (albeit non-working yet).
+
+*gearmand-0.11-r1 (20 Dec 2009)
+
+  20 Dec 2009; Diego E. Pettenò <flameeyes@gentoo.org>
+  +gearmand-0.11-r1.ebuild, +files/gearmand.conf.d, +files/gearmand.init.d,
+  +metadata.xml:
+  Initial import of gearmand, thanks to Pavel Stratil (who's co-maintaining
+  the package) who wrote the basic ebuild and init script. Closes bug
+  #279413, reported by Rob Peck (who also wrote an alternative ebuild).
+

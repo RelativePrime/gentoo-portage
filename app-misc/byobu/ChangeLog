@@ -1,0 +1,62 @@
+# ChangeLog for app-misc/byobu
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/byobu/ChangeLog,v 1.11 2011/03/27 21:36:05 darkside Exp $
+
+  27 Mar 2011; Jeremy Olexa <darkside@gentoo.org> -byobu-2.65.ebuild:
+  remove old ebuilds
+
+*byobu-3.5 (05 Nov 2010)
+
+  05 Nov 2010; Andrey Kislyuk <weaver@gentoo.org> -byobu-2.38.ebuild,
+  +byobu-3.5.ebuild:
+  Version bump
+
+*byobu-2.65-r1 (27 Mar 2010)
+
+  27 Mar 2010; Justin Lecher (jlec) <jlec@gentoo.org> +byobu-2.65-r1.ebuild:
+  Fix for new Python situation, #311515
+
+*byobu-2.65 (20 Mar 2010)
+
+  20 Mar 2010; Andrey Kislyuk <weaver@gentoo.org> -byobu-2.19.ebuild,
+  -byobu-2.24.ebuild, +byobu-2.65.ebuild:
+  Version bump, drop old versions
+
+*byobu-2.38 (25 Nov 2009)
+
+  25 Nov 2009; Andrey Kislyuk <weaver@gentoo.org> +byobu-2.38.ebuild:
+  Version bump, sync with Karmic
+
+*byobu-2.24 (03 Aug 2009)
+
+  03 Aug 2009; Andrey Kislyuk <weaver@gentoo.org> -byobu-2.16.ebuild,
+  +byobu-2.24.ebuild:
+  Version bump
+
+  12 Jul 2009; Andrey Kislyuk <weaver@gentoo.org> byobu-2.19.ebuild:
+  Version bump
+
+*byobu-2.19 (12 Jul 2009)
+
+  12 Jul 2009; Andrey Kislyuk <weaver@gentoo.org> -byobu-2.8.ebuild,
+  +byobu-2.19.ebuild:
+  Version bump
+
+*byobu-2.16 (25 Jun 2009)
+
+  25 Jun 2009; Andrey Kislyuk <weaver@gentoo.org> byobu-2.8.ebuild,
+  +byobu-2.16.ebuild:
+  Version bump
+
+*byobu-2.8 (03 Jun 2009)
+
+  03 Jun 2009; Andrey Kislyuk <weaver@gentoo.org> +metadata.xml,
+  +byobu-2.8.ebuild:
+  Package renamed to byobu, version bump
+
+*screen-profiles-1.42 (07 Apr 2009)
+
+  07 Apr 2009; Andrey Kislyuk <weaver@gentoo.org> +metadata.xml,
+  +screen-profiles-1.42.ebuild:
+  New package, bug 264644. Ebuild written by me.
+

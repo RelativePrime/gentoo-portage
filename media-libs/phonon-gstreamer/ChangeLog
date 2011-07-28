@@ -1,0 +1,68 @@
+# ChangeLog for media-libs/phonon-gstreamer
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/phonon-gstreamer/ChangeLog,v 1.11 2011/07/17 08:46:31 dilfridge Exp $
+
+  17 Jul 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  phonon-gstreamer-4.5.0.ebuild, phonon-gstreamer-4.5.1.ebuild,
+  phonon-gstreamer-9999.ebuild:
+  Require at least ogg and vorbis support, otherwise strange things may happen,
+  e.g. bug 326393?
+
+  22 May 2011; Joseph Jezak <josejx@gentoo.org>
+  phonon-gstreamer-4.5.0.ebuild:
+  Marked ~ppc/~ppc64.
+
+  09 May 2011; Markos Chandras <hwoarang@gentoo.org>
+  phonon-gstreamer-4.5.0.ebuild:
+  Stable on amd64 wrt bug #354033
+
+  09 May 2011; Thomas Kahle <tomka@gentoo.org> phonon-gstreamer-4.5.0.ebuild:
+  x86 stable per bug 354033
+
+  08 May 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  +phonon-gstreamer-4.5.0.ebuild:
+  Re-add phonon-gstreamer-4.5.0 as it is in the stable request and has just
+  been tested by the arches.
+
+*phonon-gstreamer-4.5.1 (07 May 2011)
+
+  07 May 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -phonon-gstreamer-4.5.0.ebuild, +phonon-gstreamer-4.5.1.ebuild:
+  Version bump to include broken plugins install.
+
+  20 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  phonon-gstreamer-4.5.0.ebuild, phonon-gstreamer-9999.ebuild:
+  Migrate to use git-2.eclass
+
+  14 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  phonon-gstreamer-4.5.0.ebuild, phonon-gstreamer-9999.ebuild:
+  Update phonon dependency.
+
+*phonon-gstreamer-4.5.0 (13 Apr 2011)
+
+  13 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -phonon-gstreamer-4.4.4.ebuild, +phonon-gstreamer-4.5.0.ebuild,
+  phonon-gstreamer-9999.ebuild:
+  Version bump to latest. Drop older. Fixes bug #363437
+
+  03 Apr 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  phonon-gstreamer-4.4.4.ebuild, phonon-gstreamer-9999.ebuild:
+  Needs qt build with glib support, bug 353141
+
+  27 Mar 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  +phonon-gstreamer-4.4.4.ebuild, +phonon-gstreamer-9999.ebuild,
+  +metadata.xml:
+  Moved to media-libs category
+
+  26 Mar 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  phonon-gstreamer-4.4.4.ebuild, phonon-gstreamer-9999.ebuild:
+  Adapt phonon dependency for package move
+
+*phonon-gstreamer-9999 (23 Jan 2011)
+*phonon-gstreamer-4.4.4 (23 Jan 2011)
+
+  23 Jan 2011; Maciej Mrozowski <reavertm@gentoo.org>
+  +phonon-gstreamer-4.4.4.ebuild, +phonon-gstreamer-9999.ebuild,
+  +metadata.xml:
+  Add new package (phonon split), live ebuild from kde overlay
+

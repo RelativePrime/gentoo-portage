@@ -1,0 +1,460 @@
+# ChangeLog for kde-base/kdepimlibs
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/kde-base/kdepimlibs/ChangeLog,v 1.106 2011/07/27 14:04:34 alexxy Exp $
+
+*kdepimlibs-4.7.0 (27 Jul 2011)
+
+  27 Jul 2011; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.7.0.ebuild:
+  Version bump KDE SC 4.7.0
+
+*kdepimlibs-4.6.5 (09 Jul 2011)
+
+  09 Jul 2011; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.6.5.ebuild:
+  Version bump KDE SC 4.6.5
+
+  06 Jul 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  -kdepimlibs-4.6.2-r1.ebuild:
+  Drop KDE 4.6.2
+
+  25 Jun 2011; Brent Baude <ranger@gentoo.org> kdepimlibs-4.6.3.ebuild:
+  Marking kdepimlibs-4.6.3 ppc stable for bug 369979
+
+*kdepimlibs-4.6.4 (10 Jun 2011)
+
+  10 Jun 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  +kdepimlibs-4.6.4.ebuild:
+  Version bump
+
+  10 Jun 2011; Markos Chandras <hwoarang@gentoo.org> kdepimlibs-4.6.3.ebuild:
+  Stable on amd64 wrt bug #369979
+
+  08 Jun 2011; Thomas Kahle <tomka@gentoo.org> kdepimlibs-4.6.3.ebuild:
+  x86 stable per bug 369979
+
+  02 Jun 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  -kdepimlibs-4.4.5.ebuild:
+  Drop KDE-4.4
+
+  01 Jun 2011; Brent Baude <ranger@gentoo.org> kdepimlibs-4.6.2-r1.ebuild:
+  Marking kdepimlibs-4.6.2-r1 ppc stable for bug 354033
+
+  09 May 2011; Markos Chandras <hwoarang@gentoo.org>
+  kdepimlibs-4.6.2-r1.ebuild:
+  Stable on amd64 wrt bug #354033
+
+  09 May 2011; Thomas Kahle <tomka@gentoo.org> kdepimlibs-4.6.2-r1.ebuild:
+  x86 stable per bug 354033
+
+*kdepimlibs-4.6.3 (07 May 2011)
+
+  07 May 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  +kdepimlibs-4.6.3.ebuild:
+  Version bump KDE SC 4.6.3
+
+*kdepimlibs-4.6.2-r1 (18 Apr 2011)
+
+  18 Apr 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  -kdepimlibs-4.6.2.ebuild, +kdepimlibs-4.6.2-r1.ebuild,
+  +files/kdepimlibs-4.6.2-encoding.patch:
+  Add upstream patch to fix encoding in e-mail headers, kde bug 263761
+
+*kdepimlibs-4.6.2 (06 Apr 2011)
+
+  06 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -kdepimlibs-4.5.5.ebuild, -kdepimlibs-4.6.0.ebuild, -kdepimlibs-4.6.1.ebuild,
+  +kdepimlibs-4.6.2.ebuild:
+  Version bump KDE SC 4.6.2
+
+  26 Mar 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  kdepimlibs-4.4.5.ebuild, kdepimlibs-4.5.5.ebuild, kdepimlibs-4.6.0.ebuild,
+  kdepimlibs-4.6.1.ebuild:
+  Adapt phonon dependency for package move
+
+*kdepimlibs-4.6.1 (04 Mar 2011)
+
+  04 Mar 2011; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.6.1.ebuild:
+  Version bump KDE SC 4.6.1
+
+  28 Feb 2011; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  kdepimlibs-4.6.0.ebuild:
+  Bumped app-crypt/gpgme dependency. Thanks to Andrej Kacian <andrej AT kacian
+  DOT sk> - fixes bug 356717.
+
+*kdepimlibs-4.6.0 (26 Jan 2011)
+
+  26 Jan 2011; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.6.0.ebuild:
+  Version bump KDE SC 4.6.0
+
+*kdepimlibs-4.5.5 (10 Jan 2011)
+
+  10 Jan 2011; Theo Chatzimichos <tampakrap@gentoo.org>
+  +kdepimlibs-4.5.5.ebuild:
+  Version bump KDE SC 4.5.5
+
+*kdepimlibs-4.5.4 (02 Dec 2010)
+
+  02 Dec 2010; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.5.4.ebuild:
+  Version bump KDE SC 4.5.4
+
+*kdepimlibs-4.5.3 (03 Nov 2010)
+
+  03 Nov 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  +kdepimlibs-4.5.3.ebuild:
+  Version bump
+
+*kdepimlibs-4.5.2 (05 Oct 2010)
+
+  05 Oct 2010; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.5.2.ebuild:
+  Version bump KDE SC 4.5.2
+
+*kdepimlibs-4.5.1 (06 Sep 2010)
+
+  06 Sep 2010; Theo Chatzimichos <tampakrap@gentoo.org>
+  +kdepimlibs-4.5.1.ebuild:
+  Version bump
+
+  10 Aug 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  -files/kdepimlibs-4.4.0-sieve.patch:
+  Drop unused patch.
+
+  09 Aug 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  kdepimlibs-4.4.5.ebuild:
+  Drop alpha ia64 and sparc per the AT Lead permission.
+
+  09 Aug 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  -kdepimlibs-4.3.5.ebuild, -kdepimlibs-4.4.4.ebuild:
+  rm
+
+  09 Aug 2010; Christian Faulhammer <fauli@gentoo.org>
+  kdepimlibs-4.4.5.ebuild:
+  x86 stable, bug 322791
+
+  09 Aug 2010; Joseph Jezak <josejx@gentoo.org> kdepimlibs-4.4.5.ebuild:
+  Marked ppc stable for bug #322791.
+
+  03 Aug 2010; Markos Chandras <hwoarang@gentoo.org>
+  kdepimlibs-4.4.5.ebuild:
+  Stable on amd64 wrt bug #322791
+
+*kdepimlibs-4.4.5 (30 Jun 2010)
+
+  30 Jun 2010; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.4.5.ebuild:
+  Version bump
+
+  27 Jun 2010; Christian Faulhammer <fauli@gentoo.org>
+  kdepimlibs-4.4.4.ebuild:
+  x86 stable, bug 322791
+
+  24 Jun 2010; Christoph Mende <angelos@gentoo.org> kdepimlibs-4.4.4.ebuild:
+  Stable on amd64 wrt bug #322791
+
+  21 Jun 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  -kdepimlibs-4.3.3.ebuild, kdepimlibs-4.3.5.ebuild,
+  kdepimlibs-4.4.4.ebuild:
+  Drop 4.3.3. Drop hppa keywords per bug #304363
+
+*kdepimlibs-4.4.4 (06 Jun 2010)
+
+  06 Jun 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  -kdepimlibs-4.4.2.ebuild, -kdepimlibs-4.4.3.ebuild,
+  +kdepimlibs-4.4.4.ebuild:
+  Remove old. Version bump.
+
+  05 Jun 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  kdepimlibs-4.4.2.ebuild, kdepimlibs-4.4.3.ebuild:
+  Rename USE flag akonadi->semantic-desktop
+
+  03 May 2010; Alexey Shvetsov <alexxy@gentoo.org> -kdepimlibs-4.4.1.ebuild:
+  Drop KDE SC 4.4.1
+
+*kdepimlibs-4.4.3 (03 May 2010)
+
+  03 May 2010; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.4.3.ebuild:
+  Version bump
+
+  31 Mar 2010; Dror Levin <spatz@gentoo.org> -kdepimlibs-4.3.4.ebuild,
+  -kdepimlibs-4.4.0.ebuild, -kdepimlibs-4.4.0-r1.ebuild:
+  Remove old KDE versions.
+
+*kdepimlibs-4.4.2 (30 Mar 2010)
+
+  30 Mar 2010; Dror Levin <spatz@gentoo.org> +kdepimlibs-4.4.2.ebuild:
+  Version bump
+
+  11 Mar 2010; Brent Baude <ranger@gentoo.org> kdepimlibs-4.3.5.ebuild:
+  Marking kdepimlibs-4.3.5 ppc stable for bug 300393
+
+*kdepimlibs-4.4.1 (02 Mar 2010)
+
+  02 Mar 2010; Theo Chatzimichos <tampakrap@gentoo.org>
+  +kdepimlibs-4.4.1.ebuild:
+  Version bump
+
+*kdepimlibs-4.4.0-r1 (24 Feb 2010)
+
+  24 Feb 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +kdepimlibs-4.4.0-r1.ebuild, +files/kdepimlibs-4.4.0-sieve.patch:
+  Apply patch from upstream trunk for Sieve script editing wrt #305211,
+  thanks to Martin Regner and Andreas K. Huettel.
+
+  20 Feb 2010; Samuli Suominen <ssuominen@gentoo.org>
+  kdepimlibs-4.3.5.ebuild:
+  amd64/x86 stable wrt #300393
+
+  09 Feb 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  kdepimlibs-4.4.0.ebuild:
+  Raised akonadi-server version requirement to 1.3.1
+
+*kdepimlibs-4.4.0 (08 Feb 2010)
+
+  08 Feb 2010; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.4.0.ebuild:
+  Version bump to KDE SC 4.4.0
+
+*kdepimlibs-4.3.5 (25 Jan 2010)
+
+  25 Jan 2010; Tomáš Chvátal <scarabeus@gentoo.org>
+  +kdepimlibs-4.3.5.ebuild:
+  Version bump
+
+  23 Jan 2010; Raúl Porcel <armin76@gentoo.org> kdepimlibs-4.3.4.ebuild:
+  Add ~arm
+
+  20 Jan 2010; Jonathan Callen <abcd@gentoo.org> kdepimlibs-4.3.4.ebuild:
+  Keyword ~amd64-linux/~x86-linux
+
+  14 Jan 2010; Jeroen Roovers <jer@gentoo.org> kdepimlibs-4.3.3.ebuild:
+  Stable for HPPA (bug #295884).
+
+  22 Dec 2009; Jonathan Callen <abcd@gentoo.org> kdepimlibs-4.3.4.ebuild:
+  Pull in changes from overlay
+
+  10 Dec 2009; Tomáš Chvátal <scarabeus@gentoo.org>
+  -kdepimlibs-4.3.1.ebuild:
+  Drop KDE SC-4.3.1.
+
+  10 Dec 2009; Christian Faulhammer <fauli@gentoo.org>
+  kdepimlibs-4.3.3.ebuild:
+  x86 stable, bug 292455
+
+*kdepimlibs-4.3.4 (01 Dec 2009)
+
+  01 Dec 2009; Alex Alexander <wired@gentoo.org> +kdepimlibs-4.3.4.ebuild:
+  Version bump
+
+  30 Nov 2009; Joseph Jezak <josejx@gentoo.org> kdepimlibs-4.3.3.ebuild:
+  Marked ppc/ppc64 stable for bug #292455.
+
+  29 Nov 2009; Raúl Porcel <armin76@gentoo.org> kdepimlibs-4.3.3.ebuild:
+  Add ~sparc
+
+  29 Nov 2009; Samuli Suominen <ssuominen@gentoo.org>
+  kdepimlibs-4.3.3.ebuild:
+  amd64 stable wrt #292455
+
+  09 Nov 2009; Samuli Suominen <ssuominen@gentoo.org>
+  kdepimlibs-4.3.3.ebuild:
+  Revert a commit for bug 291660.
+
+  09 Nov 2009; Jonathan Callen <abcd@gentoo.org>
+  -files/kdepimlibs-4.2.4-gpgme-1.2.0.patch:
+  Drop unneeded patch
+
+  09 Nov 2009; Samuli Suominen <ssuominen@gentoo.org>
+  kdepimlibs-4.3.3.ebuild:
+  Missing dev-libs/boost[python] depend wrt #291660, thanks to Lars Wendler
+  for reporting.
+
+  08 Nov 2009; Alexey Shvetsov <alexxy@gentoo.org> -kdepimlibs-4.3.2.ebuild:
+  Drop KDE 4.3.2
+
+  08 Nov 2009; Alexey Shvetsov <alexxy@gentoo.org>
+  -kdepimlibs-4.2.4-r1.ebuild:
+  Drop KDE 4.2.4
+
+*kdepimlibs-4.3.3 (02 Nov 2009)
+
+  02 Nov 2009; Alex Alexander <wired@gentoo.org> +kdepimlibs-4.3.3.ebuild:
+  Version bump
+
+  01 Nov 2009; Jonathan Callen <abcd@gentoo.org> -kdepimlibs-4.2.4.ebuild:
+  Drop old revision
+
+  18 Oct 2009; Markus Meier <maekke@gentoo.org> kdepimlibs-4.3.1.ebuild:
+  x86 stable, bug #287697
+
+  10 Oct 2009; Samuli Suominen <ssuominen@gentoo.org>
+  kdepimlibs-4.3.1.ebuild:
+  amd64 stable wrt #287697
+
+  08 Oct 2009; Alexey Shvetsov <alexxy@gentoo.org> -kdepimlibs-4.3.0.ebuild:
+  Drop KDE 4.3.0
+
+*kdepimlibs-4.3.2 (06 Oct 2009)
+
+  06 Oct 2009; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.3.2.ebuild:
+  Version bump
+
+*kdepimlibs-4.3.1 (01 Sep 2009)
+
+  01 Sep 2009; Theo Chatzimichos <tampakrap@gentoo.org>
+  +kdepimlibs-4.3.1.ebuild:
+  Version bump
+
+*kdepimlibs-4.3.0 (04 Aug 2009)
+
+  04 Aug 2009; Alex Alexander <wired@gentoo.org> +kdepimlibs-4.3.0.ebuild:
+  Version bump
+
+*kdepimlibs-4.2.4-r1 (22 Jun 2009)
+
+  22 Jun 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +kdepimlibs-4.2.4-r1.ebuild, +files/kdepimlibs-4.2.4-gpgme-1.2.0.patch:
+  Fix support for app-crypt/gpgme-1.2.0 (bug #275006).
+
+  14 Jun 2009; Alexey Shvetsov <alexxy@gentoo.org> -kdepimlibs-4.2.3.ebuild:
+  Drop KDE 4.2.3
+
+  04 Jun 2009; Alexey Shvetsov <alexxy@gentoo.org> ChangeLog:
+  Fix accidently added keywords
+
+*kdepimlibs-4.2.4 (04 Jun 2009)
+
+  04 Jun 2009; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.2.4.ebuild:
+  Version bump
+
+  03 Jun 2009; Alexey Shvetsov <alexxy@gentoo.org> -kdepimlibs-4.2.2.ebuild:
+  Drop KDE 4.2.2
+
+*kdepimlibs-4.2.3 (06 May 2009)
+
+  06 May 2009; Tomas Chvatal <scarabeus@gentoo.org>
+  +kdepimlibs-4.2.3.ebuild:
+  Version bump
+
+  17 Apr 2009; Alexey Shvetsov <alexxy@gentoo.org> kdepimlibs-4.2.2:
+  Restore ~hppa keywords
+
+  16 Apr 2009; Alexey Shvetsov <alexxy@gentoo.org> -kdepimlibs-4.2.1.ebuild:
+  Drop KDE 4.2.1
+
+*kdepimlibs-4.2.2 (11 Apr 2009)
+
+  11 Apr 2009; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.2.2.ebuild:
+  Add KDE 4.2.2
+
+  11 Apr 2009; Raúl Porcel <armin76@gentoo.org> kdepimlibs-4.2.1.ebuild:
+  Add ~alpha/~ia64 wrt #260777
+
+  11 Apr 2009; Jeroen Roovers <jer@gentoo.org> kdepimlibs-4.2.1.ebuild:
+  Marked ~hppa (bug #260777).
+
+  08 Mar 2009; Alexey Shvetsov <alexxy@gentoo.org> -kdepimlibs-4.2.0.ebuild:
+  Drop KDE 4.2.0
+
+*kdepimlibs-4.2.1 (04 Mar 2009)
+
+  04 Mar 2009; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.2.1.ebuild:
+  Bump KDE 4.2.1
+
+  17 Feb 2009; Alexey Shvetsov <alexxy@gentoo.org> -kdepimlibs-4.1.4.ebuild:
+  Drop KDE 4.1.4
+
+  01 Feb 2009; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  kdepimlibs-4.2.0.ebuild:
+  Restored ~ppc and ~ppc64 keywords to KDE-4.2.0
+
+*kdepimlibs-4.2.0 (27 Jan 2009)
+
+  27 Jan 2009; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.2.0.ebuild:
+  Bump KDE-4.2.0
+
+  14 Jan 2009; Alexey Shvetsov <alexxy@gentoo.org> -kdepimlibs-4.1.2.ebuild,
+  -kdepimlibs-4.1.3.ebuild:
+  Drop KDE 4.1.2 and 4.1.3
+
+*kdepimlibs-4.1.4 (13 Jan 2009)
+
+  13 Jan 2009; Alexey Shvetsov <alexxy@gentoo.org> +kdepimlibs-4.1.4.ebuild:
+  Bump to 4.1.4
+
+  16 Nov 2008; Patrick Lauer <patrick@gentoo.org> Manifest:
+  Digest fix
+
+  15 Nov 2008; Mike Frysinger <vapier@gentoo.org> kdepimlibs-4.1.3.ebuild:
+  Add ppc/ppc64 love #244306.
+
+*kdepimlibs-4.1.3 (08 Nov 2008)
+
+  08 Nov 2008; Tomas Chvatal <scarabeus@gentoo.org>
+  +kdepimlibs-4.1.3.ebuild:
+  Version bump.
+
+  21 Oct 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  -kdepimlibs-4.0.4.ebuild, -kdepimlibs-4.0.5.ebuild:
+  Removing KDE-4.0.X packages now that 4.1.2 was put in the tree.
+
+*kdepimlibs-4.1.2 (02 Oct 2008)
+
+  02 Oct 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  +kdepimlibs-4.1.2.ebuild:
+  Add kde-4.1.2 into the tree from the kde-testing overlay.
+
+  09 Jun 2008; Tobias Heinlein <keytoaster@gentoo.org>
+  -kdepimlibs-4.0.2.ebuild, -kdepimlibs-4.0.3.ebuild:
+  Removed old versions.
+
+*kdepimlibs-4.0.5 (05 Jun 2008)
+
+  05 Jun 2008; Tobias Heinlein <keytoaster@gentoo.org>
+  +kdepimlibs-4.0.5.ebuild:
+  Added the KDE 4.0.5 version of kdepimlibs.
+
+*kdepimlibs-4.0.4 (15 May 2008)
+
+  15 May 2008; Ingmar Vanhassel <ingmar@gentoo.org>
+  +kdepimlibs-4.0.4.ebuild:
+  Added KDE 4.0.4 version of kdepimlibs. Thanks to Jorge Manuel B. S.
+  Vicetto.
+
+*kdepimlibs-4.0.3 (03 Apr 2008)
+
+  03 Apr 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  +kdepimlibs-4.0.3.ebuild:
+  Version bump to KDE 4.0.3. This is still not intended for mainstream so DO
+  NOT KEYWORD IT without talking to the KDE herd first.
+
+  20 Mar 2008; Ingmar Vanhassel <ingmar@gentoo.org>
+  -kdepimlibs-4.0.1.ebuild:
+  Old.
+
+*kdepimlibs-4.0.2 (10 Mar 2008)
+
+  10 Mar 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  +kdepimlibs-4.0.2.ebuild:
+  Version bump to KDE 4.0.2
+
+  05 Mar 2008; Jeroen Roovers <jer@gentoo.org> kdepimlibs-4.0.1.ebuild:
+  Marked ~hppa.
+
+  16 Feb 2008; Ingmar Vanhassel <ingmar@gentoo.org>
+  -kdepimlibs-4.0.0.ebuild:
+  Spring cleaning
+
+*kdepimlibs-4.0.1 (06 Feb 2008)
+
+  06 Feb 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  +kdepimlibs-4.0.1.ebuild:
+  Version bump to KDE 4.0.1.
+
+  20 Jan 2008; Ingmar Vanhassel <ingmar@gentoo.org> kdepimlibs-4.0.0.ebuild:
+  Added missing debug htmlhandbook test USE-flags.
+
+  20 Jan 2008; Ingmar Vanhassel <ingmar@gentoo.org> kdepimlibs-4.0.0.ebuild:
+  Depend on >=app-crypt/gpgme-1.1.6, fixes bug 206724.
+
+*kdepimlibs-4.0.0 (17 Jan 2008)
+
+  17 Jan 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  +kdepimlibs-4.0.0.ebuild:
+  Added KDE 4.0.0's kdepimlibs.
+

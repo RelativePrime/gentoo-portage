@@ -1,0 +1,65 @@
+# ChangeLog for x11-misc/xnee
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/xnee/ChangeLog,v 1.14 2011/02/01 19:23:56 jer Exp $
+
+*xnee-3.08 (01 Feb 2011)
+
+  01 Feb 2011; Jeroen Roovers <jer@gentoo.org> -xnee-3.06.ebuild,
+  +xnee-3.08.ebuild:
+  Version bump.
+
+  11 Jan 2011; Pacho Ramos <pacho@gentoo.org> xnee-3.06.ebuild,
+  xnee-3.07.ebuild:
+  Needs gnome-panel with bonobo support (bug #348185).
+
+*xnee-3.07 (18 Oct 2010)
+
+  18 Oct 2010; Jeroen Roovers <jer@gentoo.org> +xnee-3.07.ebuild:
+  Version bump.
+
+  25 Sep 2010; Samuli Suominen <ssuominen@gentoo.org> xnee-3.06.ebuild:
+  Fix building with make >= 3.82 wrt #333983 by Diego E. Pettenò.
+
+  10 Jul 2010; Samuli Suominen <ssuominen@gentoo.org> xnee-3.06.ebuild:
+  Fix imagemagick vs. graphicsmagick DEPEND wrt #314403.
+
+*xnee-3.06 (06 Jun 2010)
+
+  06 Jun 2010; Samuli Suominen <ssuominen@gentoo.org> +xnee-3.06.ebuild:
+  Version bump.
+
+  13 Feb 2010; Samuli Suominen <ssuominen@gentoo.org> xnee-3.05.ebuild:
+  Use virtualx.eclass for src_test wrt #304945 but because it still needs
+  RECORD extension enabled in X.org server, restrict tests off.
+
+  13 Feb 2010; Samuli Suominen <ssuominen@gentoo.org> xnee-3.05.ebuild,
+  +files/xnee-3.05-asneeded.patch:
+  Fix building with -Wl,--as-needed.
+
+*xnee-3.05 (09 Feb 2010)
+
+  09 Feb 2010; Samuli Suominen <ssuominen@gentoo.org> +xnee-3.05.ebuild:
+  Version bump wrt #300539, thanks to Jeroen Roovers for reporting.
+
+  02 May 2009; Samuli Suominen <ssuominen@gentoo.org> -xnee-3.01.ebuild,
+  -files/xnee-3.01-destdir.patch, xnee-3.02.ebuild:
+  Missing x11-proto/inputproto dep wrt #228233.
+
+  29 Feb 2008; Carsten Lohrke <carlo@gentoo.org> xnee-3.01.ebuild:
+  Remove icon extension from desktop entry to match Icon Theme Specification.
+
+*xnee-3.02 (03 Feb 2008)
+
+  03 Feb 2008; Samuli Suominen <ssuominen@gentoo.org>
+  +files/xnee-3.02-destdir.patch, +xnee-3.02.ebuild:
+  Version bump with keyword for ~amd64.
+
+  14 Aug 2007; Samuli Suominen <ssuominen@gentoo.org> xnee-3.01.ebuild:
+  Add desktop entry with icon.
+
+*xnee-3.01 (13 Aug 2007)
+
+  13 Aug 2007; Samuli Suominen <ssuominen@gentoo.org>
+  +files/xnee-3.01-destdir.patch, +xnee-3.01.ebuild:
+  Initial commit for bug 87725. Thanks to Philipp Serr and Florian Steinel.
+

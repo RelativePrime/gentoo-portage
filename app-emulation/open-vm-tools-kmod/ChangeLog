@@ -1,0 +1,97 @@
+# ChangeLog for app-emulation/open-vm-tools-kmod
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/open-vm-tools-kmod/ChangeLog,v 1.16 2011/07/16 12:56:56 vadimk Exp $
+
+*open-vm-tools-kmod-0.0.20110627.437995 (16 Jul 2011)
+
+  16 Jul 2011; Vadim Kuznetsov <vadimk@gentoo.org>
+  +open-vm-tools-kmod-0.0.20110627.437995.ebuild:
+  version bump
+
+*open-vm-tools-kmod-0.0.20110328.387002 (19 Apr 2011)
+
+  19 Apr 2011; Vadim Kuznetsov <vadimk@gentoo.org>
+  +open-vm-tools-kmod-0.0.20110328.387002.ebuild:
+  version bump
+
+*open-vm-tools-kmod-0.0.20110223.368700-r1 (11 Mar 2011)
+
+  11 Mar 2011; Vadim Kuznetsov <vadimk@gentoo.org>
+  +open-vm-tools-kmod-0.0.20110223.368700-r1.ebuild:
+  version bump. added udev rules
+
+  11 Mar 2011; Vadim Kuznetsov <vadimk@gentoo.org>
+  -open-vm-tools-kmod-0.0.20100223.236320.ebuild,
+  -open-vm-tools-kmod-0.0.20100320.243334.ebuild:
+  cleanup
+
+*open-vm-tools-kmod-0.0.20110124.354108 (06 Feb 2011)
+
+  06 Feb 2011; Vadim Kuznetsov <vadimk@gentoo.org>
+  +open-vm-tools-kmod-0.0.20110124.354108.ebuild:
+  Version bump
+
+*open-vm-tools-kmod-0.0.20101219.339835 (18 Jan 2011)
+
+  18 Jan 2011; Vadim Kuznetsov <vadimk@gentoo.org>
+  +open-vm-tools-kmod-0.0.20101219.339835.ebuild:
+  Version bump.
+
+*open-vm-tools-kmod-0.0.20100919.301124 (05 Oct 2010)
+
+  05 Oct 2010; Vadim Kuznetsov <vadimk@gentoo.org>
+  +open-vm-tools-kmod-0.0.20100919.301124.ebuild:
+  Version bump.
+
+*open-vm-tools-kmod-0.0.20100824.292196 (27 Aug 2010)
+
+  27 Aug 2010; Vadim Kuznetsov <vadimk@gentoo.org>
+  +open-vm-tools-kmod-0.0.20100824.292196.ebuild:
+  Version bump. Bug 334687
+
+  09 Aug 2010; Vadim Kuznetsov <vadimk@gentoo.org>
+  -open-vm-tools-kmod-0.0.20091216.217847.ebuild:
+  clean up
+
+*open-vm-tools-kmod-0.0.20100616.268169 (04 Jul 2010)
+
+  04 Jul 2010; Vadim Kuznetsov <vadimk@gentoo.org>
+  +open-vm-tools-kmod-0.0.20100616.268169.ebuild:
+  version bump
+
+*open-vm-tools-kmod-0.0.20100320.243334 (24 Mar 2010)
+
+  24 Mar 2010; Vadim Kuznetsov <vadimk@gentoo.org>
+  +open-vm-tools-kmod-0.0.20100320.243334.ebuild:
+  version bump
+
+*open-vm-tools-kmod-0.0.20100223.236320 (16 Mar 2010)
+
+  16 Mar 2010; Vadim Kuznetsov <vadimk@gentoo.org>
+  -open-vm-tools-kmod-0.0.20091015.201664.ebuild,
+  -open-vm-tools-kmod-0.0.20100119.226760.ebuild,
+  +open-vm-tools-kmod-0.0.20100223.236320.ebuild:
+  small code cleanup
+
+*open-vm-tools-kmod-0.0.20100119.226760 (19 Feb 2010)
+
+  19 Feb 2010; Vadim Kuznetsov <vadimk@gentoo.org>
+  +open-vm-tools-kmod-0.0.20100119.226760.ebuild:
+  Version bump, fixes bug 296277. vmxnet3 moved to kernel.
+
+  27 Dec 2009; Vadim Kuznetsov <vadimk@gentoo.org>
+  open-vm-tools-kmod-0.0.20091216.217847.ebuild:
+  Bug 297692
+
+*open-vm-tools-kmod-0.0.20091216.217847 (20 Dec 2009)
+
+  20 Dec 2009; Vadim Kuznetsov <vadimk@gentoo.org>
+  +open-vm-tools-kmod-0.0.20091216.217847.ebuild:
+  Version bump.
+
+*open-vm-tools-kmod-0.0.20091015.201664 (29 Oct 2009)
+
+  29 Oct 2009; Vadim Kuznetsov vadimk@gentoo.org
+  +open-vm-tools-kmod-0.0.20091015.201664.ebuild, +metadata.xml:
+  open-vm-tools kernel modules.
+

@@ -1,0 +1,48 @@
+# ChangeLog for sci-libs/cqrlib
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/cqrlib/ChangeLog,v 1.10 2011/05/16 06:09:35 jlec Exp $
+
+  16 May 2011; Justin Lecher <jlec@gentoo.org> files/1.0.6-gentoo.patch:
+  Fixed underlinking, #367457
+
+*cqrlib-1.0.6 (05 May 2011)
+
+  05 May 2011; Justin Lecher <jlec@gentoo.org> +files/1.0.6-gentoo.patch,
+  cqrlib-1.0.5.ebuild, +cqrlib-1.0.6.ebuild:
+  Version Bump, notified by euscan
+
+  23 Jan 2011; Kacper Kowalik <xarthisius@gentoo.org> cqrlib-1.0.5.ebuild:
+  Mark ~ppc wrt #303393
+
+  16 Jul 2010; Justin Lecher <jlec@gentoo.org> -cqrlib-1.0.3-r1.ebuild:
+  Removed old
+
+  15 Jul 2010; Markus Meier <maekke@gentoo.org> cqrlib-1.0.5.ebuild:
+  x86 stable, bug #326037
+
+  28 Jun 2010; Christoph Mende <angelos@gentoo.org> cqrlib-1.0.5.ebuild:
+  Stable on amd64 wrt bug #326037
+
+*cqrlib-1.0.5 (25 May 2010)
+
+  25 May 2010; Justin Lecher <jlec@gentoo.org> +files/1.0.5-gentoo.patch,
+  +cqrlib-1.0.5.ebuild:
+  Version Bump
+
+  07 Mar 2010; Justin Lecher (jlec) <jlec@gentoo.org>
+  cqrlib-1.0.3-r1.ebuild:
+  remove crappie test
+
+*cqrlib-1.0.3-r1 (07 Mar 2010)
+
+  07 Mar 2010; Justin Lecher (jlec) <jlec@gentoo.org>
+  +files/1.0.3-dynlib.patch, -cqrlib-1.0.3.ebuild, +cqrlib-1.0.3-r1.ebuild:
+  Building shared instead of statis libs now
+
+*cqrlib-1.0.3 (03 Feb 2010)
+
+  03 Feb 2010; Justin Lecher (jlec) <jlec@gentoo.org>
+  +files/1.0.3-LDFLAGS.patch, +cqrlib-1.0.3.ebuild, +metadata.xml:
+  An ANSI C implementation of a utility library for quaternion arithmetic
+  and quaternion rotation math
+

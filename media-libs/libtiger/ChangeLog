@@ -1,0 +1,57 @@
+# ChangeLog for media-libs/libtiger
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libtiger/ChangeLog,v 1.15 2011/01/09 15:19:39 aballier Exp $
+
+*libtiger-0.3.4 (09 Jan 2011)
+
+  09 Jan 2011; Alexis Ballier <aballier@gentoo.org> +libtiger-0.3.4.ebuild:
+  version bump
+
+  13 Nov 2009; Joseph Jezak <josejx@gentoo.org> libtiger-0.3.3.ebuild:
+  Marked ppc64 stable.
+
+  18 Oct 2009; Raúl Porcel <armin76@gentoo.org> libtiger-0.3.3.ebuild:
+  sparc stable
+
+  02 Oct 2009; Mounir Lamouri <volkmar@gentoo.org> libtiger-0.3.3.ebuild:
+  Stable for ppc, bug 285370
+
+  29 Sep 2009; Tobias Klausmann <klausman@gentoo.org> libtiger-0.3.3.ebuild:
+  Stable on alpha, bug #285370
+
+  22 Sep 2009; Markus Meier <maekke@gentoo.org> libtiger-0.3.3.ebuild:
+  amd64 stable, bug #285370
+
+  22 Sep 2009; Christian Faulhammer <fauli@gentoo.org>
+  libtiger-0.3.3.ebuild:
+  stable x86, security bug 285370
+
+  20 Sep 2009; Alexis Ballier <aballier@gentoo.org> libtiger-0.3.3.ebuild,
+  +files/libtiger-0.3.3-check.patch:
+  Add patch from upstream to fix tests on arm
+
+  22 Jul 2009; <solar@gentoo.org> libtiger-0.3.3.ebuild:
+  - keyword ~arm
+
+  13 Jul 2009; Joseph Jezak <josejx@gentoo.org> libtiger-0.3.3.ebuild:
+  Marked ~ppc/~ppc64 for bug #276278.
+
+  13 Jul 2009; Tobias Klausmann <klausman@gentoo.org> libtiger-0.3.3.ebuild:
+  Keyworded on alpha, Bug #276278
+
+  02 Jul 2009; Alexis Ballier <aballier@gentoo.org> libtiger-0.3.3.ebuild:
+  run tests with LC_ALL=C to avoid false positives with poor regexps..
+
+  02 Jul 2009; Christian Faulhammer <fauli@gentoo.org>
+  libtiger-0.3.3.ebuild:
+  keyworded ~x86 for bug 276278
+
+  02 Jul 2009; Alexis Ballier <aballier@gentoo.org> libtiger-0.3.3.ebuild:
+  keyword ~x86-fbsd
+
+*libtiger-0.3.3 (02 Jul 2009)
+
+  02 Jul 2009; Alexis Ballier <aballier@gentoo.org> +libtiger-0.3.3.ebuild,
+  +metadata.xml:
+  initial import, ebuild by me
+

@@ -1,0 +1,117 @@
+# ChangeLog for media-gfx/fotoxx
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/fotoxx/ChangeLog,v 1.18 2011/07/14 15:41:02 grozin Exp $
+
+*fotoxx-11.07 (14 Jul 2011)
+
+  14 Jul 2011; Andrey Grozin <grozin@gentoo.org> -fotoxx-11.04.ebuild,
+  -files/fotoxx-11.04-makefile.patch, +fotoxx-11.07.ebuild,
+  +files/fotoxx-11.07-docdir.patch, +files/fotoxx-11.07-makefile.patch:
+  Version bump
+
+*fotoxx-11.06 (06 Jun 2011)
+
+  06 Jun 2011; Andrey Grozin <grozin@gentoo.org> -fotoxx-11.02.ebuild,
+  -files/fotoxx-11.02-makefile.patch, -fotoxx-11.03.1.ebuild,
+  -files/fotoxx-11.03.1-makefile.patch, +fotoxx-11.06.ebuild,
+  +files/fotoxx-11.06-docdir.patch, +files/fotoxx-11.06-makefile.patch:
+  Version bump, closing #368379
+
+*fotoxx-11.04 (05 Apr 2011)
+
+  05 Apr 2011; Andrey Grozin <grozin@gentoo.org> +fotoxx-11.04.ebuild,
+  +files/fotoxx-11.04-makefile.patch:
+  Version bump
+
+*fotoxx-11.03.1 (16 Mar 2011)
+
+  16 Mar 2011; Andrey Grozin <grozin@gentoo.org> -fotoxx-11.03.ebuild,
+  +fotoxx-11.03.1.ebuild, +files/fotoxx-11.03.1-makefile.patch,
+  -files/fotoxx-11.03-makefile.patch:
+  Version bump
+
+*fotoxx-11.03 (03 Mar 2011)
+
+  03 Mar 2011; Andrey Grozin <grozin@gentoo.org> -fotoxx-11.01.ebuild,
+  -files/fotoxx-11.01-makefile.patch, +fotoxx-11.03.ebuild,
+  +files/fotoxx-11.03-makefile.patch:
+  Version bump
+
+*fotoxx-11.02 (09 Feb 2011)
+
+  09 Feb 2011; Andrey Grozin <grozin@gentoo.org> -fotoxx-10.12.ebuild,
+  -files/fotoxx-10.12-makefile.patch, +fotoxx-11.02.ebuild,
+  +files/fotoxx-11.02-makefile.patch:
+  Version bump
+
+*fotoxx-11.01 (04 Jan 2011)
+
+  04 Jan 2011; Andrey Grozin <grozin@gentoo.org> -fotoxx-10.11.2.ebuild,
+  -files/fotoxx-10.11.2-makefile.patch, +fotoxx-11.01.ebuild,
+  +files/fotoxx-11.01-makefile.patch:
+  Version bump
+
+*fotoxx-10.12 (03 Dec 2010)
+
+  03 Dec 2010; Andrey Grozin <grozin@gentoo.org> -fotoxx-10.10.2.ebuild,
+  -files/fotoxx-10.10.2-makefile.patch, +fotoxx-10.12.ebuild,
+  +files/fotoxx-10.12-makefile.patch:
+  Version bump
+
+*fotoxx-10.11.2 (10 Nov 2010)
+
+  10 Nov 2010; Andrey Grozin <grozin@gentoo.org> -fotoxx-10.10.ebuild,
+  -files/fotoxx-10.10-makefile.patch, +fotoxx-10.11.2.ebuild,
+  +files/fotoxx-10.11.2-makefile.patch:
+  Version bump
+
+*fotoxx-10.10.2 (15 Oct 2010)
+
+  15 Oct 2010; Andrey Grozin <grozin@gentoo.org> -fotoxx-10.9.1.ebuild,
+  -files/fotoxx-10.9.1-makefile.patch, +fotoxx-10.10.2.ebuild,
+  +files/fotoxx-10.10.2-makefile.patch:
+  Version bump
+
+*fotoxx-10.10 (02 Oct 2010)
+
+  02 Oct 2010; Andrey Grozin <grozin@gentoo.org> -fotoxx-10.8.4.ebuild,
+  +fotoxx-10.10.ebuild, +files/fotoxx-10.10-makefile.patch,
+  -files/fotoxx-makefile.patch:
+  Version bump
+
+*fotoxx-10.9.1 (14 Sep 2010)
+
+  14 Sep 2010; Andrey Grozin <grozin@gentoo.org> -fotoxx-10.8.ebuild,
+  +fotoxx-10.9.1.ebuild, +files/fotoxx-10.9.1-makefile.patch:
+  Version bump
+
+*fotoxx-10.8.4 (19 Aug 2010)
+
+  19 Aug 2010; Andrey Grozin <grozin@gentoo.org> -fotoxx-10.7.ebuild,
+  +fotoxx-10.8.4.ebuild:
+  Version bump
+
+*fotoxx-10.8 (03 Aug 2010)
+
+  03 Aug 2010; Andrey Grozin <grozin@gentoo.org> +fotoxx-10.8.ebuild:
+  Version bump
+
+  26 Jul 2010; Samuli Suominen <ssuominen@gentoo.org> fotoxx-10.7.ebuild,
+  files/fotoxx-makefile.patch:
+  Fix building with -Wl,--as-needed wrt #329901 by Nao Nakashima.
+
+  20 Jul 2010; Andrey Grozin <grozin@gentoo.org> fotoxx-10.7.ebuild,
+  files/fotoxx-makefile.patch:
+  Ebuild cleanup, ~amd64 added, thanks to Joshua Saddler
+  <nightmorph@gentoo.org>
+
+  19 Jul 2010; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  metadata.xml:
+  Added missing herd tag.
+
+*fotoxx-10.7 (16 Jul 2010)
+
+  16 Jul 2010; Andrey Grozin <grozin@gentoo.org> +fotoxx-10.7.ebuild,
+  +files/fotoxx-makefile.patch, +metadata.xml:
+  Initial import, partly based on an old ebuild in sunrise
+

@@ -1,0 +1,17 @@
+# ChangeLog for x11-misc/dragbox
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/dragbox/ChangeLog,v 1.3 2011/03/28 17:15:55 angelos Exp $
+
+  28 Mar 2011; Christoph Mende <angelos@gentoo.org> dragbox-0.4.0.ebuild:
+  Fixed slot deps
+
+  23 Oct 2010; Markos Chandras <hwoarang@gentoo.org> metadata.xml:
+  Remove myself from metadata
+
+*dragbox-0.4.0 (11 Aug 2010)
+
+  11 Aug 2010; Markos Chandras <hwoarang@gentoo.org> +dragbox-0.4.0.ebuild,
+  +metadata.xml:
+  Moved from sunrise overaly. Thanks to Chad A. Simmons
+  <chad.simmons@member.fsf.org> for the initial ebuild. Fixes bug #237944
+

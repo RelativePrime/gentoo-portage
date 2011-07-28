@@ -1,0 +1,23 @@
+# ChangeLog for app-vim/cctree
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-vim/cctree/ChangeLog,v 1.4 2011/07/15 18:48:09 radhermit Exp $
+
+*cctree-1.60 (15 Jul 2011)
+
+  15 Jul 2011; Tim Harder <radhermit@gentoo.org> +cctree-1.60.ebuild:
+  Version bump.
+
+*cctree-1.55 (25 Jun 2011)
+
+  25 Jun 2011; Tim Harder <radhermit@gentoo.org> +cctree-1.55.ebuild:
+  Version bump. Use github mirror.
+
+  20 May 2011; Tim Harder <radhermit@gentoo.org> cctree-1.51.ebuild:
+  Fix description.
+
+*cctree-1.51 (20 May 2011)
+
+  20 May 2011; Tim Harder <radhermit@gentoo.org> +cctree-1.51.ebuild,
+  +metadata.xml:
+  Initial import (bug #367051).
+

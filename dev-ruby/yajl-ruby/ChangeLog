@@ -1,0 +1,48 @@
+# ChangeLog for dev-ruby/yajl-ruby
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/yajl-ruby/ChangeLog,v 1.9 2011/04/12 05:49:03 graaff Exp $
+
+*yajl-ruby-0.8.2 (12 Apr 2011)
+
+  12 Apr 2011; Hans de Graaff <graaff@gentoo.org> +yajl-ruby-0.8.2.ebuild:
+  Version bump.
+
+  12 Apr 2011; Hans de Graaff <graaff@gentoo.org> -yajl-ruby-0.7.8.ebuild,
+  -yajl-ruby-0.7.9.ebuild:
+  Remove old versions.
+
+*yajl-ruby-0.8.1 (12 Feb 2011)
+
+  12 Feb 2011; Hans de Graaff <graaff@gentoo.org> +yajl-ruby-0.8.1.ebuild:
+  Version bump.
+
+*yajl-ruby-0.7.9 (15 Jan 2011)
+
+  15 Jan 2011; Hans de Graaff <graaff@gentoo.org> +yajl-ruby-0.7.9.ebuild:
+  Version bump.
+
+  09 Oct 2010; Hans de Graaff <graaff@gentoo.org> -yajl-ruby-0.7.7.ebuild:
+  Remove old version.
+
+*yajl-ruby-0.7.8 (02 Oct 2010)
+
+  02 Oct 2010; Hans de Graaff <graaff@gentoo.org> +yajl-ruby-0.7.8.ebuild:
+  Version bump with bug fixes.
+
+  29 Jul 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  -yajl-ruby-0.7.6.ebuild, -files/yajl-ruby-0.7.6-gentoo.patch:
+  Cleanup old version.
+
+*yajl-ruby-0.7.7 (20 Jul 2010)
+
+  20 Jul 2010; Hans de Graaff <graaff@gentoo.org> +yajl-ruby-0.7.7.ebuild:
+  Version bump. Our patch has been applied upstream.
+
+*yajl-ruby-0.7.6 (23 May 2010)
+
+  23 May 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  +yajl-ruby-0.7.6.ebuild, +files/yajl-ruby-0.7.6-gentoo.patch,
+  +metadata.xml:
+  Initial import of the yajl bindings for Ruby, optionally used by the new
+  versions of Rails.
+

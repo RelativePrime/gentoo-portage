@@ -1,0 +1,111 @@
+# ChangeLog for app-i18n/ibus-mozc
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-i18n/ibus-mozc/ChangeLog,v 1.18 2011/07/20 14:52:13 matsuu Exp $
+
+*ibus-mozc-1.1.773.102 (20 Jul 2011)
+*ibus-mozc-1.1.758.102 (20 Jul 2011)
+
+  20 Jul 2011; MATSUU Takuto <matsuu@gentoo.org> +ibus-mozc-1.1.758.102.ebuild,
+  +files/ibus-mozc-1.1.758.102-gentoo.patch, +ibus-mozc-1.1.773.102.ebuild:
+  Version bumped.
+
+*ibus-mozc-1.1.717.102-r1 (01 Jun 2011)
+
+  01 Jun 2011; MATSUU Takuto <matsuu@gentoo.org>
+  +ibus-mozc-1.1.717.102-r1.ebuild, +files/ibus-mozc-1.1.717.102-gcc46.patch:
+  Fixed compile issue with gcc-4.6, bug #368713.
+
+*ibus-mozc-1.1.717.102 (24 May 2011)
+
+  24 May 2011; MATSUU Takuto <matsuu@gentoo.org>
+  -ibus-mozc-0.13.523.102.ebuild, +ibus-mozc-1.1.717.102.ebuild:
+  Version bumped. Fixed dependency. Removed old version.
+
+*ibus-mozc-1.1.690.102 (17 May 2011)
+
+  17 May 2011; MATSUU Takuto <matsuu@gentoo.org> +ibus-mozc-1.1.690.102.ebuild:
+  Version bumped. Add app-i18n/zinnia to dependency.
+
+  21 Apr 2011; Thomas Kahle <tomka@gentoo.org> ibus-mozc-1.0.558.102.ebuild:
+  x86 stable per bug 360951
+
+  28 Mar 2011; Christoph Mende <angelos@gentoo.org>
+  ibus-mozc-1.0.558.102.ebuild:
+  Stable on amd64 wrt bug #360951
+
+*ibus-mozc-1.1.626.102 (28 Mar 2011)
+
+  28 Mar 2011; MATSUU Takuto <matsuu@gentoo.org> +ibus-mozc-1.1.626.102.ebuild:
+  Version bumped.
+
+*ibus-mozc-1.0.558.102 (31 Dec 2010)
+
+  31 Dec 2010; MATSUU Takuto <matsuu@gentoo.org>
+  -ibus-mozc-0.12.434.102.ebuild, -ibus-mozc-0.13.464.102.ebuild,
+  -ibus-mozc-0.13.481.102.ebuild, -ibus-mozc-0.13.492.102.ebuild,
+  +ibus-mozc-1.0.558.102.ebuild:
+  Version bumped. Removed old versions.
+
+*ibus-mozc-0.13.523.102 (11 Nov 2010)
+
+  11 Nov 2010; MATSUU Takuto <matsuu@gentoo.org>
+  +files/50ibus-mozc-gentoo.el, +ibus-mozc-0.13.523.102.ebuild:
+  Version bumped. Added emacs USE flag.
+
+*ibus-mozc-0.13.492.102 (29 Sep 2010)
+
+  29 Sep 2010; MATSUU Takuto <matsuu@gentoo.org>
+  +ibus-mozc-0.13.492.102.ebuild:
+  Version bumped.
+
+*ibus-mozc-0.13.481.102 (27 Sep 2010)
+
+  27 Sep 2010; MATSUU Takuto <matsuu@gentoo.org>
+  -ibus-mozc-0.11.365.102.ebuild, -ibus-mozc-0.11.383.102.ebuild,
+  -ibus-mozc-0.12.402.102.ebuild, -ibus-mozc-0.12.410.102.ebuild,
+  -ibus-mozc-0.12.422.102.ebuild, +ibus-mozc-0.13.481.102.ebuild:
+  Version bumped. Removed old versions.
+
+*ibus-mozc-0.13.464.102 (14 Sep 2010)
+
+  14 Sep 2010; MATSUU Takuto <matsuu@gentoo.org>
+  +ibus-mozc-0.13.464.102.ebuild:
+  Version bumped.
+
+*ibus-mozc-0.12.434.102 (19 Aug 2010)
+
+  19 Aug 2010; MATSUU Takuto <matsuu@gentoo.org>
+  +ibus-mozc-0.12.434.102.ebuild:
+  Version bumped.
+
+*ibus-mozc-0.12.422.102 (29 Jul 2010)
+
+  29 Jul 2010; MATSUU Takuto <matsuu@gentoo.org>
+  +ibus-mozc-0.12.422.102.ebuild:
+  Version bumped.
+
+*ibus-mozc-0.12.410.102 (13 Jul 2010)
+
+  13 Jul 2010; MATSUU Takuto <matsuu@gentoo.org>
+  +ibus-mozc-0.12.410.102.ebuild:
+  Version bumped.
+
+*ibus-mozc-0.12.402.102 (01 Jul 2010)
+
+  01 Jul 2010; MATSUU Takuto <matsuu@gentoo.org>
+  +ibus-mozc-0.12.402.102.ebuild:
+  Version bumped.
+
+*ibus-mozc-0.11.383.102 (17 Jun 2010)
+
+  17 Jun 2010; MATSUU Takuto <matsuu@gentoo.org>
+  +ibus-mozc-0.11.383.102.ebuild, metadata.xml:
+  Version bumped. Added scim USE flag.
+
+*ibus-mozc-0.11.365.102 (11 Jun 2010)
+
+  11 Jun 2010; MATSUU Takuto <matsuu@gentoo.org>
+  +ibus-mozc-0.11.365.102.ebuild,
+  +files/ibus-mozc-0.11.365.102-gentoo.patch, +metadata.xml:
+  Initial import.
+

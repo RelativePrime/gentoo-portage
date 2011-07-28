@@ -1,0 +1,16 @@
+# ChangeLog for app-emulation/emul-linux-x86-motif
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/emul-linux-x86-motif/ChangeLog,v 1.2 2011/07/22 19:22:33 pacho Exp $
+
+*emul-linux-x86-motif-20110722 (22 Jul 2011)
+
+  22 Jul 2011; Pacho Ramos <pacho@gentoo.org>
+  +emul-linux-x86-motif-20110722.ebuild:
+  Version bump.
+
+*emul-linux-x86-motif-20110129 (30 Jan 2011)
+
+  30 Jan 2011; Pacho Ramos <pacho@gentoo.org>
+  +emul-linux-x86-motif-20110129.ebuild, +metadata.xml:
+  Emul set for openmotif stuff due its license (bug #337967).
+

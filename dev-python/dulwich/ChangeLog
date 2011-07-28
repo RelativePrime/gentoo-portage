@@ -1,0 +1,123 @@
+# ChangeLog for dev-python/dulwich
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/dulwich/ChangeLog,v 1.31 2011/06/06 08:31:12 djc Exp $
+
+  06 Jun 2011; Dirkjan Ochtman <djc@gentoo.org> -dulwich-0.7.0.ebuild:
+  Remove old version.
+
+  31 May 2011; Markus Meier <maekke@gentoo.org> dulwich-0.7.1.ebuild:
+  x86 stable, bug #367299
+
+  22 May 2011; Joseph Jezak <josejx@gentoo.org> dulwich-0.7.0.ebuild,
+  dulwich-0.7.1.ebuild:
+  Marked ~ppc for bug #365913.
+
+  15 May 2011; Christoph Mende <angelos@gentoo.org> dulwich-0.7.1.ebuild:
+  Stable on amd64 wrt bug #367299
+
+  15 Apr 2011; Fabian Groffen <grobian@gentoo.org> dulwich-0.7.1.ebuild:
+  Marked ~x64-solaris
+
+*dulwich-0.7.1 (13 Apr 2011)
+
+  13 Apr 2011; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +dulwich-0.7.1.ebuild:
+  Version bump.
+
+  08 Apr 2011; Thomas Kahle <tomka@gentoo.org> dulwich-0.7.0.ebuild:
+  x86 stable per bug 360343
+
+  24 Mar 2011; Christoph Mende <angelos@gentoo.org> dulwich-0.7.0.ebuild:
+  Stable on amd64 wrt bug #360343
+
+  13 Mar 2011; Fabian Groffen <grobian@gentoo.org> dulwich-0.7.0.ebuild:
+  Marked ~x86-macos
+
+*dulwich-0.7.0 (12 Feb 2011)
+
+  12 Feb 2011; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +dulwich-0.7.0.ebuild:
+  Version bump.
+
+  28 Nov 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -dulwich-0.6.1.ebuild:
+  Delete.
+
+  17 Nov 2010; Markus Meier <maekke@gentoo.org> dulwich-0.6.2.ebuild:
+  amd64/x86 stable, bug #345499
+
+*dulwich-0.6.2 (17 Oct 2010)
+
+  17 Oct 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +dulwich-0.6.2.ebuild:
+  Version bump.
+
+  19 Sep 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -dulwich-0.6.0.ebuild:
+  Delete.
+
+  19 Sep 2010; Markos Chandras <hwoarang@gentoo.org> dulwich-0.6.1.ebuild:
+  Stable on amd64 wrt bug #337134
+
+  17 Sep 2010; Christian Faulhammer <fauli@gentoo.org> dulwich-0.6.1.ebuild:
+  stable x86, bug 337134
+
+*dulwich-0.6.1 (23 Jul 2010)
+
+  23 Jul 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +dulwich-0.6.1.ebuild:
+  Version bump.
+
+  10 Jul 2010; Christian Faulhammer <fauli@gentoo.org> dulwich-0.6.0.ebuild:
+  stable x86, bug 327149
+
+  26 Jun 2010; Christoph Mende <angelos@gentoo.org> dulwich-0.6.0.ebuild:
+  Stable on amd64 wrt bug #325421
+
+  29 May 2010; Fabian Groffen <grobian@gentoo.org> dulwich-0.6.0.ebuild:
+  Marked ~x86-solaris
+
+*dulwich-0.6.0 (26 May 2010)
+
+  26 May 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +dulwich-0.6.0.ebuild:
+  Version bump.
+
+  21 Apr 2010; Christian Faulhammer <fauli@gentoo.org> dulwich-0.5.0.ebuild:
+  stable x86, bug 313155
+
+  13 Apr 2010; Markos Chandras <hwoarang@gentoo.org> dulwich-0.5.0.ebuild:
+  Stable on amd64 wrt bug #313155
+
+  24 Mar 2010; Fabian Groffen <grobian@gentoo.org> dulwich-0.5.0.ebuild:
+  Marked ~ppc-macos
+
+  16 Mar 2010; Dirkjan Ochtman <djc@gentoo.org> dulwich-0.4.1.ebuild:
+  amd64 stable, bug 303511
+
+*dulwich-0.5.0 (05 Mar 2010)
+
+  05 Mar 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +dulwich-0.5.0.ebuild:
+  Version bump.
+
+  06 Feb 2010; Christian Faulhammer <fauli@gentoo.org> dulwich-0.4.1.ebuild:
+  stable x86, bug 303511
+
+*dulwich-0.4.1 (04 Jan 2010)
+
+  04 Jan 2010; Dirkjan Ochtman <djc@gentoo.org> +dulwich-0.4.1.ebuild:
+  Bump to 0.4.1.
+
+  01 Dec 2009; Markus Meier <maekke@gentoo.org> dulwich-0.4.0.ebuild:
+  amd64/x86 stable, bug #295213
+
+  23 Nov 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  dulwich-0.4.0.ebuild:
+  Add src_test().
+
+*dulwich-0.4.0 (20 Oct 2009)
+
+  20 Oct 2009; <djc@gentoo.org> +dulwich-0.4.0.ebuild, +metadata.xml:
+  Initial version for the portage tree.
+

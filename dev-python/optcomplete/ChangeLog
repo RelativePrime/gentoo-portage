@@ -1,0 +1,24 @@
+# ChangeLog for dev-python/optcomplete
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/optcomplete/ChangeLog,v 1.5 2011/06/08 16:15:44 xarthisius Exp $
+
+  08 Jun 2011; Kacper Kowalik <xarthisius@gentoo.org> optcomplete-1.2.ebuild:
+  Marked ~ppc wrt #366541
+
+  28 May 2011; Thomas Kahle <tomka@gentoo.org> optcomplete-1.2.ebuild:
+  ~x86 per bug 366541
+
+  22 Jul 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  optcomplete-1.2.ebuild:
+  Set SUPPORT_PYTHON_ABIS.
+
+  26 Mar 2009; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  metadata.xml:
+  Removing hawking as a maintainer since he was retired.
+
+*optcomplete-1.2 (25 Jun 2008)
+
+  25 Jun 2008; Ali Polatel <hawking@gentoo.org> +metadata.xml,
+  +optcomplete-1.2.ebuild:
+  Initial ebuild for optcomplete.
+

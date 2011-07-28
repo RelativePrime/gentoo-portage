@@ -1,0 +1,56 @@
+# ChangeLog for dev-ruby/spruz
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/spruz/ChangeLog,v 1.12 2011/07/24 18:12:36 armin76 Exp $
+
+  24 Jul 2011; Raúl Porcel <armin76@gentoo.org> spruz-0.2.11.ebuild:
+  Add ~ia64 wrt #375429
+
+  24 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> spruz-0.2.11.ebuild:
+  Marked ~ppc/~ppc64 wrt #375429
+
+*spruz-0.2.11 (19 Jul 2011)
+
+  19 Jul 2011; Hans de Graaff <graaff@gentoo.org> +spruz-0.2.11.ebuild:
+  Version bump.
+
+*spruz-0.2.10 (16 Jul 2011)
+
+  16 Jul 2011; Hans de Graaff <graaff@gentoo.org> +spruz-0.2.10.ebuild:
+  Version bump.
+
+*spruz-0.2.9 (09 Jul 2011)
+
+  09 Jul 2011; Hans de Graaff <graaff@gentoo.org> +spruz-0.2.9.ebuild:
+  Version bump.
+
+  25 Jun 2011; Hans de Graaff <graaff@gentoo.org> -spruz-0.2.2.ebuild:
+  Remove old version.
+
+*spruz-0.2.7 (29 May 2011)
+
+  29 May 2011; Hans de Graaff <graaff@gentoo.org> +spruz-0.2.7.ebuild:
+  Version bump.
+
+  12 Feb 2011; Hans de Graaff <graaff@gentoo.org> -spruz-0.2.0.ebuild,
+  -spruz-0.2.1.ebuild:
+  Remove old versions.
+
+*spruz-0.2.2 (26 Nov 2010)
+
+  26 Nov 2010; Hans de Graaff <graaff@gentoo.org> +spruz-0.2.2.ebuild:
+  Version bump.
+
+*spruz-0.2.1 (07 Nov 2010)
+
+  07 Nov 2010; Hans de Graaff <graaff@gentoo.org> +spruz-0.2.1.ebuild:
+  Version bump.
+
+  04 Nov 2010; Christian Faulhammer <fauli@gentoo.org> spruz-0.2.0.ebuild:
+  add ~x86, bug 343849
+
+*spruz-0.2.0 (28 Oct 2010)
+
+  28 Oct 2010; Hans de Graaff <graaff@gentoo.org> +spruz-0.2.0.ebuild,
+  +metadata.xml:
+  Initial import. Dependency of file-tail.
+

@@ -1,0 +1,35 @@
+# ChangeLog for dev-python/python-distutils-extra
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/python-distutils-extra/ChangeLog,v 1.6 2010/12/30 22:41:04 arfrever Exp $
+
+*python-distutils-extra-2.23 (30 Dec 2010)
+
+  30 Dec 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -python-distutils-extra-2.15.ebuild, +python-distutils-extra-2.23.ebuild:
+  Version bump.
+
+*python-distutils-extra-2.19 (15 Jul 2010)
+
+  15 Jul 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -python-distutils-extra-2.12.ebuild, +python-distutils-extra-2.19.ebuild:
+  Version bump.
+
+*python-distutils-extra-2.15 (07 Feb 2010)
+
+  07 Feb 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +python-distutils-extra-2.15.ebuild:
+  Version bump. Fix dependencies (bug #303317).
+
+*python-distutils-extra-2.12 (03 Nov 2009)
+
+  03 Nov 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +python-distutils-extra-2.12.ebuild:
+  Version bump (bug #291277). Set SUPPORT_PYTHON_ABIS.
+
+  07 Oct 2009; Mounir Lamouri <volkmar@gentoo.org>
+  python-distutils-extra-1.92_pre67.ebuild:
+  Keywording for ppc
+
+  13 Jul 2009; Jesus Rivero <neurogeek@gentoo.org> +metadata.xml:
+  Initial commit
+

@@ -1,0 +1,34 @@
+# ChangeLog for dev-haskell/digest
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-haskell/digest/ChangeLog,v 1.9 2011/02/25 13:12:02 xarthisius Exp $
+
+  25 Feb 2011; Kacper Kowalik <xarthisius@gentoo.org> digest-0.0.0.8.ebuild:
+  ppc/ppc64 stable wrt #339580
+
+  20 Nov 2010; Sergei Trofimovich <slyfox@gentoo.org> digest-0.0.0.8.ebuild:
+  alpha/ia64/sparc stable (bug #339580). Marked ~x86-fbsd (bug #227677).
+
+  19 Oct 2010; Thomas Kahle <tomka@gentoo.org> digest-0.0.0.8.ebuild:
+  x86 stable per bug 339580
+
+  16 Oct 2010; Markos Chandras <hwoarang@gentoo.org> digest-0.0.0.8.ebuild:
+  Stable on amd64 wrt bug #339580
+
+  09 Sep 2010; Sergei Trofimovich <slyfox@gentoo.org> digest-0.0.0.8.ebuild:
+  Marked ~sparc
+
+  20 Jul 2010; Joseph Jezak <josejx@gentoo.org> digest-0.0.0.8.ebuild:
+  Marked ~ppc.
+
+  10 Jul 2010; Sergei Trofimovich <slyfox@gentoo.org> digest-0.0.0.8.ebuild:
+  marked ~ia64
+
+  08 Jul 2010; Sergei Trofimovich <slyfox@gentoo.org> digest-0.0.0.8.ebuild:
+  ~alpha keyworded
+
+*digest-0.0.0.8 (28 Mar 2010)
+
+  28 Mar 2010; Lennart Kolmodin <kolmodin@gentoo.org>
+  +digest-0.0.0.8.ebuild, +metadata.xml:
+  Initial version, indirect dependency of darcs.
+

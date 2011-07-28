@@ -1,0 +1,38 @@
+# ChangeLog for net-zope/zope-location
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-zope/zope-location/ChangeLog,v 1.7 2010/02/14 19:17:01 armin76 Exp $
+
+  14 Feb 2010; Raúl Porcel <armin76@gentoo.org> zope-location-3.9.0.ebuild:
+  Add ~alpha/~sparc wrt #297734
+
+  22 Jan 2010; Brent Baude <ranger@gentoo.org> zope-location-3.9.0.ebuild:
+  Marking zope-location-3.9.0 ~ppc for bug 297734
+
+  16 Jan 2010; Christian Faulhammer <fauli@gentoo.org>
+  zope-location-3.9.0.ebuild:
+  added ~x86
+
+*zope-location-3.9.0 (30 Dec 2009)
+
+  30 Dec 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -zope-location-3.8.2.ebuild, +zope-location-3.9.0.ebuild:
+  Version bump.
+
+*zope-location-3.8.2 (24 Dec 2009)
+
+  24 Dec 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -zope-location-3.7.1.ebuild, +zope-location-3.8.2.ebuild:
+  Version bump.
+
+*zope-location-3.7.1 (21 Nov 2009)
+
+  21 Nov 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -zope-location-3.7.0.ebuild, +zope-location-3.7.1.ebuild:
+  Version bump.
+
+*zope-location-3.7.0 (25 Oct 2009)
+
+  25 Oct 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +zope-location-3.7.0.ebuild, +metadata.xml:
+  Initial addition. Ebuild written by me.
+

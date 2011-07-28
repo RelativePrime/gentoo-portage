@@ -1,0 +1,17 @@
+# ChangeLog for dev-embedded/upslug2
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-embedded/upslug2/ChangeLog,v 1.4 2010/09/16 06:23:45 vapier Exp $
+
+  16 Sep 2010; Mike Frysinger <vapier@gentoo.org> upslug2-11.ebuild:
+  Clean up and mark amd64 stable.
+
+  25 Jun 2008; Christian Faulhammer <opfer@gentoo.org> upslug2-11.ebuild:
+  stable x86
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+*upslug2-11 (30 Nov 2005)
+
+  30 Nov 2005; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.

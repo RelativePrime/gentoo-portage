@@ -1,0 +1,33 @@
+# ChangeLog for media-gfx/mypaint
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/mypaint/ChangeLog,v 1.7 2011/04/04 07:50:09 hwoarang Exp $
+
+*mypaint-0.9.1 (04 Apr 2011)
+
+  04 Apr 2011; Markos Chandras <hwoarang@gentoo.org> +mypaint-0.9.1.ebuild,
+  +files/mypaint-0.9.1-gentoo.patch:
+  Version bump. Bug #361711
+
+  13 Mar 2011; Markos Chandras <hwoarang@gentoo.org> mypaint-0.9.0.ebuild:
+  Stable on amd64 wrt bug #358579
+
+  13 Mar 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> mypaint-0.9.0.ebuild:
+  x86 stable wrt bug #358579
+
+  10 Mar 2011; Markos Chandras <hwoarang@gentoo.org> mypaint-0.9.0.ebuild:
+  Export LANG on src_compile to fix problem with some locales. Bug #352700
+
+  31 Dec 2010; Markos Chandras <hwoarang@gentoo.org> mypaint-0.9.0.ebuild:
+  Use a png icon instead of .ico
+
+  31 Dec 2010; Markos Chandras <hwoarang@gentoo.org> mypaint-0.9.0.ebuild:
+  Use fdo-mime eclass thanks to Samuli Suominen
+
+*mypaint-0.9.0 (31 Dec 2010)
+
+  31 Dec 2010; Markos Chandras <hwoarang@gentoo.org> +mypaint-0.9.0.ebuild,
+  +files/mypaint-0.9.0-gentoo.patch, +metadata.xml:
+  Ebuild moved from sunrise overlay. Thanks to Arne Babenhauserheide (ArneBab)
+  <arne_bab@web.de> and Mike Limansky <limanski@narod.ru>. Thanks to Mike
+  Frysinger for the scons build system shiny code. Bug #197672
+

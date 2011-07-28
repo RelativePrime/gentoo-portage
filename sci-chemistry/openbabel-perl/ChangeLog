@@ -1,0 +1,23 @@
+# ChangeLog for sci-chemistry/openbabel-perl
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/openbabel-perl/ChangeLog,v 1.4 2011/05/09 15:15:19 jlec Exp $
+
+  09 May 2011; Justin Lecher <jlec@gentoo.org>
+  files/openbabel-perl-2.3.0-makefile.patch:
+  Prevent double prefix
+
+  29 Mar 2011; Justin Lecher <jlec@gentoo.org> openbabel-perl-2.3.0.ebuild:
+  Depend on >=swig-2
+
+  28 Mar 2011; Justin Lecher <jlec@gentoo.org> openbabel-perl-2.3.0.ebuild,
+  +files/openbabel-perl-2.3.0-swig.patch:
+  Sane check for swig version,
+  https://sourceforge.net/tracker/?func=detail&aid=3253693&group_id=40728&atid=
+  428740
+
+*openbabel-perl-2.3.0 (26 Mar 2011)
+
+  26 Mar 2011; Justin Lecher <jlec@gentoo.org> +openbabel-perl-2.3.0.ebuild,
+  +files/openbabel-perl-2.3.0-makefile.patch, +metadata.xml:
+  Perl Bindings for openbabel, writing by rei4dan, #212212
+

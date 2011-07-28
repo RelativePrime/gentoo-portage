@@ -1,0 +1,117 @@
+# ChangeLog for mail-client/claws-mail-fancy
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/mail-client/claws-mail-fancy/ChangeLog,v 1.27 2011/07/16 18:17:22 hwoarang Exp $
+
+  16 Jul 2011; Markos Chandras <hwoarang@gentoo.org>
+  claws-mail-fancy-0.9.13.ebuild:
+  Stable on amd64 wrt bug #372957
+
+  29 Jun 2011; Markus Meier <maekke@gentoo.org> claws-mail-fancy-0.9.13.ebuild:
+  x86 stable, bug #372957
+
+*claws-mail-fancy-0.9.13 (10 Apr 2011)
+
+  10 Apr 2011; Christian Faulhammer <fauli@gentoo.org>
+  +claws-mail-fancy-0.9.13.ebuild:
+  version bump
+
+  06 Mar 2011; Christian Faulhammer <fauli@gentoo.org>
+  claws-mail-fancy-0.9.12.ebuild:
+  Slot net-libs/webkit-gtk to 2
+
+  06 Mar 2011; Christian Faulhammer <fauli@gentoo.org>
+  -claws-mail-fancy-0.9.10.ebuild, -claws-mail-fancy-0.9.11.ebuild:
+  clean up
+
+  10 Feb 2011; Christian Faulhammer <fauli@gentoo.org>
+  claws-mail-fancy-0.9.10.ebuild, claws-mail-fancy-0.9.11.ebuild,
+  claws-mail-fancy-0.9.12.ebuild:
+  Add webkit-gtk to RDEPEND, too, as observed by Andreas Fink <finkandreas
+  AT web DOT de> in bug 354251
+
+  15 Jan 2011; Markus Meier <maekke@gentoo.org> claws-mail-fancy-0.9.12.ebuild:
+  x86 stable, bug #350513
+
+  04 Jan 2011; Markos Chandras <hwoarang@gentoo.org>
+  claws-mail-fancy-0.9.12.ebuild:
+  Stable on amd64 wrt bug #350513
+
+*claws-mail-fancy-0.9.12 (06 Dec 2010)
+
+  06 Dec 2010; Christian Faulhammer <fauli@gentoo.org>
+  +claws-mail-fancy-0.9.12.ebuild:
+  version bump
+
+  23 Nov 2010; Christian Faulhammer <fauli@gentoo.org>
+  claws-mail-fancy-0.9.10.ebuild, claws-mail-fancy-0.9.11.ebuild:
+  add a die after emake
+
+*claws-mail-fancy-0.9.11 (22 Nov 2010)
+
+  22 Nov 2010; Christian Faulhammer <fauli@gentoo.org>
+  +claws-mail-fancy-0.9.11.ebuild:
+  version bump
+
+  22 Nov 2010; Christian Faulhammer <fauli@gentoo.org>
+  -claws-mail-fancy-0.9.9.ebuild:
+  clean up
+
+  07 Aug 2010; Markos Chandras <hwoarang@gentoo.org>
+  claws-mail-fancy-0.9.10.ebuild:
+  Stable on amd64 wrt bug #331395
+
+  06 Aug 2010; Christian Faulhammer <fauli@gentoo.org>
+  claws-mail-fancy-0.9.10.ebuild:
+  stable x86, bug 331395
+
+  20 Jun 2010; Christian Faulhammer <fauli@gentoo.org> -claws-mail-fancy-0.9.8.ebuild:
+  clean up
+
+*claws-mail-fancy-0.9.10 (12 Jun 2010)
+
+  12 Jun 2010; Christian Faulhammer <fauli@gentoo.org> +claws-mail-fancy-0.9.10.ebuild:
+  version bump, bug 319161
+
+  11 Mar 2010; Markus Meier <maekke@gentoo.org>
+  claws-mail-fancy-0.9.9.ebuild:
+  amd64 stable, bug #304353
+
+  11 Feb 2010; Christian Faulhammer <fauli@gentoo.org>
+  claws-mail-fancy-0.9.9.ebuild:
+  stable x86, bug 304353
+
+*claws-mail-fancy-0.9.9 (08 Jan 2010)
+
+  08 Jan 2010; Christian Faulhammer <fauli@gentoo.org>
+  +claws-mail-fancy-0.9.9.ebuild:
+  version bump
+
+  29 Dec 2009; Christian Faulhammer <fauli@gentoo.org>
+  -claws-mail-fancy-0.9.7.ebuild:
+  clean up
+
+  01 Dec 2009; Markus Meier <maekke@gentoo.org>
+  claws-mail-fancy-0.9.8.ebuild:
+  add ~amd64, bug #276760
+
+*claws-mail-fancy-0.9.8 (18 Oct 2009)
+
+  18 Oct 2009; Christian Faulhammer <fauli@gentoo.org>
+  +claws-mail-fancy-0.9.8.ebuild:
+  version bump, bug 289070
+
+  14 Jul 2009; Christian Faulhammer <fauli@gentoo.org>
+  claws-mail-fancy-0.9.7.ebuild:
+  remove mail-filter/bsfilter from RDEPEND strings, which slipped in by
+  accident. Spotted by Michal Kurgan <moloh AT moloh DOT net> in bug 276760
+
+  08 Jul 2009; Christian Faulhammer <fauli@gentoo.org>
+  claws-mail-fancy-0.9.7.ebuild:
+  fix DESCRIPTION
+
+*claws-mail-fancy-0.9.7 (08 Jul 2009)
+
+  08 Jul 2009; Christian Faulhammer <fauli@gentoo.org>
+  +claws-mail-fancy-0.9.7.ebuild, +metadata.xml:
+  intial commit for bug 276760
+

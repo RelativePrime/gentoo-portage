@@ -1,0 +1,218 @@
+# ChangeLog for mail-client/roundcube
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/mail-client/roundcube/ChangeLog,v 1.51 2011/06/03 08:47:10 radhermit Exp $
+
+*roundcube-0.5.3 (03 Jun 2011)
+
+  03 Jun 2011; Tim Harder <radhermit@gentoo.org> -roundcube-0.5.2-r1.ebuild,
+  -files/roundcube-0.5.2-fix-imap-disconnect.patch, +roundcube-0.5.3.ebuild:
+  Version bump and remove old.
+
+*roundcube-0.5.2-r1 (18 May 2011)
+
+  18 May 2011; Tim Harder <radhermit@gentoo.org> -roundcube-0.5.2.ebuild,
+  +roundcube-0.5.2-r1.ebuild, +files/roundcube-0.5.2-fix-imap-disconnect.patch:
+  Revision bump and remove old. Apply upstream fix for bug #365851 by Stuart
+  Shelton.
+
+*roundcube-0.5.2 (21 Apr 2011)
+
+  21 Apr 2011; Tim Harder <radhermit@gentoo.org> +roundcube-0.5.2.ebuild:
+  Version bump.
+
+  03 Apr 2011; Tim Harder <radhermit@gentoo.org> -roundcube-0.4.2.ebuild:
+  Remove old.
+
+  02 Apr 2011; Raúl Porcel <armin76@gentoo.org> roundcube-0.5.1.ebuild:
+  arm stable wrt #360241
+
+  29 Mar 2011; Kacper Kowalik <xarthisius@gentoo.org> roundcube-0.5.1.ebuild:
+  ppc64 stable wrt #360241
+
+  28 Mar 2011; Christian Faulhammer <fauli@gentoo.org>
+  roundcube-0.5.1.ebuild:
+  stable x86, security bug 360241
+
+  26 Mar 2011; Brent Baude <ranger@gentoo.org> roundcube-0.5.1.ebuild:
+  Marking roundcube-0.5.1 ppc for bug 360241
+
+  24 Mar 2011; Christoph Mende <angelos@gentoo.org> roundcube-0.5.1.ebuild:
+  Stable on amd64 wrt bug #360241
+
+  24 Mar 2011; Tim Harder <radhermit@gentoo.org> -roundcube-0.4.ebuild,
+  roundcube-0.4.2.ebuild, -roundcube-0.5.ebuild, roundcube-0.5.1.ebuild:
+  Remove old. Add json USE flag dependency for php (bug #360035 by Jaak
+  Ristioja).
+
+  06 Mar 2011; Kacper Kowalik <xarthisius@gentoo.org> roundcube-0.4.2.ebuild:
+  ppc/ppc64 stable wrt #345931
+
+*roundcube-0.5.1 (10 Feb 2011)
+
+  10 Feb 2011; Tim Harder <radhermit@gentoo.org> +roundcube-0.5.1.ebuild:
+  Version bump for bug #354331.
+
+*roundcube-0.5 (12 Jan 2011)
+
+  12 Jan 2011; Tim Harder <radhermit@gentoo.org> -roundcube-0.5_rc.ebuild,
+  +roundcube-0.5.ebuild:
+  Version bump and remove old.
+
+*roundcube-0.5_rc (30 Dec 2010)
+
+  30 Dec 2010; Tim Harder <radhermit@gentoo.org> -roundcube-0.5_beta.ebuild,
+  +roundcube-0.5_rc.ebuild:
+  Version bump (bug #349087 by Peter Volkov) and remove old. Add sqlite USE
+  flag as default for db support.
+
+  28 Dec 2010; Markus Meier <maekke@gentoo.org> roundcube-0.4.2.ebuild:
+  arm stable, bug #345931
+
+  28 Nov 2010; Markus Meier <maekke@gentoo.org> roundcube-0.4.2.ebuild:
+  x86 stable, bug #345931
+
+*roundcube-0.5_beta (28 Nov 2010)
+
+  28 Nov 2010; Tim Harder <radhermit@gentoo.org> +roundcube-0.5_beta.ebuild:
+  Version bump to new beta release. Drop unused depend.apache eclass.
+
+  21 Nov 2010; Markos Chandras <hwoarang@gentoo.org> roundcube-0.4.2.ebuild:
+  Stable on amd64 wrt bug #345931
+
+  11 Oct 2010; Tim Harder <radhermit@gentoo.org> -roundcube-0.3.1.ebuild,
+  -roundcube-0.3.1-r1.ebuild,
+  -files/roundcube-0.3.1-disable-dns-prefetching.patch:
+  Remove old versions with security issues (bug #308065).
+
+  10 Oct 2010; Markus Meier <maekke@gentoo.org> roundcube-0.4.ebuild:
+  arm stable, bug #308065
+
+*roundcube-0.4.2 (09 Oct 2010)
+
+  09 Oct 2010; Tim Harder <radhermit@gentoo.org> -roundcube-0.4.1.ebuild,
+  +roundcube-0.4.2.ebuild:
+  Version bump to new bugfix release and remove old.
+
+  08 Oct 2010; Brent Baude <ranger@gentoo.org> roundcube-0.4.ebuild:
+  Marking roundcube-0.4 ppc for bug 308065
+
+  08 Oct 2010; Brent Baude <ranger@gentoo.org> roundcube-0.4.ebuild:
+  Marking roundcube-0.4 ppc64 for bug 308065
+
+  05 Oct 2010; Markus Meier <maekke@gentoo.org> roundcube-0.4.ebuild:
+  x86 stable, bug #308065
+
+  03 Oct 2010; Markos Chandras <hwoarang@gentoo.org> roundcube-0.4.ebuild:
+  Stable on amd64 wrt bug #308065
+
+*roundcube-0.4.1 (29 Sep 2010)
+
+  29 Sep 2010; Tim Harder <radhermit@gentoo.org> +roundcube-0.4.1.ebuild:
+  Version bump. Fixes issues relating to the disappearing upload box, buggy
+  SQL scripts, and improves format=flowed support.
+
+*roundcube-0.4 (28 Sep 2010)
+
+  28 Sep 2010; Tim Harder <radhermit@gentoo.org> +roundcube-0.4.ebuild:
+  Version bump (fixes bug #329035, thanks to Kevin Bowling for reporting).
+
+*roundcube-0.3.1-r1 (28 Sep 2010)
+
+  28 Sep 2010; Tim Harder <radhermit@gentoo.org> +roundcube-0.3.1-r1.ebuild,
+  +files/roundcube-0.3.1-disable-dns-prefetching.patch:
+  Revision bump to install .htaccess file (fixes bug #292692, thanks to
+  Richard Scott for reporting), apply patch to fix security bug #308065
+  (CVE-2010-0464), fix USE flag dependencies with dev-lang/php-5.3* (fixes
+  bug #328231, thanks to Charlie Gehlin for reporting), and install config
+  files so the web-based installer works (fixes bug #329565, thanks to
+  Andrey Yurchuk for reporting).
+
+  12 Aug 2010; Alex Legler <a3li@gentoo.org> -roundcube-0.3.ebuild,
+  +roundcube-0.3.1.ebuild:
+  Fixing previous commit
+
+  12 Aug 2010; Alex Legler <a3li@gentoo.org> -roundcube-0.2.2.ebuild,
+  -roundcube-0.3.1.ebuild:
+  Non-maintainer commit: Removing vulnerable versions for bug 294679.
+
+  06 Jun 2010; Raúl Porcel <armin76@gentoo.org> roundcube-0.3.1.ebuild:
+  arm stable wrt #301090
+
+  23 Jan 2010; Raúl Porcel <armin76@gentoo.org> roundcube-0.2.2.ebuild,
+  roundcube-0.3.ebuild, roundcube-0.3.1.ebuild:
+  Add ~arm wrt #301090
+
+  05 Jan 2010; Joseph Jezak <josejx@gentoo.org> roundcube-0.3.1.ebuild:
+  Marked ppc stable for bug #294679.
+
+  26 Dec 2009; Raúl Porcel <armin76@gentoo.org> roundcube-0.3.ebuild,
+  roundcube-0.3.1.ebuild:
+  Add ~sparc wrt #296060
+
+  01 Dec 2009; Benedikt Böhm <hollow@gentoo.org> roundcube-0.3.1.ebuild:
+  fix #294956 (sqlite should only be forced if neither postgres nor mysql
+  are selected)
+
+  30 Nov 2009; Brent Baude <ranger@gentoo.org> roundcube-0.3.1.ebuild:
+  Marking roundcube-0.3.1 ppc64 for bug 294679
+
+  30 Nov 2009; Markus Meier <maekke@gentoo.org> roundcube-0.3.1.ebuild:
+  amd64 stable, bug #294679
+
+  27 Nov 2009; Christian Faulhammer <fauli@gentoo.org>
+  roundcube-0.3.1.ebuild:
+  stable x86, security bug 294679
+
+*roundcube-0.3.1 (09 Nov 2009)
+
+  09 Nov 2009; Benedikt Böhm <hollow@gentoo.org> +roundcube-0.3.1.ebuild:
+  version bump wrt #292484
+
+  27 Sep 2009; nixnut <nixnut@gentoo.org> roundcube-0.2.2.ebuild:
+  ppc stable #272423
+
+  26 Sep 2009; Brent Baude <ranger@gentoo.org> roundcube-0.2.2.ebuild:
+  Marking roundcube-0.2.2 ppc64 for bug 272423
+
+  17 Sep 2009; Benedikt Böhm <hollow@gentoo.org> roundcube-0.3.ebuild:
+  convert most of the USE flag mess to EAPI2
+
+  17 Sep 2009; Benedikt Böhm <hollow@gentoo.org> roundcube-0.2.2.ebuild,
+  roundcube-0.3.ebuild:
+  stable on amd64; does not need php imap library
+
+  17 Sep 2009; Tomáš Chvátal <scarabeus@gentoo.org> roundcube-0.3.ebuild:
+  Depend on php with correct useflags enabled when spell useflag is called.
+
+  12 Sep 2009; Christian Faulhammer <fauli@gentoo.org>
+  roundcube-0.2.2.ebuild:
+  stable x86, bug 272423
+
+*roundcube-0.3 (04 Sep 2009)
+
+  04 Sep 2009; Benedikt Böhm <hollow@gentoo.org> -roundcube-0.2.ebuild,
+  -roundcube-0.2.1.ebuild, +roundcube-0.3.ebuild:
+  version bump wrt #274265
+
+*roundcube-0.2.2 (18 Jul 2009)
+
+  18 Jul 2009; Benedikt Böhm <hollow@gentoo.org> +roundcube-0.2.2.ebuild:
+  version bump wrt #272487
+
+*roundcube-0.2.1 (13 Apr 2009)
+
+  13 Apr 2009; Benedikt Böhm <hollow@gentoo.org> +roundcube-0.2.1.ebuild:
+  version bump wrt #262894
+
+  28 Jan 2009; Peter Volkov <pva@gentoo.org> roundcube-0.2.ebuild:
+  Fixed typo. For spell checking we need spell in php, not ssl.
+
+  07 Jan 2009; Brent Baude <ranger@gentoo.org> roundcube-0.2.ebuild:
+  Marking roundcube-0.2 ~ppc and ~ppc64 for bug 253492
+
+*roundcube-0.2 (02 Jan 2009)
+
+  02 Jan 2009; Benedikt Böhm <hollow@gentoo.org> +files/postinstall-en.txt,
+  +metadata.xml, +roundcube-0.2.ebuild:
+  initial commit
+

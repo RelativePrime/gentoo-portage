@@ -1,0 +1,51 @@
+# ChangeLog for net-dns/ldns-utils
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-dns/ldns-utils/ChangeLog,v 1.9 2011/06/01 23:06:31 matsuu Exp $
+
+*ldns-utils-1.6.10 (01 Jun 2011)
+
+  01 Jun 2011; MATSUU Takuto <matsuu@gentoo.org> +files/1.6.10-cflags.patch,
+  +ldns-utils-1.6.10.ebuild:
+  Version bumped. Respect CFLAGS="-O?", bug #369339. Removed old versions.
+
+*ldns-utils-1.6.9 (26 Mar 2011)
+
+  26 Mar 2011; MATSUU Takuto <matsuu@gentoo.org> +ldns-utils-1.6.9.ebuild:
+  Version bumped, bug #360171.
+
+*ldns-utils-1.6.8 (25 Jan 2011)
+
+  25 Jan 2011; MATSUU Takuto <matsuu@gentoo.org> -ldns-utils-1.6.2.ebuild,
+  -ldns-utils-1.6.3.ebuild, -ldns-utils-1.6.5.ebuild, +ldns-utils-1.6.8.ebuild,
+  metadata.xml:
+  Version bumped. Added gost USE flag. Removed old versions.
+
+*ldns-utils-1.6.5 (16 Jun 2010)
+
+  16 Jun 2010; MATSUU Takuto <matsuu@gentoo.org> +ldns-utils-1.6.5.ebuild:
+  Version bumped.
+
+  11 Mar 2010; Markos Chandras <hwoarang@gentoo.org>
+  ldns-utils-1.6.4.ebuild:
+  Stable on amd64 wrt bug #300362
+
+  04 Mar 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  ldns-utils-1.6.4.ebuild:
+  x86 stable wrt bug #300362, arch-tested by Andreas Schurch
+
+*ldns-utils-1.6.4 (20 Jan 2010)
+
+  20 Jan 2010; MATSUU Takuto <matsuu@gentoo.org> +ldns-utils-1.6.4.ebuild:
+  Version bumped.
+
+*ldns-utils-1.6.3 (04 Jan 2010)
+
+  04 Jan 2010; MATSUU Takuto <matsuu@gentoo.org> +ldns-utils-1.6.3.ebuild:
+  Version bumped, bug #299670.
+
+*ldns-utils-1.6.2 (21 Nov 2009)
+
+  21 Nov 2009; MATSUU Takuto <matsuu@gentoo.org> +ldns-utils-1.6.2.ebuild,
+  +metadata.xml:
+  Initial import, bug #192728.
+

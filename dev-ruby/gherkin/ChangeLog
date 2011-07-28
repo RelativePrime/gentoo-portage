@@ -1,0 +1,108 @@
+# ChangeLog for dev-ruby/gherkin
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/gherkin/ChangeLog,v 1.24 2011/07/08 18:45:44 graaff Exp $
+
+*gherkin-2.4.2 (08 Jul 2011)
+
+  08 Jul 2011; Hans de Graaff <graaff@gentoo.org> +gherkin-2.4.2.ebuild:
+  Version bump.
+
+  06 Jun 2011; Hans de Graaff <graaff@gentoo.org> -gherkin-2.3.5.ebuild,
+  -gherkin-2.3.6.ebuild:
+  Remove old versions.
+
+  02 Jun 2011; Hans de Graaff <graaff@gentoo.org> gherkin-2.3.10.ebuild,
+  +files/gherkin-2.3.10-no-werror.patch:
+  Don't use -Werror during compilation. Fixes bug 369639.
+
+*gherkin-2.3.10 (02 Jun 2011)
+
+  02 Jun 2011; Hans de Graaff <graaff@gentoo.org> +gherkin-2.3.10.ebuild:
+  Version bump.
+
+*gherkin-2.3.9 (29 May 2011)
+
+  29 May 2011; Hans de Graaff <graaff@gentoo.org> +gherkin-2.3.9.ebuild:
+  Version bump.
+
+*gherkin-2.3.7 (06 May 2011)
+
+  06 May 2011; Hans de Graaff <graaff@gentoo.org> +gherkin-2.3.7.ebuild:
+  Version bump.
+
+*gherkin-2.3.6 (20 Apr 2011)
+
+  20 Apr 2011; Hans de Graaff <graaff@gentoo.org> +gherkin-2.3.6.ebuild:
+  Version bump. Use rake task files directly to avoid unneeded dependencies,
+  bug 364085.
+
+*gherkin-2.3.5 (12 Apr 2011)
+
+  12 Apr 2011; Hans de Graaff <graaff@gentoo.org> +gherkin-2.3.5.ebuild:
+  Version bump.
+
+  04 Dec 2010; Fabian Groffen <grobian@gentoo.org> gherkin-1.0.30-r1.ebuild:
+  Added Prefix keywords
+
+  25 Oct 2010; Jeroen Roovers <jer@gentoo.org> gherkin-1.0.30-r1.ebuild:
+  Marked ~hppa (bug #337956).
+
+  09 Oct 2010; Hans de Graaff <graaff@gentoo.org> gherkin-1.0.30-r1.ebuild:
+  Depend on rspec-1.
+
+  09 Oct 2010; Hans de Graaff <graaff@gentoo.org> -gherkin-1.0.30.ebuild:
+  Remove old version.
+
+  18 Sep 2010; Raúl Porcel <armin76@gentoo.org> gherkin-1.0.30-r1.ebuild:
+  Add ~ia64 wrt #337113
+
+*gherkin-1.0.30-r1 (12 Sep 2010)
+
+  12 Sep 2010; Hans de Graaff <graaff@gentoo.org> +gherkin-1.0.30-r1.ebuild:
+  Add ree18. Remove check_dependencies task to fix bug #332931.
+
+  21 Aug 2010; Diego E. Pettenò <flameeyes@gentoo.org>
+  -files/gherkin-1.0.24-fix-specs.patch, gherkin-1.0.30.ebuild:
+  Remove unused file. Cleanup fakegem ebuild to actually work.
+
+  21 Jul 2010; Hans de Graaff <graaff@gentoo.org> gherkin-1.0.30.ebuild:
+  Add missing dependency on rake-compiler and fix rspec dependency according
+  to bug 329211.
+
+  21 Jul 2010; Hans de Graaff <graaff@gentoo.org> -gherkin-1.0.29.ebuild:
+  Remove old version.
+
+  25 Jun 2010; Hans de Graaff <graaff@gentoo.org> -gherkin-1.0.24.ebuild,
+  -gherkin-1.0.24-r1.ebuild:
+  Remove old versions.
+
+*gherkin-1.0.30 (04 Jun 2010)
+
+  04 Jun 2010; Hans de Graaff <graaff@gentoo.org> +gherkin-1.0.30.ebuild:
+  Version bump. Support for IronRuby.
+
+  28 May 2010; Joseph Jezak <josejx@gentoo.org> gherkin-1.0.29.ebuild:
+  Marrrrked ~ppc/~ppc64.
+
+  24 May 2010; Raúl Porcel <armin76@gentoo.org> gherkin-1.0.24.ebuild,
+  gherkin-1.0.24-r1.ebuild, gherkin-1.0.29.ebuild:
+  Add ~sparc/~x86 wrt #318949
+
+*gherkin-1.0.29 (19 May 2010)
+
+  19 May 2010; Hans de Graaff <graaff@gentoo.org> +gherkin-1.0.29.ebuild:
+  Version bump with various bug fixes.
+
+*gherkin-1.0.24-r1 (09 May 2010)
+
+  09 May 2010; Hans de Graaff <graaff@gentoo.org> +gherkin-1.0.24-r1.ebuild,
+  +files/gherkin-1.0.24-fix-specs.patch:
+  Fix specs with upstream patch. Run cucumber features. Actually install
+  documentation files.
+
+*gherkin-1.0.24 (08 May 2010)
+
+  08 May 2010; Hans de Graaff <graaff@gentoo.org> +gherkin-1.0.24.ebuild,
+  +metadata.xml:
+  Initial import. New dependency for dev-util/cucumber.
+

@@ -1,0 +1,88 @@
+# ChangeLog for sys-block/fio
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-block/fio/ChangeLog,v 1.20 2011/01/25 04:32:35 robbat2 Exp $
+
+*fio-1.50_rc4 (25 Jan 2011)
+
+  25 Jan 2011; Robin H. Johnson <robbat2@gentoo.org> +fio-1.50_rc4.ebuild:
+  Version bump.
+
+  10 Oct 2010; <gurligebis@gentoo.org> fio-1.34.ebuild:
+  Fixing LDFLAGS problem wrt. bug #335546
+
+*fio-1.34 (22 Sep 2009)
+
+  22 Sep 2009; <tsunam@gentoo.org> +fio-1.34.ebuild:
+  Adding fio 1.34 to the tree with approval from Robin
+
+*fio-1.25.1 (13 Apr 2009)
+
+  13 Apr 2009; Robin H. Johnson <robbat2@gentoo.org> +fio-1.25.1.ebuild:
+  Version bump.
+
+*fio-1.23 (07 Dec 2008)
+
+  07 Dec 2008; Robin H. Johnson <robbat2@gentoo.org> +fio-1.23.ebuild:
+  Version bump
+
+  07 Dec 2008; Robin H. Johnson <robbat2@gentoo.org> fio-1.22.ebuild:
+  Bug #248300, QA of manpage location.
+
+*fio-1.22 (01 Nov 2008)
+
+  01 Nov 2008; Robin H. Johnson <robbat2@gentoo.org> +fio-1.22.ebuild:
+  Version bump.
+
+*fio-1.21 (15 Aug 2008)
+
+  15 Aug 2008; Robin H. Johnson <robbat2@gentoo.org> +fio-1.21.ebuild:
+  Bug #234433, version bump.
+
+  29 May 2008; Robin H. Johnson <robbat2@gentoo.org> fio-1.20.ebuild,
+  fio-1.21_rc3.ebuild:
+  Include the manpage.
+
+*fio-1.21_rc3 (28 May 2008)
+
+  28 May 2008; Robin H. Johnson <robbat2@gentoo.org> +fio-1.21_rc3.ebuild:
+  Another version bump.
+
+*fio-1.20 (28 May 2008)
+
+  28 May 2008; Robin H. Johnson <robbat2@gentoo.org> +fio-1.20.ebuild:
+  Bug 220299, version bump.
+
+*fio-1.18.1 (19 Feb 2008)
+
+  19 Feb 2008; Robin H. Johnson <robbat2@gentoo.org> +fio-1.18.1.ebuild:
+  Version bump.
+
+  23 Jan 2008; Brent Baude <ranger@gentoo.org> fio-1.17.2.ebuild:
+  Marking fio-1.17.2 ppc64 for bug 202244
+
+  16 Dec 2007; Markus Rothe <corsair@gentoo.org> fio-1.17.2.ebuild:
+  Added ~ppc64; bug #202244
+
+  16 Dec 2007; Samuli Suominen <drac@gentoo.org> fio-1.17.2.ebuild:
+  amd64 stable wrt #202244
+
+  15 Dec 2007; Dawid Węgliński <cla@gentoo.org> fio-1.17.2.ebuild:
+  Stable on x86 (bug #202244)
+
+  14 Dec 2007; nixnut <nixnut@gentoo.org> fio-1.17.2.ebuild:
+  Stable on ppc wrt bug 202244
+
+*fio-1.17.2 (14 Dec 2007)
+
+  14 Dec 2007; Robin H. Johnson <robbat2@gentoo.org> +fio-1.17.2.ebuild:
+  Version bump.
+
+  05 Nov 2007; Raúl Porcel <armin76@gentoo.org> fio-1.17.ebuild:
+  Add ~ia64 wrt #198026
+
+*fio-1.17 (18 Aug 2007)
+
+  18 Aug 2007; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +fio-1.17.ebuild:
+  Initial Commit. Ebuild by Robin H. Johnson <robbat2@gentoo.org>.
+

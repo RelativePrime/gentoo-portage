@@ -1,0 +1,33 @@
+# ChangeLog for dev-libs/libindicate-qt
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libindicate-qt/ChangeLog,v 1.6 2011/02/07 10:11:18 tampakrap Exp $
+
+*libindicate-qt-0.2.5-r1 (07 Feb 2011)
+
+  07 Feb 2011; Theo Chatzimichos <tampakrap@gentoo.org>
+  +libindicate-qt-0.2.5-r1.ebuild:
+  Revision bump, fix tests, ebuild by Dennis Schridde
+
+  06 Jun 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  -libindicate-qt-0.2.2.ebuild:
+  Remove old
+
+  31 Mar 2010; Theo Chatzimichos <tampakrap@gentoo.org>
+  libindicate-qt-0.2.2.ebuild, libindicate-qt-0.2.5.ebuild:
+  update description
+
+*libindicate-qt-0.2.5 (31 Mar 2010)
+
+  31 Mar 2010; Theo Chatzimichos <tampakrap@gentoo.org>
+  +libindicate-qt-0.2.5.ebuild:
+  Version bump, moved from kde overlay, thanks to Dennis Schridde
+
+  16 Feb 2010; Joseph Jezak <josejx@gentoo.org> libindicate-qt-0.2.2.ebuild:
+  Marked ~ppc/~ppc64 for bug #304365.
+
+*libindicate-qt-0.2.2 (30 Oct 2009)
+
+  30 Oct 2009; Tomáš Chvátal <scarabeus@gentoo.org>
+  +libindicate-qt-0.2.2.ebuild, +metadata.xml:
+  Initial commit. Add Qt bindings for libindicate.
+

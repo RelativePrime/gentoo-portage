@@ -1,0 +1,20 @@
+# ChangeLog for media-gfx/recoverjpeg
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/recoverjpeg/ChangeLog,v 1.4 2010/03/15 13:30:10 ssuominen Exp $
+
+*recoverjpeg-2.0 (15 Mar 2010)
+
+  15 Mar 2010; Samuli Suominen <ssuominen@gentoo.org>
+  +recoverjpeg-2.0.ebuild:
+  Version bump wrt #309563 by Jan Funke.
+
+  29 Oct 2009; Markus Meier <maekke@gentoo.org> recoverjpeg-1.1.4.ebuild:
+  amd64/x86 stable, bug #286651
+
+  25 Oct 2009; Torsten Veller <tove@gentoo.org> metadata.xml:
+  Remove drizzt from metadata.xml (#149111)
+
+  20 Feb 2009; Timothy Redaelli <drizzt@gentoo.org> ChangeLog:
+  New ebuild from sunrise (#92352) I added use minimal, for who (like me)
+  does not need the included scripts (and the deps)
+

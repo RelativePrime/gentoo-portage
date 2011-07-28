@@ -1,0 +1,26 @@
+# ChangeLog for sci-geosciences/foxtrotgps
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-geosciences/foxtrotgps/ChangeLog,v 1.5 2011/07/24 11:28:39 scarabeus Exp $
+
+  24 Jul 2011; Tomáš Chvátal <scarabeus@gentoo.org> foxtrotgps-1.0.1.ebuild,
+  +files/foxtrotgps-curl-7.21.7.patch:
+  Fix building with curl-7.21.7. Closes bug #376133.
+
+  20 Jul 2011; Pacho Ramos <pacho@gentoo.org> metadata.xml:
+  Drop maintainer due retirement, bug #118937
+
+*foxtrotgps-1.0.1 (01 Jun 2011)
+
+  01 Jun 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -foxtrotgps-1.0.0.ebuild, +foxtrotgps-1.0.1.ebuild:
+  Version bump to latest. Drop older.
+
+  02 Mar 2011; Justin Lecher <jlec@gentoo.org> foxtrotgps-1.0.0.ebuild:
+  Correct Slots for gtk 3 introduction to tree
+
+*foxtrotgps-1.0.0 (08 Nov 2010)
+
+  08 Nov 2010; Thilo Bangert <bangert@gentoo.org> +foxtrotgps-1.0.0.ebuild,
+  +metadata.xml:
+  foxtroxgps - a community fork of tangogps
+

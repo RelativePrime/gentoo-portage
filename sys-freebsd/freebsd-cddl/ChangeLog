@@ -1,0 +1,63 @@
+# ChangeLog for sys-freebsd/freebsd-cddl
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-freebsd/freebsd-cddl/ChangeLog,v 1.12 2011/07/06 05:55:02 aballier Exp $
+
+*freebsd-cddl-8.2 (06 Jul 2011)
+
+  06 Jul 2011; Alexis Ballier <aballier@gentoo.org> +freebsd-cddl-8.2.ebuild,
+  +files/freebsd-cddl-8.2-libpaths.patch:
+  bump to 8.2
+
+  06 Jul 2011; Alexis Ballier <aballier@gentoo.org> files/zvol.initd:
+  fix zvol init script
+
+  04 Apr 2010; Javier Villavicencio <the_paya@gentoo.org>
+  freebsd-cddl-8.0.ebuild, +files/zvol.initd:
+  Add script to initialize zfs volumes and activate swap when required.
+
+*freebsd-cddl-8.0 (19 Mar 2010)
+
+  19 Mar 2010; Alexis Ballier <aballier@gentoo.org>
+  +freebsd-cddl-8.0.ebuild, +files/freebsd-cddl-8.0-libpaths.patch:
+  bump to 8.0 from the bsd overlay
+
+  11 Mar 2010; Alexis Ballier <aballier@gentoo.org>
+  -freebsd-cddl-7.1-r1.ebuild:
+  remove old
+
+  22 May 2009; Alexis Ballier <aballier@gentoo.org> freebsd-cddl-7.2.ebuild:
+  make PATCHES a bash array
+
+  22 May 2009; Alexis Ballier <aballier@gentoo.org>
+  -freebsd-cddl-7.1.ebuild:
+  remove old
+
+*freebsd-cddl-7.2 (22 May 2009)
+
+  22 May 2009; Alexis Ballier <aballier@gentoo.org>
+  +freebsd-cddl-7.2.ebuild:
+  bump to 7.2
+
+*freebsd-cddl-7.1-r1 (05 Feb 2009)
+
+  05 Feb 2009; Javier Villavicencio <the_paya@gentoo.org>
+  +freebsd-cddl-7.1-r1.ebuild:
+  Make dev-libs/libelf a dependency since libelf is being removed from
+  freebsd-lib.
+
+  25 Jan 2009; Javier Villavicencio <the_paya@gentoo.org>
+  freebsd-cddl-7.1.ebuild:
+  Missed build in IUSE.
+
+  24 Jan 2009; Javier Villavicencio <the_paya@gentoo.org>
+  files/freebsd-cddl-7.1-libpaths.patch:
+  Fixed linking of dtrace.
+
+*freebsd-cddl-7.1 (23 Jan 2009)
+
+  23 Jan 2009; Javier Villavicencio <the_paya@gentoo.org>
+  +files/freebsd-cddl-7.1-libpaths.patch,
+  +files/freebsd-cddl-7.1-xdr_header.patch, +metadata.xml,
+  +freebsd-cddl-7.1.ebuild:
+  Initial import from gentoo-bsd overlay. ZFS userland for FreeBSD.
+

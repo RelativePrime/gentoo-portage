@@ -1,0 +1,62 @@
+# ChangeLog for dev-ruby/ruby-gstreamer
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-gstreamer/ChangeLog,v 1.37 2011/05/29 13:51:22 naota Exp $
+
+*ruby-gstreamer-0.90.8 (29 May 2011)
+
+  29 May 2011; Naohiro Aota <naota@gentoo.org> +ruby-gstreamer-0.90.8.ebuild:
+  Version bump.
+
+  22 Oct 2010; Hans de Graaff <graaff@gentoo.org>
+  -ruby-gstreamer-0.19.1.ebuild, -ruby-gstreamer-0.19.3.ebuild:
+  Remove old versions.
+
+  20 Oct 2010; Brent Baude <ranger@gentoo.org> ruby-gstreamer-0.19.4.ebuild:
+  Marking ruby-gstreamer-0.19.4 ppc stable for bug 329807
+
+  01 Aug 2010; Markos Chandras <hwoarang@gentoo.org>
+  ruby-gstreamer-0.19.4.ebuild:
+  Stable on amd64 wrt bug #329807
+
+  26 Jul 2010; Christian Faulhammer <fauli@gentoo.org>
+  ruby-gstreamer-0.19.4.ebuild:
+  x86 stable, bug 329807
+
+*ruby-gstreamer-0.19.4 (25 Apr 2010)
+
+  25 Apr 2010; Hans de Graaff <graaff@gentoo.org>
+  +ruby-gstreamer-0.19.4.ebuild:
+  Version bump to ruby-gnome 0.19.4.
+
+  18 Apr 2010; <nixnut@gentoo.org> ruby-gstreamer-0.19.1.ebuild:
+  ppc stable #295942
+
+*ruby-gstreamer-0.19.3 (15 Jan 2010)
+
+  15 Jan 2010; Hans de Graaff <graaff@gentoo.org>
+  +ruby-gstreamer-0.19.3.ebuild:
+  Version bump. Now uses ruby-ng-gnome2 eclass.
+
+  15 Jan 2010; Hans de Graaff <graaff@gentoo.org>
+  -ruby-gstreamer-0.19.0.ebuild:
+  Remove old version.
+
+  10 Jan 2010; nixnut <nixnut@gentoo.org> ruby-gstreamer-0.19.1.ebuild:
+  ~ppc #295942
+
+  16 Dec 2009; Markus Meier <maekke@gentoo.org>
+  ruby-gstreamer-0.19.1.ebuild:
+  amd64/x86 stable, bug #295942
+
+*ruby-gstreamer-0.19.1 (20 Sep 2009)
+
+  20 Sep 2009; Hans de Graaff <graaff@gentoo.org>
+  +ruby-gstreamer-0.19.1.ebuild:
+  Version bump.
+
+*ruby-gstreamer-0.19.0 (05 Sep 2009)
+
+  05 Sep 2009; Hans de Graaff <graaff@gentoo.org>
+  +ruby-gstreamer-0.19.0.ebuild, +metadata.xml:
+  Add back ruby-gstreamer now that it supports gstreame 0.10. Thanks to 
+  Jouni Rinne in #283494 for providing the initial ebuild.

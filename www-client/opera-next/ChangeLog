@@ -1,0 +1,172 @@
+# ChangeLog for www-client/opera-next
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-client/opera-next/ChangeLog,v 1.33 2011/07/27 15:27:01 jer Exp $
+
+*opera-next-12.00.1033 (27 Jul 2011)
+
+  27 Jul 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-12.00.1033.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/07/27/latency-microdata-qresync
+
+*opera-next-12.00.1027 (20 Jul 2011)
+
+  20 Jul 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-12.00.1027.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/07/20/bugs-fixed
+
+*opera-next-12.00.1020 (14 Jul 2011)
+
+  14 Jul 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-12.00.1020.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/07/14/javascript-on-a-diet
+
+*opera-next-12.00.1017 (07 Jul 2011)
+
+  07 Jul 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-12.00.1017.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/07/07/introducing-opera-wahoo
+
+  28 Jun 2011; Jeroen Roovers <jer@gentoo.org> -opera-next-11.50.1027.ebuild,
+  -opera-next-11.50.1031.ebuild, -opera-next-11.50.1035.ebuild,
+  -opera-next-11.50.1036.ebuild, -opera-next-11.50.1037.ebuild,
+  -opera-next-11.50.1040.ebuild, -opera-next-11.50.1049.ebuild,
+  -opera-next-11.50.1052.ebuild, -opera-next-11.50.1054.ebuild,
+  -opera-next-11.50.1065.ebuild, -opera-next-11.50.1067.ebuild,
+  -opera-next-11.50.1068.ebuild, -opera-next-11.50.1071.ebuild,
+  -opera-next-11.50.1073.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/28/swordfish-came-out-on-the-wat
+  er
+
+*opera-next-11.50.1074 (27 Jun 2011)
+
+  27 Jun 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1074.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/27/swordfish-rc5
+
+*opera-next-11.50.1073 (26 Jun 2011)
+
+  26 Jun 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1073.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/26/swordfish-release-candidate-4
+
+*opera-next-11.50.1071 (25 Jun 2011)
+
+  25 Jun 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1071.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/24/swordfish-rc3
+
+*opera-next-11.50.1068 (24 Jun 2011)
+
+  24 Jun 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1068.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/24/opera-11-5-rc-2
+
+  23 Jun 2011; Jeroen Roovers <jer@gentoo.org> -opera-next-11.50.1009.ebuild,
+  -opera-next-11.50.1015.ebuild, -opera-next-11.50.1016.ebuild,
+  -opera-next-11.50.1018.ebuild, -opera-next-11.50.1020.ebuild,
+  -opera-next-11.50.1024.ebuild:
+   .
+
+*opera-next-11.50.1067 (23 Jun 2011)
+
+  23 Jun 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1067.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/23/swordfish-rc1
+
+*opera-next-11.50.1065 (23 Jun 2011)
+
+  23 Jun 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1065.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/22/second-snapshot-of-the-day
+
+*opera-next-11.50.1054 (22 Jun 2011)
+
+  22 Jun 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1054.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/22/featherweight
+
+*opera-next-11.50.1052 (21 Jun 2011)
+
+  21 Jun 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1052.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/21/another-happy-tuesday
+
+*opera-next-11.50.1049 (20 Jun 2011)
+
+  20 Jun 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1049.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/20/presto-2-9
+
+*opera-next-11.50.1040 (14 Jun 2011)
+
+  14 Jun 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1040.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/14/happy-tuesday
+
+*opera-next-11.50.1037 (09 Jun 2011)
+
+  09 Jun 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1037.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/09/re-speed-dial
+
+*opera-next-11.50.1036 (09 Jun 2011)
+
+  09 Jun 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1036.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/09/opera-dragonfly-fix
+
+*opera-next-11.50.1035 (06 Jun 2011)
+
+  06 Jun 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1035.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/06/post-search-and-platform-fixe
+  s
+
+  04 Jun 2011; Jeroen Roovers <jer@gentoo.org> opera-next-11.50.1031.ebuild:
+  Add a simple linguas counter.
+
+*opera-next-11.50.1031 (01 Jun 2011)
+
+  01 Jun 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1031.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/06/01/a-couple-of-improvements-sinc
+  e-the-beta
+
+  31 May 2011; Jeroen Roovers <jer@gentoo.org> opera-next-11.50.1027.ebuild:
+  Changed "opera" to "PN" in a comment.
+
+*opera-next-11.50.1027 (30 May 2011)
+
+  30 May 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1027.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/05/30/fixed-some-annoying-crashers
+
+*opera-next-11.50.1024 (30 May 2011)
+
+  30 May 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1024.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/05/29/sunday-special
+
+*opera-next-11.50.1020 (28 May 2011)
+
+  28 May 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1020.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/05/27/a-second-build-to-celebrate-f
+  riday
+
+*opera-next-11.50.1018 (27 May 2011)
+
+  27 May 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1018.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/05/27/fixes-and-improvements-on-dem
+  and-plug-in-sitepref-ctrl-click-support
+
+*opera-next-11.50.1016 (25 May 2011)
+
+  25 May 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1016.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/05/25/slashing-bugs
+
+  25 May 2011; Jeroen Roovers <jer@gentoo.org> opera-next-11.50.1009.ebuild,
+  opera-next-11.50.1015.ebuild:
+  Remove unneeded RESTRICT="test".
+
+*opera-next-11.50.1015 (23 May 2011)
+
+  23 May 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1015.ebuild:
+  http://my.opera.com/desktopteam/blog/2011/05/23/next-passwordsync-plugininsta
+  llation
+
+  20 May 2011; Jeroen Roovers <jer@gentoo.org> opera-next-11.50.1009.ebuild:
+  Die when we try to remove unknown linguas.
+
+  16 May 2011; Jeroen Roovers <jer@gentoo.org> opera-next-11.50.1009.ebuild:
+  Fix desktop file references, from "opera" to "opera-next", by Ja Bi.
+
+  03 May 2011; Jeroen Roovers <jer@gentoo.org> metadata.xml:
+  Fix line length.
+
+*opera-next-11.50.1009 (03 May 2011)
+
+  03 May 2011; Jeroen Roovers <jer@gentoo.org> +opera-next-11.50.1009.ebuild,
+  +metadata.xml:
+  Initial commit
+  <http://my.opera.com/desktopteam/blog/swordfish-and-opera-next>.
+

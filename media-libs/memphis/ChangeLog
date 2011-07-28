@@ -1,0 +1,39 @@
+# ChangeLog for media-libs/memphis
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/memphis/ChangeLog,v 1.9 2011/07/14 11:02:33 tomka Exp $
+
+  14 Jul 2011; Thomas Kahle <tomka@gentoo.org> memphis-0.2.3.ebuild:
+  x86 stable per bug 369909
+
+  01 Jul 2011; Markos Chandras <hwoarang@gentoo.org> memphis-0.2.3.ebuild:
+  Stable on amd64 wrt bug #278255
+
+  26 Mar 2011; Gilles Dartiguelongue <eva@gentoo.org> memphis-0.2.3.ebuild:
+  Enable introspection by default, per gnome policy.
+
+  20 Mar 2011; Justin Lecher <jlec@gentoo.org> -memphis-0.2.2.ebuild,
+  memphis-0.2.3.ebuild, +files/memphis-0.2.3-demos.patch:
+  Removed old, fix for conditional building vala bindings, 359549
+
+  07 Mar 2011; Justin Lecher <jlec@gentoo.org> memphis-0.2.2.ebuild,
+  memphis-0.2.3.ebuild:
+  Correct Slots for gtk 3 introduction to tree, fixed vala dep version, #357743
+
+*memphis-0.2.3 (19 Sep 2010)
+
+  19 Sep 2010; Justin Lecher <jlec@gentoo.org> +memphis-0.2.3.ebuild:
+  Version Bump, fixes 331107
+
+  25 Jun 2010; Justin Lecher <jlec@gentoo.org> memphis-0.2.2.ebuild:
+  Bumped automake dep to 1.11, 324933
+
+  18 Jun 2010; Justin Lecher <jlec@gentoo.org> memphis-0.2.2.ebuild,
+  metadata.xml:
+  Added support for dev-lang/vala via USE=vala
+
+*memphis-0.2.2 (17 Jun 2010)
+
+  17 Jun 2010; Justin Lecher <jlec@gentoo.org> +memphis-0.2.2.ebuild,
+  +metadata.xml:
+  New addition
+

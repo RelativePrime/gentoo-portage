@@ -1,0 +1,63 @@
+# ChangeLog for net-nntp/kwooty
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-nntp/kwooty/ChangeLog,v 1.13 2011/04/20 16:31:36 scarabeus Exp $
+
+*kwooty-0.7.0 (20 Apr 2011)
+
+  20 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org> +kwooty-0.7.0.ebuild:
+  Version bump.
+
+  30 Jan 2011; Tomáš Chvátal <scarabeus@gentoo.org> -kwooty-0.4.0.ebuild,
+  -kwooty-0.5.1.ebuild, kwooty-0.6.2.ebuild:
+  Stabilise latest on x86 and amd64. Drop older.
+
+*kwooty-0.6.2 (02 Jan 2011)
+
+  02 Jan 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  +kwooty-0.6.2.ebuild:
+  Version bump
+
+*kwooty-0.5.1 (02 Aug 2010)
+
+  02 Aug 2010; Samuli Suominen <ssuominen@gentoo.org> +kwooty-0.5.1.ebuild:
+  Version bump wrt #329227 by Martux.
+
+  16 Jul 2010; Christian Faulhammer <fauli@gentoo.org> kwooty-0.4.0.ebuild:
+  stable x86, bug 325987
+
+  28 Jun 2010; Christoph Mende <angelos@gentoo.org> kwooty-0.4.0.ebuild:
+  Stable on amd64 wrt bug #325987
+
+*kwooty-0.4.0 (23 Apr 2010)
+
+  23 Apr 2010; Samuli Suominen <ssuominen@gentoo.org> +kwooty-0.4.0.ebuild:
+  Version bump.
+
+*kwooty-0.3.2 (31 Mar 2010)
+
+  31 Mar 2010; Samuli Suominen <ssuominen@gentoo.org> +kwooty-0.3.2.ebuild:
+  Version bump.
+
+*kwooty-0.3.1 (25 Feb 2010)
+
+  25 Feb 2010; Samuli Suominen <ssuominen@gentoo.org> +kwooty-0.3.1.ebuild:
+  Version bump.
+
+  27 Jan 2010; Samuli Suominen <ssuominen@gentoo.org> kwooty-0.2.0.ebuild:
+  amd64/x86 stable
+
+*kwooty-0.3.0 (27 Jan 2010)
+
+  27 Jan 2010; Samuli Suominen <ssuominen@gentoo.org> +kwooty-0.3.0.ebuild:
+  Version bump.
+
+*kwooty-0.2.0 (01 Dec 2009)
+
+  01 Dec 2009; Samuli Suominen <ssuominen@gentoo.org> +kwooty-0.2.0.ebuild:
+  Version bump.
+
+*kwooty-0.1.2 (08 Nov 2009)
+
+  08 Nov 2009; Samuli Suominen <ssuominen@gentoo.org> +kwooty-0.1.2.ebuild:
+  Initial commit.
+

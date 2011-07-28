@@ -1,0 +1,60 @@
+# ChangeLog for sys-fs/s3fs
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/s3fs/ChangeLog,v 1.11 2011/05/10 08:23:41 xmw Exp $
+
+*s3fs-1.40 (10 May 2011)
+
+  10 May 2011; Michael Weber <xmw@gentoo.org> -s3fs-0_p191.ebuild,
+  s3fs-1.33.ebuild, +s3fs-1.40.ebuild:
+  Remove old version, RESTRICT=test (bug 362755), Version bump (thanks to
+  wyvern5@gmail.com, bug 366031)
+
+*s3fs-1.33 (05 Jan 2011)
+
+  05 Jan 2011; Michael Weber <xmw@gentoo.org> +s3fs-1.33.ebuild:
+  Version bump (thanks to Michele Beltrame <mb@cattlegrid.info> for the report
+  on bug 350603)
+
+  05 Jan 2011; Michael Weber <xmw@gentoo.org> s3fs-0_p191.ebuild:
+  Fixed patch filename
+
+  05 Jan 2011; Michael Weber <xmw@gentoo.org> s3fs-0_p177.ebuild:
+  SRC_URI reverted
+
+*s3fs-0_p191 (05 Jan 2011)
+*s3fs-0_p177-r1 (05 Jan 2011)
+*s3fs-0_p177 (05 Jan 2011)
+
+  05 Jan 2011; Michael Weber <xmw@gentoo.org> +s3fs-0_p177.ebuild,
+  +s3fs-0_p177-r1.ebuild, +s3fs-0_p191.ebuild,
+  +files/s3fs-0_p177-asneeded.patch, -s3fs-177.ebuild, -s3fs-177-r1.ebuild,
+  -files/s3fs-177-asneeded.patch, -s3fs-191.ebuild:
+  Renumbering prereleases to support releas versions
+
+*s3fs-191 (18 Sep 2010)
+
+  18 Sep 2010; Jeroen Roovers <jer@gentoo.org>
+  files/s3fs-177-asneeded.patch, +s3fs-191.ebuild:
+  Version bump. Fix patch to respect LDFLAGS (bug #335416).
+
+  02 Jun 2010; Torsten Veller <tove@gentoo.org> metadata.xml:
+  Remove caleb from metadata.xml (#317071)
+
+  21 Dec 2009; Samuli Suominen <ssuominen@gentoo.org> s3fs-177-r1.ebuild,
+  +files/s3fs-177-asneeded.patch:
+  Fix building with -Wl,--as-needed wrt #278437 by Kacper Kowalik.
+
+*s3fs-177-r1 (21 Jun 2009)
+
+  21 Jun 2009; Caleb Tennis <caleb@gentoo.org> +s3fs-177-r1.ebuild:
+  Add mime-types to RDEPEND, per #257777
+
+  31 Mar 2009; Caleb Tennis <caleb@gentoo.org> s3fs-177.ebuild:
+  x86/amd64 stable
+
+*s3fs-177 (15 Aug 2008)
+
+  15 Aug 2008; Caleb Tennis <caleb@gentoo.org> +metadata.xml,
+  +s3fs-177.ebuild:
+  Initial import
+

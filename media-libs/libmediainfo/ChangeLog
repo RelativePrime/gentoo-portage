@@ -1,0 +1,114 @@
+# ChangeLog for media-libs/libmediainfo
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libmediainfo/ChangeLog,v 1.22 2011/07/21 23:14:57 radhermit Exp $
+
+  21 Jul 2011; Tim Harder <radhermit@gentoo.org> -libmediainfo-0.7.41.ebuild,
+  -files/libmediainfo-0.7.41-curl.patch:
+  Remove old.
+
+  21 Jul 2011; Markus Meier <maekke@gentoo.org> libmediainfo-0.7.45.ebuild:
+  amd64/x86 stable, bug #375515
+
+  18 Jul 2011; Tim Harder <radhermit@gentoo.org> libmediainfo-0.7.45.ebuild,
+  libmediainfo-0.7.46.ebuild, libmediainfo-0.7.47.ebuild:
+  Drop debug use flag.
+
+  17 Jul 2011; Pacho Ramos <pacho@gentoo.org> libmediainfo-0.7.41.ebuild,
+  libmediainfo-0.7.45.ebuild, libmediainfo-0.7.46.ebuild,
+  libmediainfo-0.7.47.ebuild, metadata.xml:
+  Move to global mms USE flag.
+
+*libmediainfo-0.7.47 (15 Jul 2011)
+
+  15 Jul 2011; Tim Harder <radhermit@gentoo.org> -libmediainfo-0.7.43.ebuild,
+  -libmediainfo-0.7.44.ebuild, +libmediainfo-0.7.47.ebuild:
+  Version bump and remove old.
+
+*libmediainfo-0.7.46 (06 Jul 2011)
+
+  06 Jul 2011; Tim Harder <radhermit@gentoo.org> +libmediainfo-0.7.46.ebuild:
+  Version bump.
+
+*libmediainfo-0.7.45 (17 Jun 2011)
+
+  17 Jun 2011; Tim Harder <radhermit@gentoo.org> +libmediainfo-0.7.45.ebuild:
+  Version bump. Install dll related headers (bug #365827).
+
+  01 Jun 2011; Tim Harder <radhermit@gentoo.org> libmediainfo-0.7.44.ebuild,
+  +files/libmediainfo-0.7.44-libmms.patch:
+  Fix build with libmms (bug #366383).
+
+*libmediainfo-0.7.44 (26 Apr 2011)
+
+  26 Apr 2011; Tim Harder <radhermit@gentoo.org> -libmediainfo-0.7.42.ebuild,
+  +libmediainfo-0.7.44.ebuild:
+  Version bump and remove old.
+
+*libmediainfo-0.7.43 (28 Mar 2011)
+
+  28 Mar 2011; Tim Harder <radhermit@gentoo.org>
+  -libmediainfo-0.7.36-r1.ebuild, +libmediainfo-0.7.43.ebuild:
+  Version bump and remove old.
+
+  24 Mar 2011; Thomas Kahle <tomka@gentoo.org> libmediainfo-0.7.41.ebuild:
+  x86 stable per bug 357575
+
+  08 Mar 2011; Markos Chandras <hwoarang@gentoo.org>
+  libmediainfo-0.7.41.ebuild:
+  Stable on amd64 wrt bug #357575
+
+*libmediainfo-0.7.42 (04 Mar 2011)
+
+  04 Mar 2011; Tim Harder <radhermit@gentoo.org> +libmediainfo-0.7.42.ebuild:
+  Version bump. Update to EAPI 4, use autotools-utils eclass, bump libzen
+  dependency, and don't force -O2 by default.
+
+  31 Jan 2011; Christian Faulhammer <fauli@gentoo.org>
+  libmediainfo-0.7.36-r1.ebuild:
+  stable x86, bug 347037
+
+*libmediainfo-0.7.41 (30 Jan 2011)
+
+  30 Jan 2011; Tim Harder <radhermit@gentoo.org> -libmediainfo-0.7.37.ebuild,
+  +libmediainfo-0.7.41.ebuild, +files/libmediainfo-0.7.41-curl.patch:
+  Version bump and remove old. Bump to EAPI 3 and fix configure flag usage.
+
+  02 Dec 2010; Markos Chandras <hwoarang@gentoo.org>
+  libmediainfo-0.7.36-r1.ebuild:
+  Stable on amd64 wrt bug #347037
+
+*libmediainfo-0.7.37 (27 Nov 2010)
+
+  27 Nov 2010; Tim Harder <radhermit@gentoo.org> -libmediainfo-0.7.34.ebuild,
+  +libmediainfo-0.7.37.ebuild:
+  Version bump and remove old.
+
+*libmediainfo-0.7.36-r1 (29 Oct 2010)
+
+  29 Oct 2010; Tim Harder <radhermit@gentoo.org>
+  -libmediainfo-0.7.36.ebuild, +libmediainfo-0.7.36-r1.ebuild:
+  Revision bump and remove old. Fixes linking problem (bug #343125 by Jouni
+  Rinne) and use emake instead of einstall.
+
+*libmediainfo-0.7.36 (28 Oct 2010)
+
+  28 Oct 2010; Tim Harder <radhermit@gentoo.org>
+  -libmediainfo-0.7.33.ebuild, +libmediainfo-0.7.36.ebuild:
+  Version bump for bug #339279 and remove old.
+
+*libmediainfo-0.7.34 (17 Jul 2010)
+
+  17 Jul 2010; Steve Dibb <beandog@gentoo.org> +libmediainfo-0.7.34.ebuild:
+  Version bump, bug 327995
+
+  30 Jun 2010; Christian Faulhammer <fauli@gentoo.org>
+  libmediainfo-0.7.33.ebuild:
+  keyworded ~arch for x86, bug 324207
+
+*libmediainfo-0.7.33 (04 Jun 2010)
+
+  04 Jun 2010; Steve Dibb <beandog@gentoo.org> +libmediainfo-0.7.33.ebuild,
+  +metadata.xml:
+  Initial commit, bug 309929; thanks to Lucian Muresan and Nikoli for
+  ebuilds
+

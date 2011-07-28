@@ -1,0 +1,83 @@
+# ChangeLog for app-text/mupdf
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/mupdf/ChangeLog,v 1.16 2011/06/12 15:22:00 xmw Exp $
+
+*mupdf-0.8.165 (12 Jun 2011)
+
+  12 Jun 2011; Michael Weber <xmw@gentoo.org> +mupdf-0.8.165.ebuild,
+  +files/mupdf-0.8.165-buildsystem.patch, +files/mupdf-0.8.165-zoom.patch:
+  Version bump
+
+  30 Mar 2011; Michael Weber <xmw@gentoo.org> -mupdf-0.7-r1.ebuild,
+  -mupdf-0.7_p20110212.ebuild, -files/mupdf-0.7-buildsystem.patch,
+  -files/mupdf-0.7-zoom.patch, -files/mupdf-0.7_p20110212-buildsystem.patch,
+  -files/mupdf-0.7_p20110212-zoom.patch, mupdf-0.8.15.ebuild:
+  x86 stable (thanks to Andreas Schürch and Myckel Habets for testing, bug
+  358029), removing old affected versions from tree
+
+  29 Mar 2011; Michael Weber <xmw@gentoo.org> mupdf-0.8.15.ebuild:
+  ppc stable (bug 358029)
+
+  29 Mar 2011; Christoph Mende <angelos@gentoo.org> mupdf-0.8.15.ebuild:
+  Stable on amd64 wrt bug #358029
+
+  29 Mar 2011; Michael Weber <xmw@gentoo.org> mupdf-9999.ebuild:
+  updated to new patch set
+
+*mupdf-0.8.15 (29 Mar 2011)
+
+  29 Mar 2011; Michael Weber <xmw@gentoo.org> +mupdf-0.8.15.ebuild,
+  +files/mupdf-0.8.15-buildsystem.patch, +files/mupdf-0.8.15-zoom.patch:
+  Version bum, thanks to shark@bitchx.it for the hint on bug 360455, added
+  vanilla useflag to disable zoom-patch
+
+  20 Feb 2011; Kacper Kowalik <xarthisius@gentoo.org>
+  mupdf-0.7_p20110212.ebuild:
+  Marked ~ppc wrt #341449. Thansk to hiyuh <hiyuh.root@gmail.com> for report
+  and testing.
+
+*mupdf-0.7_p20110212 (17 Feb 2011)
+
+  17 Feb 2011; Michael Weber <xmw@gentoo.org> -mupdf-0.6.ebuild,
+  -files/mupdf-0.6-buildsystem.patch, -mupdf-0.7.ebuild,
+  +mupdf-0.7_p20110212.ebuild, +files/mupdf-0.7_p20110212-buildsystem.patch,
+  +files/mupdf-0.7_p20110212-zoom.patch, mupdf-9999.ebuild,
+  -files/mupdf-9999-zoom.patch:
+  Removed old ebuilds. Created a snapshot and added -j1.
+
+*mupdf-9999 (31 Jan 2011)
+
+  31 Jan 2011; Michael Weber <xmw@gentoo.org> +mupdf-9999.ebuild,
+  +files/mupdf-9999-zoom.patch:
+  Live cvs version for app-text/llpp
+
+  14 Nov 2010; Markos Chandras <hwoarang@gentoo.org> mupdf-0.7-r1.ebuild:
+  Stable on amd64 wrt bug #344771
+
+  14 Nov 2010; Christian Faulhammer <fauli@gentoo.org> mupdf-0.7-r1.ebuild:
+  stable x86, bug 344771
+
+  11 Nov 2010; Samuli Suominen <ssuominen@gentoo.org> mupdf-0.6.ebuild,
+  mupdf-0.7.ebuild, mupdf-0.7-r1.ebuild:
+  Use virtual/jpeg wrt #345125 by "Shark".
+
+*mupdf-0.7-r1 (09 Sep 2010)
+
+  09 Sep 2010; Michael Weber <xmw@gentoo.org> +mupdf-0.7-r1.ebuild,
+  +files/mupdf-0.7-zoom.patch:
+  Revision bump to add zoom keys and fix documentation issues,
+  upstream bugreport http://bugs.ghostscript.com/show_bug.cgi?id=691601
+
+*mupdf-0.7 (30 Aug 2010)
+
+  30 Aug 2010; Michael Weber (xmw) <xmw@gentoo.org> +mupdf-0.7.ebuild,
+  +files/mupdf-0.7-buildsystem.patch:
+  Version bump, buildsystem still needs a patch for CC and LDFLAGS
+
+*mupdf-0.6 (24 Aug 2010)
+
+  24 Aug 2010; Michael Weber (xmw) <xmw@gentoo.org> +mupdf-0.6.ebuild,
+  +files/mupdf-0.6-buildsystem.patch, +metadata.xml:
+  New ebuild for app-text/mupdf from sunrise. Fixes bug #280469. Thanks to
+  Manu Wächter for the initial ebuilds.
+

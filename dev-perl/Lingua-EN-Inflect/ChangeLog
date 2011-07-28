@@ -1,0 +1,118 @@
+# ChangeLog for dev-perl/Lingua-EN-Inflect
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Lingua-EN-Inflect/ChangeLog,v 1.28 2011/01/14 12:20:26 tove Exp $
+
+*Lingua-EN-Inflect-1.893 (14 Jan 2011)
+
+  14 Jan 2011; Torsten Veller <tove@gentoo.org> -Lingua-EN-Inflect-1.89.ebuild,
+  -Lingua-EN-Inflect-1.89.1.ebuild, -Lingua-EN-Inflect-1.89.3.ebuild,
+  +Lingua-EN-Inflect-1.893.ebuild:
+  Convert ebuild version. Cleanup
+
+  13 Jan 2011; Brent Baude <ranger@gentoo.org>
+  Lingua-EN-Inflect-1.89.2.ebuild:
+  Marking Lingua-EN-Inflect-1.89.2 ppc stable for bug 341865
+
+  13 Nov 2010; Raúl Porcel <armin76@gentoo.org>
+  Lingua-EN-Inflect-1.89.2.ebuild:
+  alpha/ia64/sparc stable wrt #341865
+
+*Lingua-EN-Inflect-1.89.3 (07 Nov 2010)
+
+  07 Nov 2010; Torsten Veller <tove@gentoo.org>
+  +Lingua-EN-Inflect-1.89.3.ebuild:
+  Version bump
+
+  05 Nov 2010; Samuli Suominen <ssuominen@gentoo.org>
+  Lingua-EN-Inflect-1.89.2.ebuild:
+  ppc64 stable wrt #341865
+
+  05 Nov 2010; Markos Chandras <hwoarang@gentoo.org>
+  Lingua-EN-Inflect-1.89.2.ebuild:
+  Stable on amd64 wrt bug #341865
+
+  04 Nov 2010; Christian Faulhammer <fauli@gentoo.org>
+  Lingua-EN-Inflect-1.89.2.ebuild:
+  x86 stable, bug 341865
+
+*Lingua-EN-Inflect-1.89.2 (16 Jul 2010)
+
+  16 Jul 2010; Torsten Veller <tove@gentoo.org>
+  +Lingua-EN-Inflect-1.89.2.ebuild:
+  Version bump
+
+  11 Nov 2009; Torsten Veller <tove@gentoo.org>
+  Lingua-EN-Inflect-1.89.1.ebuild:
+  Use versionator. Don't install Build.pl.
+
+*Lingua-EN-Inflect-1.89.1 (10 Nov 2009)
+
+  10 Nov 2009; Robin H. Johnson <robbat2@gentoo.org>
+  +Lingua-EN-Inflect-1.89.1.ebuild:
+  Version bump via perl-bump experimental tool.
+
+  16 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  -Lingua-EN-Inflect-1.88.ebuild, Lingua-EN-Inflect-1.89.ebuild:
+  Ebuild maintenance
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Lingua-EN-Inflect-1.88.ebuild, Lingua-EN-Inflect-1.89.ebuild:
+  Adding perl dep; fixed header; fixed DEPEND
+
+  06 Feb 2006; Simon Stelling <blubb@gentoo.org>
+  Lingua-EN-Inflect-1.89.ebuild:
+  stable on amd64
+
+  04 Feb 2006; Aron Griffis <agriffis@gentoo.org>
+  Lingua-EN-Inflect-1.89.ebuild:
+  Mark 1.89 stable on ia64
+
+  31 Jan 2006; Aron Griffis <agriffis@gentoo.org>
+  Lingua-EN-Inflect-1.89.ebuild:
+  Mark 1.89 stable on alpha
+
+  21 Jan 2006; Markus Rothe <corsair@gentoo.org>
+  Lingua-EN-Inflect-1.89.ebuild:
+  Stable on ppc64
+
+  15 Jan 2006; Michael Hanselmann <hansmi@gentoo.org>
+  Lingua-EN-Inflect-1.89.ebuild:
+  Stable on ppc.
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  Lingua-EN-Inflect-1.89.ebuild:
+  marking stable sparc x86
+
+*Lingua-EN-Inflect-1.89 (26 Nov 2005)
+
+  26 Nov 2005; Chris White <chriswhite@gentoo.org>
+  +Lingua-EN-Inflect-1.89.ebuild:
+  Version bump to 1.89.
+
+  02 Oct 2005; Aron Griffis <agriffis@gentoo.org>
+  Lingua-EN-Inflect-1.88.ebuild:
+  Mark 1.88 stable on ia64
+
+  23 Sep 2005; Markus Rothe <corsair@gentoo.org>
+  Lingua-EN-Inflect-1.88.ebuild:
+  Stable on ppc64
+
+  05 Sep 2005; Brent Baude <ranger@gentoo.org>
+  Lingua-EN-Inflect-1.88.ebuild:
+  marking Lingua-EN-Inflect-1.88 ~ppc64 in support of Bug 101114
+
+  25 Aug 2005; Aron Griffis <agriffis@gentoo.org>
+  Lingua-EN-Inflect-1.88.ebuild:
+  add ~ia64
+
+  27 Apr 2005; Michael Cummings <mcummings@gentoo.org>
+  Lingua-EN-Inflect-1.88.ebuild:
+  Cleaning
+
+*Lingua-EN-Inflect-1.88 (14 Dec 2002)
+
+  14 Dec 2002; Matthew Kennedy <mkennedy@gentoo.org>
+  files/digest-Lingua-EN-Inflect-1.88, Lingua-EN-Inflect-1.88.ebuild,
+  ChangeLog :
+
+  Initial import.

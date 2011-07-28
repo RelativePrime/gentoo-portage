@@ -1,0 +1,32 @@
+# ChangeLog for dev-python/pycountry
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pycountry/ChangeLog,v 1.6 2010/04/28 18:48:10 arfrever Exp $
+
+*pycountry-0.12.1 (28 Apr 2010)
+
+  28 Apr 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -pycountry-0.11.ebuild, +pycountry-0.12.1.ebuild:
+  Version bump.
+
+  08 Sep 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  pycountry-0.11.ebuild:
+  Set SUPPORT_PYTHON_ABIS.
+
+*pycountry-0.11 (07 Sep 2009)
+
+  07 Sep 2009; Patrick Lauer <patrick@gentoo.org> +pycountry-0.11.ebuild:
+  Bump
+
+  15 Feb 2009; Patrick Lauer <patrick@gentoo.org> pycountry-0.10.ebuild:
+  Adding ~amd64 keyword
+
+  02 Nov 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  metadata.xml:
+  Fixed the broken herd by adding no-herd to metadata.xml.
+
+*pycountry-0.10 (16 Aug 2008)
+
+  16 Aug 2008; Cédric Krier <cedk@gentoo.org> +metadata.xml,
+  +pycountry-0.10.ebuild:
+  New Ebuild
+

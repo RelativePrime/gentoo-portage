@@ -1,0 +1,21 @@
+# ChangeLog for net-libs/openpgm
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-libs/openpgm/ChangeLog,v 1.4 2011/07/13 19:47:17 maekke Exp $
+
+  13 Jul 2011; Markus Meier <maekke@gentoo.org> openpgm-5.1.116.ebuild:
+  x86 stable, bug #371377
+
+  03 Jul 2011; Markos Chandras <hwoarang@gentoo.org> openpgm-5.1.116.ebuild:
+  Stable on amd64 wrt bug #371377
+
+*openpgm-5.1.116 (21 Apr 2011)
+
+  21 Apr 2011; Dirkjan Ochtman <djc@gentoo.org> +openpgm-5.1.116.ebuild:
+  Version bump openpgm for use with newer net-libs/zeromq.
+
+*openpgm-5.1.114 (23 Mar 2011)
+
+  23 Mar 2011; Dirkjan Ochtman <djc@gentoo.org> +openpgm-5.1.114.ebuild,
+  +metadata.xml:
+  Initial version of openpgm, for zeromq-2.1 (bug 355523).
+

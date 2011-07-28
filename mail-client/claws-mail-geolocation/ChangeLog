@@ -1,0 +1,49 @@
+# ChangeLog for mail-client/claws-mail-geolocation
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/mail-client/claws-mail-geolocation/ChangeLog,v 1.9 2011/04/10 16:50:19 fauli Exp $
+
+*claws-mail-geolocation-0.0.5 (10 Apr 2011)
+
+  10 Apr 2011; Christian Faulhammer <fauli@gentoo.org>
+  +claws-mail-geolocation-0.0.5.ebuild:
+  version bump
+
+  06 Mar 2011; Christian Faulhammer <fauli@gentoo.org>
+  claws-mail-geolocation-0.0.4.ebuild:
+  Slot media-libs/clutter-gtk to 0.10
+
+  06 Mar 2011; Christian Faulhammer <fauli@gentoo.org>
+  -claws-mail-geolocation-0.0.3.ebuild:
+  clean up
+
+  23 Nov 2010; Christian Faulhammer <fauli@gentoo.org>
+  claws-mail-geolocation-0.0.3.ebuild, claws-mail-geolocation-0.0.4.ebuild:
+  add a die after emake and don't install NEWS file (no contents)
+
+  22 Nov 2010; Christian Faulhammer <fauli@gentoo.org>
+  claws-mail-geolocation-0.0.4.ebuild:
+  add media-libs/clutter-gtk as dependency
+
+*claws-mail-geolocation-0.0.4 (22 Nov 2010)
+
+  22 Nov 2010; Christian Faulhammer <fauli@gentoo.org>
+  +claws-mail-geolocation-0.0.4.ebuild:
+  version bump
+
+  11 Jul 2010; Christian Faulhammer <fauli@gentoo.org>
+  claws-mail-geolocation-0.0.3.ebuild:
+  fix bug 326981 by flameeyes: Fix the file name of the pkg-config file in
+  the configure script for libchamplain; also adjust runtime dependencies as
+  spotted by ssuominen in the same bug
+
+  22 Jun 2010; Christian Faulhammer <fauli@gentoo.org>
+  claws-mail-geolocation-0.0.3.ebuild:
+  Fix DESCRIPTION
+
+*claws-mail-geolocation-0.0.3 (22 Jun 2010)
+
+  22 Jun 2010; Christian Faulhammer <fauli@gentoo.org>
+  +claws-mail-geolocation-0.0.3.ebuild, +metadata.xml:
+  initial commit for bug 300187, ebuild provided by Joshua Rich <joshua DOT
+  rich AT gmail DOT com>
+

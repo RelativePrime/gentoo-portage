@@ -1,0 +1,26 @@
+# ChangeLog for sci-calculators/keurocalc
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-calculators/keurocalc/ChangeLog,v 1.4 2011/04/20 21:02:49 scarabeus Exp $
+
+*keurocalc-1.1.0 (20 Apr 2011)
+
+  20 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org> -keurocalc-1.0.3.ebuild,
+  +keurocalc-1.1.0.ebuild:
+  Version bump to latest. Drop older.
+
+  02 Feb 2011; Theo Chatzimichos <tampakrap@gentoo.org>
+  -keurocalc-1.0.2.ebuild, keurocalc-1.0.3.ebuild:
+  EAPI3, remove old
+
+*keurocalc-1.0.3 (26 Sep 2010)
+
+  26 Sep 2010; Andreas K. Huettel <dilfridge@gentoo.org>
+  +keurocalc-1.0.3.ebuild:
+  Version bump
+
+*keurocalc-1.0.2 (04 Dec 2009)
+
+  04 Dec 2009; Samuli Suominen <ssuominen@gentoo.org>
+  +keurocalc-1.0.2.ebuild:
+  Initial commit wrt #99313, thanks to Theofilos Intzoglou for reporting.
+

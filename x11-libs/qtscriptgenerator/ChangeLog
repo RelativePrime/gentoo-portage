@@ -1,0 +1,63 @@
+# ChangeLog for x11-libs/qtscriptgenerator
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/qtscriptgenerator/ChangeLog,v 1.13 2011/03/26 16:46:57 dilfridge Exp $
+
+  26 Mar 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  qtscriptgenerator-0.1.0.ebuild:
+  Adapt phonon dependency for package move
+
+  18 Jan 2011; Brent Baude <ranger@gentoo.org>
+  qtscriptgenerator-0.1.0.ebuild:
+  Marking qtscriptgenerator-0.1.0 ppc for bug 346233
+
+  07 Jul 2010; Samuli Suominen <ssuominen@gentoo.org>
+  qtscriptgenerator-0.1.0.ebuild:
+  Keyword ~ppc64 wrt #280552 by Andreas Thalhammer.
+
+  23 Feb 2010; Joseph Jezak <josejx@gentoo.org>
+  qtscriptgenerator-0.1.0.ebuild:
+  Marked ~ppc.
+
+  29 Oct 2009; Christian Faulhammer <fauli@gentoo.org>
+  qtscriptgenerator-0.1.0.ebuild:
+  stable x86, bug 290493
+
+  26 Oct 2009; Samuli Suominen <ssuominen@gentoo.org>
+  qtscriptgenerator-0.1.0.ebuild:
+  amd64 stable wrt #290493
+
+  26 Jun 2009; Markos Chandras <hwoarang@gentoo.org>
+  qtscriptgenerator-0.1.0.ebuild:
+  Use only one job on compilation. Fixes bug 274458
+
+  17 Jun 2009; Markos Chandras <hwoarang@gentoo.org>
+  qtscriptgenerator-0.1.0.ebuild:
+  Adding qt-webkit as dependency. Fixes bug 274409
+
+  12 Jun 2009; Ben de Groot <yngwin@gentoo.org>
+  qtscriptgenerator-0.1.0.ebuild,
+  -files/qtscriptgenerator-0.1.0-gcc44.patch,
+  +files/qtscriptgenerator-gcc44.patch:
+  Use a more correct gcc-4.4 patch. Minor ebuild cleanups.
+
+  05 Jun 2009; Ben de Groot <yngwin@gentoo.org>
+  qtscriptgenerator-0.1.0.ebuild:
+  Specify !kde for qt-phonon dep
+
+  29 May 2009; Ben de Groot <yngwin@gentoo.org>
+  qtscriptgenerator-0.1.0.ebuild:
+  Add kde useflag to make dependency calculation easier, bug 270188
+
+  08 May 2009; Peter Alfredsen <loki_val@gentoo.org>
+  qtscriptgenerator-0.1.0.ebuild,
+  +files/qtscriptgenerator-0.1.0-gcc44.patch:
+  Fix GCC 4.4 compatibility, bug 268086. Thanks to Andreas Sturmlechner
+  <andreas.sturmlechner@gmail.com> for the patch.
+
+*qtscriptgenerator-0.1.0 (15 Apr 2009)
+
+  15 Apr 2009; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  +metadata.xml, +qtscriptgenerator-0.1.0.ebuild:
+  Initial import to the tree of qtscriptgenerator from the kde-testing
+  overlay. Thanks to hwoarang and reavertm for their work on the ebuild.
+

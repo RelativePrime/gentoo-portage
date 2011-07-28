@@ -1,0 +1,18 @@
+# ChangeLog for dev-java/jnr-posix
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/jnr-posix/ChangeLog,v 1.3 2010/07/17 09:07:21 fauli Exp $
+
+  17 Jul 2010; Christian Faulhammer <fauli@gentoo.org>
+  jnr-posix-1.1.4.ebuild:
+  stable x86, bug 326827
+
+  06 Jul 2010; Markos Chandras <hwoarang@gentoo.org> jnr-posix-1.1.4.ebuild:
+  Stable on amd64 wrt bug #326827
+
+*jnr-posix-1.1.4 (04 Jun 2010)
+
+  04 Jun 2010; Alistair Bush <ali_bush@gentoo.org> +jnr-posix-1.1.4.ebuild,
+  +metadata.xml:
+  Version Bump and package rename from jna-posix. Dropped ~ppc as new 
+  dependency jnr-x86asm produces x86/amd64 arch binary machine code only.
+

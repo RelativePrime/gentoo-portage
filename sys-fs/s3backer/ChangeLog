@@ -1,0 +1,25 @@
+# ChangeLog for sys-fs/s3backer
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/s3backer/ChangeLog,v 1.4 2010/06/17 17:17:16 hwoarang Exp $
+
+*s3backer-1.2.2-r2 (17 Jun 2010)
+
+  17 Jun 2010; Markos Chandras <hwoarang@gentoo.org>
+  +s3backer-1.2.2-r2.ebuild:
+  Fix documentation installation wrt bug #294271
+
+  02 Jun 2010; Torsten Veller <tove@gentoo.org> metadata.xml:
+  Remove caleb from metadata.xml (#317071)
+
+*s3backer-1.2.2-r1 (24 Jun 2009)
+
+  24 Jun 2009; Caleb Tennis <caleb@gentoo.org> +files/s3backer-qa.patch,
+  +s3backer-1.2.2-r1.ebuild:
+  Bump for QA fix from #274211
+
+*s3backer-1.2.2 (19 Apr 2009)
+
+  19 Apr 2009; Caleb Tennis <caleb@gentoo.org +metadata.xml,
+  +s3backer-1.2.2.ebuild:
+  Initial import
+

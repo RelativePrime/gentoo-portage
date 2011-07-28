@@ -1,0 +1,108 @@
+# ChangeLog for net-misc/modemmanager
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/modemmanager/ChangeLog,v 1.20 2011/07/06 16:12:49 ssuominen Exp $
+
+*modemmanager-0.4_p20110205-r1 (06 Jul 2011)
+
+  06 Jul 2011; Samuli Suominen <ssuominen@gentoo.org>
+  +modemmanager-0.4_p20110205-r1.ebuild:
+  Fix udev rules.d directory from /etc/udev to /lib/udev.
+
+  09 Jun 2011; Sebastian Pipping <sping@gentoo.org> modemmanager-0.3.ebuild,
+  modemmanager-0.4.ebuild, modemmanager-0.4_p20101211.ebuild,
+  modemmanager-0.4_p20110205.ebuild:
+  Add >=sys-fs/udev-171[gudev] as an alternative dependency to
+  >=sys-fs/udev-145[extras] (bug #370385)
+
+*modemmanager-0.4_p20110205 (04 Feb 2011)
+
+  04 Feb 2011; Robert Piasek <dagger@gentoo.org>
+  +modemmanager-0.4_p20110205.ebuild:
+  Add new snapshot of ModemManager
+
+*modemmanager-0.4_p20101211 (11 Dec 2010)
+
+  11 Dec 2010; Robert Piasek <dagger@gentoo.org>
+  +modemmanager-0.4_p20101211.ebuild:
+  New snapshot of ModemManager
+
+  28 Oct 2010; Samuli Suominen <ssuominen@gentoo.org>
+  modemmanager-0.4.ebuild:
+  ppc64 stable wrt #321593
+
+  19 Oct 2010; Brent Baude <ranger@gentoo.org> modemmanager-0.4.ebuild:
+  Marking modemmanager-0.4 ppc for bug 321593
+
+  20 Aug 2010; Markos Chandras <hwoarang@gentoo.org>
+  modemmanager-0.4.ebuild:
+  Stable on amd64 wrt bug #321593
+
+  13 Aug 2010; Christian Faulhammer <fauli@gentoo.org>
+  modemmanager-0.4.ebuild:
+  stable x86, bug 321593
+
+*modemmanager-0.4 (08 Jul 2010)
+
+  08 Jul 2010; Nirbheek Chauhan <nirbheek@gentoo.org>
+  +modemmanager-0.4.ebuild:
+  Bump to 0.4, new use-flag 'policykit', remove static libs and .la files,
+  fix deps, add elog about usb_modeswitch, add dist-version, add support for
+  ppp-2.4.5 (if/when it's added), fixes bug 326605
+
+  07 Jul 2010; Samuli Suominen <ssuominen@gentoo.org>
+  modemmanager-0.3_p20100401.ebuild:
+  Missing dev-util/intltool and sys-devel/gettext DEPEND wrt #312887 by
+  Bjoern Ottervik.
+
+*modemmanager-0.3_p20100401 (01 Apr 2010)
+
+  01 Apr 2010; Robert Piasek <dagger@gentoo.org>
+  -modemmanager-0.2_p20091109.ebuild, -modemmanager-0.2_p20091123.ebuild,
+  +modemmanager-0.3_p20100401.ebuild:
+  New snapshot of ModemManager (bug #312587)
+
+  10 Mar 2010; Joseph Jezak <josejx@gentoo.org> modemmanager-0.3.ebuild:
+  Marked ~ppc/~ppc64 for bug #296548.
+
+  25 Jan 2010; Nirbheek Chauhan <nirbheek@gentoo.org> metadata.xml:
+  metadata.xml: add myself, fix indentation
+
+*modemmanager-0.3 (25 Jan 2010)
+
+  25 Jan 2010; Nirbheek Chauhan <nirbheek@gentoo.org>
+  +modemmanager-0.3.ebuild:
+  Bump to 0.3, needed for networkmanager-0.8
+
+*modemmanager-0.2_p20091123 (23 Nov 2009)
+
+  23 Nov 2009; Robert Piasek <dagger@gentoo.org>
+  -modemmanager-0.2_p20090925.ebuild, +modemmanager-0.2_p20091123.ebuild:
+  New snapshot of modemmanager. Contains fixes for PPC. Special thanks to
+  papillon81 for helping to hunt this the problem down.
+
+*modemmanager-0.2_p20091109 (09 Nov 2009)
+
+  09 Nov 2009; Robert Piasek <dagger@gentoo.org>
+  -modemmanager-0.2_p20090824.ebuild, +modemmanager-0.2_p20091109.ebuild:
+  Version bump for development version of ModemManager
+
+  28 Sep 2009; Robert Piasek <dagger@gentoo.org>
+  modemmanager-0.2_p20090925.ebuild:
+  Disable -Werrors
+
+*modemmanager-0.2_p20090925 (25 Sep 2009)
+
+  25 Sep 2009; Robert Piasek <dagger@gentoo.org>
+  +modemmanager-0.2_p20090925.ebuild:
+  new snapshot
+
+  22 Sep 2009; Robert Piasek <dagger@gentoo.org>
+  modemmanager-0.2_p20090824.ebuild:
+  Added ARM keyword
+
+*modemmanager-0.2_p20090806 (13 Aug 2009)
+
+  13 Aug 2009; Robert Piasek <dagger@gentoo.org>
+  +modemmanager-0.2_p20090806.ebuild, +metadata.xml:
+  Initial ebuild of modemmanager
+

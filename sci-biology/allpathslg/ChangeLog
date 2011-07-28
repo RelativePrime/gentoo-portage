@@ -1,0 +1,21 @@
+# ChangeLog for sci-biology/allpathslg
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-biology/allpathslg/ChangeLog,v 1.3 2011/06/20 05:34:50 weaver Exp $
+
+*allpathslg-37578 (20 Jun 2011)
+
+  20 Jun 2011; Andrey Kislyuk <weaver@gentoo.org> +allpathslg-37578.ebuild:
+  Version bump
+
+*allpathslg-35725-r1 (27 Jan 2011)
+
+  27 Jan 2011; Andrey Kislyuk <weaver@gentoo.org> -allpathslg-35725.ebuild,
+  +allpathslg-35725-r1.ebuild:
+  Drop ~x86, avoid collision with sci-biology/vaal
+
+*allpathslg-35725 (25 Jan 2011)
+
+  25 Jan 2011; Andrey Kislyuk <weaver@gentoo.org> +allpathslg-35725.ebuild,
+  +metadata.xml:
+  Package move from sci-biology/allpaths and version bump
+

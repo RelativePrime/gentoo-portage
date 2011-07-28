@@ -1,0 +1,17 @@
+# ChangeLog for app-arch/createrepo
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-arch/createrepo/ChangeLog,v 1.3 2010/06/16 20:45:25 patrick Exp $
+
+  16 Jun 2010; Patrick Lauer <patrick@gentoo.org> createrepo-0.9.8.ebuild:
+  Fixing deps for #323793
+
+*createrepo-0.9.8 (26 Apr 2010)
+
+  26 Apr 2010; Mike Frysinger <vapier@gentoo.org> +createrepo-0.9.8.ebuild:
+  Version bump.
+
+*createrepo-0.9.7 (12 Apr 2009)
+
+  12 Apr 2009; Mike Frysinger <vapier@gentoo.org> +createrepo-0.9.7.ebuild:
+  Initial ebuild by Dick Marinus, Rene Zbinden, Juan Diego Calle, and me
+  #116913.

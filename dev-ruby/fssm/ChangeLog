@@ -1,0 +1,38 @@
+# ChangeLog for dev-ruby/fssm
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/fssm/ChangeLog,v 1.8 2011/07/23 20:43:14 xarthisius Exp $
+
+  23 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> fssm-0.2.7.ebuild:
+  Marked ~ppc64 wrt #351212
+
+*fssm-0.2.7 (03 Jun 2011)
+
+  03 Jun 2011; Hans de Graaff <graaff@gentoo.org> +fssm-0.2.7.ebuild:
+  Version bump.
+
+  10 Apr 2011; Hans de Graaff <graaff@gentoo.org> -fssm-0.2.3.ebuild,
+  -fssm-0.2.4.ebuild:
+  Remove old versions.
+
+  28 Feb 2011; Brent Baude <ranger@gentoo.org> fssm-0.2.5.ebuild:
+  Marking fssm-0.2.5 ~ppc for bug 351212
+
+  12 Feb 2011; Thomas Kahle <tomka@gentoo.org> fssm-0.2.5.ebuild:
+  ~x86 per bug 351212
+
+*fssm-0.2.5 (23 Jan 2011)
+
+  23 Jan 2011; Hans de Graaff <graaff@gentoo.org> +fssm-0.2.5.ebuild:
+  Version bump.
+
+*fssm-0.2.4 (16 Jan 2011)
+
+  16 Jan 2011; Hans de Graaff <graaff@gentoo.org> +fssm-0.2.4.ebuild:
+  Version bump.
+
+*fssm-0.2.3 (09 Jan 2011)
+
+  09 Jan 2011; Hans de Graaff <graaff@gentoo.org> +fssm-0.2.3.ebuild,
+  +metadata.xml:
+  Initial import. New dependency of dev-ruby/haml.
+

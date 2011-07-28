@@ -1,0 +1,22 @@
+# ChangeLog for net-zope/zope-filerepresentation
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-zope/zope-filerepresentation/ChangeLog,v 1.4 2010/02/14 19:17:36 armin76 Exp $
+
+  14 Feb 2010; Raúl Porcel <armin76@gentoo.org>
+  zope-filerepresentation-3.6.0.ebuild:
+  Add ~alpha/~sparc wrt #297734
+
+  22 Jan 2010; Brent Baude <ranger@gentoo.org>
+  zope-filerepresentation-3.6.0.ebuild:
+  Marking zope-filerepresentation-3.6.0 ~ppc for bug 297734
+
+  16 Jan 2010; Christian Faulhammer <fauli@gentoo.org>
+  zope-filerepresentation-3.6.0.ebuild:
+  keyworded ~arch for x86, bug 297734
+
+*zope-filerepresentation-3.6.0 (24 Oct 2009)
+
+  24 Oct 2009; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  +zope-filerepresentation-3.6.0.ebuild, +metadata.xml:
+  Initial import from python overlay. Ebuild written by me.
+

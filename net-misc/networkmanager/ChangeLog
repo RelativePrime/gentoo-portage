@@ -1,0 +1,597 @@
+# ChangeLog for net-misc/networkmanager
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/networkmanager/ChangeLog,v 1.107 2011/07/21 08:05:28 dagger Exp $
+
+*networkmanager-0.8.4.0-r2 (21 Jul 2011)
+
+  21 Jul 2011; Robert Piasek <dagger@gentoo.org>
+  -networkmanager-0.8.4.0-r1.ebuild, +networkmanager-0.8.4.0-r2.ebuild,
+  metadata.xml:
+  Add systemd eclass support (bug #366113)
+  Make mobile broadband optional (bug #374727)
+
+  09 Jun 2011; Sebastian Pipping <sping@gentoo.org>
+  networkmanager-0.8-r1.ebuild, networkmanager-0.8.1-r6.ebuild,
+  networkmanager-0.8.2-r1.ebuild, networkmanager-0.8.2-r2.ebuild,
+  networkmanager-0.8.2-r6.ebuild, networkmanager-0.8.2-r10.ebuild,
+  networkmanager-0.8.4.0-r1.ebuild:
+  Add >=sys-fs/udev-171[gudev] as an alternative dependency to
+  >=sys-fs/udev-145[extras] (bug #370339)
+
+*networkmanager-0.8.4.0-r1 (18 May 2011)
+
+  18 May 2011; Mu Qiao <qiaomuf@gentoo.org> -networkmanager-0.8.4.0.ebuild,
+  +networkmanager-0.8.4.0-r1.ebuild,
+  +files/networkmanager-0.8.4.0-fix-tests.patch,
+  +files/networkmanager-0.8.4.0-ifnet-smarter-write.patch,
+  +files/networkmanager-0.8.4.0-shared-connection.patch:
+  Add backported patches for the ifnet plug-in.
+
+*networkmanager-0.8.4.0 (18 May 2011)
+
+  18 May 2011; Robert Piasek <dagger@gentoo.org>
+  +networkmanager-0.8.4.0.ebuild:
+  Add version 0.8.4
+
+*networkmanager-0.8.2-r10 (09 Mar 2011)
+
+  09 Mar 2011; Robert Piasek <dagger@gentoo.org>
+  -networkmanager-0.8.2-r9.ebuild, +networkmanager-0.8.2-r10.ebuild,
+  +files/networkmanager-0.8.2-fix-dnsmasq-config.patch,
+  +files/networkmanager-0.8.2-fix-shutdown.patch:
+  fix some shutdown crashes. Fix >=dnsmasq-2.56 connection sharing - Gentoo bug
+  #357671
+
+*networkmanager-0.8.2-r9 (26 Feb 2011)
+
+  26 Feb 2011; Mu Qiao <qiaomuf@gentoo.org> -networkmanager-0.8.2-r8.ebuild,
+  +networkmanager-0.8.2-r9.ebuild,
+  files/networkmanager-0.8.2-ifnet-smarter-write.patch:
+  Display printable conn_name in nm-applet. (bug #356337)
+
+*networkmanager-0.8.2-r8 (26 Feb 2011)
+
+  26 Feb 2011; Mu Qiao <qiaomuf@gentoo.org> +networkmanager-0.8.2-r8.ebuild,
+  files/networkmanager-0.8.2-ifnet-smarter-write.patch:
+  Accept non-alnum ssid (bug #356337)
+
+*networkmanager-0.8.2-r7 (25 Feb 2011)
+
+  25 Feb 2011; Mu Qiao <qiaomuf@gentoo.org> +networkmanager-0.8.2-r7.ebuild,
+  +files/networkmanager-0.8.2-ifnet-smarter-write.patch, metadata.xml:
+  Won't write when nothing changed
+
+*networkmanager-0.8.2-r6 (08 Feb 2011)
+
+  08 Feb 2011; Robert Piasek <dagger@gentoo.org>
+  -networkmanager-0.8.2-r5.ebuild, +networkmanager-0.8.2-r6.ebuild,
+  +files/networkmanager-0.8.2-fix-tempfiles.patch:
+  Fix temp files creation in keyfile plugin bug #349003
+
+*networkmanager-0.8.2-r5 (06 Feb 2011)
+
+  06 Feb 2011; Mu Qiao <qiaomuf@gentoo.org> +networkmanager-0.8.2-r5.ebuild,
+  +files/networkmanager-0.8.2-fix-tests.patch,
+  +files/networkmanager-0.8.2-fix-timestamp.patch:
+  Fix bug #353807 and bug #353549
+
+  31 Jan 2011; Samuli Suominen <ssuominen@gentoo.org>
+  networkmanager-0.8-r1.ebuild, networkmanager-0.8.1-r6.ebuild,
+  networkmanager-0.8.2-r2.ebuild, networkmanager-0.8.2-r4.ebuild:
+  Create special group called plugdev for -confchanges.patch.
+
+*networkmanager-0.8.2-r4 (25 Jan 2011)
+
+  25 Jan 2011; Mu Qiao <qiaomuf@gentoo.org> -networkmanager-0.8.2-r3.ebuild,
+  +networkmanager-0.8.2-r4.ebuild,
+  files/networkmanager-0.8.2-shared-connection.patch:
+  Fix parsing dhclient.conf wrt bug #352638
+
+*networkmanager-0.8.2-r3 (24 Jan 2011)
+
+  24 Jan 2011; Mu Qiao <qiaomuf@gentoo.org> +networkmanager-0.8.2-r3.ebuild,
+  +files/networkmanager-0.8.2-shared-connection.patch:
+  fix shared connection wrt bug #350476
+
+  17 Dec 2010; Robert Piasek <dagger@gentoo.org>
+  files/networkmanager-0.8.2-1.patch:
+  Updated backport patch
+
+*networkmanager-0.8.2-r2 (17 Dec 2010)
+
+  17 Dec 2010; Robert Piasek <dagger@gentoo.org>
+  +networkmanager-0.8.2-r2.ebuild, +files/networkmanager-0.8.2-1.patch,
+  +files/networkmanager-0.8.2-confchanges.patch:
+  Backport some patches from upstream. Re-introduce plugdev group patch
+
+*networkmanager-0.8.2-r1 (30 Nov 2010)
+
+  30 Nov 2010; <qiaomuf@gentoo.org> +networkmanager-0.8.2-r1.ebuild,
+  +files/networkmanager-0.8.2-accept-gw.patch:
+  Accept "gw" by ifnet plugin for bug #339215
+
+  28 Oct 2010; Samuli Suominen <ssuominen@gentoo.org>
+  networkmanager-0.8-r1.ebuild:
+  ppc64 stable wrt #321593
+
+  19 Oct 2010; Brent Baude <ranger@gentoo.org> networkmanager-0.8-r1.ebuild:
+  Marking networkmanager-0.8-r1 ppc for bug 321593
+
+*networkmanager-0.8.2 (10 Nov 2010)
+
+  10 Nov 2010; Robert Piasek <dagger@gentoo.org>
+  +networkmanager-0.8.2.ebuild:
+  Added version 0.8.2
+
+  23 Aug 2010; Robert Piasek <dagger@gentoo.org>
+  networkmanager-0.8.1-r6.ebuild:
+  removed hard dependency on dhcp4. Now dhcp3 can be used as well
+
+*networkmanager-0.8.1-r6 (23 Aug 2010)
+
+  23 Aug 2010; Robert Piasek <dagger@gentoo.org>
+  -networkmanager-0.8.1-r5.ebuild, +networkmanager-0.8.1-r6.ebuild,
+  +files/networkmanager-0.8.1-dhclient3-fix.patch:
+  Fix dhclient-3 backport. That should fix bug #332157 and bug #331547 for
+  good.
+
+*networkmanager-0.8.1-r5 (23 Aug 2010)
+
+  23 Aug 2010; Robert Piasek <dagger@gentoo.org>
+  -networkmanager-0.8.1-r4.ebuild, +networkmanager-0.8.1-r5.ebuild:
+  explicitly disable dhclient if dhcpcd is enabled. That should finally fix
+  bug #331547
+
+*networkmanager-0.8.1-r4 (23 Aug 2010)
+
+  23 Aug 2010; Robert Piasek <dagger@gentoo.org>
+  -networkmanager-0.8.1-r3.ebuild, +networkmanager-0.8.1-r4.ebuild:
+  Updated ifnet plugin. Added extra kernel checks.
+  Fixes bugs: #333257, #333639, #333785
+
+  23 Aug 2010; Robert Piasek <dagger@gentoo.org>
+  networkmanager-0.8-r1.ebuild, files/nm-system-settings.conf,
+  +files/nm-system-settings.conf-ifnet:
+  Added separate file for system-settings with Gentoo plugin.
+
+  20 Aug 2010; Markos Chandras <hwoarang@gentoo.org>
+  networkmanager-0.8-r1.ebuild:
+  Stable on amd64 wrt bug #321593
+
+*networkmanager-0.8.1-r3 (17 Aug 2010)
+
+  17 Aug 2010; Robert Piasek <dagger@gentoo.org>
+  -networkmanager-0.8.1-r2.ebuild, +networkmanager-0.8.1-r3.ebuild:
+  NM now depends on ppp-2.4.5. Fixed bug #330665
+
+*networkmanager-0.8.1-r2 (17 Aug 2010)
+
+  17 Aug 2010; Robert Piasek <dagger@gentoo.org>
+  -networkmanager-0.8.1-r1.ebuild, +networkmanager-0.8.1-r2.ebuild,
+  +files/networkmanager-0.8.1-CVE-2010-1172.patch,
+  +files/networkmanager-0.8.1-dhclient3.patch,
+  files/networkmanager-0.8.1-dhcp-configure.patch,
+  +files/networkmanager-0.8.1-glib-2.25.12-workaround.patch,
+  files/nm-system-settings.conf:
+  Gentoo specyfic plugin is now enabled by default!
+  Backported some patches. This should fix bugs #331509, #331547, #332157
+
+  13 Aug 2010; Christian Faulhammer <fauli@gentoo.org>
+  networkmanager-0.8-r1.ebuild:
+  stable x86, bug 321593
+
+*networkmanager-0.8.1-r1 (04 Aug 2010)
+
+  04 Aug 2010; Robert Piasek <dagger@gentoo.org>
+  -networkmanager-0.8.1.ebuild, +networkmanager-0.8.1-r1.ebuild,
+  +files/networkmanager-0.8.1-dhcp-configure.patch:
+  Updated dhcp client configure option (bug #330659) - thanks Marco Paolone
+  Updated ISC dhcp client requirement to version 4.0 (bug #330319) - thanks
+  to Mike Auty  for providing patch
+
+*networkmanager-0.8.1 (28 Jul 2010)
+
+  28 Jul 2010; Robert Piasek <dagger@gentoo.org>
+  -networkmanager-0.7.1-r3.ebuild, -networkmanager-0.7.1_p20090824.ebuild,
+  -networkmanager-0.8.ebuild, +networkmanager-0.8.1.ebuild,
+  +files/networkmanager-0.8.1-confchanges.patch:
+  Bump version to 0.8.1. Added Gentoo specyfic plugin - ifnet plugin by Qiao
+  Mu
+
+  07 Jul 2010; Nirbheek Chauhan <nirbheek@gentoo.org>
+  networkmanager-0.8.ebuild, networkmanager-0.8-r1.ebuild:
+  Fix postinst message about reloading dbus as per bug 322805
+
+  04 Jun 2010; Robert Piasek <dagger@gentoo.org> networkmanager-0.8.ebuild,
+  networkmanager-0.8-r1.ebuild:
+  Removed incorrect postinfo message which is no longer valid for 0.8
+
+  13 Apr 2010; Raúl Porcel <armin76@gentoo.org> networkmanager-0.8.ebuild,
+  networkmanager-0.8-r1.ebuild:
+  Add ~arm
+
+*networkmanager-0.8-r1 (30 Mar 2010)
+
+  30 Mar 2010; Daniel Gryniewicz <dang@gentoo.org>
+  +networkmanager-0.8-r1.ebuild,
+  +files/networkmanager-0.8-confchanges.patch:
+  Add VPN.Plugin to at_console; bug #294992
+
+  10 Mar 2010; Joseph Jezak <josejx@gentoo.org> networkmanager-0.8.ebuild:
+  Marked ~ppc/~ppc64 for bug #296548.
+
+*networkmanager-0.8 (26 Feb 2010)
+
+  26 Feb 2010; Robert Piasek <dagger@gentoo.org>
+  -networkmanager-0.6.5_p20070823.ebuild, -networkmanager-0.7.999.ebuild,
+  +networkmanager-0.8.ebuild,
+  +files/networkmanager-0.8-nscd-clear-cache.patch:
+  New version of Networkmanager (0.8) is now out. Removed anvient and RC
+  versions.
+
+  25 Jan 2010; Nirbheek Chauhan <nirbheek@gentoo.org>
+  networkmanager-0.7.999.ebuild:
+  Don't hard-depend on gtk-doc, fixes bug 302150
+
+  25 Jan 2010; Nirbheek Chauhan <nirbheek@gentoo.org>
+  -networkmanager-0.8.0_pre20090824.ebuild,
+  -networkmanager-0.8.0_pre20091105.ebuild:
+  Remove old snapshots of networkmanager; buggy, and conflict with
+  versioning scheme of 0.8-rc3 (0.7.999)
+
+  25 Jan 2010; Nirbheek Chauhan <nirbheek@gentoo.org> metadata.xml:
+  metadata.xml: add myself, fix indentation
+
+*networkmanager-0.7.999 (25 Jan 2010)
+
+  25 Jan 2010; Nirbheek Chauhan <nirbheek@gentoo.org>
+  +networkmanager-0.7.999.ebuild,
+  +files/networkmanager-0.8-read-hostname.patch:
+  Bump to 0.7.999 -- final RC of networkmanager-0.8; add fix for bug 176873
+
+  22 Jan 2010; Brent Baude <ranger@gentoo.org> networkmanager-0.7.2.ebuild:
+  Marking networkmanager-0.7.2 ppc64 for bug 274688
+
+  18 Jan 2010; Robert Buchholz <rbu@gentoo.org> metadata.xml:
+  Dropping maintenance
+
+  14 Jan 2010; Markus Meier <maekke@gentoo.org> networkmanager-0.7.2.ebuild:
+  x86 stable, bug #299319
+
+  12 Jan 2010; nixnut <nixnut@gentoo.org> networkmanager-0.7.2.ebuild:
+  ppc stable #299319
+
+  06 Jan 2010; Brent Baude <ranger@gentoo.org>
+  networkmanager-0.7.1-r6.ebuild:
+  Marking networkmanager-0.7.1-r6 ~ppc64 for bug 274688
+
+  02 Jan 2010; Pacho Ramos <pacho@gentoo.org> networkmanager-0.7.2.ebuild:
+  amd64 stable, bug 299319
+
+*networkmanager-0.7.2 (24 Nov 2009)
+
+  24 Nov 2009; Robert Piasek <dagger@gentoo.org>
+  +networkmanager-0.7.2.ebuild:
+  New bugfix release for NetworkManager 0.7 series
+
+  05 Nov 2009; Robert Piasek <dagger@gentoo.org>
+  networkmanager-0.8.0_pre20091105.ebuild:
+  Added configure option for iptables support
+
+*networkmanager-0.8.0_pre20091105 (05 Nov 2009)
+
+  05 Nov 2009; Robert Piasek <dagger@gentoo.org>
+  +networkmanager-0.8.0_pre20091105.ebuild:
+  new snapshot of development version of NetworkManager
+
+  24 Oct 2009; nixnut <nixnut@gentoo.org> networkmanager-0.7.1-r6.ebuild:
+  ppc stable #288416
+
+  17 Oct 2009; Markus Meier <maekke@gentoo.org>
+  networkmanager-0.7.1-r6.ebuild:
+  x86 stable, bug #288416
+
+  10 Oct 2009; Samuli Suominen <ssuominen@gentoo.org>
+  networkmanager-0.7.1-r6.ebuild:
+  amd64 stable wrt #288416
+
+  17 Sep 2009; Robert Piasek <dagger@gentoo.org>
+  networkmanager-0.7.1-r6.ebuild:
+  Added dev-util/gtk-doc-am as dep, as autoreconf needs it.
+
+*networkmanager-0.8.0_pre20090824 (24 Aug 2009)
+*networkmanager-0.7.1_p20090824 (24 Aug 2009)
+
+  24 Aug 2009; Robert Piasek <dagger@gentoo.org>
+  +networkmanager-0.7.1_p20090824.ebuild,
+  +networkmanager-0.8.0_pre20090824.ebuild:
+  New stable snapshot of NetworkManager (0.7.1)
+  New dev snapshot of NetworkManager (0.8)
+
+  12 Jul 2009; Robert Buchholz <rbu@gentoo.org>
+  networkmanager-0.7.1-r3.ebuild, networkmanager-0.7.1-r6.ebuild:
+  Adapt DEPEND to reflect that policykit 0.92 does not work for us, bug 274906.
+
+*networkmanager-0.7.1-r6 (19 Jun 2009)
+
+  19 Jun 2009; Robert Piasek <dagger@gentoo.org>
+  -networkmanager-0.7.1-r4.ebuild, +networkmanager-0.7.1-r6.ebuild:
+  Fixed some regression bugs caused by backport patches (bug #273741 and
+  #274636)
+
+  14 Jun 2009; Robert Piasek <dagger@gentoo.org>
+  +networkmanager-0.7.1-r3.ebuild:
+  Restored networkmanager-0.7.1-r3 version due to potential regression
+  problems as per bug (#273741).
+
+*networkmanager-0.7.1-r4 (10 Jun 2009)
+
+  10 Jun 2009; Robert Piasek <dagger@gentoo.org>
+  -networkmanager-0.7.1-r3.ebuild, +networkmanager-0.7.1-r4.ebuild:
+  Backported some importent patches from NM trunk. Fixes gentoo bug #262112
+  gnome bug #513820, rh bug #441070 among the others. Thanks to Pacho Ramos
+  for investigating the problem (bug #262112).
+
+  31 May 2009; Mike Auty <ikelos@gentoo.org> metadata.xml:
+  Fixing typo in local USE flag description (see bug 271604).
+
+  26 May 2009; Robert Piasek <dagger@gentoo.org> metadata.xml:
+  Updated dagger's email address in metadata
+
+*networkmanager-0.7.1-r3 (12 May 2009)
+
+  12 May 2009; Robert Buchholz <rbu@gentoo.org>
+  -networkmanager-0.7.0.ebuild, -networkmanager-0.7.1-r1.ebuild,
+  -networkmanager-0.7.1-r2.ebuild, +networkmanager-0.7.1-r3.ebuild:
+  fix udev rules path properly now, bug #253788
+
+*networkmanager-0.7.1-r2 (02 May 2009)
+
+  02 May 2009; Daniel Gryniewicz <dang@gentoo.org>
+  +networkmanager-0.7.1-r2.ebuild,
+  +files/networkmanager-0.7.1-confchanges.patch:
+  Enable ck-based policy; bug #268223
+
+*networkmanager-0.7.1-r1 (25 Apr 2009)
+
+  25 Apr 2009; Robert Buchholz <rbu@gentoo.org>
+  files/networkmanager-0.7.0-gentoo-dhclient.patch,
+  +files/networkmanager-0.7.1-bad-link.patch, -networkmanager-0.7.1.ebuild,
+  +networkmanager-0.7.1-r1.ebuild:
+  Fix bug #267349 by Daniel Gryniewicz, NetworkManager-0.7 links against
+  installed version of nm-util, specify udev directory for bug #267168.
+
+  24 Apr 2009; Robert Buchholz <rbu@gentoo.org>
+  +networkmanager-0.6.5_p20070823.ebuild:
+  Readd NM 0.6.5 for ppc.
+
+  22 Apr 2009; Robert Buchholz <rbu@gentoo.org> metadata.xml,
+  networkmanager-0.7.1.ebuild:
+  Add use flags for RFC 3927 link-local addresses via avahi and connection
+  sharing (bug #258842), by Robert Piasek.
+
+*networkmanager-0.7.1 (22 Apr 2009)
+
+  22 Apr 2009; Robert Buchholz <rbu@gentoo.org>
+  -networkmanager-0.6.5_p20070823.ebuild, networkmanager-0.6.6.ebuild,
+  +networkmanager-0.7.1.ebuild:
+  Version bump by Robert Piasek. Fixes bug 266184.
+  Remove 0.6.5 version, remove dependency on gnome/xfce panels as they
+  are pulled in via nm-applet anyway (bug 246023).
+
+  21 Apr 2009; Daniel Gryniewicz <dang@gentoo.org>
+  +files/networkmanager-0.7.0-gentoo-dhclient.patch, networkmanager-0.7.0:
+  fix nm 0.7 to look for dhclient.conf in the correct place on gentoo
+
+  22 Jan 2009; Peter Volkov <pva@gentoo.org>
+  networkmanager-0.6.5_p20070823.ebuild, networkmanager-0.6.6.ebuild:
+  Added xfce-base/xfce4-panel as alternative for gnome-panel, but I really
+  vote to remove this dep, see bug #246023.
+
+  18 Dec 2008; Robert Buchholz <rbu@gentoo.org> networkmanager-0.7.0.ebuild:
+  Correct postinst output, bug #250858.
+
+  05 Dec 2008; Robert Buchholz <rbu@gentoo.org> metadata.xml:
+  Add Robert Piasek to metadata
+
+*networkmanager-0.7.0 (04 Dec 2008)
+
+  04 Dec 2008; Tomas Chvatal <scarabeus@gentoo.org>
+  +files/networkmanager-0.7.0-confchanges.patch,
+  +files/nm-system-settings.conf, metadata.xml,
+  +networkmanager-0.7.0.ebuild:
+  New version. Thanks to robert.piasek@member.fsf.org for ebuild.
+
+  17 Aug 2008; Markus Meier <maekke@gentoo.org> networkmanager-0.6.6.ebuild:
+  x86 stable, bug #228837
+
+  28 Jul 2008; Kenneth Prugh <ken69267@gentoo.org>
+  networkmanager-0.6.6.ebuild:
+  amd64 stable, bug #228837. Removed unused autotools inherit.
+
+  26 Jun 2008; Robert Buchholz <rbu@gentoo.org>
+  networkmanager-0.6.5_p20070823.ebuild,
+  -networkmanager-0.6.5_p20080205.ebuild, networkmanager-0.6.6.ebuild:
+  Readd ~ppc which was dropped due to >=hal-0.5.10 dependency, and remove old
+  version. Block latest version of libnl (bug #223381).
+
+  07 Mar 2008; Steev Klimaszewski <steev@gentoo.org>
+  -files/NM-po-linguas.patch, -networkmanager-0.6.5.98.ebuild,
+  +networkmanager-0.6.6.ebuild:
+  Remove the patches that 0.6.5.98 were using
+
+*networkmanager-0.6.6 (07 Mar 2008)
+
+  07 Mar 2008; Steev Klimaszewski <steev@gentoo.org>
+  -networkmanager-0.6.5.98.ebuild, +networkmanager-0.6.6.ebuild:
+  New upstream release. Unmentioned changes in the release notes include the
+  updated backend being committed for Gentoo, as well as new init scripts from
+  compnerd.
+
+*networkmanager-0.6.5.98 (14 Feb 2008)
+
+  14 Feb 2008; Steev Klimaszewski <steev@gentoo.org>
+  +files/NM-po-linguas.patch, +networkmanager-0.6.5.98.ebuild:
+  Add 0.6.5.98 (aka 0.6.6rc1) to the tree, include patch from Debian to use
+  po/LINGUAS.
+
+  14 Feb 2008; Steev Klimaszewski <steev@gentoo.org>
+  networkmanager-0.6.5_p20070823.ebuild,
+  networkmanager-0.6.5_p20080205.ebuild:
+  Fix the libnotify dependency, this is unneeded in NetworkManager as the
+  graphical bits have been split out.
+
+*networkmanager-0.6.5_p20080205 (10 Feb 2008)
+
+  10 Feb 2008; Steev Klimaszewski <steev@gentoo.org>
+  -networkmanager-0.6.5_p20080130.ebuild,
+  +networkmanager-0.6.5_p20080205.ebuild:
+  Bump NetworkManager snapshot
+
+  04 Feb 2008; Steev Klimaszewski <steev@gentoo.org>
+  networkmanager-0.6.5_p20070823.ebuild:
+  Update the dependency to be 1.0_pre6* not just 1.0_pre6.
+
+  02 Feb 2008; Steev Klimaszewski <steev@gentoo.org>
+  +files/NetworkManagerDispatcher, networkmanager-0.6.5_p20080130.ebuild:
+  Add NetworkManagerDispatcher init script for the latest snapshot
+
+*networkmanager-0.6.5_p20080130 (02 Feb 2008)
+
+  02 Feb 2008; Steev Klimaszewski <steev@gentoo.org>
+  -files/networkmanager-0.6.4-Gentoo-checklo.patch,
+  -files/networkmanager-0.6.4-confchanges.patch,
+  -files/networkmanager-0.6.4-dbus-1.patch,
+  -files/networkmanager-0.6.4-gentooinitscript.patch,
+  -networkmanager-0.6.4_pre20061028.ebuild,
+  -networkmanager-0.6.4_pre20061028-r1.ebuild, -networkmanager-0.6.5.ebuild,
+  networkmanager-0.6.5_p20070823.ebuild,
+  +networkmanager-0.6.5_p20080130.ebuild:
+  Remove old versions of NetworkManager and add a bump that works with libnl 1.1
+
+  25 Dec 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing metalgod from metadata.xml as per #99350.
+
+  16 Sep 2007; Markus Meier <maekke@gentoo.org>
+  networkmanager-0.6.5_p20070823.ebuild:
+  x86 stable, bug #191302
+
+  08 Sep 2007; Joseph Jezak <josejx@gentoo.org>
+  networkmanager-0.6.5_p20070823.ebuild:
+  Marked ppc stable for bug #191302.
+
+  05 Sep 2007; Robert Buchholz <rbu@gentoo.org>
+  networkmanager-0.6.5_p20070823.ebuild:
+  Add die with iproute minimal build (bug #190046)
+
+  05 Sep 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  networkmanager-0.6.5_p20070823.ebuild:
+  Marked stable on amd64 as per bug 191302 to make sure stable systems
+  actually work.
+
+  28 Aug 2007; nixnut <nixnut@gentoo.org> networkmanager-0.6.5.ebuild:
+  Stable on ppc wrt bug 189781
+
+  26 Aug 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  networkmanager-0.6.5.ebuild:
+  Marked stable on amd64 as per bug 189781.
+
+  24 Aug 2007; Christian Faulhammer <opfer@gentoo.org>
+  networkmanager-0.6.5.ebuild:
+  stable x86, bug 189781
+
+*networkmanager-0.6.5_p20070823 (23 Aug 2007)
+
+  23 Aug 2007; Robert Buchholz <rbu@gentoo.org> metadata.xml,
+  +networkmanager-0.6.5_p20070823.ebuild:
+  Version bump to a current 0.6 branch state, adding myself to metadata
+
+  15 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  14 May 2007; Steev Klimaszewski <steev@gentoo.org>
+  networkmanager-0.6.5.ebuild:
+  Fix homepage url, fixes bug #178101.  Thanks to Pacho Ramos for reporting
+
+  11 May 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  networkmanager-0.6.5.ebuild:
+  Keyworded ~ppc
+
+  03 May 2007; Steev Klimaszewski <steev@gentoo.org>
+  networkmanager-0.6.5.ebuild:
+  Add use_with gnome to G2CONF. Fixes bug #176867, thanks to Ingmar Vanhassel
+  <ingmar.vanhassel@gmail.com> for reporting
+
+*networkmanager-0.6.5 (02 May 2007)
+
+  02 May 2007; Steev Klimaszewski <steev@gentoo.org>
+  +files/networkmanager-0.6.5-confchanges.patch,
+  +networkmanager-0.6.5.ebuild:
+  New upstream release of NetworkManager.
+
+  26 Jan 2007; Mart Raudsepp <leio@gentoo.org>
+  networkmanager-0.6.4_pre20061028.ebuild,
+  networkmanager-0.6.4_pre20061028-r1.ebuild:
+  Really fix gnome and gcrypt use on configure
+
+  14 Jan 2007; Markus Rothe <corsair@gentoo.org>
+  networkmanager-0.6.4_pre20061028-r1.ebuild:
+  Added ~ppc and ~ppc64
+
+  05 Jan 2007; Diego Pettenò <flameeyes@gentoo.org>
+  networkmanager-0.6.4_pre20061028.ebuild,
+  networkmanager-0.6.4_pre20061028-r1.ebuild:
+  Remove debug.eclass usage.
+
+  06 Dec 2006; Steev Klimaszewski <steev@gentoo.org>
+  +files/networkmanager-0.6.4-dbus-1.patch,
+  networkmanager-0.6.4_pre20061028-r1.ebuild:
+  Add patch from the NetworkManager mailing list to fix compilation against
+  D-Bus 1.x.  Fixes bug #155279.  Thanks to Priit Laes for reporting.
+
+  04 Dec 2006; Luis Medinas <metalgod@gentoo.org>
+  networkmanager-0.6.4_pre20061028.ebuild,
+  networkmanager-0.6.4_pre20061028-r1.ebuild:
+  Fix gnome use on configure. Closes bug #155192.
+
+*networkmanager-0.6.4_pre20061028-r1 (26 Nov 2006)
+
+  26 Nov 2006; Luis Medinas <metalgod@gentoo.org>
+  +files/networkmanager-updatedbackend.patch,
+  +networkmanager-0.6.4_pre20061028-r1.ebuild:
+  Added a patch with Gentoo backend updated done by Nathan Caldwell
+  <saintdev@gmail.com>. Please test the backend and report any bug.
+
+  05 Nov 2006; Steev Klimaszewski <steev@gentoo.org>
+  networkmanager-0.6.4_pre20061028.ebuild:
+  Fix the names of patches since epkgmove apparently renamed the patches as
+  well.
+
+*networkmanager-0.6.4_pre20061028 (05 Nov 2006)
+
+  05 Nov 2006; Steev Klimaszewski <steev@gentoo.org>
+  +files/networkmanager-0.6.4-Gentoo-checklo.patch,
+  +files/networkmanager-0.6.4-confchanges.patch,
+  +files/networkmanager-0.6.4-gentooinitscript.patch,
+  +files/networkmanager-resolvconf-perms.patch,
+  +files/networkmanager-use-kernel-headers.patch, +metadata.xml,
+  +networkmanager-0.6.4_pre20061028.ebuild:
+  Moved from net-misc/NetworkManager to net-misc/networkmanager.
+
+  04 Nov 2006; Luis Medinas <metalgod@gentoo.org>
+  NetworkManager-0.6.4_pre20061028.ebuild:
+  Remove pam_console from dependencies since our patch makes it work with
+  hal/dbus instead of pam_console.
+
+*NetworkManager-0.6.4_pre20061028 (31 Oct 2006)
+
+  31 Oct 2006; Luis Medinas <metalgod@gentoo.org>
+  +files/NetworkManager-0.6.4-Gentoo-checklo.patch,
+  +files/NetworkManager-0.6.4-confchanges.patch,
+  +files/NetworkManager-0.6.4-gentooinitscript.patch,
+  +files/NetworkManager-resolvconf-perms.patch,
+  +files/NetworkManager-use-kernel-headers.patch, +metadata.xml,
+  +NetworkManager-0.6.4_pre20061028.ebuild:
+  Initial import. This ebuild was made by Luis Medinas <metalgod@gentoo.org>
+  and Stephen Klimaszewski <steev@gentoo.org>.
+

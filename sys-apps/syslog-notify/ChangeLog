@@ -1,0 +1,23 @@
+# ChangeLog for sys-apps/syslog-notify
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/syslog-notify/ChangeLog,v 1.4 2011/01/30 09:41:45 ssuominen Exp $
+
+  30 Jan 2011; Samuli Suominen <ssuominen@gentoo.org> syslog-notify-0.1.ebuild,
+  +files/syslog-notify-0.1-libnotify-0.7.patch:
+  Fix building with x11-libs/libnotify >= 0.7.
+
+  29 Jun 2010; Christian Faulhammer <fauli@gentoo.org>
+  syslog-notify-0.1.ebuild:
+  stable x86, bug 325755
+
+  27 Jun 2010; Christoph Mende <angelos@gentoo.org>
+  syslog-notify-0.1.ebuild:
+  Stable on amd64 wrt bug #325755
+
+*syslog-notify-0.1 (02 Mar 2010)
+
+  02 Mar 2010; Markos Chandras <hwoarang@gentoo.org>
+  +syslog-notify-0.1.ebuild, +metadata.xml:
+  Initial commit of syslog-notify application. Fixes bug #304159. Thanks to
+  dfrkp <bugzilla@mhhs.de> for the initial ebuild
+

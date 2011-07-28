@@ -1,0 +1,14 @@
+# ChangeLog for kde-misc/quickaccess
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/kde-misc/quickaccess/ChangeLog,v 1.2 2011/01/31 06:28:47 tampakrap Exp $
+
+  31 Jan 2011; Theo Chatzimichos <tampakrap@gentoo.org>
+  quickaccess-0.8.1.ebuild:
+  EAPI3, slotmove to 4
+
+*quickaccess-0.8.1 (11 May 2010)
+
+  11 May 2010; Dror Levin <spatz@gentoo.org> +quickaccess-0.8.1.ebuild,
+  +metadata.xml:
+  Initial import from kde overlay, thanks to all who worked on it there.
+

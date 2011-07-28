@@ -1,0 +1,17 @@
+# ChangeLog for app-emulation/spice-vdagent
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/spice-vdagent/ChangeLog,v 1.2 2011/07/25 09:24:52 dev-zero Exp $
+
+*spice-vdagent-0.8.1 (25 Jul 2011)
+
+  25 Jul 2011; Tiziano Müller <dev-zero@gentoo.org>
+  +spice-vdagent-0.8.1.ebuild, files/spice-vdagent.initd:
+  Version bump (bug #376269).
+
+*spice-vdagent-0.8.0 (11 May 2011)
+
+  11 May 2011; Tiziano Müller <dev-zero@gentoo.org>
+  +spice-vdagent-0.8.0.ebuild, +files/spice-vdagent.confd,
+  +files/spice-vdagent.initd, +metadata.xml:
+  Initial commit, ebuild written by me.
+

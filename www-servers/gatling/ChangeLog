@@ -1,0 +1,45 @@
+# ChangeLog for www-servers/gatling
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-servers/gatling/ChangeLog,v 1.8 2010/08/13 11:20:01 patrick Exp $
+
+  13 Aug 2010; Patrick Lauer <patrick@gentoo.org> gatling-0.12.ebuild:
+  Fixing init.d install quoting so it actually does something. Thanks to
+  Sebastian Lechte for noticing the problem. Fixes #332453
+
+  18 Jun 2010; Patrick Lauer <patrick@gentoo.org> -gatling-0.9.ebuild,
+  -gatling-0.11.ebuild, -gatling-0.11-r1.ebuild:
+  Remove old
+
+  30 May 2010; Víctor Ostorga <vostorga@gentoo.org> gatling-0.12.ebuild,
+  +files/gatling-0.12-FLAGS.patch:
+  Respecting LDFLAGS, fixing pre-stripped files bug #314111
+
+*gatling-0.12 (03 May 2010)
+
+  03 May 2010; Patrick Lauer <patrick@gentoo.org> +gatling-0.12.ebuild:
+  Bump
+
+  04 Nov 2009; Patrick Lauer <patrick@gentoo.org> gatling-0.9.ebuild,
+  gatling-0.11.ebuild, gatling-0.11-r1.ebuild:
+  Small dep fix for #291796
+
+*gatling-0.11-r1 (18 Aug 2009)
+
+  18 Aug 2009; Patrick Lauer <patrick@gentoo.org> +gatling-0.11-r1.ebuild,
+  +files/gatling.confd, +files/gatling.initd:
+  Adding init script support, fixes #272564. Thanks to Fernando V.
+
+*gatling-0.11 (15 Aug 2009)
+
+  15 Aug 2009; Víctor Ostorga <vostorga@gentoo.org> +gatling-0.11.ebuild,
+  metadata.xml:
+  Version bump to 0.11
+  Adding myself to metadata.xml
+
+  01 May 2009; Patrick Lauer <patrick@gentoo.org> ChangeLog:
+  Initial import from sunrise.
+
+  12 May 2008; Maximilian Gaß <mxey@cloudconnected.org +gatling-0.9.ebuild,
+  +files/gentoo-vars.patch, +metadata.xml:
+  New Ebuild for bug 221841
+

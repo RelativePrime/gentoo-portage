@@ -1,0 +1,35 @@
+# ChangeLog for dev-python/pytools
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pytools/ChangeLog,v 1.7 2011/01/01 21:08:52 arfrever Exp $
+
+  01 Jan 2011; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  pytools-11.ebuild, pytools-9999.ebuild:
+  Fix deprecation warnings.
+
+  26 Dec 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  -pytools-9.ebuild:
+  Delete.
+
+*pytools-11 (12 Dec 2010)
+
+  12 Dec 2010; Michał Januszewski <spock@gentoo.org> +pytools-11.ebuild:
+  Version bump.
+
+  14 Nov 2009; Tomáš Chvátal <scarabeus@gentoo.org> pytools-9.ebuild,
+  pytools-9999.ebuild:
+  Drop keywords on live package. Fix QA issues.
+
+*pytools-9999 (09 Aug 2009)
+
+  09 Aug 2009; Michał Januszewski <spock@gentoo.org> +pytools-9999.ebuild:
+  Add a live git ebuild. Ebuild submitted by Justin T. Riley in bug #280578.
+
+  12 Jun 2009; Michał Januszewski <spock@gentoo.org> pytools-9.ebuild:
+  Add missing dependency on setuptools (bug #273875).
+
+*pytools-9 (06 Jun 2009)
+
+  06 Jun 2009; Michał Januszewski <spock@gentoo.org> +pytools-9.ebuild,
+  +metadata.xml:
+  Initial commit.
+

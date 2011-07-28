@@ -1,0 +1,35 @@
+# ChangeLog for dev-perl/Module-Find
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Module-Find/ChangeLog,v 1.7 2010/06/11 06:05:37 tove Exp $
+
+  11 Jun 2010; Torsten Veller <tove@gentoo.org> -Module-Find-0.08.ebuild:
+  Cleanup
+
+*Module-Find-0.10 (03 Mar 2010)
+
+  03 Mar 2010; Torsten Veller <tove@gentoo.org> +Module-Find-0.10.ebuild:
+  Version bump
+
+  23 Dec 2009; Fabian Groffen <grobian@gentoo.org> Module-Find-0.08.ebuild:
+  Marked ~x86-solaris, bug #296509
+
+  12 Oct 2009; Torsten Veller <tove@gentoo.org> -Module-Find-0.06.ebuild:
+  Cleanup
+
+*Module-Find-0.08 (09 Sep 2009)
+
+  09 Sep 2009; Torsten Veller <tove@gentoo.org> -Module-Find-0.07.ebuild,
+  +Module-Find-0.08.ebuild:
+  Version bump. Cleanup
+
+*Module-Find-0.07 (08 Sep 2009)
+
+  08 Sep 2009; Torsten Veller <tove@gentoo.org> +Module-Find-0.07.ebuild:
+  Version bump
+
+*Module-Find-0.06 (23 Jun 2009)
+
+  23 Jun 2009; Robin H. Johnson <robbat2@gentoo.org>
+  +Module-Find-0.06.ebuild, +metadata.xml:
+  Initial commit. Ebuild by Robin H. Johnson <robbat2@gentoo.org>.
+

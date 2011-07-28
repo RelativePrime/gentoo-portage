@@ -1,0 +1,34 @@
+# ChangeLog for dev-ruby/awesome_print
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/awesome_print/ChangeLog,v 1.6 2011/06/28 23:25:16 matsuu Exp $
+
+  28 Jun 2011; MATSUU Takuto <matsuu@gentoo.org> awesome_print-0.4.0.ebuild:
+  Added ruby19 to USE_RUBY. Added ~x86 to KEYWORDS.
+
+*awesome_print-0.4.0 (23 May 2011)
+
+  23 May 2011; Hans de Graaff <graaff@gentoo.org> +awesome_print-0.4.0.ebuild:
+  Version bump.
+
+  12 Apr 2011; Hans de Graaff <graaff@gentoo.org>
+  -awesome_print-0.3.1.ebuild:
+  Remove old version.
+
+*awesome_print-0.3.2 (11 Feb 2011)
+
+  11 Feb 2011; Hans de Graaff <graaff@gentoo.org>
+  -awesome_print-0.2.1.ebuild, +awesome_print-0.3.2.ebuild:
+  Version bump.
+
+*awesome_print-0.3.1 (26 Nov 2010)
+
+  26 Nov 2010; Hans de Graaff <graaff@gentoo.org>
+  +awesome_print-0.3.1.ebuild:
+  Version bump.
+
+*awesome_print-0.2.1 (24 Sep 2010)
+
+  24 Sep 2010; Hans de Graaff <graaff@gentoo.org>
+  +awesome_print-0.2.1.ebuild, +metadata.xml:
+  Initial import. New test dependency of dev-ruby/gherkin.
+

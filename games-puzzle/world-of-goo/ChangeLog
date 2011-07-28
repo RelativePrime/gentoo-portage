@@ -1,0 +1,22 @@
+# ChangeLog for games-puzzle/world-of-goo
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-puzzle/world-of-goo/ChangeLog,v 1.4 2009/10/25 07:53:40 mr_bones_ Exp $
+
+  25 Oct 2009; Michael Sterrett <mr_bones_@gentoo.org>
+  world-of-goo-1.41.ebuild:
+  Make the fetch message more generic (bug #289497)
+
+  02 Sep 2009; Tristan Heaven <nyhm@gentoo.org> world-of-goo-1.41.ebuild:
+  Stable on amd64/x86
+
+*world-of-goo-1.41 (06 Jul 2009)
+
+  06 Jul 2009; Tristan Heaven <nyhm@gentoo.org> +world-of-goo-1.41.ebuild:
+  Version bump, bug #275957
+
+*world-of-goo-1.40 (15 Feb 2009)
+
+  15 Feb 2009; Mike Frysinger <vapier@gentoo.org> +metadata.xml,
+  +world-of-goo-1.40.ebuild:
+  Initial ebuild #258960 by Vladimir Berezhnoy.
+

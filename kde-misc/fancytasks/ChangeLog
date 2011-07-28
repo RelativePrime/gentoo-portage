@@ -1,0 +1,34 @@
+# ChangeLog for kde-misc/fancytasks
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/kde-misc/fancytasks/ChangeLog,v 1.6 2011/01/31 03:03:59 tampakrap Exp $
+
+  31 Jan 2011; Theo Chatzimichos <tampakrap@gentoo.org>
+  -fancytasks-1.0.92.ebuild:
+  remove old
+
+*fancytasks-1.0.94 (06 Jan 2011)
+
+  06 Jan 2011; Andreas K. Huettel <dilfridge@gentoo.org>
+  +fancytasks-1.0.94.ebuild:
+  Version bump (bug 348451)
+
+  15 May 2010; Maciej Mrozowski <reavertm@gentoo.org>
+  -fancytasks-0.9.8.ebuild, fancytasks-1.0.92.ebuild:
+  Remove old, update qimageblitz category, deps cleanup
+
+  10 Mar 2010; Krzysiek Pawlik <nelchael@gentoo.org>
+  fancytasks-1.0.92.ebuild:
+  Update list of available languages.
+
+*fancytasks-1.0.92 (10 Mar 2010)
+
+  10 Mar 2010; Krzysiek Pawlik <nelchael@gentoo.org>
+  +fancytasks-1.0.92.ebuild:
+  Version bump.
+
+*fancytasks-0.9.8 (28 Oct 2009)
+
+  28 Oct 2009; Samuli Suominen <ssuominen@gentoo.org>
+  +fancytasks-0.9.8.ebuild:
+  Initial commit wrt #285313, thanks to Art Win for reporting.
+

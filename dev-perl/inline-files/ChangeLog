@@ -1,0 +1,58 @@
+# ChangeLog for dev-perl/inline-files
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/inline-files/ChangeLog,v 1.14 2011/07/25 09:13:12 tove Exp $
+
+*inline-files-0.680.0 (25 Jul 2011)
+
+  25 Jul 2011; Torsten Veller <tove@gentoo.org> +inline-files-0.680.0.ebuild:
+  Version bump. No code changes
+
+*inline-files-0.670.0 (09 Jul 2011)
+
+  09 Jul 2011; Torsten Veller <tove@gentoo.org> +inline-files-0.670.0.ebuild:
+  Version bump
+
+*inline-files-0.640 (02 Feb 2011)
+
+  02 Feb 2011; Torsten Veller <tove@gentoo.org> +inline-files-0.640.ebuild:
+  Version bump
+
+*inline-files-0.63 (11 May 2009)
+
+  11 May 2009; Torsten Veller <tove@gentoo.org> +inline-files-0.63.ebuild:
+  Version bump
+
+  21 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  inline-files-0.62.ebuild:
+  Marking amd64 stable
+
+  17 Sep 2006; Michael Cummings <mcummings@gentoo.org>
+  inline-files-0.62.ebuild:
+  Keywording ~amd64
+
+  06 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  inline-files-0.62.ebuild:
+  Adding perl dep; fixed header; fixed DEPEND
+
+  02 Oct 2005; Aron Griffis <agriffis@gentoo.org> inline-files-0.62.ebuild:
+  Mark 0.62 stable on ia64
+
+  26 Aug 2005; Aron Griffis <agriffis@gentoo.org> inline-files-0.62.ebuild:
+  add ~ia64
+
+  29 Apr 2005; Michael Cummings <mcummings@gentoo.org>
+  inline-files-0.62.ebuild:
+  Cleaning for mirror syntax
+
+  30 Dec 2004; Ciaran McCreesh <ciaranm@gentoo.org> :
+  Change encoding to UTF-8 for GLEP 31 compliance
+
+  30 May 2004; Bryan Østergaard <kloeri@gentoo.org> inline-files-0.62.ebuild:
+  Stable on alpha.
+
+*inline-files-0.62 (05 Jul 2003)
+
+  05 Jul 2003; Michael Cummings <mcummings@gentoo.org>
+  inline-files-0.62.ebuild:
+  Missing dep for gtk2-perl
+

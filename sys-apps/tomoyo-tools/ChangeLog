@@ -1,0 +1,23 @@
+# ChangeLog for sys-apps/tomoyo-tools
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/tomoyo-tools/ChangeLog,v 1.2 2011/01/17 22:44:30 sping Exp $
+
+*tomoyo-tools-2.3.0_p20100820 (17 Jan 2011)
+
+  17 Jan 2011; Sebastian Pipping <sping@gentoo.org>
+  +tomoyo-tools-2.3.0_p20100820.ebuild,
+  +files/tomoyo-tools-2.3.0_p20100820-flags-parallel.patch,
+  +files/tomoyo-tools-2.3.0_p20100820-gentoo.patch:
+  Bump to 2.3.0_p20100820 (bug #342169)
+  - Move to EAPI 2
+  - Start respecting LDFLAGS
+  - Port patch from 2.2.0_p20090727
+  - Fix parallel make issue
+
+*tomoyo-tools-2.2.0_p20090727 (28 Jul 2009)
+
+  28 Jul 2009; MATSUU Takuto <matsuu@gentoo.org>
+  +tomoyo-tools-2.2.0_p20090727.ebuild,
+  +files/tomoyo-tools-2.2.0_p20090727-gentoo.patch, +metadata.xml:
+  Initial import, bug #278513.
+

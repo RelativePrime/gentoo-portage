@@ -1,0 +1,46 @@
+# ChangeLog for kde-misc/kio-upnp-ms
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/kde-misc/kio-upnp-ms/ChangeLog,v 1.8 2011/06/25 13:23:53 ottxor Exp $
+
+*kio-upnp-ms-1.0.0_p20110602 (25 Jun 2011)
+
+  25 Jun 2011; Christoph Junghans <ottxor@gentoo.org>
+  +kio-upnp-ms-1.0.0_p20110602.ebuild:
+  version bump
+
+*kio-upnp-ms-0.8.0_p20110503 (28 May 2011)
+
+  28 May 2011; Christoph Junghans <ottxor@gentoo.org>
+  +kio-upnp-ms-0.8.0_p20110503.ebuild:
+  version bump
+
+  29 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  kio-upnp-ms-0.8.0_p20110313.ebuild:
+  Add missed quotes
+
+  28 Apr 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  -kio-upnp-ms-0.8.0_p20110110.ebuild, kio-upnp-ms-0.8.0_p20110313.ebuild,
+  files/FindHUpnp.cmake:
+  Operate with the Finders properly. Update the Finder to actualy find the
+  library.
+
+  28 Apr 2011; Christoph Junghans <ottxor@gentoo.org>
+  kio-upnp-ms-0.8.0_p20110110.ebuild, kio-upnp-ms-0.8.0_p20110313.ebuild:
+  fixed deps
+
+*kio-upnp-ms-0.8.0_p20110313 (20 Apr 2011)
+
+  20 Apr 2011; Christoph Junghans <ottxor@gentoo.org>
+  +kio-upnp-ms-0.8.0_p20110313.ebuild:
+  version bump
+
+  19 Apr 2011; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  kio-upnp-ms-0.8.0_p20110110.ebuild:
+  Added ~amd64 keyword.
+
+*kio-upnp-ms-0.8.0_p20110110 (22 Feb 2011)
+
+  22 Feb 2011; Christoph Junghans <ottxor@gentoo.org>
+  +kio-upnp-ms-0.8.0_p20110110.ebuild, +files/FindHUpnp.cmake, +metadata.xml:
+  import from cj-overlay (dep for bug #351916)
+

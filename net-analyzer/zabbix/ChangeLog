@@ -1,0 +1,284 @@
+# ChangeLog for net-analyzer/zabbix
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/zabbix/ChangeLog,v 1.51 2011/07/08 10:20:59 ssuominen Exp $
+
+  08 Jul 2011; Samuli Suominen <ssuominen@gentoo.org> zabbix-1.6.9.ebuild,
+  zabbix-1.8.3.ebuild, zabbix-1.8.4.ebuild, zabbix-1.8.5.ebuild,
+  zabbix-1.9.3.ebuild:
+  Convert from "useq" to "use".
+
+  02 Jul 2011; Markos Chandras <hwoarang@gentoo.org> zabbix-1.8.5.ebuild:
+  Stable on amd64 wrt bug #370239
+
+  01 Jul 2011; Thomas Kahle <tomka@gentoo.org> zabbix-1.8.5.ebuild:
+  x86 stable per bug 370239
+
+  06 May 2011; Thomas Kahle <tomka@gentoo.org> zabbix-1.8.4.ebuild:
+  x86 stable per bug 361873
+
+*zabbix-1.8.5 (27 Apr 2011)
+
+  27 Apr 2011; Patrick Lauer <patrick@gentoo.org> +zabbix-1.8.5.ebuild:
+  Bump of 1.8
+
+  13 Apr 2011; Patrick Lauer <patrick@gentoo.org> zabbix-1.9.3.ebuild:
+  Fixing postgres useflag #361721
+
+  05 Apr 2011; Christoph Mende <angelos@gentoo.org> zabbix-1.8.4.ebuild:
+  Stable on amd64 wrt bug #361873
+
+*zabbix-1.9.3 (02 Apr 2011)
+
+  02 Apr 2011; Patrick Lauer <patrick@gentoo.org> +zabbix-1.9.3.ebuild:
+  Adding zabbix 1.9 (2.0 prerelease)
+
+*zabbix-1.6.9 (04 Mar 2011)
+
+  04 Mar 2011; Patrick Lauer <patrick@gentoo.org> +zabbix-1.6.9.ebuild:
+  Restoring 1.6 branch for #356589
+
+  11 Feb 2011; Diego E. Pettenò <flameeyes@gentoo.org> zabbix-1.8.3.ebuild,
+  zabbix-1.8.4.ebuild:
+  QA: fix maintainer-mode triggered rebuild, add autotools dependencies (bug
+  #323901).
+
+  17 Jan 2011; Patrick Lauer <patrick@gentoo.org> zabbix-1.8.3.ebuild,
+  zabbix-1.8.4.ebuild:
+  Fixing use-depends for frontend useflag, #351917
+
+*zabbix-1.8.4 (16 Jan 2011)
+
+  16 Jan 2011; Patrick Lauer <patrick@gentoo.org> +zabbix-1.8.4.ebuild:
+  Bump for #351312
+
+  16 Jan 2011; Patrick Lauer <patrick@gentoo.org> zabbix-1.8.3.ebuild,
+  +files/zabbix-1.8.3-as-needed.patch:
+  Fixing as-needed issues #333425
+
+  12 Sep 2010; Patrick Lauer <patrick@gentoo.org> -zabbix-1.8-r1.ebuild,
+  -zabbix-1.8.1.ebuild, -zabbix-1.8.2.ebuild:
+  Remove old
+
+  12 Sep 2010; Joseph Jezak <josejx@gentoo.org> zabbix-1.8.3.ebuild:
+  Marked ppc stable for bug #335071.
+
+  29 Aug 2010; Markos Chandras <hwoarang@gentoo.org> zabbix-1.8.3.ebuild:
+  Stable on amd64 wrt bug #335071
+
+  28 Aug 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org> zabbix-1.8.3.ebuild:
+  x86 stable wrt security bug #335071
+
+*zabbix-1.8.3 (18 Aug 2010)
+
+  18 Aug 2010; Patrick Lauer <patrick@gentoo.org> zabbix-1.8.2.ebuild,
+  +zabbix-1.8.3.ebuild, metadata.xml:
+  Bump, fixes #326161 #327213
+
+  18 Jul 2010; <nixnut@gentoo.org> zabbix-1.8.2.ebuild:
+  ppc stable #322445
+
+  14 Jul 2010; Christian Faulhammer <fauli@gentoo.org> zabbix-1.8.2.ebuild:
+  stable x86, bug 322445
+
+  28 Jun 2010; Markos Chandras <hwoarang@gentoo.org> zabbix-1.8.2.ebuild:
+  Stable on amd64 wrt bug #322445
+
+  18 Jun 2010; Patrick Lauer <patrick@gentoo.org> -zabbix-1.6.7.ebuild,
+  -zabbix-1.8.ebuild:
+  Remove old
+
+  17 Jun 2010; Patrick Lauer <patrick@gentoo.org> zabbix-1.6.7.ebuild,
+  zabbix-1.8.ebuild, zabbix-1.8-r1.ebuild, zabbix-1.8.1.ebuild,
+  zabbix-1.8.2.ebuild:
+  Migrating away from deprecated postgres virtuals
+
+  05 Jun 2010; Samuli Suominen <ssuominen@gentoo.org> zabbix-1.8.2.ebuild:
+  Use COMMON_DEPEND to move dev-util/pkgconfig out of RDEPEND.
+
+  03 May 2010; Patrick Lauer <patrick@gentoo.org> zabbix-1.8.2.ebuild:
+  Adding pkgconfig dep for #309155
+
+  03 May 2010; Patrick Lauer <patrick@gentoo.org> zabbix-1.8.2.ebuild,
+  +files/zabbix-1.8.2-as-needed.patch:
+  as-needed fix for #313707, thanks to Yuri Vasilevski for the fixed patch
+
+*zabbix-1.8.2 (07 Apr 2010)
+
+  07 Apr 2010; Patrick Lauer <patrick@gentoo.org> +zabbix-1.8.2.ebuild:
+  Bump, fixes #312875 #313403. As-needed patch fails for now.
+
+*zabbix-1.8.1 (26 Feb 2010)
+
+  26 Feb 2010; Patrick Lauer <patrick@gentoo.org> +zabbix-1.8.1.ebuild:
+  Bump for #306935
+
+  20 Feb 2010; Patrick Lauer <patrick@gentoo.org> zabbix-1.8-r1.ebuild,
+  +files/zabbix-as-needed.patch:
+  Fix for as-needed building by Yuri Vasilevski, fixes #305449
+
+  12 Jan 2010; Patrick Lauer <patrick@gentoo.org> zabbix-1.8.ebuild,
+  zabbix-1.8-r1.ebuild:
+  Fixing (R)DEPEND typo, #300700
+
+*zabbix-1.8-r1 (10 Jan 2010)
+
+  10 Jan 2010; Patrick Lauer <patrick@gentoo.org> +zabbix-1.8-r1.ebuild:
+  Enable ipv6 support #300340, fix php dep some more #300338
+
+  09 Jan 2010; Patrick Lauer <patrick@gentoo.org> -zabbix-1.4.6.ebuild,
+  -zabbix-1.6.5.ebuild, -zabbix-1.6.5-r1.ebuild, -zabbix-1.6.6.ebuild,
+  -zabbix-1.6.6-r1.ebuild:
+  Remove old
+
+  09 Jan 2010; Patrick Lauer <patrick@gentoo.org> zabbix-1.8.ebuild:
+  Fixing php dep #300280
+
+*zabbix-1.8 (09 Jan 2010)
+
+  09 Jan 2010; Patrick Lauer <patrick@gentoo.org> +zabbix-1.8.ebuild:
+  Bump to 1.8 #296302, fix webapp handling #300276
+
+*zabbix-1.6.7 (21 Nov 2009)
+
+  21 Nov 2009; Patrick Lauer <patrick@gentoo.org> +zabbix-1.6.7.ebuild:
+  Bump, fixes #293852
+
+  20 Nov 2009; Patrick Lauer <patrick@gentoo.org> metadata.xml:
+  Adding myself in metadata so that package doesn't go unmaintained
+
+*zabbix-1.6.6-r1 (06 Oct 2009)
+
+  06 Oct 2009; Patrick Lauer <patrick@gentoo.org>
+  +files/1.6.6/init.d/zabbix-proxy, +zabbix-1.6.6-r1.ebuild,
+  files/1.6.6/zabbix_agentd.conf, files/1.6.6/zabbix_proxy.conf,
+  files/1.6.6/zabbix_server.conf:
+  Adding proxy init script #283970 and fixing log paths #283817. Thanks to
+  all the reporters and testers.
+
+*zabbix-1.6.6 (05 Oct 2009)
+
+  05 Oct 2009; Patrick Lauer <patrick@gentoo.org>
+  +files/1.6.6/init.d/zabbix-agentd, +files/1.6.6/postinstall-en.txt,
+  +files/1.6.6/zabbix_agent.conf, +zabbix-1.6.6.ebuild,
+  +files/1.6.6/init.d/zabbix-server, +files/1.6.6/zabbix_agentd.conf,
+  +files/1.6.6/zabbix_proxy.conf, +files/1.6.6/zabbix_server.conf,
+  +files/1.6.6/zabbix_trapper.conf:
+  Bump to 1.6.6, closes #286655
+
+*zabbix-1.6.5-r1 (05 Oct 2009)
+
+  05 Oct 2009; Patrick Lauer <patrick@gentoo.org> +zabbix-1.6.5-r1.ebuild:
+  Add hopefully working support for proxy. Should close #283970
+
+  23 Sep 2009; Patrick Lauer <patrick@gentoo.org> zabbix-1.4.6.ebuild,
+  zabbix-1.6.5.ebuild:
+  Remove virtual/libc
+
+*zabbix-1.6.5 (01 Sep 2009)
+
+  01 Sep 2009; Patrick Lauer <patrick@gentoo.org>
+  +files/1.6.5/init.d/zabbix-agentd, +files/1.6.5/init.d/zabbix-server,
+  +files/1.6.5/postinstall-en.txt, +files/1.6.5/zabbix_agent.conf,
+  +files/1.6.5/zabbix_agentd.conf, +files/1.6.5/zabbix_proxy.conf,
+  +files/1.6.5/zabbix_server.conf, +files/1.6.5/zabbix_trapper.conf,
+  +zabbix-1.6.5.ebuild, metadata.xml:
+  Bump to 1.6.5. Fixes #238151. Patches by Calogero Lo Leggio.
+
+  04 Aug 2008; Jeroen Roovers <jer@gentoo.org> metadata.xml:
+  Describe local USE flags for GLEP 56.
+
+*zabbix-1.4.6 (23 Jul 2008)
+
+  23 Jul 2008; Wolfram Schlich <wschlich@gentoo.org>
+  -files/1.4.1/init.d/zabbix-agentd, -files/1.4.1/init.d/zabbix-server,
+  -files/1.4.1/postinstall-en.txt, -files/1.4.1/zabbix_agent.conf,
+  -files/1.4.1/zabbix_agentd.conf, -files/1.4.1/zabbix_server.conf,
+  -files/1.4.2/init.d/zabbix-agentd, -files/1.4.2/init.d/zabbix-server,
+  -files/1.4.2/initgroups.patch, -files/1.4.2/postinstall-en.txt,
+  -files/1.4.2/zabbix_agent.conf, -files/1.4.2/zabbix_agentd.conf,
+  -files/1.4.2/zabbix_server.conf, -files/1.4.3/init.d/zabbix-agentd,
+  -files/1.4.3/init.d/zabbix-server, -files/1.4.3/postinstall-en.txt,
+  -files/1.4.3/zabbix_agent.conf, -files/1.4.3/zabbix_agentd.conf,
+  -files/1.4.3/zabbix_server.conf, -files/1.4.4/init.d/zabbix-agentd,
+  -files/1.4.4/init.d/zabbix-server, -files/1.4.4/postinstall-en.txt,
+  -files/1.4.4/zabbix_agent.conf, -files/1.4.4/zabbix_agentd.conf,
+  -files/1.4.4/zabbix_server.conf, -files/1.4.5/init.d/zabbix-agentd,
+  -files/1.4.5/init.d/zabbix-server, -files/1.4.5/postinstall-en.txt,
+  -files/1.4.5/zabbix_agent.conf, -files/1.4.5/zabbix_agentd.conf,
+  -files/1.4.5/zabbix_server.conf, +files/1.4.6/init.d/zabbix-agentd,
+  +files/1.4.6/init.d/zabbix-server, +files/1.4.6/postinstall-en.txt,
+  +files/1.4.6/zabbix_agent.conf, +files/1.4.6/zabbix_agentd.conf,
+  +files/1.4.6/zabbix_server.conf, -files/1.4/init.d/zabbix-agentd,
+  -files/1.4/init.d/zabbix-server, -files/1.4/postinstall-en.txt,
+  -files/1.4/zabbix_agent.conf, -files/1.4/zabbix_agentd.conf,
+  -files/1.4/zabbix_server.conf, -zabbix-1.4.ebuild, -zabbix-1.4.1.ebuild,
+  -zabbix-1.4.2.ebuild, -zabbix-1.4.2-r1.ebuild, -zabbix-1.4.3.ebuild,
+  -zabbix-1.4.4.ebuild, -zabbix-1.4.5.ebuild, +zabbix-1.4.6.ebuild:
+  version bump, removed old versions
+
+  19 May 2008; Tiziano Müller <dev-zero@gentoo.org> zabbix-1.4.ebuild,
+  zabbix-1.4.1.ebuild, zabbix-1.4.2.ebuild, zabbix-1.4.2-r1.ebuild,
+  zabbix-1.4.3.ebuild, zabbix-1.4.4.ebuild, zabbix-1.4.5.ebuild:
+  Changed dependency for postgresql to virtual/postgresql-base
+
+*zabbix-1.4.5 (29 Mar 2008)
+
+  29 Mar 2008; Wolfram Schlich <wschlich@gentoo.org>
+  +files/1.4.5/init.d/zabbix-agentd, +files/1.4.5/init.d/zabbix-server,
+  +files/1.4.5/postinstall-en.txt, +files/1.4.5/zabbix_agent.conf,
+  +files/1.4.5/zabbix_agentd.conf, +files/1.4.5/zabbix_server.conf,
+  +zabbix-1.4.5.ebuild:
+  version bump
+
+*zabbix-1.4.4 (17 Dec 2007)
+
+  17 Dec 2007; Wolfram Schlich <wschlich@gentoo.org>
+  +files/1.4.4/init.d/zabbix-agentd, +files/1.4.4/init.d/zabbix-server,
+  +files/1.4.4/postinstall-en.txt, +files/1.4.4/zabbix_agent.conf,
+  +files/1.4.4/zabbix_agentd.conf, +files/1.4.4/zabbix_server.conf,
+  +zabbix-1.4.4.ebuild:
+  version bump
+
+*zabbix-1.4.3 (12 Dec 2007)
+
+  12 Dec 2007; Wolfram Schlich <wschlich@gentoo.org>
+  +files/1.4.3/init.d/zabbix-agentd, +files/1.4.3/init.d/zabbix-server,
+  +files/1.4.3/postinstall-en.txt, +files/1.4.3/zabbix_agent.conf,
+  +files/1.4.3/zabbix_agentd.conf, +files/1.4.3/zabbix_server.conf,
+  +zabbix-1.4.3.ebuild:
+  version bump
+
+*zabbix-1.4.2-r1 (03 Dec 2007)
+
+  03 Dec 2007; Wolfram Schlich <wschlich@gentoo.org>
+  +files/1.4.2/initgroups.patch, +zabbix-1.4.2-r1.ebuild:
+  Added initgroups patch from
+  http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=452682
+
+*zabbix-1.4.2 (24 Aug 2007)
+
+  24 Aug 2007; Wolfram Schlich <wschlich@gentoo.org>
+  +files/1.4.2/init.d/zabbix-agentd, +files/1.4.2/init.d/zabbix-server,
+  +files/1.4.2/postinstall-en.txt, +files/1.4.2/zabbix_agent.conf,
+  +files/1.4.2/zabbix_agentd.conf, +files/1.4.2/zabbix_server.conf,
+  +zabbix-1.4.2.ebuild:
+  version bump
+
+*zabbix-1.4.1 (24 Jul 2007)
+
+  24 Jul 2007; Wolfram Schlich <wschlich@gentoo.org>
+  +files/1.4.1/init.d/zabbix-agentd, +files/1.4.1/init.d/zabbix-server,
+  +files/1.4.1/postinstall-en.txt, +files/1.4.1/zabbix_agent.conf,
+  +files/1.4.1/zabbix_agentd.conf, +files/1.4.1/zabbix_server.conf,
+  +zabbix-1.4.1.ebuild:
+  version bump
+
+*zabbix-1.4 (08 Jun 2007)
+
+  08 Jun 2007; Wolfram Schlich <wschlich@gentoo.org>
+  +files/1.4/init.d/zabbix-agentd, +files/1.4/init.d/zabbix-server,
+  +files/1.4/postinstall-en.txt, +files/1.4/zabbix_agent.conf,
+  +files/1.4/zabbix_agentd.conf, +files/1.4/zabbix_server.conf,
+  +metadata.xml, +zabbix-1.4.ebuild:
+  initial import
+

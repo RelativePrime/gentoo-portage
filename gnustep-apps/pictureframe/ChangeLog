@@ -1,0 +1,24 @@
+# ChangeLog for gnustep-apps/pictureframe
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/gnustep-apps/pictureframe/ChangeLog,v 1.4 2009/01/12 12:39:24 voyageur Exp $
+
+*pictureframe-1.1.2 (12 Jan 2009)
+
+  12 Jan 2009; Bernard Cafarelli <voyageur@gentoo.org>
+  +pictureframe-1.1.2.ebuild:
+  Version bump, add animations, update WUnderground parser
+
+  22 Mar 2008; Santiago M. Mola <coldwind@gentoo.org>
+  pictureframe-1.0.0.ebuild:
+  amd64 stable wrt bug #207381, second round.
+
+  21 Mar 2008; Christian Faulhammer <opfer@gentoo.org>
+  pictureframe-1.0.0.ebuild:
+  stable x86, bug 207381
+
+*pictureframe-1.0.0 (16 Jan 2008)
+
+  16 Jan 2008; Bernard Cafarelli <voyageur@gentoo.org> +metadata.xml,
+  +pictureframe-1.0.0.ebuild:
+  Initial commit
+

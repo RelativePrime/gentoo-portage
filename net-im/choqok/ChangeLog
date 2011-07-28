@@ -1,0 +1,99 @@
+# ChangeLog for net-im/choqok
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-im/choqok/ChangeLog,v 1.18 2011/04/12 12:53:32 tampakrap Exp $
+
+*choqok-1.1 (12 Apr 2011)
+
+  12 Apr 2011; Theo Chatzimichos <tampakrap@gentoo.org> +choqok-1.1.ebuild:
+  Version bump
+
+  03 Feb 2011; Theo Chatzimichos <tampakrap@gentoo.org> choqok-1.0.ebuild:
+  Add russian translations
+
+*choqok-1.0 (28 Jan 2011)
+
+  28 Jan 2011; Theo Chatzimichos <tampakrap@gentoo.org>
+  -choqok-0.9.98-r1.ebuild, -files/choqok-0.9.98-libindicate.patch,
+  +choqok-1.0.ebuild:
+  Version bump, bug 352990 and bug 348456
+
+*choqok-0.9.98-r1 (13 Jan 2011)
+
+  13 Jan 2011; Theo Chatzimichos <tampakrap@gentoo.org>
+  -files/choqok-0.9.55_qt47.patch, -choqok-0.9.92.ebuild,
+  -choqok-0.9.98.ebuild, +choqok-0.9.98-r1.ebuild,
+  +files/choqok-0.9.98-libindicate.patch:
+  Fix automagic depedency for libindicate-qt, bug 348456
+
+*choqok-0.9.98 (08 Dec 2010)
+
+  08 Dec 2010; Tomáš Chvátal <scarabeus@gentoo.org> +choqok-0.9.98.ebuild:
+  Version bump
+
+  20 Oct 2010; Christian Faulhammer <fauli@gentoo.org>
+  choqok-0.9.90-r1.ebuild:
+  stable x86, bug 341251
+
+  18 Oct 2010; Markos Chandras <hwoarang@gentoo.org>
+  choqok-0.9.90-r1.ebuild:
+  Stable on amd64 wrt bug #341251
+
+*choqok-0.9.92 (16 Oct 2010)
+
+  16 Oct 2010; Theo Chatzimichos <tampakrap@gentoo.org>
+  -choqok-0.9.55.ebuild, -choqok-0.9.85.ebuild, -choqok-0.9.90.ebuild,
+  choqok-0.9.90-r1.ebuild, +choqok-0.9.92.ebuild:
+  Version bump, remove old ones, EAPI3
+
+*choqok-0.9.90-r1 (07 Sep 2010)
+
+  07 Sep 2010; Theo Chatzimichos <tampakrap@gentoo.org>
+  +choqok-0.9.90-r1.ebuild:
+  Upstream used new tarball that fixes a crash, bug 336307, kde bug 249748
+
+*choqok-0.9.90 (01 Sep 2010)
+
+  01 Sep 2010; Theo Chatzimichos <tampakrap@gentoo.org>
+  +choqok-0.9.90.ebuild:
+  Version bump
+
+*choqok-0.9.85 (21 Aug 2010)
+
+  21 Aug 2010; Theo Chatzimichos <tampakrap@gentoo.org>
+  +choqok-0.9.85.ebuild:
+  Version bump
+
+  27 Jun 2010; Markos Chandras <hwoarang@gentoo.org> choqok-0.9.55.ebuild,
+  +files/choqok-0.9.55_qt47.patch:
+  Apply patch to fix compilation with Qt-4.7. Fixes bug #325585
+
+  25 Mar 2010; Tomáš Chvátal <scarabeus@gentoo.org> choqok-0.9.55.ebuild:
+  Drop redundant keywords line, how the heck it get there...
+
+*choqok-0.9.55 (25 Mar 2010)
+
+  25 Mar 2010; Tomáš Chvátal <scarabeus@gentoo.org> -choqok-0.6.1.ebuild,
+  -choqok-0.6.6.ebuild, +choqok-0.9.55.ebuild:
+  Version bump. Drop all old.
+
+  21 Dec 2009; Theo Chatzimichos <tampakrap@gentoo.org> choqok-0.6.1.ebuild,
+  choqok-0.6.6.ebuild:
+  Slotmove to 4
+
+*choqok-0.6.6 (08 Aug 2009)
+
+  08 Aug 2009; Ben de Groot <yngwin@gentoo.org> +choqok-0.6.6.ebuild:
+  Version bump. Change SRC_URI to the only mirror that actually works.
+
+*choqok-0.6.1 (16 Jun 2009)
+
+  16 Jun 2009; Tomáš Chvátal <scarabeus@gentoo.org> -choqok-0.6.ebuild,
+  +choqok-0.6.1.ebuild:
+  Version bump. Fixes usage issues. Per bug #274245.
+
+*choqok-0.6 (25 May 2009)
+
+  25 May 2009; Tomáš Chvátal <scarabeus@gentoo.org> +choqok-0.6.ebuild,
+  +metadata.xml:
+  Add new package for bloging. Per bug #257548.
+

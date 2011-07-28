@@ -1,0 +1,46 @@
+# ChangeLog for dev-python/nautilus-python
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/nautilus-python/ChangeLog,v 1.8 2011/04/19 06:00:36 pva Exp $
+
+  19 Apr 2011; Peter Volkov <pva@gentoo.org> nautilus-python-0.7.0.ebuild:
+  Use splitted gnome-python-base deps, bug #352920, thank Pacho Ramos for
+  report. Use python eclass, bug 344733, thank Arfrever Frehtes Taifersar
+  Arahesis for report. Dropped .la files
+
+*nautilus-python-0.7.0 (03 Feb 2011)
+
+  03 Feb 2011; Peter Volkov <pva@gentoo.org> +nautilus-python-0.7.0.ebuild:
+  Version bump, #350751 thank Michael Weber for report and Rion for this job.
+
+  22 Jan 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  nautilus-python-0.6.1.ebuild:
+  x86 stable wrt bug #346985
+
+  12 Jan 2011; Markos Chandras <hwoarang@gentoo.org>
+  nautilus-python-0.6.1.ebuild:
+  Stable on amd64 wrt bug #346985
+
+  29 Mar 2010; Christian Faulhammer <fauli@gentoo.org>
+  -nautilus-python-0.5.1-r1.ebuild,
+  -files/nautilus-python-0.5.1-CVE-2009-0317.patch,
+  -files/nautilus-python-0.5.1-submenu-example.patch:
+  clean up
+
+  28 Mar 2010; Peter Volkov <pva@gentoo.org> nautilus-python-0.6.1.ebuild:
+  Dropped eel from DEPEND, bug #301922#c2, thank Michael Weber and Rion for
+  report.
+
+*nautilus-python-0.6.1 (23 Jan 2010)
+
+  23 Jan 2010; Peter Volkov <pva@gentoo.org> +nautilus-python-0.6.1.ebuild:
+  Version bump, bug #301922, thank Christian Faulhammer for report.
+
+*nautilus-python-0.5.1-r1 (20 Aug 2009)
+
+  20 Aug 2009; Peter Volkov <pva@gentoo.org>
+  +nautilus-python-0.5.1-r1.ebuild,
+  +files/nautilus-python-0.5.1-CVE-2009-0317.patch,
+  +files/nautilus-python-0.5.1-submenu-example.patch, +metadata.xml:
+  Initial import: merged bazaar and rion overlays. Bug #78021, thank Caleb
+  Shay, Christian Faulhammer and Rion.
+

@@ -1,0 +1,29 @@
+# ChangeLog for games-strategy/naev
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-strategy/naev/ChangeLog,v 1.6 2011/07/19 20:08:08 maekke Exp $
+
+  19 Jul 2011; Markus Meier <maekke@gentoo.org> naev-0.5.0.ebuild:
+  amd64/x86 stable, bug #375489
+
+*naev-0.5.0 (04 Jun 2011)
+
+  04 Jun 2011; Markos Chandras <hwoarang@gentoo.org> -naev-0.5.0_beta2.ebuild,
+  +naev-0.5.0.ebuild:
+  Version bump thanks to Samuli Suominen <ssuominen@gentoo.org>
+
+*naev-0.5.0_beta2 (29 May 2011)
+
+  29 May 2011; Kacper Kowalik <xarthisius@gentoo.org> +naev-0.5.0_beta2.ebuild:
+  Version bump by ssuominen
+
+  27 Apr 2010; Samuli Suominen <ssuominen@gentoo.org> naev-0.4.2.ebuild:
+  amd64 stable wrt #315913
+
+  27 Apr 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org> naev-0.4.2.ebuild:
+  x86 stable wrt bug #315913
+
+*naev-0.4.2 (18 Mar 2010)
+
+  18 Mar 2010; Samuli Suominen <ssuominen@gentoo.org> +naev-0.4.2.ebuild:
+  Initial commit.
+

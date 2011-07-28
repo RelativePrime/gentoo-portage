@@ -1,0 +1,26 @@
+# ChangeLog for games-mud/trebuchet
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-mud/trebuchet/ChangeLog,v 1.6 2010/06/01 11:50:02 tupone Exp $
+
+  01 Jun 2010; Tupone Alfredo <tupone@gentoo.org> trebuchet-1.052.ebuild:
+  make check depends on procheck, not in the tree. test restricted
+  Fix bug #296626 by flameeyes@gentoo.org
+
+  07 Mar 2008; Chris Gianelloni <wolf31o2@gentoo.org>
+  trebuchet-1.052.ebuild:
+  QA cleanup: Fix quoting.
+
+  06 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  trebuchet-1.052.ebuild:
+  Removed sed-4 from *DEPEND.
+
+  05 Nov 2004; Joseph Jezak <josejx@gentoo.org> trebuchet-1.052.ebuild:
+  Added ~ppc.
+
+*trebuchet-1.052 (19 Mar 2004)
+
+  19 Mar 2004; Michael Sterrett <mr_bones_@gentoo.org> metadata.xml,
+  trebuchet-1.052.ebuild:
+  Initial commit; ebuild based on the one supplied by Martti Rannanjarvi via bug
+  40642
+

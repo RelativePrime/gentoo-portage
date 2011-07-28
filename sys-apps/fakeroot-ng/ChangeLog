@@ -1,0 +1,28 @@
+# ChangeLog for sys-apps/fakeroot-ng
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/fakeroot-ng/ChangeLog,v 1.6 2011/06/21 21:43:28 dilfridge Exp $
+
+  21 Jun 2011; Andreas K. Huettel <dilfridge@gentoo.org> metadata.xml:
+  Add proxy maintainership
+
+*fakeroot-ng-0.17 (27 Jul 2009)
+
+  27 Jul 2009; Michał Januszewski <spock@gentoo.org>
+  +fakeroot-ng-0.17.ebuild:
+  Version bump.
+
+*fakeroot-ng-0.15 (27 May 2009)
+
+  27 May 2009; Michał Januszewski <spock@gentoo.org>
+  +fakeroot-ng-0.15.ebuild:
+  Version bump.
+
+*fakeroot-ng-0.14 (06 Oct 2008)
+
+  25 Oct 2008; Pieter Van den Abeele <pvdabeel@gentoo.org> fakeroot-ng-0.14.ebuild:
+  Keyworded ~ppc. Closes bug #243392
+
+  06 Oct 2008; Michał Januszewski <spock@gentoo.org> +metadata.xml,
+  +fakeroot-ng-0.14.ebuild:
+  Initial commit.
+

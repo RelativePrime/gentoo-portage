@@ -1,0 +1,60 @@
+# ChangeLog for app-misc/media-player-info
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/media-player-info/ChangeLog,v 1.10 2011/07/15 19:19:50 ssuominen Exp $
+
+  15 Jul 2011; Samuli Suominen <ssuominen@gentoo.org>
+  media-player-info-14.ebuild:
+  Change sys-fs/udev USE depend wrt #370343
+
+*media-player-info-14 (11 May 2011)
+
+  11 May 2011; Gilles Dartiguelongue <eva@gentoo.org>
+  -media-player-info-10.ebuild, -media-player-info-11.ebuild,
+  -media-player-info-12.ebuild, media-player-info-13.ebuild,
+  +media-player-info-14.ebuild:
+  Version bump, bug #365329. Copy keywords from hal-info as this package is
+  just as close to noarch as it can get.
+
+*media-player-info-13 (28 Mar 2011)
+
+  28 Mar 2011; Samuli Suominen <ssuominen@gentoo.org>
+  +media-player-info-13.ebuild:
+  Version bump.
+
+*media-player-info-12 (08 Feb 2011)
+
+  08 Feb 2011; Gilles Dartiguelongue <eva@gentoo.org>
+  -media-player-info-6.ebuild, -media-player-info-8.ebuild,
+  +media-player-info-12.ebuild:
+  Version bump. Drop old revisions.
+
+*media-player-info-11 (13 Dec 2010)
+
+  13 Dec 2010; Gilles Dartiguelongue <eva@gentoo.org>
+  +media-player-info-11.ebuild:
+  Version bump.
+
+*media-player-info-10 (25 Sep 2010)
+
+  25 Sep 2010; Gilles Dartiguelongue <eva@gentoo.org>
+  -media-player-info-4.ebuild, +media-player-info-10.ebuild:
+  Version bump. Drop old revision.
+
+*media-player-info-8 (19 Sep 2010)
+
+  19 Sep 2010; Gilles Dartiguelongue <eva@gentoo.org>
+  +media-player-info-8.ebuild:
+  Version bump, bug #338053.
+
+*media-player-info-6 (12 Apr 2010)
+
+  12 Apr 2010; Pacho Ramos <pacho@gentoo.org> +media-player-info-6.ebuild:
+  Version bump with bugfixes. Also update HOMEPAGE and SRC_URI. Thanks to 
+  Florian Steinel for reporting bug #314477.
+
+*media-player-info-4 (24 Jan 2010)
+
+  24 Jan 2010; Gilles Dartiguelongue <eva@gentoo.org>
+  +media-player-info-4.ebuild, +metadata.xml:
+  Initial ebuild, closes bug #291417. Thanks to Giacomo Perale.
+

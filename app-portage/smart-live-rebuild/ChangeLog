@@ -1,0 +1,151 @@
+# ChangeLog for app-portage/smart-live-rebuild
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-portage/smart-live-rebuild/ChangeLog,v 1.25 2011/07/22 13:33:25 mgorny Exp $
+
+*smart-live-rebuild-1.1.2 (22 Jul 2011)
+
+  22 Jul 2011; Michał Górny <mgorny@gentoo.org>
+  -smart-live-rebuild-1.1.1.ebuild, +smart-live-rebuild-1.1.2.ebuild:
+  Version bump. The new version uses new gentoopm API and fixes quickpkg
+  invocation.
+
+  20 Jul 2011; Michał Górny <mgorny@gentoo.org>
+  smart-live-rebuild-1.1.1.ebuild:
+  Update gentoopm dep.
+
+*smart-live-rebuild-1.1.1 (17 Jul 2011)
+
+  17 Jul 2011; Michał Górny <mgorny@gentoo.org>
+  -smart-live-rebuild-1.1.ebuild, +smart-live-rebuild-1.1.1.ebuild:
+  Version bump. The new version fixes compat with newer gentoopm, in order to
+  fix bug #375463.
+
+  17 Jul 2011; Michał Górny <mgorny@gentoo.org>
+  smart-live-rebuild-1.1.ebuild:
+  Restrict gentoopm RDEP due to API change in -9999.
+
+*smart-live-rebuild-1.1 (15 Jul 2011)
+
+  15 Jul 2011; Michał Górny <mgorny@gentoo.org>
+  -smart-live-rebuild-0.8.1.ebuild, +smart-live-rebuild-1.1.ebuild:
+  Version bump. The new version fixes bug #374957 and starts to use
+  app-portage/gentoopm.
+
+*smart-live-rebuild-1.0.1 (27 Jun 2011)
+
+  27 Jun 2011; Michał Górny <mgorny@gentoo.org>
+  -smart-live-rebuild-1.0.ebuild, +smart-live-rebuild-1.0.1.ebuild:
+  Version bump. The 1.0.1 version fixes bug #373113 (filters breakage by
+  portage command-line).
+
+  26 Jun 2011; Michał Górny <mgorny@gentoo.org>
+  +smart-live-rebuild-0.8.1.ebuild:
+  Restore the old version due to portage argument passing broken in 1.0.
+
+*smart-live-rebuild-1.0 (25 Jun 2011)
+
+  25 Jun 2011; Michał Górny <mgorny@gentoo.org>
+  -smart-live-rebuild-0.7.2.ebuild, -smart-live-rebuild-0.8.1.ebuild,
+  +smart-live-rebuild-1.0.ebuild:
+  Version bump. The new version adds package filtering capabilities (bug
+  #372711) and has a cleaned up VCS code.
+
+*smart-live-rebuild-0.8.1 (31 May 2011)
+
+  31 May 2011; Michał Górny <mgorny@gentoo.org>
+  -smart-live-rebuild-0.8.ebuild, +smart-live-rebuild-0.8.1.ebuild:
+  Version bump. This version fixes environment leakages in bash parser and adds
+  support for SLOT-ted packages (bug #368423).
+
+*smart-live-rebuild-0.8 (17 May 2011)
+
+  17 May 2011; Michał Górny <mgorny@gentoo.org>
+  +smart-live-rebuild-0.8.ebuild:
+  Version bump. The new version uses remote revision fetching whenever possible
+  and no longer touches the local repos if possible.
+
+*smart-live-rebuild-0.7.2 (24 Apr 2011)
+
+  24 Apr 2011; Michał Górny <mgorny@gentoo.org>
+  -smart-live-rebuild-0.7.1.ebuild, +smart-live-rebuild-0.7.2.ebuild:
+  Version bump. The new version adds support for EVCS_OFFLINE (bug #364545) and
+  git-2 eclass.
+
+*smart-live-rebuild-0.7.1 (27 Mar 2011)
+
+  27 Mar 2011; Michał Górny <mgorny@gentoo.org>
+  -smart-live-rebuild-0.7.ebuild, +smart-live-rebuild-0.7.1.ebuild:
+  Version bump. Fixes bug #358977.
+
+*smart-live-rebuild-0.7 (09 Feb 2011)
+
+  09 Feb 2011; Michał Górny <mgorny@gentoo.org>
+  -smart-live-rebuild-0.6.6.ebuild, +smart-live-rebuild-0.7.ebuild:
+  Version bump. The new version supports new bzr.eclass API and is able to get
+  the remote revision number from the server if the checkout is unavailable.
+
+*smart-live-rebuild-0.6.6 (20 Jan 2011)
+
+  20 Jan 2011; Michał Górny <mgorny@gentoo.org>
+  -smart-live-rebuild-0.6.5.ebuild, +smart-live-rebuild-0.6.6.ebuild:
+  Version bump. The new version fixes CVS issues with Python3 and git submodule
+  support.
+
+  20 Dec 2010; Michał Górny <mgorny@gentoo.org>
+  smart-live-rebuild-0.6.5.ebuild:
+  Change the SRC_URIs to use cloud.github.com directly. This avoids issues with
+  (pointless) SSL and old wget versions. Update the HOMEPAGE. Add missing
+  Portage RDEP.
+
+  19 Dec 2010; Michał Górny <mgorny@gentoo.org> metadata.xml:
+  Update the <bugs-to/> URL.
+
+*smart-live-rebuild-0.6.5 (02 Nov 2010)
+
+  02 Nov 2010; Michał Górny <mgorny@gentoo.org>
+  -smart-live-rebuild-0.6.4.ebuild, +smart-live-rebuild-0.6.5.ebuild:
+  Version bump. Now smart-live-rebuild comes with bzr and darcs support.
+
+  23 Oct 2010; Michał Górny <mgorny@gentoo.org> metadata.xml:
+  Update the metadata.
+
+*smart-live-rebuild-0.6.4 (23 Oct 2010)
+
+  23 Oct 2010; Michał Górny <mgorny@gentoo.org>
+  -smart-live-rebuild-0.6.3.ebuild, +smart-live-rebuild-0.6.4.ebuild:
+  Version bump.
+
+  22 Oct 2010; Christian Faulhammer <fauli@gentoo.org>
+  smart-live-rebuild-0.6.3.ebuild:
+  keyworded ~arch for x86, bug 339730
+
+  18 Oct 2010; Michał Górny <mgorny@gentoo.org>
+  smart-live-rebuild-0.6.3.ebuild:
+  Add PYTHON_MODNAME to fix Python bytecode compiling.
+
+*smart-live-rebuild-0.6.3 (13 Oct 2010)
+
+  13 Oct 2010; Michał Górny <mgorny@gentoo.org>
+  -smart-live-rebuild-0.6.1.1.ebuild, -smart-live-rebuild-0.6.2.ebuild,
+  +smart-live-rebuild-0.6.3.ebuild:
+  Version bump. The new version starts performing updates during package
+  enumeration and fixes Python3 compatibility (thus dropping both old
+  versions).
+
+*smart-live-rebuild-0.6.2 (11 Oct 2010)
+
+  11 Oct 2010; Michał Górny <mgorny@gentoo.org>
+  +smart-live-rebuild-0.6.2.ebuild:
+  Version bump. The new version introduces fixes to Mercurial support and
+  (hopefully) faster environment parsing.
+
+  10 Oct 2010; Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org>
+  smart-live-rebuild-0.6.1.1.ebuild:
+  Update EAPI. Don't inherit python.eclass twice.
+
+*smart-live-rebuild-0.6.1.1 (04 Oct 2010)
+
+  04 Oct 2010; Michał Górny <mgorny@gentoo.org>
+  +smart-live-rebuild-0.6.1.1.ebuild, +metadata.xml:
+  Import from the Sunrise overlay, per bug #310975.
+

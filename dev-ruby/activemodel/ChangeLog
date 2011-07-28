@@ -1,0 +1,48 @@
+# ChangeLog for dev-ruby/activemodel
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/activemodel/ChangeLog,v 1.11 2011/07/24 09:51:33 xarthisius Exp $
+
+  24 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> activemodel-3.0.9.ebuild:
+  Marked ~ppc/~ppc64 wrt #351835
+
+*activemodel-3.0.9 (04 Jul 2011)
+
+  04 Jul 2011; Hans de Graaff <graaff@gentoo.org> +activemodel-3.0.9.ebuild:
+  Version bump for Rails 3.0.9.
+
+  01 May 2011; Hans de Graaff <graaff@gentoo.org> -activemodel-3.0.3.ebuild,
+  -activemodel-3.0.3-r1.ebuild:
+  Remove old versions.
+
+*activemodel-3.0.7 (26 Apr 2011)
+
+  26 Apr 2011; Hans de Graaff <graaff@gentoo.org> +activemodel-3.0.7.ebuild:
+  Version bump for Rails 3.0.7.
+
+  13 Feb 2011; Thomas Kahle <tomka@gentoo.org> activemodel-3.0.3-r1.ebuild:
+  keyworded ~x86 per bug 351835
+
+*activemodel-3.0.3-r1 (10 Jan 2011)
+
+  10 Jan 2011; Hans de Graaff <graaff@gentoo.org>
+  +activemodel-3.0.3-r1.ebuild:
+  This requires a bump since we modify the gemspec file.
+
+  10 Jan 2011; Hans de Graaff <graaff@gentoo.org> activemodel-3.0.3.ebuild:
+  Relax builder requirements for bug 351189.
+
+  28 Dec 2010; Hans de Graaff <graaff@gentoo.org> activemodel-3.0.3.ebuild:
+  Install proper gemspec.
+
+  04 Dec 2010; Hans de Graaff <graaff@gentoo.org> activemodel-3.0.3.ebuild:
+  Move activemodel into the right SLOT.
+
+  03 Dec 2010; Hans de Graaff <graaff@gentoo.org> activemodel-3.0.3.ebuild:
+  activemodel does not contain database-specific parts: remove USE flags.
+
+*activemodel-3.0.3 (03 Dec 2010)
+
+  03 Dec 2010; Hans de Graaff <graaff@gentoo.org> +activemodel-3.0.3.ebuild,
+  +metadata.xml:
+  Initial import for Rails 3.0.3.
+

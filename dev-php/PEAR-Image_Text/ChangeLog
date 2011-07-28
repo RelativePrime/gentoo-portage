@@ -1,0 +1,26 @@
+# ChangeLog for dev-php/PEAR-Image_Text
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-php/PEAR-Image_Text/ChangeLog,v 1.4 2010/08/12 08:49:11 maekke Exp $
+
+  12 Aug 2010; Markus Meier <maekke@gentoo.org>
+  PEAR-Image_Text-0.6.0_beta.ebuild:
+  amd64 stable, bug #291286
+
+  10 Aug 2010; Christian Faulhammer <fauli@gentoo.org>
+  PEAR-Image_Text-0.6.0_beta.ebuild:
+  stable x86, bug 291286
+
+  06 Dec 2007; Markus Ullmann <jokey@gentoo.org>
+  PEAR-Image_Text-0.6.0_beta.ebuild:
+  LICENSE fix from project overlay
+
+  02 Dec 2007; Jakub Moc <jakub@gentoo.org> +metadata.xml,
+  +PEAR-Image_Text-0.6.0_beta.ebuild:
+  Fix LICENSE
+
+*PEAR-Image_Text-0.6.0_beta (08 Oct 2007)
+
+  08 Oct 2007; Anant Narayanan <anant@gentoo.org> +metadata.xml,
+  +PEAR-Image_Text-0.6.0_beta.ebuild:
+  Initial import of ebuild from overlay
+

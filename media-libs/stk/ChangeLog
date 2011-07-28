@@ -1,0 +1,43 @@
+# ChangeLog for media-libs/stk
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/stk/ChangeLog,v 1.7 2011/02/27 17:16:22 aballier Exp $
+
+  27 Feb 2011; Alexis Ballier <aballier@gentoo.org> -stk-4.3.1.ebuild,
+  -files/stk-4.3.1-cflags-lib.patch, -files/stk-4.3.1-fpic.patch,
+  -files/stk-4.3.1-gcc43.patch, -files/stk-4.3.1-gcc44.patch,
+  -files/stk-4.3.1-ldflags.patch, -files/stk-4.3.1-missing.patch:
+  remove old
+
+*stk-4.4.2 (02 Jan 2011)
+
+  02 Jan 2011; Alexis Ballier <aballier@gentoo.org> +stk-4.4.2.ebuild,
+  +files/stk-4.4.2/010_all_removeForcedFlags.patch,
+  +files/stk-4.4.2/020_all_noExamplesOrDemo.patch,
+  +files/stk-4.4.2/030_all_sharedlib.patch,
+  +files/stk-4.4.2/040_all_soname.patch, +files/stk-4.4.2/050_all_abiver.patch:
+  version bump, by Christopher Harvey <chris@basementcode.com>, bug #309037,
+  with some modifications and patches by me.
+
+  17 Aug 2010; Samuli Suominen <ssuominen@gentoo.org>
+  files/stk-4.3.1-gcc44.patch:
+  Include <cstdio> also for RtAudio.cpp wrt #332873 by Jouni Rinne.
+
+  30 Jul 2009; Samuli Suominen <ssuominen@gentoo.org> stk-4.3.1.ebuild,
+  +files/stk-4.3.1-gcc44.patch:
+  Fix building with GCC 4.4 wrt #277668.
+
+  09 Mar 2009; Raúl Porcel <armin76@gentoo.org> stk-4.3.1.ebuild:
+  Add ~x86 wrt #260735
+
+  13 Jan 2009; Alexis Ballier <aballier@gentoo.org> stk-4.3.1.ebuild:
+  fix build without jack, by Thomas 'gimpel' Kuther, bug #232302
+
+*stk-4.3.1 (17 Sep 2008)
+
+  17 Sep 2008; Alexis Ballier <aballier@gentoo.org>
+  +files/stk-4.3.1-cflags-lib.patch, +files/stk-4.3.1-fpic.patch,
+  +files/stk-4.3.1-gcc43.patch, +files/stk-4.3.1-ldflags.patch,
+  +files/stk-4.3.1-missing.patch, +metadata.xml, +stk-4.3.1.ebuild:
+  Initial import; ebuild mainly by Thomas Kuther who I'm proxy maintaining
+  the package for.
+

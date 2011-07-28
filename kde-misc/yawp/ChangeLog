@@ -1,0 +1,43 @@
+# ChangeLog for kde-misc/yawp
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/kde-misc/yawp/ChangeLog,v 1.7 2011/05/13 08:56:36 scarabeus Exp $
+
+  13 May 2011; Tomáš Chvátal <scarabeus@gentoo.org> -yawp-0.3.5.ebuild,
+  yawp-0.3.6.ebuild:
+  Stabilise latest on amd64 and x86, drop older. Fixes bug #366855.
+
+*yawp-0.3.6 (09 Jan 2011)
+
+  09 Jan 2011; Tomáš Chvátal <scarabeus@gentoo.org> yawp-0.3.5.ebuild,
+  +yawp-0.3.6.ebuild:
+  Version bump to latest. Stabilise older.
+
+*yawp-0.3.5 (09 Oct 2010)
+
+  09 Oct 2010; Tomáš Chvátal <scarabeus@gentoo.org> -yawp-0.3.4.ebuild,
+  -files/yawp-0.3.4-kde45.patch, +yawp-0.3.5.ebuild:
+  Version bump. Drop older.
+
+*yawp-0.3.4 (13 Aug 2010)
+
+  13 Aug 2010; Dror Levin <spatz@gentoo.org> -yawp-0.3.2.ebuild,
+  -files/yawp-0.3.2-gcc45.patch, +yawp-0.3.4.ebuild,
+  +files/yawp-0.3.4-kde45.patch:
+  Version bump, drop old.
+
+  03 Jun 2010; Dror Levin <spatz@gentoo.org> yawp-0.3.2.ebuild,
+  +files/yawp-0.3.2-gcc45.patch:
+  Fix building with gcc 4.5, bug 322595. Thanks Markos Chandras for the
+  patch.
+
+*yawp-0.3.2 (06 Dec 2009)
+
+  06 Dec 2009; Tomáš Chvátal <scarabeus@gentoo.org> -yawp-0.2.3.ebuild,
+  +yawp-0.3.2.ebuild:
+  Version bump.
+
+*yawp-0.2.3 (10 Nov 2009)
+
+  10 Nov 2009; Samuli Suominen <ssuominen@gentoo.org> +yawp-0.2.3.ebuild:
+  Initial commit wrt #250803, thanks to Marian Kyral for reporting.
+

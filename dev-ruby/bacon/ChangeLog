@@ -1,0 +1,29 @@
+# ChangeLog for dev-ruby/bacon
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/bacon/ChangeLog,v 1.6 2011/07/24 09:44:07 xarthisius Exp $
+
+  24 Jul 2011; Kacper Kowalik <xarthisius@gentoo.org> bacon-1.1.0-r1.ebuild:
+  Marked ~ppc/~ppc64 wrt #351835
+
+  15 Feb 2011; Diego E. Pettenò <flameeyes@gentoo.org> bacon-1.1.0-r1.ebuild,
+  +files/bacon-1.1.0+ruby-1.9.2.patch:
+  Add patch from upstream git to fix tests with Ruby 1.9.2 (closes bug
+  #332879).
+
+  02 Oct 2010; Raúl Porcel <armin76@gentoo.org> bacon-1.1.0-r1.ebuild:
+  Add ~ia64/~sparc wrt #338013
+
+*bacon-1.1.0-r1 (28 Aug 2010)
+
+  28 Aug 2010; Hans de Graaff <graaff@gentoo.org> +bacon-1.1.0-r1.ebuild:
+  Add ree18 due to new dev-ruby/rack dependency.
+
+  28 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org> bacon-1.1.0.ebuild:
+  Add ~x86 keyword after testing in development guest.
+
+*bacon-1.1.0 (25 Jan 2010)
+
+  25 Jan 2010; Diego E. Pettenò <flameeyes@gentoo.org> +bacon-1.1.0.ebuild,
+  +metadata.xml:
+  Initial import of bacon, needed for shotgun testing.
+

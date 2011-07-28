@@ -1,0 +1,67 @@
+# ChangeLog for net-misc/packETH
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/packETH/ChangeLog,v 1.14 2011/03/24 17:44:58 jer Exp $
+
+  24 Mar 2011; Jeroen Roovers <jer@gentoo.org> packETH-1.7.1.ebuild,
+  +files/packETH-1.7.1-gdk-pixbuf.patch:
+  DEPEND on x11-libs/gdk-pixbuf too.
+
+*packETH-1.7.1 (24 Mar 2011)
+
+  24 Mar 2011; Jeroen Roovers <jer@gentoo.org> packETH-1.6.3.ebuild,
+  +packETH-1.7.1.ebuild:
+  Version bump. DEPEND on dev-util/pkgconfig thanks to dE (bug #360125).
+
+  24 Mar 2011; Jeroen Roovers <jer@gentoo.org> packETH-1.6.5.ebuild,
+  packETH-1.7.ebuild:
+  DEPEND on dev-util/pkgconfig thanks to dE (bug #360125).
+
+*packETH-1.7 (18 Oct 2010)
+
+  18 Oct 2010; Peter Volkov <pva@gentoo.org> +packETH-1.7.ebuild:
+  Version bump.
+
+  25 May 2010; Peter Volkov <pva@gentoo.org> packETH-1.6.5.ebuild,
+  +files/packETH-1.6.5-forced-as-needed.patch:
+  Fixed build issue with forced --as-needed, bug #321409, thank Diego E.
+  'Flameeyes' Pettenò for report.
+
+*packETH-1.6.5 (20 May 2010)
+
+  20 May 2010; Peter Volkov <pva@gentoo.org> +packETH-1.6.5.ebuild:
+  Version bump.
+
+  20 May 2010; Peter Volkov <pva@gentoo.org> packETH-1.6.3.ebuild:
+  amd64 stable, bug 304041.
+
+  26 Feb 2010; Pawel Hajdan jr <phajdan.jr@gentoo.org> packETH-1.6.3.ebuild:
+  x86 stable wrt bug #304041
+
+  01 Nov 2009; Jeroen Roovers <jer@gentoo.org> -packETH-1.4.ebuild:
+  Remove old.
+
+*packETH-1.6.3 (01 Nov 2009)
+
+  01 Nov 2009; Jeroen Roovers <jer@gentoo.org> +packETH-1.6.3.ebuild,
+  +files/packETH-1.6.3-gentoo.patch, +files/packETH-1.6.3-pixmaps.patch:
+  Version bump thanks to DrChandra (bug #260381). Respect CC, CFLAGS,
+  LDFLAGS, and point to proper pixmaps directory.
+
+  30 Jan 2008; <pva@gentoo.org> -packETH-1.3.ebuild, packETH-1.4.ebuild:
+  Fixed missing gtk+ dependency, bug 205423, thank Evil Compile Person <bugs
+  AT dev.gentooexperimental.org> for report. Removed old.
+
+*packETH-1.4 (14 Apr 2007)
+
+  14 Apr 2007; Marcelo Goes <vanquirius@gentoo.org> +packETH-1.4.ebuild:
+  1.4 version bump.
+
+  15 Oct 2006; Thomas Cort <tcort@gentoo.org> packETH-1.3.ebuild:
+  Added ~amd64 keyword wrt Bug #151443.
+
+*packETH-1.3 (08 Oct 2006)
+
+  08 Oct 2006; Markus Ullmann <jokey@gentoo.org> +metadata.xml,
+  +packETH-1.3.ebuild:
+  Initial commit, thanks to Davide Rebeccani in bug #118525 for the ebuild
+
