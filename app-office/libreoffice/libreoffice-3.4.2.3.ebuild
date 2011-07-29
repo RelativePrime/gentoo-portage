@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-3.4.2.3.ebuild,v 1.7 2011/07/28 10:43:23 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-3.4.2.3.ebuild,v 1.10 2011/07/28 17:58:39 halcy0n Exp $
 
 EAPI=3
 
@@ -14,7 +14,7 @@ PYTHON_USE_WITH="threads,xml"
 # Usually the tarballs are moved a lot so this should make
 # everyone happy.
 DEV_URI="
-	http://dev-builds.libreoffice.org/pre-releases/src 
+	http://dev-builds.libreoffice.org/pre-releases/src
 	http://download.documentfoundation.org/libreoffice/src
 	http://download.documentfoundation.org/libreoffice/old/src
 "
@@ -470,7 +470,7 @@ src_configure() {
 		--with-external-tar="${DISTDIR}" \
 		--with-lang="${LINGUAS_OOO}" \
 		--with-max-jobs=${jbs} \
-		--with-num-cpus=${jbs} \
+		--with-num-cpus=1 \
 		--with-theme="${themes}" \
 		--with-unix-wrapper=libreoffice \
 		--with-vendor="Gentoo Foundation" \
@@ -516,7 +516,8 @@ src_configure() {
 }
 
 src_compile() {
-	emake || die
+	# this is not a proper make script and the jobs are passed during configure
+	make || die
 }
 
 src_install() {
