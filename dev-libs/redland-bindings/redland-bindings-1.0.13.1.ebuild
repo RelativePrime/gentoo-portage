@@ -1,9 +1,9 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/redland-bindings/redland-bindings-1.0.10.1-r1.ebuild,v 1.4 2011/03/27 15:46:36 arfrever Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/redland-bindings/redland-bindings-1.0.13.1.ebuild,v 1.1 2011/07/29 11:14:04 ssuominen Exp $
 
 EAPI=3
-PYTHON_DEPEND="python? 2"
+PYTHON_DEPEND="python? 2:2.7"
 SUPPORT_PYTHON_ABIS="1"
 RESTRICT_PYTHON_ABIS="3.* *-jython"
 
@@ -16,38 +16,30 @@ SRC_URI="http://download.librdf.org/source/${P}.tar.gz"
 LICENSE="Apache-2.0 GPL-2 LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~x86 ~x86-linux ~ppc-macos"
-IUSE="perl python php ruby"
+IUSE="lua perl python php ruby"
 
-RDEPEND=">=dev-libs/redland-1.0.10-r1
+RDEPEND=">=dev-libs/redland-1.0.10-r2
+	lua? ( >=dev-lang/lua-5.1 )
 	perl? ( dev-lang/perl )
 	php? ( dev-lang/php )
 	ruby? ( dev-lang/ruby dev-ruby/log4r )"
 DEPEND="${RDEPEND}
-	dev-lang/swig
-	sys-apps/sed
-	perl? ( sys-apps/findutils )"
+	>=dev-lang/swig-1.3.26
+	dev-util/pkgconfig
+	sys-apps/sed"
 
 pkg_setup() {
 	use python && python_pkg_setup
 }
 
-src_prepare() {
-	sed -i \
-		-e "s:lib/python:$(get_libdir)/python:" \
-		configure || die
-}
-
 src_configure() {
-	# --with-python-ldflags line can be dropped from next release
-	# as it's been fixed in trunk
 	econf \
 		--disable-dependency-tracking \
+		$(use_with lua) \
 		$(use_with perl) \
 		$(use_with python) \
-		--with-python-ldflags="-shared -lrdf" \
 		$(use_with php) \
-		$(use_with ruby) \
-		--with-redland=system
+		$(use_with ruby)
 
 	# Python bindings are built/tested/installed manually.
 	sed -e "/^SUBDIRS =/s/ python//" -i Makefile
@@ -82,11 +74,11 @@ src_test() {
 }
 
 src_install() {
-	emake DESTDIR="${D}" INSTALLDIRS=vendor install || die
+	emake DESTDIR="${D}" INSTALLDIRS=vendor luadir=/usr/$(get_libdir)/lua/5.1 install || die
 
 	if use perl; then
-		find "${D}" -type f -name perllocal.pod -delete
-		find "${D}" -depth -mindepth 1 -type d -empty -delete
+		find "${ED}" -type f -name perllocal.pod -delete
+		find "${ED}" -depth -mindepth 1 -type d -empty -delete
 	fi
 
 	if use python; then
