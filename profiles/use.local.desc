@@ -1015,6 +1015,10 @@ dev-lang/lua:deprecated - make deprecated data structures/routines available
 dev-lang/mercury:erlang - Support Mercury Erlang grade
 dev-lang/mlton:binary - install a binary version (need to do this once to bootstrap, until smlnj is supported)
 dev-lang/mono:xen - Make mono generate code that is considerably faster on xen VMs but slightly slower on for normal systems.
+dev-lang/path64:assembler - Build PathAS
+dev-lang/path64:debugger - Build PathDB
+dev-lang/path64:native - Use EKOPath/Path64 for bootstraping
+dev-lang/path64:valgrind - Use dev-util/valgrind for memory debbuging
 dev-lang/perl:ithreads - Enable Perl threads, has some compatibility problems
 dev-lang/perl:perlsuid - Enable Perl SUID install. Has some risks associated.
 dev-lang/php:cli - Enable CLI SAPI
