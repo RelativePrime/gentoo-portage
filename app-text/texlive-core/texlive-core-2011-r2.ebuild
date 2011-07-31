@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/texlive-core/texlive-core-2011-r1.ebuild,v 1.1 2011/07/30 20:11:24 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/texlive-core/texlive-core-2011-r2.ebuild,v 1.2 2011/07/31 07:36:25 aballier Exp $
 
 EAPI=3
 
@@ -105,7 +105,7 @@ RDEPEND="${COMMON_DEPEND}
 	tk? ( dev-perl/perl-tk )"
 
 # texdoc needs luatex.
-PDEPEND=">=dev-tex/luatex-0.63"
+PDEPEND=">=dev-tex/luatex-0.70"
 
 S="${WORKDIR}/${MY_PV}"
 
@@ -149,6 +149,7 @@ src_configure() {
 		--disable-psutils \
 		--disable-t1utils \
 		--enable-ipc \
+		--disable-biber \
 		--disable-bibtexu \
 		--disable-dvipng \
 		--disable-dvipsk \
