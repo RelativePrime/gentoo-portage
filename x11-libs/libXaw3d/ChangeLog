@@ -1,6 +1,12 @@
-# ChangeLog for x11-libs/Xaw3d
+# ChangeLog for x11-libs/libXaw3d
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/Xaw3d/ChangeLog,v 1.30 2011/07/12 18:02:12 mattst88 Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/libXaw3d/ChangeLog,v 1.1 2011/08/02 05:34:21 mattst88 Exp $
+
+*libXaw3d-1.5-r1 (02 Aug 2011)
+
+  02 Aug 2011; Matt Turner <mattst88@gentoo.org> +files/Xaw3d-out-of-tree.diff,
+  +libXaw3d-1.5-r1.ebuild, +files/Xaw3d-xfree86.diff, +metadata.xml:
+  Rename Xaw3d to libXaw3d.
 
   12 Jul 2011; Matt Turner <mattst88@gentoo.org> Xaw3d-1.5-r1.ebuild:
   Added sys-devel/flex to DEPEND, bug 221417

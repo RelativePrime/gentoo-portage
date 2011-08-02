@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/Xaw3d/Xaw3d-1.5-r1.ebuild,v 1.40 2011/07/12 18:02:12 mattst88 Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/libXaw3d/libXaw3d-1.5-r1.ebuild,v 1.1 2011/08/02 05:34:21 mattst88 Exp $
 
 # Ok, hopefully this will resolv the problem with the version of libXaw3d that
 # gets created.
@@ -21,8 +21,8 @@ S=${WORKDIR}/xc/lib/Xaw3d
 DESCRIPTION="drop-in 3D replacement of the Xaw widget set which comes with X"
 HOMEPAGE="http://freshmeat.net/projects/xaw3d/"
 # All full ftp.x.org mirrors can be added here.
-SRC_URI="ftp://ftp.x.org/contrib/widgets/Xaw3d/R6.3/${P}.tar.gz
-	http://ibiblio.org/pub/X11/contrib/widgets/Xaw3d/R6.3/${P}.tar.gz"
+SRC_URI="ftp://ftp.x.org/contrib/widgets/Xaw3d/R6.3/${P/lib}.tar.gz
+	http://ibiblio.org/pub/X11/contrib/widgets/Xaw3d/R6.3/${P/lib}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -43,7 +43,7 @@ DEPEND="${RDEPEND}
 	sys-devel/flex"
 
 src_unpack() {
-	unpack ${P}.tar.gz
+	unpack ${P/lib}.tar.gz
 	cd "${S}"
 
 	# For some reason it isn't automatically patched.
