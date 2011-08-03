@@ -1,13 +1,12 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/capistrano/capistrano-2.5.19.ebuild,v 1.3 2010/08/15 18:53:04 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/capistrano/capistrano-2.8.0.ebuild,v 1.1 2011/08/03 06:18:30 graaff Exp $
 
 EAPI="2"
 USE_RUBY="ruby18"
 
 RUBY_FAKEGEM_TASK_DOC=""
-RUBY_FAKEGEM_EXTRADOC="CHANGELOG README"
-RUBY_FAKEGEM_EXTRAINSTALL="VERSION"
+RUBY_FAKEGEM_EXTRADOC="CHANGELOG README.mdown"
 
 inherit ruby-fakegem
 
@@ -23,18 +22,12 @@ ruby_add_rdepend "
 	>=dev-ruby/net-ssh-2.0.14
 	>=dev-ruby/net-sftp-2.0.2
 	>=dev-ruby/net-scp-1.0.2
-	>=dev-ruby/net-ssh-gateway-1.0.0
+	>=dev-ruby/net-ssh-gateway-1.1.0
 	>=dev-ruby/highline-1.2.7"
 ruby_add_bdepend "
-	test? (
-		dev-ruby/mocha
-		!dev-ruby/test-unit:2
-	)"
+	test? (	dev-ruby/mocha )"
 
-RDEPEND="${RDEPEND}
-	!dev-ruby/capistrano-launcher"
-
-each_ruby_prepare() {
-	# Remove Jeweler check_dependencies task
-	sed -i '/check_dependencies/d' Rakefile
+all_ruby_prepare() {
+	rm Gemfile || die
+	sed -i -e '/[Bb]undler/d' Rakefile || die
 }
