@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/libwpg/libwpg-0.1.3.ebuild,v 1.16 2011/04/24 17:22:51 eva Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/libwpg/libwpg-0.1.3.ebuild,v 1.1 2011/08/04 16:25:30 scarabeus Exp $
 
 inherit base eutils
 

@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/libwpg/libwpg-0.2.0-r1.ebuild,v 1.1 2011/05/14 15:41:32 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/libwpg/libwpg-0.2.0.ebuild,v 1.1 2011/08/04 16:25:30 scarabeus Exp $
 
 EAPI="4"
 
@@ -32,7 +32,6 @@ src_configure() {
 	econf \
 		--program-suffix=-${SLOT} \
 		--disable-dependency-tracking \
-		--docdir="${EPREFIX%/}/usr/share/doc/${PF}" \
 		$(use_with doc docs)
 }
 

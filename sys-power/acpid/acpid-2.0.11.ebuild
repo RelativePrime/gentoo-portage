@@ -1,9 +1,9 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-power/acpid/acpid-2.0.10.ebuild,v 1.1 2011/05/21 08:11:59 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-power/acpid/acpid-2.0.11.ebuild,v 1.1 2011/08/04 17:01:47 ssuominen Exp $
 
 EAPI=4
-inherit eutils toolchain-funcs
+inherit eutils systemd toolchain-funcs
 
 DESCRIPTION="Daemon for Advanced Configuration and Power Interface"
 HOMEPAGE="http://tedfelix.com/linux/acpid-netlink.html"
@@ -35,8 +35,10 @@ src_install() {
 	insinto /etc/acpi/events
 	newins "${FILESDIR}"/${PN}-1.0.4-default default
 
-	newinitd "${FILESDIR}"/${PN}-2.0.3-init.d acpid
+	newinitd "${FILESDIR}"/${PN}-2.0.11-init.d acpid
 	newconfd "${FILESDIR}"/${PN}-1.0.6-conf.d acpid
+
+	systemd_dounit "${FILESDIR}"/${PN}.service
 }
 
 pkg_postinst() {
