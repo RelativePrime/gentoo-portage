@@ -1,6 +1,6 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/lsparisc/lsparisc-0.3.ebuild,v 1.5 2009/12/02 18:40:13 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/lsparisc/lsparisc-0.3-r1.ebuild,v 1.1 2011/08/04 13:59:08 jer Exp $
 
 inherit eutils toolchain-funcs
 
