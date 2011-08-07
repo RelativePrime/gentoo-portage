@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-3.4.9999.ebuild,v 1.8 2011/08/07 11:36:07 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-3.4.9999.ebuild,v 1.10 2011/08/07 14:39:42 scarabeus Exp $
 
 EAPI=3
 
@@ -30,7 +30,6 @@ unset SCM_ECLASS
 DESCRIPTION="LibreOffice, a full office productivity suite."
 HOMEPAGE="http://www.libreoffice.org"
 SRC_URI="branding? ( http://dev.gentooexperimental.org/~scarabeus/${BRANDING} )"
-
 
 # Split modules following git/tarballs
 # Core MUST be first!
@@ -209,6 +208,7 @@ DEPEND="${COMMON_DEPEND}
 	sys-devel/bison
 	sys-apps/coreutils
 	sys-devel/flex
+	>=sys-devel/make-3.82
 	sys-libs/zlib
 	x11-libs/libXtst
 	x11-proto/randrproto
