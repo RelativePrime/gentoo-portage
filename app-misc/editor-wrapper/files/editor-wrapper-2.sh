@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright 2009 Gentoo Foundation
+# Copyright 2009-2011 Gentoo Foundation
 # Distributed under the terms of the MIT/X11 license
 
 # Editor wrapper script, executes ${EDITOR} with arguments $@

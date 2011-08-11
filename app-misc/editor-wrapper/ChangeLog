@@ -1,6 +1,18 @@
-# ChangeLog for app-editors/gentoo-editor
-# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-editors/gentoo-editor/ChangeLog,v 1.15 2010/06/25 09:23:20 pva Exp $
+# ChangeLog for app-misc/editor-wrapper
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/editor-wrapper/ChangeLog,v 1.2 2011/08/11 10:47:32 ulm Exp $
+
+*editor-wrapper-3 (11 Aug 2011)
+
+  11 Aug 2011; Ulrich Mueller <ulm@gentoo.org> +editor-wrapper-3.ebuild,
+  +files/editor-wrapper-3.sh:
+  Version bump, adding wrapper for PAGER.
+
+*editor-wrapper-2 (11 Aug 2011)
+
+  11 Aug 2011; Ulrich Mueller <ulm@gentoo.org> +editor-wrapper-2.ebuild,
+  +files/editor-wrapper-2.sh, +metadata.xml:
+  Package moved from app-editors/gentoo-editor to app-misc/editor-wrapper.
 
   25 Jun 2010; Peter Volkov <pva@gentoo.org> gentoo-editor-2.ebuild:
   ~mips keyworded, bug #293985

@@ -1,6 +1,6 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-editors/gentoo-editor/gentoo-editor-2.ebuild,v 1.14 2010/06/25 09:23:20 pva Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/editor-wrapper/editor-wrapper-2.ebuild,v 1.1 2011/08/11 10:40:41 ulm Exp $
 
 DESCRIPTION="Wrapper script that will execute EDITOR"
 HOMEPAGE="http://www.gentoo.org/"
