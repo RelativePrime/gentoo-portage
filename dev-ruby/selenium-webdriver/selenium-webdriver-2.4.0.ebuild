@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/selenium-webdriver/selenium-webdriver-2.1.0.ebuild,v 1.1 2011/07/19 04:09:47 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/selenium-webdriver/selenium-webdriver-2.4.0.ebuild,v 1.1 2011/08/12 06:16:13 graaff Exp $
 
 EAPI=4
 USE_RUBY="ruby18 ree18"

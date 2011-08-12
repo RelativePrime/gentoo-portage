@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/entropy-server/entropy-server-1.0_rc27.ebuild,v 1.1 2011/07/19 12:40:18 lxnay Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/entropy-server/entropy-server-1.0_rc38.ebuild,v 1.1 2011/08/12 09:32:18 lxnay Exp $
 
 EAPI="3"
 PYTHON_DEPEND="2"
@@ -26,13 +26,13 @@ src_compile() {
 }
 
 src_install() {
-	emake DESTDIR="${D}" LIBDIR="usr/$(get_libdir)" entropy-server-install || die "make install failed"
+	emake DESTDIR="${D}" LIBDIR="usr/lib" entropy-server-install || die "make install failed"
 }
 
 pkg_postinst() {
-	python_mod_optimize "/usr/$(get_libdir)/entropy/server"
+	python_mod_optimize "/usr/lib/entropy/server"
 }
 
 pkg_postrm() {
-	python_mod_cleanup "/usr/$(get_libdir)/entropy/server"
+	python_mod_cleanup "/usr/lib/entropy/server"
 }

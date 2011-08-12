@@ -1,15 +1,15 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/python-ldap/python-ldap-2.3.9.ebuild,v 1.13 2010/10/16 20:21:16 arfrever Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/python-ldap/python-ldap-2.4.3.ebuild,v 1.1 2011/08/12 07:58:00 djc Exp $
 
 EAPI="3"
 PYTHON_DEPEND="2"
 SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+RESTRICT_PYTHON_ABIS="3.* *-jython"
 
 inherit distutils multilib
 
-DOC_P="${PN}-docs-html-2.3.7"
+DOC_P="${PN}-docs-html-${PV}"
 
 DESCRIPTION="Various LDAP-related Python modules"
 HOMEPAGE="http://python-ldap.sourceforge.net/ http://pypi.python.org/pypi/python-ldap"
@@ -18,10 +18,10 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz
 
 LICENSE="PYTHON"
 SLOT="0"
-KEYWORDS="alpha amd64 hppa ia64 ppc ppc64 sparc x86"
+KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-solaris"
 IUSE="doc examples sasl ssl"
 
-RDEPEND=">=net-nds/openldap-2.3
+RDEPEND=">=net-nds/openldap-2.4
 	sasl? ( dev-libs/cyrus-sasl )"
 DEPEND="${DEPEND}
 	dev-python/setuptools"
@@ -30,10 +30,13 @@ DOCS="CHANGES README"
 PYTHON_MODNAME="dsml.py ldapurl.py ldif.py ldap"
 
 src_prepare() {
+	local rpath=
+	# sloppy logic, maybe better check if compiler links with GNU-ld
+	[[ ${CHOST} != *-darwin* ]] && rpath="-Wl,-rpath=${EPREFIX}/usr/$(get_libdir)/sasl2"
 	# Note: we can't add /usr/lib and /usr/lib/sasl2 to library_dirs due to a bug in py2.4
 	sed -e "s:^library_dirs =.*:library_dirs =:" \
-		-e "s:^include_dirs =.*:include_dirs = /usr/include /usr/include/sasl:" \
-		-e "s:\(extra_compile_args =\).*:\1\nextra_link_args = -Wl,-rpath=/usr/$(get_libdir) -Wl,-rpath=/usr/$(get_libdir)/sasl2:" \
+		-e "s:^include_dirs =.*:include_dirs = ${EPREFIX}/usr/include ${EPREFIX}/usr/include/sasl:" \
+		-e "s:\(extra_compile_args =\).*:\1\nextra_link_args = ${rpath}:" \
 		-i setup.cfg || die "error fixing setup.cfg"
 
 	local mylibs="ldap"

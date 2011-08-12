@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-admin/sulfur/sulfur-1.0_rc27.ebuild,v 1.1 2011/07/19 12:47:28 lxnay Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-admin/sulfur/sulfur-1.0_rc38.ebuild,v 1.1 2011/08/12 09:31:31 lxnay Exp $
 
 EAPI="3"
 PYTHON_DEPEND="2"
@@ -30,7 +30,7 @@ src_compile() {
 }
 
 src_install() {
-	emake DESTDIR="${D}" LIBDIR="usr/$(get_libdir)" install || die "make install failed"
+	emake DESTDIR="${D}" LIBDIR="usr/lib" install || die "make install failed"
 	dodir /etc/gconf/schemas
 	insinto /etc/gconf/schemas
 	doins "${S}/misc/entropy-handler.schemas"
@@ -41,11 +41,11 @@ pkg_postinst() {
 	fdo-mime_desktop_database_update
 	gnome2_gconf_savelist
 	gnome2_gconf_install
-	python_mod_optimize "/usr/$(get_libdir)/entropy/${PN}"
+	python_mod_optimize "/usr/lib/entropy/${PN}"
 }
 
 pkg_postrm() {
-	python_mod_cleanup "/usr/$(get_libdir)/entropy/${PN}"
+	python_mod_cleanup "/usr/lib/entropy/${PN}"
 	gnome2_gconf_savelist
 	gnome2_gconf_uninstall
 }

@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/entropy-client-services/entropy-client-services-1.0_rc27.ebuild,v 1.2 2011/07/19 12:39:29 lxnay Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/entropy-client-services/entropy-client-services-1.0_rc38.ebuild,v 1.1 2011/08/12 09:30:01 lxnay Exp $
 
 EAPI="3"
 PYTHON_DEPEND="2"
@@ -28,13 +28,13 @@ src_compile() {
 }
 
 src_install() {
-	emake DESTDIR="${D}" LIBDIR="usr/$(get_libdir)" updates-daemon-install || die "make install failed"
+	emake DESTDIR="${D}" LIBDIR="usr/lib" updates-daemon-install || die "make install failed"
 }
 
 pkg_postinst() {
-	python_mod_optimize "/usr/$(get_libdir)/entropy/services"
+	python_mod_optimize "/usr/lib/entropy/services"
 }
 
 pkg_postrm() {
-	python_mod_cleanup "/usr/$(get_libdir)/entropy/services"
+	python_mod_cleanup "/usr/lib/entropy/services"
 }

@@ -1,9 +1,9 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/magneto-loader/magneto-loader-1.0_rc27.ebuild,v 1.1 2011/07/19 13:02:22 lxnay Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/magneto-loader/magneto-loader-1.0_rc38.ebuild,v 1.1 2011/08/12 09:34:43 lxnay Exp $
 
 EAPI="2"
-inherit eutils multilib
+inherit eutils
 
 DESCRIPTION="Official Sabayon Linux Entropy Notification Applet Loader"
 HOMEPAGE="http://www.sabayon.org"
@@ -24,5 +24,5 @@ src_compile() {
 }
 
 src_install() {
-	emake DESTDIR="${D}" LIBDIR="usr/$(get_libdir)" magneto-loader-install || die "make install failed"
+	emake DESTDIR="${D}" LIBDIR="usr/lib" magneto-loader-install || die "make install failed"
 }
