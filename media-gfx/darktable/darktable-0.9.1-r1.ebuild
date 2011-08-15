@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/darktable/darktable-0.9-r1.ebuild,v 1.1 2011/07/21 08:55:05 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/darktable/darktable-0.9.1-r1.ebuild,v 1.1 2011/08/14 23:38:26 radhermit Exp $
 
 EAPI="4"
 if [[ ${PV} == "9999" ]]; then
@@ -10,7 +10,7 @@ if [[ ${PV} == "9999" ]]; then
 	SCM="git-2"
 	KEYWORDS=""
 else
-	SRC_URI="mirror://sourceforge/project/darktable/darktable/${PV}/${P}.tar.gz"
+	SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 	KEYWORDS="~amd64 ~x86"
 fi
 GCONF_DEBUG="no"
@@ -21,7 +21,7 @@ HOMEPAGE="http://darktable.sf.net/"
 
 LICENSE="GPL-3"
 SLOT="0"
-IUSE="debug flickr gconf gnome-keyring gphoto2 kde nls openmp +slideshow"
+IUSE="debug flickr gconf gnome-keyring gphoto2 kde nls openmp +rawspeed +slideshow"
 
 RDEPEND="
 	dev-db/sqlite:3
@@ -55,9 +55,10 @@ DEPEND="${RDEPEND}
 	openmp? ( >=sys-devel/gcc-4.4[openmp] )"
 
 PATCHES=(
-	"${FILESDIR}"/${P}-automagic-deps.patch
+	"${FILESDIR}"/${PN}-0.9-automagic-deps.patch
 	"${FILESDIR}"/${P}-system-libraw.patch
-	"${FILESDIR}"/${P}-cflags.patch
+	"${FILESDIR}"/${P}-no-rawspeed.patch
+	"${FILESDIR}"/${PN}-0.9-cflags.patch
 )
 
 src_prepare() {
@@ -77,6 +78,7 @@ src_configure() {
 		$(cmake-utils_use_use kde KWALLET)
 		$(cmake-utils_use_use nls NLS)
 		$(cmake-utils_use_use openmp OPENMP)
+		$(cmake-utils_use !rawspeed DONT_USE_RAWSPEED)
 		$(cmake-utils_use_build slideshow SLIDESHOW)
 		-DDONT_INSTALL_GCONF_SCHEMAS=ON
 		-DINSTALL_IOP_EXPERIMENTAL=ON

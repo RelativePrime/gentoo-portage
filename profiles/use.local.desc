@@ -2020,6 +2020,7 @@ media-gfx/brlcad:benchmarks - Run benchmarks during test phase (need test option
 media-gfx/comix:rar - Pulls app-arch/unrar for rar file support
 media-gfx/darktable:flickr - Add support for uploading photos to flickr
 media-gfx/darktable:gconf - Add support for the gconf backend
+media-gfx/darktable:rawspeed - Enable the rawspeed backend
 media-gfx/darktable:slideshow - Build the opengl slideshow viewer
 media-gfx/digikam:addressbook - Add support for kdepim
 media-gfx/digikam:geolocation - Add support for marble
