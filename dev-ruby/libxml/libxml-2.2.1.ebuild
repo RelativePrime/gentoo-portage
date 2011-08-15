@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/libxml/libxml-2.0.9.ebuild,v 1.1 2011/06/26 07:03:08 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/libxml/libxml-2.2.1.ebuild,v 1.1 2011/08/15 06:04:02 graaff Exp $
 
 EAPI=2
 
@@ -25,6 +25,8 @@ IUSE=""
 
 RDEPEND="${RDEPEND} dev-libs/libxml2"
 DEPEND="${DEPEND} dev-libs/libxml2"
+
+ruby_add_bdepend "doc? ( dev-ruby/rdoc )"
 
 all_ruby_prepare() {
 	# Remove grancher tasks only needed for publishing the website
