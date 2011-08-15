@@ -1653,6 +1653,7 @@ gnome-base/libgtop:introspection - Use dev-libs/gobject-introspection for intros
 gnome-base/librsvg:gtk3 - Build with gtk+-3 support
 gnome-base/librsvg:tools - Build miscellaneous tools
 gnome-base/nautilus:introspection - Use dev-libs/gobject-introspection for introspection
+gnome-base/nautilus:sendto - Enable the nautilus-sendto extension to send files to various locations/devices
 gnome-extra/avant-window-navigator:thunar - Enables support for the deprecated Thunar VFS layer
 gnome-extra/avant-window-navigator:vala - Enables support for applets written in dev-lang/vala.
 gnome-extra/avant-window-navigator-extras:webkit - Enables support for net-libs/webkit-gtk.
