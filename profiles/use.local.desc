@@ -4332,6 +4332,7 @@ sys-fs/aufs2:hfs - Enable hfs support
 sys-fs/aufs2:inotify - Enable inotify support
 sys-fs/aufs2:kernel-patch - Patch the current kernel for aufs2 support
 sys-fs/aufs2:nfs - Enable support for nfs export
+sys-fs/aufs2:pax_kernel - Apply patch needed for pax enabled kernels
 sys-fs/aufs2:ramfs - Enable initramfs/rootfs support
 sys-fs/btrfs-progs:debug-utils - Build additional utils for debugging
 sys-fs/cryptsetup:dynamic - Build cryptsetup dynamically
