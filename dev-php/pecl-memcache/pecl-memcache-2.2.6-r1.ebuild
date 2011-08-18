@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-php5/pecl-memcache/pecl-memcache-3.0.5-r2.ebuild,v 1.1 2011/01/05 20:52:51 olemarkus Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-php/pecl-memcache/pecl-memcache-2.2.6-r1.ebuild,v 1.1 2011/08/17 18:13:51 olemarkus Exp $
 
 EAPI="2"
 PHP_EXT_NAME="memcache"
@@ -10,7 +10,7 @@ DOCS="README"
 
 inherit php-ext-pecl-r2
 
-KEYWORDS="~amd64 ~hppa ~ppc64 ~x86"
+KEYWORDS="amd64 hppa ppc64 x86"
 
 DESCRIPTION="PHP extension for using memcached."
 LICENSE="PHP-3"
@@ -36,9 +36,6 @@ src_install() {
 	php-ext-source-r2_addtoinifiles "memcache.max_failover_attempts" "20"
 	php-ext-source-r2_addtoinifiles "memcache.chunk_size" "32768"
 	php-ext-source-r2_addtoinifiles "memcache.default_port" "11211"
-	php-ext-source-r2_addtoinifiles "memcache.hash_strategy" "consistent"
+	php-ext-source-r2_addtoinifiles "memcache.hash_strategy" "standard"
 	php-ext-source-r2_addtoinifiles "memcache.hash_function" "crc32"
-	php-ext-source-r2_addtoinifiles "memcache.redundancy" "1"
-	php-ext-source-r2_addtoinifiles "memcache.session_redundancy" "2"
-	php-ext-source-r2_addtoinifiles "memcache.protocol" "ascii"
 }

@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-php5/pecl-memcache/pecl-memcache-3.0.5-r1.ebuild,v 1.9 2011/01/08 18:28:11 ranger Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-php/pecl-memcache/pecl-memcache-3.0.6.ebuild,v 1.1 2011/08/17 18:25:28 olemarkus Exp $
 
 EAPI="2"
 PHP_EXT_NAME="memcache"
@@ -10,7 +10,7 @@ DOCS="README"
 
 inherit php-ext-pecl-r2
 
-KEYWORDS="amd64 hppa ~ppc ppc64 x86"
+KEYWORDS="~amd64 ~hppa ~ppc64 ~x86"
 
 DESCRIPTION="PHP extension for using memcached."
 LICENSE="PHP-3"
@@ -24,9 +24,9 @@ RDEPEND="${DEPEND}"
 # upstream does not ship any testsuite, so the PHPize test-runner fails.
 RESTRICT='test'
 
-src_compile() {
+src_configure() {
 	my_conf="--enable-memcache --with-zlib-dir=/usr $(use_enable session memcache-session)"
-	php-ext-pecl-r2_src_compile
+	php-ext-source-r2_src_configure
 }
 
 src_install() {
