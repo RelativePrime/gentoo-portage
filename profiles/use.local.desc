@@ -176,7 +176,8 @@ app-arch/cabextract:extra-tools - Install experimental tools: wince_info and win
 app-arch/cfv:bittorrent - Enable support for checking .torrent files
 app-arch/dpkg:dselect - Build the dselect package-management frontend
 app-arch/dump:ermt - encrypted rmt support
-app-arch/file-roller:nautilus - Enable file-roller to integrate with gnome-base/nautilus by providing entries in its context menu.
+app-arch/file-roller:nautilus - Enable file-roller to integrate with gnome-base/nautilus by providing entries in its context menu
+app-arch/file-roller:packagekit - Enable support for the distro-neutral package manager GUI app-admin/packagekit
 app-arch/gzip:pic - disable optimized assembly code that is not PIC friendly
 app-arch/libarchive:bzip2 - Allow accessing bzip2-compressed archives through libbz2 (which comes with app-arch/bzip2). This only affects libarchive's native support: bsdtar will keep using bunzip2 as a filter if that's not built-in.
 app-arch/libarchive:static - Build bsdtar and bsdcpio as static archives, removing dependencies over the enabled compression libraries (lzma, lzmadec, libbz2, zlib).
@@ -212,7 +213,8 @@ app-benchmarks/jmeter:beanshell - Enable BeanShell scripting support
 app-cdr/backlite:mplayer - Add support for mplayer preview in addition to X11 and phonon
 app-cdr/brasero:introspection - Use dev-libs/gobject-introspection for introspection
 app-cdr/brasero:libburn - Enable dev-libs/libburn backend
-app-cdr/brasero:nautilus - Build gnome-base/nautilus extension
+app-cdr/brasero:nautilus - Build the gnome-base/nautilus extension
+app-cdr/brasero:packagekit - Enable support for the distro-neutral package manager GUI app-admin/packagekit
 app-cdr/brasero:playlist - Enable support for playlists through dev-libs/totem-pl-parser
 app-cdr/cdemu:cdemud - Pull app-cdr/cdemud dependency, useful in chroot environment (bug #315491). Do not disable until you know what you are doing.
 app-cdr/cdrdao:gcdmaster - Enable building of gcdmaster application
@@ -3672,9 +3674,10 @@ net-misc/tor:upnp - Enable Universal Plug and Play
 net-misc/vde:pcap - Enable the pcap-based plugin that allows creating a switch against a real interface.
 net-misc/vde:ssl - Enable the cryptcab plugin that allows creating an encrypted virtual cable.
 net-misc/vidalia:tor - Allow to use a local tor setup
-net-misc/vinagre:applet - Enable vinagre applet for gnome-base/gnome-panel.
-net-misc/vinagre:ssh - Enable ssh plugin.
-net-misc/vinagre:telepathy - Enable access to remote desktop via a telepathy client.
+net-misc/vinagre:applet - Enable vinagre applet for gnome-base/gnome-panel
+net-misc/vinagre:introspection - Use dev-libs/gobject-introspection for introspection
+net-misc/vinagre:ssh - Enable ssh plugin using x11-libs/vte
+net-misc/vinagre:telepathy - Enable access to remote desktop via a net-libs/telepathy-glib client
 net-misc/vino:telepathy - Enable desktop sharing through a telepathy client
 net-misc/vpnc:hybrid-auth - Enable hybrid authentication (certificates), only if not redistributed as compiled binary
 net-misc/vpnc:openssl - Use dev-libs/openssl for hybrid-auth instead of net-libs/gnutls, may cause license issues when redistributing.
@@ -3831,7 +3834,8 @@ net-wireless/bluez:old-daemons - Install old daemons like hidd and sdpd that are
 net-wireless/bluez:pnat - Enable pnat plugin
 net-wireless/bluez:test-programs - Install tools for testing of various Bluetooth functions
 net-wireless/gnome-bluetooth:introspection - Use dev-libs/gobject-introspection for introspection
-net-wireless/gnome-bluetooth:nautilus - Build nautilus-sendto plugin
+net-wireless/gnome-bluetooth:nautilus - Build the gnome-extra/nautilus-sendto plugin
+net-wireless/gnome-bluetooth:sendto - Build the gnome-extra/nautilus-sendto plugin
 net-wireless/hostapd:debug - Enables debugging
 net-wireless/hostapd:logwatch - Install support files for sys-app/logwatch
 net-wireless/hostapd:madwifi - Add support for madwifi (Atheros chipset)
