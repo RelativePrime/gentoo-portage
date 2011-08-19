@@ -1255,6 +1255,7 @@ dev-php/eaccelerator:doccommentinclusion - If you want eAccelerator to retain do
 dev-php/eaccelerator:inode - Use inode-based caching
 dev-php/smarty-docs:html - Install the documentation in HTML format
 dev-php/smarty-docs:pdf - Install the documentation in PDF format
+dev-php5/pecl-memcached:igbinary - Enable support for the igbinary serializer
 dev-php5/php-gtk:glade - Enable libglade support
 dev-php5/php-gtk:libsexy - Enable libsexy support
 dev-php5/php-gtk:mozembed - Enable GtkMozembed support
