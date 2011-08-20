@@ -1447,6 +1447,7 @@ dev-util/metro:ccache - Enable support for ccache
 dev-util/metro:git - Enable support for git snapshots
 dev-util/metro:threads - Enable support for pbzip2 tarball packing/unpacking
 dev-util/mono-tools:webkit - Use net-libs/webkit-gtk for rendering.
+dev-util/monodevelop:git - Enable Git version control support
 dev-util/nemiver:memoryview - Enable the optional hexadecimal memory inspection with app-editors/ghex.
 dev-util/netbeans:keychain - enables support for keychain in netbeans start script
 dev-util/nsis:config-log - Enable the logging facility (useful in debugging installers)
