@@ -1,6 +1,13 @@
 # ChangeLog for net-analyzer/mrtg-ping-probe
-# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/mrtg-ping-probe/ChangeLog,v 1.4 2008/01/18 19:10:36 armin76 Exp $
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/mrtg-ping-probe/ChangeLog,v 1.6 2011/08/20 20:27:48 jer Exp $
+
+  20 Aug 2011; Jeroen Roovers <jer@gentoo.org> mrtg-ping-probe-2.2.0.ebuild:
+  Set proper DEPEND/RDEPEND. Make sed die(). Remove default src_compile().
+  Quote variables.
+
+  20 Aug 2011; Jeroen Roovers <jer@gentoo.org> metadata.xml:
+  Remove useless maintainer tag.
 
   18 Jan 2008; Raúl Porcel <armin76@gentoo.org>
   mrtg-ping-probe-2.2.0.ebuild:
