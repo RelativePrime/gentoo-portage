@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-libs/glibc/glibc-2.14.ebuild,v 1.7 2011/08/23 15:52:19 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-libs/glibc/glibc-2.14.ebuild,v 1.8 2011/08/23 18:37:57 vapier Exp $
 
 inherit eutils versionator libtool toolchain-funcs flag-o-matic gnuconfig multilib
 
@@ -13,15 +13,23 @@ RESTRICT="strip" # strip ourself #46186
 EMULTILIB_PKG="true"
 
 # Configuration variables
-if [[ ${PV} == *_p* ]] ; then
-RELEASE_VER=${PV%_p*}
-BRANCH_UPDATE=""
-SNAP_VER=${PV#*_p}
-else
-RELEASE_VER=${PV}
+RELEASE_VER=""
 BRANCH_UPDATE=""
 SNAP_VER=""
-fi
+case ${PV} in
+9999*)
+	EGIT_REPO_URIS=( "git://sourceware.org/git/glibc.git" "git://sourceware.org/git/glibc-ports.git" )
+	EGIT_SOURCEDIRS=( "${S}" "${S}/ports" )
+	inherit git-2
+	;;
+*_p*)
+	RELEASE_VER=${PV%_p*}
+	SNAP_VER=${PV#*_p}
+	;;
+*)
+	RELEASE_VER=${PV}
+	;;
+esac
 MANPAGE_VER=""                                 # pregenerated manpages
 INFOPAGE_VER=""                                # pregenerated infopages
 LIBIDN_VER=""                                  # it's integrated into the main tarball now
@@ -32,7 +40,7 @@ NPTL_KERN_VER=${NPTL_KERN_VER:-"2.6.9"}        # min kernel version nptl require
 #LT_KERN_VER=${LT_KERN_VER:-"2.4.1"}           # min kernel version linuxthreads requires
 
 IUSE="debug gd glibc-omitfp hardened multilib nls selinux profile vanilla crosscompile_opts_headers-only ${LT_VER:+glibc-compat20 nptl nptlonly}"
-S=${WORKDIR}/glibc-${RELEASE_VER}${SNAP_VER:+-${SNAP_VER}}
+[[ -n ${RELEASE_VER} ]] && S=${WORKDIR}/glibc-${RELEASE_VER}${SNAP_VER:+-${SNAP_VER}}
 
 # Here's how the cross-compile logic breaks down ...
 #  CTARGET - machine that will target the binaries
@@ -123,7 +131,7 @@ SRC_URI=$(
 		TARNAME="${PN}-${RELEASE_VER}"
 		[[ -n ${PORTS_VER} ]] && PORTS_VER=${SNAP_VER}
 		upstream_uris ${TARNAME}-${SNAP_VER}.tar.bz2
-	else
+	elif [[ -z ${EGIT_REPO_URIS} ]] ; then
 		upstream_uris ${TARNAME}-${RELEASE_VER}.tar.bz2
 	fi
 	[[ -n ${LIBIDN_VER}    ]] && upstream_uris glibc-libidn-${LIBIDN_VER}.tar.bz2
