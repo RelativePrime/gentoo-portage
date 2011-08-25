@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-wireless/madwifi-ng-tools/madwifi-ng-tools-0.9.4.4136.20110203.ebuild,v 1.1 2011/04/30 17:03:41 pva Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/madwifi-ng-tools/madwifi-ng-tools-0.9.4.4165.20110816.ebuild,v 1.1 2011/08/25 07:35:36 pva Exp $
 
 EAPI="2"
 
