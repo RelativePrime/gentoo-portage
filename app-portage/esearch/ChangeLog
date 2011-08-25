@@ -1,6 +1,20 @@
 # ChangeLog for app-portage/esearch
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-portage/esearch/ChangeLog,v 1.65 2011/08/24 21:17:48 fuzzyray Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-portage/esearch/ChangeLog,v 1.69 2011/08/25 00:28:11 darkside Exp $
+
+  25 Aug 2011; Jeremy Olexa <darkside@gentoo.org> esearch-0.7.2-r2.ebuild:
+  add prefix keywords as tested in prefix overlay
+
+  25 Aug 2011; Paul Varner <fuzzyray@gentoo.org>
+  files/0.7.2-update-shebang-lines.patch:
+  Fix update-shebang-line patch so esync does not error with command not found
+
+*esearch-0.7.2-r2 (24 Aug 2011)
+
+  24 Aug 2011; Paul Varner <fuzzyray@gentoo.org>
+  +files/0.7.2-make-prefix-aware.patch,
+  +files/0.7.2-update-shebang-lines.patch, +esearch-0.7.2-r2.ebuild:
+  Revision bump to make esearch-0.7.2 prefix aware.
 
 *esearch-9999 (24 Aug 2011)
 
