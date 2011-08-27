@@ -1,10 +1,20 @@
 # ChangeLog for profile directory
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5653 2011/08/27 06:55:45 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5656 2011/08/27 11:13:35 scarabeus Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
+
+  28 Aug 2011; Tomáš Chvátal <scarabeus@gentoo.org> package.mask:
+  Add p.mask entry for grub-1.99.
+
+  28 Aug 2011; Tomáš Chvátal <scarabeus@gentoo.org>
+  desc/grub_platforms.desc:
+  Split efi platform to efi-32 and efi-64 as efi-32 is not almost used.
+
+  27 Aug 2011; Patrick Lauer <patrick@gentoo.org> package.mask:
+  Removing phoronix-test-suite from php 5.2 mask
 
   27 Aug 2011; Michał Górny <mgorny@gentoo.org> license_groups, repo_name:
   Add zpaq (modified MIT) to the list of GPL-COMPATIBLE licenses.
