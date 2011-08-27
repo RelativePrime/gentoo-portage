@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-base/xorg-server/xorg-server-1.10.99.901.ebuild,v 1.3 2011/08/16 23:53:59 mattst88 Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-base/xorg-server/xorg-server-1.11.0.ebuild,v 1.2 2011/08/27 09:49:02 chithanh Exp $
 
 EAPI=4
 
@@ -62,7 +62,7 @@ DEPEND="${RDEPEND}
 	>=x11-proto/damageproto-1.1
 	>=x11-proto/fixesproto-4.1
 	>=x11-proto/fontsproto-2.0.2
-	>=x11-proto/glproto-1.4.11
+	>=x11-proto/glproto-1.4.14
 	>=x11-proto/inputproto-1.9.99.902
 	>=x11-proto/kbproto-1.0.3
 	>=x11-proto/randrproto-1.2.99.3
@@ -78,11 +78,11 @@ DEPEND="${RDEPEND}
 	>=x11-proto/xf86rushproto-1.1.2
 	>=x11-proto/xf86vidmodeproto-2.2.99.1
 	>=x11-proto/xineramaproto-1.1.3
-	>=x11-proto/xproto-7.0.17
+	>=x11-proto/xproto-7.0.22
 	dmx? ( >=x11-proto/dmxproto-2.2.99.1 )
 	!minimal? (
 		>=x11-proto/xf86driproto-2.1.0
-		>=x11-proto/dri2proto-2.3
+		>=x11-proto/dri2proto-2.6
 		>=x11-libs/libdrm-2.4.20
 	)"
 
@@ -188,9 +188,6 @@ pkg_postinst() {
 	eselect opengl set xorg-x11 --use-old
 
 	if [[ ${PV} != 9999 && $(get_version_component_range 2 ${REPLACING_VERSIONS}) != $(get_version_component_range 2 ${PV}) ]]; then
-		elog "You should consider reading upgrade guide for this release:"
-		elog "	http://www.gentoo.org/proj/en/desktop/x/x11/xorg-server-$(get_version_component_range 1-2)-upgrade-guide.xml"
-		echo
 		ewarn "You must rebuild all drivers if upgrading from <xorg-server-$(get_version_component_range 1-2)"
 		ewarn "because the ABI changed. If you cannot start X because"
 		ewarn "of module version mismatch errors, this is your problem."
