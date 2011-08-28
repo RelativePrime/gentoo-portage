@@ -4404,6 +4404,14 @@ sys-fs/aufs2:kernel-patch - Patch the current kernel for aufs2 support
 sys-fs/aufs2:nfs - Enable support for nfs export
 sys-fs/aufs2:pax_kernel - Apply patch needed for pax enabled kernels
 sys-fs/aufs2:ramfs - Enable initramfs/rootfs support
+sys-fs/aufs3:debug - Enable additional debugging support
+sys-fs/aufs3:fuse - Enable fuse support
+sys-fs/aufs3:hfs - Enable hfs support
+sys-fs/aufs3:inotify - Enable inotify support
+sys-fs/aufs3:kernel-patch - Patch the current kernel for aufs2 support
+sys-fs/aufs3:nfs - Enable support for nfs export
+sys-fs/aufs3:pax_kernel - Apply patch needed for pax enabled kernels
+sys-fs/aufs3:ramfs - Enable initramfs/rootfs support
 sys-fs/btrfs-progs:debug-utils - Build additional utils for debugging
 sys-fs/cryptsetup:dynamic - Build cryptsetup dynamically
 sys-fs/dmraid:dietlibc - Compile against dev-libs/dietlibc
