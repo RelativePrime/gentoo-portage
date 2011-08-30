@@ -3164,7 +3164,6 @@ net-im/empathy:webkit - Build support for Adium-style HTML-based conversation wi
 net-im/gajim:gmail - Depend on net-dns/bind-tools to get gmail chats working
 net-im/gajim:idle - Enable idle module
 net-im/gajim:srv - SRV capabilities
-net-im/gajim:trayicon - Enable support for trayicon
 net-im/gajim:xhtml - Enable XHTML support
 net-im/gnugadu:tlen - Enable Tlen.pl protocol support
 net-im/jabberd2:memdebug - Enable nad and pool debug. Requires USE="debug" to be set.
