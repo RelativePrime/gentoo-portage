@@ -1289,6 +1289,7 @@ dev-python/django-extensions:graphviz - Create a diagram of your database entity
 dev-python/django-extensions:s3 - Upload your media files to S3.
 dev-python/django-extensions:vcard - Export your users email addresses to the vcard format.
 dev-python/docutils:glep - Install support for GLEPs
+dev-python/icalendar:doc - Generate examples and other extra documentation
 dev-python/jinja:i18n - Enables support for i18n with dev-python/Babel
 dev-python/kaa-base:tls - SSL/TLS support via dev-python/tlslite
 dev-python/ldaptor:web - enable the web front end for ldaptor (uses dev-python/nevow)
@@ -4192,6 +4193,7 @@ sys-apps/hal:doc - Generates documentation that describes HAL's fdi format.
 sys-apps/hal:laptop - Adds support for power management scripts (sys-power/pm-utils)
 sys-apps/hal:selinux - Installs SELinux policies and links HAL to the SELinux libraries.
 sys-apps/hwdata-gentoo:binary-drivers - Adds support for ATI/NVIDIA binary drivers
+sys-apps/hwloc:numa - Add support for numa memory allocation
 sys-apps/ipmitool:openipmi - Use the system OpenIPMI implementation.
 sys-apps/iproute2:iptables - include support for iptables filtering
 sys-apps/kexec-tools:lzma - Enables support for LZMA compressed kernel images
@@ -4443,6 +4445,7 @@ sys-fs/ntfs3g:external-fuse - Use external FUSE library instead of internal one.
 sys-fs/ntfs3g:ntfsprogs - Include internal version of ntfsprogs. This will block sys-fs/ntfsprogs.
 sys-fs/ntfs3g:udev - Install udev rule to make udisks use ntfs-3g instead of the kernel NTFS driver.
 sys-fs/ntfsprogs:fuse - Build a FUSE module
+sys-fs/ocfs2-tools:external - Enable external locking
 sys-fs/owfs:ftpd - Enable building the OWFS FTP server (owftpd)
 sys-fs/owfs:fuse - Enable building the FUSE-based OWFS client (owfs)
 sys-fs/owfs:httpd - Enable building the OWFS web server (owhttpd)
@@ -4496,6 +4499,7 @@ sys-kernel/mips-sources:ip32r10k - Enables experimental support for IP32 R10K ke
 sys-kernel/openvz-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/pf-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/pf-sources:experimental - Apply patches that are considered experimental. For more information, check out the ChangeLog or the ebuild that interests you.
+sys-kernel/rt-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/sparc-sources:ultra1 - If you have a SUN Ultra 1 with a HME interface
 sys-kernel/tuxonice-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/vanilla-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
