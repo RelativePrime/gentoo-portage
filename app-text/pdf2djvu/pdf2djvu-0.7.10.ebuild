@@ -1,8 +1,8 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/pdf2djvu/pdf2djvu-0.7.7.ebuild,v 1.1 2011/04/02 06:17:41 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/pdf2djvu/pdf2djvu-0.7.10.ebuild,v 1.1 2011/08/31 04:18:49 radhermit Exp $
 
-EAPI=2
+EAPI=4
 inherit toolchain-funcs
 
 DESCRIPTION="convert PDF files to DjVu ones"
@@ -36,11 +36,11 @@ src_configure() {
 
 src_test() {
 	if use graphicsmagick; then
-		emake test || die
+		emake test
 	fi
 }
 
 src_install() {
-	emake DESTDIR="${D}" install || die
+	emake DESTDIR="${D}" install
 	dodoc doc/{changelog,*.txt}
 }

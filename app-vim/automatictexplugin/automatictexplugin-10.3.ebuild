@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-vim/automatictexplugin/automatictexplugin-9.7.1.ebuild,v 1.1 2011/07/15 06:02:15 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-vim/automatictexplugin/automatictexplugin-10.3.ebuild,v 1.1 2011/08/31 02:44:21 radhermit Exp $
 
 EAPI="4"
 VIM_PLUGIN_VIM_VERSION="7.3"
