@@ -3243,6 +3243,7 @@ net-im/vacuum:adiummessagestyle - Use UI styles created for Adium
 net-im/vacuum:annotations - Enable adding comments to the contacts in the roster
 net-im/vacuum:autostatus - Change the status in accordance with the time of inactivity
 net-im/vacuum:avatars - Enable assigning and displaying avatars
+net-im/vacuum:birthdayreminder - Reminds about birthdays of your friends
 net-im/vacuum:bitsofbinary - Allow other modules to receive or send a small amount of binary data in XMPP stanza
 net-im/vacuum:bookmarks - Enable creating bookmarks of the Jabber conferences and Web pages
 net-im/vacuum:captchaforms - Perform tests for humanity outside of Web browser
