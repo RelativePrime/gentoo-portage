@@ -1,6 +1,17 @@
 # ChangeLog for net-nds/rpcbind
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-nds/rpcbind/ChangeLog,v 1.12 2011/04/24 17:50:22 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-nds/rpcbind/ChangeLog,v 1.15 2011/09/02 20:10:55 vapier Exp $
+
+  02 Sep 2011; Mike Frysinger <vapier@gentoo.org> rpcbind-0.2.0.ebuild:
+  Oops, lost some KEYWORDS there ... back to stable.
+
+  02 Sep 2011; Mike Frysinger <vapier@gentoo.org> rpcbind-0.2.0.ebuild,
+  +files/rpcbind-0.2.0-pkgconfig.patch, rpcbind-9999.ebuild:
+  Add pkg-config patch from upstream.
+
+  02 Sep 2011; Mike Frysinger <vapier@gentoo.org> rpcbind-0.2.0.ebuild,
+  rpcbind-9999.ebuild:
+  Migrate to EAPI=2 for fun.
 
   24 Apr 2011; Raúl Porcel <armin76@gentoo.org> rpcbind-0.2.0.ebuild:
   sparc stable wrt #358509
