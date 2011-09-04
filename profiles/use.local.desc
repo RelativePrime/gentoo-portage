@@ -1139,7 +1139,10 @@ dev-libs/libisofs:verbose-debug - Enable verbose debug messages
 dev-libs/libjit:interpreter - Enable the libjit interpreter
 dev-libs/libjit:long-double - Enable the use of long double for jit_nfloat
 dev-libs/libmail:apop - Enables the APOP authentication method
+dev-libs/libmemcached:gtest - Build with libgtest support.
 dev-libs/libmemcached:hsieh - Use Hsieh hash algorithm.
+dev-libs/libmemcached:libevent - Use the libevent event loop interface.
+dev-libs/libmemcached:tcmalloc - Use the dev-util/google-perftools libraries to replace the malloc() implementation with a possibly faster one.
 dev-libs/libmix:no-net2 - Disable support for net-libs/libpcap and net-libs/libnet
 dev-libs/libp11:doc - Generate and install API documentation for the package.
 dev-libs/libpcre:recursion-limit - Limit match recursion to 8192; if disabled, the default limit is used, which is the same as the match limit.
