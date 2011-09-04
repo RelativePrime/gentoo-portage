@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/docutils/docutils-0.8_pre7031.ebuild,v 1.1 2011/05/11 14:36:27 arfrever Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/docutils/docutils-0.8.1.ebuild,v 1.1 2011/09/04 07:23:00 djc Exp $
 
 EAPI="3"
 SUPPORT_PYTHON_ABIS="1"
@@ -16,7 +16,7 @@ else
 fi
 SRC_URI+=" glep? ( mirror://gentoo/glep-0.4-r1.tbz2 )"
 
-LICENSE="BSD public-domain PYTHON"
+LICENSE="BSD-2 GPL-3 PSF-2 public-domain"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~ppc-aix ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
 IUSE="emacs glep"
@@ -51,8 +51,8 @@ src_compile() {
 
 	pushd tools > /dev/null
 
-	echo PYTHONPATH="../build-$(PYTHON -f --ABI)/lib" "$(PYTHON -f)" $([[ -f ../build-$(PYTHON -f --ABI)/lib/tools/buildhtml.py ]] && echo ../build-$(PYTHON -f --ABI)/lib/tools/buildhtml.py || echo ../tools/buildhtml.py) --input-encoding=utf-8 --stylesheet-path=../html4css1.css --traceback ..
-	PYTHONPATH="../build-$(PYTHON -f --ABI)/lib" "$(PYTHON -f)" $([[ -f ../build-$(PYTHON -f --ABI)/lib/tools/buildhtml.py ]] && echo ../build-$(PYTHON -f --ABI)/lib/tools/buildhtml.py || echo ../tools/buildhtml.py) --input-encoding=utf-8 --stylesheet-path=../html4css1.css --traceback .. || die "buildhtml.py failed"
+	echo PYTHONPATH="../build-$(PYTHON -f --ABI)/lib" "$(PYTHON -f)" $([[ -f ../build-$(PYTHON -f --ABI)/lib/tools/buildhtml.py ]] && echo ../build-$(PYTHON -f --ABI)/lib/tools/buildhtml.py || echo ../tools/buildhtml.py) --input-encoding=utf-8 --stylesheet-path=../html4css1.css --traceback ../docs
+	PYTHONPATH="../build-$(PYTHON -f --ABI)/lib" "$(PYTHON -f)" $([[ -f ../build-$(PYTHON -f --ABI)/lib/tools/buildhtml.py ]] && echo ../build-$(PYTHON -f --ABI)/lib/tools/buildhtml.py || echo ../tools/buildhtml.py) --input-encoding=utf-8 --stylesheet-path=../html4css1.css --traceback ../docs || die "buildhtml.py failed"
 
 	popd > /dev/null
 
@@ -114,6 +114,6 @@ src_install() {
 			insinto $(python_get_sitedir)/docutils/writers
 			doins -r "${GLEP_SRC}/glep_html" || die "doins writer failed"
 		}
-		python_execute_function --action-message 'Installation of GLEP tools with $(python_get_implementation) $(python_get_version)...' installation_of_glep_tools
+		python_execute_function --action-message 'Installation of GLEP tools with $(python_get_implementation_and_version)...' installation_of_glep_tools
 	fi
 }
