@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/shotwell/shotwell-0.10.1.ebuild,v 1.4 2011/09/05 08:36:58 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/shotwell/shotwell-0.11.0.ebuild,v 1.2 2011/09/05 08:36:57 jlec Exp $
 
 EAPI=4
 GCONF_DEBUG="no"
@@ -50,8 +50,7 @@ pkg_setup() {
 
 src_prepare() {
 	epatch \
-		"${FILESDIR}"/0.10-ldflags.patch \
-		"${FILESDIR}"/${P}-libraw-config.patch
+		"${FILESDIR}"/${PV}-ldflags.patch
 	gnome2_src_prepare
 
 	sed -e 's/valac/valac-0.12/' -i plugins/Makefile.plugin.mk || die
