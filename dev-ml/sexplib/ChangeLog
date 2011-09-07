@@ -1,6 +1,17 @@
 # ChangeLog for dev-ml/sexplib
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ml/sexplib/ChangeLog,v 1.9 2011/07/23 15:44:59 tomka Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ml/sexplib/ChangeLog,v 1.11 2011/09/07 15:22:10 aballier Exp $
+
+*sexplib-7.0.3 (07 Sep 2011)
+
+  07 Sep 2011; Alexis Ballier <aballier@gentoo.org> -sexplib-7.0.1.ebuild,
+  +sexplib-7.0.3.ebuild:
+  version bump
+
+*sexplib-7.0.1 (07 Sep 2011)
+
+  07 Sep 2011; Alexis Ballier <aballier@gentoo.org> +sexplib-7.0.1.ebuild:
+  version bump
 
   23 Jul 2011; Thomas Kahle <tomka@gentoo.org> sexplib-5.2.1.ebuild:
   ~x86 per bug 373149
