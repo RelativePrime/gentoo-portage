@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-devel/gettext/gettext-0.18.1.1-r2.ebuild,v 1.3 2011/09/07 02:28:56 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/gettext/gettext-0.18.1.1-r3.ebuild,v 1.1 2011/09/07 03:14:44 vapier Exp $
 
 EAPI="2"
 
@@ -13,7 +13,7 @@ SRC_URI="mirror://gnu/${PN}/${P}.tar.gz"
 LICENSE="GPL-3 LGPL-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd"
-IUSE="acl doc emacs +git java nls nocxx openmp elibc_glibc"
+IUSE="acl doc emacs +git java nls nocxx openmp static-libs elibc_glibc"
 
 DEPEND="virtual/libiconv
 	dev-libs/libxml2
@@ -59,6 +59,7 @@ src_configure() {
 		--with-included-libunistring \
 		$(use_enable acl) \
 		$(use_enable openmp) \
+		$(use_enable static-libs static) \
 		$(use_with git) \
 		--without-cvs
 }
@@ -66,6 +67,7 @@ src_configure() {
 src_install() {
 	emake install DESTDIR="${D}" || die "install failed"
 	use nls || rm -r "${D}"/usr/share/locale
+	use static-libs || rm -f "${D}"/usr/lib*/*.la
 	dosym msgfmt /usr/bin/gmsgfmt #43435
 	dobin gettext-tools/misc/gettextize || die "gettextize"
 
