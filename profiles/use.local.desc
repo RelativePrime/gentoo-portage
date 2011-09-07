@@ -4713,6 +4713,7 @@ www-servers/nginx:nginx_modules_http_slowfs_cache - This module adds the ability
 www-servers/nginx:nginx_modules_http_stub_status - This module provides the ability to get some status from nginx
 www-servers/nginx:nginx_modules_http_sub - Enable support for search and replace text in the nginx response
 www-servers/nginx:nginx_modules_http_upload - Enable support for handling file uploads using multipart/form-data encoding
+www-servers/nginx:nginx_modules_http_upload_progress - This module adds the ability to track POST upload progress via JSON API
 www-servers/nginx:nginx_modules_mail_imap - Enables IMAP proxy support
 www-servers/nginx:nginx_modules_mail_pop3 - Enables POP3 proxy support
 www-servers/nginx:nginx_modules_mail_smtp - Enables SMTP proxy support
