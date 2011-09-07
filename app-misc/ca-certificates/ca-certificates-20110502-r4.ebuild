@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/ca-certificates/ca-certificates-20110502-r3.ebuild,v 1.2 2011/09/07 00:39:11 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/ca-certificates/ca-certificates-20110502-r4.ebuild,v 1.1 2011/09/07 01:47:48 vapier Exp $
 
 EAPI="3"
 
@@ -45,7 +45,7 @@ src_unpack() {
 
 src_prepare() {
 	cd "./${EPREFIX}" || die
-	epatch "${FILESDIR}"/${PN}-20090709-root.patch
+	epatch "${FILESDIR}"/${PN}-20110502-root.patch
 	sed -i -e '/="$ROOT/s:ROOT/:ROOT'"${EPREFIX}"'/:' \
 		usr/sbin/update-ca-certificates || die
 }
@@ -59,7 +59,7 @@ src_compile() {
 	find * -name '*.crt' | LC_ALL=C sort
 	) > "${S}${EPREFIX}"/etc/ca-certificates.conf
 
-	"${S}${EPREFIX}"/usr/sbin/update-ca-certificates --root "${S}"
+	"${S}${EPREFIX}"/usr/sbin/update-ca-certificates --root "${S}" || die
 }
 
 src_install() {
