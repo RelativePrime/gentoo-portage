@@ -1,13 +1,13 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-power/upower/upower-0.9.11.ebuild,v 1.1 2011/05/27 07:01:36 xarthisius Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-power/upower/upower-0.9.13.ebuild,v 1.1 2011/09/08 10:20:46 ssuominen Exp $
 
 EAPI=4
 inherit linux-info
 
 DESCRIPTION="D-Bus abstraction for enumerating power devices and querying history and statistics"
 HOMEPAGE="http://upower.freedesktop.org/"
-SRC_URI="http://upower.freedesktop.org/releases/${P}.tar.bz2"
+SRC_URI="http://upower.freedesktop.org/releases/${P}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -19,7 +19,8 @@ COMMON_DEPEND=">=dev-libs/dbus-glib-0.88
 	sys-apps/dbus
 	>=sys-auth/polkit-0.101-r1
 	introspection? ( dev-libs/gobject-introspection )
-	kernel_linux? ( >=sys-fs/udev-151[extras]
+	kernel_linux? (
+		|| ( >=sys-fs/udev-171[gudev] >=sys-fs/udev-151[extras] )
 		virtual/libusb:1
 		ios? ( >=app-pda/libimobiledevice-0.9.7
 			>=app-pda/libplist-0.12 ) )
