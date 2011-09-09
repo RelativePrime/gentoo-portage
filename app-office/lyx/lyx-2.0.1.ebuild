@@ -1,8 +1,8 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/lyx/lyx-1.6.9.ebuild,v 1.4 2011/05/21 04:25:37 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/lyx/lyx-2.0.1.ebuild,v 1.1 2011/09/09 17:01:01 aballier Exp $
 
-EAPI=2
+EAPI=3
 
 PYTHON_DEPEND="2"
 
@@ -15,15 +15,17 @@ FONT_S="${S}/lib/fonts"
 FONT_SUFFIX="ttf"
 DESCRIPTION="WYSIWYM frontend for LaTeX, DocBook, etc."
 HOMEPAGE="http://www.lyx.org/"
-SRC_URI="ftp://ftp.lyx.org/pub/lyx/stable/1.6.x/${P}.tar.bz2"
+SRC_URI="ftp://ftp.lyx.org/pub/lyx/stable/2.0.x/${P}.tar.xz"
+#SRC_URI="ftp://ftp.lyx.org/pub/lyx/devel/lyx-2.0/rc3/${MY_P}.tar.xz"
 #SRC_URI="ftp://ftp.devel.lyx.org/pub/lyx/stable/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86"
-IUSE="cups debug nls latex monolithic-build html rtf dot docbook dia subversion rcs svg"
+IUSE="cups debug nls +latex xetex luatex monolithic-build html rtf dot docbook dia subversion rcs svg gnumeric +hunspell aspell enchant"
 
-LANGS="ar ca cs de el en es eu fi fr gl he hu id it ja nb nn pl pt ro ru sk tr uk zh_CN zh_TW"
+LANGS="ar ca cs de da el en es eu fi fr gl he hu ia id it ja nb nn pl pt ro ru sk sr sv tr uk zh_CN zh_TW"
+
 for X in ${LANGS}; do
 	IUSE="${IUSE} linguas_${X}"
 done
@@ -41,8 +43,6 @@ COMMONDEPEND="x11-libs/qt-gui:4
 	x11-libs/libXau
 	x11-libs/libXdmcp
 	dev-libs/libxml2
-	app-text/aiksaurus
-	app-text/aspell
 	media-libs/fontconfig
 	media-libs/freetype
 	>=dev-libs/boost-1.34"
@@ -55,12 +55,15 @@ RDEPEND="${COMMONDEPEND}
 		virtual/latex-base
 		app-text/ghostscript-gpl
 		app-text/noweb
+		app-text/dvipng
 		dev-tex/dvipost
 		dev-tex/chktex
 		app-text/ps2eps
 		dev-texlive/texlive-latexextra
 		dev-texlive/texlive-pictures
 		dev-texlive/texlive-science
+		dev-texlive/texlive-genericextra
+		dev-texlive/texlive-fontsrecommended
 		|| (
 			dev-tex/latex2html
 			dev-tex/tth
@@ -68,6 +71,8 @@ RDEPEND="${COMMONDEPEND}
 			dev-tex/tex4ht
 		)
 	)
+	xetex? ( dev-texlive/texlive-xetex )
+	luatex? ( >=dev-texlive/texlive-luatex-2010 )
 	html? ( dev-tex/html2latex )
 	rtf? (
 			dev-tex/latex2rtf
@@ -80,9 +85,14 @@ RDEPEND="${COMMONDEPEND}
 	dia? ( app-office/dia )
 	subversion? ( dev-vcs/subversion )
 	rcs? ( dev-vcs/rcs )
-	svg? ( || ( gnome-base/librsvg media-gfx/inkscape ) )"
+	svg? ( || ( gnome-base/librsvg media-gfx/inkscape ) )
+	gnumeric? ( app-office/gnumeric )
+	hunspell? ( app-text/hunspell )
+	aspell? ( app-text/aspell )
+	enchant? ( app-text/enchant )"
 
 DEPEND="${COMMONDEPEND}
+	sys-devel/bc
 	x11-proto/xproto
 	dev-util/pkgconfig
 	nls? ( sys-devel/gettext )"
@@ -107,7 +117,10 @@ src_configure() {
 		$(use_enable nls) \
 		$(use_enable debug) \
 		$(use_enable monolithic-build) \
-		--with-aspell --without-included-boost --disable-stdlib-debug
+		$(use_with hunspell) \
+		$(use_with aspell) \
+		$(use_with enchant) \
+		--without-included-boost --disable-stdlib-debug
 }
 
 src_install() {
@@ -135,6 +148,11 @@ src_install() {
 	font_src_install
 
 	python_convert_shebangs -r 2 "${D}"/usr/share/${PN}
+
+	if use hunspell ; then
+		dosym /usr/share/myspell /usr/share/lyx/dicts
+		dosym /usr/share/myspell /usr/share/lyx/thes
+	fi
 }
 
 pkg_postinst() {
