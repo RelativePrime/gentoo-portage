@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/minitest/minitest-2.3.0.ebuild,v 1.1 2011/06/18 08:21:18 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/minitest/minitest-2.5.1.ebuild,v 1.1 2011/09/11 06:21:20 graaff Exp $
 
 EAPI=2
 # jruby → tests fail, reported upstream
@@ -19,7 +19,7 @@ HOMEPAGE="http://rubyforge.org/projects/bfts"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x64-solaris ~x86-solaris"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x64-solaris ~x86-solaris"
 IUSE=""
 
 ruby_add_bdepend "
@@ -29,13 +29,15 @@ ruby_add_bdepend "
 		dev-ruby/hoe
 	)"
 
-each_ruby_test() {
+each_ruby_prepare() {
 	case ${RUBY} in
 		*jruby)
-				eqawarn "Skipping tests on JRuby, bug 321055."
+			# Remove failing tests. Upstream claims that these are all
+			# bugs in jruby. By removing the failing tests we can at
+			# least run the remainder. See bug 321055 for details.
+			rm -f test/test_minitest_unit.rb || die
 				;;
 		*)
-				each_fakegem_test
 				;;
 	esac
 }
