@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-wm/cwm/cwm-20110213.ebuild,v 1.4 2011/04/26 11:15:08 tomka Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-wm/cwm/cwm-20110908.ebuild,v 1.1 2011/09/11 21:41:23 xmw Exp $
 
 EAPI=2
 
@@ -8,12 +8,12 @@ inherit eutils toolchain-funcs
 
 DESCRIPTION="OpenBSD fork of calmwm, a clean and lightweight window manager"
 HOMEPAGE="http://www.openbsd.org/cgi-bin/cvsweb/xenocara/app/cwm/
-	https://github.com/chneukirchen/cwm.git"
+	http://github.com/chneukirchen/cwm"
 SRC_URI="mirror://gentoo/${P}.tar.bz2"
 
 LICENSE="ISC"
 SLOT="0"
-KEYWORDS="amd64 arm sparc x86"
+KEYWORDS="~amd64 ~arm ~sparc ~x86"
 IUSE=""
 
 RDEPEND="x11-libs/libXft
@@ -24,13 +24,9 @@ DEPEND="${RDEPEND}
 	sys-devel/bison"
 
 src_prepare() {
-	epatch "${FILESDIR}"/${P}-Makefile.patch
-}
-
-src_compile() {
+	epatch "${FILESDIR}"/${PN}-20110726-Makefile.patch
 	export LDADD="${LDFLAGS}"
 	tc-export CC
-	emake || die
 }
 
 src_install() {

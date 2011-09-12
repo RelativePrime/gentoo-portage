@@ -1,6 +1,13 @@
 # ChangeLog for Gentoo/ARM profile directory
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/arm/ChangeLog,v 1.134 2011/09/07 19:55:13 alexxy Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/arm/ChangeLog,v 1.136 2011/09/11 21:02:32 dilfridge Exp $
+
+  11 Sep 2011; Andreas K. Huettel <dilfridge@gentoo.org> package.mask:
+  Remove the kde-4.7 mask as it is not needed anymore; keywording describes a
+  consistent package set
+
+  11 Sep 2011; Markus Meier <maekke@gentoo.org> use.mask:
+  use.mask mssql, bug #381709
 
   07 Sep 2011; Alexey Shvetsov <alexxy@gentoo.org> package.mask:
   Update kde mask
