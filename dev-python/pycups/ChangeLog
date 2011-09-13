@@ -1,6 +1,10 @@
 # ChangeLog for dev-python/pycups
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pycups/ChangeLog,v 1.37 2011/09/06 22:46:45 reavertm Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pycups/ChangeLog,v 1.40 2011/09/12 22:32:24 reavertm Exp $
+
+  12 Sep 2011; Maciej Mrozowski <reavertm@gentoo.org> pycups-1.9.58.ebuild,
+  pycups-1.9.49.ebuild, pycups-1.9.57.ebuild:
+  Does not build against python3, bug 382579. Bump to EAPI3.
 
   06 Sep 2011; Maciej Mrozowski <reavertm@gentoo.org> metadata.xml:
   My email fixed.
