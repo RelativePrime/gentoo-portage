@@ -1,9 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/gnat-gcc/gnat-gcc-4.3.3-r2.ebuild,v 1.4 2011/01/04 20:18:44 george Exp $
-
-# Need to let configure know where to find stddef.h
-#EXTRA_CONFGCC="${WORKDIR}/usr/lib/include/"
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/gnat-gcc/gnat-gcc-4.3.6.ebuild,v 1.1 2011/09/14 09:28:13 george Exp $
 
 inherit gnatbuild
 
@@ -13,30 +10,37 @@ LICENSE="GMGPL"
 
 IUSE=""
 
-# using new bootstrap
-BOOT_SLOT="4.3"
-
 # SLOT is set in gnatbuild.eclass, depends only on PV (basically SLOT=GCCBRANCH)
 # so the URI's are static.
 SRC_URI="ftp://gcc.gnu.org/pub/gcc/releases/gcc-${PV}/gcc-core-${PV}.tar.bz2
 	ftp://gcc.gnu.org/pub/gcc/releases/gcc-${PV}/gcc-ada-${PV}.tar.bz2
-	amd64? ( mirror://gentoo/gnatboot-${BOOT_SLOT}-amd64.tar.bz2 )
-	sparc? ( mirror://gentoo/gnatboot-${BOOT_SLOT}-sparc.tar.bz2 )
-	x86?   ( mirror://gentoo/gnatboot-${BOOT_SLOT}-i586.tar.bz2 )"
+	amd64? ( mirror://gentoo/gnatboot-${BOOT_SLOT}-amd64.tar.bz2 )"
+#	sparc? ( mirror://gentoo/gnatboot-${BOOT_SLOT}-sparc.tar.bz2 )
+#	x86?   ( http://dev.gentoo.org/~george/src/gnatboot-${BOOT_SLOT}-i686.tar.bz2 )"
 #	ppc?   ( mirror://gentoo/gnatboot-${BOOT_SLOT}-ppc.tar.bz2 )
 
-KEYWORDS="~amd64 ~x86 ~sparc"
+KEYWORDS="~amd64"
 
 # starting with 4.3.0 gnat needs these libs
-DEPEND=">=dev-libs/mpfr-2.3.1
-	>=dev-libs/gmp-4.2.2"
-RDEPEND="${DEPEND}"
+RDEPEND=">=dev-libs/mpfr-2.3.1
+	>=dev-libs/gmp-4.2.2
+	>=sys-libs/zlib-1.1.4
+	>=sys-libs/ncurses-5.2-r2"
+
+DEPEND="${RDEPEND}
+	>=sys-devel/bison-1.875
+	>=sys-libs/glibc-2.8
+	>=sys-devel/binutils-2.15.94"
 
 #QA_EXECSTACK="${BINPATH:1}/gnatls ${BINPATH:1}/gnatbind ${BINPATH:1}/gnatmake
 #	${LIBEXECPATH:1}/gnat1 ${LIBPATH:1}/adalib/libgnat-${SLOT}.so"
 
 src_unpack() {
 	gnatbuild_src_unpack
+
+	# newly added zlib dir is processed by configure even with
+	# --with-systtem-zlib passed, causing toruble on multilib
+	rm -rf "${S}"/zlib
 
 	#fixup some hardwired flags
 	cd "${S}"/gcc/ada
@@ -50,12 +54,6 @@ src_unpack() {
 	sed -i -e 's:(Last3 = "gnatgcc"):(Last3 = "gcc"):' makegpr.adb &&
 	sed -i -e 's:and Nam is "gnatgcc":and Nam is "gcc":' osint.ads ||
 		die	"reversing [gnat]gcc substitution in comments failed"
-
-	# looks like wrapper has problems with all the quotation
-	sed -i -e "/-DREVISION/d" -e "/-DDEVPHASE/d" \
-		-e "s: -DDATESTAMP=\$(DATESTAMP_s)::" "${S}"/gcc/Makefile.in
-	sed -i -e "s: DATESTAMP DEVPHASE REVISION::" \
-		-e "s:PKGVERSION:\"\":" "${S}"/gcc/version.c
 }
 
 src_compile() {
