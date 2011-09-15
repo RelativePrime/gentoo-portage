@@ -1,6 +1,15 @@
 # ChangeLog for dev-embedded/avarice
-# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-embedded/avarice/ChangeLog,v 1.5 2009/08/07 08:53:45 ssuominen Exp $
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-embedded/avarice/ChangeLog,v 1.7 2011/09/15 10:38:57 radhermit Exp $
+
+  15 Sep 2011; Tim Harder <radhermit@gentoo.org> -avarice-2.6.ebuild,
+  -avarice-2.9.ebuild, -avarice-2.10.ebuild, -files/avarice-2.10-gcc44.patch:
+  Remove old.
+
+*avarice-2.11 (15 Sep 2011)
+
+  15 Sep 2011; Tim Harder <radhermit@gentoo.org> +avarice-2.11.ebuild:
+  Version bump.
 
 *avarice-2.10 (07 Aug 2009)
 
