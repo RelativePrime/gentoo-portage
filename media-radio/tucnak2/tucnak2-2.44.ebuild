@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-radio/tucnak2/tucnak2-2.43.ebuild,v 1.2 2011/09/14 18:53:42 tomjbe Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-radio/tucnak2/tucnak2-2.44.ebuild,v 1.1 2011/09/14 18:57:28 tomjbe Exp $
 
 EAPI=2
 inherit eutils autotools
