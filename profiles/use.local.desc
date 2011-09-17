@@ -2940,6 +2940,7 @@ net-analyzer/metasploit:gui - Enable Java GUI
 net-analyzer/munin:asterisk - installs deps for monitoring Asterisk
 net-analyzer/munin:irc - installs deps for monitoring IRC
 net-analyzer/munin:memcached - installs deps for monitoring memcached
+net-analyzer/munin:minimal - installs only the munin-node, applicable if the host is not the munin master installation"
 net-analyzer/nagios-core:lighttpd - install www-servers/lighttpd config
 net-analyzer/nagios-core:web - enable web interface
 net-analyzer/nagios-nrpe:command-args - allow clients to specify command arguments
