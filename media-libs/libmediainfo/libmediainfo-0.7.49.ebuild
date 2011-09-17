@@ -1,10 +1,10 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/libmediainfo/libmediainfo-0.7.48.ebuild,v 1.1 2011/08/17 05:14:32 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libmediainfo/libmediainfo-0.7.49.ebuild,v 1.1 2011/09/16 23:52:03 radhermit Exp $
 
 EAPI="4"
 
-inherit autotools multilib flag-o-matic
+inherit autotools multilib flag-o-matic eutils
 
 MY_PN="MediaInfo"
 DESCRIPTION="MediaInfo libraries"
@@ -17,6 +17,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="curl doc mms static-libs"
 
 RDEPEND="sys-libs/zlib
+	>=dev-libs/tinyxml-2.6.2[stl]
 	>=media-libs/libzen-0.4.20[static-libs=]
 	curl? ( net-misc/curl )
 	mms? ( >=media-libs/libmms-0.6.1[static-libs=] )"
@@ -27,10 +28,15 @@ DEPEND="${RDEPEND}
 S="${WORKDIR}/${MY_PN}Lib/Project/GNU/Library"
 
 src_prepare() {
+	pushd "${WORKDIR}"/${MY_PN}Lib > /dev/null
+	epatch "${FILESDIR}"/${PN}-0.7.48-system-tinyxml.patch
+	popd > /dev/null
+
 	# Don't force -O2 by default
 	sed -i -e "s:-O2::" configure.ac
 
 	append-flags -DMEDIAINFO_LIBMMS_DESCRIBE_SUPPORT=0
+	append-flags -DTIXML_USE_STL
 	eautoreconf
 }
 
