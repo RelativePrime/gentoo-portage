@@ -1,15 +1,15 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-fs/openafs-kernel/openafs-kernel-1.4.12.1.ebuild,v 1.2 2010/06/23 18:23:59 halcy0n Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-fs/openafs-kernel/openafs-kernel-1.4.14.1.ebuild,v 1.1 2011/09/18 21:34:21 vapier Exp $
 
 EAPI="2"
 
-inherit eutils autotools linux-mod versionator toolchain-funcs
+inherit eutils autotools linux-mod versionator toolchain-funcs linux-info
 
-PATCHVER=0.16
+KV_max=2.6.38
 MY_PN=${PN/-kernel}
 MY_P=${MY_PN}-${PV}
-MY_PV=$(get_version_component_range 1-3)
+MY_PV=$(get_version_component_range 1-4)
 PVER="1"
 DESCRIPTION="The OpenAFS distributed file system kernel module"
 HOMEPAGE="http://www.openafs.org/"
@@ -23,11 +23,16 @@ IUSE=""
 
 S=${WORKDIR}/${MY_P}
 
-CONFIG_CHECK="!DEBUG_RODATA ~!AFS_FS"
+CONFIG_CHECK="!DEBUG_RODATA ~!AFS_FS KEYS"
 ERROR_DEBUG_RODATA="OpenAFS is incompatible with linux' CONFIG_DEBUG_RODATA option"
 ERROR_AFS_FS="OpenAFS conflicts with the in-kernel AFS-support.  Make sure not to load both at the same time!"
 
 pkg_setup() {
+	if kernel_is -gt ${KV_max//./ }
+	then
+	  eerror "${P} does not support Linux kernel version ${KV_max} or higher"
+	  die
+	fi
 	linux-mod_pkg_setup
 }
 

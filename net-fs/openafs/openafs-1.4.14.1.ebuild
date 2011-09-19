@@ -1,20 +1,18 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-fs/openafs/openafs-1.6.0_pre2.ebuild,v 1.2 2011/03/20 09:58:35 stefaan Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-fs/openafs/openafs-1.4.14.1.ebuild,v 1.1 2011/09/18 21:35:28 vapier Exp $
 
 EAPI="2"
 
 inherit flag-o-matic eutils autotools toolchain-funcs versionator pam
 
-MY_PV=$(delete_version_separator '_')
-MY_P="${PN}-${MY_PV}"
-S="${WORKDIR}/${MY_P}"
+MY_PV=$(get_version_component_range 1-4)
 PVER="1"
 DESCRIPTION="The OpenAFS distributed file system"
 HOMEPAGE="http://www.openafs.org/"
 # We always d/l the doc tarball as man pages are not USE=doc material
-SRC_URI="http://openafs.org/dl/candidate/${MY_PV}/${MY_P}-src.tar.bz2
-	http://openafs.org/dl/candidate/${MY_PV}/${MY_P}-doc.tar.bz2
+SRC_URI="http://openafs.org/dl/${MY_PV}/${P}-src.tar.bz2
+	http://openafs.org/dl/${MY_PV}/${P}-doc.tar.bz2
 	mirror://gentoo/${P}-patches-${PVER}.tar.bz2"
 
 LICENSE="IBM BSD openafs-krb5-a APSL-2 sun-rpc"
@@ -23,7 +21,7 @@ KEYWORDS="~amd64 ~sparc ~x86"
 IUSE="doc kerberos pam"
 
 RDEPEND="~net-fs/openafs-kernel-${PV}
-pam? ( sys-libs/pam )
+	pam? ( sys-libs/pam )
 	kerberos? ( virtual/krb5 )"
 
 src_prepare() {
@@ -32,8 +30,7 @@ src_prepare() {
 	epatch "${WORKDIR}"/gentoo/patches
 
 	# packaging is f-ed up, so we can't run automake (i.e. eautoreconf)
-	sed -i 's/^\(\s*\)a/\1ea/' regen.sh
-	: # this line makes repoman ok with not calling eautoconf etc. directly
+	sed -i '/^a/s:^:e:' regen.sh
 	skipman=1
 	. regen.sh
 }
@@ -49,6 +46,7 @@ src_configure() {
 	XCFLAGS="${CFLAGS}" \
 	econf \
 		$(use_enable pam) \
+		--enable-largefile-fileserver \
 		--enable-supergroups \
 		--disable-kernel-module \
 		--disable-strip-binaries \
@@ -56,14 +54,14 @@ src_configure() {
 }
 
 src_compile() {
-	emake all_nolibafs || die
+	emake -j1 all_nolibafs || die
 }
 
 src_install() {
 	local CONFDIR=${WORKDIR}/gentoo/configs
 	local SCRIPTDIR=${WORKDIR}/gentoo/scripts
 
-	emake DESTDIR="${D}" install_nolibafs || die
+	emake -j1 DESTDIR="${D}" install_nolibafs || die
 
 	insinto /etc/openafs
 	doins src/afsd/CellServDB || die
