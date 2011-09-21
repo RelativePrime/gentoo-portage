@@ -1,13 +1,13 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/google-chrome/google-chrome-14.0.835.163_p101024.ebuild,v 1.4 2011/09/20 20:04:27 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/google-chrome/google-chrome-14.0.835.186_beta101821.ebuild,v 1.1 2011/09/20 21:16:26 floppym Exp $
 
 EAPI="4"
 
 inherit eutils fdo-mime gnome2-utils multilib pax-utils
 
-MY_PN="${PN}-stable"
-MY_P="${MY_PN}_${PV/_p/-r}"
+MY_PN="${PN}-beta"
+MY_P="${MY_PN}_${PV/_beta/-r}"
 
 DESCRIPTION="The web browser from Google"
 HOMEPAGE="http://www.google.com/chrome"
