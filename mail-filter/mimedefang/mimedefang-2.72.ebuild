@@ -1,38 +1,48 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/mail-filter/mimedefang/mimedefang-2.64.ebuild,v 1.2 2008/03/20 16:28:41 tove Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-filter/mimedefang/mimedefang-2.72.ebuild,v 1.1 2011/09/21 05:55:34 radhermit Exp $
+
+EAPI=4
 
 inherit eutils
 
-DESCRIPTION="A program for Milter supported mail servers that implements antispam, antivirus, and other customizable filtering on email messages"
+DESCRIPTION="Antispam, antivirus and other customizable filtering for MTAs with Milter support"
 HOMEPAGE="http://www.mimedefang.org/"
 SRC_URI="http://www.mimedefang.org/static/${P}.tar.gz"
 LICENSE="GPL-2"
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="clamav"
+IUSE="clamav +poll"
 
-RDEPEND="dev-perl/MIME-tools
+DEPEND=">=dev-perl/MIME-tools-5.412
+	dev-perl/IO-stringy
 	virtual/perl-MIME-Base64
 	dev-perl/Digest-SHA1
 	clamav? ( app-antivirus/clamav )
-	!<mail-mta/postfix-2.4"
-DEPEND="${RDEPEND}
-	|| ( mail-filter/libmilter mail-mta/sendmail )" # libmilter is a static library
+	|| ( mail-filter/libmilter mail-mta/sendmail )"
+RDEPEND="${DEPEND}"
+RESTRICT="test"
 
 pkg_setup() {
 	enewgroup defang
 	enewuser defang -1 -1 -1 defang
 }
 
-src_compile() {
-	econf $(use_enable clamav) $(use_enable clamav clamd) || die "econf failed"
-	emake unstripped || die "emake failed"
+src_prepare() {
+	epatch "${FILESDIR}"/${P}-ldflags.patch
+}
+
+src_configure() {
+	econf \
+		--with-user=defang \
+		$(use_enable poll) \
+		$(use_enable clamav) \
+		$(use_enable clamav clamd)
 }
 
 src_install() {
-	emake DESTDIR="${D}" install || die "emake install failed"
+	emake DESTDIR="${D}" INSTALL_STRIP_FLAG="" install
 
 	fowners defang:defang /etc/mail/mimedefang-filter
 	fperms 644 /etc/mail/mimedefang-filter
