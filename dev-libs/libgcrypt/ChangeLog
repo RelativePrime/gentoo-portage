@@ -1,6 +1,24 @@
 # ChangeLog for dev-libs/libgcrypt
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/libgcrypt/ChangeLog,v 1.149 2011/07/01 21:49:52 hwoarang Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libgcrypt/ChangeLog,v 1.152 2011/09/22 14:44:39 flameeyes Exp $
+
+*libgcrypt-1.5.0-r1 (22 Sep 2011)
+
+  22 Sep 2011; Diego E. Pettenò <flameeyes@gentoo.org>
+  +libgcrypt-1.5.0-r1.ebuild, +files/libgcrypt-multilib-syspath.patch:
+  Revbump: also drop -L flags from libgcrypt-config as done for libgpg-error;
+  avoid forcing PIC code for static libraries (if they are even enabled); use
+  EAPI=4 features; remove .la files if the static libraries are not installed.
+
+  22 Sep 2011; Diego E. Pettenò <flameeyes@gentoo.org>
+  -libgcrypt-1.5.0_beta1-r1.ebuild, -libgcrypt-1.5.0_beta1-r2.ebuild,
+  -files/libgcrypt-1.5.0_beta1-ctr.patch:
+  Remove betas, so that we can remove the (too big) file in FILESDIR.
+
+  22 Sep 2011; Diego E. Pettenò <flameeyes@gentoo.org> libgcrypt-1.5.0.ebuild,
+  +files/libgcrypt-1.5.0-uscore.patch:
+  Use libtool's macro to identify whether to use underscores in names or not.
+  Closes bug #383865.
 
 *libgcrypt-1.5.0 (01 Jul 2011)
 
