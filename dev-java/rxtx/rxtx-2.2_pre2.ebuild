@@ -1,11 +1,12 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-java/rxtx/rxtx-2.1.7.2-r2.ebuild,v 1.5 2011/09/22 07:17:57 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-java/rxtx/rxtx-2.2_pre2.ebuild,v 1.1 2011/09/22 07:14:51 radhermit Exp $
 
-inherit flag-o-matic toolchain-funcs versionator autotools java-pkg-2
+EAPI="4"
 
-MY_PV="$(replace_version_separator 2 -)"
-MY_PV="$(replace_version_separator 3 r ${MY_PV})"
+inherit toolchain-funcs versionator autotools java-pkg-2
+
+MY_PV="$(delete_version_separator 2)"
 MY_P="${PN}-${MY_PV}"
 
 DESCRIPTION="Native lib providing serial and parallel communication for Java"
@@ -14,7 +15,7 @@ SRC_URI="ftp://ftp.qbang.org/pub/rxtx/${MY_P}.zip"
 
 LICENSE="LGPL-2"
 SLOT="2"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="doc source lfd"
 
 RDEPEND=">=virtual/jre-1.4"
@@ -27,18 +28,16 @@ DEPEND=">=virtual/jdk-1.4
 
 S="${WORKDIR}/${MY_P}"
 
-src_unpack() {
-	unpack ${A}
-	cd "${S}"
-
+src_prepare() {
 	# some minor fixes
 	sed -i -e "s:UTS_RELEASE::g" configure.in
 	sed -i -e "s:|1.5\*:|1.5*|1.6*|1.7*:g" configure.in
 	sed -i -e "s:\(\$(JAVADOC)\):\1 -d api:g" Makefile.am
 
 	# some patches
-	epatch "${FILESDIR}/${MY_P}-lfd.diff"
-	epatch "${FILESDIR}/${MY_P}-nouts.diff"
+	epatch "${FILESDIR}/${PN}-2.1-7r2-lfd.diff"
+	epatch "${FILESDIR}/${PN}-2.1-7r2-nouts.diff"
+	epatch "${FILESDIR}/${P}-add-ttyACM.patch"
 
 	# update autotools stuff
 	rm acinclude.m4
@@ -46,21 +45,25 @@ src_unpack() {
 	elibtoolize
 }
 
-src_compile() {
-	econf $(use_enable lfd lockfile_server) || die "econf failed"
-	emake || die "emake failed"
+src_configure() {
+	econf \
+		$(use_enable lfd lockfile_server)
+}
 
-	if use lfd; then
+src_compile() {
+	emake
+
+	if use lfd ; then
 		# see INSTALL in src/ldf
 		$(tc-getCC) ${LDFLAGS} ${CFLAGS} src/lfd/lockdaemon.c -o src/lfd/in.lfd || die "compiling lfd failed"
 	fi
 
-	if use doc; then
-		emake docs || die "failed to emake docs"
+	if use doc ; then
+		emake docs
 	fi
 
 	#Fix for src zip creation
-	if use source; then
+	if use source ; then
 		mkdir -p src_with_pkg/gnu
 		ln -s ../../src src_with_pkg/gnu/io
 	fi
@@ -73,7 +76,7 @@ src_install() {
 	dodoc AUTHORS ChangeLog INSTALL PORTING TODO SerialPortInstructions.txt
 	dohtml RMISecurityManager.html
 
-	if use lfd; then
+	if use lfd ; then
 		insinto /etc/xinetd.d
 		newins "${FILESDIR}/lockfiled.xinetd" lfd
 		dosbin src/lfd/in.lfd
@@ -85,7 +88,7 @@ src_install() {
 }
 
 pkg_postinst() {
-	if use lfd; then
+	if use lfd ; then
 		elog "Don't forget to enable the LockFileServer"
 		elog "daemon (lfd) in /etc/xinetd.d/lfd"
 	else
