@@ -1,10 +1,22 @@
 # ChangeLog for profile directory
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5719 2011/09/22 07:20:45 hwoarang Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5723 2011/09/24 23:32:03 phajdan.jr Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
+
+  24 Sep 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> package.mask:
+  Unmask www-client/chromium-15.x, mask 16.x.
+
+  23 Sep 2011; Jeremy Olexa <darkside@gentoo.org> use.desc:
+  use.desc: Add emphasis that python/perl USE flags are optional
+
+  23 Sep 2011; Arun Raghavan <ford_prefect@gentoo.org> package.mask:
+  Masking media-sound/pavucontrol pre-releases
+
+  23 Sep 2011; Ulrich Mueller <ulm@gentoo.org> updates/3Q-2011:
+  Slotmove net-wireless/iwl1000-ucode-128.50.3.1 from 0 to 3.
 
   22 Sep 2011; Markos Chandras <hwoarang@gentoo.org> package.mask:
   Unmask freeradius

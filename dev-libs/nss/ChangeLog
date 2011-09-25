@@ -1,6 +1,20 @@
 # ChangeLog for dev-libs/nss
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/nss/ChangeLog,v 1.214 2011/09/04 10:14:47 maekke Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/nss/ChangeLog,v 1.218 2011/09/24 18:50:12 grobian Exp $
+
+  24 Sep 2011; Fabian Groffen <grobian@gentoo.org> nss-3.12.11.ebuild:
+  Avoid brute force install_name_tooling by hacking the makefiles
+
+  24 Sep 2011; Fabian Groffen <grobian@gentoo.org> nss-3.12.11.ebuild:
+  Fixup library ids and references, not to use @executable_path on Darwin
+
+  24 Sep 2011; Fabian Groffen <grobian@gentoo.org> nss-3.12.11.ebuild:
+  Fix pkg-config and nss-config for Darwin where the linker doesn't understand
+  (and need) -R arguments
+
+  24 Sep 2011; Fabian Groffen <grobian@gentoo.org> nss-3.12.11.ebuild:
+  Marked ~x64-macos, libnaming fixes, and disable resigning of libs on Darwin,
+  since Darwin doesn't do ELF
 
   04 Sep 2011; Markus Meier <maekke@gentoo.org> nss-3.12.10.ebuild:
   arm stable, bug #379549
