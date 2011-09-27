@@ -1,20 +1,23 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-db/postgresql-docs/postgresql-docs-9.1.0.ebuild,v 1.1 2011/09/17 17:46:25 titanofold Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-db/postgresql-docs/postgresql-docs-8.4.9.ebuild,v 1.1 2011/09/26 18:01:40 patrick Exp $
 
 EAPI="4"
 
 inherit versionator
 
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd ~ppc-macos ~x86-solaris"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd"
 
-SLOT="$(get_version_component_range 1-2)"
-S="${WORKDIR}/postgresql-${PV}"
+# Nothing to test here per 232157
+RESTRICT="test"
 
 DESCRIPTION="PostgreSQL documentation"
 HOMEPAGE="http://www.postgresql.org/"
-SRC_URI="mirror://postgresql/source/v${MY_PV}/postgresql-${PV}.tar.bz2"
+SRC_URI="mirror://postgresql/source/v${PV}/postgresql-${PV}.tar.bz2"
 LICENSE="POSTGRESQL"
+
+S=${WORKDIR}/postgresql-${PV}
+SLOT="$(get_version_component_range 1-2)"
 
 IUSE=""
 
@@ -26,19 +29,16 @@ src_unpack() {
 }
 
 src_install() {
-	dodir /usr/share/doc/${PF}/html
-
 	cd "${S}/doc"
+
+	dodir /usr/share/doc/${PF}/html
+	tar -zxf "postgres.tar.gz" -C "${ED}/usr/share/doc/${PF}/html"
+	fowners root:0 -R /usr/share/doc/${PF}/html
 
 	docinto sgml
 	dodoc src/sgml/*.{sgml,dsl}
-
 	docinto sgml/ref
 	dodoc src/sgml/ref/*.sgml
-
-	docinto html
-	dodoc src/sgml/html/*.html
-	dodoc src/sgml/html/stylesheet.css
 
 	docinto
 	dodoc TODO
