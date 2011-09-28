@@ -1,6 +1,25 @@
 # ChangeLog for www-client/chromium
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/chromium/ChangeLog,v 1.449 2011/09/24 23:28:13 phajdan.jr Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/chromium/ChangeLog,v 1.452 2011/09/27 16:21:26 floppym Exp $
+
+*chromium-16.0.891.0 (27 Sep 2011)
+
+  27 Sep 2011; Mike Gilbert <floppym@gentoo.org> +chromium-16.0.891.0.ebuild:
+  Version bump for dev channel release.
+
+  26 Sep 2011; Mike Gilbert <floppym@gentoo.org> -files/chromium.xml,
+  -files/chromium-cups-r0.patch, -files/chromium-kerberos-r1.patch,
+  -files/chromium-system-libevent-r1.patch,
+  -files/chromium-glibc-2.14-r0.patch, -files/chromium-ffmpeg-build-r0.patch,
+  -files/chromium-kerberos-r0.patch, -files/chromium-launcher-r1.sh,
+  -files/chromium-libgcrypt-r0.patch, -files/chromium-system-vpx-r3.patch,
+  -files/chromium-perl-5.14-r0.patch, -files/chromium-system-vpx-r4.patch,
+  -files/chromium-system-zlib-r0.patch:
+  Remove unused files from FILESDIR.
+
+  26 Sep 2011; Mike Gilbert <floppym@gentoo.org> -chromium-13.0.782.215.ebuild,
+  -chromium-13.0.782.220.ebuild, -chromium-14.0.835.162.ebuild:
+  Remove old versions.
 
 *chromium-15.0.874.21 (24 Sep 2011)
 
