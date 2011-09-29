@@ -691,6 +691,7 @@ app-office/libreoffice:binfilter - Enable support for legacy StarOffice 5.x and 
 app-office/libreoffice:graphite - Enable support for non-Roman fonts via media-gfx/graphite2
 app-office/libreoffice:jemalloc - Use dev-libs/jemalloc for allocations
 app-office/libreoffice:odk - Build the Office Development Kit
+app-office/libreoffice:pdfimport - Build pdf-import extension using app-text/poppler. Note that you don't need this for pdf-export!
 app-office/libreoffice:templates - Enable installation of Sun templates
 app-office/libreoffice:vba - Enable support for VBA compatibility and ActiveX embedding
 app-office/libreoffice:webdav - Adds support for HTTP repositories via net-libs/neon
@@ -3155,6 +3156,10 @@ net-fs/coda:client - Build and install the client components of coda filesystem.
 net-fs/coda:coda_layout - Use legacy filesystem layout instead of FHS compliant one. Note: /coda symlink is installed unconditionally when FHS layout is used. Therefore the /coda namespace is preserved with either layout.
 net-fs/coda:coda_symlinks - Install legacy symlinks when FHS layout has been selected (-coda_layout). You should only need this if you use local scripts or 3rd party apps relying on precise layout. Note: /coda symlink is installed unconditionally, so the namespace is preserved in any case.
 net-fs/coda:server - Build and install the server components of coda filesystem. Note: at least one of client/server flags must be enabled.
+net-fs/netatalk:appletalk - Build support for Apple's AppleTalk (DDP) protocol and its utilities (atalkd, timelord, papd).
+net-fs/netatalk:cups - Add support for net-print/cups printers in papd. This flag is only considered if appletalk USE flag is enabled, and is otherwise ignored.
+net-fs/netatalk:quota - Add support for user quota on various filesystems.
+net-fs/netatalk:ssl - Use dev-libs/openssl to provide DHX User Access Modules. These are not used with most recent versions of OS X and can be kept disabled without risks.
 net-fs/netatalk:xfs - Enable support for XFS Quota
 net-fs/nfs-utils:nfsidmap - Enable support for newer nfsidmap helper
 net-fs/nfs-utils:nfsv3 - Enable support for NFSv3

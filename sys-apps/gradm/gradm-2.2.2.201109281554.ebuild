@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/gradm/gradm-2.2.2.201109241035.ebuild,v 1.1 2011/09/25 13:02:00 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/gradm/gradm-2.2.2.201109281554.ebuild,v 1.1 2011/09/29 17:38:24 blueness Exp $
 
 EAPI=4
 
