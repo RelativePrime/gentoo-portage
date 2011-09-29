@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/tor/tor-0.2.2.32-r2.ebuild,v 1.2 2011/09/14 10:46:56 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/tor/tor-0.2.3.5_alpha.ebuild,v 1.1 2011/09/29 10:37:18 blueness Exp $
 
 EAPI=4
 
@@ -16,10 +16,12 @@ S="${WORKDIR}/${MY_PF}"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
-IUSE="doc tor-hardening +transparent-proxy threads"
+IUSE="+bufferevents doc nat-pmp tor-hardening transparent-proxy threads upnp"
 
 DEPEND="dev-libs/openssl
-	>=dev-libs/libevent-2.0"
+	>=dev-libs/libevent-2.0.14
+	nat-pmp? ( net-libs/libnatpmp )
+	upnp? ( <net-libs/miniupnpc-1.6 )"
 RDEPEND="${DEPEND}"
 
 pkg_setup() {
@@ -40,12 +42,15 @@ src_configure() {
 	# will break tor, but does recommend against -fstrict-aliasing.
 	# We'll filter-flags them here as we encounter them.
 	filter-flags -fstrict-aliasing
-	econf --docdir=/usr/share/doc/${PF}				\
-		$(use_enable doc asciidoc)					\
-		$(use_enable tor-hardening gcc-hardening)	\
-		$(use_enable tor-hardening linker-hardening)\
-		$(use_enable transparent-proxy transparent)	\
-		$(use_enable threads)
+	econf --docdir=/usr/share/doc/${PF} \
+		$(use_enable bufferevents) \
+		$(use_enable doc asciidoc) \
+		$(use_enable nat-pmp) \
+		$(use_enable tor-hardening gcc-hardening) \
+		$(use_enable tor-hardening linker-hardening) \
+		$(use_enable transparent-proxy transparent) \
+		$(use_enable threads) \
+		$(use_enable upnp)
 }
 
 src_install() {

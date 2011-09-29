@@ -1129,6 +1129,7 @@ dev-libs/apr:uuid - Enable UUID support
 dev-libs/atk:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/boost:eselect - Run "eselect boost update" even if version is already selected
 dev-libs/boost:tools - Build and install the boost tools (bcp, quickbook, inspect, wave)
+dev-libs/check:subunit - Enable support for the subunit unit test protocol
 dev-libs/cyberjack:fox - Enable installation of x11-libs/fox based fxcyberjack program
 dev-libs/cyberjack:pcsc-lite - Enable installation of sys-apps/pcsc-lite driver
 dev-libs/cyrus-sasl:authdaemond - Adds Courier-IMAP authdaemond's unix socket support (net-mail/courier-imap, mail-mta/courier)
