@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/ccs-tools/ccs-tools-1.8.0_p20110214.ebuild,v 1.2 2011/09/29 21:48:40 naota Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/ccs-tools/ccs-tools-1.8.3_p20110929.ebuild,v 1.1 2011/09/29 21:09:25 naota Exp $
 
 EAPI=3
 inherit eutils multilib toolchain-funcs
@@ -25,9 +25,7 @@ RDEPEND="${DEPEND}
 S="${WORKDIR}/ccstools"
 
 src_prepare() {
-	epatch "${FILESDIR}/${P}-parallel.patch"
-	epatch "${FILESDIR}/${P}-as-needed.patch"
-	epatch "${FILESDIR}/${P}-ldflags.patch"
+	epatch "${FILESDIR}"/${P}-ldflags.patch
 	sed -i \
 		-e "s:gcc:$(tc-getCC):" \
 		-e "s/\(CFLAGS.*:=\).*/\1 ${CFLAGS}/" \
