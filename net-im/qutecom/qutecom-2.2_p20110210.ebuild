@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-im/qutecom/qutecom-2.2_p20110210.ebuild,v 1.3 2011/03/31 22:18:40 chithanh Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-im/qutecom/qutecom-2.2_p20110210.ebuild,v 1.7 2011/10/03 08:08:29 chithanh Exp $
 
 EAPI="3"
 
@@ -36,7 +36,8 @@ RDEPEND="dev-libs/boost
 	xv? ( x11-libs/libXv )"
 DEPEND="${RDEPEND}
 	app-arch/xz-utils
-	<sys-kernel/linux-headers-2.6.38"
+	media-libs/libv4l
+	sys-kernel/linux-headers"
 
 pkg_setup() {
 	if has_version "<dev-libs/boost-1.41" && has_version ">=dev-libs/boost-1.41"; then
@@ -47,6 +48,16 @@ pkg_setup() {
 	# fails to find its libraries with --as-needed, bug #315045
 	append-ldflags $(no-as-needed)
 }
+
+src_prepare() {
+	# build against >=linux-headers-2.6.38, bug 361181
+	sed -i -e "s|linux/videodev.h|libv4l1-videodev.h|" \
+		-e "s|__u16|uint16_t|" \
+		libs/pixertool/src/v4l/v4l-pixertool.c \
+		libs/webcam/include/webcam/V4LWebcamDriver.h \
+		libs/webcam/src/v4l/V4LWebcamDriver.cpp || die
+}
+
 src_configure() {
 	local mycmakeargs="$(cmake-utils_use_enable portaudio PORTAUDIO_SUPPORT)
 		$(cmake-utils_use_enable alsa PHAPI_AUDIO_ALSA_SUPPORT)

@@ -1,6 +1,22 @@
 # ChangeLog for x11-base/xorg-server
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-base/xorg-server/ChangeLog,v 1.613 2011/09/21 00:26:31 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-base/xorg-server/ChangeLog,v 1.617 2011/10/03 18:00:09 josejx Exp $
+
+  03 Oct 2011; Joseph Jezak <josejx@gentoo.org> xorg-server-1.10.4.ebuild:
+  Marked ppc ppc64 stable for bug #380421.
+
+  02 Oct 2011; Raúl Porcel <armin76@gentoo.org> xorg-server-1.10.4.ebuild:
+  alpha/ia64/sh/sparc stable wrt #380421
+
+  02 Oct 2011; Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org>
+  xorg-server-1.11.1.ebuild:
+  Fix dmx documentation dependency.
+
+*xorg-server-1.11.1 (01 Oct 2011)
+
+  01 Oct 2011; Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org>
+  +xorg-server-1.11.1.ebuild:
+  Version bump, bug #385039. Fixes bug #373547 and bug #379915.
 
   21 Sep 2011; Jeroen Roovers <jer@gentoo.org> xorg-server-1.10.4.ebuild:
   Stable for HPPA (bug #380421).

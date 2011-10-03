@@ -1243,6 +1243,7 @@ dev-libs/xerces-c:threads - Enable threading support through pthread (or other l
 dev-libs/xml-security-c:nss - Use dev-libs/nss for certain crypto operations (configureable at runtime)
 dev-libs/xml-security-c:xalan - Enable support for XSLT and XPath parsing by dev-libs/xalan-c
 dev-libs/xmlrpc-c:abyss - Build the Abyss mini web-server.
+dev-libs/xmlrpc-c:libxml2 - Use dev-libs/libxml2 to parse XML instead of the internal expat library.
 dev-libs/xmlrpc-c:threads - Controls whether to build the Abyss web-server with pthreads or fork 'threading'.
 dev-libs/xmlrpc-c:tools - Build the xmlrpc* tools.
 dev-libs/xmlsec:gcrypt - Install xmlsec-gcrypt library
@@ -1723,6 +1724,7 @@ gnome-base/gnome-panel:bonobo - Enable Bonobo compatibility modules for applets 
 gnome-base/gnome-panel:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-base/gnome-settings-daemon:packagekit - Enable support for the distro-neutral package manager GUI app-admin/packagekit
 gnome-base/gnome-settings-daemon:short-touchpad-timeout - Change the touchpad timeout so that it's effective for fast typists
+gnome-base/gnome-shell:nm-applet - Pull in an automagic dependency on gnome-extra/nm-applet and net-misc/networkmanager, should be removed soon
 gnome-base/gvfs:archive - Enables support for accessing files in archives transparently via app-arch/libarchive
 gnome-base/gvfs:fuse - Enables fuse mount points in $HOME/.gvfs for legacy application access
 gnome-base/gvfs:gdu - Enable sys-apps/gnome-disk-utility integration
@@ -1761,6 +1763,7 @@ gnome-extra/libgda:canvas - Enables support for x11-libs/goocanvas
 gnome-extra/libgda:http - Enable embedded net-libs/libsoup based server
 gnome-extra/libgda:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-extra/libgda:json - Enable support for JSON format
+gnome-extra/libgda:mdb - Enable support for Microsoft Access Database using app-office/mdbtools
 gnome-extra/libgda:sourceview - Enable support for x11-libs/gtksourceview
 gnome-extra/libgsf:gtk - Enable use of gdk in thumbnailer
 gnome-extra/libgsf:thumbnail - Enable libgsf supported formats thumbnailer
@@ -1964,6 +1967,7 @@ mail-client/evolution:clutter - Build with clutter support for animation effects
 mail-client/evolution:connman - Enable net-misc/connman support (requires 'networkmanager' USE flag to be disabled).
 mail-client/evolution:crypt - Enable GPG encryption support using app-crypt/gnupg and app-crypt/pinentry
 mail-client/evolution:ldap - Enable support for fetching contacts from an LDAP or Active Directory server using net-nds/openldap
+mail-client/evolution:map - Enable support for displaying contacts on a map inside evolution using media-libs/libchamplain
 mail-client/evolution:networkmanager - Allows Evolution to automagically toggle online/offline mode by talking to net-misc/networkmanager and getting the current network state
 mail-client/mail-notification:gmail - Enable Gmail mailbox checking
 mail-client/mail-notification:mh - Enable MH mailbox checking
@@ -2565,10 +2569,14 @@ media-sound/qtractor:rubberband - Enable support for in-place audio clip pitch-s
 media-sound/qtscrobbler:cli - Build commandline client
 media-sound/rezound:16bittmp - Use 16bit temporary files (default 32bit float), useful for slower computers
 media-sound/rezound:soundtouch - compile with support for soundtouch
-media-sound/rhythmbox:daap - Enable support for local network music sharing via daap
-media-sound/rhythmbox:lastfm - Enable support for Last.fm scrobbling
-media-sound/rhythmbox:upnp - Enable support for local network music sharing via upnp
-media-sound/rhythmbox:webkit - Enable context panel plugin.
+media-sound/rhythmbox:clutter - Build the visualizer plugin which uses media-libs/clutter and x11-libs/mx
+media-sound/rhythmbox:daap - Build the local network music sharing plugin which uses the DAAP protocol using net-libs/libdmapsharing
+media-sound/rhythmbox:dbus - Allow the im-status plugin to set the status of your IM clients using dev-python/dbus-python
+media-sound/rhythmbox:html - Use net-libs/webkit-gtk for detecting and displaying HTML podcast episode descriptions.
+media-sound/rhythmbox:lastfm - Build a plugin for Last.fm and Librefm scrobbling
+media-sound/rhythmbox:udev - Enable hardware detection via sys-fs/udev replacing the deprecated sys-apps/hal code
+media-sound/rhythmbox:upnp - Build a plugin for local network music sharing which uses UPnP protocols using media-video/coherence, dev-python/louie, and dev-python/twisted
+media-sound/rhythmbox:webkit - Enable context panel plugin
 media-sound/rubyripper:cdrdao - Add support for advanced toc scanning using app-cdr/cdrdao
 media-sound/rubyripper:cli - Build command line interface rubyripper
 media-sound/rubyripper:normalize - Add support for normalizing audio file volume levels
@@ -2640,6 +2648,7 @@ media-tv/mythtv:xvmc - Instructs MythTV to use XvMC for its video output. By def
 media-tv/tvbrowser:themes - Install extra theme packs
 media-tv/xawtv:xext - Enable use of XFree extensions (DGA,VidMode,DPMS)
 media-tv/xawtv:zvbi - Enable VBI Decoding Library for Zapping
+media-tv/xbmc:airplay - enable AirPlay support
 media-tv/xbmc:bluray - Enable playback of Blu-ray filesystems
 media-tv/xbmc:midi - Support MIDI files
 media-tv/xbmc:rsxs - Enable really slick X screensavers
@@ -2648,10 +2657,6 @@ media-tv/xbmc:vaapi - Enables VAAPI (Video Acceleration API) for hardware decodi
 media-tv/xbmc:vdpau - enable support for Video Decode and Presentation API for Unix
 media-tv/xbmc:webserver - Enable internal webserver
 media-tv/xbmc:xrandr - Support X randr extension
-media-tv/xdtv:aqua_theme - Enable graphic theme Aqua-style
-media-tv/xdtv:carbone_theme - Adds the Carbone pixmaps theme for the GUI
-media-tv/xdtv:schedule - Adds the possibility to schedule tv recording via xdtv_record.sh
-media-tv/xdtv:zvbi - Enable VBI Decoding Library for Zapping
 media-tv/xmltv:ar - Argentina tv listing grabber
 media-tv/xmltv:be - Belgium and Luxemburg tv listing grabber
 media-tv/xmltv:brnet - Brazil cable tv listing grabber
@@ -3267,6 +3272,7 @@ net-im/gnugadu:tlen - Enable Tlen.pl protocol support
 net-im/jabberd2:memdebug - Enable nad and pool debug. Requires USE="debug" to be set.
 net-im/kadu:gadu - Enables Gadu communication protocol
 net-im/kadu:phonon - Enables phonon audio plugin
+net-im/kadu:sdk - Install Kadu SDK (cmake module, API headers)
 net-im/kadu:speech - Enables speech module
 net-im/kmess:konqueror - Enable integration with konqueror
 net-im/kmess:libnotify - Enable desktop notifications using the knotify library
@@ -3301,7 +3307,6 @@ net-im/pidgin:meanwhile - Enable meanwhile support for Sametime protocol
 net-im/pidgin:ncurses - Build finch, console interface
 net-im/pidgin:prediction - Enable Contact Availability Prediction plugin
 net-im/pidgin:python - Build libgnt (GLib Ncurses Toolkit used by finch) with python scripting support
-net-im/pidgin:qq - Enable QQ protocol support
 net-im/pidgin:silc - Enable SILC protocol support
 net-im/pidgin:xscreensaver - Use X screensaver protocol extension to monitor idle/active status based on mouse/keyboard events
 net-im/pidgin:zephyr - Enable Zephyr protocol support
@@ -3557,6 +3562,7 @@ net-libs/telepathy-qt4:glib - Enable support for various telepathy/glib related 
 net-libs/webkit-gtk:coverage - Enable code coverage support
 net-libs/webkit-gtk:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/webkit-gtk:jit - Enable JIT javascript compiler (disabling it will cause performance penalty)
+net-libs/webkit-gtk:webgl - Build support for the WebGL HTML API using virtual/opengl
 net-libs/wt:extjs - Build Wt Ext library with JavaScript-only widgets (http://extjs.com/)
 net-libs/wt:fcgi - Compile in FCGI connector
 net-libs/wt:graphicsmagick - Enable GraphicsMagick, for supporting painting to raster images (PNG, GIF, ...) (WRasterImage)
@@ -3679,14 +3685,25 @@ net-misc/dnetstats:kde - Use kdesu to gain root access
 net-misc/dropbear:bsdpty - Add support for legacy BSD pty's rather than dynamic UNIX pty's -- do not use this flag unless you are absolutely sure you actually want it
 net-misc/dropbear:multicall - Build all the programs as one little binary (to save space)
 net-misc/freerdp:debug-assert - Enable assert debugging
-net-misc/freerdp:debug-gdi - Enable debugging of GDI
-net-misc/freerdp:debug-kbd - Enable debugging of keyboard handling
-net-misc/freerdp:debug-nla - Enable debugging of network level authentication
+net-misc/freerdp:debug-certificate - Enable certificate related debug messages
+net-misc/freerdp:debug-chanman - Enable channel manager debug messages
+net-misc/freerdp:debug-dvc - Enable dynamic virtual channel debug messages
+net-misc/freerdp:debug-gdi - Enable graphics debug messages
+net-misc/freerdp:debug-kbd - Enable keyboard related debug messages
+net-misc/freerdp:debug-license - Enable license debug messages
+net-misc/freerdp:debug-nego - Enable negotiation related debug messages
+net-misc/freerdp:debug-nla - Enable authentication related debug messages
 net-misc/freerdp:debug-proto - Enable protocol debugging output
+net-misc/freerdp:debug-rail - Enable RemoteApp debug messages
+net-misc/freerdp:debug-rfx - Enable RemoteFX debug messages
 net-misc/freerdp:debug-serial - Enable debugging of serial code
 net-misc/freerdp:debug-smartcard - Enable debugging of smard-card code
 net-misc/freerdp:debug-sound - Enable debugging of sound code
 net-misc/freerdp:debug-stream-assert - Enable stream assert debugging
+net-misc/freerdp:debug-svc - Enable static virtual channel debug messages
+net-misc/freerdp:debug-transport - Enable transport debug messages
+net-misc/freerdp:debug-x11 - Enable X11 Client debug messages
+net-misc/freerdp:debug-xv - Enable XVideo debug messages
 net-misc/freerdp:gnutls - Use GnuTLS as crypto backend
 net-misc/freerdp:nss - Use NSS as crypto backend
 net-misc/freerdp:polarssl - Use PolarSSL as crypto backend
@@ -3850,6 +3867,7 @@ net-news/liferea:lua - Enable lua scripting
 net-nntp/inn:innkeywords - Enable automatic keyword generation support
 net-nntp/inn:inntaggedhash - Use tagged hash table for history (disables large file support)
 net-nntp/nzbget:parcheck - Enable support for checking PAR archives
+net-nntp/slrn:canlock - Add support for cancel locks via net-libs/canlock
 net-nntp/slrn:uudeview - Add support for yEnc coding and more using dev-libs/uulib
 net-nntp/tin:cancel-locks - Enable Cancel-Lock header functionality (also enables USE=evil)
 net-nntp/tin:etiquette - Enable the display off posting etiquettes
@@ -4446,7 +4464,7 @@ sys-devel/binutils:multitarget - Adds support to binutils for cross compiling (d
 sys-devel/binutils-apple:lto - Add support for Link-Time Optimization with LLVM
 sys-devel/binutils-hppa64:multislot - Allow for multiple versions of binutils to be emerged at once for same CTARGET
 sys-devel/binutils-hppa64:multitarget - Adds support to binutils for cross compiling (does not work with gas)
-sys-devel/clang:alltargets - Build all host targets (default: host only)
+sys-devel/clang:multitarget - Build all host targets (default: host only)
 sys-devel/clang:static-analyzer - Install the Clang static analyzer
 sys-devel/clang:system-cxx-headers - By default, clang++ searchs for C++ headers in a series of hardcoded paths. Enabling this flag will force it to use the active gcc profile ones
 sys-devel/gcc:d - Enable support for the D programming language
@@ -4473,8 +4491,8 @@ sys-devel/gdb:multitarget - Support all known targets in one gdb binary
 sys-devel/gettext:git - When running `autopoint`, use git to store the internal development files; this requires git at runtime, but will be faster/smaller than raw archives
 sys-devel/kgcc64:multislot - Allow for SLOTs to include minor version (eg. 3.3.4 instead of just 3.3)
 sys-devel/libperl:ithreads - Enable Perl threads, has some compatibility problems
-sys-devel/llvm:alltargets - Build all host targets (default: host only)
 sys-devel/llvm:llvm-gcc - Build LLVM with sys-devel/llvm-gcc
+sys-devel/llvm:multitarget - Build all host targets (default: host only)
 sys-devel/llvm:udis86 - Enable support for dev-libs/udis86 disassembler library
 sys-devel/llvm-gcc:bootstrap - Compile the final llvm-gcc executables with llvm-gcc itself
 sys-devel/llvm-gcc:objc - Build support for the Objective C code language
@@ -4712,7 +4730,6 @@ www-client/epiphany:nss - Import passwords from older gecko based www-client/epi
 www-client/firefox:crashreporter - Enable crashreporter for mozilla upstream, debugging symbols are not required for reporting crashes.
 www-client/firefox:custom-optimization - Fine-tune custom compiler optimizations, setting this is not recommended.
 www-client/firefox:ipc - Use inter-process communication between tabs and plugins. Allows for greater stability in case of plugin crashes
-www-client/firefox:methodjit - Enable JIT for JavaScript using MethodJIT for faster JS performance. Hardened users can disable this USE-flag to use MPROTECT on grsecurity kernels.
 www-client/firefox:pgo - Add support for profile-guided optimization using gcc-4.5, for faster binaries. This option will double the compile time.
 www-client/firefox:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
 www-client/firefox:webm - Use system media-libs/libvpx for HTML5 WebM video support.
@@ -4720,7 +4737,6 @@ www-client/google-chrome:plugins - Add system plugins path to launcher
 www-client/icecat:crashreporter - Enable crashreporter for mozilla upstream, debugging symbols are not required for reporting crashes.
 www-client/icecat:custom-optimization - Fine-tune custom compiler optimizations
 www-client/icecat:ipc - Use inter-process communication between tabs and plugins. Allows for greater stability in case of plugin crashes
-www-client/icecat:methodjit - Enable JIT for JavaScript using MethodJIT for faster JS performance. Hardened users can disable this USE-flag to use MPROTECT on grsecurity kernels.
 www-client/icecat:pgo - Add support for profile-guided optimization using gcc-4.5, for faster binaries. This option will double the compile time.
 www-client/icecat:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
 www-client/icecat:webm - Use system libvpx media-libs/libvpx
@@ -4795,6 +4811,7 @@ www-servers/nginx:nginx_modules_http_dav - This module adds the HTTP and WebDAV 
 www-servers/nginx:nginx_modules_http_ey_balancer - This module adds an upstream connection queue to nginx
 www-servers/nginx:nginx_modules_http_flv - This module provides the ability to seek within FLV (Flash) files using time-based offsets.
 www-servers/nginx:nginx_modules_http_gzip_static - Enables support for gzipping static content on disk
+www-servers/nginx:nginx_modules_http_mp4 - This module adds pseudo-streaming support for H.264/AAC in MP4 containers.
 www-servers/nginx:nginx_modules_http_random_index - Pick a random directory index from a directory.
 www-servers/nginx:nginx_modules_http_realip - This module allows to change the client's IP address to value from request header (e. g. X-Real-IP or X-Forwarded-For).
 www-servers/nginx:nginx_modules_http_slowfs_cache - This module adds the ability to cache static files
@@ -5018,6 +5035,7 @@ x11-wm/matchbox-panel:dnotify - Use the linux kernel directory notification feat
 x11-wm/matchbox-panel:lowres - Optimize for low resolution screens.
 x11-wm/musca:apis - Optionally install the experimental `apis' window manager
 x11-wm/musca:xlisten - Optionally install the xlisten utility
+x11-wm/mutter:introspection - Use dev-libs/gobject-introspection for introspection
 x11-wm/openbox:session - Enables support for session managers
 x11-wm/ratpoison:history - Use sys-libs/readline for history handling
 x11-wm/sawfish:pango - Enable pango support

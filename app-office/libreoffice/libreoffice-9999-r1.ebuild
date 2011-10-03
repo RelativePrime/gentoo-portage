@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r1.ebuild,v 1.27 2011/09/29 14:27:25 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r1.ebuild,v 1.33 2011/10/03 09:28:24 scarabeus Exp $
 
 EAPI=3
 
@@ -39,7 +39,11 @@ MODULES="core binfilter dictionaries help"
 if [[ ${PV} != *9999* ]]; then
 	for i in ${DEV_URI}; do
 		for mod in ${MODULES}; do
-			SRC_URI+=" ${i}/${PN}-${mod}-${PV}.tar.bz2"
+			if [[ ${mod} == binfilter ]]; then
+				SRC_URI+=" binfilter? ( ${i}/${PN}-${mod}-${PV}.tar.bz2 )"
+			else
+				SRC_URI+=" ${i}/${PN}-${mod}-${PV}.tar.bz2"
+			fi
 		done
 		unset mod
 	done
@@ -70,7 +74,7 @@ unset EXT_URI
 unset ADDONS_SRC
 
 IUSE="binfilter +branding dbus debug eds gnome +graphite gstreamer gtk +jemalloc
-kde ldap mysql nsplugin odk opengl pdfimport svg templates test +vba webdav"
+kde ldap mysql nsplugin odk opengl pdfimport svg templates test +vba +webdav"
 LICENSE="LGPL-3"
 SLOT="0"
 [[ ${PV} == *9999* ]] || KEYWORDS="~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux"
@@ -87,10 +91,11 @@ COMMON_DEPEND="
 	app-arch/unzip
 	>=app-text/hunspell-1.3.2
 	app-text/mythes
-	>=app-text/libtextcat-3.0
+	>=app-text/libtextcat-3.1
 	app-text/libwpd:0.9[tools]
 	app-text/libwpg:0.2
 	>=app-text/libwps-0.2.2
+	dev-cpp/libcmis
 	dev-db/unixODBC
 	dev-libs/expat
 	>=dev-libs/glib-2.18
@@ -150,9 +155,8 @@ RDEPEND="${COMMON_DEPEND}
 	java? ( >=virtual/jre-1.6 )
 "
 
-# FIXME: l10n after release/branching
 PDEPEND="
-	>=app-office/libreoffice-l10n-3.4
+	>=app-office/libreoffice-l10n-$(get_version_component_range 1-2)
 "
 
 # FIXME: cppunit should be moved to test conditional
@@ -190,7 +194,6 @@ DEPEND="${COMMON_DEPEND}
 "
 
 PATCHES=(
-	"${FILESDIR}/${PN}-3.3.1-neon_remove_SSPI_support.diff"
 )
 
 # Uncoment me when updating to eapi4
@@ -243,6 +246,9 @@ src_unpack() {
 		done
 	else
 		for mod in ${MODULES}; do
+			if [[ ${mod} == binfilter ]] && ! use binfilter; then
+				continue
+			fi
 			mypv=${PV/.9999}
 			[[ ${mypv} != ${PV} ]] && EGIT_BRANCH="${PN}-${mypv/./-}"
 			EGIT_PROJECT="${PN}/${mod}"
@@ -361,6 +367,7 @@ src_configure() {
 		--with-system-jars \
 		--with-system-db \
 		--with-system-dicts \
+		--with-system-libcmis \
 		--with-system-libvisio \
 		--with-system-libexttextcat \
 		--with-system-translate-toolkit \
@@ -395,7 +402,7 @@ src_configure() {
 		--with-external-thes-dir="${EPREFIX}/usr/share/myspell" \
 		--with-external-tar="${DISTDIR}" \
 		--with-lang="" \
-		--with-max-jobs=1 \
+		--with-max-jobs=${jbs} \
 		--with-num-cpus=${jbs} \
 		--with-theme="${themes}" \
 		--with-unix-wrapper=libreoffice \
