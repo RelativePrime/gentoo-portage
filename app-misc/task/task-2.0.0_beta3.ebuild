@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/task/task-2.0.0_beta1.ebuild,v 1.1 2011/09/19 05:59:13 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/task/task-2.0.0_beta3.ebuild,v 1.1 2011/10/04 03:40:54 radhermit Exp $
 
 EAPI=4
 
@@ -30,7 +30,7 @@ src_prepare() {
 	# Don't automatically install scripts
 	sed -i -e '/scripts/d' CMakeLists.txt
 
-	epatch "${FILESDIR}"/${P}-rcdir.patch \
+	epatch "${FILESDIR}"/${PN}-2.0.0_beta1-rcdir.patch \
 		"${FILESDIR}"/${PN}-1.9.4-lua-automagic.patch
 }
 

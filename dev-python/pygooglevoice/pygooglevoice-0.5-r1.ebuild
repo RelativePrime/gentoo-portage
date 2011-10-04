@@ -1,13 +1,13 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pygooglevoice/pygooglevoice-0.5.ebuild,v 1.1 2011/05/30 11:26:39 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pygooglevoice/pygooglevoice-0.5-r1.ebuild,v 1.1 2011/10/04 04:59:51 radhermit Exp $
 
 EAPI="3"
 PYTHON_DEPEND="2:2.6 3"
 SUPPORT_PYTHON_ABIS="1"
 PYTHON_MODNAME="googlevoice"
 
-inherit distutils
+inherit distutils eutils
 
 DESCRIPTION="Python Bindings for the Google Voice API"
 HOMEPAGE="http://code.google.com/p/pygooglevoice/"
@@ -24,6 +24,10 @@ RDEPEND=""
 
 # Requires interactive login
 RESTRICT="test"
+
+src_prepare() {
+	epatch "${FILESDIR}"/${P}-auth.patch
+}
 
 src_test() {
 	testing() {
