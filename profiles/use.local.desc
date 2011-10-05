@@ -803,7 +803,6 @@ app-text/stardict:pronounce - Install WyabdcRealPeopleTTS package (it is just ma
 app-text/stardict:qqwry - Enable QQWry plugin, which provides information (in Chinese language) about geographical positions, owner, etc. for IP addresses
 app-text/sword:lucene - Enable lucene support for faster searching (dev-cpp/clucene)
 app-text/texlive:context - Add support for the ConTeXt format (dev-texlive/texlive-context)
-app-text/texlive:cyrillic - Add support for Cyrillic (dev-texlive/texlive-langcyrillic)
 app-text/texlive:detex - Add support for dev-tex/detex, a filter program that removes the LaTeX (or TeX) control sequences
 app-text/texlive:dvi2tty - Add support for dev-tex/dvi2tty to preview dvi-files on text-only devices
 app-text/texlive:dvipdfm - Add support for app-text/dvipdfm to convert DVI files to PDF
@@ -4339,6 +4338,8 @@ sys-apps/portage:python2 - Use python2 as Python interpreter.
 sys-apps/portage:python3 - Use python3 as Python interpreter.
 sys-apps/pyrenamer:music - Enable support for renaming music
 sys-apps/qingy:opensslcrypt - Encrypt communications between qingy and its GUI using dev-libs/openssl
+sys-apps/razercfg:pm-utils - Installs the pm-utils hooks for suspend/resume and requires sys-power/pm-utils
+sys-apps/razercfg:qt4 - Installs a qt UI. Requires dev-python/pygtk
 sys-apps/s390-tools:fuse - build cmsfs-fuse to read files stored on a z/VM CMS disk
 sys-apps/s390-tools:zfcpdump - build the kernel disk dumping utility
 sys-apps/shadow:audit - Enable support for sys-process/audit
