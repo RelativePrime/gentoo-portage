@@ -471,12 +471,13 @@ app-emulation/xen:acm - Enable the ACM/sHype XSM module from IBM
 app-emulation/xen:flask - Enable the Flask XSM module from NSA
 app-emulation/xen:pae - Enable support for PAE kernels (usually x86-32 with >4GB memory)
 app-emulation/xen:xsm - Enable the Xen Security Modules (XSM)
-app-emulation/xen-tools:acm - Enable the ACM/sHype XSM module from IBM
+app-emulation/xen-tools:acm - Enable the ACM/sHype XSM module from IBM for xen-3
 app-emulation/xen-tools:api - Build the C libxenapi bindings
 app-emulation/xen-tools:flask - Enable the Flask XSM module from NSA
-app-emulation/xen-tools:hvm - Enable support for hardware based virtualization (VT-x,AMD-v
+app-emulation/xen-tools:hvm - Enable support for hardware based virtualization (VT-x,AMD-v)
 app-emulation/xen-tools:ioemu - Enable IOEMU support
 app-emulation/xen-tools:pygrub - Install the pygrub boot loader
+app-emulation/xen-tools:qemu - Enable IOEMU support via the use of qemu-dm
 app-emulation/xen-tools:screen - Enable support for running domain U console in an app-misc/screen session
 app-emulation/xen-tools:xend - Enable support the xend and xm to manage xen
 app-forensics/afflib:ewf - Enable libewf extra formats
@@ -2246,6 +2247,7 @@ media-libs/gstreamer:introspection - Use dev-libs/gobject-introspection for intr
 media-libs/gupnp-dlna:introspection - Use dev-libs/gobject-introspection for introspection
 media-libs/imlib:deprecated - Enable deprecated GTK+-1.2 support
 media-libs/libass:enca - Enables support for charset discovery and conversion.
+media-libs/libass:harfbuzz - Enables OpenType shaping via media-libs/harfbuzz.
 media-libs/libbluray:aacs - Add support for decryption of AACS
 media-libs/libbluray:java - Add support for BD-J
 media-libs/libbluray:utils - Install command-line utilities and examples
