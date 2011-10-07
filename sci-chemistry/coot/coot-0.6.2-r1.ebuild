@@ -1,12 +1,12 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/coot/coot-0.6.2.ebuild,v 1.8 2011/10/07 09:45:59 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/coot/coot-0.6.2-r1.ebuild,v 1.2 2011/10/07 09:37:25 jlec Exp $
 
 EAPI=3
 
 PYTHON_DEPEND="2"
 
-inherit autotools base eutils flag-o-matic python toolchain-funcs versionator
+inherit autotools-utils flag-o-matic python toolchain-funcs versionator
 
 MY_S2_PV=$(replace_version_separator 2 - ${PV})
 MY_S2_P=${PN}-${MY_S2_PV/pre1/pre-1}
@@ -23,7 +23,9 @@ SRC_URI="
 SLOT="0"
 LICENSE="GPL-3"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
-IUSE="+openmp test"
+IUSE="+openmp static-libs test"
+
+AUTOTOOLS_IN_SOURCE_BUILD=1
 
 SCIDEPS="
 	>=sci-libs/ccp4-libs-6.1
@@ -85,7 +87,7 @@ PATCHES=(
 	)
 
 src_prepare() {
-	base_src_prepare
+	autotools-utils_src_prepare
 
 	eautoreconf
 }
@@ -93,21 +95,23 @@ src_prepare() {
 src_configure() {
 	# All the --with's are used to activate various parts.
 	# Yes, this is broken behavior.
-	econf \
-		--includedir='${prefix}/include/coot' \
-		--with-gtkcanvas-prefix="${EPREFIX}/usr" \
-		--with-gtkgl-prefix="${EPREFIX}/usr" \
-		--with-guile \
-		--with-python="${EPREFIX}/usr" \
-		--with-guile-gtk \
-		--with-gtk2 \
-		--with-pygtk \
+	local myeconfargs=(
+		--includedir='${prefix}/include/coot'
+		--with-gtkcanvas-prefix="${EPREFIX}/usr"
+		--with-gtkgl-prefix="${EPREFIX}/usr"
+		--with-guile
+		--with-python="${EPREFIX}/usr"
+		--with-guile-gtk
+		--with-gtk2
+		--with-pygtk
 		$(use_enable openmp)
+		)
+	autotools-utils_src_configure
 }
 
 src_compile() {
-	emake || die "emake failed"
-	python_convert_shebangs $(python_get_version) src/coot_gtk2.py
+	autotools-utils_src_compile
+	python_convert_shebangs $(python_get_version) "${S}"/src/coot_gtk2.py
 	cp "${S}"/src/coot_gtk2.py python/coot.py || die
 }
 

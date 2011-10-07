@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/fast_gettext/fast_gettext-0.5.11.ebuild,v 1.1 2011/05/09 06:30:52 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/fast_gettext/fast_gettext-0.6.0.ebuild,v 1.1 2011/10/07 06:13:07 graaff Exp $
 
 EAPI="4"
 
@@ -10,7 +10,7 @@ USE_RUBY="ruby18 ree18"
 RUBY_FAKEGEM_TASK_DOC=""
 RUBY_FAKEGEM_EXTRADOC="CHANGELOG Readme.md"
 
-RUBY_FAKEGEM_TASK_TEST="spec"
+RUBY_FAKEGEM_TASK_TEST="none"
 
 RUBY_FAKEGEM_EXTRAINSTALL="VERSION"
 
@@ -28,4 +28,8 @@ ruby_add_bdepend "test? ( dev-ruby/rspec:2 dev-ruby/activerecord )"
 
 all_ruby_prepare() {
 	rm Gemfile Gemfile.lock || die
+}
+
+each_ruby_test() {
+	${RUBY} -S rspec spec || die
 }
