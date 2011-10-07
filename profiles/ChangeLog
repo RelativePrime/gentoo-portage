@@ -1,10 +1,34 @@
 # ChangeLog for profile directory
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5757 2011/10/05 19:51:44 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5765 2011/10/06 20:46:41 aballier Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
+
+  06 Oct 2011; Alexis Ballier <aballier@gentoo.org> package.mask:
+  unmask new janestreet ocaml packages
+
+  06 Oct 2011; Alexis Ballier <aballier@gentoo.org> package.mask:
+  ptex is gone, almost one year after its last rites
+
+  06 Oct 2011; Samuli Suominen <ssuominen@gentoo.org> package.mask:
+  Lastrite londonlaw and xpilot-ng.
+
+  06 Oct 2011; Samuli Suominen <ssuominen@gentoo.org> package.mask:
+  Mask crystalspace-1.2 and cel-1.2 for wxGTK-2.6 removal wrt #330683
+
+  06 Oct 2011; Alexis Ballier <aballier@gentoo.org> package.mask:
+  Mask new bin-prot
+
+  06 Oct 2011; Alexis Ballier <aballier@gentoo.org> package.mask:
+  mask new type-conv
+
+  06 Oct 2011; Jeremy Olexa <darkside@gentoo.org> use.desc:
+  Update 'doc' description to enhance end user experience
+
+  06 Oct 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> package.mask:
+  Mask dev-lang/nacl-toolchain-newlib.
 
   05 Oct 2011; Alexis Ballier <aballier@gentoo.org> base/package.use.mask:
   mask media-libs/libass[harfbuzz] as it does not build with the current
