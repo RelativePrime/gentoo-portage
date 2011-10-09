@@ -1,11 +1,11 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/vmware-tools/vmware-tools-8.4.5.324285.ebuild,v 1.1 2011/03/27 15:22:22 vadimk Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/vmware-tools/vmware-tools-8.4.8.491717.ebuild,v 1.1 2011/10/08 18:05:37 vadimk Exp $
 
 inherit versionator vmware-bundle
 
 MY_PV="$(replace_version_separator 3 - $PV)"
-BASE_URI="http://softwareupdate.vmware.com/cds/vmw-desktop/player/3.1.3/324285/linux/packages/"
+BASE_URI="http://softwareupdate.vmware.com/cds/vmw-desktop/player/3.1.5/491717/linux/packages/"
 
 DESCRIPTION="VMware Tools for guest operating systems"
 HOMEPAGE="http://www.vmware.com/products/player/"

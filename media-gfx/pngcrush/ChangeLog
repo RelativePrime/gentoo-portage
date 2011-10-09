@@ -1,6 +1,27 @@
 # ChangeLog for media-gfx/pngcrush
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/pngcrush/ChangeLog,v 1.62 2011/09/18 08:41:31 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/pngcrush/ChangeLog,v 1.66 2011/10/08 20:18:49 hanno Exp $
+
+*pngcrush-1.7.17-r2 (08 Oct 2011)
+
+  08 Oct 2011; Hanno Boeck <hanno@gentoo.org> +pngcrush-1.7.17-r2.ebuild,
+  +files/pngcrush-1.7.17-unbundle-zlib.diff:
+  Unbundle zlib, let libpng be bundled.
+
+  08 Oct 2011; Samuli Suominen <ssuominen@gentoo.org> -pngcrush-1.7.10.ebuild,
+  -pngcrush-1.7.16.ebuild, -pngcrush-1.7.17.ebuild, -files/Makefile:
+  Revert to ~arch only status as incompatible with libpng15.
+
+  08 Oct 2011; Samuli Suominen <ssuominen@gentoo.org>
+  pngcrush-1.7.17-r1.ebuild:
+  Restore dropped upstream -Wall -Wshadow and respect full compiler name also
+  when linking. Remove redudant libpng and zlib deps as internal copies are
+  used instead.
+
+*pngcrush-1.7.17-r1 (08 Oct 2011)
+
+  08 Oct 2011; Hanno Boeck <hanno@gentoo.org> +pngcrush-1.7.17-r1.ebuild:
+  Switch to bundled libpng as long as it doesn't compile against libpng 1.5.
 
   18 Sep 2011; Samuli Suominen <ssuominen@gentoo.org> pngcrush-1.7.17.ebuild:
   Error out in pkg_setup() with media-libs/libpng >= 1.5.
