@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-terms/evilvte/evilvte-0.4.9_pre2.ebuild,v 1.1 2011/05/01 16:41:59 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-terms/evilvte/evilvte-0.4.9.ebuild,v 1.1 2011/10/14 19:18:00 ssuominen Exp $
 
 EAPI=4
 MY_P=${P/_/\~}
@@ -23,9 +23,7 @@ DEPEND="${RDEPEND}
 S=${WORKDIR}/${MY_P}
 
 src_prepare() {
-	if use savedconfig; then
-		restore_config src/config.h
-	fi
+	use savedconfig && restore_config src/config.h
 }
 
 src_configure() {

@@ -1,9 +1,9 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-terms/xterm/xterm-269.ebuild,v 1.9 2011/08/02 05:52:28 mattst88 Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-terms/xterm/xterm-276.ebuild,v 1.1 2011/10/14 20:53:52 ssuominen Exp $
 
-EAPI=2
-inherit multilib
+EAPI=4
+inherit eutils multilib
 
 DESCRIPTION="Terminal Emulator for X Windows"
 HOMEPAGE="http://dickey.his.com/xterm/"
@@ -11,10 +11,11 @@ SRC_URI="ftp://invisible-island.net/${PN}/${P}.tgz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd"
 IUSE="toolbar truetype unicode Xaw3d"
 
 COMMON_DEPEND="sys-libs/libutempter
+	>=sys-libs/ncurses-5.6-r2
 	x11-apps/xmessage
 	x11-libs/libX11
 	x11-libs/libXaw
@@ -68,9 +69,10 @@ src_configure() {
 }
 
 src_install() {
-	emake DESTDIR="${D}" install || die
+	emake DESTDIR="${D}" install
 	dodoc README{,.i18n} ctlseqs.txt
 	dohtml xterm.log.html
+	domenu *.desktop
 
 	# Fix permissions -- it grabs them from live system, and they can
 	# be suid or sgid like they were in pre-unix98 pty or pre-utempter days,
