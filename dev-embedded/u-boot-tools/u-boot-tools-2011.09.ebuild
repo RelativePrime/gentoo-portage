@@ -1,10 +1,10 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-embedded/u-boot-tools/u-boot-tools-2011.06.ebuild,v 1.2 2011/10/14 22:29:10 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-embedded/u-boot-tools/u-boot-tools-2011.09.ebuild,v 1.1 2011/10/14 22:29:35 vapier Exp $
 
-EAPI=4
+EAPI="4"
 
-inherit toolchain-funcs
+inherit toolchain-funcs eutils
 
 MY_P="u-boot-${PV/_/-}"
 DESCRIPTION="utilities for working with Das U-Boot"
@@ -13,12 +13,13 @@ SRC_URI="ftp://ftp.denx.de/pub/u-boot/${MY_P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 arm x86"
+KEYWORDS="~amd64 ~arm ~x86"
 IUSE=""
 
 S=${WORKDIR}/${MY_P}
 
 src_prepare() {
+	epatch "${FILESDIR}"/${PV}/*.patch
 	sed -i -e "s:-g ::" tools/Makefile || die
 }
 
