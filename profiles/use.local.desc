@@ -1723,6 +1723,7 @@ gnome-base/gnome-settings-daemon:packagekit - Enable support for the distro-neut
 gnome-base/gnome-settings-daemon:short-touchpad-timeout - Change the touchpad timeout so that it's effective for fast typists
 gnome-base/gnome-shell:nm-applet - Pull in an automagic dependency on gnome-extra/nm-applet and net-misc/networkmanager, should be removed soon
 gnome-base/gvfs:archive - Enables support for accessing files in archives transparently via app-arch/libarchive
+gnome-base/gvfs:bluray - Enable playback of Blu-ray filesystems using media-libs/libbluray
 gnome-base/gvfs:fuse - Enables fuse mount points in $HOME/.gvfs for legacy application access
 gnome-base/gvfs:gdu - Enable sys-apps/gnome-disk-utility integration
 gnome-base/gvfs:http - Enable the HTTP/DAV backend using net-libs/libsoup-gnome

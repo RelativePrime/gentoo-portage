@@ -1,6 +1,13 @@
 # ChangeLog for media-libs/gd
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/gd/ChangeLog,v 1.68 2011/04/15 08:51:24 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/gd/ChangeLog,v 1.70 2011/10/16 13:24:00 ssuominen Exp $
+
+  16 Oct 2011; Samuli Suominen <ssuominen@gentoo.org> gd-2.0.35-r3.ebuild:
+  amd64 stable wrt #387291 and force libpng >= 1.5 :0 to ensure gdlib-config is
+  correct.
+
+  16 Oct 2011; Samuli Suominen <ssuominen@gentoo.org> gd-2.0.35-r3.ebuild:
+  Upgrade libpng version sed.
 
   15 Apr 2011; Mike Frysinger <vapier@gentoo.org> gd-2.0.35-r3.ebuild:
   Disable png/zlib related programs when support is disabled #363491 by Albert
