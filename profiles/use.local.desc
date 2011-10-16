@@ -2300,10 +2300,8 @@ media-libs/mlt:ruby - Build SWIG bindings for Ruby
 media-libs/mlt:vdpau - Build with vdpau support
 media-libs/netpbm:rle - Build converters for the RLE format (utah raster toolkit)
 media-libs/opencv:cuda - Enable NVIDIA Cuda computations support
-media-libs/opencv:deprecated - Build deprecated python binding features
 media-libs/opencv:eigen - Enable usage of dev-cpp/eigen for computations
 media-libs/opencv:ipp - Enable Intel Integrated Primitive support
-media-libs/opencv:octave - Enable octave support
 media-libs/opencv:sse3 - Enable optimization for SSE3 capable chips
 media-libs/opencv:ssse3 - faster floating point optimization for SSSE3 capable chips (Intel Core 2 and later chips)
 media-libs/openjpeg:tools - Installs tools (j2k_to_image and image_to_j2k)
