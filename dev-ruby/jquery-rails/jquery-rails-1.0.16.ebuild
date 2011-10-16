@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/jquery-rails/jquery-rails-1.0.13.ebuild,v 1.1 2011/08/12 18:00:43 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/jquery-rails/jquery-rails-1.0.16.ebuild,v 1.1 2011/10/16 08:01:05 graaff Exp $
 
 EAPI=2
 USE_RUBY="ruby18 ree18"
