@@ -1,6 +1,16 @@
 # ChangeLog for app-misc/task
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/task/ChangeLog,v 1.24 2011/10/04 03:41:56 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/task/ChangeLog,v 1.26 2011/10/17 19:47:11 radhermit Exp $
+
+  17 Oct 2011; Tim Harder <radhermit@gentoo.org> -task-1.9.4.ebuild,
+  -task-2.0.0_beta3.ebuild, -files/task-2.0.0_beta1-rcdir.patch:
+  Remove old.
+
+*task-2.0.0_beta4 (17 Oct 2011)
+
+  17 Oct 2011; Tim Harder <radhermit@gentoo.org> +task-2.0.0_beta4.ebuild,
+  +files/task-2.0.0_beta4-rcdir.patch:
+  Version bump.
 
   04 Oct 2011; Tim Harder <radhermit@gentoo.org> -task-2.0.0_beta1.ebuild,
   -task-2.0.0_beta2.ebuild:
