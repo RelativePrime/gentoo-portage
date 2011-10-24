@@ -1,6 +1,25 @@
 # ChangeLog for sys-apps/seabios
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/seabios/ChangeLog,v 1.3 2011/10/21 16:55:20 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/seabios/ChangeLog,v 1.7 2011/10/24 21:22:18 cardoe Exp $
+
+  24 Oct 2011; Doug Goldstein <cardoe@gentoo.org>
+  -seabios-0.6.3_pre20010817.ebuild:
+  Actually remove wrong version name
+
+*seabios-1.6.3 (24 Oct 2011)
+
+  24 Oct 2011; Doug Goldstein <cardoe@gentoo.org> +seabios-1.6.3.ebuild:
+  Version bump to released version
+
+*seabios-0.6.3_pre20110817 (24 Oct 2011)
+
+  24 Oct 2011; Doug Goldstein <cardoe@gentoo.org>
+  +seabios-0.6.3_pre20110817.ebuild:
+  Fix bad version name
+
+  24 Oct 2011; Doug Goldstein <cardoe@gentoo.org>
+  seabios-0.6.3_pre20010817.ebuild:
+  Set the active Python to 2.x since this doesn't build with 3.x
 
   21 Oct 2011; Doug Goldstein <cardoe@gentoo.org>
   seabios-0.6.3_pre20010817.ebuild:
