@@ -1,6 +1,38 @@
 # ChangeLog for dev-lang/v8
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/v8/ChangeLog,v 1.86 2011/10/17 18:31:01 nativemad Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/v8/ChangeLog,v 1.93 2011/10/22 11:53:36 phajdan.jr Exp $
+
+*v8-3.5.10.22 (22 Oct 2011)
+
+  22 Oct 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> +v8-3.5.10.22.ebuild:
+  Version bump for beta channel release.
+
+  22 Oct 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> v8-3.6.6.5.ebuild,
+  v8-9999.ebuild:
+  Make it easier to update by using preserve_old_lib.
+
+  21 Oct 2011; Mike Gilbert <floppym@gentoo.org> -files/v8-gyp-cflags-r0.patch:
+  Remove unused patch.
+
+*v8-3.6.6.5 (21 Oct 2011)
+
+  21 Oct 2011; Mike Gilbert <floppym@gentoo.org> -v8-3.6.5.1.ebuild,
+  +v8-3.6.6.5.ebuild:
+  Version bump for dev channel release.
+
+  20 Oct 2011; Mike Gilbert <floppym@gentoo.org> v8-3.6.6.3.ebuild:
+  Use upstream-provided tarball.
+
+  20 Oct 2011; Mike Gilbert <floppym@gentoo.org> -v8-3.3.10.22.ebuild,
+  -v8-3.3.10.30.ebuild, -v8-3.4.12.1.ebuild:
+  Remove old versions
+
+*v8-3.6.6.3 (19 Oct 2011)
+
+  19 Oct 2011; Mike Gilbert <floppym@gentoo.org> v8-3.6.5.1.ebuild,
+  +v8-3.6.6.3.ebuild, v8-9999.ebuild:
+  Version bump for dev channel release. Remove non-functional readline use
+  flag.
 
   17 Oct 2011; Andreas Schuerch <nativemad@gentoo.org> v8-3.4.14.28.ebuild:
   x86 stable, bug 385649

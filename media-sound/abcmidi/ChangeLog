@@ -1,0 +1,13 @@
+# ChangeLog for media-sound/abcmidi
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/abcmidi/ChangeLog,v 1.2 2011/10/21 20:18:20 radhermit Exp $
+
+  21 Oct 2011; Tim Harder <radhermit@gentoo.org> abcmidi-2011.10.19.ebuild:
+  Remove unneeded docdir setting.
+
+*abcmidi-2011.10.19 (21 Oct 2011)
+
+  21 Oct 2011; Tim Harder <radhermit@gentoo.org> +abcmidi-2011.10.19.ebuild,
+  +files/abcmidi-2011.10.19-install.patch, +metadata.xml:
+  Initial import (bug #76017).
+

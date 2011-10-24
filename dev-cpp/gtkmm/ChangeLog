@@ -1,6 +1,22 @@
 # ChangeLog for dev-cpp/gtkmm
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-cpp/gtkmm/ChangeLog,v 1.214 2011/10/16 17:30:05 xarthisius Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-cpp/gtkmm/ChangeLog,v 1.217 2011/10/21 14:06:45 phajdan.jr Exp $
+
+  21 Oct 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> gtkmm-2.24.2.ebuild:
+  x86 stable wrt bug #385699
+
+  21 Oct 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> gtkmm-2.24.2.ebuild:
+  x86 stable wrt bug #385699
+
+*gtkmm-3.2.0 (19 Oct 2011)
+
+  19 Oct 2011; Alexandre Rostovtsev <tetromino@gentoo.org> +gtkmm-3.2.0.ebuild:
+  Add gtkmm-3.2.0 from the gnome overlay.
+
+  Notable changes: see x11-libs/gtk+-3.2.1.
+
+  18 Oct 2011; Jeroen Roovers <jer@gentoo.org> gtkmm-2.24.2.ebuild:
+  Stable for HPPA (bug #385699).
 
   16 Oct 2011; Kacper Kowalik <xarthisius@gentoo.org> gtkmm-2.24.2.ebuild:
   ppc/ppc64 stable wrt #385699

@@ -1,6 +1,16 @@
 # ChangeLog for media-plugins/vdr-setup
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-setup/ChangeLog,v 1.23 2011/10/03 19:29:33 hd_brummy Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-setup/ChangeLog,v 1.25 2011/10/23 15:56:34 hd_brummy Exp $
+
+*vdr-setup-0.3.1-r4 (23 Oct 2011)
+
+  23 Oct 2011; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +vdr-setup-0.3.1-r4.ebuild, +files/090-vdr-setup-0.3.1_extern-tinyxml.diff:
+  use now externel tinyxml lib, keyword ~arm droped
+
+  22 Oct 2011; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-setup-0.3.1-r1.ebuild:
+  keyworded ~arm
 
   03 Oct 2011; Joerg Bornkessel <hd_brummy@gentoo.org> files/vdr-menu.de.xml,
   files/vdr-menu.en.xml:

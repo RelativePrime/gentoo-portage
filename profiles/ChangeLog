@@ -1,10 +1,103 @@
 # ChangeLog for profile directory
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5795 2011/10/17 20:14:08 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5824 2011/10/23 23:27:35 tetromino Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
+
+  23 Oct 2011; Alexandre Rostovtsev <tetromino@gentoo.org> package.mask:
+  Mask office-runner (requires gnome-settings-daemon-3).
+
+  23 Oct 2011; Robin H. Johnson <robbat2@gentoo.org> license_groups:
+  Intel-SDP should be in @EULA license group.
+
+  23 Oct 2011; Robin H. Johnson <robbat2@gentoo.org> package.mask:
+  Remove dnetc mask, verbump and works here.
+
+  23 Oct 2011; Christian Faulhammer <fauli@gentoo.org> package.mask:
+  Lift mask for app-misc/gramps, well tested now
+
+  23 Oct 2011; Fabian Groffen <grobian@gentoo.org> updates/4Q-2011:
+  Drop move dev-php5/dev-php5/pecl-ssh2 dev-php/dev-php5/pecl-ssh2 from
+  Q4-2011, because it is an invalid atom that breaks Portage
+
+  22 Oct 2011; Hans de Graaff <graaff@gentoo.org> package.mask:
+  Remove dev-ruby/rubygems mask now that all needed targets are supported.
+
+  22 Oct 2011; Hans de Graaff <graaff@gentoo.org> desc/ruby_targets.desc:
+  Add description for the Rubinius target.
+
+  22 Oct 2011; Matt Turner <mattst88@gentoo.org> use.desc:
+  Add ARM's iwmmxt USE flag to use.desc.
+
+  22 Oct 2011; Diego E. Pettenò <flameeyes@gentoo.org> package.mask:
+  Mask qemu-kvm/seabios: they should not use egit for an ~arch ebuild.
+
+  21 Oct 2011; Alexandre Rostovtsev (tetromino) <tetromino@gmail.com>
+  package.mask:
+  Mask >=vte-0.30 (requires gtk+-3.2).
+
+  21 Oct 2011; Samuli Suominen <ssuominen@gentoo.org> package.mask:
+  Change =pciutils-3.1.7-r1 mask to >=pciutils-3.1.7-r1 wrt #388027.
+
+  21 Oct 2011; Samuli Suominen <ssuominen@gentoo.org> package.mask:
+  Mask notify-osd >= 0.9.32 next to required gtk+ >= 3.2.
+
+  21 Oct 2011; Alexandre Rostovtsev <tetromino@gentoo.org>
+  targets/desktop/gnome/package.use:
+  Default to USE="-gnutls nss" for curl (needed for liboauth with default
+  flags, which in turn is needed for gnome-3.2).
+
+  20 Oct 2011; Markos Chandras <hwoarang@gentoo.org> package.mask:
+  unmask boost-1.47.0
+
+  20 Oct 2011; Hans de Graaff <graaff@gentoo.org> base/package.use.force:
+  Force correct USE flags for virtual/rubygems versions.
+
+  20 Oct 2011; Hans de Graaff <graaff@gentoo.org> package.mask:
+  Add new virtual/rubygems to the ruby 1.9 mask.
+
+  20 Oct 2011; Stefan Briesenick <sbriesen@gentoo.org> package.mask:
+  masked net-misc/x25_utils for removal
+
+  20 Oct 2011; Vadim Kuznetsov <vadimk@gentoo.org> package.mask:
+  removed vmware-server lines
+
+  20 Oct 2011; Matt Turner <mattst88@gentoo.org> package.mask:
+  Mask >=gnome-dvb-daemon-0.2.3 until pygobject:3 is unmasked.
+
+  19 Oct 2011; Markos Chandras <hwoarang@gentoo.org> package.mask:
+  unmask app-laptop/prey www-apps/tt-rss app-misc/recoll
+
+  19 Oct 2011; Alexandre Rostovtsev <tetromino@gentoo.org> package.mask:
+  Mask >=nautilus-python-1.0 (will not run without nautilus[introspection],
+  which is package.use.masked).
+
+  19 Oct 2011; Samuli Suominen <ssuominen@gentoo.org> package.mask:
+  Remove now unnecessary entries.
+
+  19 Oct 2011; Richard Freeman <rich0@gentoo.org> package.mask:
+  mask latest android sdk until bugs worked out
+
+  19 Oct 2011; Miroslav Šulc <fordfrog@gentoo.org> package.mask:
+  Masking app-misc/openjnlp, dev-java/jnlp-bin and dev-java/netx for removal
+
+  19 Oct 2011; Samuli Suominen <ssuominen@gentoo.org> package.mask:
+  Unmask x11-misc/notification-daemon using x11-libs/gtk+:3.
+
+  19 Oct 2011; Alexandre Rostovtsev <tetromino@gentoo.org> package.mask:
+  Mask gtk+-3.2 with dependencies, and pygobject:3 and compatible
+  pygobject-2.28.6-r50, in preparation for move from gnome overlay.
+
+  18 Oct 2011; Markos Chandras <hwoarang@gentoo.org> package.mask:
+  Masking new snapshots for openbox and obconf
+
+  18 Oct 2011; Jeroen Roovers <jer@gentoo.org> package.mask:
+  Fix removal date.
+
+  18 Oct 2011; Jeroen Roovers <jer@gentoo.org> package.mask:
+  Mask sys-apps/lsparisc (bug #377695).
 
   17 Oct 2011; Andreas K. Huettel <dilfridge@gentoo.org> package.mask:
   Remove obsolete pmask of kde-misc/kcm_gtk, see bug 369361

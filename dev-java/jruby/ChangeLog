@@ -1,6 +1,16 @@
 # ChangeLog for dev-java/jruby
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-java/jruby/ChangeLog,v 1.75 2011/06/14 18:59:32 maekke Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-java/jruby/ChangeLog,v 1.77 2011/10/22 11:35:07 graaff Exp $
+
+*jruby-1.5.6-r1 (22 Oct 2011)
+
+  22 Oct 2011; Hans de Graaff <graaff@gentoo.org> +jruby-1.5.6-r1.ebuild,
+  +files/jruby-1.5.6-rubygems-1.8.x.patch:
+  Fix compatibility with rubygems 1.8.x.
+
+  19 Oct 2011; Miroslav Šulc <fordfrog@gentoo.org> jruby-1.5.6.ebuild:
+  JDK 7 changes the way it handles method overloading so restricting
+  compilation to JDK 6 (bug #386653)
 
   14 Jun 2011; Markus Meier <maekke@gentoo.org> jruby-1.5.6.ebuild:
   amd64/x86 stable, bug #370709

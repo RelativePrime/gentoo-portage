@@ -1,5 +1,16 @@
 
 
+*pypax-0.3.0 (23 Oct 2011)
+
+  23 Oct 2011; Anthony G. Basile <blueness@gentoo.org> +pypax-0.3.0.ebuild:
+  Version bump, adds XT_PAX support
+
+*pypax-0.2.5 (17 Oct 2011)
+
+  17 Oct 2011; Anthony G. Basile <blueness@gentoo.org> -pypax-0.2.3.ebuild,
+  -pypax-0.2.4.ebuild, +pypax-0.2.5.ebuild:
+  Version bump, address bug #387459
+
 *pypax-0.2.4 (12 Oct 2011)
 
   12 Oct 2011; Anthony G. Basile <blueness@gentoo.org> +pypax-0.2.4.ebuild:

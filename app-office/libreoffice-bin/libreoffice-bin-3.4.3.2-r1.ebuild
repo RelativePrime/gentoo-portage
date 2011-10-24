@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice-bin/libreoffice-bin-3.4.3.2-r1.ebuild,v 1.1 2011/10/17 14:21:01 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice-bin/libreoffice-bin-3.4.3.2-r1.ebuild,v 1.5 2011/10/23 09:39:44 scarabeus Exp $
 
 EAPI=4
 
@@ -13,25 +13,45 @@ inherit kde4-base java-pkg-opt-2 pax-utils
 
 DESCRIPTION="LibreOffice, a full office productivity suite. Binary package"
 HOMEPAGE="http://www.libreoffice.org"
-SRC_URI="
+SRC_URI_AMD64="
 	kde? (
-		!java? ( ${BASE_URI}/${PN/-bin}-kde-${PVR}.tbz2 )
-		java? ( ${BASE_URI}/${PN/-bin}-kde-java-${PVR}.tbz2 )
+		!java? ( ${BASE_URI}/amd64/${PN/-bin}-kde-${PVR}.tbz2 -> ${PN/-bin}-kde-amd64-${PVR}.tbz2 )
+		java? ( ${BASE_URI}/amd64/${PN/-bin}-kde-java-${PVR}.tbz2 -> ${PN/-bin}-kde-java-amd64-${PVR}.tbz2 )
 	)
 	gnome? (
-		!java? ( ${BASE_URI}/${PN/-bin}-gnome-${PVR}.tbz2 )
-		java? ( ${BASE_URI}/${PN/-bin}-gnome-java-${PVR}.tbz2 )
+		!java? ( ${BASE_URI}/amd64/${PN/-bin}-gnome-${PVR}.tbz2 -> ${PN/-bin}-gnome-amd64-${PVR}.tbz2 )
+		java? ( ${BASE_URI}/amd64/${PN/-bin}-gnome-java-${PVR}.tbz2 -> ${PN/-bin}-gnome-java-amd64-${PVR}.tbz2 )
 	)
 	!kde? ( !gnome? (
-		!java? ( ${BASE_URI}/${PN/-bin}-base-${PVR}.tbz2 )
-		java? ( ${BASE_URI}/${PN/-bin}-base-java-${PVR}.tbz2 )
+		!java? ( ${BASE_URI}/amd64/${PN/-bin}-base-${PVR}.tbz2 -> ${PN/-bin}-base-amd64-${PVR}.tbz2 )
+		java? ( ${BASE_URI}/amd64/${PN/-bin}-base-java-${PVR}.tbz2 -> ${PN/-bin}-base-java-amd64-${PVR}.tbz2 )
 	) )
+"
+
+SRC_URI_X86="
+	kde? (
+		!java? ( ${BASE_URI}/x86/${PN/-bin}-kde-${PVR}.tbz2 -> ${PN/-bin}-kde-x86-${PVR}.tbz2 )
+		java? ( ${BASE_URI}/x86/${PN/-bin}-kde-java-${PVR}.tbz2 -> ${PN/-bin}-kde-java-x86-${PVR}.tbz2 )
+	)
+	gnome? (
+		!java? ( ${BASE_URI}/x86/${PN/-bin}-gnome-${PVR}.tbz2 -> ${PN/-bin}-gnome-x86-${PVR}.tbz2 )
+		java? ( ${BASE_URI}/x86/${PN/-bin}-gnome-java-${PVR}.tbz2 -> ${PN/-bin}-gnome-java-x86-${PVR}.tbz2 )
+	)
+	!kde? ( !gnome? (
+		!java? ( ${BASE_URI}/x86/${PN/-bin}-base-${PVR}.tbz2 -> ${PN/-bin}-base-x86-${PVR}.tbz2 )
+		java? ( ${BASE_URI}/x86/${PN/-bin}-base-java-${PVR}.tbz2 -> ${PN/-bin}-base-java-x86-${PVR}.tbz2 )
+	) )
+"
+
+SRC_URI="
+	amd64? ( ${SRC_URI_AMD64} )
+	x86? ( ${SRC_URI_X86} )
 "
 
 IUSE="gnome java kde"
 LICENSE="LGPL-3"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 
 COMMON_DEPEND="
 	app-arch/zip
@@ -84,7 +104,7 @@ COMMON_DEPEND="
 "
 
 RDEPEND="${COMMON_DEPEND}
-	!app-office/libreoffice-bin
+	!app-office/libreoffice
 	!app-office/openoffice-bin
 	!app-office/openoffice
 	java? ( >=virtual/jre-1.6 )
@@ -102,6 +122,12 @@ REQUIRED_USE="kde? ( !gnome ) gnome? ( !kde )"
 RESTRICT="test strip"
 
 S="${WORKDIR}"
+
+pkg_pretend() {
+	[[ $(gcc-major-version) -lt 4 ]] || \
+			( [[ $(gcc-major-version) -eq 4 && $(gcc-minor-version) -le 4 ]] ) \
+		&& die "Sorry, but gcc-4.4 and earlier won't work for libreoffice-bin package (see bug #387515)."
+}
 
 pkg_setup() {
 	kde4-base_pkg_setup

@@ -1,6 +1,16 @@
 # ChangeLog for app-emulation/xen-tools
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/xen-tools/ChangeLog,v 1.99 2011/10/13 19:30:37 alexxy Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/xen-tools/ChangeLog,v 1.101 2011/10/23 10:49:29 patrick Exp $
+
+  23 Oct 2011; Patrick Lauer <patrick@gentoo.org> xen-tools-9999.ebuild:
+  Bump for #386461, thanks to Ian Delaney
+
+*xen-tools-4.1.1-r6 (22 Oct 2011)
+
+  22 Oct 2011; Magnus Granberg <zorry@gentoo.org> +xen-tools-4.1.1-r6.ebuild, 
+  +files/ipxe-nopie.patch:
+  Fix hardened compile failure #360805 don't compile ipxe with pie.
+  Thanks Ian Delaney and Ralf Glauberman
 
   13 Oct 2011; Alexey Shvetsov <alexxy@gentoo.org> -xen-tools-3.4.2.ebuild,
   xen-tools-4.1.1-r5.ebuild, files/xendomains.initd-r1:

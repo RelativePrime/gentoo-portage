@@ -1,6 +1,15 @@
 # ChangeLog for net-voip/telepathy-salut
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-voip/telepathy-salut/ChangeLog,v 1.29 2011/10/16 17:14:34 xarthisius Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-voip/telepathy-salut/ChangeLog,v 1.31 2011/10/21 15:03:10 phajdan.jr Exp $
+
+  21 Oct 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  telepathy-salut-0.5.1.ebuild:
+  x86 stable wrt bug #385699
+
+*telepathy-salut-0.6.0 (18 Oct 2011)
+
+  18 Oct 2011; Pacho Ramos <pacho@gentoo.org> +telepathy-salut-0.6.0.ebuild:
+  Version bump.
 
   16 Oct 2011; Kacper Kowalik <xarthisius@gentoo.org>
   telepathy-salut-0.5.1.ebuild:

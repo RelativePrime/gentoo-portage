@@ -1,6 +1,13 @@
 # ChangeLog for x11-libs/gdk-pixbuf
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/gdk-pixbuf/ChangeLog,v 1.38 2011/10/16 17:39:07 xarthisius Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/gdk-pixbuf/ChangeLog,v 1.40 2011/10/21 15:04:28 phajdan.jr Exp $
+
+  21 Oct 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  gdk-pixbuf-2.24.0-r1.ebuild:
+  x86 stable wrt bug #385699
+
+  18 Oct 2011; Jeroen Roovers <jer@gentoo.org> gdk-pixbuf-2.24.0-r1.ebuild:
+  Stable for HPPA (bug #385699).
 
   16 Oct 2011; Kacper Kowalik <xarthisius@gentoo.org>
   gdk-pixbuf-2.24.0-r1.ebuild:

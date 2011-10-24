@@ -1,6 +1,17 @@
 # ChangeLog for media-libs/openjpeg
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/openjpeg/ChangeLog,v 1.53 2011/10/11 16:22:38 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/openjpeg/ChangeLog,v 1.55 2011/10/23 19:28:42 radhermit Exp $
+
+  23 Oct 2011; Tim Harder <radhermit@gentoo.org>
+  -files/openjpeg-1.1.1-Makefile.patch, -files/openjpeg-1.2-Makefile.patch,
+  -openjpeg-1.3-r3.ebuild, -files/openjpeg-1.3-Makefile.patch,
+  -files/openjpeg-1.3-codec-Makefile, -files/openjpeg-1.3-darwin.patch,
+  -files/openjpeg-1.3-freebsd.patch, -files/openjpeg-1.3-r3-codec-Makefile,
+  metadata.xml:
+  Remove old.
+
+  23 Oct 2011; Raúl Porcel <armin76@gentoo.org> openjpeg-1.4-r1.ebuild:
+  alpha/ia64/s390/sh/sparc stable wrt #373499
 
   11 Oct 2011; Jeroen Roovers <jer@gentoo.org> openjpeg-1.4-r1.ebuild:
   Stable for HPPA (bug #373499).
