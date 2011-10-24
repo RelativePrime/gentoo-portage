@@ -1,9 +1,9 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/sooperlooper/sooperlooper-1.6.14.ebuild,v 1.2 2010/01/08 17:08:09 mr_bones_ Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/sooperlooper/sooperlooper-1.6.18.ebuild,v 1.1 2011/10/24 04:28:10 radhermit Exp $
 
-EAPI=2
-inherit autotools eutils wxwidgets
+EAPI=4
+inherit autotools eutils wxwidgets toolchain-funcs
 
 DESCRIPTION="Live looping sampler with immediate loop recording"
 HOMEPAGE="http://essej.net/sooperlooper/index.html"
@@ -29,14 +29,21 @@ DEPEND="${RDEPEND}
 
 S=${WORKDIR}/${P/_p*}
 
+DOCS=( OSC README )
+
 src_prepare() {
 	cp -rf "${WORKDIR}"/aclocal "${S}" || die "copying aclocal failed"
+	epatch "${FILESDIR}"/${PN}-1.6.5-cxxflags.patch
 
-	epatch "${FILESDIR}"/${PN}-1.6.5-cxxflags.patch \
-		"${FILESDIR}"/${PN}-1.6.10-asneeded.patch
-		#"${FILESDIR}"/${P}-const.patch
+	AT_M4DIR="${S}"/aclocal eautoreconf
+	cd "${S}"/libs/midi++
+	AT_M4DIR="${S}"/aclocal eautoreconf
+	cd "${S}"/libs/pbd
+	AT_M4DIR="${S}"/aclocal eautoreconf
+}
 
-	AT_M4DIR="${S}/aclocal" eautoreconf
+src_compile() {
+	emake AR="$(tc-getAR)"
 }
 
 src_configure() {
@@ -44,12 +51,6 @@ src_configure() {
 	need-wxwidgets unicode
 
 	econf \
-		--disable-dependency-tracking \
 		--disable-optimize \
 		--with-wxconfig-path="${WX_CONFIG}"
-}
-
-src_install() {
-	emake DESTDIR="${D}" install || die "emake install failed"
-	dodoc OSC README
 }

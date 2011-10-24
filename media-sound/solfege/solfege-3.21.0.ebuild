@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/solfege/solfege-3.20.3.ebuild,v 1.2 2011/09/29 08:15:06 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/solfege/solfege-3.21.0.ebuild,v 1.1 2011/10/24 04:11:23 radhermit Exp $
 
 EAPI="3"
 PYTHON_DEPEND="2:2.6"
@@ -36,7 +36,7 @@ pkg_setup() {
 
 src_prepare() {
 	sed -i -e '/^CFLAGS/s:-I/usr/src/linux/include::' \
-		solfege/soundcard/Makefile || die "sed failed"
+		solfege/soundcard/Makefile || die
 }
 
 src_configure() {

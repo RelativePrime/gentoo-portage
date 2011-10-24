@@ -1,14 +1,14 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/clive/clive-2.2.25.ebuild,v 1.1 2011/05/04 17:15:58 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/clive/clive-2.2.28.ebuild,v 1.1 2011/10/24 04:39:52 radhermit Exp $
 
-EAPI=2
+EAPI=4
 
-inherit perl-app versionator
+inherit perl-app
 
 DESCRIPTION="Command line tool for extracting videos from various websites"
 HOMEPAGE="http://clive.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/$(get_version_component_range 1-2)/${P}.tar.gz"
+SRC_URI="mirror://sourceforge/${PN}/${PV:0:3}/${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
