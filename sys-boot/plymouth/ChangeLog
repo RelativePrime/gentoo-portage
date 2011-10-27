@@ -1,6 +1,22 @@
 # ChangeLog for sys-boot/plymouth
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-boot/plymouth/ChangeLog,v 1.16 2011/10/18 17:54:55 aidecoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-boot/plymouth/ChangeLog,v 1.19 2011/10/27 12:37:00 aidecoe Exp $
+
+  27 Oct 2011; Amadeusz Żołnowski <aidecoe@gentoo.org>
+  plymouth-0.8.3-r5.ebuild, plymouth-0.9_pre20111013-r1.ebuild:
+  Block sys-apps/systemd for openrc flag to not interfere with systemd plymouth
+  support. Refs bug #383067.
+
+  27 Oct 2011; Amadeusz Żołnowski <aidecoe@gentoo.org>
+  -plymouth-0.8.3-r2.ebuild, -plymouth-0.8.3-r4.ebuild,
+  -plymouth-0.9_pre20111013.ebuild, -files/plymouth.initd:
+  Removed old revisions.
+
+*plymouth-0.9_pre20111013-r1 (27 Oct 2011)
+
+  27 Oct 2011; Amadeusz Żołnowski <aidecoe@gentoo.org>
+  +plymouth-0.9_pre20111013-r1.ebuild:
+  Set local state dir to /var and not /var/lib. Fixes bug #388459.
 
   18 Oct 2011; Amadeusz Żołnowski <aidecoe@gentoo.org>
   plymouth-0.8.3-r2.ebuild, plymouth-0.8.3-r4.ebuild, plymouth-0.8.3-r5.ebuild,
