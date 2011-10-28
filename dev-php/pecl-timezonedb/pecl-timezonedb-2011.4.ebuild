@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-php5/pecl-timezonedb/pecl-timezonedb-2011.10.ebuild,v 1.1 2011/09/14 09:28:37 olemarkus Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-php/pecl-timezonedb/pecl-timezonedb-2011.4.ebuild,v 1.1 2011/10/28 13:58:55 olemarkus Exp $
 
 EAPI=3
 
