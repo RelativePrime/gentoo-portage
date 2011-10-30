@@ -1,8 +1,8 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/kmidimon/kmidimon-0.7.4.ebuild,v 1.5 2011/10/28 23:35:26 abcd Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/kmidimon/kmidimon-0.7.4.ebuild,v 1.4 2011/02/02 04:42:22 tampakrap Exp $
 
-EAPI=4
+EAPI=3
 inherit kde4-base
 
 DESCRIPTION="A MIDI monitor for ALSA sequencer"

@@ -1,38 +1,10 @@
 # ChangeLog for profile directory
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5846 2011/10/30 09:42:16 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5837 2011/10/27 21:41:08 tomka Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
-
-  30 Oct 2011; Samuli Suominen <ssuominen@gentoo.org> package.mask:
-  Mask candycrisis, stoned-bin, racer-bin, and dark-oberon with
-  =media-libs/fmod-3* for security #294253.
-
-  30 Oct 2011; Alexandre Rostovtsev <tetromino@gentoo.org> package.mask:
-  Final (hopefully) update for the gnome-3.2 mask. Also, unmask yelp-xsl: it
-  doesn't depend on anything masked and shouldn't collide with gnome-2.
-
-  30 Oct 2011; Alexandre Rostovtsev <tetromino@gentoo.org> package.mask:
-  Add >=libgdata-0.9 to the gnome-3.2 mask (significant API changes).
-
-  30 Oct 2011; Alexandre Rostovtsev <tetromino@gentoo.org> package.mask:
-  Add tracker-0.12, gnome-contacts, gnome-documents, nautilus-tracker-tags, and
-  sushi to the gnome-3.2 mask.
-
-  29 Oct 2011; Alexandre Rostovtsev <tetromino@gentoo.org> package.mask:
-  Mask gnome-online-accounts for gnome-3.2.
-
-  28 Oct 2011; Alexandre Rostovtsev <tetromino@gentoo.org> package.mask:
-  Add gnome-3.2 versions of libpeas, clutter, and cogl to p.mask.
-
-  28 Oct 2011; Alexandre Rostovtsev <tetromino@gentoo.org> package.mask:
-  Unmasking gtk+-3.2 and friends (including atk-2); acked by Nirbheek.
-
-  28 Oct 2011; Alexandre Rostovtsev <tetromino@gentoo.org>
-  targets/desktop/gnome/make.defaults:
-  Add colord to gnome default USE for desktop-wide color management.
 
   27 Oct 2011; Thomas Kahle <tomka@gentoo.org> package.mask:
   Remove x11-misc/ktsuss entry, package removed (security bug 381115)
