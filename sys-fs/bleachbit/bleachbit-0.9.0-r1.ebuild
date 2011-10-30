@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-fs/bleachbit/bleachbit-0.9.0.ebuild,v 1.2 2011/10/16 13:59:51 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/bleachbit/bleachbit-0.9.0-r1.ebuild,v 1.1 2011/10/30 20:26:16 ssuominen Exp $
 
 EAPI=4
 
@@ -43,6 +43,10 @@ src_compile() {
 src_install() {
 	distutils_src_install
 	use nls && emake -C po DESTDIR="${D}" install
+
+	# http://bugs.gentoo.org/388999
+	insinto /usr/share/${PN}/cleaners
+	doins cleaners/*.xml
 
 	newbin ${PN}.py ${PN}
 
