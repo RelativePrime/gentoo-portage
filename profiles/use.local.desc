@@ -3219,6 +3219,9 @@ net-fs/samba:aio - Enable asynchronous IO support
 net-fs/samba:client - Enables the client part
 net-fs/samba:cluster - Enable support for clustering
 net-fs/samba:dso - Enable dso support
+net-fs/samba:fulltest - Enabling extra tests in test phase
+net-fs/samba:iprint - Enabling iPrint technology by Novell
+net-fs/samba:krb5 - Enable kerberos support
 net-fs/samba:ldb - Enable the ldb tools
 net-fs/samba:netapi - Enable building of netapi bits
 net-fs/samba:quota - Enables support for user quotas
