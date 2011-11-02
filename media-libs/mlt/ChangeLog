@@ -1,6 +1,15 @@
 # ChangeLog for media-libs/mlt
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/mlt/ChangeLog,v 1.72 2011/05/20 11:50:40 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/mlt/ChangeLog,v 1.74 2011/10/31 21:55:14 dilfridge Exp $
+
+*mlt-0.7.6 (31 Oct 2011)
+
+  31 Oct 2011; Andreas K. Huettel <dilfridge@gentoo.org> +mlt-0.7.6.ebuild:
+  Version bump
+
+  30 Oct 2011; Andreas K. Huettel <dilfridge@gentoo.org> mlt-0.7.2.ebuild,
+  +files/mlt-0.7.2-ruby-link.patch:
+  Fix build with USE=ruby, bug 351718
 
   20 May 2011; Tomáš Chvátal <scarabeus@gentoo.org> mlt-0.7.2.ebuild:
   Bump dependency over swig. Fixes bug #351718.

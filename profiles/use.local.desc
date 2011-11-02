@@ -492,6 +492,8 @@ app-forensics/sleuthkit:aff - Enable extra aff formats
 app-forensics/sleuthkit:dbtool - Add patch for dbtool interface from PyFlag
 app-forensics/sleuthkit:ewf - Enable libewf support
 app-i18n/anthy:canna-2ch - Enable support for app-dicts/canna-2ch
+app-i18n/fcitx:gtk3 - Use GTK+3 instead of 2
+app-i18n/fcitx:opencc - Enable OpenCC for Chinese Transform
 app-i18n/fcitx:pango - Enable support for x11-libs/pango
 app-i18n/ibus:dconf - Enable support for gnome-base/dconf
 app-i18n/ibus:gconf - Enable support for gnome-base/gconf
@@ -585,7 +587,8 @@ app-misc/lcdproc:nfs - Adds support for NFS file system
 app-misc/lcdproc:seamless-hbars - Try to avoid gaps in horizontal bars
 app-misc/lirc:hardware-carrier - The transmitter device generates its clock signal in hardware
 app-misc/lirc:transmitter - Add transmitter support to some lirc-drivers (e.g. serial)
-app-misc/mc:edit - Build mcedit application
+app-misc/mc:edit - Compile and install the mcedit application
+app-misc/mc:mclib - Compile and install the libmc.so shared library
 app-misc/note:general - Add support for ascii flatfile backend
 app-misc/note:text - Add support for text backend
 app-misc/recoll:audio - Index audio files
@@ -622,6 +625,7 @@ app-misc/tomboy:applet - Enable tomboy applet for gnome-base/gnome-panel
 app-misc/tomboy:galago - Add support for the galago desktop presence framework (dev-dotnet/galago-sharp)
 app-misc/towitoko:moneyplex - Makes libtowitoko work for the moneyplex home banking software
 app-misc/tracker:applet - Build tracker monitor applet
+app-misc/tracker:firefox-bookmarks - Install bookmark data miner plugin for www-client/firefox and www-client/firefox-bin
 app-misc/tracker:flickr - Build flickr data miner
 app-misc/tracker:gsf - Enable gnome-extra/libgsf based data extractor and for ODT.
 app-misc/tracker:introspection - Use dev-libs/gobject-introspection for introspection
@@ -631,6 +635,7 @@ app-misc/tracker:laptop - Make tracker power management aware
 app-misc/tracker:nautilus - Enable tracker to integrate with gnome-base/nautilus by providing entries in its context menu
 app-misc/tracker:playlist - Add support for playlists
 app-misc/tracker:strigi - Add support for app-misc/strigi search engine.
+app-misc/tracker:thunderbird - Install email data miner plugin for mail-client/thunderbird and mail-client/thunderbird-bin
 app-misc/tracker:upnp - Add support for video extraction via media-libs/gupnp-dlna.
 app-misc/worker:avfs - Enable support for sys-fs/avfs
 app-misc/workrave:distribution - Enable networking. See http://www.workrave.org/features/
@@ -693,6 +698,7 @@ app-office/libreoffice:pdfimport - Build pdf-import extension using app-text/pop
 app-office/libreoffice:templates - Enable installation of Sun templates
 app-office/libreoffice:vba - Enable support for VBA compatibility and ActiveX embedding
 app-office/libreoffice:webdav - Adds support for HTTP repositories via net-libs/neon
+app-office/libreoffice:xmlsec - Adds support for document signing using internal modified dev-libs/xmlsec and system dev-libs/nss
 app-office/libreoffice-bin:offlinehelp - Download and install help files locally instead of using the LibreOffice Wiki
 app-office/libreoffice-l10n:offlinehelp - Install help files locally instead of using the LibreOffice Wiki
 app-office/lyx:aspell - Add support for aspell spellchecking
@@ -782,8 +788,6 @@ app-text/libwpg:tools - Build miscellaneous tools
 app-text/lodgeit:vim - Install a vim plugin allowing to paste and download from within vim
 app-text/mathtex:png - Generate png images by default instead of gif
 app-text/namazu:kakasi - Enable kakasi support (dev-perl/Text-Kakasi)
-app-text/notmuch:emacs - Install Notmuch client for Emacs (main client)
-app-text/notmuch:vim - Install Notmuch client for Vim (experimental)
 app-text/pandoc:highlight - Add support for syntax highlighting with dev-haskell/highlighting-kate
 app-text/pdf2djvu:graphicsmagick - Enable media-gfx/graphicsmagick support
 app-text/pdftk:nodrm - Decrypt a document with the user_pw even if it has an owner_pw set
@@ -1173,6 +1177,7 @@ dev-libs/libburn:track-src-odirect - Read track input with O_DIRECT (see man 2 o
 dev-libs/libcdio:minimal - Only build the libcdio library and little more, just to be used to link against from multimedia players. With this USE flag enabled, none of the command-line utilities are built, nor is the CDDA library.
 dev-libs/libcgroup:daemon - Install the configuration tools and init/config files.
 dev-libs/libcgroup:tools - Install the cgroup rules processing daemon and init/config files.
+dev-libs/libdbusmenu:gtk3 - Build gtk3 version instead of using gtk2
 dev-libs/libdbusmenu:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/libdbusmenu:vala - Enable bindings for dev-lang/vala
 dev-libs/libgdata:introspection - Use dev-libs/gobject-introspection for introspection
@@ -1560,6 +1565,7 @@ dev-vcs/bzr-gtk:sourceview - Enable GtkSourceView support
 dev-vcs/cvs:server - Enable server support
 dev-vcs/cvs2svn:bazaar - Support for dev-vcs/bzr
 dev-vcs/cvs2svn:git - Support for dev-vcs/git
+dev-vcs/fossil:sqlite - Use the system SQLite instead of the bundled one
 dev-vcs/fromcvs:git - Add support for conversion to dev-vcs/git repositories
 dev-vcs/fromcvs:mercurial - Add support for conversion to dev-vcs/mercurial repositories
 dev-vcs/git:blksha1 - Use the new optimized SHA1 implementation.
@@ -1729,12 +1735,14 @@ gnome-base/gdm:dmx - Enables Distributed Multihead X (DMX) support
 gnome-base/gdm:remote - Enables support for secure remote connections
 gnome-base/gdm:xklavier - Use x11-libs/libxklavier for keyboard management
 gnome-base/gnome-control-center:cheese - Add support for taking pictures for the user accounts panel using media-video/cheese
+gnome-base/gnome-control-center:colord - Support color management using x11-misc/colord
 gnome-base/gnome-control-center:socialweb - Add support for configuring social web service settings using net-libs/libsocialweb
 gnome-base/gnome-desktop:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-base/gnome-light:automount - Use gnome-base/gvfs[gdu] for automounting of drives in nautilus
 gnome-base/gnome-menus:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-base/gnome-panel:bonobo - Enable Bonobo compatibility modules for applets still not ported to DBUS.
 gnome-base/gnome-panel:introspection - Use dev-libs/gobject-introspection for introspection
+gnome-base/gnome-settings-daemon:colord - Support color management using x11-misc/colord
 gnome-base/gnome-settings-daemon:packagekit - Enable support for the distro-neutral package manager GUI app-admin/packagekit
 gnome-base/gnome-settings-daemon:short-touchpad-timeout - Change the touchpad timeout so that it's effective for fast typists
 gnome-base/gnome-shell:nm-applet - Pull in an automagic dependency on gnome-extra/nm-applet and net-misc/networkmanager, should be removed soon
@@ -1751,14 +1759,20 @@ gnome-base/libgtop:introspection - Use dev-libs/gobject-introspection for intros
 gnome-base/librsvg:gtk3 - Build with gtk+-3 support
 gnome-base/librsvg:tools - Build miscellaneous tools
 gnome-base/nautilus:introspection - Use dev-libs/gobject-introspection for introspection
+gnome-base/nautilus:packagekit - Use packagekit to search for programs to open unknown file types
+gnome-base/nautilus:previewer - Use gnome-extra/sushi to preview files from the file mananger
 gnome-base/nautilus:sendto - Enable the nautilus-sendto extension to send files to various locations/devices
+gnome-base/nautilus:tracker - Add support for app-misc/tracker search
 gnome-extra/avant-window-navigator:thunar - Enables support for the deprecated Thunar VFS layer
 gnome-extra/avant-window-navigator:vala - Enables support for applets written in dev-lang/vala.
 gnome-extra/avant-window-navigator-extras:webkit - Enables support for net-libs/webkit-gtk.
+gnome-extra/evolution-data-server:gnome-online-accounts - Enable using net-libs/gnome-online-accounts for authorization
 gnome-extra/evolution-data-server:introspection - Use dev-libs/gobject-introspection for introspection
+gnome-extra/evolution-data-server:vala - Build dev-lang/vala bindings
 gnome-extra/evolution-data-server:weather - Enable optional weather calendar support
 gnome-extra/file-browser-applet:gtkhotkey - Enable hotkey support via x11-libs/gtkhotkey
 gnome-extra/gdesklets-core:dbus - Enable gDesklets Controls to use DBus
+gnome-extra/gnome-color-manager:clutter - Use media-libs/clutter to render color gamut representations
 gnome-extra/gnome-color-manager:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-extra/gnome-color-manager:packagekit - Enable support for the distro-neutral package manager GUI app-admin/packagekit
 gnome-extra/gnome-do-plugins:banshee - Enables the Banshee (media-sound/banshee) plugin
@@ -1810,7 +1824,6 @@ kde-base/gwenview:kipi - Support for the KDE Image Plugin Interface.
 kde-base/kaccessible:speechd - Enable support for the speech-dispatcher speech synthesizer
 kde-base/kalzium:editor - Enable the embedded molecule editor/viewer
 kde-base/kalzium:solver - Enable the equation solver
-kde-base/kde-meta:oldpim - Allow the use of non-akonadi kdepim-4.4
 kde-base/kde-meta:sdk - Pull in developer-specific meta-packages
 kde-base/kdeartwork-kscreensaver:eigen - Enable various arithmetic screensavers which use Eigen2 for computations.
 kde-base/kdeartwork-kscreensaver:kexiv2 - Enable image rotation based on exif tags with libkexiv2.
@@ -1959,7 +1972,7 @@ kde-misc/kcm-grub2:hwinfo - Used to work out supported framebuffer resolutions
 kde-misc/kcm-grub2:imagemagick - Create splash images compatible with GRUB2
 kde-misc/kcm-grub2:packagekit - Add support for packagekit integration
 kde-misc/kdiff3:konqueror - Enable integration with konqueror
-kde-misc/knetworkmanager:consolekit - Enable support for sys-auth/consolekit
+kde-misc/networkmanagement:consolekit - Enable support for sys-auth/consolekit
 kde-misc/synaptiks:upower - Handle mouse devices correctly across suspend and resume with upower
 kde-misc/tellico:addressbook - Add support for kdepim addressbook (kabc)
 lxde-base/lxdm:consolekit - Enables support for authorization using consolekit
@@ -1981,6 +1994,7 @@ mail-client/claws-mail:ssl - Use gnutls for Secure Socket Layer transactions (de
 mail-client/evolution:clutter - Build with clutter support for animation effects
 mail-client/evolution:connman - Enable net-misc/connman support (requires 'networkmanager' USE flag to be disabled).
 mail-client/evolution:crypt - Enable GPG encryption support using app-crypt/gnupg and app-crypt/pinentry
+mail-client/evolution:gnome-online-accounts - Enable using net-libs/gnome-online-accounts for authorization
 mail-client/evolution:ldap - Enable support for fetching contacts from an LDAP or Active Directory server using net-nds/openldap
 mail-client/evolution:map - Enable support for displaying contacts on a map inside evolution using media-libs/libchamplain
 mail-client/evolution:networkmanager - Allows Evolution to automagically toggle online/offline mode by talking to net-misc/networkmanager and getting the current network state
@@ -2225,6 +2239,8 @@ media-libs/clutter:gtk - Use gdk-pixbuf from x11-libs/gtk+ as image rendering ba
 media-libs/clutter:introspection - Use dev-libs/gobject-introspection for introspection
 media-libs/clutter-gst:introspection - Use dev-libs/gobject-introspection for introspection
 media-libs/clutter-gtk:introspection - Use dev-libs/gobject-introspection for introspection
+media-libs/cogl:introspection - Use dev-libs/gobject-introspection for introspection
+media-libs/cogl:pango - Build cogl-pango library for x11-libs/pango integration
 media-libs/coin:simage - Texture loading via media-libs/simage library
 media-libs/devil:allegro - Add support for Allegro
 media-libs/edje:cache - Enable caching
@@ -2295,6 +2311,7 @@ media-libs/libvpx:postproc - Enable additional post processing filters
 media-libs/libvpx:sse3 - Enable optimization for SSE3 capable chips
 media-libs/libvpx:sse4_1 - Enable optimization for SSE4_1 capable processors (Intel Core 2 Penryn and later chips)
 media-libs/libvpx:ssse3 - faster floating point optimization for SSSE3 capable chips (Intel Core 2 and later chips)
+media-libs/mash:introspection - Use dev-libs/gobject-introspection for introspection
 media-libs/mediastreamer:amr - Use of AMR Narrow Band codec plugin
 media-libs/mediastreamer:ilbc - Use of iLBC (RFC3951) codec plugin
 media-libs/mediastreamer:video - Enable video support
@@ -3209,6 +3226,9 @@ net-fs/samba:aio - Enable asynchronous IO support
 net-fs/samba:client - Enables the client part
 net-fs/samba:cluster - Enable support for clustering
 net-fs/samba:dso - Enable dso support
+net-fs/samba:fulltest - Enabling extra tests in test phase
+net-fs/samba:iprint - Enabling iPrint technology by Novell
+net-fs/samba:krb5 - Enable kerberos support
 net-fs/samba:ldb - Enable the ldb tools
 net-fs/samba:netapi - Enable building of netapi bits
 net-fs/samba:quota - Enables support for user quotas
@@ -3481,6 +3501,7 @@ net-libs/daq:pcap - Build the PCAP data acquisition module.
 net-libs/farsight2:upnp - Enable UPnP IGD support
 net-libs/glib-networking:gnome - Extract HTTP/HTTPS/SOCKS proxy configuration stored using GSettings
 net-libs/glib-networking:libproxy - Use net-libs/libproxy for getting the HTTP/HTTPS/SOCKS proxy configuration
+net-libs/gnome-online-accounts:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/gnutls:nettle - Use dev-libs/nettle as crypto backend
 net-libs/gnutls:pkcs11 - Add support for PKCS#11 over app-crypt/p11-kit
 net-libs/gssdp:introspection - Use dev-libs/gobject-introspection for introspection
@@ -3513,6 +3534,7 @@ net-libs/libsocialweb:gnome - Extract proxy information using net-libs/libsoup-g
 net-libs/libsocialweb:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/libsocialweb:vala - Build bindings for dev-lang/vala
 net-libs/libsoup:introspection - Use dev-libs/gobject-introspection for introspection
+net-libs/libsoup:samba - Use net-fs/samba for NTLM Single Sign-On
 net-libs/libsoup-gnome:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/libsrtp:aesicm - Use AES ICM cryptographic algorithm
 net-libs/libsrtp:console - Use /dev/console instead of stdout for error messages
@@ -3627,6 +3649,8 @@ net-mail/libpst:dii - enable dii support
 net-mail/mailutils:tokyocabinet - Enable Tokyo Cabinet database support
 net-mail/mairix:gnus - Add support for the marks propagation feature in app-emacs/gnus
 net-mail/mu:gui - Build and install the experimental gui 'mug'.
+net-mail/notmuch:emacs - Install Notmuch client for Emacs (main client)
+net-mail/notmuch:vim - Install Notmuch client for Vim (experimental)
 net-mail/qmailadmin:maildrop - Filter spam using maildrop
 net-mail/qpopper:apop - Enables the pop.auth file in /etc/pop.auth
 net-mail/qpopper:drac - Enables DRAC support
@@ -4504,6 +4528,8 @@ sys-devel/binutils-hppa64:multitarget - Adds support to binutils for cross compi
 sys-devel/clang:multitarget - Build all host targets (default: host only)
 sys-devel/clang:static-analyzer - Install the Clang static analyzer
 sys-devel/clang:system-cxx-headers - By default, clang++ searchs for C++ headers in a series of hardcoded paths. Enabling this flag will force it to use the active gcc profile ones
+sys-devel/distcc:crossdev - Enable support for sys-devel/crossdev
+sys-devel/distcc:gssapi - Enable support for net-libs/libgssglue
 sys-devel/gcc:d - Enable support for the D programming language
 sys-devel/gcc:fixed-point - Enable fixed-point arithmetic support for MIPS targets in gcc (Warning: significantly increases compile time!)
 sys-devel/gcc:go - Build the GCC Go language frontend.
@@ -4755,7 +4781,6 @@ www-apps/viewvc:cvsgraph - Add dev-vcs/cvsgraph support to show graphical views 
 www-apps/viewvc:mod_python - Add www-apache/mod_python support
 www-apps/viewvc:mod_wsgi - Add www-apache/mod_wsgi support
 www-apps/viewvc:pygments - Add dev-python/pygments support for syntax highlighting
-www-client/chromium:chromedriver - Also build and install ChromeDriver, a tool that can control the browser using automation proxy framework. This is mostly intended for automated testing of web applications.
 www-client/elinks:bittorrent - Enable support for the BitTorrent protocol
 www-client/elinks:finger - Enable support for the finger protocol
 www-client/elinks:gopher - Enable support for the gopher protocol
@@ -4786,8 +4811,7 @@ www-client/luakit:helpers - Optional tools used by luakit
 www-client/luakit:luajit - Use the lua just-in-time compiler dev-lang/luajit instead of dev-lang/lua, which should make luakit faster.
 www-client/lynx:gnutls - Use gnutls library for HTTPS support (openssl is the default library for HTTPS support).
 www-client/lynx:ssl - Enable HTTPS support.
-www-client/midori:unique - Optional libunique support
-www-client/midori:vala - Enable support for dev-lang/vala based extensions
+www-client/midori:unique - Enable single instance support using dev-libs/libunique
 www-client/opera:gtk - Set runtime dependencies to support GTK+/GNOME desktop integration
 www-client/opera:kde - Set runtime dependencies to support KDE desktop integration
 www-client/opera-next:gtk - Set runtime dependencies to support GTK+/GNOME desktop integration
@@ -4844,7 +4868,6 @@ www-servers/nginx:http-cache - Enable HTTP cache support
 www-servers/nginx:libatomic - Use libatomic instead of builtin atomic operations
 www-servers/nginx:nginx_modules_http_addition - This module adds contents of other locations before and after the current location's content.
 www-servers/nginx:nginx_modules_http_dav - This module adds the HTTP and WebDAV methods PUT, DELETE, MKCOL, COPY and MOVE.
-www-servers/nginx:nginx_modules_http_ey_balancer - This module adds an upstream connection queue to nginx
 www-servers/nginx:nginx_modules_http_flv - This module provides the ability to seek within FLV (Flash) files using time-based offsets.
 www-servers/nginx:nginx_modules_http_gzip_static - Enables support for gzipping static content on disk
 www-servers/nginx:nginx_modules_http_mp4 - This module adds pseudo-streaming support for H.264/AAC in MP4 containers.
@@ -4897,6 +4920,7 @@ x11-libs/gtksourceview:introspection - Use dev-libs/gobject-introspection for in
 x11-libs/libSM:uuid - Use UUID for session identification instead of IP address and system time.
 x11-libs/libaosd:pango - Enable the textual helpers (requires pangocairo).
 x11-libs/libaosd:tools - Install the aosd_cat tool (requires glib-2.0).
+x11-libs/libcryptui:introspection - Use dev-libs/gobject-introspection for introspection
 x11-libs/libdesktop-agnostic:gconf - Enable GConf as configuration backend
 x11-libs/libdesktop-agnostic:glade - Install the Glade catalog for the desktop-agnotstic GTK widgets.
 x11-libs/libdesktop-agnostic:introspection - Use dev-libs/gobject-introspection for introspection

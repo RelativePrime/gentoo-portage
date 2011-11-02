@@ -1,6 +1,17 @@
 # ChangeLog for media-sound/cmus
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/cmus/ChangeLog,v 1.49 2011/10/19 19:23:19 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/cmus/ChangeLog,v 1.52 2011/11/02 18:12:00 radhermit Exp $
+
+  02 Nov 2011; Tim Harder <radhermit@gentoo.org> -cmus-2.3.2.ebuild,
+  -files/cmus-2.3.4-detect_mp4.h.patch, -cmus-2.4.0.ebuild, -cmus-2.4.1.ebuild:
+  Remove old.
+
+  02 Nov 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> cmus-2.4.2.ebuild:
+  x86 stable wrt bug #389059
+
+  01 Nov 2011; Tony Vroon <chainsaw@gentoo.org> cmus-2.4.2.ebuild:
+  Marked stable on AMD64 based on arch testing by Elijah "Armageddon" El
+  Lazkani & Ian "idella4" Delaney in bug #389059.
 
   19 Oct 2011; Tim Harder <radhermit@gentoo.org> files/cmus-2.4.2-ffmpeg.patch:
   Simplify ffmpeg patch (fixes bug #387017).
