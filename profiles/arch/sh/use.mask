@@ -86,6 +86,7 @@ lqr
 musepack
 authdaemond
 v4l
+v4l2
 tokyocabinet
 wildmidi
 webp
