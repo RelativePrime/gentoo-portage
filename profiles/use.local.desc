@@ -1789,6 +1789,7 @@ gnome-extra/gnome-games:glchess - Install Chess written in dev-lang/vala and Ope
 gnome-extra/gnome-games:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-extra/gnome-games:seed - Install swell-foop and lightsoff which are written in JavaScript using dev-libs/seed
 gnome-extra/gnome-games:sudoku - Install the game Sudoku which uses dev-python/pygobject and introspection
+gnome-extra/gnome-media:twolame - Allow encoding MPEG Audio Layer 2 (MP2) files using twolame
 gnome-extra/gnome-power-manager:applet - Build battery monitor applet
 gnome-extra/gnome-utils:bonobo - Enable applets (gdict one) still not ported to DBUS, requiring deprecated bonobo support in gnome-panel.
 gnome-extra/gucharmap:introspection - Use dev-libs/gobject-introspection for introspection
@@ -2300,6 +2301,7 @@ media-libs/libchamplain:html - Install gtk-doc html version for this package
 media-libs/libchamplain:introspection - Use dev-libs/gobject-introspection for introspection
 media-libs/libchamplain:vala - Generate bindings for dev-lang/vala
 media-libs/libggi:vis - Enables sparc vis support for libggi
+media-libs/libgnome-media-profiles:twolame - Allow encoding MPEG Audio Layer 2 (MP2) files using twolame
 media-libs/libgpod:gtk - Enable ArtworkDB support
 media-libs/libmikmod:raw - Enable raw file writer plug-in
 media-libs/libmp4v2:utils - Install command-line utilities
@@ -3654,6 +3656,7 @@ net-mail/libpst:dii - enable dii support
 net-mail/mailutils:tokyocabinet - Enable Tokyo Cabinet database support
 net-mail/mairix:gnus - Add support for the marks propagation feature in app-emacs/gnus
 net-mail/mu:gui - Build and install the experimental gui 'mug'.
+net-mail/notmuch:crypt - Support decryption and verification of PGP/MIME messages and in Emacs UI - encryption
 net-mail/notmuch:emacs - Install Notmuch client for Emacs (main client)
 net-mail/notmuch:vim - Install Notmuch client for Vim (experimental)
 net-mail/qmailadmin:maildrop - Filter spam using maildrop
