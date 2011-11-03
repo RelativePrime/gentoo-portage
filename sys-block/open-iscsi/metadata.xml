@@ -3,7 +3,7 @@
 <pkgmetadata>
 <herd>base-system</herd>
 <maintainer>
-  <email>base-system</email>
+  <email>kingtaco@gentoo.org</email>
 </maintainer>
 <use>
   <flag name='modules'>Build the open-iscsi kernel modules</flag>

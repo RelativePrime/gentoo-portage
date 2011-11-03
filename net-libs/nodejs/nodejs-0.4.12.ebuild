@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/nodejs/nodejs-0.4.12.ebuild,v 1.2 2011/10/30 09:20:59 phajdan.jr Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/nodejs/nodejs-0.4.12.ebuild,v 1.1 2011/10/22 17:09:40 patrick Exp $
 
 EAPI="2"
 
@@ -18,15 +18,11 @@ SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE=""
 
-DEPEND=">=dev-lang/v8-3.5.10.22
+DEPEND=">=dev-lang/v8-2.5.9.6-r1
 	dev-libs/openssl"
 RDEPEND="${DEPEND}"
 
 S=${WORKDIR}/node-v${PV}
-
-src_prepare() {
-	epatch "${FILESDIR}/${PN}-v8-3.5.patch" # bug #386683
-}
 
 src_configure() {
 	# this is a waf confuserator

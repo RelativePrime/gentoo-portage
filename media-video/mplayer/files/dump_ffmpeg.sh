@@ -61,7 +61,8 @@ move_file() {
 
 # HEADERS (order matters for the consistency checks: leaves come first)
 FILES=" libavutil/x86_cpu.h \
-        libavformat/internal.h "
+        libavformat/internal.h \
+        libavformat/riff.h"
 # Files that are sed'ed but not compiled, used to check for availability of
 # some codecs
 FILES="${FILES} libavcodec/allcodecs.c libavformat/allformats.c"

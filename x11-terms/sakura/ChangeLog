@@ -1,18 +1,6 @@
 # ChangeLog for x11-terms/sakura
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-terms/sakura/ChangeLog,v 1.25 2011/10/31 03:53:44 radhermit Exp $
-
-  31 Oct 2011; Tim Harder <radhermit@gentoo.org> -sakura-2.3.8.ebuild,
-  -sakura-2.4.0.ebuild, -sakura-2.4.1.ebuild:
-  Remove old.
-
-  30 Oct 2011; Samuli Suominen <ssuominen@gentoo.org> Manifest:
-  Regenerate Manifest wrt #388993 by Samuel BAUER
-
-  28 Oct 2011; Tony Vroon <chainsaw@gentoo.org> sakura-2.4.2.ebuild:
-  Marked stable on AMD64 based on arch testing by Ian "idella4" Delaney,
-  Agostino "ago" Sarubbo, Tomáš "Mepho" Pružina & Elijah "Armageddon" El
-  Lazkani in bug #388313.
+# $Header: /var/cvsroot/gentoo-x86/x11-terms/sakura/ChangeLog,v 1.22 2011/10/25 16:45:58 phajdan.jr Exp $
 
   25 Oct 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> sakura-2.4.2.ebuild:
   x86 stable wrt bug #388313

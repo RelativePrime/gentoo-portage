@@ -1,20 +1,6 @@
 # ChangeLog for media-libs/fmod
-# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/fmod/ChangeLog,v 1.37 2011/11/02 14:59:35 ssuominen Exp $
-
-  02 Nov 2011; Samuli Suominen <ssuominen@gentoo.org> -fmod-4.26.00.ebuild:
-  old
-
-  02 Nov 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> fmod-4.38.00.ebuild:
-  x86 stable wrt bug #294253
-
-  01 Nov 2011; Homer Parker <hparker@gentoo.org> fmod-4.38.00.ebuild:
-  Stable on amd64 fixing bug #294253
-
-*fmod-4.38.00 (30 Oct 2011)
-
-  30 Oct 2011; Samuli Suominen <ssuominen@gentoo.org> +fmod-4.38.00.ebuild:
-  Version bump wrt #320385 by "hitachi"
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/fmod/ChangeLog,v 1.33 2009/11/25 14:26:31 maekke Exp $
 
   25 Nov 2009; Markus Meier <maekke@gentoo.org> fmod-4.26.00.ebuild:
   amd64/x86 stable, bug #294341

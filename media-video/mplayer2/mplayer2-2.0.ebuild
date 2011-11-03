@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer2/mplayer2-2.0.ebuild,v 1.21 2011/11/01 20:20:23 mattst88 Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer2/mplayer2-2.0.ebuild,v 1.19 2011/10/09 16:36:34 maekke Exp $
 
 EAPI=4
 
@@ -18,7 +18,7 @@ ftp gif ggi +iconv ipv6 jack joystick jpeg kernel_linux ladspa
 libcaca lirc +live mad md5sum +mmx mmxext mng +mp3 nas
 +network nut +opengl +osdmenu oss png pnm pulseaudio pvr +quicktime
 radio +rar +real +rtc samba +shm sdl +speex sse sse2 ssse3
-tga +theora +truetype +unicode v4l vdpau
+tga +theora +truetype +unicode v4l v4l2 vdpau
 +vorbis win32codecs +X xanim xinerama +xscreensaver +xv xvid xvmc"
 
 VIDEO_CARDS="s3virge mga tdfx vesa"
@@ -156,7 +156,7 @@ DEPEND="${RDEPEND}
 SLOT="0"
 LICENSE="GPL-3"
 if [[ ${PV} != *9999* ]]; then
-	KEYWORDS="~alpha amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc x86 ~amd64-linux"
+	KEYWORDS="amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc x86 ~amd64-linux"
 else
 	KEYWORDS=""
 fi
@@ -342,13 +342,12 @@ src_configure() {
 	myconf+=" --disable-tv-bsdbt848"
 	# broken upstream, won't work with recent kernels
 	myconf+=" --disable-ivtv"
-	# v4l1 is gone since linux-headers-2.6.38
-	myconf+=" --disable-tv-v4l1"
-	if { use dvb || use v4l || use pvr || use radio; }; then
+	if { use dvb || use v4l || use v4l2 || use pvr || use radio; }; then
 		use dvb || myconf+=" --disable-dvb"
 		use pvr || myconf+=" --disable-pvr"
-		use v4l || myconf+=" --disable-tv-v4l2"
-		if use radio && { use dvb || use v4l; }; then
+		use v4l || myconf+=" --disable-tv-v4l1"
+		use v4l2 || myconf+=" --disable-tv-v4l2"
+		if use radio && { use dvb || use v4l || use v4l2; }; then
 			myconf+="
 				--enable-radio
 				--disable-radio-capture
@@ -362,6 +361,7 @@ src_configure() {
 	else
 		myconf+="
 			--disable-tv
+			--disable-tv-v4l1
 			--disable-tv-v4l2
 			--disable-radio
 			--disable-radio-v4l2

@@ -1,31 +1,6 @@
 # ChangeLog for net-libs/net6
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/net6/ChangeLog,v 1.46 2011/11/02 17:42:05 xarthisius Exp $
-
-  02 Nov 2011; Kacper Kowalik <xarthisius@gentoo.org> net6-1.3.14.ebuild:
-  Add note that recompilation of gobby is required after updating net6
-
-  02 Nov 2011; Kacper Kowalik <xarthisius@gentoo.org> -net6-1.3.9.ebuild,
-  -files/net6-1.3.9-libgnutls.patch:
-  Marked stable on AMD64 based on arch testing by Agostino ago Sarubbo & Ian
-  Delaney in bug #389125. ppc stable, drop old
-
-  02 Nov 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> net6-1.3.14.ebuild:
-  x86 stable wrt bug #389125
-
-  02 Nov 2011; Jeroen Roovers <jer@gentoo.org> net6-1.3.14.ebuild:
-  Stable for HPPA (bug #389125).
-
-*net6-1.3.14 (31 Oct 2011)
-
-  31 Oct 2011; Kacper Kowalik <xarthisius@gentoo.org> -net6-1.3.13.ebuild,
-  -files/net6-1.3.13-gnutls3.patch, +net6-1.3.14.ebuild:
-  Version bump, contains fixes for CVE-2011-4093 and CVE-2011-4091, drop old
-
-  30 Oct 2011; Kacper Kowalik <xarthisius@gentoo.org> net6-1.3.13.ebuild,
-  +net6-1.3.13-gnutls3.patch:
-  Backport upstream patch to fix building with gnutls-3. Fixes bug #388897 by
-  Lars Wendler <polynomial-c@gentoo.org>
+# $Header: /var/cvsroot/gentoo-x86/net-libs/net6/ChangeLog,v 1.40 2011/09/22 16:52:32 xarthisius Exp $
 
   22 Sep 2011; Kacper Kowalik <xarthisius@gentoo.org> net6-1.3.13.ebuild:
   add IUSE=static-libs

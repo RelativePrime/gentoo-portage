@@ -1,17 +1,6 @@
 # ChangeLog for media-sound/nted
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/nted/ChangeLog,v 1.24 2011/11/02 14:55:54 phajdan.jr Exp $
-
-  02 Nov 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> nted-1.10.18.ebuild:
-  x86 stable wrt bug #388815
-
-  31 Oct 2011; Tony Vroon <chainsaw@gentoo.org> nted-1.10.18.ebuild:
-  Marked stable on AMD64 based on arch testing by Elijah "Armageddon" El
-  Lazkani & Agostino "ago" Sarubbo in bug #388815.
-
-  30 Oct 2011; Markos Chandras <hwoarang@gentoo.org> nted-1.10.18.ebuild:
-  drop debug useflag since its only purpose was to append -g to cflags. Bug
-  #388851
+# $Header: /var/cvsroot/gentoo-x86/media-sound/nted/ChangeLog,v 1.21 2011/05/18 17:47:47 hwoarang Exp $
 
 *nted-1.10.18 (18 May 2011)
 

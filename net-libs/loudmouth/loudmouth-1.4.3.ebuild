@@ -1,11 +1,12 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/loudmouth/loudmouth-1.4.3.ebuild,v 1.11 2011/11/02 02:56:39 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/loudmouth/loudmouth-1.4.3.ebuild,v 1.10 2009/06/17 22:09:46 eva Exp $
 
 inherit autotools gnome2
 
 DESCRIPTION="Lightweight C Jabber library"
-HOMEPAGE="https://github.com/engineyard/loudmouth"
+HOMEPAGE="http://www.loudmouth-project.org/"
+SRC_URI="http://ftp.imendio.com/pub/imendio/${PN}/src/${P}.tar.bz2"
 
 LICENSE="LGPL-2.1"
 SLOT="0"

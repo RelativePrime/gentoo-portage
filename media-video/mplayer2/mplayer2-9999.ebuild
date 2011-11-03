@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer2/mplayer2-9999.ebuild,v 1.17 2011/11/01 01:05:08 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer2/mplayer2-9999.ebuild,v 1.15 2011/05/10 13:27:54 scarabeus Exp $
 
 EAPI=4
 
@@ -30,7 +30,7 @@ bs2b cddb +cdio cdparanoia cpudetection custom-cpuopts custom-cflags debug dga
 directfb doc +dts +dv dvb +dvd +dvdnav dxr3 +enca esd +faad fbcon
 ftp gif ggi +iconv ipv6 jack joystick jpeg kernel_linux ladspa
 libcaca lirc +live mad md5sum +mmx mmxext mng +mp3 nas
-+network nut +opengl oss png pnm pulseaudio pvr +quicktime
++network nut +opengl +osdmenu oss png pnm pulseaudio pvr +quicktime
 radio +rar +real +rtc samba +shm sdl +speex sse sse2 ssse3
 tga +theora +truetype +unicode v4l v4l2 vdpau
 +vorbis win32codecs +X xanim xinerama +xscreensaver +xv xvid"
@@ -320,13 +320,12 @@ src_configure() {
 	myconf+=" --disable-tv-bsdbt848"
 	# broken upstream, won't work with recent kernels
 	myconf+=" --disable-ivtv"
-	# v4l1 is gone since linux-headers-2.6.38
-	myconf+=" --disable-tv-v4l1"
-	if { use dvb || use v4l || use pvr || use radio; }; then
+	if { use dvb || use v4l || use v4l2 || use pvr || use radio; }; then
 		use dvb || myconf+=" --disable-dvb"
 		use pvr || myconf+=" --disable-pvr"
-		use v4l || myconf+=" --disable-tv-v4l2"
-		if use radio && { use dvb || use v4l; }; then
+		use v4l || myconf+=" --disable-tv-v4l1"
+		use v4l2 || myconf+=" --disable-tv-v4l2"
+		if use radio && { use dvb || use v4l || use v4l2; }; then
 			myconf+="
 				--enable-radio
 				--disable-radio-capture
@@ -340,6 +339,7 @@ src_configure() {
 	else
 		myconf+="
 			--disable-tv
+			--disable-tv-v4l1
 			--disable-tv-v4l2
 			--disable-radio
 			--disable-radio-v4l2
@@ -479,6 +479,7 @@ src_configure() {
 		done
 		use dga || myconf+=" --disable-dga1 --disable-dga2"
 		use opengl || myconf+=" --disable-gl"
+		use osdmenu && myconf+=" --enable-menu"
 		use vdpau || myconf+=" --disable-vdpau"
 		use video_cards_vesa || myconf+=" --disable-vesa"
 		use xscreensaver || myconf+=" --disable-xss"
@@ -495,7 +496,7 @@ src_configure() {
 			--disable-xv
 			--disable-x11
 		"
-		uses="dga dxr3 ggi opengl vdpau xinerama xscreensaver xv"
+		uses="dga dxr3 ggi opengl osdmenu vdpau xinerama xscreensaver xv"
 		for i in ${uses}; do
 			use ${i} && elog "Useflag \"${i}\" require \"X\" useflag enabled to work."
 		done
@@ -590,6 +591,7 @@ src_install() {
 [default]
 _EOF_
 	doins "${S}/etc/input.conf"
+	use osdmenu && doins "${S}/etc/menu.conf"
 
 	# set unrar path when required
 	if use rar; then
