@@ -1,6 +1,19 @@
 # ChangeLog for net-dialup/minicom
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-dialup/minicom/ChangeLog,v 1.81 2011/02/03 21:27:39 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-dialup/minicom/ChangeLog,v 1.85 2011/11/02 14:50:58 phajdan.jr Exp $
+
+  02 Nov 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> minicom-2.5.ebuild:
+  x86 stable wrt bug #389063
+
+  02 Nov 2011; Jeroen Roovers <jer@gentoo.org> minicom-2.5.ebuild:
+  Stable for HPPA (bug #389063).
+
+  01 Nov 2011; Tony Vroon <chainsaw@gentoo.org> minicom-2.5.ebuild:
+  Marked stable on AMD64 based on arch testing by Agostino "ago" Sarubbo &
+  Elijah "Armageddon" El Lazkani in bug #389063.
+
+  31 Oct 2011; Tim Harder <radhermit@gentoo.org> minicom-2.5.ebuild:
+  Use default instead of default_src_install.
 
 *minicom-2.5 (03 Feb 2011)
 

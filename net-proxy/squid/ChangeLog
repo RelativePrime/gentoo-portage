@@ -1,6 +1,17 @@
 # ChangeLog for net-proxy/squid
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-proxy/squid/ChangeLog,v 1.328 2011/10/23 18:45:39 polynomial-c Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-proxy/squid/ChangeLog,v 1.331 2011/11/02 14:11:07 jer Exp $
+
+  02 Nov 2011; Jeroen Roovers <jer@gentoo.org> squid-3.1.16.ebuild:
+  Stable for HPPA (bug #389133).
+
+  01 Nov 2011; Homer Parker <hparker@gentoo.org> squid-3.1.16.ebuild:
+  Stable on amd64 fixing security bug #389133
+
+*squid-3.1.16 (01 Nov 2011)
+
+  01 Nov 2011; Eray Aslan <eras@gentoo.org> +squid-3.1.16.ebuild:
+  non-maintainer version bump - security bug #389133
 
   23 Oct 2011; Lars Wendler <polynomial-c@gentoo.org> files/squid.initd:
   non-maintainer commit: Replaced deprecated opts variable in init script (bug
