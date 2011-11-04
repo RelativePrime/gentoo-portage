@@ -5,4 +5,8 @@
     <email>aballier@gentoo.org</email>
     <name>Alexis Ballier</name>
   </maintainer>
+  <maintainer>
+	<email>jkarlson@cc.hut.fi</email>
+	<name>Emil Karlson</name>
+  </maintainer>
 </pkgmetadata>
