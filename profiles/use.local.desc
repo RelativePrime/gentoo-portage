@@ -1167,6 +1167,10 @@ dev-libs/eina:mempool-pass-through - Compile "pass-through" (system's malloc) me
 dev-libs/elfutils:lzma - Support automatic decompression of LZMA-compressed files and kernel images.
 dev-libs/fcgi:html - Install HTML documentation
 dev-libs/ferrisloki:stlport - Include support for dev-libs/STLport
+dev-libs/folks:socialweb - Load web service contacts using net-libs/libsocialweb
+dev-libs/folks:tracker - Load contacts from app-misc/tracker index
+dev-libs/folks:utils - Build the folks-inspect utility
+dev-libs/folks:vala - Regenerate pre-generated C code from Vala source
 dev-libs/gdl:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/gecode:gist - Enable Gist, the Gecode Interactive Search Tool
 dev-libs/geoip:perl-geoipupdate - Install pure perl version of geoipupdate, with Proxy Server support via via the "http_proxy" environment variable and easy to customize.
