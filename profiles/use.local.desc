@@ -1505,6 +1505,7 @@ dev-util/buildbot:irc - Add support for status delivery through an ircbot.
 dev-util/buildbot:mail - Add support for watching a maildir for commits.
 dev-util/buildbot:manhole - Add support for manhole (debug over ssh)
 dev-util/catalyst:ccache - Enables ccache support
+dev-util/coccigrep:vim - Install the coccigrep vim plugin
 dev-util/codeblocks:contrib - Build additional contrib components
 dev-util/cppcheck:htmlreport - install cppcheck-htmlreport
 dev-util/ctags:ada - Enable Ada support
