@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13203 2011/11/04 19:49:20 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13205 2011/11/04 23:51:31 ssuominen Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -250,22 +250,6 @@ net-wireless/madwifi-old-tools
 # install should be directed upstream at:
 # https://bugzilla.balabit.com/
 >=app-admin/syslog-ng-3.2.9999
-
-# Samuli Suominen <ssuominen@gentoo.org> (29 Sep 2011)
-# Incompatible with >= gnome-panel-3 and has issues wrt bug 358171
-# http://mail.xfce.org/pipermail/xfce4-dev/2011-May/028870.html
-# Removal in 30 days
-xfce-extra/xfce4-xfapplet-plugin
-
-# Michael Sterrett <mr_bones_@gentoo.org> (27 Sep 2011)
-# maintainer-needed, gtk+:1 using packages.
-# Masked for removal on 20111027
-app-arch/guitar
-app-misc/endeavour
-app-misc/ithought
-app-misc/mtoolsfm
-media-radio/xconvers
-sci-calculators/grpn
 
 # Justin Bronder <jsbronder@gentoo.org> (27 Sep 2011)
 # Masking the torque 2.3 series due to bug #372959.  This allows
@@ -547,13 +531,6 @@ net-zope/zpsycopgda
 net-zope/zsqlmethods
 net-zope/zsyncer
 net-zope/zwiki
-
-# Vlastimil Babka <caster@gentoo.org> (11 Sep 2011)
-# Masked until Icedtea7 final is released, to prevent pulling oracle-jdk-bin for everyone.
-# If you want oracle-jdk-bin as the only installed JDK, unmask this locally.
-# Bug #382485.
-=virtual/jdk-1.7*
-=virtual/jre-1.7*
 
 # Ole Markus With <olemarkus@gentoo.org> (07 Sep 2011)
 # Masked for removal 7 Oct 2011.
