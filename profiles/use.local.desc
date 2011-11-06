@@ -1067,7 +1067,6 @@ dev-lang/idb:icc - Use dev-lang/icc to install idb (default)
 dev-lang/idb:ifc - Use dev-lang/ifc to install idb
 dev-lang/ifc:idb - Install the Intel Debugger
 dev-lang/ifc:mkl - Install the Intel Math Kernel Library
-dev-lang/lisaac:vim - install a syntax file for vim
 dev-lang/logtalk:fop - Support for generating pdf documentation using fop
 dev-lang/logtalk:gnupl - Support GNU Prolog back-end compiler
 dev-lang/logtalk:qupl - Support Qu-Prolog back-end compiler
@@ -1778,6 +1777,8 @@ gnome-base/nautilus:sendto - Enable the nautilus-sendto extension to send files 
 gnome-base/nautilus:tracker - Add support for app-misc/tracker search
 gnome-extra/avant-window-navigator:gconf - Enable GConf as configuration backend
 gnome-extra/avant-window-navigator:vala - Enable installation of dev-lang/vala binding
+gnome-extra/avant-window-navigator-extras:gconf - Enable GConf as configuration backend
+gnome-extra/avant-window-navigator-extras:webkit - Enable support for net-libs/webkit-gtk
 gnome-extra/evolution-data-server:gnome-online-accounts - Enable using net-libs/gnome-online-accounts for authorization
 gnome-extra/evolution-data-server:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-extra/evolution-data-server:vala - Build dev-lang/vala bindings
@@ -4078,8 +4079,6 @@ net-wireless/kismet:client - Build the ncurses-based user interface
 net-wireless/kismet:pcap - Enable packet capturing support using net-libs/libpcap
 net-wireless/kismet:suid - Install a setuid root helper binary with limited functionality; this allows running kismet as a normal user, significantly reducing security risks
 net-wireless/madwifi-ng:injection - Adds support for net-wireless/aircrack-ng aireplay-ng packet injection
-net-wireless/madwifi-old:amrr - Use Adaptive Multi Rate Retry bit rate control algorithm
-net-wireless/madwifi-old:onoe - Use Atsushi Onoe's bit rate control algorithm
 net-wireless/wepattack:john - Build with app-crypt/johntheripper support
 net-wireless/wifiscanner:wireshark - Use the net-analyzer/wireshark wtap library
 net-wireless/wireless-tools:multicall - Build the most commonly used tools as one binary
