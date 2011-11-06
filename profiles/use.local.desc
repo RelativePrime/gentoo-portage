@@ -1776,9 +1776,8 @@ gnome-base/nautilus:packagekit - Use packagekit to search for programs to open u
 gnome-base/nautilus:previewer - Use gnome-extra/sushi to preview files from the file mananger
 gnome-base/nautilus:sendto - Enable the nautilus-sendto extension to send files to various locations/devices
 gnome-base/nautilus:tracker - Add support for app-misc/tracker search
-gnome-extra/avant-window-navigator:thunar - Enables support for the deprecated Thunar VFS layer
-gnome-extra/avant-window-navigator:vala - Enables support for applets written in dev-lang/vala.
-gnome-extra/avant-window-navigator-extras:webkit - Enables support for net-libs/webkit-gtk.
+gnome-extra/avant-window-navigator:gconf - Enable GConf as configuration backend
+gnome-extra/avant-window-navigator:vala - Enable installation of dev-lang/vala binding
 gnome-extra/evolution-data-server:gnome-online-accounts - Enable using net-libs/gnome-online-accounts for authorization
 gnome-extra/evolution-data-server:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-extra/evolution-data-server:vala - Build dev-lang/vala bindings
