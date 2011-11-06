@@ -1,6 +1,13 @@
 # ChangeLog for dev-perl/WWW-RobotRules
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-perl/WWW-RobotRules/ChangeLog,v 1.10 2011/08/09 16:10:08 xarthisius Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/WWW-RobotRules/ChangeLog,v 1.12 2011/11/06 14:01:54 nativemad Exp $
+
+  06 Nov 2011; Andreas Schuerch <nativemad@gentoo.org>
+  WWW-RobotRules-6.10.0.ebuild:
+  x86 stable, bug 386309. Thanks Myckel Habets.
+
+  06 Nov 2011; Brent Baude <ranger@gentoo.org> WWW-RobotRules-6.10.0.ebuild:
+  Marking WWW-RobotRules-6.10.0 ppc stable for bug 386309
 
   09 Aug 2011; Kacper Kowalik <xarthisius@gentoo.org>
   WWW-RobotRules-6.10.0.ebuild:
