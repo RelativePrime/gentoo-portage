@@ -1,17 +1,17 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/mail-mta/postfix/postfix-2.9_pre20111025.ebuild,v 1.1 2011/10/26 19:24:56 eras Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-mta/postfix/postfix-2.8.7.ebuild,v 1.1 2011/11/07 09:09:21 eras Exp $
 
 EAPI=4
 
 inherit eutils multilib ssl-cert toolchain-funcs flag-o-matic pam
 
-MY_PV="${PV/_pre/-}"
+MY_PV="${PV/_rc/-RC}"
 MY_SRC="${PN}-${MY_PV}"
-MY_URI="ftp://ftp.porcupine.org/mirrors/postfix-release/experimental"
-VDA_PV="2.8.3"
+MY_URI="ftp://ftp.porcupine.org/mirrors/postfix-release/official"
+VDA_PV="2.8.5"
 VDA_P="${PN}-vda-v10-${VDA_PV}"
-RC_VER="2.6"
+RC_VER="2.5"
 
 DESCRIPTION="A fast and secure drop-in replacement for sendmail."
 HOMEPAGE="http://www.postfix.org/"
@@ -177,9 +177,6 @@ src_configure() {
 		[[ "$(gcc-version)" == "3.4" ]] && replace-flags -O? -Os
 	fi
 
-	# Remove annoying C++ comment style warnings - bug #378099
-	append-flags -Wno-comment
-
 	emake DEBUG="" CC="$(tc-getCC)" OPT="${CFLAGS}" CCARGS="${mycc}" AUXLIBS="${mylibs}" makefiles
 }
 
@@ -243,10 +240,10 @@ src_install () {
 	use mysql || sed -i -e "s/mysql //" "${D}/etc/init.d/postfix"
 	use postgres || sed -i -e "s/postgresql //" "${D}/etc/init.d/postfix"
 
+	dodoc *README COMPATIBILITY HISTORY INSTALL PORTING RELEASE_NOTES*
+
 	mv "${S}"/examples "${D}"/usr/share/doc/${PF}/
 	mv "${D}"/etc/postfix/{*.default,makedefs.out} "${D}"/usr/share/doc/${PF}/
-
-	dodoc *README COMPATIBILITY HISTORY INSTALL PORTING RELEASE_NOTES*
 
 	pamd_mimic_system smtp auth account
 
@@ -254,10 +251,6 @@ src_install () {
 		insinto /etc/sasl2
 		newins "${FILESDIR}"/smtp.sasl smtpd.conf
 	fi
-
-	# header files
-	insinto /usr/include/postfix
-	doins include/*.h
 
 	# Remove unnecessary files
 	rm -f "${D}"/etc/postfix/{*LICENSE,access,aliases,canonical,generic}
@@ -283,12 +276,4 @@ pkg_postinst() {
 
 	elog "See the RELEASE_NOTES file in /usr/share/doc/${PF}"
 	elog "for incompatibilities and other major changes between releases."
-
-	if [[ ${REPLACING_VERSIONS} < 2.9 ]]; then
-		elog "If you are using old style postfix instances by symlinking"
-		elog "startup scripts in ${ROOT}etc/init.d, please consider"
-		elog "upgrading your config for postmulti support. For more info:"
-		elog "http://www.postfix.org/MULTI_INSTANCE_README.html"
-		elog
-	fi
 }
