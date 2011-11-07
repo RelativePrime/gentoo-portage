@@ -1738,6 +1738,7 @@ gnome-base/dconf:introspection - Use dev-libs/gobject-introspection for introspe
 gnome-base/dconf:vala - Add support for dev-lang/vala
 gnome-base/gconf:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-base/gconf:ldap - Build backend which enables default mail accounts, addressbooks and calendars for Evolution to be configured using each user's LDAP entry."
+gnome-base/gconf:orbit - Use gnome-base/orbit for IPC, same as in gconf-2.x
 gnome-base/gdm:consolekit - Allow proper handling of removable media according to who is actually present on the machine.
 gnome-base/gdm:dmx - Enables Distributed Multihead X (DMX) support
 gnome-base/gdm:fprint - Enables experimental fingerprint authentication using sys-auth/fprintd
@@ -2425,6 +2426,7 @@ media-plugins/banshee-community-extensions:telepathy - Enables the Telepathy plu
 media-plugins/frei0r-plugins:facedetect - Enables building of facedetect plugin, which depends on media-libs/opencv
 media-plugins/frei0r-plugins:scale0tilt - Enables building of scale0tilt and vectorscope plugins, which depend on media-libs/gavl
 media-plugins/gkrellmpc:threads - Use separate thread to init connection (unsafe)
+media-plugins/grilo-plugins:tracker - Build support for content discovery using the app-misc/tracker indexer
 media-plugins/grilo-plugins:upnp - Build support for UPnP devices using net-libs/gupnp and net-libs/gupnp-av
 media-plugins/grilo-plugins:vimeo - Build support for Vimeo content discovery using net-libs/libsoup and dev-libs/libgcrypt
 media-plugins/grilo-plugins:youtube - Build support for YouTube content discovery using dev-libs/libgdata
