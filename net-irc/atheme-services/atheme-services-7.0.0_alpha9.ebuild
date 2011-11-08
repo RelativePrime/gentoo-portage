@@ -1,10 +1,10 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-irc/atheme-services/atheme-services-7.0.0_alpha7.ebuild,v 1.2 2011/09/30 04:47:45 binki Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-irc/atheme-services/atheme-services-7.0.0_alpha9.ebuild,v 1.1 2011/11/08 02:47:43 binki Exp $
 
 EAPI=4
 
-inherit eutils flag-o-matic perl-module prefix
+inherit flag-o-matic perl-module
 
 MY_P=${P/_/-}
 
@@ -45,9 +45,6 @@ pkg_setup() {
 }
 
 src_prepare() {
-	epatch "${FILESDIR}"/${P}-mowgli-strl.patch \
-		"${FILESDIR}"/${P}-xmlrpc-mowgli-string.patch
-
 	# fix docdir
 	sed -i -e 's/\(^DOCDIR.*=.\)@DOCDIR@/\1@docdir@/' extra.mk.in || die
 
@@ -55,7 +52,7 @@ src_prepare() {
 	sed -i -e '/^logfile/s;var/\(.*\.log\);'"${EPREFIX}"'/var/log/atheme/\1;g' dist/* || die
 
 	# QA against bundled libs
-	rm -rf libmowgli || die
+	rm -rf libmowgli libmowgli-2 || die
 
 	# Get useful information into build.log
 	sed -i -e '/^\.SILENT:$/d' buildsys.mk.in || die
