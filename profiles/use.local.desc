@@ -631,7 +631,6 @@ app-misc/tracker:flickr - Build flickr data miner
 app-misc/tracker:gsf - Enable gnome-extra/libgsf based data extractor and for ODT.
 app-misc/tracker:introspection - Use dev-libs/gobject-introspection for introspection
 app-misc/tracker:iptc - Enable extraction of IPTC data from pictures
-app-misc/tracker:kmail - Build kmail data miner
 app-misc/tracker:laptop - Make tracker power management aware
 app-misc/tracker:nautilus - Enable tracker to integrate with gnome-base/nautilus by providing entries in its context menu
 app-misc/tracker:playlist - Add support for playlists
