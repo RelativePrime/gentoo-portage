@@ -1,8 +1,8 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-power/phctool/phctool-0.5.2.2-r2.ebuild,v 1.1 2011/11/10 09:55:40 xmw Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-power/phctool/phctool-0.5.2.2.ebuild,v 1.2 2011/11/02 21:42:43 vapier Exp $
 
-EAPI=4
+EAPI=2
 
 PYTHON_DEPEND="2"
 inherit eutils python
@@ -28,42 +28,35 @@ pkg_setup() {
 		MY_GROUPNAME="phcusers"
 		enewgroup ${MY_GROUPNAME}
 	fi
-	python_pkg_setup
 }
 
 src_prepare() {
-	epatch "${FILESDIR}"/${P}_all_paths_tray.patch
-	if use sudo ; then
-		epatch "${FILESDIR}"/${P}_all_paths_tool_sudo.patch
+	epatch "${FILESDIR}/${PF}_all_paths_tray.patch"
+	if use sudo; then
+		epatch "${FILESDIR}/${PF}_all_paths_tool_sudo.patch"
 	else
-		epatch "${FILESDIR}"/${P}_all_paths_tool_no_sudo.patch
+		epatch "${FILESDIR}/${PF}_all_paths_tool_no_sudo.patch"
 	fi
-	epatch "${FILESDIR}"/${P}_kernel_2.6.36.patch
-	epatch "${FILESDIR}"/${P}_gui_kernel_2.6.38.patch
-	find . -name "*.pyc" -delete || die
+	find . -name "*.pyc" -exec rm {} +
 }
 
 src_install() {
-	newbin phctool.sh phctool
-	newbin phctray.sh phctray
+	newbin phctool.sh phctool || die
+	newbin phctray.sh phctray || die
 
 	exeinto ${MY_PROGDIR}
-	doexe phc{tool,tray}.py subphctool.sh
+	doexe phc{tool,tray}.py subphctool.sh || die
 	insinto ${MY_PROGDIR}
-	doins -r inc
+	doins -r inc || die
 
 	if use sudo ; then
-		fowners -R ":${MY_GROUPNAME}" "${MY_PROGDIR}"
-		fperms g+rX "${MY_PROGDIR}"
-		dodir /etc/sudoers.d
-		echo "#%${MY_GROUPNAME} ALL=(root) NOPASSWD:${MY_PROGDIR}/subphctool.sh" \
-			> "${ED}"/etc/sudoers.d/${PN} || die
-		fperms a-w,o-r /etc/sudoers.d/${PN}
+		fowners -R :${MY_GROUPNAME} "${MY_PROGDIR}" || die
+		fperms g+rX "${MY_PROGDIR}" || die
 	fi
 
-	dodoc CHANGELOG
+	dodoc CHANGELOG || die
 	if use doc; then
-		dohtml -r doc/docfiles doc/index.htm
+		dohtml -r doc/docfiles doc/index.htm || die
 	fi
 }
 
@@ -71,8 +64,15 @@ pkg_postinst() {
 	if use sudo; then
 		einfo "You have to add a line to /etc/sudoers to get access to"
 		einfo "/sys/devices/system/cpu/cpu1/cpufreq/phc_controls from the phctool/phctray"
-		einfo "Please check and uncomment the content of /etc/sudoers.d/${PN}"
+		einfo "Please check following line and add it to /etc/sudoser using visudo:"
+		einfo "  %${MY_GROUPNAME} ALL=(root) NOPASSWD:${MY_PROGDIR}/subphctool.sh"
 	else
 		einfo "Group not automatically added. Please run phctool as root."
 	fi
+
+	python_mod_optimize ${MY_PROGDIR}
+}
+
+pkg_postrm() {
+	python_mod_cleanup ${MY_PROGDIR}
 }
