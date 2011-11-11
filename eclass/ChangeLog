@@ -1,6 +1,18 @@
 # ChangeLog for eclass directory
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/ChangeLog,v 1.4 2011/11/08 12:16:29 voyageur Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/ChangeLog,v 1.7 2011/11/11 07:06:25 dirtyepic Exp $
+
+  11 Nov 2011; Ryan Hill <dirtyepic@gentoo.org> flag-o-matic.eclass:
+  Test that appended flags are valid. This allows people to add flags that were
+  unsupported in earlier releases without needing to do version checking.
+
+  10 Nov 2011; Pacho Ramos <pacho@gentoo.org> gtk-sharp-module.eclass:
+  gnome-desktop-sharp stuff need gnome-desktop:2, bug #389181 by Kacper
+  Kowalik.
+
+  10 Nov 2011; Naohiro Aota <naota@gentoo.org>
+  ELT-patches/fbsd-conf/00broken-libglade:
+  Add patch applied detection comment
 
   08 Nov 2011; Bernard Cafarelli <voyageur@gentoo.org> gnustep-base.eclass:
   Fix sandbox access violation on /root/GNUstep, bug #383665
