@@ -1,6 +1,6 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/gtest/gtest-1.4.0.ebuild,v 1.2 2010/03/02 07:33:16 dev-zero Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-cpp/gtest/gtest-1.4.0.ebuild,v 1.1 2011/11/11 20:09:57 vapier Exp $
 
 EAPI="2"
 inherit autotools eutils
