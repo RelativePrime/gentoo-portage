@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/chromium/chromium-9999-r1.ebuild,v 1.75 2011/11/10 23:49:09 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/chromium/chromium-9999-r1.ebuild,v 1.73 2011/11/09 18:56:01 floppym Exp $
 
 EAPI="4"
 PYTHON_DEPEND="2:2.6"
@@ -228,7 +228,7 @@ src_prepare() {
 	# zlib-1.2.5.1-r1 renames the OF macro in zconf.h, bug 383371.
 	sed -i '1i#define OF(x) x' \
 		third_party/zlib/contrib/minizip/{ioapi,{,un}zip}.c \
-		chrome/common/zip{,_internal}.cc || die
+		chrome/common/zip.cc || die
 
 	epatch_user
 
@@ -383,8 +383,8 @@ src_compile() {
 	emake chrome chrome_sandbox chromedriver BUILDTYPE=Release V=1 || die
 	pax-mark m out/Release/chrome
 	if use test; then
-		emake {base,cacheinvalidation,crypto,googleurl,gpu,media,net,printing}_unittests BUILDTYPE=Release V=1 || die
-		pax-mark m out/Release/{base,cacheinvalidation,crypto,googleurl,gpu,media,net,printing}_unittests
+		emake {base,crypto,googleurl,net}_unittests BUILDTYPE=Release V=1 || die
+		pax-mark m out/Release/{base,crypto,googleurl,net}_unittests
 	fi
 }
 
@@ -408,19 +408,14 @@ src_test() {
 	LC_ALL="${mylocale}" VIRTUALX_COMMAND=out/Release/base_unittests virtualmake \
 		'--gtest_filter=-ICUStringConversionsTest.*'
 
-	LC_ALL="${mylocale}" VIRTUALX_COMMAND=out/Release/cacheinvalidation_unittests virtualmake
 	LC_ALL="${mylocale}" VIRTUALX_COMMAND=out/Release/crypto_unittests virtualmake
 	LC_ALL="${mylocale}" VIRTUALX_COMMAND=out/Release/googleurl_unittests virtualmake
-	LC_ALL="${mylocale}" VIRTUALX_COMMAND=out/Release/gpu_unittests virtualmake
-	LC_ALL="${mylocale}" VIRTUALX_COMMAND=out/Release/media_unittests virtualmake
 
 	# NetUtilTest: bug #361885.
 	# NetUtilTest.GenerateFileName: some locale-related mismatch.
 	# UDP: unstable, active development. We should revisit this later.
 	LC_ALL="${mylocale}" VIRTUALX_COMMAND=out/Release/net_unittests virtualmake \
 		'--gtest_filter=-NetUtilTest.IDNToUnicode*:NetUtilTest.FormatUrl*:NetUtilTest.GenerateFileName:*UDP*'
-
-	LC_ALL="${mylocale}" VIRTUALX_COMMAND=out/Release/printing_unittests virtualmake
 }
 
 src_install() {

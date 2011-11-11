@@ -1,16 +1,6 @@
 # ChangeLog for sys-apps/less
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/less/ChangeLog,v 1.135 2011/11/11 09:26:50 phajdan.jr Exp $
-
-  11 Nov 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> less-444.ebuild:
-  x86 stable wrt bug #389995
-
-  10 Nov 2011; Jeroen Roovers <jer@gentoo.org> less-444.ebuild:
-  Stable for HPPA (bug #389995).
-
-  10 Nov 2011; Tony Vroon <chainsaw@gentoo.org> less-444.ebuild:
-  Marked stable on AMD64 based on arch testing by Agostino "ago" Sarubbo &
-  Elijah "Armageddon" El Lazkani in bug #389995.
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/less/ChangeLog,v 1.132 2011/11/09 18:43:05 vapier Exp $
 
 *less-445-r1 (09 Nov 2011)
 

@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/flag-o-matic.eclass,v 1.157 2011/11/11 07:06:25 dirtyepic Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/flag-o-matic.eclass,v 1.156 2011/10/08 18:37:30 vapier Exp $
 
 # @ECLASS: flag-o-matic.eclass
 # @MAINTAINER:
@@ -154,7 +154,7 @@ append-cppflags() {
 # Add extra <flags> to the current CFLAGS.
 append-cflags() {
 	[[ -z $* ]] && return 0
-	export CFLAGS=$(test-flags-CC ${CFLAGS} $*)
+	export CFLAGS="${CFLAGS} $*"
 	return 0
 }
 
@@ -164,7 +164,7 @@ append-cflags() {
 # Add extra <flags> to the current CXXFLAGS.
 append-cxxflags() {
 	[[ -z $* ]] && return 0
-	export CXXFLAGS=$(test-flags-CXX ${CXXFLAGS} $*)
+	export CXXFLAGS="${CXXFLAGS} $*"
 	return 0
 }
 
@@ -174,8 +174,8 @@ append-cxxflags() {
 # Add extra <flags> to the current {F,FC}FLAGS.
 append-fflags() {
 	[[ -z $* ]] && return 0
-	export FFLAGS=$(test-flags-F77 ${FFLAGS} $*)
-	export FCFLAGS=$(test-flags-FC ${FCFLAGS} $*)
+	export FFLAGS="${FFLAGS} $*"
+	export FCFLAGS="${FCFLAGS} $*"
 	return 0
 }
 
