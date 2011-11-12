@@ -1,18 +1,16 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-db/pgadmin3/pgadmin3-1.14.0_beta1.ebuild,v 1.2 2011/07/11 17:30:22 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-db/pgadmin3/pgadmin3-1.14.0.ebuild,v 1.1 2011/11/12 15:36:39 titanofold Exp $
 
-EAPI=4
+EAPI="4"
 
 WX_GTK_VER="2.8"
-MY_PV=${PV/_/-}
-MY_P=${PN}-${MY_PV}
 
-inherit autotools wxwidgets
+inherit autotools multilib versionator wxwidgets
 
 DESCRIPTION="wxWidgets GUI for PostgreSQL."
 HOMEPAGE="http://www.pgadmin.org/"
-SRC_URI="mirror://postgresql/${PN}/release/v${MY_PV}/src/${MY_P}.tar.gz"
+SRC_URI="mirror://postgresql/${PN}/release/v${PV}/src/${P}.tar.gz"
 
 LICENSE="Artistic"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86 ~x86-fbsd"
@@ -25,8 +23,6 @@ DEPEND="x11-libs/wxGTK:2.8[X]
 	>=dev-libs/libxslt-1.1"
 RDEPEND="${DEPEND}"
 
-S="${WORKDIR}/${MY_P}"
-
 pkg_pretend() {
 	local pgslot=$(postgresql-config show)
 
@@ -38,18 +34,17 @@ pkg_pretend() {
 }
 
 src_prepare() {
-	epatch "${FILESDIR}/ssl-detect.patch"
+	epatch "${FILESDIR}/ssl-detect-r1.patch"
 	eautoreconf
 }
 
 src_configure() {
-	econf \
-		--with-wx-version=2.8 \
+	econf --with-wx-version=2.8 \
 		$(use_enable debug)
 }
 
 src_install() {
-	default
+	emake DESTDIR="${D}" install
 
 	newicon "${S}/pgadmin/include/images/pgAdmin3.png" ${PN}.png
 
