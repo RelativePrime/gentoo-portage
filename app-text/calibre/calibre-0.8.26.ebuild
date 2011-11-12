@@ -1,8 +1,8 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/calibre/calibre-0.8.24-r1.ebuild,v 1.1 2011/11/04 21:38:49 zmedico Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/calibre/calibre-0.8.26.ebuild,v 1.1 2011/11/12 17:24:16 zmedico Exp $
 
-EAPI=3
+EAPI=4
 PYTHON_DEPEND=2:2.7
 PYTHON_USE_WITH=sqlite
 
@@ -10,8 +10,7 @@ inherit python distutils eutils fdo-mime bash-completion-r1 multilib
 
 DESCRIPTION="Ebook management application."
 HOMEPAGE="http://calibre-ebook.com/"
-SRC_URI="http://sourceforge.net/projects/calibre/files/${PV}/${P}.tar.gz
-http://bazaar.launchpad.net/~calibre-packagers/calibre/debian/download/head:/calibremounthelper-20100617213106-931ymwfegqq1dxbt-1/calibre-mount-helper -> calibre-mount-helper-debian-20100617"
+SRC_URI="http://sourceforge.net/projects/calibre/files/${PV}/${P}.tar.gz"
 
 LICENSE="GPL-2"
 
@@ -53,6 +52,7 @@ S=${WORKDIR}/${PN}
 
 pkg_setup() {
 	python_set_active_version 2.7
+	python_pkg_setup
 }
 
 src_prepare() {
@@ -123,19 +123,16 @@ src_install() {
 	grep -rlZ "${ED}" "${ED}" | xargs -0 sed -e "s:${D}:/:g" -i ||
 		die "failed to fix harcoded \$D in paths"
 
-	# Bug 389515 - Substitute vulnerable suid calibre-mount-helper
-	# with udisks shell script wrapper from debian.
+	# Remove dummy calibre-mount-helper which is unused since calibre-0.8.25
+	# due to bug #389515 (instead, calibre now calls udisks via dbus).
 	rm "${ED}usr/bin/calibre-mount-helper" || die
-	exeinto /usr/bin || die
-	newexe "${DISTDIR}"/calibre-mount-helper-debian-20100617 \
-		calibre-mount-helper || die
 
 	find "${ED}"usr/share/calibre/man -type f -print0 | \
 		while read -r -d $'\0' ; do
 			if [[ ${REPLY} = *.[0-9]calibre.bz2 ]] ; then
 				newname=${REPLY%calibre.bz2}.bz2
 				mv "${REPLY}" "${newname}"
-				doman "${newname}" || die "doman failed"
+				doman "${newname}"
 				rm -f "${newname}" || die "rm failed"
 			fi
 		done
@@ -157,7 +154,7 @@ src_install() {
 	domenu "${HOME}"/.local/share/applications/*.desktop ||
 		die "failed to install .desktop menu files"
 
-	dobashcomp "${ED}"usr/etc/bash_completion.d/calibre || die
+	dobashcomp "${ED}"usr/etc/bash_completion.d/calibre
 	rm -r "${ED}"usr/etc/bash_completion.d
 	find "${ED}"usr/etc -type d -empty -delete
 
