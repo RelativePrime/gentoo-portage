@@ -1,10 +1,12 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-mail/getmail/getmail-4.20.3.ebuild,v 1.1 2011/06/07 13:55:24 eras Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-mail/getmail/getmail-4.22.2.ebuild,v 1.1 2011/11/13 19:03:30 radhermit Exp $
 
-EAPI="3"
+EAPI="4"
 PYTHON_DEPEND="2"
 SUPPORT_PYTHON_ABIS="1"
+RESTRICT_PYTHON_ABIS="3.*"
+PYTHON_MODNAME="getmailcore"
 
 inherit distutils
 
@@ -16,12 +18,6 @@ LICENSE="GPL-2"
 SLOT="4"
 KEYWORDS="~alpha ~amd64 ~ppc ~x86 ~ppc-macos ~x86-macos ~x64-solaris"
 IUSE=""
-
-DEPEND=""
-RDEPEND=""
-RESTRICT_PYTHON_ABIS="3.*"
-
-PYTHON_MODNAME="getmailcore"
 
 src_prepare() {
 	sed -i -e "s,'getmail-%s' % __version__,'${PF}'," \
