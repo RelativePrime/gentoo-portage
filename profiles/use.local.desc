@@ -2825,23 +2825,30 @@ media-video/kino:gpac - Enable GPAC support when exporting to 3GPP format
 media-video/kmplayer:npp - Compile the npp backend that plays xembed style browser plugins.
 media-video/libav:3dnowext - Enable manually-optimised routines using the AMD 3DNow!Ex SIMD instruction set, present in modern AMD CPUs. (Check for 3dnowext in /proc/cpuinfo to know whether your CPU supports it).
 media-video/libav:aac - Use external vo-aacenc library for AAC encoding
-media-video/libav:amr - Enables Adaptive Multi-Rate Audio support
-media-video/libav:cpudetection - Enables runtime CPU detection (useful for bindist, compatibility on other CPUs)
+media-video/libav:amr - Enable Adaptive Multi-Rate Audio support
+media-video/libav:avx - Adds support for Advanced Vector Extensions instructions (Intel Sandy Bridge, AMD Bulldozer and later chips)
+media-video/libav:cdio - Enable audio CD grabbing with dev-libs/libcdio.
+media-video/libav:cpudetection - Enables runtime CPU detection (useful for bindist, compatibility on other CPUs).
 media-video/libav:dirac - Enable Dirac video support (an advanced royalty-free video compression format) via the reference library: dirac.
-media-video/libav:faac - Use external faac library for AAC encoding (notice: the resulting binaries are unredistributable)
+media-video/libav:faac - Use external faac library for AAC encoding (notice: the resulting binaries are unredistributable).
 media-video/libav:frei0r - Enable frei0r wrapping in libavfilter
 media-video/libav:gpl - Build all GPL licensed code. Without this flag set the package is build under LGPL license.
 media-video/libav:hardcoded-tables - Use pre-calculated tables rather than calculating them on the fly.
-media-video/libav:mmxext - Enables mmx2 support
-media-video/libav:network - Enables network streaming support
-media-video/libav:pic - Force shared libraries to be built as PIC (this is slower)
-media-video/libav:qt-faststart - Build and install qt-faststart application
-media-video/libav:rtmp - Enable Real Time Messaging Protocol using librtmp
+media-video/libav:mmxext - Enable mmx2 support.
+media-video/libav:neon - Enable NEON optimizations for arm processors.
+media-video/libav:network - Enable network streaming support.
+media-video/libav:openssl - Prefer dev-libs/openssl over net-libs/gnutls to provide SSL/TLS support (notice: the resulting binaries are unredistributable).
+media-video/libav:pic - Force shared libraries to be built as PIC (this is slower).
+media-video/libav:pulseaudio - Enable pulseaudio input support.
+media-video/libav:qt-faststart - Build and install qt-faststart application.
+media-video/libav:rtmp - Enable Real Time Messaging Protocol using librtmp instead the native implementation.
 media-video/libav:schroedinger - Enable Dirac video support (an advanced royalty-free video compression format) via libschroedinger (high-speed implementation in C of the Dirac codec).
-media-video/libav:ssse3 - faster floating point optimization for SSSE3 capable chips (Intel Core 2 and later chips)
-media-video/libav:vaapi - Enables VAAPI (Video Acceleration API) for hardware decoding
-media-video/libav:vdpau - Enables VDPAU decoders (requires nVidia video cards to offload CPU processing to video card
-media-video/libav:vpx - Enables vp8 codec support using libvpx: Decoding vp8 does not require this to be enabled but libvpx can also be used for decoding; encoding vp8 requires this useflag to be enabled though.
+media-video/libav:ssl - Enable SSL/TLS support using dev-libs/openssl or dev-libs/gnutls.
+media-video/libav:ssse3 - faster floating point optimization for SSSE3 capable chips (Intel Core 2 and later chips).
+media-video/libav:vaapi - Enable VAAPI (Video Acceleration API) for hardware decoding.
+media-video/libav:vdpau - Enable VDPAU decoders (requires nVidia video cards to offload CPU processing to video card.
+media-video/libav:vis - Adds support for SIMD optimizations for UltraSPARC processors.
+media-video/libav:vpx - Enable vp8 encoding support using libvpx.
 media-video/lives:libvisual - Enable libvisual support
 media-video/mjpegtools:sdlgfx - Enables y4mhist to display a graphical histogram
 media-video/motiontrack:multiprocess - Enables multi-process support (SMP/cluster) for motiontrack programs
@@ -3794,9 +3801,12 @@ net-misc/freerdp:debug-kbd - Enable keyboard related debug messages
 net-misc/freerdp:debug-license - Enable license debug messages
 net-misc/freerdp:debug-nego - Enable negotiation related debug messages
 net-misc/freerdp:debug-nla - Enable authentication related debug messages
+net-misc/freerdp:debug-orders - Print drawing orders debug messages
 net-misc/freerdp:debug-proto - Enable protocol debugging output
 net-misc/freerdp:debug-rail - Enable RemoteApp debug messages
+net-misc/freerdp:debug-redir - Print redirection debug messages
 net-misc/freerdp:debug-rfx - Enable RemoteFX debug messages
+net-misc/freerdp:debug-scard - Print smartcard debug messages
 net-misc/freerdp:debug-serial - Enable debugging of serial code
 net-misc/freerdp:debug-smartcard - Enable debugging of smard-card code
 net-misc/freerdp:debug-sound - Enable debugging of sound code

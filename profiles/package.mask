@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13239 2011/11/13 22:13:05 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13241 2011/11/14 04:08:51 mr_bones_ Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -57,6 +57,7 @@ net-mail/vmailmgr-tools
 =dev-python/wxpython-2.6*
 =dev-python/wxpython-docs-2.6*
 =x11-libs/wxGTK-2.6*
+games-util/mattricks
 
 # Samuli Suominen <ssuominen@gentoo.org> (12 Nov 2011)
 # Masked for removal in 30 days since wxpython-2.6 is going away wrt bug 330683
@@ -250,13 +251,6 @@ app-admin/stow
 # Multiple open bugs (375071, 256850, 214192, 202497)
 # No maintainer. Removal in 30 days
 app-admin/mon
-
-# Michael Sterrett <mr_bones_@gentoo.org> (12 Oct 2011)
-# Upstream has moved to commercial development and
-# the latest version doesn't work with newer allegro.
-# Masked for removal on 20111111
-# bug #369271
-games-roguelike/fargoal
 
 # Tim Harder <radhermit@gentoo.org> (11 Oct 2011)
 # Mask development releases
