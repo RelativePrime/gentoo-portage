@@ -1,6 +1,17 @@
 # ChangeLog for app-emulation/libvirt
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/libvirt/ChangeLog,v 1.141 2011/11/10 22:10:12 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/libvirt/ChangeLog,v 1.144 2011/11/17 18:55:21 phajdan.jr Exp $
+
+  17 Nov 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> libvirt-0.9.6.ebuild:
+  x86 stable wrt bug #390653
+
+  16 Nov 2011; Markos Chandras <hwoarang@gentoo.org> libvirt-0.9.6.ebuild:
+  Stable on amd64 wrt bug #390653
+
+  15 Nov 2011; Doug Goldstein <cardoe@gentoo.org> libvirt-0.9.7.ebuild,
+  libvirt-9999.ebuild:
+  Add depend on xhtml1 for the XHTML1 DTD for doc generation. bug #378609.
+  Thanks Michal Privoznik <miso.privoznik@gmail.com>
 
   10 Nov 2011; Doug Goldstein <cardoe@gentoo.org> libvirt-0.9.3-r1.ebuild,
   libvirt-0.9.6.ebuild, libvirt-0.9.7.ebuild, libvirt-9999.ebuild:

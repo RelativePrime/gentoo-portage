@@ -1,6 +1,22 @@
 # ChangeLog for dev-lang/v8
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/v8/ChangeLog,v 1.103 2011/11/14 12:45:41 phajdan.jr Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/v8/ChangeLog,v 1.106 2011/11/17 11:37:07 chainsaw Exp $
+
+  17 Nov 2011; Tony Vroon <chainsaw@gentoo.org> v8-3.5.10.24.ebuild:
+  Marked stable on AMD64 based on arch testing by Agostino "ago" Sarubbo in
+  security bug #390779. I am told that Mike Gilbert feels 1 AT report is
+  sufficient.
+
+*v8-3.5.10.24 (17 Nov 2011)
+
+  17 Nov 2011; Mike Gilbert <floppym@gentoo.org> +v8-3.5.10.24.ebuild,
+  -v8-3.5.10.22.ebuild:
+  Version bump for stable channel release.
+
+*v8-3.7.6 (15 Nov 2011)
+
+  15 Nov 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> +v8-3.7.6.ebuild:
+  Version bump for dev channel release.
 
   14 Nov 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> v8-3.6.6.5.ebuild,
   v8-3.6.6.6.ebuild, v8-9999.ebuild:

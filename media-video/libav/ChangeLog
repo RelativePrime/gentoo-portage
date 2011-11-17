@@ -1,6 +1,14 @@
 # ChangeLog for media-video/libav
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/libav/ChangeLog,v 1.35 2011/11/14 02:05:00 lu_zero Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/libav/ChangeLog,v 1.37 2011/11/16 03:59:51 lu_zero Exp $
+
+*libav-0.8_pre20111116 (16 Nov 2011)
+
+  16 Nov 2011; Luca Barbato <lu_zero@gentoo.org> +libav-0.8_pre20111116.ebuild:
+  New snapshot
+
+  15 Nov 2011; Luca Barbato <lu_zero@gentoo.org> libav-9999.ebuild:
+  Make neon sure we enable and build neon code on use neon
 
   13 Nov 2011; Luca Barbato <lu_zero@gentoo.org> libav-9999.ebuild,
   metadata.xml:

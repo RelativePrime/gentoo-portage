@@ -1,6 +1,29 @@
 # ChangeLog for www-client/chromium
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/chromium/ChangeLog,v 1.500 2011/11/11 17:44:49 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/chromium/ChangeLog,v 1.505 2011/11/17 11:38:23 chainsaw Exp $
+
+  17 Nov 2011; Tony Vroon <chainsaw@gentoo.org> chromium-15.0.874.121.ebuild:
+  Marked stable on AMD64 based on arch testing by Agostino "ago" Sarubbo in
+  security bug #390779. I am told that Mike Gilbert feels 1 AT report is
+  sufficient.
+
+*chromium-15.0.874.121 (17 Nov 2011)
+
+  17 Nov 2011; Mike Gilbert <floppym@gentoo.org> +chromium-15.0.874.121.ebuild:
+  Version bump for stable channel release.
+
+  16 Nov 2011; Mike Gilbert <floppym@gentoo.org> chromium-17.0.938.0.ebuild,
+  chromium-9999-r1.ebuild:
+  zip_reader.cc needs to be updated as well.
+
+  15 Nov 2011; Mike Gilbert <floppym@gentoo.org> chromium-17.0.938.0.ebuild:
+  Apply workaround for bug 383371 to zip_internal.cc. Bug 390633.
+
+*chromium-17.0.938.0 (15 Nov 2011)
+
+  15 Nov 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org>
+  -chromium-17.0.928.0.ebuild, +chromium-17.0.938.0.ebuild:
+  Version bump for dev channel release, remove old.
 
 *chromium-16.0.912.36 (11 Nov 2011)
 

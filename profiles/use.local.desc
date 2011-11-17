@@ -380,6 +380,8 @@ app-emulation/libvirt:uml - Support management of User Mode Linux virtualisation
 app-emulation/libvirt:virt-network - Enable virtual networking (NAT) support for guests. Includes all the dependencies for NATed network mode. Effectively any network setup that relies on libvirt to setup and configure network interfaces on your host. This can include bridged and routed networks ONLY if you are allowing libvirt to create and manage the underlying devices for you. In some cases this requires enabling the 'netcf' USE flag (currently unavailable).
 app-emulation/libvirt:virtualbox - Support management of VirtualBox virtualisation (one of app-emulation/virtualbox or app-emulation/virtualbox-ose)
 app-emulation/libvirt:xen - Support management of Xen virtualisation (app-emulation/xen)
+app-emulation/libvirt-glib:introspection - Use dev-libs/gobject-introspection for introspection
+app-emulation/libvirt-glib:vala - Enable bindings for dev-lang/vala
 app-emulation/lxc:vanilla - Avoid adding Gentoo Linux-specific modifications, which include the custom init script. This is present as a flag to avoid forcing dependencies over users that might not want have them around as they use LXC in contexts where the init script is not useful.
 app-emulation/mol:oldworld - Includes Macintosh's OldWorld support
 app-emulation/mol:pci - Experimental PCI proxy support
@@ -508,6 +510,7 @@ app-i18n/ibus-mozc:scim - Enable support for app-i18n/scim
 app-i18n/ibus-pinyin:boost - Compile against dev-libs/boost libraries
 app-i18n/ibus-pinyin:opencc - Enable support for app-i18n/opencc
 app-i18n/ibus-table-xingma:extra-phrases - Add extra phrases into builded Engine
+app-i18n/ibus-unikey:gtk3 - Enable support for gtk+3
 app-i18n/im-ja:anthy - Support for Anthy input method
 app-i18n/im-ja:skk - Support for SKK input method
 app-i18n/imsettings:xfconf - Enable integration in the Xfce desktop environment with xfce-base/xfconf
@@ -764,6 +767,7 @@ app-shells/scsh-install-lib:scsh - Use a non-FHS directory layout
 app-shells/shish:diet - Use dev-libs/dietlibc
 app-shells/tcsh:catalogs - Add support for NLS catalogs
 app-text/asciidoc:highlight - Enable source code highlighting
+app-text/calibre:udisks - Add run-time dependency on sys-fs/udisks in order to mount and unmount reading devices.
 app-text/cb2bib:poll - use clipboard polling
 app-text/crm114:mew - Add support for using the mewdecode mime decoder (app-emacs/mew)
 app-text/crm114:mimencode - Add support for using the mimencode mime (net-mail/metamail)
@@ -1508,6 +1512,7 @@ dev-tex/latex-beamer:lyx - Install with app-office/lyx layouts
 dev-util/anjuta:devhelp - Enable devhelp integration
 dev-util/anjuta:glade - Build glade plugin for anjuta
 dev-util/anjuta:introspection - Use dev-libs/gobject-introspection for introspection
+dev-util/anjuta:packagekit - Use packagekit to search for missing tools
 dev-util/anjuta:sourceview - Build sourceview editing plugin for anjuta
 dev-util/anjuta:vala - Enable support for the Vala programming language
 dev-util/astyle:libs - builds and installs both shared and static library interfaces
@@ -1636,7 +1641,6 @@ games-arcade/lbreakout2:themes - Install additional themes
 games-arcade/moleinvasion:music - Download and install the music files
 games-arcade/slimevolley:net - Enable network support
 games-arcade/smc:music - Download and install the music files
-games-arcade/stepmania:force-oss - Force using OSS
 games-arcade/triplexinvaders:psyco - psyco python accelerator
 games-arcade/tuxanci:physfs - Use dev-games/physfs instead of dev-libs/libzip to load compressed data
 games-arcade/tuxanci:sound - Enable sound
@@ -1820,12 +1824,13 @@ gnome-extra/gnome-media:twolame - Allow encoding MPEG Audio Layer 2 (MP2) files 
 gnome-extra/gnome-power-manager:applet - Build battery monitor applet
 gnome-extra/gnome-utils:bonobo - Enable applets (gdict one) still not ported to DBUS, requiring deprecated bonobo support in gnome-panel.
 gnome-extra/gucharmap:introspection - Use dev-libs/gobject-introspection for introspection
-gnome-extra/libgda:canvas - Enables support for x11-libs/goocanvas
+gnome-extra/libgda:canvas - Enable support for x11-libs/goocanvas
 gnome-extra/libgda:http - Enable embedded net-libs/libsoup based server
 gnome-extra/libgda:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-extra/libgda:json - Enable support for JSON format
-gnome-extra/libgda:mdb - Enable support for Microsoft Access Database using app-office/mdbtools
+gnome-extra/libgda:mdb - Enable support for Microsoft Access database using app-office/mdbtools
 gnome-extra/libgda:sourceview - Enable support for x11-libs/gtksourceview
+gnome-extra/libgda:vala - Enable bindings for dev-lang/vala
 gnome-extra/libgsf:gtk - Enable use of gdk in thumbnailer
 gnome-extra/libgsf:thumbnail - Enable libgsf supported formats thumbnailer
 gnome-extra/mousetweaks:applet - Build the gnome-base/gnome-panel applet
@@ -2057,6 +2062,7 @@ mail-client/thunderbird:lightning - Enable calendar support
 mail-client/thunderbird:mozdom - Enable Mozilla's DOM inspector
 mail-client/thunderbird:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
 mail-client/thunderbird:webm - Use system media-libs/libvpx for HTML5 WebM video support.
+mail-client/thunderbird-bin:crashreporter - Enable crash reporter for bugs
 mail-filter/amavisd-new:courier - Add courier support
 mail-filter/amavisd-new:dkim - Add DomainKeys Identified Mail support
 mail-filter/amavisd-new:qmail - Add qmail support
@@ -2855,6 +2861,17 @@ media-video/libav:vis - Adds support for SIMD optimizations for UltraSPARC proce
 media-video/libav:vpx - Enable vp8 encoding support using libvpx.
 media-video/lives:libvisual - Enable libvisual support
 media-video/mjpegtools:sdlgfx - Enables y4mhist to display a graphical histogram
+media-video/mjpg-streamer:input_control - Plugin giving ability to control camera movement (only specific cameras)
+media-video/mjpg-streamer:input_file - Plugin that watches given directory and send it's content
+media-video/mjpg-streamer:input_testpicture - Plugin for sending compiled in, test pictures
+media-video/mjpg-streamer:input_uvc - Plugin that sends video stream from UVC compatible camera
+media-video/mjpg-streamer:output_autofocus - Auto focusing plugin
+media-video/mjpg-streamer:output_file - Plugin that saves received content under given location
+media-video/mjpg-streamer:output_http - Small HTTP server plugin which sends WWW directory content and streams image content
+media-video/mjpg-streamer:output_rtsp - Plugin which provides a mechanism to take snapshots with a trigger from a UDP packet
+media-video/mjpg-streamer:output_udp - Plugin receiving content over UDP and storing to a directory
+media-video/mjpg-streamer:v4l - Uses media-libs/libv4l function mapping for input_uvc plugin
+media-video/mjpg-streamer:www - Installs WWW content
 media-video/motiontrack:multiprocess - Enables multi-process support (SMP/cluster) for motiontrack programs
 media-video/mplayer:3dnowext - Enable 3dnowext cpu instructions
 media-video/mplayer:amr - Enables Adaptive Multi-Rate format support
@@ -4274,6 +4291,7 @@ sci-libs/gerris:dx - Enable support for sci-visualization/opendx
 sci-libs/getdata:fortran - Build fortran bindings
 sci-libs/getdata:python - Build python bindings
 sci-libs/gsl:cblas-external - Link gsl with external cblas provided by (virtual/cblas) instead of shipped internal version
+sci-libs/hdf5:fortran2003 - enable new features that require Fortran 2003 (http://www.hdfgroup.org/HDF5/doc/fortran/NewFeatures_F2003.pdf)
 sci-libs/indilib:fits - Enable support for the FITS image format through cfitsio
 sci-libs/indilib:nova - Enable support for nova celestial mechanics calculations
 sci-libs/libcmatrix:atlas - Use of atlas blas implementation
@@ -4756,8 +4774,11 @@ sys-kernel/zen-sources:minimal - Clone git tree with --depth 1 to reduce amount 
 sys-kernel/zen-sources:tuxonice - Apply TuxOnIce kernel patches advanced hibernation support
 sys-libs/gdbm:berkdb - enable compatibility layer for UNIX-like dbm and ndbm interfaces
 sys-libs/gdbm:exporter - enable gdbmexport binary for exporting data from gdbm-1.8 databases into gdbm-1.9
-sys-libs/glibc:glibc-omitfp - Configure glibc with --enable-omitfp which lets the build system determine when it is safe to use -fomit-frame-pointer
+sys-libs/glibc:glibc-omitfp - Configure with --enable-omitfp which lets the build system determine when it is safe to use -fomit-frame-pointer
+sys-libs/glibc:linuxthreads - Build linuxthreads support (only for kernels older than linux-2.6)
 sys-libs/gwenhywfar:fox - Use x11-libs/fox graphical toolkit
+sys-libs/libosinfo:introspection - Use dev-libs/gobject-introspection for introspection
+sys-libs/libosinfo:vala - Enable bindings for dev-lang/vala
 sys-libs/ncurses:ada - Add bindings for the ADA programming language
 sys-libs/ncurses:trace - Enable test trace() support in ncurses calls
 sys-libs/pam:audit - Enable support for sys-process/audit
@@ -4953,6 +4974,7 @@ www-servers/nginx:nginx_modules_mail_smtp - Enables SMTP proxy support
 www-servers/ocsigen:ocamlduce - Enables ocamlduce XML typechecking for generated web pages
 www-servers/pound:dynscaler - Enable dynamic rescaling of back-end priorities
 www-servers/pshs:magic - Enable automatic detection of Content-Type using libmagic (sys-apps/file)
+www-servers/pshs:netlink - Use libnetlink (sys-apps/iproute2) to get network interface addresses
 www-servers/pshs:upnp - Enable port forwarding using UPnP via net-libs/miniupnpc
 www-servers/resin:admin - Enable Resin admin webapp
 www-servers/tomcat:admin - Enable Tomcat admin webapp

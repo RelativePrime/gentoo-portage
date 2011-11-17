@@ -1,10 +1,49 @@
 # ChangeLog for profile directory
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5913 2011/11/14 20:15:44 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5920 2011/11/17 17:46:29 chithanh Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
+
+  17 Nov 2011; Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org>
+  package.mask:
+  Drop mask for xf86-video-intel development releases.
+
+  17 Nov 2011; Jeroen Roovers <jer@gentoo.org> package.mask:
+  Mask www-client/opera snapshot.
+
+  17 Nov 2011; <atlantis@gentoo.org> arch/mips/make.defaults,
+  arch/sh/make.defaults, base/make.defaults,
+  features/32bit-native/make.defaults, features/32bit-userland/make.defaults,
+  features/64bit-native/make.defaults, features/multilib/make.defaults,
+  hardened/linux/amd64/make.defaults,
+  hardened/linux/amd64/no-multilib/make.defaults,
+  hardened/linux/ia64/make.defaults, hardened/linux/make.defaults,
+  hardened/linux/powerpc/ppc32/make.defaults,
+  hardened/linux/powerpc/ppc64/make.defaults,
+  hardened/linux/x86/10.0/make.defaults, hardened/linux/x86/make.defaults,
+  hardened/make.defaults, uclibc/make.defaults,
+  uclibc/mips/hardened/make.defaults,
+  uclibc/mips/mipsel/hardened/make.defaults, uclibc/ppc/hardened/make.defaults,
+  uclibc/x86/hardened/make.defaults:
+  Rename STAGE1_USE to BOOTSTRAP_USE, add "cxx unicode" to the base value on
+  base/make.defaults
+  and make it stack from derived profiles. This should allow gcc to build on
+  stage 2 - bug 390701.
+
+  16 Nov 2011; Tony Vroon <chainsaw@gentoo.org> package.mask:
+  Mask 10 branch of Asterisk due to module loading issues on hardened.
+
+  16 Nov 2011; Christoph Junghans <ottxor@gentoo.org> package.mask:
+  Added =www-plugins/google-talkplugin-9999 to package.mask
+
+  15 Nov 2011; Lars Wendler <polynomial-c@gentoo.org> package.mask:
+  Removed seamonkey-bin from p.mask. It has a new maintainer.
+
+  15 Nov 2011; Ian Stakenvicius <axs@gentoo.org> package.mask:
+  added mask for app-accessibility/edbrowse-3.4.8 (needs currently-masked
+  spidermonkey-1.8.5)
 
   14 Nov 2011; Mike Frysinger <vapier@gentoo.org> use.desc:
   Mark USE=nocxx as "do not use anymore".
