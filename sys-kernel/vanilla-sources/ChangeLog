@@ -1,6 +1,27 @@
 # ChangeLog for sys-kernel/vanilla-sources
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/vanilla-sources/ChangeLog,v 1.919 2011/11/12 18:49:26 psomas Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/vanilla-sources/ChangeLog,v 1.923 2011/11/21 23:50:01 mpagano Exp $
+
+*vanilla-sources-3.1.2 (21 Nov 2011)
+
+  21 Nov 2011; Michael Pagano <mpagano@gentoo.org>
+  +vanilla-sources-3.1.2.ebuild:
+  Version bump
+
+*vanilla-sources-3.0.10 (21 Nov 2011)
+
+  21 Nov 2011; Michael Pagano <mpagano@gentoo.org>
+  +vanilla-sources-3.0.10.ebuild:
+  Version bump
+
+  19 Nov 2011; Mike Frysinger <vapier@gentoo.org> vanilla-sources-3.0.6.ebuild,
+  vanilla-sources-3.0.7.ebuild, vanilla-sources-3.0.8.ebuild,
+  vanilla-sources-3.0.9.ebuild, vanilla-sources-3.1.0.ebuild,
+  vanilla-sources-3.1.1.ebuild:
+  Update s390 keywords to match latest ibm dev stream.
+
+  19 Nov 2011; Raúl Porcel <armin76@gentoo.org> vanilla-sources-3.0.6.ebuild:
+  alpha/ia64/sh/sparc stable wrt #387047
 
 *vanilla-sources-3.0.9 (12 Nov 2011)
 

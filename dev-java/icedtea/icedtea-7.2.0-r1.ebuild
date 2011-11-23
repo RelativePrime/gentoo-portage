@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-java/icedtea/icedtea-7.2.0-r1.ebuild,v 1.11 2011/11/13 22:39:22 sera Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-java/icedtea/icedtea-7.2.0-r1.ebuild,v 1.18 2011/11/21 11:40:06 sera Exp $
 # Build written by Andrew John Hughes (gnu_andrew@member.fsf.org)
 
 # *********************************************************
@@ -9,7 +9,7 @@
 
 EAPI="4"
 
-inherit flag-o-matic java-pkg-2 java-vm-2 pax-utils versionator
+inherit flag-o-matic java-pkg-2 java-vm-2 versionator
 
 LICENSE="Apache-1.1 Apache-2.0 GPL-1 GPL-2 GPL-2-with-linking-exception LGPL-2 MPL-1.0 MPL-1.1 public-domain W3C"
 SLOT="7"
@@ -25,8 +25,6 @@ JAXP_TARBALL="948e734135ea.tar.gz"
 JAXWS_TARBALL="a2ebfdc9db7e.tar.gz"
 JDK_TARBALL="2054526dd141.tar.gz"
 LANGTOOLS_TARBALL="9b85f1265346.tar.gz"
-CACAO_TARBALL="4549072ab2de.tar.gz"
-JAMVM_TARBALL="310c491ddc14e92a6ffff27030a1a1821e6395a8.tar.gz"
 SRC_URI="http://icedtea.classpath.org/download/source/${ICEDTEA_PKG}.tar.gz
 		 http://icedtea.classpath.org/hg/release/icedtea7-forest-2.0/archive/${OPENJDK_TARBALL}
 		 http://icedtea.classpath.org/hg/release/icedtea7-forest-2.0/corba/archive/${CORBA_TARBALL}
@@ -34,14 +32,13 @@ SRC_URI="http://icedtea.classpath.org/download/source/${ICEDTEA_PKG}.tar.gz
 		 http://icedtea.classpath.org/hg/release/icedtea7-forest-2.0/jaxws/archive/${JAXWS_TARBALL}
 		 http://icedtea.classpath.org/hg/release/icedtea7-forest-2.0/jdk/archive/${JDK_TARBALL}
 		 http://icedtea.classpath.org/hg/release/icedtea7-forest-2.0/hotspot/archive/${HOTSPOT_TARBALL}
-		 http://icedtea.classpath.org/hg/release/icedtea7-forest-2.0/langtools/archive/${LANGTOOLS_TARBALL}
-		 jamvm? ( http://icedtea.classpath.org/download/drops/jamvm/jamvm-${JAMVM_TARBALL} )"
+		 http://icedtea.classpath.org/hg/release/icedtea7-forest-2.0/langtools/archive/${LANGTOOLS_TARBALL}"
 HOMEPAGE="http://icedtea.classpath.org"
 S=${WORKDIR}/${ICEDTEA_PKG}
 
 # Missing options:
 # shark - needs adding
-IUSE="debug doc examples jamvm javascript +nsplugin pulseaudio systemtap +webstart zero"
+IUSE="debug doc examples javascript +nsplugin pulseaudio systemtap +webstart"
 
 RDEPEND=">=net-print/cups-1.2.12
 	 >=x11-libs/libX11-1.1.3
@@ -54,6 +51,7 @@ RDEPEND=">=net-print/cups-1.2.12
 	 >=x11-libs/libXau-1.0.3
 	 >=x11-libs/libXdmcp-1.0.2
 	 >=x11-libs/libXtst-1.0.3
+	 >=x11-libs/libXext-1.1.1
 	 virtual/jpeg
 	 >=media-libs/libpng-1.2
 	 >=media-libs/giflib-4.1.6
@@ -63,7 +61,8 @@ RDEPEND=">=net-print/cups-1.2.12
 	 x11-proto/xineramaproto
 	 pulseaudio?  ( >=media-sound/pulseaudio-0.9.11 )
 	 javascript? ( dev-java/rhino:1.6 )
-	 zero? ( virtual/libffi )
+	 ppc? ( virtual/libffi )
+	 ppc64? ( virtual/libffi )
 	 >=x11-libs/libXrender-0.9.4
 	 systemtap? ( >=dev-util/systemtap-1 )
 	 !dev-java/icedtea:0
@@ -81,7 +80,6 @@ RDEPEND=">=net-print/cups-1.2.12
 DEPEND="${RDEPEND}
 	|| (
 		>=dev-java/gcj-jdk-4.3
-		>=dev-java/cacao-0.99.2
 		dev-java/icedtea-bin:7
 		dev-java/icedtea-bin:6
 		dev-java/icedtea:7
@@ -89,6 +87,8 @@ DEPEND="${RDEPEND}
 	)
 	app-arch/zip
 	>=dev-libs/libxslt-1.1.26
+	>=x11-proto/xextproto-7.1.1
+	x11-proto/xproto
 	>=dev-java/ant-core-1.8.1
 	dev-java/ant-nodeps
 	app-misc/ca-certificates
@@ -107,19 +107,6 @@ JAVA_PKG_WANT_SOURCE="1.5"
 JAVA_PKG_WANT_TARGET="1.5"
 
 pkg_setup() {
-# Shark support disabled for now - still experimental and needs sys-devel/llvm
-#	if use shark ; then
-#	  if ( ! use x86 && ! use sparc && ! use ppc ) ; then
-#		eerror "The Shark JIT has known issues on 64-bit platforms.  Please rebuild"
-#		errror "without the shark USE flag turned on."
-#		die "Rebuild without the shark USE flag on."
-#	  fi
-#	  if ( ! use zero ) ; then
-#		eerror "The use of the Shark JIT is only applicable when used with the zero assembler port.";
-#		die "Rebuild without the shark USE flag on or with the zero USE flag turned on."
-#	  fi
-#	fi
-
 	if use nsplugin && ! use webstart ; then
 		elog "Note that the nsplugin flag implies the webstart flag. Enable it to remove this message."
 	fi
@@ -151,8 +138,6 @@ pkg_setup() {
 		JAVA_PKG_FORCE_VM="icedtea-bin-6"
 	elif has_version dev-java/gcj-jdk; then
 		JAVA_PKG_FORCE_VM="gcj-jdk"
-	elif has_version dev-java/cacao; then
-		JAVA_PKG_FORCE_VM="cacao"
 	else
 		die "Unable to find a supported VM for building"
 	fi
@@ -170,9 +155,9 @@ src_unpack() {
 }
 
 java_prepare() {
-	# Fix building with PaX enabled kernels. Bug #389751
+	# Fix non bootstrap builds with PaX enabled kernels. Bug #389751
 	# Move applying test_gamma.patch to before creating boot copy.
-	if grep '^PaX:' /proc/self/status > /dev/null; then
+	if host-is-pax; then
 		sed -i -e 's|patches/boot/test_gamma.patch||' Makefile.in || die
 		sed -i -e 's|openjdk-boot|openjdk|g' patches/boot/test_gamma.patch || die
 		export DISTRIBUTION_PATCHES=patches/boot/test_gamma.patch
@@ -187,22 +172,31 @@ src_configure() {
 	local config procs rhino_jar
 	local vm=$(java-pkg_get-current-vm)
 
-	if [[ "${vm}" == "icedtea6" || "${vm}" == "icedtea-6" || "${vm}" == "icedtea6-bin" || "${vm}" == "icedtea-bin-6" ]] ; then
+	if has "${vm}" icedtea6 icedtea-6 icedtea6-bin icedtea-bin-6; then
 		# We can't currently bootstrap with a IcedTea6 JVM :(
 		config="${config} --disable-bootstrap"
-	elif [[ "${vm}" != "gcj-jdk" && "${vm}" != "cacao" && "${vm}" != "icedtea7" && "${vm}" != "icedtea-7" && "${vm}" != "icedtea-bin-7" ]] ; then
+	elif has "${vm}" icedtea7 icedtea-7 icedtea-bin-7; then
+		# We can't currently bootstrap with a PaX enabled kernel :(
+		host-is-pax && config="${config} --disable-bootstrap"
+	elif has "${vm}" gcj-jdk ; then
+		if host-is-pax; then
+			eerror "Can't currently bootstrap IcedTea using gcj-jdk or cacao on a PaX enabled host"
+			eerror "Sorry for the inconvenience"
+			die "Use an existing IcedTea build instead or disable PaX on the host"
+		fi
+	else
 		eerror "IcedTea must be built with either a JDK based on GNU Classpath or an existing build of IcedTea."
-		die "Install a GNU Classpath JDK (gcj-jdk, cacao)"
+		die "Install a GNU Classpath JDK (gcj-jdk)"
 	fi
 
-	# OpenJDK-specific parallelism support.
-	procs=$(echo ${MAKEOPTS} | sed -r 's/.*-j\W*([0-9]+).*/\1/')
-	if [[ -n ${procs} ]] ; then
-		config="${config} --with-parallel-jobs=${procs}";
-		einfo "Configuring using --with-parallel-jobs=${procs}"
-	fi
+	# OpenJDK-specific parallelism support. Bug #389791, #337827
+	# Implementation modified from waf-utils.eclass
+	# Note that "-j" is converted to "-j1" as the system doesn't support --load-average
+	local procs=$(echo -j1 ${MAKEOPTS} | sed -r "s/.*(-j\s*|--jobs=)([0-9]+).*/\2/" )
+	config="${config} --with-parallel-jobs=${procs}";
+	einfo "Configuring using --with-parallel-jobs=${procs}"
 
-	if use_zero ; then
+	if need_zero ; then
 		config="${config} --enable-zero"
 	else
 		config="${config} --disable-zero"
@@ -210,15 +204,6 @@ src_configure() {
 
 	if use javascript ; then
 		rhino_jar=$(java-pkg_getjar rhino:1.6 js.jar);
-	fi
-
-# CACAO disabled until it has OpenJDK7 support
-#	if use cacao ; then
-#		config="${config} --with-cacao-src-zip=${DISTDIR}/${CACAO_TARBALL}";
-#	fi
-
-	if use jamvm ; then
-		config="${config} --with-jamvm-src-zip=${DISTDIR}/${JAMVM_TARBALL}";
 	fi
 
 	unset_vars
@@ -237,7 +222,8 @@ src_configure() {
 		$(use_enable !debug optimizations) \
 		$(use_enable doc docs) \
 		$(use_with javascript rhino ${rhino_jar}) \
-		$(use_enable zero) \
+		--disable-cacao \
+		--disable-jamvm \
 		$(use_enable pulseaudio pulse-java) \
 		$(use_enable systemtap)
 }
@@ -276,10 +262,6 @@ src_install() {
 	# doins can't handle symlinks.
 	cp -vRP bin include jre lib man "${ddest}" || die "failed to copy"
 
-	# Set PaX markings on all JDK/JRE executables to allow code-generation on
-	# the heap by the JIT compiler.
-	pax-mark m $(list-paxables "${ddest}"{,/jre}/bin/*)
-
 	dodoc ASSEMBLY_EXCEPTION THIRD_PARTY_README
 
 	if use examples; then
@@ -291,6 +273,9 @@ src_install() {
 
 	# Fix the permissions.
 	find "${ddest}" \! -type l \( -perm /111 -exec chmod 755 {} \; -o -exec chmod 644 {} \; \) || die
+
+	# Needs to be done before generating cacerts
+	java-vm_set-pax-markings "${ddest}"
 
 	# We need to generate keystore - bug #273306
 	einfo "Generating cacerts file from certificates in /usr/share/ca-certificates/"
@@ -312,8 +297,8 @@ src_install() {
 	java-vm_sandbox-predict /dev/random /proc/self/coredump_filter
 }
 
-use_zero() {
-	use zero || ( ! use amd64 && ! use x86 && ! use sparc )
+need_zero() {
+	! use amd64 && ! use x86 && ! use sparc
 }
 
 pkg_preinst() {
@@ -326,9 +311,4 @@ pkg_preinst() {
 		elog "build VM settings in /etc/java-config-2/build/jdk.conf are not changed"
 		elog "and the same holds for any user VM settings. Sorry for the inconvenience."
 	fi
-}
-
-pkg_postinst() {
-	# Set as default VM if none exists
-	java-vm-2_pkg_postinst
 }

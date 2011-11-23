@@ -1,6 +1,18 @@
 # ChangeLog for sys-devel/binutils
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-devel/binutils/ChangeLog,v 1.426 2011/11/17 18:54:09 phajdan.jr Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/binutils/ChangeLog,v 1.429 2011/11/23 11:12:27 flameeyes Exp $
+
+  23 Nov 2011; Diego E. Pettenò <flameeyes@gentoo.org> binutils-2.22.ebuild:
+  QA: make sure to depend on a patch(1) version that actually applies all the
+  patches.
+
+*binutils-2.22 (21 Nov 2011)
+
+  21 Nov 2011; Mike Frysinger <vapier@gentoo.org> +binutils-2.22.ebuild:
+  Version bump.
+
+  19 Nov 2011; Mike Frysinger <vapier@gentoo.org> binutils-2.21.1-r1.ebuild:
+  Mark alpha/arm/ia64/m68k/s390/sh stable #378485.
 
   17 Nov 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org>
   binutils-2.21.1-r1.ebuild:

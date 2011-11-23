@@ -1,6 +1,35 @@
 # ChangeLog for eclass directory
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/ChangeLog,v 1.15 2011/11/17 16:04:02 dev-zero Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/ChangeLog,v 1.24 2011/11/21 16:31:49 anarchy Exp $
+
+  21 Nov 2011; Jory A. Pratt <anarchy@gentoo.org> nsplugins.eclass:
+  Assign to mozilla herd, add share_plugins_dir function for mozilla
+  applications.
+
+  21 Nov 2011; Jory A. Pratt <anarchy@gentoo.org> mozconfig-3.eclass:
+  Fix handling of crashreporter use.
+
+  21 Nov 2011; Ralph Sennhauser <sera@gentoo.org> java-vm-2.eclass:
+  Move handling of PaX marking JVM executables to eclass.
+
+  21 Nov 2011; Ryan Hill <dirtyepic@gentoo.org> toolchain.eclass:
+  Fix live ebuilds.
+
+  19 Nov 2011; Davide Pesavento <pesa@gentoo.org> qt4-build.eclass:
+  Add dependency on dev-util/pkgconfig (#385835 and #387783).
+
+  19 Nov 2011; Davide Pesavento <pesa@gentoo.org> qt4-build.eclass:
+  Remove support for Qt 4.5, add blockers for qt-declarative, small cleanup.
+
+  19 Nov 2011; Davide Pesavento <pesa@gentoo.org> qt4-build.eclass:
+  Make qt_assistant_cleanup() a no-op for Qt 4.7.4 and later (bug #386709).
+
+  18 Nov 2011; Michał Górny <mgorny@gentoo.org> scons-utils.eclass:
+  Add DESTDIR-like variable to the example.
+
+  18 Nov 2011; Bernard Cafarelli <voyageur@gentoo.org> gnustep-base.eclass:
+  Set VARTEXFONTS for doc generation, fix sandbox access violation on
+  /var/cache/fonts
 
   17 Nov 2011; Tiziano Müller <dev-zero@gentoo.org> mysql-v2.eclass:
   Fixed misplaced quotes in mysql-v2 eclass causing 'emerge --config mysql' to

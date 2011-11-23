@@ -1,6 +1,22 @@
 # ChangeLog for net-misc/youtube-dl
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/youtube-dl/ChangeLog,v 1.92 2011/10/07 17:10:41 zmedico Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/youtube-dl/ChangeLog,v 1.96 2011/11/22 19:45:42 nirbheek Exp $
+
+  22 Nov 2011; Nirbheek Chauhan <nirbheek@gentoo.org>
+  youtube-dl-2011.11.22.ebuild, metadata.xml:
+  As per discussion with rej, add myself to metadata.xml, and bump Python dep
+  to 2.5
+
+  22 Nov 2011; Jeroen Roovers <jer@gentoo.org> metadata.xml:
+  Adopt package.
+
+  22 Nov 2011; Pacho Ramos <pacho@gentoo.org> metadata.xml:
+  Drop maintainer due retirement, bug #195316
+
+*youtube-dl-2011.11.22 (22 Nov 2011)
+
+  22 Nov 2011; Hanno Boeck <hanno@gentoo.org> +youtube-dl-2011.11.22.ebuild:
+  Version bump.
 
 *youtube-dl-2011.09.30 (07 Oct 2011)
 

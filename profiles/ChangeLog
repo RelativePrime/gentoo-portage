@@ -1,10 +1,125 @@
 # ChangeLog for profile directory
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5920 2011/11/17 17:46:29 chithanh Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5950 2011/11/22 18:51:58 tove Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
+
+  22 Nov 2011; Torsten Veller <tove@gentoo.org> updates/4Q-2011:
+  Move remind from x11-misc to app-misc (#391221)
+
+  22 Nov 2011; Jeroen Roovers <jer@gentoo.org> package.mask:
+  Remove old www-client/opera snapshot masks.
+
+  22 Nov 2011; Jeroen Roovers <jer@gentoo.org> package.mask:
+  Mask www-client/opera snapshot.
+
+  22 Nov 2011; Pacho Ramos <pacho@gentoo.org> updates/4Q-2011:
+  Move net-voip/telepathy-connection-managers to net-im
+
+  22 Nov 2011; Pacho Ramos <pacho@gentoo.org> package.mask:
+  Mask dev-python/gtkmozembed-python for removal
+
+  21 Nov 2011; Pacho Ramos <pacho@gentoo.org> package.mask:
+  Mask gnome-cups-manager for removal.
+
+  21 Nov 2011; Pacho Ramos <pacho@gentoo.org> package.mask:
+  Mask gnome-python metas for removal
+
+  20 Nov 2011; Jonathan Callen <abcd@gentoo.org> updates/4Q-2011:
+  Move net-misc/get-flash-videos to media-video/get_flash_videos
+
+  20 Nov 2011; Gilles Dartiguelongue <eva@gentoo.org> package.mask:
+  Add app-accessibility/accerciser-3 to Gnome 3.2 mask.
+
+  20 Nov 2011; Gilles Dartiguelongue <eva@gentoo.org> package.mask:
+  Drop gtetrinet and monster-masher esound related mask.
+
+  20 Nov 2011; Gilles Dartiguelongue <eva@gentoo.org> package.mask:
+  Drop old json-glib mask.
+
+  20 Nov 2011; Andreas K. Huettel <dilfridge@gentoo.org> package.mask:
+  remove obsolete pmask of old fwbuilder
+
+  20 Nov 2011; Gilles Dartiguelongue <eva@gentoo.org> package.mask:
+  Add net-libs/gupnp-vala-0.10 to gupnp-0.18 mask.
+
+  20 Nov 2011; Gilles Dartiguelongue <eva@gentoo.org> package.mask:
+  Add >=app-mobilephone/gnome-phone-manager-0.67 to Gnome 3.2 mask.
+
+  20 Nov 2011; Andreas K. Huettel <dilfridge@gentoo.org> package.mask:
+  Mask not-yet-released calligra
+
+  20 Nov 2011; Eray Aslan <eras@gentoo.org> package.mask:
+  mask mail-filter/libdomainkeys for removal
+
+  20 Nov 2011; Markos Chandras <hwoarang@gentoo.org> package.mask:
+  cowloop is gone
+
+  19 Nov 2011; Markos Chandras <hwoarang@gentoo.org> package.mask:
+  Unmask emesene:2 since emesene:1 is broken and abandoned
+
+  19 Nov 2011; Markos Chandras <hwoarang@gentoo.org> package.mask:
+  Masking qt-creator-2.4.0_rc
+
+  19 Nov 2011; Jeroen Roovers <jer@gentoo.org> package.mask:
+  Removed (bug #377695).
+
+  19 Nov 2011; Samuli Suominen <ssuominen@gentoo.org> package.mask:
+  Lastrite savage2-bin wrt #390919 (incompatible with current media-libs/fmod)
+
+  19 Nov 2011; Samuli Suominen <ssuominen@gentoo.org> package.mask:
+  Lastrite emphetamine, gcursor, gtodo and serpentine for still using gnome-vfs.
+
+  19 Nov 2011; Diego E. Pettenò <flameeyes@gentoo.org> package.mask:
+  Mask unfetchable crossdev.
+
+  18 Nov 2011; Ulrich Mueller <ulm@gentoo.org> license_groups:
+  Move all GPL*with*exception* type licenses to the GPL-COMPATIBLE group.
+  Remove GPL-2-with-Linden-Lab-FLOSS-exception, it was removed from the tree.
+
+  18 Nov 2011; Anthony G. Basile <blueness@gentoo.org> +hardened/README:
+  Added README explaining the deprecation of old hardened/arches profiles
+
+  18 Nov 2011; Anthony G. Basile <blueness@gentoo.org>
+  -hardened/amd64/deprecated, -hardened/amd64/make.defaults,
+  -hardened/amd64/multilib/deprecated, -hardened/amd64/multilib/make.defaults,
+  -hardened/amd64/multilib/package.mask, -hardened/amd64/multilib/parent,
+  -hardened/amd64/multilib/use.mask, -hardened/amd64/package.mask,
+  -hardened/amd64/package.use.mask, -hardened/amd64/packages,
+  -hardened/amd64/parent, -hardened/amd64/profile.bashrc,
+  -hardened/amd64/use.mask, -hardened/ia64/deprecated,
+  -hardened/ia64/make.defaults, -hardened/ia64/package.mask,
+  -hardened/ia64/package.use.mask, -hardened/ia64/packages,
+  -hardened/ia64/parent, -hardened/ia64/use.mask, -hardened/make.defaults,
+  -hardened/package.mask, -hardened/package.use, -hardened/package.use.mask,
+  -hardened/packages, -hardened/packages.build, -hardened/parent,
+  -hardened/ppc/README, -hardened/ppc/deprecated, -hardened/ppc/make.defaults,
+  -hardened/ppc/package.mask, -hardened/ppc/package.use.mask,
+  -hardened/ppc/packages, -hardened/ppc/parent, -hardened/ppc/use.mask,
+  -hardened/ppc64/README, -hardened/ppc64/deprecated,
+  -hardened/ppc64/make.defaults, -hardened/ppc64/package.mask,
+  -hardened/ppc64/package.use.mask, -hardened/ppc64/packages,
+  -hardened/ppc64/parent, -hardened/ppc64/use.mask, -hardened/use.mask,
+  -hardened/x86/2.6/deprecated, -hardened/x86/2.6/profile.bashrc,
+  -hardened/x86/deprecated, -hardened/x86/make.defaults,
+  -hardened/x86/minimal/deprecated, -hardened/x86/minimal/make.defaults,
+  -hardened/x86/minimal/parent, -hardened/x86/minimal/use.mask,
+  -hardened/x86/package.mask, -hardened/x86/package.use,
+  -hardened/x86/package.use.mask, -hardened/x86/packages, -hardened/x86/parent,
+  -hardened/x86/use.mask:
+  Removed deprecated hardened/arches profiles in favor of hardened/linux/arches
+
+  18 Nov 2011; Tony Vroon <chainsaw@gentoo.org> package.mask:
+  Module load failure was due to a rapid wrapper restart followed by a layer 9
+  problem in troubleshooting. No mask required.
+
+  18 Nov 2011; Mike Frysinger <vapier@gentoo.org> package.mask:
+  Move grub2 masking to the ebuild.
+
+  17 Nov 2011; Anthony G. Basile <blueness@gentoo.org> profiles.desc:
+  Removed old selinux profiles from profiles description
 
   17 Nov 2011; Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org>
   package.mask:

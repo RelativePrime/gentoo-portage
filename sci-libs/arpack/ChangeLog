@@ -1,6 +1,15 @@
 # ChangeLog for sci-libs/arpack
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/arpack/ChangeLog,v 1.29 2011/10/25 19:58:32 xarthisius Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/arpack/ChangeLog,v 1.32 2011/11/22 16:15:31 phajdan.jr Exp $
+
+  22 Nov 2011; Pawel Hajdan jr <phajdan.jr@gentoo.org> arpack-96-r3.ebuild:
+  x86 stable wrt bug #388475
+
+  19 Nov 2011; Markos Chandras <hwoarang@gentoo.org> arpack-96-r3.ebuild:
+  Stable on amd64 wrt bug #388475
+
+  18 Nov 2011; Jeroen Roovers <jer@gentoo.org> arpack-96-r3.ebuild:
+  Stable for HPPA (bug #388475).
 
   25 Oct 2011; Kacper Kowalik <xarthisius@gentoo.org> arpack-96-r3.ebuild:
   Remove all copies of bundled mpif.h

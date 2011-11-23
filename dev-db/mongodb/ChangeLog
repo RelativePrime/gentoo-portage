@@ -1,6 +1,19 @@
 # ChangeLog for dev-db/mongodb
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-db/mongodb/ChangeLog,v 1.26 2011/11/16 09:44:09 ultrabug Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-db/mongodb/ChangeLog,v 1.28 2011/11/23 12:29:18 ultrabug Exp $
+
+*mongodb-2.0.2_rc1 (23 Nov 2011)
+
+  23 Nov 2011; Ultrabug <ultrabug@gentoo.org> -mongodb-2.0.2_rc0.ebuild,
+  +mongodb-2.0.2_rc1.ebuild:
+  version bump, use back regular SRC_URI.
+
+*mongodb-2.0.2_rc0 (18 Nov 2011)
+
+  18 Nov 2011; Ultrabug <ultrabug@gentoo.org> -mongodb-1.8.2-r1.ebuild,
+  -mongodb-2.0.2_pre20111116.ebuild, +mongodb-2.0.2_rc0.ebuild,
+  files/mongodb-2.0-fix-scons.patch:
+  Version bump, drop old
 
 *mongodb-2.0.2_pre20111116 (16 Nov 2011)
 

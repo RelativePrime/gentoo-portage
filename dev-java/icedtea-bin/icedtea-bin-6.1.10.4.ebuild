@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-java/icedtea-bin/icedtea-bin-6.1.10.4.ebuild,v 1.2 2011/11/08 23:47:31 mr_bones_ Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-java/icedtea-bin/icedtea-bin-6.1.10.4.ebuild,v 1.4 2011/11/21 11:07:41 sera Exp $
 
 EAPI="4"
 
@@ -67,6 +67,9 @@ src_install() {
 
 	# doins can't handle symlinks.
 	cp -pRP bin include jre lib man "${ddest}" || die "failed to copy"
+
+	# Remove on next bump as the needed marks are already set by icedtea ebuild.
+	java-vm_set-pax-markings "${ddest}"
 
 	dodoc ../doc/{ASSEMBLY_EXCEPTION,THIRD_PARTY_README}
 	if use doc ; then

@@ -1,6 +1,36 @@
 # ChangeLog for dev-libs/libindicate
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/libindicate/ChangeLog,v 1.20 2011/11/04 23:04:20 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libindicate/ChangeLog,v 1.24 2011/11/20 12:19:28 ssuominen Exp $
+
+  20 Nov 2011; Samuli Suominen <ssuominen@gentoo.org> metadata.xml:
+  Maintained by both ayatana and kde.
+
+  19 Nov 2011; Samuli Suominen <ssuominen@gentoo.org>
+  -libindicate-0.2.3-r1.ebuild,
+  -files/libindicate-0.2.3-optional-gtk-support.patch,
+  -libindicate-0.4.4.ebuild, -libindicate-0.4.4-r1.ebuild,
+  -libindicate-0.4.4-r2.ebuild,
+  -files/libindicate-0.4.4-as-needed-introspection.patch,
+  -files/libindicate-0.4.4-fix-aclocal.patch,
+  -files/libindicate-0.4.4-fix-introspection.patch,
+  -files/libindicate-0.4.4-fix-out-of-source-build.patch,
+  -files/libindicate-0.4.4-fix-python-version.patch,
+  -files/libindicate-0.4.4-mono-parallel-make.patch,
+  -files/libindicate-0.4.4-optional-doc.patch,
+  -files/libindicate-0.4.4-optional-examples.patch,
+  -files/libindicate-0.4.4-optional-gtk.patch,
+  -files/libindicate-0.4.4-optional-mono-example.patch,
+  -files/libindicate-0.4.4-parallel.patch,
+  -files/libindicate-0.4.91-fix-python-version.patch,
+  -files/libindicate-0.4.91-optional-mono.patch,
+  -files/libindicate-0.4.91-optional-python.patch:
+  old
+
+*libindicate-0.6.1-r200 (19 Nov 2011)
+
+  19 Nov 2011; Samuli Suominen <ssuominen@gentoo.org>
+  +libindicate-0.6.1-r200.ebuild, +files/libindicate-0.6.1-no-mono.patch:
+  Version bump.
 
   04 Nov 2011; Andreas K. Huettel <dilfridge@gentoo.org>
   libindicate-0.4.4-r2.ebuild:
