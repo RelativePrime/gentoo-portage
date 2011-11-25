@@ -1,6 +1,29 @@
 # ChangeLog for www-client/links
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/links/ChangeLog,v 1.135 2011/11/22 18:23:13 pacho Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/links/ChangeLog,v 1.143 2011/11/25 00:55:53 ssuominen Exp $
+
+  25 Nov 2011; Samuli Suominen <ssuominen@gentoo.org> metadata.xml:
+  Apply myself to metadata.xml too.
+
+  25 Nov 2011; Samuli Suominen <ssuominen@gentoo.org> links-2.4-r1.ebuild:
+  Convert postinst message to REQUIRED_USE: USE="svga" depend on USE="suid"
+
+  25 Nov 2011; Samuli Suominen <ssuominen@gentoo.org> -links-2.4.ebuild:
+  old
+
+*links-2.4-r1 (25 Nov 2011)
+
+  25 Nov 2011; Samuli Suominen <ssuominen@gentoo.org> +links-2.4-r1.ebuild:
+  Change icon format from .xpm to .png and create desktop entry.
+
+  24 Nov 2011; Tim Harder <radhermit@gentoo.org> -links-2.2.ebuild,
+  -files/configure-LANG.patch, metadata.xml:
+  Add myself as maintainer and remove old.
+
+*links-2.4 (24 Nov 2011)
+
+  24 Nov 2011; Samuli Suominen <ssuominen@gentoo.org> +links-2.4.ebuild:
+  Version bump wrt #364711 by Jesse Adelman
 
   22 Nov 2011; Pacho Ramos <pacho@gentoo.org> -links-2.3_pre1.ebuild,
   metadata.xml:

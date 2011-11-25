@@ -1,6 +1,16 @@
 # ChangeLog for Gentoo base-profile
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/base/ChangeLog,v 1.314 2011/11/14 17:12:55 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/base/ChangeLog,v 1.317 2011/11/25 08:06:46 tetromino Exp $
+
+  25 Nov 2011; Alexandre Rostovtsev <tetromino@gentoo.org> package.use.mask:
+  GNOME 3.2 is unmasked!
+
+  25 Nov 2011; Samuli Suominen <ssuominen@gentoo.org> package.use.mask:
+  Mask USE="suid" for www-client/links everywhere except x86.
+
+  24 Nov 2011; Alexandre Rostovtsev <tetromino@gentoo.org> package.use.mask:
+  Unmask libpeas[seed] and gnome-games[seed] since seed-3.2.0 works well
+  enough.
 
   14 Nov 2011; Mike Frysinger <vapier@gentoo.org> packages:
   Move sys-apps/net-tools to Linux profiles.

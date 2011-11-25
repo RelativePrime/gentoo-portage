@@ -1,10 +1,40 @@
 # ChangeLog for profile directory
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5950 2011/11/22 18:51:58 tove Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.5958 2011/11/25 08:05:46 tetromino Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
+
+  25 Nov 2011; Alexandre Rostovtsev <tetromino@gentoo.org> package.mask:
+  GNOME 3.2 is unmasked!
+
+  25 Nov 2011; Alexandre Rostovtsev <tetromino@gentoo.org>
+  targets/desktop/gnome/make.defaults, targets/desktop/gnome/package.use:
+  Enable USE="gnome-online-accounts pulseaudio socialweb" and gtk-vnc[gtk3] for
+  gnome-3.2, and farsight2[python] and libproxy[python] for msn support in
+  empathy.
+
+  24 Nov 2011; Alexandre Rostovtsev <tetromino@gentoo.org> package.mask:
+  Unmask gnome-3.2 versions of gjs, gobject-introspection, libpeas, seed, and
+  pygobject. Also, unmask gnome-dvb-daemon (since pygobject:3 is unmasked).
+
+  24 Nov 2011; Ian Stakenvicius <axs@gentoo.org> package.mask:
+  Unmasked dev-lang/spidermonkey-1.8.5 and non-gnome3 package versions that
+  depend on it
+
+  24 Nov 2011; Jeroen Roovers <jer@gentoo.org> package.mask:
+  Tweak www-client/opera mask for new snapshots.
+
+  24 Nov 2011; Naohiro Aota <naota@gentoo.org> package.mask:
+  Mask app-text/chasen and its reverse dependencies. Bug #390769
+
+  23 Nov 2011; Pacho Ramos <pacho@gentoo.org> package.mask:
+  Mask dev-util/monodevelop-boo and dev-util/monodevelop-debugger-mdb for
+  removal.
+
+  23 Nov 2011; Ulrich Mueller <ulm@gentoo.org> package.mask:
+  Remove mask for removed package app-emacs/rst, bug 384561.
 
   22 Nov 2011; Torsten Veller <tove@gentoo.org> updates/4Q-2011:
   Move remind from x11-misc to app-misc (#391221)
